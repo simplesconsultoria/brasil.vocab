@@ -1,0 +1,11 @@
+Changelog
+=========
+
+0.5dev (unreleased)
+-------------------
+
+ * Countries [erico_andrei]
+ 
+ * Brazilian States and Cities [lepri]
+
+ * Initial implementation [erico_andrei]
