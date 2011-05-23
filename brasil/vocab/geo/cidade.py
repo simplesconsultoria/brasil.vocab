@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-cidade = {
+cidades = {
     'AC':[
         u"Acrelândia",
         u"Assis Brasil",
