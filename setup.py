@@ -5,7 +5,7 @@ version = '0.5'
 
 setup(name='brasil.vocab',
       version=version,
-      description="Basic Brazilian ",
+      description="Basic Brazilian vocabularies for Python",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from

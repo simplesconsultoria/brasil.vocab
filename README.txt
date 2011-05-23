@@ -12,6 +12,18 @@ developers.
 
 It's written in Brazilian Portuguese.
 
+Vocabularies available
+------------------------
+
+Geographic information
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Countries (ISO 3166 in Brazilian Portuguese)
+
+* States (Brazilian states)
+
+* Cities (Brazilian cities, organized by state)
+
 
 Requirements
 ------------
