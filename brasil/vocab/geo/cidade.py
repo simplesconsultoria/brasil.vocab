@@ -1,11183 +1,11164 @@
 # -*- coding:utf-8 -*-
 
-cidadesPorEstado = {
-    'AC':[
-        u"Acrelândia",
-        u"Assis Brasil",
-        u"Brasiléia",
-        u"Bujari",
-        u"Capixaba",
-        u"Cruzeiro do Sul",
-        u"Epitaciolândia",
-        u"Feijó",
-        u"Jordão",
-        u"Mâncio Lima",
-        u"Manoel Urbano",
-        u"Marechal Thaumaturgo",
-        u"Plácido de Castro",
-        u"Porto Acre",
-        u"Porto Walter",
-        u"Rio Branco",
-        u"Rodrigues Alves",
-        u"Santa Rosa do Purus",
-        u"Sena Madureira",
-        u"Senador Guiomard",
-        u"Tarauacá",
-        u"Xapuri",],
-    'AL':[
-        u"água Branca",
-        u"Anadia",
-        u"Arapiraca",
-        u"Atalaia",
-        u"Barra de Santo Antônio",
-        u"Barra de São Miguel",
-        u"Batalha",
-        u"Belém",
-        u"Belo Monte",
-        u"Boca da Mata",
-        u"Branquinha",
-        u"Cacimbinhas",
-        u"Cajueiro",
-        u"Campestre",
-        u"Campo Alegre",
-        u"Campo Grande",
-        u"Canapi",
-        u"Capela",
-        u"Carneiros",
-        u"Chã Preta",
-        u"Coité do Nóia",
-        u"Colônia Leopoldina",
-        u"Coqueiro Seco",
-        u"Coruripe",
-        u"Craíbas",
-        u"Delmiro Gouveia",
-        u"Dois Riachos",
-        u"Estrela de Alagoas",
-        u"Feira Grande",
-        u"Feliz Deserto",
-        u"Flexeiras",
-        u"Girau do Ponciano",
-        u"Ibateguara",
-        u"Igaci",
-        u"Igreja Nova",
-        u"Inhapi",
-        u"Jacaré dos Homens",
-        u"Jacuípe",
-        u"Japaratinga",
-        u"Jaramataia",
-        u"Jequiá da Praia",
-        u"Joaquim Gomes",
-        u"Jundiá",
-        u"Junqueiro",
-        u"Lagoa da Canoa",
-        u"Limoeiro de Anadia",
-        u"Maceió",
-        u"Major Isidoro",
-        u"Mar Vermelho",
-        u"Maragogi",
-        u"Maravilha",
-        u"Marechal Deodoro",
-        u"Maribondo",
-        u"Mata Grande",
-        u"Matriz de Camaragibe",
-        u"Messias",
-        u"Minador do Negrão",
-        u"Monteirópolis",
-        u"Murici",
-        u"Novo Lino",
-        u"Olho d'água das Flores",
-        u"Olho d'água do Casado",
-        u"Olho d'água Grande",
-        u"Olivença",
-        u"Ouro Branco",
-        u"Palestina",
-        u"Palmeira dos índios",
-        u"Pão de Açúcar",
-        u"Pariconha",
-        u"Paripueira",
-        u"Passo de Camaragibe",
-        u"Paulo Jacinto",
-        u"Penedo",
-        u"Piaçabuçu",
-        u"Pilar",
-        u"Pindoba",
-        u"Piranhas",
-        u"Poço das Trincheiras",
-        u"Porto Calvo",
-        u"Porto de Pedras",
-        u"Porto Real do Colégio",
-        u"Quebrangulo",
-        u"Rio Largo",
-        u"Roteiro",
-        u"Santa Luzia do Norte",
-        u"Santana do Ipanema",
-        u"Santana do Mundaú",
-        u"São Brás",
-        u"São José da Laje",
-        u"São José da Tapera",
-        u"São Luís do Quitunde",
-        u"São Miguel dos Campos",
-        u"São Miguel dos Milagres",
-        u"São Sebastião",
-        u"Satuba",
-        u"Senador Rui Palmeira",
-        u"Tanque d'Arca",
-        u"Taquarana",
-        u"Teotônio Vilela",
-        u"Traipu",
-        u"União dos Palmares",
-        u"Viçosa",],
-    'AP':[
-        u"Amapá",
-        u"Calçoene",
-        u"Cutias",
-        u"Ferreira Gomes",
-        u"Itaubal",
-        u"Laranjal do Jari",
-        u"Macapá",
-        u"Mazagão",
-        u"Oiapoque",
-        u"Pedra Branca do Amapari",
-        u"Porto Grande",
-        u"Pracuúba",
-        u"Santana",
-        u"Serra do Navio",
-        u"Tartarugalzinho",
-        u"Vitória do Jari",],
-    'AM':[
-        u"Alvarães",
-        u"Amaturá",
-        u"Anamã",
-        u"Anori",
-        u"Apuí",
-        u"Atalaia do Norte",
-        u"Autazes",
-        u"Barcelos",
-        u"Barreirinha",
-        u"Benjamin Constant",
-        u"Beruri",
-        u"Boa Vista do Ramos",
-        u"Boca do Acre",
-        u"Borba",
-        u"Caapiranga",
-        u"Canutama",
-        u"Carauari",
-        u"Careiro",
-        u"Careiro da Várzea",
-        u"Coari",
-        u"Codajás",
-        u"Eirunepé",
-        u"Envira",
-        u"Fonte Boa",
-        u"Guajará",
-        u"Humaitá",
-        u"Ipixuna",
-        u"Iranduba",
-        u"Itacoatiara",
-        u"Itamarati",
-        u"Itapiranga",
-        u"Japurá",
-        u"Juruá",
-        u"Jutaí",
-        u"Lábrea",
-        u"Manacapuru",
-        u"Manaquiri",
-        u"Manaus",
-        u"Manicoré",
-        u"Maraã",
-        u"Maués",
-        u"Nhamundá",
-        u"Nova Olinda do Norte",
-        u"Novo Airão",
-        u"Novo Aripuanã",
-        u"Parintins",
-        u"Pauini",
-        u"Presidente Figueiredo",
-        u"Rio Preto da Eva",
-        u"Santa Isabel do Rio Negro",
-        u"Santo Antônio do Içá",
-        u"São Gabriel da Cachoeira",
-        u"São Paulo de Olivença",
-        u"São Sebastião do Uatumã",
-        u"Silves",
-        u"Tabatinga",
-        u"Tapauá",
-        u"Tefé",
-        u"Tonantins",
-        u"Uarini",
-        u"Urucará",
-        u"Urucurituba",],
-    'BA':[
-        u"Abaíra",
-        u"Abaré",
-        u"Acajutiba",
-        u"Adustina",
-        u"água Fria",
-        u"Aiquara",
-        u"Alagoinhas",
-        u"Alcobaça",
-        u"Almadina",
-        u"Amargosa",
-        u"Amélia Rodrigues",
-        u"América Dourada",
-        u"Anagé",
-        u"Andaraí",
-        u"Andorinha",
-        u"Angical",
-        u"Anguera",
-        u"Antas",
-        u"Antônio Cardoso",
-        u"Antônio Gonçalves",
-        u"Aporá",
-        u"Apuarema",
-        u"Araças",
-        u"Aracatu",
-        u"Araci",
-        u"Aramari",
-        u"Arataca",
-        u"Aratuípe",
-        u"Aurelino Leal",
-        u"Baianópolis",
-        u"Baixa Grande",
-        u"Banzaê",
-        u"Barra",
-        u"Barra da Estiva",
-        u"Barra do Choça",
-        u"Barra do Mendes",
-        u"Barra do Rocha",
-        u"Barreiras",
-        u"Barro Alto",
-        u"Barro Preto",
-        u"Barrocas",
-        u"Belmonte",
-        u"Belo Campo",
-        u"Biritinga",
-        u"Boa Nova",
-        u"Boa Vista do Tupim",
-        u"Bom Jesus da Lapa",
-        u"Bom Jesus da Serra",
-        u"Boninal",
-        u"Bonito",
-        u"Boquira",
-        u"Botuporã",
-        u"Brej&otilde;es",
-        u"Brejolândia",
-        u"Brotas de Macaúbas",
-        u"Brumado",
-        u"Buerarema",
-        u"Buritirama",
-        u"Caatiba",
-        u"Cabaceiras do Paraguaçu",
-        u"Cachoeira",
-        u"Caculé",
-        u"Caém",
-        u"Caetanos",
-        u"Caetité",
-        u"Cafarnaum",
-        u"Cairu",
-        u"Caldeirão Grande",
-        u"Camacan",
-        u"Camaçari",
-        u"Camamu",
-        u"Campo Alegre de Lourdes",
-        u"Campo Formoso",
-        u"Canápolis",
-        u"Canarana",
-        u"Canavieiras",
-        u"Candeal",
-        u"Candeias",
-        u"Candiba",
-        u"Cândido Sales",
-        u"Cansanção",
-        u"Canudos",
-        u"Capela do Alto Alegre",
-        u"Capim Grosso",
-        u"Caraíbas",
-        u"Caravelas",
-        u"Cardeal da Silva",
-        u"Carinhanha",
-        u"Casa Nova",
-        u"Castro Alves",
-        u"Catolândia",
-        u"Catu",
-        u"Caturama",
-        u"Central",
-        u"Chorrochó",
-        u"Cícero Dantas",
-        u"Cipó",
-        u"Coaraci",
-        u"Cocos",
-        u"Conceição da Feira",
-        u"Conceição do Almeida",
-        u"Conceição do Coité",
-        u"Conceição do Jacuípe",
-        u"Conde",
-        u"Condeúba",
-        u"Contendas do Sincorá",
-        u"Coração de Maria",
-        u"Cordeiros",
-        u"Coribe",
-        u"Coronel João Sá",
-        u"Correntina",
-        u"Cotegipe",
-        u"Cravolândia",
-        u"Crisópolis",
-        u"Cristópolis",
-        u"Cruz das Almas",
-        u"Curaçá",
-        u"Dário Meira",
-        u"Dias d'ávila",
-        u"Dom Basílio",
-        u"Dom Macedo Costa",
-        u"Elísio Medrado",
-        u"Encruzilhada",
-        u"Entre Rios",
-        u"Érico Cardoso",
-        u"Esplanada",
-        u"Euclides da Cunha",
-        u"Eunápolis",
-        u"Fátima",
-        u"Feira da Mata",
-        u"Feira de Santana",
-        u"Filadélfia",
-        u"Firmino Alves",
-        u"Floresta Azul",
-        u"Formosa do Rio Preto",
-        u"Gandu",
-        u"Gavião",
-        u"Gentio do Ouro",
-        u"Glória",
-        u"Gongogi",
-        u"Governador Mangabeira",
-        u"Guajeru",
-        u"Guanambi",
-        u"Guaratinga",
-        u"Heliópolis",
-        u"Iaçu",
-        u"Ibiassucê",
-        u"Ibicaraí",
-        u"Ibicoara",
-        u"Ibicuí",
-        u"Ibipeba",
-        u"Ibipitanga",
-        u"Ibiquera",
-        u"Ibirapitanga",
-        u"Ibirapuã",
-        u"Ibirataia",
-        u"Ibitiara",
-        u"Ibititá",
-        u"Ibotirama",
-        u"Ichu",
-        u"Igaporã",
-        u"Igrapiúna",
-        u"Iguaí",
-        u"Ilhéus",
-        u"Inhambupe",
-        u"Ipecaetá",
-        u"Ipiaú",
-        u"Ipirá",
-        u"Ipupiara",
-        u"Irajuba",
-        u"Iramaia",
-        u"Iraquara",
-        u"Irará",
-        u"Irecê",
-        u"Itabela",
-        u"Itaberaba",
-        u"Itabuna",
-        u"Itacaré",
-        u"Itaeté",
-        u"Itagi",
-        u"Itagibá",
-        u"Itagimirim",
-        u"Itaguaçu da Bahia",
-        u"Itaju do Colônia",
-        u"Itajuípe",
-        u"Itamaraju",
-        u"Itamari",
-        u"Itambé",
-        u"Itanagra",
-        u"Itanhém",
-        u"Itaparica",
-        u"Itapé",
-        u"Itapebi",
-        u"Itapetinga",
-        u"Itapicuru",
-        u"Itapitanga",
-        u"Itaquara",
-        u"Itarantim",
-        u"Itatim",
-        u"Itiruçu",
-        u"Itiúba",
-        u"Itororó",
-        u"Ituaçu",
-        u"Ituberá",
-        u"Iuiú",
-        u"Jaborandi",
-        u"Jacaraci",
-        u"Jacobina",
-        u"Jaguaquara",
-        u"Jaguarari",
-        u"Jaguaripe",
-        u"Jandaíra",
-        u"Jequié",
-        u"Jeremoabo",
-        u"Jiquiriçá",
-        u"Jitaúna",
-        u"João Dourado",
-        u"Juazeiro",
-        u"Jucuruçu",
-        u"Jussara",
-        u"Jussari",
-        u"Jussiape",
-        u"Lafaiete Coutinho",
-        u"Lagoa Real",
-        u"Laje",
-        u"Lajedão",
-        u"Lajedinho",
-        u"Lajedo do Tabocal",
-        u"Lamarão",
-        u"Lapão",
-        u"Lauro de Freitas",
-        u"Lençóis",
-        u"Licínio de Almeida",
-        u"Livramento de Nossa Senhora",
-        u"Luís Eduardo Magalhães",
-        u"Macajuba",
-        u"Macarani",
-        u"Macaúbas",
-        u"Macururé",
-        u"Madre de Deus",
-        u"Maetinga",
-        u"Maiquinique",
-        u"Mairi",
-        u"Malhada",
-        u"Malhada de Pedras",
-        u"Manoel Vitorino",
-        u"Mansidão",
-        u"Maracás",
-        u"Maragogipe",
-        u"Maraú",
-        u"Marcionílio Souza",
-        u"Mascote",
-        u"Mata de São João",
-        u"Matina",
-        u"Medeiros Neto",
-        u"Miguel Calmon",
-        u"Milagres",
-        u"Mirangaba",
-        u"Mirante",
-        u"Monte Santo",
-        u"Morpará",
-        u"Morro do Chapéu",
-        u"Mortugaba",
-        u"Mucugê",
-        u"Mucuri",
-        u"Mulungu do Morro",
-        u"Mundo Novo",
-        u"Muniz Ferreira",
-        u"Muquém de São Francisco",
-        u"Muritiba",
-        u"Mutuípe",
-        u"Nazaré",
-        u"Nilo Peçanha",
-        u"Nordestina",
-        u"Nova Canaã",
-        u"Nova Fátima",
-        u"Nova Ibiá",
-        u"Nova Itarana",
-        u"Nova Redenção",
-        u"Nova Soure",
-        u"Nova Viçosa",
-        u"Novo Horizonte",
-        u"Novo Triunfo",
-        u"Olindina",
-        u"Oliveira dos Brejinhos",
-        u"Ouriçangas",
-        u"Ourolândia",
-        u"Palmas de Monte Alto",
-        u"Palmeiras",
-        u"Paramirim",
-        u"Paratinga",
-        u"Paripiranga",
-        u"Pau Brasil",
-        u"Paulo Afonso",
-        u"Pé de Serra",
-        u"Pedrão",
-        u"Pedro Alexandre",
-        u"Piatã",
-        u"Pilão Arcado",
-        u"Pindaí",
-        u"Pindobaçu",
-        u"Pintadas",
-        u"Piraí do Norte",
-        u"Piripá",
-        u"Piritiba",
-        u"Planaltino",
-        u"Planalto",
-        u"Poç&otilde;es",
-        u"Pojuca",
-        u"Ponto Novo",
-        u"Porto Seguro",
-        u"Potiraguá",
-        u"Prado",
-        u"Presidente Dutra",
-        u"Presidente Jânio Quadros",
-        u"Presidente Tancredo Neves",
-        u"Queimadas",
-        u"Quijingue",
-        u"Quixabeira",
-        u"Rafael Jambeiro",
-        u"Remanso",
-        u"Retirolândia",
-        u"Riachão das Neves",
-        u"Riachão do Jacuípe",
-        u"Riacho de Santana",
-        u"Ribeira do Amparo",
-        u"Ribeira do Pombal",
-        u"Ribeirão do Largo",
-        u"Rio de Contas",
-        u"Rio do Antônio",
-        u"Rio do Pires",
-        u"Rio Real",
-        u"Rodelas",
-        u"Ruy Barbosa",
-        u"Salinas da Margarida",
-        u"Salvador",
-        u"Santa Bárbara",
-        u"Santa Brígida",
-        u"Santa Cruz Cabrália",
-        u"Santa Cruz da Vitória",
-        u"Santa Inês",
-        u"Santa Luzia",
-        u"Santa Maria da Vitória",
-        u"Santa Rita de Cássia",
-        u"Santa Teresinha",
-        u"Santaluz",
-        u"Santana",
-        u"Santanópolis",
-        u"Santo Amaro",
-        u"Santo Antônio de Jesus",
-        u"Santo Estêvão",
-        u"São Desidério",
-        u"São Domingos",
-        u"São Felipe",
-        u"São Félix",
-        u"São Félix do Coribe",
-        u"São Francisco do Conde",
-        u"São Gabriel",
-        u"São Gonçalo dos Campos",
-        u"São José da Vitória",
-        u"São José do Jacuípe",
-        u"São Miguel das Matas",
-        u"São Sebastião do Passé",
-        u"Sapeaçu",
-        u"Sátiro Dias",
-        u"Saubara",
-        u"Saúde",
-        u"Seabra",
-        u"Sebastião Laranjeiras",
-        u"Senhor do Bonfim",
-        u"Sento Sé",
-        u"Serra do Ramalho",
-        u"Serra Dourada",
-        u"Serra Preta",
-        u"Serrinha",
-        u"Serrolândia",
-        u"Sim&otilde;es Filho",
-        u"Sítio do Mato",
-        u"Sítio do Quinto",
-        u"Sobradinho",
-        u"Souto Soares",
-        u"Tabocas do Brejo Velho",
-        u"Tanhaçu",
-        u"Tanque Novo",
-        u"Tanquinho",
-        u"Taperoá",
-        u"Tapiramutá",
-        u"Teixeira de Freitas",
-        u"Teodoro Sampaio",
-        u"Teofilândia",
-        u"Teolândia",
-        u"Terra Nova",
-        u"Tremedal",
-        u"Tucano",
-        u"Uauá",
-        u"Ubaíra",
-        u"Ubaitaba",
-        u"Ubatã",
-        u"Uibaí",
-        u"Umburanas",
-        u"Una",
-        u"Urandi",
-        u"Uruçuca",
-        u"Utinga",
-        u"Valença",
-        u"Valente",
-        u"Várzea da Roça",
-        u"Várzea do Poço",
-        u"Várzea Nova",
-        u"Varzedo",
-        u"Vera Cruz",
-        u"Vereda",
-        u"Vitória da Conquista",
-        u"Wagner",
-        u"Wanderley",
-        u"Wenceslau Guimarães",
-        u"Xique-Xique",],
-    'CE':[
-        u"Abaiara",
-        u"Acarape",
-        u"Acaraú",
-        u"Acopiara",
-        u"Aiuaba",
-        u"Alcântaras",
-        u"Altaneira",
-        u"Alto Santo",
-        u"Amontada",
-        u"Antonina do Norte",
-        u"Apuiarés",
-        u"Aquiraz",
-        u"Aracati",
-        u"Aracoiaba",
-        u"Ararendá",
-        u"Araripe",
-        u"Aratuba",
-        u"Arneiroz",
-        u"Assaré",
-        u"Aurora",
-        u"Baixio",
-        u"Banabuiú",
-        u"Barbalha",
-        u"Barreira",
-        u"Barro",
-        u"Barroquinha",
-        u"Baturité",
-        u"Beberibe",
-        u"Bela Cruz",
-        u"Boa Viagem",
-        u"Brejo Santo",
-        u"Camocim",
-        u"Campos Sales",
-        u"Canindé",
-        u"Capistrano",
-        u"Caridade",
-        u"Cariré",
-        u"Caririaçu",
-        u"Cariús",
-        u"Carnaubal",
-        u"Cascavel",
-        u"Catarina",
-        u"Catunda",
-        u"Caucaia",
-        u"Cedro",
-        u"Chaval",
-        u"Choró",
-        u"Chorozinho",
-        u"Coreaú",
-        u"Crateús",
-        u"Crato",
-        u"Croatá",
-        u"Cruz",
-        u"Deputado Irapuan Pinheiro",
-        u"Ererê",
-        u"Eusébio",
-        u"Farias Brito",
-        u"Forquilha",
-        u"Fortaleza",
-        u"Fortim",
-        u"Frecheirinha",
-        u"General Sampaio",
-        u"Graça",
-        u"Granja",
-        u"Granjeiro",
-        u"Groaíras",
-        u"Guaiúba",
-        u"Guaraciaba do Norte",
-        u"Guaramiranga",
-        u"Hidrolândia",
-        u"Horizonte",
-        u"Ibaretama",
-        u"Ibiapina",
-        u"Ibicuitinga",
-        u"Icapuí",
-        u"Icó",
-        u"Iguatu",
-        u"Independência",
-        u"Ipaporanga",
-        u"Ipaumirim",
-        u"Ipu",
-        u"Ipueiras",
-        u"Iracema",
-        u"Irauçuba",
-        u"Itaiçaba",
-        u"Itaitinga",
-        u"Itapagé",
-        u"Itapipoca",
-        u"Itapiúna",
-        u"Itarema",
-        u"Itatira",
-        u"Jaguaretama",
-        u"Jaguaribara",
-        u"Jaguaribe",
-        u"Jaguaruana",
-        u"Jardim",
-        u"Jati",
-        u"Jijoca de Jericoacoara",
-        u"Juazeiro do Norte",
-        u"Jucás",
-        u"Lavras da Mangabeira",
-        u"Limoeiro do Norte",
-        u"Madalena",
-        u"Maracanaú",
-        u"Maranguape",
-        u"Marco",
-        u"Martinópole",
-        u"Massapê",
-        u"Mauriti",
-        u"Meruoca",
-        u"Milagres",
-        u"Milhã",
-        u"Miraíma",
-        u"Missão Velha",
-        u"Mombaça",
-        u"Monsenhor Tabosa",
-        u"Morada Nova",
-        u"Moraújo",
-        u"Morrinhos",
-        u"Mucambo",
-        u"Mulungu",
-        u"Nova Olinda",
-        u"Nova Russas",
-        u"Novo Oriente",
-        u"Ocara",
-        u"Orós",
-        u"Pacajus",
-        u"Pacatuba",
-        u"Pacoti",
-        u"Pacujá",
-        u"Palhano",
-        u"Palmácia",
-        u"Paracuru",
-        u"Paraipaba",
-        u"Parambu",
-        u"Paramoti",
-        u"Pedra Branca",
-        u"Penaforte",
-        u"Pentecoste",
-        u"Pereiro",
-        u"Pindoretama",
-        u"Piquet Carneiro",
-        u"Pires Ferreira",
-        u"Poranga",
-        u"Porteiras",
-        u"Potengi",
-        u"Potiretama",
-        u"Quiterianópolis",
-        u"Quixadá",
-        u"Quixelô",
-        u"Quixeramobim",
-        u"Quixeré",
-        u"Redenção",
-        u"Reriutaba",
-        u"Russas",
-        u"Saboeiro",
-        u"Salitre",
-        u"Santa Quitéria",
-        u"Santana do Acaraú",
-        u"Santana do Cariri",
-        u"São Benedito",
-        u"São Gonçalo do Amarante",
-        u"São João do Jaguaribe",
-        u"São Luís do Curu",
-        u"Senador Pompeu",
-        u"Senador Sá",
-        u"Sobral",
-        u"Solonópole",
-        u"Tabuleiro do Norte",
-        u"Tamboril",
-        u"Tarrafas",
-        u"Tauá",
-        u"Tejuçuoca",
-        u"Tianguá",
-        u"Trairi",
-        u"Tururu",
-        u"Ubajara",
-        u"Umari",
-        u"Umirim",
-        u"Uruburetama",
-        u"Uruoca",
-        u"Varjota",
-        u"Várzea Alegre",
-        u"Viçosa do Ceará",],
-    'DF':[
-        u"Brasília",
-        u" Brazlândia",
-        u" Candangolândia",
-        u" Ceilândia",
-        u" Cruzeiro",
-        u" Gama",
-        u" Guará",
-        u" Lago Norte",
-        u" Lago Sul",
-        u" Paranoá",
-        u" Planaltina",
-        u" Recanto das Emas",
-        u" Riacho Fundo",
-        u" Samambaia",
-        u" Santa Maria",
-        u" São Sebastião",
-        u" Sobradinho",
-        u" Taguatinga",
-        u" Águas Claras",
-        u" Park Way",],
-    'ES':[
-        u"Afonso Cláudio",
-        u"água Doce do Norte",
-        u"águia Branca",
-        u"Alegre",
-        u"Alfredo Chaves",
-        u"Alto Rio Novo",
-        u"Anchieta",
-        u"Apiacá",
-        u"Aracruz",
-        u"Atilio Vivacqua",
-        u"Baixo Guandu",
-        u"Barra de São Francisco",
-        u"Boa Esperança",
-        u"Bom Jesus do Norte",
-        u"Brejetuba",
-        u"Cachoeiro de Itapemirim",
-        u"Cariacica",
-        u"Castelo",
-        u"Colatina",
-        u"Conceição da Barra",
-        u"Conceição do Castelo",
-        u"Divino de São Lourenço",
-        u"Domingos Martins",
-        u"Dores do Rio Preto",
-        u"Ecoporanga",
-        u"Fundão",
-        u"Governador Lindenberg",
-        u"Guaçuí",
-        u"Guarapari",
-        u"Ibatiba",
-        u"Ibiraçu",
-        u"Ibitirama",
-        u"Iconha",
-        u"Irupi",
-        u"Itaguaçu",
-        u"Itapemirim",
-        u"Itarana",
-        u"Iúna",
-        u"Jaguaré",
-        u"JerônimoMonteiro",
-        u"João Neiva",
-        u"Laranja da Terra",
-        u"Linhares",
-        u"Mantenópolis",
-        u"Marataízes",
-        u"Marechal Floriano",
-        u"Marilândia",
-        u"Mimoso do Sul",
-        u"Montanha",
-        u"Mucurici",
-        u"Muniz Freire",
-        u"Muqui",
-        u"Nova Venécia",
-        u"Pancas",
-        u"Pedro Canário",
-        u"Pinheiros",
-        u"Piúma",
-        u"Ponto Belo",
-        u"Presidente Kennedy",
-        u"Rio Bananal",
-        u"Rio Novo do Sul",
-        u"Santa Leopoldina",
-        u"Santa Maria de Jetibá",
-        u"Santa Teresa",
-        u"São Domingos do Norte",
-        u"São Gabriel daPalha",
-        u"São José do Calçado",
-        u"São Mateus",
-        u"São Roque do Canaã",
-        u"Serra",
-        u"Sooretama",
-        u"Vargem Alta",
-        u"Venda Nova do Imigrante",
-        u"Viana",
-        u"Vila Pavão",
-        u"Vila Valério",
-        u"Vila Velha",
-        u"Vitória",],
-    'GO':[
-        u"Abadia de Goiás",
-        u"Abadiânia",
-        u"Acreúna",
-        u"Adelândia",
-        u"água Fria de Goiás",
-        u"água Limpa",
-        u"águas Lindas de Goiás",
-        u"Alexânia",
-        u"Aloândia",
-        u"Alto Horizonte",
-        u"Alto Paraíso de Goiás",
-        u"Alvorada do Norte",
-        u"Amaralina",
-        u"Americano do Brasil",
-        u"Amorinópolis",
-        u"Anápolis",
-        u"Anhanguera",
-        u"Anicuns",
-        u"Aparecida de Goiânia",
-        u"Aparecida do Rio Doce",
-        u"Aporé",
-        u"Araçu",
-        u"Aragarças",
-        u"Aragoiânia",
-        u"Araguapaz",
-        u"Arenópolis",
-        u"Aruanã",
-        u"Aurilândia",
-        u"Avelinópolis",
-        u"Baliza",
-        u"Barro Alto",
-        u"Bela Vista de Goiás",
-        u"Bom Jardim de Goiás",
-        u"Bom Jesus de Goiás",
-        u"Bonfinópolis",
-        u"Bonópolis",
-        u"Brazabrantes",
-        u"Britânia",
-        u"Buriti Alegre",
-        u"Buriti de Goiás",
-        u"Buritinópolis",
-        u"Cabeceiras",
-        u"Cachoeira Alta",
-        u"Cachoeira de Goiás",
-        u"Cachoeira Dourada",
-        u"Caçu",
-        u"Caiapônia",
-        u"Caldas Novas",
-        u"Caldazinha",
-        u"Campestre de Goiás",
-        u"Campinaçu",
-        u"Campinorte",
-        u"Campo Alegre de Goiás",
-        u"Campo Limpo de Goiás",
-        u"Campos Belos",
-        u"Campos Verdes",
-        u"Carmo do Rio Verde",
-        u"Castelândia",
-        u"Catalão",
-        u"Caturaí",
-        u"Cavalcante",
-        u"Ceres",
-        u"Cezarina",
-        u"Chapadão do Céu",
-        u"Cidade Ocidental",
-        u"Cocalzinho de Goiás",
-        u"Colinas do Sul",
-        u"Córrego do Ouro",
-        u"Corumbá de Goiás",
-        u"Corumbaíba",
-        u"Cristalina",
-        u"Cristianópolis",
-        u"Crixás",
-        u"Cromínia",
-        u"Cumari",
-        u"Damianópolis",
-        u"Damolândia",
-        u"Davinópolis",
-        u"Diorama",
-        u"Divinópolis de Goiás",
-        u"Doverlândia",
-        u"Edealina",
-        u"Edéia",
-        u"Estrela do Norte",
-        u"Faina",
-        u"Fazenda Nova",
-        u"Firminópolis",
-        u"Flores de Goiás",
-        u"Formosa",
-        u"Formoso",
-        u"Gameleira de Goiás",
-        u"Goianápolis",
-        u"Goiandira",
-        u"Goianésia",
-        u"Goiânia",
-        u"Goianira",
-        u"Goiás",
-        u"Goiatuba",
-        u"Gouvelândia",
-        u"Guapó",
-        u"Guaraíta",
-        u"Guarani de Goiás",
-        u"Guarinos",
-        u"Heitoraí",
-        u"Hidrolândia",
-        u"Hidrolina",
-        u"Iaciara",
-        u"Inaciolândia",
-        u"Indiara",
-        u"Inhumas",
-        u"Ipameri",
-        u"Ipiranga de Goiás",
-        u"Iporá",
-        u"Israelândia",
-        u"Itaberaí",
-        u"Itaguari",
-        u"Itaguaru",
-        u"Itajá",
-        u"Itapaci",
-        u"Itapirapuã",
-        u"Itapuranga",
-        u"Itarumã",
-        u"Itauçu",
-        u"Itumbiara",
-        u"Ivolândia",
-        u"Jandaia",
-        u"Jaraguá",
-        u"Jataí",
-        u"Jaupaci",
-        u"Jesúpolis",
-        u"Joviânia",
-        u"Jussara",
-        u"Lagoa Santa",
-        u"Leopoldo de Bulh&otilde;es",
-        u"Luziânia",
-        u"Mairipotaba",
-        u"Mambaí",
-        u"Mara Rosa",
-        u"Marzagão",
-        u"Matrinchã",
-        u"Maurilândia",
-        u"Mimoso de Goiás",
-        u"Minaçu",
-        u"Mineiros",
-        u"Moiporá",
-        u"Monte Alegre de Goiás",
-        u"Montes Claros de Goiás",
-        u"Montividiu",
-        u"Montividiu do Norte",
-        u"Morrinhos",
-        u"Morro Agudo de Goiás",
-        u"Mossâmedes",
-        u"Mozarlândia",
-        u"Mundo Novo",
-        u"Mutunópolis",
-        u"Nazário",
-        u"Nerópolis",
-        u"Niquelândia",
-        u"Nova América",
-        u"Nova Aurora",
-        u"Nova Crixás",
-        u"Nova Glória",
-        u"Nova Iguaçu de Goiás",
-        u"Nova Roma",
-        u"Nova Veneza",
-        u"Novo Brasil",
-        u"Novo Gama",
-        u"Novo Planalto",
-        u"Orizona",
-        u"Ouro Verde de Goiás",
-        u"Ouvidor",
-        u"Padre Bernardo",
-        u"Palestina de Goiás",
-        u"Palmeiras de Goiás",
-        u"Palmelo",
-        u"Palminópolis",
-        u"Panamá",
-        u"Paranaiguara",
-        u"Paraúna",
-        u"Perolândia",
-        u"Petrolina de Goiás",
-        u"Pilar de Goiás",
-        u"Piracanjuba",
-        u"Piranhas",
-        u"Pirenópolis",
-        u"Pires do Rio",
-        u"Planaltina",
-        u"Pontalina",
-        u"Porangatu",
-        u"Porteirão",
-        u"Portelândia",
-        u"Posse",
-        u"Professor Jamil",
-        u"Quirinópolis",
-        u"Rialma",
-        u"Rianápolis",
-        u"Rio Quente",
-        u"Rio Verde",
-        u"Rubiataba",
-        u"Sanclerlândia",
-        u"Santa Bárbara de Goiás",
-        u"Santa Cruz de Goiás",
-        u"Santa Fé de Goiás",
-        u"Santa Helena de Goiás",
-        u"Santa Isabel",
-        u"Santa Rita do Araguaia",
-        u"Santa Rita do Novo Destino",
-        u"Santa Rosa de Goiás",
-        u"Santa Tereza de Goiás",
-        u"Santa Terezinha de Goiás",
-        u"Santo Antônio da Barra",
-        u"Santo Antônio de Goiás",
-        u"Santo Antônio do Descoberto",
-        u"São Domingos",
-        u"São Francisco de Goiás",
-        u"São João da Paraúna",
-        u"São João d'Aliança",
-        u"São Luís de Montes Belos",
-        u"São Luíz do Norte",
-        u"São Miguel do Araguaia",
-        u"São Miguel do Passa Quatro",
-        u"São Patrício",
-        u"São Simão",
-        u"Senador Canedo",
-        u"Serranópolis",
-        u"Silvânia",
-        u"Simolândia",
-        u"Sítio d'Abadia",
-        u"Taquaral de Goiás",
-        u"Teresina de Goiás",
-        u"Terezópolis de Goiás",
-        u"Três Ranchos",
-        u"Trindade",
-        u"Trombas",
-        u"Turvânia",
-        u"Turvelândia",
-        u"Uirapuru",
-        u"Uruaçu",
-        u"Uruana",
-        u"Urutaí",
-        u"Valparaíso de Goiás",
-        u"Varjão",
-        u"Vianópolis",
-        u"Vicentinópolis",
-        u"Vila Boa",
-        u"Vila Propício",],
-    'MA':[
-        u"Açailândia",
-        u"Afonso Cunha",
-        u"água Doce do Maranhão",
-        u"Alcântara",
-        u"Aldeias Altas",
-        u"Altamira do Maranhão",
-        u"Alto Alegre do Maranhão",
-        u"Alto Alegre do Pindaré",
-        u"Alto Parnaíba",
-        u"Amapá do Maranhão",
-        u"Amarante do Maranhão",
-        u"Anajatuba",
-        u"Anapurus",
-        u"Apicum-Açu",
-        u"Araguanã",
-        u"Araioses",
-        u"Arame",
-        u"Arari",
-        u"Axixá",
-        u"Bacabal",
-        u"Bacabeira",
-        u"Bacuri",
-        u"Bacurituba",
-        u"Balsas",
-        u"Barão de Grajaú",
-        u"Barra do Corda",
-        u"Barreirinhas",
-        u"Bela Vista do Maranhão",
-        u"Belágua",
-        u"Benedito Leite",
-        u"Bequimão",
-        u"Bernardo do Mearim",
-        u"Boa Vista do Gurupi",
-        u"Bom Jardim",
-        u"Bom Jesus das Selvas",
-        u"Bom Lugar",
-        u"Brejo",
-        u"Brejo de Areia",
-        u"Buriti",
-        u"Buriti Bravo",
-        u"Buriticupu",
-        u"Buritirana",
-        u"Cachoeira Grande",
-        u"Cajapió",
-        u"Cajari",
-        u"Campestre do Maranhão",
-        u"Cândido Mendes",
-        u"Cantanhede",
-        u"Capinzal do Norte",
-        u"Carolina",
-        u"Carutapera",
-        u"Caxias",
-        u"Cedral",
-        u"Central do Maranhão",
-        u"Centro do Guilherme",
-        u"Centro Novo do Maranhão",
-        u"Chapadinha",
-        u"Cidelândia",
-        u"Codó",
-        u"Coelho Neto",
-        u"Colinas",
-        u"Conceição do Lago-Açu",
-        u"Coroatá",
-        u"Cururupu",
-        u"Davinópolis",
-        u"Dom Pedro",
-        u"Duque Bacelar",
-        u"Esperantinópolis",
-        u"Estreito",
-        u"Feira Nova do Maranhão",
-        u"Fernando Falcão",
-        u"Formosa da Serra Negra",
-        u"Fortaleza dos Nogueiras",
-        u"Fortuna",
-        u"Godofredo Viana",
-        u"Gonçalves Dias",
-        u"Governador Archer",
-        u"Governador Edison Lobão",
-        u"Governador Eugênio Barros",
-        u"Governador Luiz Rocha",
-        u"Governador Newton Bello",
-        u"Governador Nunes Freire",
-        u"Graça Aranha",
-        u"Grajaú",
-        u"Guimarães",
-        u"Humberto de Campos",
-        u"Icatu",
-        u"Igarapé do Meio",
-        u"Igarapé Grande",
-        u"Imperatriz",
-        u"Itaipava do Grajaú",
-        u"Itapecuru Mirim",
-        u"Itinga do Maranhão",
-        u"Jatobá",
-        u"Jenipapo dos Vieiras",
-        u"João Lisboa",
-        u"Joselândia",
-        u"Junco do Maranhão",
-        u"Lago da Pedra",
-        u"Lago do Junco",
-        u"Lago dos Rodrigues",
-        u"Lago Verde",
-        u"Lagoa do Mato",
-        u"Lagoa Grande do Maranhão",
-        u"Lajeado Novo",
-        u"Lima Campos",
-        u"Loreto",
-        u"Luís Domingues",
-        u"Magalhães de Almeida",
-        u"Maracaçumé",
-        u"Marajá do Sena",
-        u"Maranhãozinho",
-        u"Mata Roma",
-        u"Matinha",
-        u"Mat&otilde;es",
-        u"Mat&otilde;es do Norte",
-        u"Milagres do Maranhão",
-        u"Mirador",
-        u"Miranda do Norte",
-        u"Mirinzal",
-        u"Monção",
-        u"Montes Altos",
-        u"Morros",
-        u"Nina Rodrigues",
-        u"Nova Colinas",
-        u"Nova Iorque",
-        u"Nova Olinda do Maranhão",
-        u"Olho d'água das Cunhãs",
-        u"Olinda Nova do Maranhão",
-        u"Paço do Lumiar",
-        u"Palmeirândia",
-        u"Paraibano",
-        u"Parnarama",
-        u"Passagem Franca",
-        u"Pastos Bons",
-        u"Paulino Neves",
-        u"Paulo Ramos",
-        u"Pedreiras",
-        u"Pedro do Rosário",
-        u"Penalva",
-        u"Peri Mirim",
-        u"Peritoró",
-        u"Pindaré-Mirim",
-        u"Pinheiro",
-        u"Pio XII",
-        u"Pirapemas",
-        u"Poção de Pedras",
-        u"Porto Franco",
-        u"Porto Rico do Maranhão",
-        u"Presidente Dutra",
-        u"Presidente Juscelino",
-        u"Presidente Médici",
-        u"Presidente Sarney",
-        u"Presidente Vargas",
-        u"Primeira Cruz",
-        u"Raposa",
-        u"Riachão",
-        u"Ribamar Fiquene",
-        u"Rosário",
-        u"Sambaíba",
-        u"Santa Filomena do Maranhão",
-        u"Santa Helena",
-        u"Santa Inês",
-        u"Santa Luzia",
-        u"Santa Luzia do Paruá",
-        u"Santa Quitéria do Maranhão",
-        u"Santa Rita",
-        u"Santana do Maranhão",
-        u"Santo Amaro do Maranhão",
-        u"Santo Antônio dos Lopes",
-        u"São Benedito do Rio Preto",
-        u"São Bento",
-        u"São Bernardo",
-        u"São Domingos do Azeitão",
-        u"São Domingos do Maranhão",
-        u"São Félix de Balsas",
-        u"São Francisco do Brejão",
-        u"São Francisco do Maranhão",
-        u"São João Batista",
-        u"São João do Carú",
-        u"São João do Paraíso",
-        u"São João do Soter",
-        u"São João dos Patos",
-        u"São José de Ribamar",
-        u"São José dos Basílios",
-        u"São Luís",
-        u"São Luís Gonzaga do Maranhão",
-        u"São Mateus do Maranhão",
-        u"São Pedro da água Branca",
-        u"São Pedro dos Crentes",
-        u"São Raimundo das Mangabeiras",
-        u"São Raimundo do Doca Bezerra",
-        u"São Roberto",
-        u"São Vicente Ferrer",
-        u"Satubinha",
-        u"Senador Alexandre Costa",
-        u"Senador La Rocque",
-        u"Serrano do Maranhão",
-        u"Sítio Novo",
-        u"Sucupira do Norte",
-        u"Sucupira do Riachão",
-        u"Tasso Fragoso",
-        u"Timbiras",
-        u"Timon",
-        u"Trizidela do Vale",
-        u"Tufilândia",
-        u"Tuntum",
-        u"Turiaçu",
-        u"Turilândia",
-        u"Tutóia",
-        u"Urbano Santos",
-        u"Vargem Grande",
-        u"Viana",
-        u"Vila Nova dos Martírios",
-        u"Vitória do Mearim",
-        u"Vitorino Freire",
-        u"Zé Doca",],
-    'MT':[
-        u"Acorizal",
-        u"água Boa",
-        u"Alta Floresta",
-        u"Alto Araguaia",
-        u"Alto Boa Vista",
-        u"Alto Garças",
-        u"Alto Paraguai",
-        u"Alto Taquari",
-        u"Apiacás",
-        u"Araguaiana",
-        u"Araguainha",
-        u"Araputanga",
-        u"Arenápolis",
-        u"Aripuanã",
-        u"Barão de Melgaço",
-        u"Barra do Bugres",
-        u"Barra do Garças",
-        u"Bom Jesus do Araguaia",
-        u"Brasnorte",
-        u"Cáceres",
-        u"Campinápolis",
-        u"Campo Novo do Parecis",
-        u"Campo Verde",
-        u"Campos de Júlio",
-        u"Canabrava do Norte",
-        u"Canarana",
-        u"Carlinda",
-        u"Castanheira",
-        u"Chapada dos Guimarães",
-        u"Cláudia",
-        u"Cocalinho",
-        u"Colíder",
-        u"Colniza",
-        u"Comodoro",
-        u"Confresa",
-        u"Conquista D'Oeste",
-        u"Cotriguaçu",
-        u"Cuiabá",
-        u"Curvelândia",
-        u"Denise",
-        u"Diamantino",
-        u"Dom Aquino",
-        u"Feliz Natal",
-        u"Figueirópolis D'Oeste",
-        u"Gaúcha do Norte",
-        u"General Carneiro",
-        u"Glória D'Oeste",
-        u"Guarantã do Norte",
-        u"Guiratinga",
-        u"Indiavaí",
-        u"Ipiranga do Norte",
-        u"Itanhangá",
-        u"Itaúba",
-        u"Itiquira",
-        u"Jaciara",
-        u"Jangada",
-        u"Jauru",
-        u"Juara",
-        u"Juína",
-        u"Juruena",
-        u"Juscimeira",
-        u"Lambari D'Oeste",
-        u"Lucas do Rio Verde",
-        u"Luciara",
-        u"Marcelândia",
-        u"Matupá",
-        u"Mirassol d'Oeste",
-        u"Nobres",
-        u"Nortelândia",
-        u"Nossa Senhora do Livramento",
-        u"Nova Bandeirantes",
-        u"Nova Brasilândia",
-        u"Nova Canaã do Norte",
-        u"Nova Guarita",
-        u"Nova Lacerda",
-        u"Nova Marilândia",
-        u"Nova Maringá",
-        u"Nova Monte Verde",
-        u"Nova Mutum",
-        u"Nova Nazaré",
-        u"Nova Olímpia",
-        u"Nova Santa Helena",
-        u"Nova Ubiratã",
-        u"Nova Xavantina",
-        u"Novo Horizonte do Norte",
-        u"Novo Mundo",
-        u"Novo Santo Antônio",
-        u"Novo São Joaquim",
-        u"Paranaíta",
-        u"Paranatinga",
-        u"Pedra Preta",
-        u"Peixoto de Azevedo",
-        u"Planalto da Serra",
-        u"Poconé",
-        u"Pontal do Araguaia",
-        u"Ponte Branca",
-        u"Pontes e Lacerda",
-        u"Porto Alegre do Norte",
-        u"Porto dos Gaúchos",
-        u"Porto Esperidião",
-        u"Porto Estrela",
-        u"Poxoréo",
-        u"Primavera do Leste",
-        u"Querência",
-        u"Reserva do Cabaçal",
-        u"Ribeirão Cascalheira",
-        u"Ribeirãozinho",
-        u"Rio Branco",
-        u"Rondolândia",
-        u"Rondonópolis",
-        u"Rosário Oeste",
-        u"Salto do Céu",
-        u"Santa Carmem",
-        u"Santa Cruz do Xingu",
-        u"Santa Rita do Trivelato",
-        u"Santa Terezinha",
-        u"Santo Afonso",
-        u"Santo Antônio do Leste",
-        u"Santo Antônio do Leverger",
-        u"São Félix do Araguaia",
-        u"São José do Povo",
-        u"São José do Rio Claro",
-        u"São José do Xingu",
-        u"São José dos Quatro Marcos",
-        u"São Pedro da Cipa",
-        u"Sapezal",
-        u"Serra Nova Dourada",
-        u"Sinop",
-        u"Sorriso",
-        u"Tabaporã",
-        u"Tangará da Serra",
-        u"Tapurah",
-        u"Terra Nova do Norte",
-        u"Tesouro",
-        u"Torixoréu",
-        u"União do Sul",
-        u"Vale de São Domingos",
-        u"Várzea Grande",
-        u"Vera",
-        u"Vila Bela da Santíssima Trindade",
-        u"Vila Rica",],
-    'MS':[
-        u"água Clara",
-        u"Alcinópolis",
-        u"Amambai",
-        u"Anastácio",
-        u"Anaurilândia",
-        u"Angélica",
-        u"Antônio João",
-        u"Aparecida do Taboado",
-        u"Aquidauana",
-        u"Aral Moreira",
-        u"Bandeirantes",
-        u"Bataguassu",
-        u"Batayporã",
-        u"Bela Vista",
-        u"Bodoquena",
-        u"Bonito",
-        u"Brasilândia",
-        u"Caarapó",
-        u"Camapuã",
-        u"Campo Grande",
-        u"Caracol",
-        u"Cassilândia",
-        u"Chapadão do Sul",
-        u"Corguinho",
-        u"Coronel Sapucaia",
-        u"Corumbá",
-        u"Costa Rica",
-        u"Coxim",
-        u"Deodápolis",
-        u"Dois Irmãos do Buriti",
-        u"Douradina",
-        u"Dourados",
-        u"Eldorado",
-        u"Fátima do Sul",
-        u"Figueirão",
-        u"Glória de Dourados",
-        u"Guia Lopes da Laguna",
-        u"Iguatemi",
-        u"Inocência",
-        u"Itaporã",
-        u"Itaquiraí",
-        u"Ivinhema",
-        u"Japorã",
-        u"Jaraguari",
-        u"Jardim",
-        u"Jateí",
-        u"Juti",
-        u"Ladário",
-        u"Laguna Carapã",
-        u"Maracaju",
-        u"Miranda",
-        u"Mundo Novo",
-        u"Naviraí",
-        u"Nioaque",
-        u"Nova Alvorada do Sul",
-        u"Nova Andradina",
-        u"Novo Horizonte do Sul",
-        u"Paranaíba",
-        u"Paranhos",
-        u"Pedro Gomes",
-        u"Ponta Porã",
-        u"Porto Murtinho",
-        u"Ribas do Rio Pardo",
-        u"Rio Brilhante",
-        u"Rio Negro",
-        u"Rio Verde de Mato Grosso",
-        u"Rochedo",
-        u"Santa Rita do Pardo",
-        u"São Gabriel do Oeste",
-        u"Selvíria",
-        u"Sete Quedas",
-        u"Sidrolândia",
-        u"Sonora",
-        u"Tacuru",
-        u"Taquarussu",
-        u"Terenos",
-        u"Três Lagoas",
-        u"Vicentina",],
-    'MG':[
-        u"Abadia dos Dourados",
-        u"Abaeté",
-        u"Abre Campo",
-        u"Acaiaca",
-        u"Açucena",
-        u"água Boa",
-        u"água Comprida",
-        u"Aguanil",
-        u"águas Formosas",
-        u"águas Vermelhas",
-        u"Aimorés",
-        u"Aiuruoca",
-        u"Alagoa",
-        u"Albertina",
-        u"Além Paraíba",
-        u"Alfenas",
-        u"Alfredo Vasconcelos",
-        u"Almenara",
-        u"Alpercata",
-        u"Alpinópolis",
-        u"Alterosa",
-        u"Alto Caparaó",
-        u"Alto Jequitibá",
-        u"Alto Rio Doce",
-        u"Alvarenga",
-        u"Alvinópolis",
-        u"Alvorada de Minas",
-        u"Amparo do Serra",
-        u"Andradas",
-        u"Andrelândia",
-        u"Angelândia",
-        u"Antônio Carlos",
-        u"Antônio Dias",
-        u"Antônio Prado de Minas",
-        u"Araçaí",
-        u"Aracitaba",
-        u"Araçuaí",
-        u"Araguari",
-        u"Arantina",
-        u"Araponga",
-        u"Araporã",
-        u"Arapuá",
-        u"Araújos",
-        u"Araxá",
-        u"Arceburgo",
-        u"Arcos",
-        u"Areado",
-        u"Argirita",
-        u"Aricanduva",
-        u"Arinos",
-        u"Astolfo Dutra",
-        u"Ataléia",
-        u"Augusto de Lima",
-        u"Baependi",
-        u"Baldim",
-        u"Bambuí",
-        u"Bandeira",
-        u"Bandeira do Sul",
-        u"Barão de Cocais",
-        u"Barão de Monte Alto",
-        u"Barbacena",
-        u"Barra Longa",
-        u"Barroso",
-        u"Bela Vista de Minas",
-        u"Belmiro Braga",
-        u"Belo Horizonte",
-        u"Belo Oriente",
-        u"Belo Vale",
-        u"Berilo",
-        u"Berizal",
-        u"Bertópolis",
-        u"Betim",
-        u"Bias Fortes",
-        u"Bicas",
-        u"Biquinhas",
-        u"Boa Esperança",
-        u"Bocaina de Minas",
-        u"Bocaiúva",
-        u"Bom Despacho",
-        u"Bom Jardim de Minas",
-        u"Bom Jesus da Penha",
-        u"Bom Jesus do Amparo",
-        u"Bom Jesus do Galho",
-        u"Bom Repouso",
-        u"Bom Sucesso",
-        u"Bonfim",
-        u"Bonfinópolis de Minas",
-        u"Bonito de Minas",
-        u"Borda da Mata",
-        u"Botelhos",
-        u"Botumirim",
-        u"Brás Pires",
-        u"Brasilândia de Minas",
-        u"Brasília de Minas",
-        u"Brasópolis",
-        u"Braúnas",
-        u"Brumadinho",
-        u"Bueno Brandão",
-        u"Buenópolis",
-        u"Bugre",
-        u"Buritis",
-        u"Buritizeiro",
-        u"Cabeceira Grande",
-        u"Cabo Verde",
-        u"Cachoeira da Prata",
-        u"Cachoeira de Minas",
-        u"Cachoeira de Pajeú",
-        u"Cachoeira Dourada",
-        u"Caetanópolis",
-        u"Caeté",
-        u"Caiana",
-        u"Cajuri",
-        u"Caldas",
-        u"Camacho",
-        u"Camanducaia",
-        u"Cambuí",
-        u"Cambuquira",
-        u"Campanário",
-        u"Campanha",
-        u"Campestre",
-        u"Campina Verde",
-        u"Campo Azul",
-        u"Campo Belo",
-        u"Campo do Meio",
-        u"Campo Florido",
-        u"Campos Altos",
-        u"Campos Gerais",
-        u"Cana Verde",
-        u"Canaã",
-        u"Canápolis",
-        u"Candeias",
-        u"Cantagalo",
-        u"Caparaó",
-        u"Capela Nova",
-        u"Capelinha",
-        u"Capetinga",
-        u"Capim Branco",
-        u"Capinópolis",
-        u"Capitão Andrade",
-        u"Capitão Enéas",
-        u"Capitólio",
-        u"Caputira",
-        u"Caraí",
-        u"Caranaíba",
-        u"Carandaí",
-        u"Carangola",
-        u"Caratinga",
-        u"Carbonita",
-        u"Careaçu",
-        u"Carlos Chagas",
-        u"Carmésia",
-        u"Carmo da Cachoeira",
-        u"Carmo da Mata",
-        u"Carmo de Minas",
-        u"Carmo do Cajuru",
-        u"Carmo do Paranaíba",
-        u"Carmo do Rio Claro",
-        u"Carmópolis de Minas",
-        u"Carneirinho",
-        u"Carrancas",
-        u"Carvalhópolis",
-        u"Carvalhos",
-        u"Casa Grande",
-        u"Cascalho Rico",
-        u"Cássia",
-        u"Cataguases",
-        u"Catas Altas",
-        u"Catas Altas da Noruega",
-        u"Catuji",
-        u"Catuti",
-        u"Caxambu",
-        u"Cedro do Abaeté",
-        u"Central de Minas",
-        u"Centralina",
-        u"Chácara",
-        u"Chalé",
-        u"Chapada do Norte",
-        u"Chapada Gaúcha",
-        u"Chiador",
-        u"Cipotânea",
-        u"Claraval",
-        u"Claro dos Poç&otilde;es",
-        u"Cláudio",
-        u"Coimbra",
-        u"Coluna",
-        u"Comendador Gomes",
-        u"Comercinho",
-        u"Conceição da Aparecida",
-        u"Conceição da Barra de Minas",
-        u"Conceição das Alagoas",
-        u"Conceição das Pedras",
-        u"Conceição de Ipanema",
-        u"Conceição do Mato Dentro",
-        u"Conceição do Pará",
-        u"Conceição do Rio Verde",
-        u"Conceição dos Ouros",
-        u"Cônego Marinho",
-        u"Confins",
-        u"Congonhal",
-        u"Congonhas",
-        u"Congonhas do Norte",
-        u"Conquista",
-        u"Conselheiro Lafaiete",
-        u"Conselheiro Pena",
-        u"Consolação",
-        u"Contagem",
-        u"Coqueiral",
-        u"Coração de Jesus",
-        u"Cordisburgo",
-        u"Cordislândia",
-        u"Corinto",
-        u"Coroaci",
-        u"Coromandel",
-        u"Coronel Fabriciano",
-        u"Coronel Murta",
-        u"Coronel Pacheco",
-        u"Coronel Xavier Chaves",
-        u"Córrego Danta",
-        u"Córrego do Bom Jesus",
-        u"Córrego Fundo",
-        u"Córrego Novo",
-        u"Couto de Magalhães de Minas",
-        u"Crisólita",
-        u"Cristais",
-        u"Cristália",
-        u"Cristiano Otoni",
-        u"Cristina",
-        u"Crucilândia",
-        u"Cruzeiro da Fortaleza",
-        u"Cruzília",
-        u"Cuparaque",
-        u"Curral de Dentro",
-        u"Curvelo",
-        u"Datas",
-        u"Delfim Moreira",
-        u"Delfinópolis",
-        u"Delta",
-        u"Descoberto",
-        u"Desterro de Entre Rios",
-        u"Desterro do Melo",
-        u"Diamantina",
-        u"Diogo de Vasconcelos",
-        u"Dionísio",
-        u"Divinésia",
-        u"Divino",
-        u"Divino das Laranjeiras",
-        u"Divinolândia de Minas",
-        u"Divinópolis",
-        u"Divisa Alegre",
-        u"Divisa Nova",
-        u"Divisópolis",
-        u"Dom Bosco",
-        u"Dom Cavati",
-        u"Dom Joaquim",
-        u"Dom Silvério",
-        u"Dom Viçoso",
-        u"Dona Eusébia",
-        u"Dores de Campos",
-        u"Dores de Guanhães",
-        u"Dores do Indaiá",
-        u"Dores do Turvo",
-        u"Doresópolis",
-        u"Douradoquara",
-        u"Durandé",
-        u"Elói Mendes",
-        u"Engenheiro Caldas",
-        u"Engenheiro Navarro",
-        u"Entre Folhas",
-        u"Entre Rios de Minas",
-        u"Ervália",
-        u"Esmeraldas",
-        u"Espera Feliz",
-        u"Espinosa",
-        u"Espírito Santo do Dourado",
-        u"Estiva",
-        u"Estrela Dalva",
-        u"Estrela do Indaiá",
-        u"Estrela do Sul",
-        u"Eugenópolis",
-        u"Ewbank da Câmara",
-        u"Extrema",
-        u"Fama",
-        u"Faria Lemos",
-        u"Felício dos Santos",
-        u"Felisburgo",
-        u"Felixlândia",
-        u"Fernandes Tourinho",
-        u"Ferros",
-        u"Fervedouro",
-        u"Florestal",
-        u"Formiga",
-        u"Formoso",
-        u"Fortaleza de Minas",
-        u"Fortuna de Minas",
-        u"Francisco Badaró",
-        u"Francisco Dumont",
-        u"Francisco Sá",
-        u"Franciscópolis",
-        u"Frei Gaspar",
-        u"Frei Inocêncio",
-        u"Frei Lagonegro",
-        u"Fronteira",
-        u"Fronteira dos Vales",
-        u"Fruta de Leite",
-        u"Frutal",
-        u"Funilândia",
-        u"Galiléia",
-        u"Gameleiras",
-        u"Glaucilândia",
-        u"Goiabeira",
-        u"Goianá",
-        u"Gonçalves",
-        u"Gonzaga",
-        u"Gouveia",
-        u"Governador Valadares",
-        u"Grão Mogol",
-        u"Grupiara",
-        u"Guanhães",
-        u"Guapé",
-        u"Guaraciaba",
-        u"Guaraciama",
-        u"Guaranésia",
-        u"Guarani",
-        u"Guarará",
-        u"Guarda-Mor",
-        u"Guaxupé",
-        u"Guidoval",
-        u"Guimarânia",
-        u"Guiricema",
-        u"Gurinhatã",
-        u"Heliodora",
-        u"Iapu",
-        u"Ibertioga",
-        u"Ibiá",
-        u"Ibiaí",
-        u"Ibiracatu",
-        u"Ibiraci",
-        u"Ibirité",
-        u"Ibitiúra de Minas",
-        u"Ibituruna",
-        u"Icaraí de Minas",
-        u"Igarapé",
-        u"Igaratinga",
-        u"Iguatama",
-        u"Ijaci",
-        u"Ilicínea",
-        u"Imbé de Minas",
-        u"Inconfidentes",
-        u"Indaiabira",
-        u"Indianópolis",
-        u"Ingaí",
-        u"Inhapim",
-        u"Inhaúma",
-        u"Inimutaba",
-        u"Ipaba",
-        u"Ipanema",
-        u"Ipatinga",
-        u"Ipiaçu",
-        u"Ipuiúna",
-        u"Iraí de Minas",
-        u"Itabira",
-        u"Itabirinha",
-        u"Itabirito",
-        u"Itacambira",
-        u"Itacarambi",
-        u"Itaguara",
-        u"Itaipé",
-        u"Itajubá",
-        u"Itamarandiba",
-        u"Itamarati de Minas",
-        u"Itambacuri",
-        u"Itambé do Mato Dentro",
-        u"Itamogi",
-        u"Itamonte",
-        u"Itanhandu",
-        u"Itanhomi",
-        u"Itaobim",
-        u"Itapagipe",
-        u"Itapecerica",
-        u"Itapeva",
-        u"Itatiaiuçu",
-        u"Itaú de Minas",
-        u"Itaúna",
-        u"Itaverava",
-        u"Itinga",
-        u"Itueta",
-        u"Ituiutaba",
-        u"Itumirim",
-        u"Iturama",
-        u"Itutinga",
-        u"Jaboticatubas",
-        u"Jacinto",
-        u"Jacuí",
-        u"Jacutinga",
-        u"Jaguaraçu",
-        u"Jaíba",
-        u"Jampruca",
-        u"Janaúba",
-        u"Januária",
-        u"Japaraíba",
-        u"Japonvar",
-        u"Jeceaba",
-        u"Jenipapo de Minas",
-        u"Jequeri",
-        u"Jequitaí",
-        u"Jequitibá",
-        u"Jequitinhonha",
-        u"Jesuânia",
-        u"Joaíma",
-        u"Joanésia",
-        u"João Monlevade",
-        u"João Pinheiro",
-        u"Joaquim Felício",
-        u"Jordânia",
-        u"José Gonçalves de Minas",
-        u"José Raydan",
-        u"Josenópolis",
-        u"Juatuba",
-        u"Juiz de Fora",
-        u"Juramento",
-        u"Juruaia",
-        u"Juvenília",
-        u"Ladainha",
-        u"Lagamar",
-        u"Lagoa da Prata",
-        u"Lagoa dos Patos",
-        u"Lagoa Dourada",
-        u"Lagoa Formosa",
-        u"Lagoa Grande",
-        u"Lagoa Santa",
-        u"Lajinha",
-        u"Lambari",
-        u"Lamim",
-        u"Laranjal",
-        u"Lassance",
-        u"Lavras",
-        u"Leandro Ferreira",
-        u"Leme do Prado",
-        u"Leopoldina",
-        u"Liberdade",
-        u"Lima Duarte",
-        u"Limeira do Oeste",
-        u"Lontra",
-        u"Luisburgo",
-        u"Luislândia",
-        u"Luminárias",
-        u"Luz",
-        u"Machacalis",
-        u"Machado",
-        u"Madre de Deus de Minas",
-        u"Malacacheta",
-        u"Mamonas",
-        u"Manga",
-        u"Manhuaçu",
-        u"Manhumirim",
-        u"Mantena",
-        u"Mar de Espanha",
-        u"Maravilhas",
-        u"Maria da Fé",
-        u"Mariana",
-        u"Marilac",
-        u"Mário Campos",
-        u"Maripá de Minas",
-        u"Marliéria",
-        u"Marmelópolis",
-        u"Martinho Campos",
-        u"Martins Soares",
-        u"Mata Verde",
-        u"Materlândia",
-        u"Mateus Leme",
-        u"Mathias Lobato",
-        u"Matias Barbosa",
-        u"Matias Cardoso",
-        u"Matipó",
-        u"Mato Verde",
-        u"Matozinhos",
-        u"Matutina",
-        u"Medeiros",
-        u"Medina",
-        u"Mendes Pimentel",
-        u"Mercês",
-        u"Mesquita",
-        u"Minas Novas",
-        u"Minduri",
-        u"Mirabela",
-        u"Miradouro",
-        u"Miraí",
-        u"Miravânia",
-        u"Moeda",
-        u"Moema",
-        u"Monjolos",
-        u"Monsenhor Paulo",
-        u"Montalvânia",
-        u"Monte Alegre de Minas",
-        u"Monte Azul",
-        u"Monte Belo",
-        u"Monte Carmelo",
-        u"Monte Formoso",
-        u"Monte Santo de Minas",
-        u"Monte Sião",
-        u"Montes Claros",
-        u"Montezuma",
-        u"Morada Nova de Minas",
-        u"Morro da Garça",
-        u"Morro do Pilar",
-        u"Munhoz",
-        u"Muriaé",
-        u"Mutum",
-        u"Muzambinho",
-        u"Nacip Raydan",
-        u"Nanuque",
-        u"Naque",
-        u"Natalândia",
-        u"Natércia",
-        u"Nazareno",
-        u"Nepomuceno",
-        u"Ninheira",
-        u"Nova Belém",
-        u"Nova Era",
-        u"Nova Lima",
-        u"Nova Módica",
-        u"Nova Ponte",
-        u"Nova Porteirinha",
-        u"Nova Resende",
-        u"Nova Serrana",
-        u"Nova União",
-        u"Novo Cruzeiro",
-        u"Novo Oriente de Minas",
-        u"Novorizonte",
-        u"Olaria",
-        u"Olhos-d'água",
-        u"Olímpio Noronha",
-        u"Oliveira",
-        u"Oliveira Fortes",
-        u"Onça de Pitangui",
-        u"Oratórios",
-        u"Orizânia",
-        u"Ouro Branco",
-        u"Ouro Fino",
-        u"Ouro Preto",
-        u"Ouro Verde de Minas",
-        u"Padre Carvalho",
-        u"Padre Paraíso",
-        u"Pai Pedro",
-        u"Paineiras",
-        u"Pains",
-        u"Paiva",
-        u"Palma",
-        u"Palmópolis",
-        u"Papagaios",
-        u"Pará de Minas",
-        u"Paracatu",
-        u"Paraguaçu",
-        u"Paraisópolis",
-        u"Paraopeba",
-        u"Passa Quatro",
-        u"Passa Tempo",
-        u"Passabém",
-        u"Passa-Vinte",
-        u"Passos",
-        u"Patis",
-        u"Patos de Minas",
-        u"Patrocínio",
-        u"Patrocínio do Muriaé",
-        u"Paula Cândido",
-        u"Paulistas",
-        u"Pavão",
-        u"Peçanha",
-        u"Pedra Azul",
-        u"Pedra Bonita",
-        u"Pedra do Anta",
-        u"Pedra do Indaiá",
-        u"Pedra Dourada",
-        u"Pedralva",
-        u"Pedras de Maria da Cruz",
-        u"Pedrinópolis",
-        u"Pedro Leopoldo",
-        u"Pedro Teixeira",
-        u"Pequeri",
-        u"Pequi",
-        u"Perdigão",
-        u"Perdizes",
-        u"Perd&otilde;es",
-        u"Periquito",
-        u"Pescador",
-        u"Piau",
-        u"Piedade de Caratinga",
-        u"Piedade de Ponte Nova",
-        u"Piedade do Rio Grande",
-        u"Piedade dos Gerais",
-        u"Pimenta",
-        u"Pingo-d'água",
-        u"Pintópolis",
-        u"Piracema",
-        u"Pirajuba",
-        u"Piranga",
-        u"Piranguçu",
-        u"Piranguinho",
-        u"Pirapetinga",
-        u"Pirapora",
-        u"Piraúba",
-        u"Pitangui",
-        u"Piumhi",
-        u"Planura",
-        u"Poço Fundo",
-        u"Poços de Caldas",
-        u"Pocrane",
-        u"Pompéu",
-        u"Ponte Nova",
-        u"Ponto Chique",
-        u"Ponto dos Volantes",
-        u"Porteirinha",
-        u"Porto Firme",
-        u"Poté",
-        u"Pouso Alegre",
-        u"Pouso Alto",
-        u"Prados",
-        u"Prata",
-        u"Pratápolis",
-        u"Pratinha",
-        u"Presidente Bernardes",
-        u"Presidente Juscelino",
-        u"Presidente Kubitschek",
-        u"Presidente Olegário",
-        u"Prudente de Morais",
-        u"Quartel Geral",
-        u"Queluzito",
-        u"Raposos",
-        u"Raul Soares",
-        u"Recreio",
-        u"Reduto",
-        u"Resende Costa",
-        u"Resplendor",
-        u"Ressaquinha",
-        u"Riachinho",
-        u"Riacho dos Machados",
-        u"Ribeirão das Neves",
-        u"Ribeirão Vermelho",
-        u"Rio Acima",
-        u"Rio Casca",
-        u"Rio do Prado",
-        u"Rio Doce",
-        u"Rio Espera",
-        u"Rio Manso",
-        u"Rio Novo",
-        u"Rio Paranaíba",
-        u"Rio Pardo de Minas",
-        u"Rio Piracicaba",
-        u"Rio Pomba",
-        u"Rio Preto",
-        u"Rio Vermelho",
-        u"Ritápolis",
-        u"Rochedo de Minas",
-        u"Rodeiro",
-        u"Romaria",
-        u"Rosário da Limeira",
-        u"Rubelita",
-        u"Rubim",
-        u"Sabará",
-        u"Sabinópolis",
-        u"Sacramento",
-        u"Salinas",
-        u"Salto da Divisa",
-        u"Santa Bárbara",
-        u"Santa Bárbara do Leste",
-        u"Santa Bárbara do Monte Verde",
-        u"Santa Bárbara do Tugúrio",
-        u"Santa Cruz de Minas",
-        u"Santa Cruz de Salinas",
-        u"Santa Cruz do Escalvado",
-        u"Santa Efigênia de Minas",
-        u"Santa Fé de Minas",
-        u"Santa Helena de Minas",
-        u"Santa Juliana",
-        u"Santa Luzia",
-        u"Santa Margarida",
-        u"Santa Maria de Itabira",
-        u"Santa Maria do Salto",
-        u"Santa Maria do Suaçuí",
-        u"Santa Rita de Caldas",
-        u"Santa Rita de Ibitipoca",
-        u"Santa Rita de Jacutinga",
-        u"Santa Rita de Minas",
-        u"Santa Rita do Itueto",
-        u"Santa Rita do Sapucaí",
-        u"Santa Rosa da Serra",
-        u"Santa Vitória",
-        u"Santana da Vargem",
-        u"Santana de Cataguases",
-        u"Santana de Pirapama",
-        u"Santana do Deserto",
-        u"Santana do Garambéu",
-        u"Santana do Jacaré",
-        u"Santana do Manhuaçu",
-        u"Santana do Paraíso",
-        u"Santana do Riacho",
-        u"Santana dos Montes",
-        u"Santo Antônio do Amparo",
-        u"Santo Antônio do Aventureiro",
-        u"Santo Antônio do Grama",
-        u"Santo Antônio do Itambé",
-        u"Santo Antônio do Jacinto",
-        u"Santo Antônio do Monte",
-        u"Santo Antônio do Retiro",
-        u"Santo Antônio do Rio Abaixo",
-        u"Santo Hipólito",
-        u"Santos Dumont",
-        u"São Bento Abade",
-        u"São Brás do Suaçuí",
-        u"São Domingos das Dores",
-        u"São Domingos do Prata",
-        u"São Félix de Minas",
-        u"São Francisco",
-        u"São Francisco de Paula",
-        u"São Francisco de Sales",
-        u"São Francisco do Glória",
-        u"São Geraldo",
-        u"São Geraldo daPiedade",
-        u"São Geraldo do Baixio",
-        u"São Gonçalo do Abaeté",
-        u"São Gonçalo do Pará",
-        u"São Gonçalo do Rio Abaixo",
-        u"São Gonçalo do Rio Preto",
-        u"São Gonçalo do Sapucaí",
-        u"São Gotardo",
-        u"São João Batista do Glória",
-        u"São João da Lagoa",
-        u"São João da Mata",
-        u"São João da Ponte",
-        u"São João das Miss&otilde;es",
-        u"São João del Rei",
-        u"São João do Manhuaçu",
-        u"São João do Manteninha",
-        u"São João do Oriente",
-        u"São João do Pacuí",
-        u"São João do Paraíso",
-        u"São João Evangelista",
-        u"São João Nepomuceno",
-        u"São Joaquim de Bicas",
-        u"São José da Barra",
-        u"São José da Lapa",
-        u"São José da Safira",
-        u"São José da Varginha",
-        u"São José do Alegre",
-        u"São José do Divino",
-        u"São José do Goiabal",
-        u"São José do Jacuri",
-        u"São José do Mantimento",
-        u"São Lourenço",
-        u"São Miguel do Anta",
-        u"São Pedro da União",
-        u"São Pedro do Suaçuí",
-        u"São Pedro dos Ferros",
-        u"São Romão",
-        u"São Roque de Minas",
-        u"São Sebastião da Bela Vista",
-        u"São Sebastião da Vargem Alegre",
-        u"São Sebastião do Anta",
-        u"São Sebastião do Maranhão",
-        u"São Sebastião do Oeste",
-        u"São Sebastião do Paraíso",
-        u"São Sebastião do Rio Preto",
-        u"São Sebastião do Rio Verde",
-        u"São Thomé das Letras",
-        u"São Tiago",
-        u"São Tomás de Aquino",
-        u"São Vicente de Minas",
-        u"Sapucaí-Mirim",
-        u"Sardoá",
-        u"Sarzedo",
-        u"Sem-Peixe",
-        u"Senador Amaral",
-        u"Senador Cortes",
-        u"Senador Firmino",
-        u"Senador José Bento",
-        u"Senador Modestino Gonçalves",
-        u"Senhora de Oliveira",
-        u"Senhora do Porto",
-        u"Senhora dos Remédios",
-        u"Sericita",
-        u"Seritinga",
-        u"Serra Azul de Minas",
-        u"Serra da Saudade",
-        u"Serra do Salitre",
-        u"Serra dos Aimorés",
-        u"Serrania",
-        u"Serranópolis de Minas",
-        u"Serranos",
-        u"Serro",
-        u"Sete Lagoas",
-        u"Setubinha",
-        u"Silveirânia",
-        u"Silvianópolis",
-        u"Simão Pereira",
-        u"Simonésia",
-        u"Sobrália",
-        u"Soledade de Minas",
-        u"Tabuleiro",
-        u"Taiobeiras",
-        u"Taparuba",
-        u"Tapira",
-        u"Tapiraí",
-        u"Taquaraçu de Minas",
-        u"Tarumirim",
-        u"Teixeiras",
-        u"Teófilo Otoni",
-        u"Timóteo",
-        u"Tiradentes",
-        u"Tiros",
-        u"Tocantins",
-        u"Tocos do Moji",
-        u"Toledo",
-        u"Tombos",
-        u"Três Coraç&otilde;es",
-        u"Três Marias",
-        u"Três Pontas",
-        u"Tumiritinga",
-        u"Tupaciguara",
-        u"Turmalina",
-        u"Turvolândia",
-        u"Ubá",
-        u"Ubaí",
-        u"Ubaporanga",
-        u"Uberaba",
-        u"Uberlândia",
-        u"Umburatiba",
-        u"Unaí",
-        u"União de Minas",
-        u"Uruana de Minas",
-        u"Urucânia",
-        u"Urucuia",
-        u"Vargem Alegre",
-        u"Vargem Bonita",
-        u"Vargem Grande do Rio Pardo",
-        u"Varginha",
-        u"Varjão de Minas",
-        u"Várzea da Palma",
-        u"Varzelândia",
-        u"Vazante",
-        u"Verdelândia",
-        u"Veredinha",
-        u"Veríssimo",
-        u"Vermelho Novo",
-        u"Vespasiano",
-        u"Viçosa",
-        u"Vieiras",
-        u"Virgem da Lapa",
-        u"Virgínia",
-        u"Virginópolis",
-        u"Virgolândia",
-        u"Visconde do Rio Branco",
-        u"Volta Grande",
-        u"Wenceslau Braz",],
-    'PA':[
-        u"Abaetetuba",
-        u"Abel Figueiredo",
-        u"Acará",
-        u"Afuá",
-        u"água Azul do Norte",
-        u"Alenquer",
-        u"Almeirim",
-        u"Altamira",
-        u"Anajás",
-        u"Ananindeua",
-        u"Anapu",
-        u"Augusto Corrêa",
-        u"Aurora do Pará",
-        u"Aveiro",
-        u"Bagre",
-        u"Baião",
-        u"Bannach",
-        u"Barcarena",
-        u"Belém",
-        u"Belterra",
-        u"Benevides",
-        u"Bom Jesus do Tocantins",
-        u"Bonito",
-        u"Bragança",
-        u"Brasil Novo",
-        u"Brejo Grande do Araguaia",
-        u"Breu Branco",
-        u"Breves",
-        u"Bujaru",
-        u"Cachoeira do Arari",
-        u"Cachoeira do Piriá",
-        u"Cametá",
-        u"Canaã dos Carajás",
-        u"Capanema",
-        u"Capitão Poço",
-        u"Castanhal",
-        u"Chaves",
-        u"Colares",
-        u"Conceição do Araguaia",
-        u"Concórdia do Pará",
-        u"Cumaru do Norte",
-        u"Curionópolis",
-        u"Curralinho",
-        u"Curuá",
-        u"Curuçá",
-        u"Dom Eliseu",
-        u"Eldorado dos Carajás",
-        u"Faro",
-        u"Floresta do Araguaia",
-        u"Garrafão do Norte",
-        u"Goianésia do Pará",
-        u"Gurupá",
-        u"Igarapé-Açu",
-        u"Igarapé-Miri",
-        u"Inhangapi",
-        u"Ipixuna do Pará",
-        u"Irituia",
-        u"Itaituba",
-        u"Itupiranga",
-        u"Jacareacanga",
-        u"Jacundá",
-        u"Juruti",
-        u"Limoeiro do Ajuru",
-        u"Mãe do Rio",
-        u"Magalhães Barata",
-        u"Marabá",
-        u"Maracanã",
-        u"Marapanim",
-        u"Marituba",
-        u"Medicilândia",
-        u"Melgaço",
-        u"Mocajuba",
-        u"Moju",
-        u"Monte Alegre",
-        u"Muaná",
-        u"Nova Esperança do Piriá",
-        u"Nova Ipixuna",
-        u"Nova Timboteua",
-        u"Novo Progresso",
-        u"Novo Repartimento",
-        u"Óbidos",
-        u"Oeiras do Pará",
-        u"Oriximiná",
-        u"Ourém",
-        u"Ourilândia do Norte",
-        u"Pacajá",
-        u"Palestina do Pará",
-        u"Paragominas",
-        u"Parauapebas",
-        u"Pau D'Arco",
-        u"Peixe-Boi",
-        u"Piçarra",
-        u"Placas",
-        u"Ponta de Pedras",
-        u"Portel",
-        u"Porto de Moz",
-        u"Prainha",
-        u"Primavera",
-        u"Quatipuru",
-        u"Redenção",
-        u"Rio Maria",
-        u"Rondon do Pará",
-        u"Rurópolis",
-        u"Salinópolis",
-        u"Salvaterra",
-        u"Santa Bárbara do Pará",
-        u"Santa Cruz do Arari",
-        u"Santa Isabel do Pará",
-        u"Santa Luzia do Pará",
-        u"Santa Maria das Barreiras",
-        u"Santa Maria do Pará",
-        u"Santana do Araguaia",
-        u"Santarém",
-        u"Santarém Novo",
-        u"Santo Antônio do Tauá",
-        u"São Caetano de Odivelas",
-        u"São Domingos do Araguaia",
-        u"São Domingos do Capim",
-        u"São Félix do Xingu",
-        u"São Francisco do Pará",
-        u"São Geraldo do Araguaia",
-        u"São João da Ponta",
-        u"São João de Pirabas",
-        u"São João do Araguaia",
-        u"São Miguel do Guamá",
-        u"São Sebastião da Boa Vista",
-        u"Sapucaia",
-        u"Senador José Porfírio",
-        u"Soure",
-        u"Tailândia",
-        u"Terra Alta",
-        u"Terra Santa",
-        u"Tomé-Açu",
-        u"Tracuateua",
-        u"Trairão",
-        u"Tucumã",
-        u"Tucuruí",
-        u"Ulianópolis",
-        u"Uruará",
-        u"Vigia",
-        u"Viseu",
-        u"Vitória do Xingu",
-        u"Xinguara",],
-    'PB':[
-        u"Água Branca",
-        u"Aguiar",
-        u"Alagoa Grande",
-        u"Alagoa Nova",
-        u"Alagoinha",
-        u"Alcantil",
-        u"Algodão de Jandaíra",
-        u"Alhandra",
-        u"Amparo",
-        u"Aparecida",
-        u"Araçagi",
-        u"Arara",
-        u"Araruna",
-        u"Areia",
-        u"Areia de Baraúnas",
-        u"Areial",
-        u"Aroeiras",
-        u"Assunção",
-        u"Baía da Traição",
-        u"Bananeiras",
-        u"Baraúna",
-        u"Barra de Santa Rosa",
-        u"Barra de Santana",
-        u"Barra de São Miguel",
-        u"Bayeux",
-        u"Belém",
-        u"Belém do Brejo do Cruz",
-        u"Bernardino Batista",
-        u"Boa Ventura",
-        u"Boa Vista",
-        u"Bom Jesus",
-        u"Bom Sucesso",
-        u"Bonito de Santa Fé",
-        u"Boqueirão",
-        u"Borborema",
-        u"Brejo do Cruz",
-        u"Brejo dos Santos",
-        u"Caaporã",
-        u"Cabaceiras",
-        u"Cabedelo",
-        u"Cachoeira dos índios",
-        u"Cacimba de Areia",
-        u"Cacimba de Dentro",
-        u"Cacimbas",
-        u"Caiçara",
-        u"Cajazeiras",
-        u"Cajazeirinhas",
-        u"Caldas Brandão",
-        u"Camalaú",
-        u"Campina Grande",
-        u"Campo de Santana",
-        u"Capim",
-        u"Caraúbas",
-        u"Carrapateira",
-        u"Casserengue",
-        u"Catingueira",
-        u"Catolé do Rocha",
-        u"Caturité",
-        u"Conceição",
-        u"Condado",
-        u"Conde",
-        u"Congo",
-        u"Coremas",
-        u"Coxixola",
-        u"Cruz do Espírito Santo",
-        u"Cubati",
-        u"Cuité",
-        u"Cuité de Mamanguape",
-        u"Cuitegi",
-        u"Curral de Cima",
-        u"Curral Velho",
-        u"Damião",
-        u"Desterro",
-        u"Diamante",
-        u"Dona Inês",
-        u"Duas Estradas",
-        u"Emas",
-        u"Esperança",
-        u"Fagundes",
-        u"Frei Martinho",
-        u"Gado Bravo",
-        u"Guarabira",
-        u"Gurinhém",
-        u"Gurjão",
-        u"Ibiara",
-        u"Igaracy",
-        u"Imaculada",
-        u"Ingá",
-        u"Itabaiana",
-        u"Itaporanga",
-        u"Itapororoca",
-        u"Itatuba",
-        u"Jacaraú",
-        u"Jericó",
-        u"João Pessoa",
-        u"Juarez Távora",
-        u"Juazeirinho",
-        u"Junco do Seridó",
-        u"Juripiranga",
-        u"Juru",
-        u"Lagoa",
-        u"Lagoa de Dentro",
-        u"Lagoa Seca",
-        u"Lastro",
-        u"Livramento",
-        u"Logradouro",
-        u"Lucena",
-        u"Mãe d'água",
-        u"Malta",
-        u"Mamanguape",
-        u"Manaíra",
-        u"Marcação",
-        u"Mari",
-        u"Marizópolis",
-        u"Massaranduba",
-        u"Mataraca",
-        u"Matinhas",
-        u"Mato Grosso",
-        u"Maturéia",
-        u"Mogeiro",
-        u"Montadas",
-        u"Monte Horebe",
-        u"Monteiro",
-        u"Mulungu",
-        u"Natuba",
-        u"Nazarezinho",
-        u"Nova Floresta",
-        u"Nova Olinda",
-        u"Nova Palmeira",
-        u"Olho d'água",
-        u"Olivedos",
-        u"Ouro Velho",
-        u"Parari",
-        u"Passagem",
-        u"Patos",
-        u"Paulista",
-        u"Pedra Branca",
-        u"Pedra Lavrada",
-        u"Pedras de Fogo",
-        u"Pedro Régis",
-        u"Piancó",
-        u"Picuí",
-        u"Pilar",
-        u"Pil&otilde;es",
-        u"Pil&otilde;ezinhos",
-        u"Pirpirituba",
-        u"Pitimbu",
-        u"Pocinhos",
-        u"Poço Dantas",
-        u"Poço de José de Moura",
-        u"Pombal",
-        u"Prata",
-        u"Princesa Isabel",
-        u"Puxinanã",
-        u"Queimadas",
-        u"Quixabá",
-        u"Remígio",
-        u"Riachão",
-        u"Riachão do Bacamarte",
-        u"Riachão do Poço",
-        u"Riacho de Santo Antônio",
-        u"Riacho dos Cavalos",
-        u"Rio Tinto",
-        u"Salgadinho",
-        u"Salgado de São Félix",
-        u"Santa Cecília",
-        u"Santa Cruz",
-        u"Santa Helena",
-        u"Santa Inês",
-        u"Santa Luzia",
-        u"Santa Rita",
-        u"Santa Teresinha",
-        u"Santana de Mangueira",
-        u"Santana dos Garrotes",
-        u"Santarém",
-        u"Santo André",
-        u"São Bentinho",
-        u"São Bento",
-        u"São Domingos",
-        u"São Domingos do Cariri",
-        u"São Francisco",
-        u"São João do Cariri",
-        u"São João do Rio do Peixe",
-        u"São João do Tigre",
-        u"São José da Lagoa Tapada",
-        u"São José de Caiana",
-        u"São José de Espinharas",
-        u"São José de Piranhas",
-        u"São José de Princesa",
-        u"São José do Bonfim",
-        u"São José do Brejo do Cruz",
-        u"São José do Sabugi",
-        u"São José dos Cordeiros",
-        u"São José dos Ramos",
-        u"São Mamede",
-        u"São Miguel de Taipu",
-        u"São Sebastião de Lagoa de Roça",
-        u"São Sebastião do Umbuzeiro",
-        u"Sapé",
-        u"Seridó",
-        u"Serra Branca",
-        u"Serra da Raiz",
-        u"Serra Grande",
-        u"Serra Redonda",
-        u"Serraria",
-        u"Sertãozinho",
-        u"Sobrado",
-        u"Solânea",
-        u"Soledade",
-        u"Sossêgo",
-        u"Sousa",
-        u"Sumé",
-        u"Taperoá",
-        u"Tavares",
-        u"Teixeira",
-        u"Tenório",
-        u"Triunfo",
-        u"Uiraúna",
-        u"Umbuzeiro",
-        u"Várzea",
-        u"Vieirópolis",
-        u"Vista Serrana",
-        u"Zabelê",],
-    'PR':[
-        u"Abatiá",
-        u"Adrianópolis",
-        u"Agudos do Sul",
-        u"Almirante Tamandaré",
-        u"Altamira do Paraná",
-        u"Alto Paraíso",
-        u"Alto Paraná",
-        u"Alto Piquiri",
-        u"Altônia",
-        u"Alvorada do Sul",
-        u"Amaporã",
-        u"Ampére",
-        u"Anahy",
-        u"Andirá",
-        u"Ângulo",
-        u"Antonina",
-        u"Antônio Olinto",
-        u"Apucarana",
-        u"Arapongas",
-        u"Arapoti",
-        u"Arapuã",
-        u"Araruna",
-        u"Araucária",
-        u"Ariranha do Ivaí",
-        u"Assaí",
-        u"Assis Chateaubriand",
-        u"Astorga",
-        u"Atalaia",
-        u"Balsa Nova",
-        u"Bandeirantes",
-        u"Barbosa Ferraz",
-        u"Barra do Jacaré",
-        u"Barracão",
-        u"Bela Vista da Caroba",
-        u"Bela Vista do Paraíso",
-        u"Bituruna",
-        u"Boa Esperança",
-        u"Boa Esperança do Iguaçu",
-        u"Boa Ventura de São Roque",
-        u"Boa Vista da Aparecida",
-        u"Bocaiúva do Sul",
-        u"Bom Jesus do Sul",
-        u"Bom Sucesso",
-        u"Bom Sucesso do Sul",
-        u"Borrazópolis",
-        u"Braganey",
-        u"Brasilândia do Sul",
-        u"Cafeara",
-        u"Cafelândia",
-        u"Cafezal do Sul",
-        u"Califórnia",
-        u"Cambará",
-        u"Cambé",
-        u"Cambira",
-        u"Campina da Lagoa",
-        u"Campina do Simão",
-        u"Campina Grande do Sul",
-        u"Campo Bonito",
-        u"Campo do Tenente",
-        u"Campo Largo",
-        u"Campo Magro",
-        u"Campo Mourão",
-        u"Cândido de Abreu",
-        u"Candói",
-        u"Cantagalo",
-        u"Capanema",
-        u"Capitão Leônidas Marques",
-        u"Carambeí",
-        u"Carlópolis",
-        u"Cascavel",
-        u"Castro",
-        u"Catanduvas",
-        u"Centenário do Sul",
-        u"Cerro Azul",
-        u"Céu Azul",
-        u"Chopinzinho",
-        u"Cianorte",
-        u"Cidade Gaúcha",
-        u"Clevelândia",
-        u"Colombo",
-        u"Colorado",
-        u"Congonhinhas",
-        u"Conselheiro Mairinck",
-        u"Contenda",
-        u"Corbélia",
-        u"Cornélio Procópio",
-        u"Coronel Domingos Soares",
-        u"Coronel Vivida",
-        u"Corumbataí do Sul",
-        u"Cruz Machado",
-        u"Cruzeiro do Iguaçu",
-        u"Cruzeiro do Oeste",
-        u"Cruzeiro do Sul",
-        u"Cruzmaltina",
-        u"Curitiba",
-        u"Curiúva",
-        u"Diamante do Norte",
-        u"Diamante do Sul",
-        u"Diamante D'Oeste",
-        u"Dois Vizinhos",
-        u"Douradina",
-        u"Doutor Camargo",
-        u"Doutor Ulysses",
-        u"Enéas Marques",
-        u"Engenheiro Beltrão",
-        u"Entre Rios do Oeste",
-        u"Esperança Nova",
-        u"Espigão Alto do Iguaçu",
-        u"Farol",
-        u"Faxinal",
-        u"Fazenda Rio Grande",
-        u"Fênix",
-        u"Fernandes Pinheiro",
-        u"Figueira",
-        u"Flor da Serra do Sul",
-        u"Floraí",
-        u"Floresta",
-        u"Florestópolis",
-        u"Flórida",
-        u"Formosa do Oeste",
-        u"Foz do Iguaçu",
-        u"Foz do Jordão",
-        u"Francisco Alves",
-        u"Francisco Beltrão",
-        u"General Carneiro",
-        u"Godoy Moreira",
-        u"Goioerê",
-        u"Goioxim",
-        u"Grandes Rios",
-        u"Guaíra",
-        u"Guairaçá",
-        u"Guamiranga",
-        u"Guapirama",
-        u"Guaporema",
-        u"Guaraci",
-        u"Guaraniaçu",
-        u"Guarapuava",
-        u"Guaraqueçaba",
-        u"Guaratuba",
-        u"Honório Serpa",
-        u"Ibaiti",
-        u"Ibema",
-        u"Ibiporã",
-        u"Icaraíma",
-        u"Iguaraçu",
-        u"Iguatu",
-        u"Imbaú",
-        u"Imbituva",
-        u"Inácio Martins",
-        u"Inajá",
-        u"Indianópolis",
-        u"Ipiranga",
-        u"Iporã",
-        u"Iracema do Oeste",
-        u"Irati",
-        u"Iretama",
-        u"Itaguajé",
-        u"Itaipulândia",
-        u"Itambaracá",
-        u"Itambé",
-        u"Itapejara d'Oeste",
-        u"Itaperuçu",
-        u"Itaúna do Sul",
-        u"Ivaí",
-        u"Ivaiporã",
-        u"Ivaté",
-        u"Ivatuba",
-        u"Jaboti",
-        u"Jacarezinho",
-        u"Jaguapitã",
-        u"Jaguariaíva",
-        u"Jandaia do Sul",
-        u"Janiópolis",
-        u"Japira",
-        u"Japurá",
-        u"Jardim Alegre",
-        u"Jardim Olinda",
-        u"Jataizinho",
-        u"Jesuítas",
-        u"Joaquim Távora",
-        u"Jundiaí do Sul",
-        u"Juranda",
-        u"Jussara",
-        u"Kaloré",
-        u"Lapa",
-        u"Laranjal",
-        u"Laranjeiras do Sul",
-        u"Leópolis",
-        u"Lidianópolis",
-        u"Lindoeste",
-        u"Loanda",
-        u"Lobato",
-        u"Londrina",
-        u"Luiziana",
-        u"Lunardelli",
-        u"Lupionópolis",
-        u"Mallet",
-        u"Mamborê",
-        u"Mandaguaçu",
-        u"Mandaguari",
-        u"Mandirituba",
-        u"Manfrinópolis",
-        u"Mangueirinha",
-        u"Manoel Ribas",
-        u"Marechal Cândido Rondon",
-        u"Maria Helena",
-        u"Marialva",
-        u"Marilândia do Sul",
-        u"Marilena",
-        u"Mariluz",
-        u"Maringá",
-        u"Mariópolis",
-        u"Maripá",
-        u"Marmeleiro",
-        u"Marquinho",
-        u"Marumbi",
-        u"Matelândia",
-        u"Matinhos",
-        u"Mato Rico",
-        u"Mauá da Serra",
-        u"Medianeira",
-        u"Mercedes",
-        u"Mirador",
-        u"Miraselva",
-        u"Missal",
-        u"Moreira Sales",
-        u"Morretes",
-        u"Munhoz de Melo",
-        u"Nossa Senhora das Graças",
-        u"Nova Aliança do Ivaí",
-        u"Nova América da Colina",
-        u"Nova Aurora",
-        u"Nova Cantu",
-        u"Nova Esperança",
-        u"Nova Esperança do Sudoeste",
-        u"Nova Fátima",
-        u"Nova Laranjeiras",
-        u"Nova Londrina",
-        u"Nova Olímpia",
-        u"Nova Prata do Iguaçu",
-        u"Nova Santa Bárbara",
-        u"Nova Santa Rosa",
-        u"Nova Tebas",
-        u"Novo Itacolomi",
-        u"Ortigueira",
-        u"Ourizona",
-        u"Ouro Verde do Oeste",
-        u"Paiçandu",
-        u"Palmas",
-        u"Palmeira",
-        u"Palmital",
-        u"Palotina",
-        u"Paraíso do Norte",
-        u"Paranacity",
-        u"Paranaguá",
-        u"Paranapoema",
-        u"Paranavaí",
-        u"Pato Bragado",
-        u"Pato Branco",
-        u"Paula Freitas",
-        u"Paulo Frontin",
-        u"Peabiru",
-        u"Perobal",
-        u"Pérola",
-        u"Pérola d'Oeste",
-        u"Piên",
-        u"Pinhais",
-        u"Pinhal de São Bento",
-        u"Pinhalão",
-        u"Pinhão",
-        u"Piraí do Sul",
-        u"Piraquara",
-        u"Pitanga",
-        u"Pitangueiras",
-        u"Planaltina do Paraná",
-        u"Planalto",
-        u"Ponta Grossa",
-        u"Pontal do Paraná",
-        u"Porecatu",
-        u"Porto Amazonas",
-        u"Porto Barreiro",
-        u"Porto Rico",
-        u"Porto Vitória",
-        u"Prado Ferreira",
-        u"Pranchita",
-        u"Presidente Castelo Branco",
-        u"Primeiro de Maio",
-        u"Prudentópolis",
-        u"Quarto Centenário",
-        u"Quatiguá",
-        u"Quatro Barras",
-        u"Quatro Pontes",
-        u"Quedas do Iguaçu",
-        u"Querência do Norte",
-        u"Quinta do Sol",
-        u"Quitandinha",
-        u"Ramilândia",
-        u"Rancho Alegre",
-        u"Rancho Alegre D'Oeste",
-        u"Realeza",
-        u"Rebouças",
-        u"Renascença",
-        u"Reserva",
-        u"Reserva do Iguaçu",
-        u"Ribeirão Claro",
-        u"Ribeirão do Pinhal",
-        u"Rio Azul",
-        u"Rio Bom",
-        u"Rio Bonito do Iguaçu",
-        u"Rio Branco do Ivaí",
-        u"Rio Branco do Sul",
-        u"Rio Negro",
-        u"Rolândia",
-        u"Roncador",
-        u"Rondon",
-        u"Rosário do Ivaí",
-        u"Sabáudia",
-        u"Salgado Filho",
-        u"Salto do Itararé",
-        u"Salto do Lontra",
-        u"Santa Amélia",
-        u"Santa Cecília do Pavão",
-        u"Santa Cruz de Monte Castelo",
-        u"Santa Fé",
-        u"Santa Helena",
-        u"Santa Inês",
-        u"Santa Isabel do Ivaí",
-        u"Santa Izabel do Oeste",
-        u"Santa Lúcia",
-        u"Santa Maria do Oeste",
-        u"Santa Mariana",
-        u"Santa Mônica",
-        u"Santa Tereza do Oeste",
-        u"Santa Terezinha de Itaipu",
-        u"Santana do Itararé",
-        u"SantoAntônio da Platina",
-        u"Santo Antônio do Caiuá",
-        u"Santo Antônio do Paraíso",
-        u"Santo Antônio do Sudoeste",
-        u"Santo Inácio",
-        u"São Carlos do Ivaí",
-        u"São Jerônimo da Serra",
-        u"São João",
-        u"São João do Caiuá",
-        u"São João do Ivaí",
-        u"São João do Triunfo",
-        u"São Jorge do Ivaí",
-        u"São Jorge do Patrocínio",
-        u"São Jorge d'Oeste",
-        u"São José da Boa Vista",
-        u"São José das Palmeiras",
-        u"São José dos Pinhais",
-        u"São Manoel do Paraná",
-        u"São Mateus do Sul",
-        u"São Miguel do Iguaçu",
-        u"São Pedro do Iguaçu",
-        u"São Pedro do Ivaí",
-        u"São Pedro do Paraná",
-        u"São Sebastião da Amoreira",
-        u"São Tomé",
-        u"Sapopema",
-        u"Sarandi",
-        u"Saudade do Iguaçu",
-        u"Sengés",
-        u"Serranópolis do Iguaçu",
-        u"Sertaneja",
-        u"Sertanópolis",
-        u"Siqueira Campos",
-        u"Sulina",
-        u"Tamarana",
-        u"Tamboara",
-        u"Tapejara",
-        u"Tapira",
-        u"Teixeira Soares",
-        u"Telêmaco Borba",
-        u"Terra Boa",
-        u"Terra Rica",
-        u"Terra Roxa",
-        u"Tibagi",
-        u"Tijucas do Sul",
-        u"Toledo",
-        u"Tomazina",
-        u"Três Barras do Paraná",
-        u"Tunas do Paraná",
-        u"Tuneiras do Oeste",
-        u"Tupãssi",
-        u"Turvo",
-        u"Ubiratã",
-        u"Umuarama",
-        u"União da Vitória",
-        u"Uniflor",
-        u"Uraí",
-        u"Ventania",
-        u"Vera Cruz do Oeste",
-        u"Verê",
-        u"Virmond",
-        u"Vitorino",
-        u"Wenceslau Braz",
-        u"Xambrê",],
-    'PE':[
-        u"Abreu e Lima",
-        u"Afogados da Ingazeira",
-        u"Afrânio",
-        u"Agrestina",
-        u"água Preta",
-        u"águas Belas",
-        u"Alagoinha",
-        u"Aliança",
-        u"Altinho",
-        u"Amaraji",
-        u"Angelim",
-        u"Araçoiaba",
-        u"Araripina",
-        u"Arcoverde",
-        u"Barra de Guabiraba",
-        u"Barreiros",
-        u"Belém deMaria",
-        u"Belém de São Francisco",
-        u"Belo Jardim",
-        u"Betânia",
-        u"Bezerros",
-        u"Bodocó",
-        u"Bom Conselho",
-        u"Bom Jardim",
-        u"Bonito",
-        u"Brejão",
-        u"Brejinho",
-        u"Brejo da Madre de Deus",
-        u"Buenos Aires",
-        u"Buíque",
-        u"Cabo de Santo Agostinho",
-        u"Cabrobó",
-        u"Cachoeirinha",
-        u"Caetés",
-        u"Calçado",
-        u"Calumbi",
-        u"Camaragibe",
-        u"Camocim de São Félix",
-        u"Camutanga",
-        u"Canhotinho",
-        u"Capoeiras",
-        u"Carnaíba",
-        u"Carnaubeira da Penha",
-        u"Carpina",
-        u"Caruaru",
-        u"Casinhas",
-        u"Catende",
-        u"Cedro",
-        u"Chã de Alegria",
-        u"Chã Grande",
-        u"Condado",
-        u"Correntes",
-        u"Cortês",
-        u"Cumaru",
-        u"Cupira",
-        u"Custódia",
-        u"Dormentes",
-        u"Escada",
-        u"Exu",
-        u"Feira Nova",
-        u"Fernando de Noronha",
-        u"Ferreiros",
-        u"Flores",
-        u"Floresta",
-        u"Frei Miguelinho",
-        u"Gameleira",
-        u"Garanhuns",
-        u"Glória do Goitá",
-        u"Goiana",
-        u"Granito",
-        u"Gravatá",
-        u"Iati",
-        u"Ibimirim",
-        u"Ibirajuba",
-        u"Igarassu",
-        u"Iguaraci",
-        u"Ilha de Itamaracá",
-        u"Inajá",
-        u"Ingazeira",
-        u"Ipojuca",
-        u"Ipubi",
-        u"Itacuruba",
-        u"Itaíba",
-        u"Itambé",
-        u"Itapetim",
-        u"Itapissuma",
-        u"Itaquitinga",
-        u"Jaboatão dos Guararapes",
-        u"Jaqueira",
-        u"Jataúba",
-        u"Jatobá",
-        u"João Alfredo",
-        u"Joaquim Nabuco",
-        u"Jucati",
-        u"Jupi",
-        u"Jurema",
-        u"Lagoa do Carro",
-        u"Lagoa do Itaenga",
-        u"LagoadoOuro",
-        u"Lagoa dos Gatos",
-        u"Lagoa Grande",
-        u"Lajedo",
-        u"Limoeiro",
-        u"Macaparana",
-        u"Machados",
-        u"Manari",
-        u"Maraial",
-        u"Mirandiba",
-        u"Moreilândia",
-        u"Moreno",
-        u"Nazaré da Mata",
-        u"Olinda",
-        u"Orobó",
-        u"Orocó",
-        u"Ouricuri",
-        u"Palmares",
-        u"Palmeirina",
-        u"Panelas",
-        u"Paranatama",
-        u"Parnamirim",
-        u"Passira",
-        u"Paudalho",
-        u"Paulista",
-        u"Pedra",
-        u"esqueira",
-        u"Petrolândia",
-        u"Petrolina",
-        u"Poção",
-        u"Pombos",
-        u"Primavera",
-        u"Quipapá",
-        u"Quixaba",
-        u"Recife",
-        u"Riacho das Almas",
-        u"Ribeirão",
-        u"Rio Formoso",
-        u"Sairé",
-        u"Salgadinho",
-        u"Salgueiro",
-        u"Saloá",
-        u"Sanharó",
-        u"Santa Cruz",
-        u"Santa Cruz da Baixa Verde",
-        u"Santa Cruz do Capibaribe",
-        u"Santa Filomena",
-        u"Santa Maria da Boa Vista",
-        u"Santa Maria do Cambucá",
-        u"Santa Terezinha",
-        u"São Benedito do Sul",
-        u"São Bento do Una",
-        u"São Caitano",
-        u"SãoJoão",
-        u"São Joaquim do Monte",
-        u"São José da Coroa Grande",
-        u"São José do Belmonte",
-        u"São José do Egito",
-        u"São Lourenço da Mata",
-        u"SãoVicente Ferrer",
-        u"Serra Talhada",
-        u"Serrita",
-        u"Sertânia",
-        u"Sirinhaém",
-        u"Solidão",
-        u"Surubim",
-        u"Tabira",
-        u"Tacaimbó",
-        u"Tacaratu",
-        u"Tamandaré",
-        u"Taquaritinga do Norte",
-        u"Terezinha",
-        u"Terra Nova",
-        u"Timbaúba",
-        u"Toritama",
-        u"Tracunhaém",
-        u"Trindade",
-        u"Triunfo",
-        u"Tupanatinga",
-        u"Tuparetama",
-        u"Venturosa",
-        u"Verdejante",
-        u"Vertente do Lério",
-        u"Vertentes",
-        u"Vicência",
-        u"Vitória de Santo Antão",
-        u"Xexéu",],
-    'PI':[
-        u"Acauã",
-        u"Agricolândia",
-        u"água Branca",
-        u"Alagoinha do Piauí",
-        u"Alegrete do Piauí",
-        u"Alto Longá",
-        u"Altos",
-        u"Alvorada do Gurguéia",
-        u"Amarante",
-        u"Angical do Piauí",
-        u"Anísio de Abreu",
-        u"Antônio Almeida",
-        u"Aroazes",
-        u"Aroeiras do Itaim",
-        u"Arraial",
-        u"Assunção do Piauí",
-        u"Avelino Lopes",
-        u"Baixa Grande do Ribeiro",
-        u"Barra D'Alcântara",
-        u"Barras",
-        u"Barreiras do Piauí",
-        u"Barro Duro",
-        u"Batalha",
-        u"Bela Vista do Piauí",
-        u"Belém do Piauí",
-        u"Beneditinos",
-        u"Bertolínia",
-        u"Betânia do Piauí",
-        u"Boa Hora",
-        u"Bocaina",
-        u"Bom Jesus",
-        u"Bom Princípio do Piauí",
-        u"Bonfim do Piauí",
-        u"Boqueirão do Piauí",
-        u"Brasileira",
-        u"Brejo do Piauí",
-        u"Buriti dos Lopes",
-        u"Buriti dos Montes",
-        u"Cabeceiras do Piauí",
-        u"Cajazeiras do Piauí",
-        u"Cajueiro da Praia",
-        u"Caldeirão Grande do Piauí",
-        u"Campinas do Piauí",
-        u"Campo Alegre do Fidalgo",
-        u"Campo Grande do Piauí",
-        u"Campo Largo do Piauí",
-        u"Campo Maior",
-        u"Canavieira",
-        u"Canto do Buriti",
-        u"Capitão de Campos",
-        u"Capitão Gervásio Oliveira",
-        u"Caracol",
-        u"Caraúbas do Piauí",
-        u"Caridade do Piauí",
-        u"Castelo do Piauí",
-        u"Caxingó",
-        u"Cocal",
-        u"Cocal de Telha",
-        u"Cocal dos Alves",
-        u"Coivaras",
-        u"Colônia do Gurguéia",
-        u"Colônia do Piauí",
-        u"Conceição do Canindé",
-        u"Coronel José Dias",
-        u"Corrente",
-        u"Cristalândia do Piauí",
-        u"Cristino Castro",
-        u"Curimatá",
-        u"Currais",
-        u"Curral Novo do Piauí",
-        u"Curralinhos",
-        u"Demerval Lobão",
-        u"Dirceu Arcoverde",
-        u"Dom Expedito Lopes",
-        u"Dom Inocêncio",
-        u"Domingos Mourão",
-        u"Elesbão Veloso",
-        u"Eliseu Martins",
-        u"Esperantina",
-        u"Fartura do Piauí",
-        u"Flores do Piauí",
-        u"Floresta do Piauí",
-        u"Floriano",
-        u"Francinópolis",
-        u"Francisco Ayres",
-        u"Francisco Macedo",
-        u"Francisco Santos",
-        u"Fronteiras",
-        u"Geminiano",
-        u"Gilbués",
-        u"Guadalupe",
-        u"Guaribas",
-        u"Hugo Napoleão",
-        u"Ilha Grande",
-        u"Inhuma",
-        u"Ipiranga do Piauí",
-        u"Isaías Coelho",
-        u"Itainópolis",
-        u"Itaueira",
-        u"Jacobina do Piauí",
-        u"Jaicós",
-        u"Jardim do Mulato",
-        u"Jatobá do Piauí",
-        u"Jerumenha",
-        u"João Costa",
-        u"Joaquim Pires",
-        u"Joca Marques",
-        u"José de Freitas",
-        u"Juazeiro do Piauí",
-        u"Júlio Borges",
-        u"Jurema",
-        u"Lagoa Alegre",
-        u"Lagoa de São Francisco",
-        u"Lagoa do Barro do Piauí",
-        u"Lagoa do Piauí",
-        u"Lagoa do Sítio",
-        u"Lagoinha do Piauí",
-        u"Landri Sales",
-        u"Luís Correia",
-        u"Luzilândia",
-        u"Madeiro",
-        u"Manoel Emídio",
-        u"Marcolândia",
-        u"Marcos Parente",
-        u"Massapê do Piauí",
-        u"Matias Olímpio",
-        u"Miguel Alves",
-        u"Miguel Leão",
-        u"Milton Brandão",
-        u"Monsenhor Gil",
-        u"Monsenhor Hipólito",
-        u"Monte Alegre do Piauí",
-        u"Morro Cabeça no Tempo",
-        u"Morro do Chapéu do Piauí",
-        u"Muricidos Portelas",
-        u"Nazaré do Piauí",
-        u"Nossa Senhora de Nazaré",
-        u"Nossa Senhora dos Remédios",
-        u"Nova Santa Rita",
-        u"Novo Oriente do Piauí",
-        u"Novo Santo Antônio",
-        u"Oeiras",
-        u"Olho D'água do Piauí",
-        u"Padre Marcos",
-        u"Paes Landim",
-        u"Pajeú do Piauí",
-        u"Palmeira do Piauí",
-        u"Palmeirais",
-        u"Paquetá",
-        u"Parnaguá",
-        u"Parnaíba",
-        u"Passagem Franca do Piauí",
-        u"Patos do Piauí",
-        u"Pau D'Arco do Piauí",
-        u"Paulistana",
-        u"Pavussu",
-        u"Pedro II",
-        u"Pedro Laurentino",
-        u"Picos",
-        u"Pimenteiras",
-        u"Pio IX",
-        u"Piracuruca",
-        u"Piripiri",
-        u"Porto",
-        u"Porto Alegre do Piauí",
-        u"Prata do Piauí",
-        u"Queimada Nova",
-        u"Redenção do Gurguéia",
-        u"Regeneração",
-        u"Riacho Frio",
-        u"Ribeira do Piauí",
-        u"Ribeiro Gonçalves",
-        u"Rio Grande do Piauí",
-        u"Santa Cruz do Piauí",
-        u"Santa Cruz dos Milagres",
-        u"Santa Filomena",
-        u"Santa Luz",
-        u"Santa Rosa do Piauí",
-        u"Santana do Piauí",
-        u"Santo Antônio de Lisboa",
-        u"Santo Antônio dos Milagres",
-        u"Santo Inácio do Piauí",
-        u"São Braz do Piauí",
-        u"São Félix do Piauí",
-        u"São Francisco de Assis do Piauí",
-        u"São Francisco do Piauí",
-        u"São Gonçalo do Gurguéia",
-        u"São Gonçalo do Piauí",
-        u"São João da Canabrava",
-        u"São João da Fronteira",
-        u"São João da Serra",
-        u"São João da Varjota",
-        u"São João do Arraial",
-        u"São João do Piauí",
-        u"São José do Divino",
-        u"São José do Peixe",
-        u"São José do Piauí",
-        u"São Julião",
-        u"São Lourenço do Piauí",
-        u"São Luis do Piauí",
-        u"São Miguel da Baixa Grande",
-        u"São Miguel do Fidalgo",
-        u"São Miguel do Tapuio",
-        u"São Pedro do Piauí",
-        u"São Raimundo Nonato",
-        u"Sebastião Barros",
-        u"Sebastião Leal",
-        u"Sigefredo Pacheco",
-        u"Sim&otilde;es",
-        u"Simplício Mendes",
-        u"Socorro do Piauí",
-        u"Sussuapara",
-        u"Tamboril do Piauí",
-        u"Tanque do Piauí",
-        u"Teresina",
-        u"União",
-        u"Uruçuí",
-        u"Valença do Piauí",
-        u"Várzea Branca",
-        u"Várzea Grande",
-        u"Vera Mendes",
-        u"Vila Nova do Piauí",
-        u"Wall Ferraz",],
-    'RR':[
-        u"Alto Alegre",
-        u"Amajari",
-        u"Boa Vista",
-        u"Bonfim",
-        u"Cantá",
-        u"Caracaraí",
-        u"Caroebe",
-        u"Iracema",
-        u"Mucajaí",
-        u"Normandia",
-        u"Pacaraima",
-        u"Rorainópolis",
-        u"São João da Baliza",
-        u"São Luiz",
-        u"Uiramutã",],
-    'RO':[
-        u"Alta Floresta D'Oeste",
-        u"Alto Alegre dos Parecis",
-        u"Alto Paraíso",
-        u"Alvorada D'Oeste",
-        u"Ariquemes",
-        u"Buritis",
-        u"Cabixi",
-        u"Cacaulândia",
-        u"Cacoal",
-        u"Campo Novo de Rondônia",
-        u"Candeias do Jamari",
-        u"Castanheiras",
-        u"Cerejeiras",
-        u"Chupinguaia",
-        u"Colorado do Oeste",
-        u"Corumbiara",
-        u"Costa Marques",
-        u"Cujubim",
-        u"Espigão D'Oeste",
-        u"Governador Jorge Teixeira",
-        u"Guajará-Mirim",
-        u"Itapuã do Oeste",
-        u"Jaru",
-        u"Ji-Paraná",
-        u"Machadinho D'Oeste",
-        u"Ministro Andreazza",
-        u"Mirante da Serra",
-        u"Monte Negro",
-        u"Nova Brasilândia D'Oeste",
-        u"Nova Mamoré",
-        u"Nova União",
-        u"Novo Horizonte do Oeste",
-        u"Ouro Preto do Oeste",
-        u"Parecis",
-        u"Pimenta Bueno",
-        u"Pimenteiras do Oeste",
-        u"Porto Velho",
-        u"Presidente Médici",
-        u"Primavera de Rondônia",
-        u"Rio Crespo",
-        u"Rolim de Moura",
-        u"Santa Luzia D'Oeste",
-        u"São Felipe D'Oeste",
-        u"São Francisco do Guaporé",
-        u"São Miguel do Guaporé",
-        u"Seringueiras",
-        u"Teixeirópolis",
-        u"Theobroma",
-        u"Urupá",
-        u"Vale do Anari",
-        u"Vale do Paraíso",
-        u"Vilhena",],
-    'RJ':[
-        u"Angra dos Reis",
-        u"Aperibé",
-        u"Araruama",
-        u"Areal",
-        u"Armação dos Búzios",
-        u"Arraial do Cabo",
-        u"Barra do Piraí",
-        u"Barra Mansa",
-        u"Belford Roxo",
-        u"Bom Jardim",
-        u"Bom Jesus do Itabapoana",
-        u"Cabo Frio",
-        u"Cachoeiras de Macacu",
-        u"Cambuci",
-        u"Campos dos Goytacazes",
-        u"Cantagalo",
-        u"Carapebus",
-        u"Cardoso Moreira",
-        u"Carmo",
-        u"Casimiro de Abreu",
-        u"Comendador Levy Gasparian",
-        u"Conceição de Macabu",
-        u"Cordeiro",
-        u"Duas Barras",
-        u"Duque de Caxias",
-        u"Engenheiro Paulo de Frontin",
-        u"Guapimirim",
-        u"Iguaba Grande",
-        u"Itaboraí",
-        u"Itaguaí",
-        u"Italva",
-        u"Itaocara",
-        u"Itaperuna",
-        u"Itatiaia",
-        u"Japeri",
-        u"Laje do Muriaé",
-        u"Macaé",
-        u"Macuco",
-        u"Magé",
-        u"Mangaratiba",
-        u"Maricá",
-        u"Mendes",
-        u"Mesquita",
-        u"Miguel Pereira",
-        u"Miracema",
-        u"Natividade",
-        u"Nilópolis",
-        u"Niterói",
-        u"Nova Friburgo",
-        u"Nova Iguaçu",
-        u"Paracambi",
-        u"Paraíba do Sul",
-        u"Parati",
-        u"Paty do Alferes",
-        u"Petrópolis",
-        u"Pinheiral",
-        u"Piraí",
-        u"Porciúncula",
-        u"Porto Real",
-        u"Quatis",
-        u"Queimados",
-        u"Quissamã",
-        u"Resende",
-        u"Rio Bonito",
-        u"Rio Claro",
-        u"Rio das Flores",
-        u"Rio das Ostras",
-        u"Rio de Janeiro",
-        u"Santa Maria Madalena",
-        u"Santo Antônio de Pádua",
-        u"São Fidélis",
-        u"São Francisco de Itabapoana",
-        u"São Gonçalo",
-        u"São João da Barra",
-        u"São João de Meriti",
-        u"São José de Ubá",
-        u"São José do Vale do Rio Preto",
-        u"São Pedro da Aldeia",
-        u"São Sebastião do Alto",
-        u"Sapucaia",
-        u"Saquarema",
-        u"Seropédica",
-        u"Silva Jardim",
-        u"Sumidouro",
-        u"Tanguá",
-        u"Teresópolis",
-        u"Trajano de Moraes",
-        u"Três Rios",
-        u"Valença",
-        u"Varre-Sai",
-        u"Vassouras",
-        u"Volta Redonda",],
-    'RN':[
-        u"Acari",
-        u"Açu",
-        u"Afonso Bezerra",
-        u"água Nova",
-        u"Alexandria",
-        u"Almino Afonso",
-        u"Alto do Rodrigues",
-        u"Angicos",
-        u"Antônio Martins",
-        u"Apodi",
-        u"Areia Branca",
-        u"Arês",
-        u"Augusto Severo",
-        u"Baía Formosa",
-        u"Baraúna",
-        u"Barcelona",
-        u"Bento Fernandes",
-        u"Bodó",
-        u"Bom Jesus",
-        u"Brejinho",
-        u"Caiçara do Norte",
-        u"Caiçara do Rio do Vento",
-        u"Caicó",
-        u"Campo Redondo",
-        u"Canguaretama",
-        u"Caraúbas",
-        u"Carnaúba dos Dantas",
-        u"Carnaubais",
-        u"Ceará-Mirim",
-        u"Cerro Corá",
-        u"Coronel Ezequiel",
-        u"Coronel João Pessoa",
-        u"Cruzeta",
-        u"Currais Novos",
-        u"Doutor Severiano",
-        u"Encanto",
-        u"Equador",
-        u"Espírito Santo",
-        u"Extremoz",
-        u"Felipe Guerra",
-        u"Fernando Pedroza",
-        u"Florânia",
-        u"Francisco Dantas",
-        u"Frutuoso Gomes",
-        u"Galinhos",
-        u"Goianinha",
-        u"Governador Dix-Sept Rosado",
-        u"Grossos",
-        u"Guamaré",
-        u"Ielmo Marinho",
-        u"Ipanguaçu",
-        u"Ipueira",
-        u"Itajá",
-        u"Itaú",
-        u"Jaçanã",
-        u"Jandaíra",
-        u"Janduís",
-        u"Januário Cicco",
-        u"Japi",
-        u"Jardim de Angicos",
-        u"Jardim de Piranhas",
-        u"Jardim do Seridó",
-        u"João Câmara",
-        u"João Dias",
-        u"José da Penha",
-        u"Jucurutu",
-        u"Jundiá",
-        u"Lagoad'Anta",
-        u"Lagoa de Pedras",
-        u"Lagoa de Velhos",
-        u"Lagoa Nova",
-        u"Lagoa Salgada",
-        u"Lajes",
-        u"Lajes Pintadas",
-        u"Lucrécia",
-        u"Luís Gomes",
-        u"Macaíba",
-        u"Macau",
-        u"Major Sales",
-        u"Marcelino Vieira",
-        u"Martins",
-        u"Maxaranguape",
-        u"Messias Targino",
-        u"Montanhas",
-        u"Monte Alegre",
-        u"Monte das Gameleiras",
-        u"Mossoró",
-        u"Natal",
-        u"Nísia Floresta",
-        u"Nova Cruz",
-        u"Olho-d'água do Borges",
-        u"Ouro Branco",
-        u"Paraná",
-        u"Paraú",
-        u"Parazinho",
-        u"Parelhas",
-        u"Parnamirim",
-        u"Passa e Fica",
-        u"Passagem",
-        u"Patu",
-        u"Pau dos Ferros",
-        u"Pedra Grande",
-        u"Pedra Preta",
-        u"Pedro Avelino",
-        u"Pedro Velho",
-        u"Pendências",
-        u"Pil&otilde;es",
-        u"Poço Branco",
-        u"Portalegre",
-        u"Porto do Mangue",
-        u"Presidente Juscelino",
-        u"Pureza",
-        u"Rafael Fernandes",
-        u"Rafael Godeiro",
-        u"Riacho da Cruz",
-        u"Riacho de Santana",
-        u"Riachuelo",
-        u"Rio do Fogo",
-        u"Rodolfo Fernandes",
-        u"Ruy Barbosa",
-        u"Santa Cruz",
-        u"Santa Maria",
-        u"Santana do Matos",
-        u"Santana do Seridó",
-        u"Santo Antônio",
-        u"São Bento do Norte",
-        u"São Bento do Trairí",
-        u"São Fernando",
-        u"São Francisco do Oeste",
-        u"São Gonçalo do Amarante",
-        u"São João do Sabugi",
-        u"São José de Mipibu",
-        u"São José do Campestre",
-        u"São José do Seridó",
-        u"São Miguel",
-        u"São Miguel do Gostoso",
-        u"São Paulo do Potengi",
-        u"São Pedro",
-        u"São Rafael",
-        u"São Tomé",
-        u"São Vicente",
-        u"Senador Elói de Souza",
-        u"Senador Georgino Avelino",
-        u"Serra de São Bento",
-        u"Serra do Mel",
-        u"Serra Negra do Norte",
-        u"Serrinha",
-        u"Serrinha dos Pintos",
-        u"Severiano Melo",
-        u"Sítio Novo",
-        u"Taboleiro Grande",
-        u"Taipu",
-        u"Tangará",
-        u"Tenente Ananias",
-        u"Tenente Laurentino Cruz",
-        u"Tibau",
-        u"Tibau do Sul",
-        u"Timbaúba dos Batistas",
-        u"Touros",
-        u"Triunfo Potiguar",
-        u"Umarizal",
-        u"Upanema",
-        u"Várzea",
-        u"Venha-Ver",
-        u"Vera Cruz",
-        u"Viçosa",
-        u"Vila Flor",],
-    'RS':[
-        u"Aceguá",
-        u"água Santa",
-        u"Agudo",
-        u"Ajuricaba",
-        u"Alecrim",
-        u"Alegrete",
-        u"Alegria",
-        u"Almirante Tamandaré do Sul",
-        u"Alpestre",
-        u"Alto Alegre",
-        u"Alto Feliz",
-        u"Alvorada",
-        u"Amaral Ferrador",
-        u"Ametista do Sul",
-        u"André da Rocha",
-        u"Anta Gorda",
-        u"Antônio Prado",
-        u"Arambaré",
-        u"Araricá",
-        u"Aratiba",
-        u"Arroio do Meio",
-        u"Arroio do Padre",
-        u"Arroio do Sal",
-        u"Arroio do Tigre",
-        u"Arroio dos Ratos",
-        u"Arroio Grande",
-        u"Arvorezinha",
-        u"Augusto Pestana",
-        u"áurea",
-        u"Bagé",
-        u"Balneário Pinhal",
-        u"Barão",
-        u"Barão de Cotegipe",
-        u"Barão do Triunfo",
-        u"Barra do Guarita",
-        u"Barra do Quaraí",
-        u"Barra do Ribeiro",
-        u"Barra do Rio Azul",
-        u"Barra Funda",
-        u"Barracão",
-        u"Barros Cassal",
-        u"Benjamin Constant do Sul",
-        u"Bento Gonçalves",
-        u"Boa Vista das Miss&otilde;es",
-        u"Boa Vista do Buricá",
-        u"Boa Vista do Cadeado",
-        u"Boa Vista do Incra",
-        u"Boa Vista do Sul",
-        u"Bom Jesus",
-        u"Bom Princípio",
-        u"Bom Progresso",
-        u"Bom Retiro do Sul",
-        u"Boqueirão do Leão",
-        u"Bossoroca",
-        u"Bozano",
-        u"Braga",
-        u"Brochier",
-        u"Butiá",
-        u"Caçapava do Sul",
-        u"Cacequi",
-        u"Cachoeira do Sul",
-        u"Cachoeirinha",
-        u"Cacique Doble",
-        u"Caibaté",
-        u"Caiçara",
-        u"Camaquã",
-        u"Camargo",
-        u"Cambará do Sul",
-        u"Campestre da Serra",
-        u"Campina das Miss&otilde;es",
-        u"Campinas do Sul",
-        u"Campo Bom",
-        u"Campo Novo",
-        u"Campos Borges",
-        u"Candelária",
-        u"Cândido Godói",
-        u"Candiota",
-        u"Canela",
-        u"Canguçu",
-        u"Canoas",
-        u"Canudos do Vale",
-        u"Capão Bonito do Sul",
-        u"Capão da Canoa",
-        u"Capão do Cipó",
-        u"Capão do Leão",
-        u"Capela de Santana",
-        u"Capitão",
-        u"Capivari do Sul",
-        u"Caraá",
-        u"Carazinho",
-        u"Carlos Barbosa",
-        u"Carlos Gomes",
-        u"Casca",
-        u"Caseiros",
-        u"Catuípe",
-        u"Caxias do Sul",
-        u"Centenário",
-        u"Cerrito",
-        u"Cerro Branco",
-        u"Cerro Grande",
-        u"Cerro Grande do Sul",
-        u"Cerro Largo",
-        u"Chapada",
-        u"Charqueadas",
-        u"Charrua",
-        u"Chiapetta",
-        u"Chuí",
-        u"Chuvisca",
-        u"Cidreira",
-        u"Ciríaco",
-        u"Colinas",
-        u"Colorado",
-        u"Condor",
-        u"Constantina",
-        u"Coqueiro Baixo",
-        u"Coqueiros do Sul",
-        u"Coronel Barros",
-        u"Coronel Bicaco",
-        u"Coronel Pilar",
-        u"Cotiporã",
-        u"Coxilha",
-        u"Crissiumal",
-        u"Cristal",
-        u"Cristal do Sul",
-        u"Cruz Alta",
-        u"Cruzaltense",
-        u"Cruzeiro do Sul",
-        u"David Canabarro",
-        u"Derrubadas",
-        u"Dezesseis de Novembro",
-        u"Dilermando de Aguiar",
-        u"Dois Irmãos",
-        u"Dois Irmãos das Miss&otilde;es",
-        u"Dois Lajeados",
-        u"Dom Feliciano",
-        u"Dom Pedrito",
-        u"Dom Pedro de Alcântara",
-        u"Dona Francisca",
-        u"Doutor Maurício Cardoso",
-        u"Doutor Ricardo",
-        u"Eldorado do Sul",
-        u"Encantado",
-        u"Encruzilhada do Sul",
-        u"Engenho Velho",
-        u"Entre Rios do Sul",
-        u"Entre-Ijuís",
-        u"Erebango",
-        u"Erechim",
-        u"Ernestina",
-        u"Erval Grande",
-        u"Erval Seco",
-        u"Esmeralda",
-        u"Esperança do Sul",
-        u"Espumoso",
-        u"Estação",
-        u"Estância Velha",
-        u"Esteio",
-        u"Estrela",
-        u"Estrela Velha",
-        u"Eugênio de Castro",
-        u"Fagundes Varela",
-        u"Farroupilha",
-        u"Faxinal do Soturno",
-        u"Faxinalzinho",
-        u"Fazenda Vilanova",
-        u"Feliz",
-        u"Flores da Cunha",
-        u"Floriano Peixoto",
-        u"Fontoura Xavier",
-        u"Formigueiro",
-        u"Forquetinha",
-        u"Fortaleza dos Valos",
-        u"Frederico Westphalen",
-        u"Garibaldi",
-        u"Garruchos",
-        u"Gaurama",
-        u"General Câmara",
-        u"Gentil",
-        u"Getúlio Vargas",
-        u"Giruá",
-        u"Glorinha",
-        u"Gramado",
-        u"Gramado dos Loureiros",
-        u"Gramado Xavier",
-        u"Gravataí",
-        u"Guabiju",
-        u"Guaíba",
-        u"Guaporé",
-        u"Guarani das Miss&otilde;es",
-        u"Harmonia",
-        u"Herval",
-        u"Herveiras",
-        u"Horizontina",
-        u"Hulha Negra",
-        u"Humaitá",
-        u"Ibarama",
-        u"Ibiaçá",
-        u"Ibiraiaras",
-        u"Ibirapuitã",
-        u"Ibirubá",
-        u"Igrejinha",
-        u"Ijuí",
-        u"Ilópolis",
-        u"Imbé",
-        u"Imigrante",
-        u"Independência",
-        u"Inhacorá",
-        u"Ipê",
-        u"Ipiranga do Sul",
-        u"Iraí",
-        u"Itaara",
-        u"Itacurubi",
-        u"Itapuca",
-        u"Itaqui",
-        u"Itati",
-        u"Itatiba do Sul",
-        u"Ivorá",
-        u"Ivoti",
-        u"Jaboticaba",
-        u"Jacuizinho",
-        u"Jacutinga",
-        u"Jaguarão",
-        u"Jaguari",
-        u"Jaquirana",
-        u"Jari",
-        u"Jóia",
-        u"Júlio de Castilhos",
-        u"Lagoa Bonita do Sul",
-        u"Lagoa dos Três Cantos",
-        u"Lagoa Vermelha",
-        u"Lagoão",
-        u"Lajeado",
-        u"Lajeado do Bugre",
-        u"Lavras do Sul",
-        u"Liberato Salzano",
-        u"Lindolfo Collor",
-        u"Linha Nova",
-        u"Maçambará",
-        u"Machadinho",
-        u"Mampituba",
-        u"Manoel Viana",
-        u"Maquiné",
-        u"Maratá",
-        u"Marau",
-        u"Marcelino Ramos",
-        u"Mariana Pimentel",
-        u"Mariano Moro",
-        u"Marques de Souza",
-        u"Mata",
-        u"Mato Castelhano",
-        u"Mato Leitão",
-        u"Mato Queimado",
-        u"Maximiliano de Almeida",
-        u"Minas do Leão",
-        u"Miraguaí",
-        u"Montauri",
-        u"Monte Alegre dos Campos",
-        u"Monte Belo do Sul",
-        u"Montenegro",
-        u"Mormaço",
-        u"Morrinhos do Sul",
-        u"Morro Redondo",
-        u"Morro Reuter",
-        u"Mostardas",
-        u"Muçum",
-        u"Muitos Cap&otilde;es",
-        u"Muliterno",
-        u"Não-Me-Toque",
-        u"Nicolau Vergueiro",
-        u"Nonoai",
-        u"Nova Alvorada",
-        u"Nova Araçá",
-        u"Nova Bassano",
-        u"Nova Boa Vista",
-        u"Nova Bréscia",
-        u"Nova Candelária",
-        u"Nova Esperança do Sul",
-        u"Nova Hartz",
-        u"Nova Pádua",
-        u"Nova Palma",
-        u"Nova Petrópolis",
-        u"Nova Prata",
-        u"Nova Ramada",
-        u"Nova Roma do Sul",
-        u"Nova Santa Rita",
-        u"Novo Barreiro",
-        u"Novo Cabrais",
-        u"Novo Hamburgo",
-        u"Novo Machado",
-        u"Novo Tiradentes",
-        u"Novo Xingu",
-        u"Osório",
-        u"Paim Filho",
-        u"Palmares do Sul",
-        u"Palmeira das Miss&otilde;es",
-        u"Palmitinho",
-        u"Panambi",
-        u"Pantano Grande",
-        u"Paraí",
-        u"Paraíso do Sul",
-        u"Pareci Novo",
-        u"Parobé",
-        u"Passa Sete",
-        u"Passo do Sobrado",
-        u"Passo Fundo",
-        u"Paulo Bento",
-        u"Paverama",
-        u"Pedras Altas",
-        u"Pedro Osório",
-        u"Pejuçara",
-        u"Pelotas",
-        u"Picada Café",
-        u"Pinhal",
-        u"Pinhal da Serra",
-        u"Pinhal Grande",
-        u"Pinheirinho do Vale",
-        u"Pinheiro Machado",
-        u"Pirapó",
-        u"Piratini",
-        u"Planalto",
-        u"Poço das Antas",
-        u"Pontão",
-        u"Ponte Preta",
-        u"Portão",
-        u"Porto Alegre",
-        u"Porto Lucena",
-        u"Porto Mauá",
-        u"Porto Vera Cruz",
-        u"Porto Xavier",
-        u"Pouso Novo",
-        u"Presidente Lucena",
-        u"Progresso",
-        u"Protásio Alves",
-        u"Putinga",
-        u"Quaraí",
-        u"Quatro Irmãos",
-        u"Quevedos",
-        u"Quinze de Novembro",
-        u"Redentora",
-        u"Relvado",
-        u"Restinga Seca",
-        u"Rio dos índios",
-        u"Rio Grande",
-        u"Rio Pardo",
-        u"Riozinho",
-        u"Roca Sales",
-        u"Rodeio Bonito",
-        u"Rolador",
-        u"Rolante",
-        u"Ronda Alta",
-        u"Rondinha",
-        u"Roque Gonzales",
-        u"Rosário do Sul",
-        u"Sagrada Família",
-        u"Saldanha Marinho",
-        u"Salto do Jacuí",
-        u"Salvador das Miss&otilde;es",
-        u"Salvador do Sul",
-        u"Sananduva",
-        u"Sant' Ana do Livramento",
-        u"Santa Bárbara do Sul",
-        u"Santa Cecília do Sul",
-        u"Santa Clara do Sul",
-        u"Santa Cruz do Sul",
-        u"Santa Margarida do Sul",
-        u"Santa Maria",
-        u"Santa Maria do Herval",
-        u"Santa Rosa",
-        u"Santa Tereza",
-        u"Santa Vitória do Palmar",
-        u"Santana da Boa Vista",
-        u"Santiago",
-        u"Santo Ângelo",
-        u"Santo Antônio da Patrulha",
-        u"Santo Antônio das Miss&otilde;es",
-        u"Santo Antônio do Palma",
-        u"Santo Antônio do Planalto",
-        u"Santo Augusto",
-        u"Santo Cristo",
-        u"Santo Expedito do Sul",
-        u"São Borja",
-        u"São Domingos do Sul",
-        u"São Francisco deAssis",
-        u"São Francisco de Paula",
-        u"São Gabriel",
-        u"São Jerônimo",
-        u"São João da Urtiga",
-        u"São João do Polêsine",
-        u"São Jorge",
-        u"São José das Miss&otilde;es",
-        u"São José do Herval",
-        u"São José do Hortêncio",
-        u"São José do Inhacorá",
-        u"São José do Norte",
-        u"São José do Ouro",
-        u"São José do Sul",
-        u"São José dos Ausentes",
-        u"São Leopoldo",
-        u"São Lourenço do Sul",
-        u"São Luiz Gonzaga",
-        u"São Marcos",
-        u"São Martinho",
-        u"São Martinho da Serra",
-        u"São Miguel das Miss&otilde;es",
-        u"São Nicolau",
-        u"São Paulo das Miss&otilde;es",
-        u"São Pedro da Serra",
-        u"São Pedro das Miss&otilde;es",
-        u"São Pedro do Butiá",
-        u"São Pedro do Sul",
-        u"São Sebastião do Caí",
-        u"São Sepé",
-        u"São Valentim",
-        u"São Valentim do Sul",
-        u"São Valério do Sul",
-        u"São Vendelino",
-        u"São Vicente do Sul",
-        u"Sapiranga",
-        u"Sapucaia do Sul",
-        u"Sarandi",
-        u"Seberi",
-        u"Sede Nova",
-        u"Segredo",
-        u"Selbach",
-        u"Senador Salgado Filho",
-        u"Sentinela do Sul",
-        u"Serafina Corrêa",
-        u"Sério",
-        u"Sertão",
-        u"Sertão Santana",
-        u"Sete de Setembro",
-        u"Severiano de Almeida",
-        u"Silveira Martins",
-        u"Sinimbu",
-        u"Sobradinho",
-        u"Soledade",
-        u"Tabaí",
-        u"Tapejara",
-        u"Tapera",
-        u"Tapes",
-        u"Taquara",
-        u"Taquari",
-        u"Taquaruçu do Sul",
-        u"Tavares",
-        u"Tenente Portela",
-        u"Terra de Areia",
-        u"Teutônia",
-        u"Tio Hugo",
-        u"Tiradentes do Sul",
-        u"Toropi",
-        u"Torres",
-        u"Tramandaí",
-        u"Travesseiro",
-        u"Três Arroios",
-        u"Três Cachoeiras",
-        u"Três Coroas",
-        u"Três de Maio",
-        u"Três Forquilhas",
-        u"Três Palmeiras",
-        u"Três Passos",
-        u"Trindade do Sul",
-        u"Triunfo",
-        u"Tucunduva",
-        u"Tunas",
-        u"Tupanci do Sul",
-        u"Tupanciretã",
-        u"Tupandi",
-        u"Tuparendi",
-        u"Turuçu",
-        u"Ubiretama",
-        u"União da Serra",
-        u"Unistalda",
-        u"Uruguaiana",
-        u"Vacaria",
-        u"Vale do Sol",
-        u"Vale Real",
-        u"Vale Verde",
-        u"Vanini",
-        u"Venâncio Aires",
-        u"Vera Cruz",
-        u"Veranópolis",
-        u"Vespasiano Correa",
-        u"Viadutos",
-        u"Viamão",
-        u"Vicente Dutra",
-        u"Victor Graeff",
-        u"Vila Flores",
-        u"Vila Lângaro",
-        u"Vila Maria",
-        u"Vila Nova do Sul",
-        u"Vista Alegre",
-        u"Vista Alegre do Prata",
-        u"Vista Gaúcha",
-        u"Vitória das Miss&otilde;es",
-        u"Westfalia",
-        u"Xangri-lá",],
-    'SC':[
-        u"Abdon Batista",
-        u"Abelardo Luz",
-        u"Agrolândia",
-        u"Agronômica",
-        u"água Doce",
-        u"águas de Chapecó",
-        u"águas Frias",
-        u"águas Mornas",
-        u"Alfredo Wagner",
-        u"Alto Bela Vista",
-        u"Anchieta",
-        u"Angelina",
-        u"Anita Garibaldi",
-        u"Anitápolis",
-        u"Antônio Carlos",
-        u"Apiúna",
-        u"Arabutã",
-        u"Araquari",
-        u"Araranguá",
-        u"Armazém",
-        u"Arroio Trinta",
-        u"Arvoredo",
-        u"Ascurra",
-        u"Atalanta",
-        u"Aurora",
-        u"Balneário Arroio do Silva",
-        u"Balneário Barra do Sul",
-        u"Balneário Camboriú",
-        u"Balneário Gaivota",
-        u"Balneário Piçarras",
-        u"Bandeirante",
-        u"Barra Bonita",
-        u"Barra Velha",
-        u"Bela Vista do Toldo",
-        u"Belmonte",
-        u"Benedito Novo",
-        u"Biguaçu",
-        u"Blumenau",
-        u"Bocaina do Sul",
-        u"Bom Jardim da Serra",
-        u"Bom Jesus",
-        u"Bom Jesus do Oeste",
-        u"Bom Retiro",
-        u"Bombinhas",
-        u"Botuverá",
-        u"Braço do Norte",
-        u"Braço do Trombudo",
-        u"Brunópolis",
-        u"Brusque",
-        u"Caçador",
-        u"Caibi",
-        u"Calmon",
-        u"Camboriú",
-        u"Campo Alegre",
-        u"Campo Belo do Sul",
-        u"Campo Erê",
-        u"Campos Novos",
-        u"Canelinha",
-        u"Canoinhas",
-        u"Capão Alto",
-        u"Capinzal",
-        u"Capivari de Baixo",
-        u"Catanduvas",
-        u"Caxambu do Sul",
-        u"Celso Ramos",
-        u"Cerro Negro",
-        u"Chapadão do Lageado",
-        u"Chapecó",
-        u"Cocal do Sul",
-        u"Concórdia",
-        u"Cordilheira Alta",
-        u"Coronel Freitas",
-        u"Coronel Martins",
-        u"Correia Pinto",
-        u"Corupá",
-        u"Criciúma",
-        u"Cunha Porã",
-        u"Cunhataí",
-        u"Curitibanos",
-        u"Descanso",
-        u"Dionísio Cerqueira",
-        u"Dona Emma",
-        u"Doutor Pedrinho",
-        u"Entre Rios",
-        u"Ermo",
-        u"Erval Velho",
-        u"Faxinal dos Guedes",
-        u"Flor do Sertão",
-        u"Florianópolis",
-        u"Formosa do Sul",
-        u"Forquilhinha",
-        u"Fraiburgo",
-        u"Frei Rogério",
-        u"Galvão",
-        u"Garopaba",
-        u"Garuva",
-        u"Gaspar",
-        u"Governador Celso Ramos",
-        u"Grão Pará",
-        u"Gravatal",
-        u"Guabiruba",
-        u"Guaraciaba",
-        u"Guaramirim",
-        u"Guarujá do Sul",
-        u"Guatambú",
-        u"Herval d' Oeste",
-        u"Ibiam",
-        u"Ibicaré",
-        u"Ibirama",
-        u"Içara",
-        u"Ilhota",
-        u"Imaruí",
-        u"Imbituba",
-        u"Imbuia",
-        u"Indaial",
-        u"Iomerê",
-        u"Ipira",
-        u"Iporã do Oeste",
-        u"Ipuaçu",
-        u"Ipumirim",
-        u"Iraceminha",
-        u"Irani",
-        u"Irati",
-        u"Irineópolis",
-        u"Itá",
-        u"Itaiópolis",
-        u"Itajaí",
-        u"Itapema",
-        u"Itapiranga",
-        u"Itapoá",
-        u"Ituporanga",
-        u"Jaborá",
-        u"Jacinto Machado",
-        u"Jaguaruna",
-        u"Jaraguá do Sul",
-        u"Jardinópolis",
-        u"Joaçaba",
-        u"Joinville",
-        u"José Boiteux",
-        u"Jupiá",
-        u"Lacerdópolis",
-        u"Lages",
-        u"Laguna",
-        u"Lajeado Grande",
-        u"Laurentino",
-        u"Lauro Muller",
-        u"Lebon Régis",
-        u"Leoberto Leal",
-        u"Lindóia do Sul",
-        u"Lontras",
-        u"Luiz Alves",
-        u"Luzerna",
-        u"Macieira",
-        u"Mafra",
-        u"Major Gercino",
-        u"Major Vieira",
-        u"Maracajá",
-        u"Maravilha",
-        u"Marema",
-        u"Massaranduba",
-        u"Matos Costa",
-        u"Meleiro",
-        u"Mirim Doce",
-        u"Modelo",
-        u"Mondaí",
-        u"Monte Carlo",
-        u"Monte Castelo",
-        u"Morro da Fumaça",
-        u"Morro Grande",
-        u"Navegantes",
-        u"Nova Erechim",
-        u"Nova Itaberaba",
-        u"Nova Trento",
-        u"Nova Veneza",
-        u"Novo Horizonte",
-        u"Orleans",
-        u"Otacílio Costa",
-        u"Ouro",
-        u"Ouro Verde",
-        u"Paial",
-        u"Painel",
-        u"Palhoça",
-        u"Palma Sola",
-        u"Palmeira",
-        u"Palmitos",
-        u"Papanduva",
-        u"Paraíso",
-        u"Passo de Torres",
-        u"Passos Maia",
-        u"Paulo Lopes",
-        u"Pedras Grandes",
-        u"Penha",
-        u"Peritiba",
-        u"Petrolândia",
-        u"Pinhalzinho",
-        u"Pinheiro Preto",
-        u"Piratuba",
-        u"Planalto Alegre",
-        u"Pomerode",
-        u"Ponte Alta",
-        u"Ponte Alta do Norte",
-        u"Ponte Serrada",
-        u"Porto Belo",
-        u"Porto União",
-        u"Pouso Redondo",
-        u"Praia Grande",
-        u"Presidente Castello Branco",
-        u"Presidente Getúlio",
-        u"Presidente Nereu",
-        u"Princesa",
-        u"Quilombo",
-        u"Rancho Queimado",
-        u"Rio das Antas",
-        u"Rio do Campo",
-        u"Rio do Oeste",
-        u"Rio do Sul",
-        u"Rio dos Cedros",
-        u"Rio Fortuna",
-        u"Rio Negrinho",
-        u"Rio Rufino",
-        u"Riqueza",
-        u"Rodeio",
-        u"Romelândia",
-        u"Salete",
-        u"Saltinho",
-        u"Salto Veloso",
-        u"Sangão",
-        u"Santa Cecília",
-        u"Santa Helena",
-        u"Santa Rosa de Lima",
-        u"Santa Rosa do Sul",
-        u"Santa Terezinha",
-        u"Santa Terezinha do Progresso",
-        u"Santiago do Sul",
-        u"Santo Amaro da Imperatriz",
-        u"São Bento do Sul",
-        u"São Bernardino",
-        u"São Bonifácio",
-        u"São Carlos",
-        u"São Cristovão do Sul",
-        u"São Domingos",
-        u"São Francisco doSul",
-        u"São João Batista",
-        u"São João do Itaperiú",
-        u"São João do Oeste",
-        u"São João do Sul",
-        u"São Joaquim",
-        u"São José",
-        u"São José do Cedro",
-        u"São José do Cerrito",
-        u"São Lourenço do Oeste",
-        u"São Ludgero",
-        u"São Martinho",
-        u"São Miguel da Boa Vista",
-        u"São Miguel do Oeste",
-        u"São Pedro de Alcântara",
-        u"Saudades",
-        u"Schroeder",
-        u"Seara",
-        u"Serra Alta",
-        u"Siderópolis",
-        u"Sombrio",
-        u"Sul Brasil",
-        u"Taió",
-        u"Tangará",
-        u"Tigrinhos",
-        u"Tijucas",
-        u"Timbé do Sul",
-        u"Timbó",
-        u"Timbó Grande",
-        u"Três Barras",
-        u"Treviso",
-        u"Treze de Maio",
-        u"Treze Tílias",
-        u"Trombudo Central",
-        u"Tubarão",
-        u"Tunápolis",
-        u"Turvo",
-        u"União do Oeste",
-        u"Urubici",
-        u"Urupema",
-        u"Urussanga",
-        u"Vargeão",
-        u"Vargem",
-        u"Vargem Bonita",
-        u"Vidal Ramos",
-        u"Videira",
-        u"Vitor Meireles",
-        u"Witmarsum",
-        u"Xanxerê",
-        u"Xavantina",
-        u"Xaxim",
-        u"Zortéa",],
-    'SP':[
-        u"Adamantina",
-        u"Adolfo",
-        u"Aguaí",
-        u"águas da Prata",
-        u"águas de Lindóia",
-        u"águas de Santa Bárbara",
-        u"águas de São Pedro",
-        u"Agudos",
-        u"Alambari",
-        u"AlfredoMarcondes",
-        u"Altair",
-        u"Altinópolis",
-        u"Alto Alegre",
-        u"Alumínio",
-        u"álvares Florence",
-        u"álvares Machado",
-        u"álvaro de Carvalho",
-        u"Alvinlândia",
-        u"Americana",
-        u"Américo Brasiliense",
-        u"Américo de Campos",
-        u"Amparo",
-        u"Analândia",
-        u"Andradina",
-        u"Angatuba",
-        u"Anhembi",
-        u"Anhumas",
-        u"Aparecida",
-        u"Aparecida d'Oeste",
-        u"Apiaí",
-        u"Araçariguama",
-        u"Araçatuba",
-        u"Araçoiaba da Serra",
-        u"Aramina",
-        u"Arandu",
-        u"Arapeí",
-        u"Araraquara",
-        u"Araras",
-        u"Arco-íris",
-        u"Arealva",
-        u"Areias",
-        u"Areiópolis",
-        u"Ariranha",
-        u"Artur Nogueira",
-        u"Arujá",
-        u"Aspásia",
-        u"Assis",
-        u"Atibaia",
-        u"Auriflama",
-        u"Avaí",
-        u"Avanhandava",
-        u"Avaré",
-        u"Bady Bassitt",
-        u"Balbinos",
-        u"Bálsamo",
-        u"Bananal",
-        u"Barão de Antonina",
-        u"Barbosa",
-        u"Bariri",
-        u"Barra Bonita",
-        u"Barra do Chapéu",
-        u"Barra do Turvo",
-        u"Barretos",
-        u"Barrinha",
-        u"Barueri",
-        u"Bastos",
-        u"Batatais",
-        u"Bauru",
-        u"Bebedouro",
-        u"Bento de Abreu",
-        u"Bernardino de Campos",
-        u"Bertioga",
-        u"Bilac",
-        u"Birigui",
-        u"Biritiba-Mirim",
-        u"Boa Esperança do Sul",
-        u"Bocaina",
-        u"Bofete",
-        u"Boituva",
-        u"Bom Jesus dos Perd&otilde;es",
-        u"Bom Sucesso de Itararé",
-        u"Borá",
-        u"Boracéia",
-        u"Borborema",
-        u"Borebi",
-        u"Botucatu",
-        u"Bragança Paulista",
-        u"Braúna",
-        u"Brejo Alegre",
-        u"Brodowski",
-        u"Brotas",
-        u"Buri",
-        u"Buritama",
-        u"Buritizal",
-        u"Cabrália Paulista",
-        u"Cabreúva",
-        u"Caçapava",
-        u"Cachoeira Paulista",
-        u"Caconde",
-        u"Cafelândia",
-        u"Caiabu",
-        u"Caieiras",
-        u"Caiuá",
-        u"Cajamar",
-        u"Cajati",
-        u"Cajobi",
-        u"Cajuru",
-        u"Campina do Monte Alegre",
-        u"Campinas",
-        u"Campo Limpo Paulista",
-        u"Campos do Jordão",
-        u"Campos Novos Paulista",
-        u"Cananéia",
-        u"Canas",
-        u"Cândido Mota",
-        u"Cândido Rodrigues",
-        u"Canitar",
-        u"Capão Bonito",
-        u"Capela do Alto",
-        u"Capivari",
-        u"Caraguatatuba",
-        u"Carapicuíba",
-        u"Cardoso",
-        u"Casa Branca",
-        u"Cássia dos Coqueiros",
-        u"Castilho",
-        u"Catanduva",
-        u"Catiguá",
-        u"Cedral",
-        u"Cerqueira César",
-        u"Cerquilho",
-        u"Cesário Lange",
-        u"Charqueada",
-        u"Chavantes",
-        u"Clementina",
-        u"Colina",
-        u"Colômbia",
-        u"Conchal",
-        u"Conchas",
-        u"Cordeirópolis",
-        u"Coroados",
-        u"Coronel Macedo",
-        u"Corumbataí",
-        u"Cosmópolis",
-        u"Cosmorama",
-        u"Cotia",
-        u"Cravinhos",
-        u"Cristais Paulista",
-        u"Cruzália",
-        u"Cruzeiro",
-        u"Cubatão",
-        u"Cunha",
-        u"Descalvado",
-        u"Diadema",
-        u"Dirce Reis",
-        u"Divinolândia",
-        u"Dobrada",
-        u"Dois Córregos",
-        u"Dolcinópolis",
-        u"Dourado",
-        u"Dracena",
-        u"Duartina",
-        u"Dumont",
-        u"Echaporã",
-        u"Eldorado",
-        u"Elias Fausto",
-        u"Elisiário",
-        u"Embaúba",
-        u"Embu",
-        u"Embu-Guaçu",
-        u"Emilianópolis",
-        u"Engenheiro Coelho",
-        u"Espírito Santo do Pinhal",
-        u"Espírito Santo do Turvo",
-        u"Estiva Gerbi",
-        u"Estrela do Norte",
-        u"Estrela d'Oeste",
-        u"Euclides da Cunha Paulista",
-        u"Fartura",
-        u"Fernando Prestes",
-        u"Fernandópolis",
-        u"Fernão",
-        u"Ferraz de Vasconcelos",
-        u"Flora Rica",
-        u"Floreal",
-        u"Flórida Paulista",
-        u"Florínia",
-        u"Franca",
-        u"Francisco Morato",
-        u"Franco da Rocha",
-        u"Gabriel Monteiro",
-        u"Gália",
-        u"Garça",
-        u"Gastão Vidigal",
-        u"Gavião Peixoto",
-        u"General Salgado",
-        u"Getulina",
-        u"Glicério",
-        u"Guaiçara",
-        u"Guaimbê",
-        u"Guaíra",
-        u"Guapiaçu",
-        u"Guapiara",
-        u"Guará",
-        u"Guaraçaí",
-        u"Guaraci",
-        u"Guarani d'Oeste",
-        u"Guarantã",
-        u"Guararapes",
-        u"Guararema",
-        u"Guaratinguetá",
-        u"Guareí",
-        u"Guariba",
-        u"Guarujá",
-        u"Guarulhos",
-        u"Guatapará",
-        u"Guzolândia",
-        u"Herculândia",
-        u"olambra",
-        u"Hortolândia",
-        u"Iacanga",
-        u"Iacri",
-        u"Iaras",
-        u"Ibaté",
-        u"Ibirá",
-        u"Ibirarema",
-        u"Ibitinga",
-        u"Ibiúna",
-        u"Icém",
-        u"Iepê",
-        u"Igaraçu do Tietê",
-        u"Igarapava",
-        u"Igaratá",
-        u"Iguape",
-        u"Ilha Comprida",
-        u"Ilha Solteira",
-        u"Ilhabela",
-        u"Indaiatuba",
-        u"Indiana",
-        u"Indiaporã",
-        u"Inúbia Paulista",
-        u"Ipaussu",
-        u"Iperó",
-        u"Ipeúna",
-        u"Ipiguá",
-        u"Iporanga",
-        u"Ipuã",
-        u"Iracemápolis",
-        u"Irapuã",
-        u"Irapuru",
-        u"Itaberá",
-        u"Itaí",
-        u"Itajobi",
-        u"Itaju",
-        u"Itanhaém",
-        u"Itaóca",
-        u"Itapecerica da Serra",
-        u"Itapetininga",
-        u"Itapeva",
-        u"Itapevi",
-        u"Itapira",
-        u"Itapirapuã Paulista",
-        u"Itápolis",
-        u"Itaporanga",
-        u"Itapuí",
-        u"Itapura",
-        u"Itaquaquecetuba",
-        u"Itararé",
-        u"Itariri",
-        u"Itatiba",
-        u"Itatinga",
-        u"Itirapina",
-        u"Itirapuã",
-        u"Itobi",
-        u"Itu",
-        u"Itupeva",
-        u"Ituverava",
-        u"Jaborandi",
-        u"Jaboticabal",
-        u"Jacareí",
-        u"Jaci",
-        u"Jacupiranga",
-        u"Jaguariúna",
-        u"Jales",
-        u"Jambeiro",
-        u"Jandira",
-        u"Jardinópolis",
-        u"Jarinu",
-        u"Jaú",
-        u"Jeriquara",
-        u"Joanópolis",
-        u"João Ramalho",
-        u"José Bonifácio",
-        u"Júlio Mesquita",
-        u"Jumirim",
-        u"Jundiaí",
-        u"Junqueirópolis",
-        u"Juquiá",
-        u"Juquitiba",
-        u"Lagoinha",
-        u"Laranjal Paulista",
-        u"Lavínia",
-        u"Lavrinhas",
-        u"Leme",
-        u"Lençóis Paulista",
-        u"Limeira",
-        u"Lindóia",
-        u"Lins",
-        u"Lorena",
-        u"Lourdes",
-        u"Louveira",
-        u"Lucélia",
-        u"Lucianópolis",
-        u"Luís Antônio",
-        u"Luiziânia",
-        u"Lupércio",
-        u"Lutécia",
-        u"Macatuba",
-        u"Macaubal",
-        u"Macedônia",
-        u"Magda",
-        u"Mairinque",
-        u"Mairiporã",
-        u"Manduri",
-        u"Marabá Paulista",
-        u"Maracaí",
-        u"Marapoama",
-        u"Mariápolis",
-        u"Marília",
-        u"Marinópolis",
-        u"Martinópolis",
-        u"Matão",
-        u"Mauá",
-        u"Mendonça",
-        u"Meridiano",
-        u"Mesópolis",
-        u"Miguelópolis",
-        u"Mineiros do Tietê",
-        u"Mira Estrela",
-        u"Miracatu",
-        u"Mirandópolis",
-        u"Mirante do Paranapanema",
-        u"Mirassol",
-        u"Mirassolândia",
-        u"Mococa",
-        u"Mogi das Cruzes",
-        u"Mogi Guaçu",
-        u"Moji Mirim",
-        u"Mombuca",
-        u"Monç&otilde;es",
-        u"Mongaguá",
-        u"Monte Alegre do Sul",
-        u"Monte Alto",
-        u"Monte Aprazível",
-        u"Monte Azul Paulista",
-        u"Monte Castelo",
-        u"Monte Mor",
-        u"Monteiro Lobato",
-        u"Morro Agudo",
-        u"Morungaba",
-        u"Motuca",
-        u"Murutinga do Sul",
-        u"Nantes",
-        u"Narandiba",
-        u"Natividade da Serra",
-        u"Nazaré Paulista",
-        u"Neves Paulista",
-        u"Nhandeara",
-        u"Nipoã",
-        u"Nova Aliança",
-        u"Nova Campina",
-        u"Nova Canaã Paulista",
-        u"Nova Castilho",
-        u"Nova Europa",
-        u"Nova Granada",
-        u"Nova Guataporanga",
-        u"Nova Independência",
-        u"Nova Luzitânia",
-        u"Nova Odessa",
-        u"Novais",
-        u"Novo Horizonte",
-        u"Nuporanga",
-        u"Ocauçu",
-        u"Óleo",
-        u"Olímpia",
-        u"Onda Verde",
-        u"Oriente",
-        u"Orindiúva",
-        u"Orlândia",
-        u"Osasco",
-        u"Oscar Bressane",
-        u"Osvaldo Cruz",
-        u"Ourinhos",
-        u"Ouro Verde",
-        u"Ouroeste",
-        u"Pacaembu",
-        u"Palestina",
-        u"Palmares Paulista",
-        u"Palmeira d'Oeste",
-        u"Palmital",
-        u"Panorama",
-        u"ParaguaçuPaulista",
-        u"Paraibuna",
-        u"Paraíso",
-        u"Paranapanema",
-        u"Paranapuã",
-        u"Parapuã",
-        u"Pardinho",
-        u"Pariquera-Açu",
-        u"Parisi",
-        u"Patrocínio Paulista",
-        u"Paulicéia",
-        u"Paulínia",
-        u"Paulistânia",
-        u"Paulo de Faria",
-        u"Pederneiras",
-        u"Pedra Bela",
-        u"Pedranópolis",
-        u"Pedregulho",
-        u"Pedreira",
-        u"Pedrinhas Paulista",
-        u"Pedro de Toledo",
-        u"Penápolis",
-        u"Pereira Barreto",
-        u"Pereiras",
-        u"Peruíbe",
-        u"Piacatu",
-        u"Piedade",
-        u"Pilar do Sul",
-        u"Pindamonhangaba",
-        u"Pindorama",
-        u"Pinhalzinho",
-        u"Piquerobi",
-        u"Piquete",
-        u"Piracaia",
-        u"Piracicaba",
-        u"Piraju",
-        u"Pirajuí",
-        u"Pirangi",
-        u"Piraporado Bom Jesus",
-        u"Pirapozinho",
-        u"Pirassununga",
-        u"Piratininga",
-        u"Pitangueiras",
-        u"Planalto",
-        u"Platina",
-        u"Poá",
-        u"Poloni",
-        u"Pompéia",
-        u"Pongaí",
-        u"Pontal",
-        u"Pontalinda",
-        u"Pontes Gestal",
-        u"Populina",
-        u"Porangaba",
-        u"Porto Feliz",
-        u"Porto Ferreira",
-        u"Potim",
-        u"Potirendaba",
-        u"Pracinha",
-        u"Pradópolis",
-        u"Praia Grande",
-        u"Pratânia",
-        u"Presidente Alves",
-        u"Presidente Bernardes",
-        u"Presidente Epitácio",
-        u"Presidente Prudente",
-        u"Presidente Venceslau",
-        u"Promissão",
-        u"Quadra",
-        u"Quatá",
-        u"Queiroz",
-        u"Queluz",
-        u"Quintana",
-        u"Rafard",
-        u"Rancharia",
-        u"Redenção da Serra",
-        u"Regente Feijó",
-        u"Reginópolis",
-        u"Registro",
-        u"Restinga",
-        u"Ribeira",
-        u"Ribeirão Bonito",
-        u"Ribeirão Branco",
-        u"Ribeirão Corrente",
-        u"Ribeirão do Sul",
-        u"Ribeirão dos índios",
-        u"Ribeirão Grande",
-        u"Ribeirão Pires",
-        u"Ribeirão Preto",
-        u"Rifaina",
-        u"Rincão",
-        u"Rinópolis",
-        u"Rio Claro",
-        u"Rio das Pedras",
-        u"Rio Grande da Serra",
-        u"Riolândia",
-        u"Riversul",
-        u"Rosana",
-        u"Roseira",
-        u"Rubiácea",
-        u"Rubinéia",
-        u"Sabino",
-        u"Sagres",
-        u"Sales",
-        u"Sales Oliveira",
-        u"Salesópolis",
-        u"Salmourão",
-        u"Saltinho",
-        u"Salto",
-        u"Salto de Pirapora",
-        u"Salto Grande",
-        u"Sandovalina",
-        u"Santa Adélia",
-        u"Santa Albertina",
-        u"Santa Bárbara d'Oeste",
-        u"Santa Branca",
-        u"Santa Clara d'Oeste",
-        u"Santa Cruz da Conceição",
-        u"Santa Cruz da Esperança",
-        u"Santa Cruz das Palmeiras",
-        u"Santa Cruz do Rio Pardo",
-        u"Santa Ernestina",
-        u"Santa Fé do Sul",
-        u"Santa Gertrudes",
-        u"Santa Isabel",
-        u"Santa Lúcia",
-        u"Santa Maria da Serra",
-        u"Santa Mercedes",
-        u"Santa Rita do Passa Quatro",
-        u"Santa Rita d'Oeste",
-        u"Santa Rosa de Viterbo",
-        u"Santa Salete",
-        u"Santana da Ponte Pensa",
-        u"Santana de Parnaíba",
-        u"Santo Anastácio",
-        u"Santo André",
-        u"Santo Antônio da Alegria",
-        u"Santo Antônio de Posse",
-        u"Santo Antônio do Aracanguá",
-        u"Santo Antônio do Jardim",
-        u"Santo Antônio do Pinhal",
-        u"Santo Expedito",
-        u"Santópolis do Aguapeí",
-        u"Santos",
-        u"São Bento do Sapucaí",
-        u"São Bernardo do Campo",
-        u"São Caetano do Sul",
-        u"São Carlos",
-        u"São Francisco",
-        u"São João da Boa Vista",
-        u"São João das Duas Pontes",
-        u"São João de Iracema",
-        u"São João do Pau d'Alho",
-        u"São Joaquim da Barra",
-        u"São José da Bela Vista",
-        u"São José do Barreiro",
-        u"São José do Rio Pardo",
-        u"São José do Rio Preto",
-        u"São José dos Campos",
-        u"São Lourenço da Serra",
-        u"São Luís do Paraitinga",
-        u"São Manuel",
-        u"São Miguel Arcanjo",
-        u"São Paulo",
-        u"São Pedro",
-        u"São Pedro do Turvo",
-        u"São Roque",
-        u"São Sebastião",
-        u"São Sebastião da Grama",
-        u"São Simão",
-        u"São Vicente",
-        u"Sarapuí",
-        u"Sarutaiá",
-        u"Sebastianópolis do Sul",
-        u"Serra Azul",
-        u"Serra Negra",
-        u"Serrana",
-        u"Sertãozinho",
-        u"Sete Barras",
-        u"Severínia",
-        u"Silveiras",
-        u"Socorro",
-        u"Sorocaba",
-        u"Sud Mennucci",
-        u"Sumaré",
-        u"Suzanápolis",
-        u"Suzano",
-        u"Tabapuã",
-        u"Tabatinga",
-        u"Taboão da Serra",
-        u"Taciba",
-        u"Taguaí",
-        u"Taiaçu",
-        u"Taiúva",
-        u"Tambaú",
-        u"Tanabi",
-        u"Tapiraí",
-        u"Tapiratiba",
-        u"Taquaral",
-        u"Taquaritinga",
-        u"Taquarituba",
-        u"Taquarivaí",
-        u"Tarabai",
-        u"Tarumã",
-        u"Tatuí",
-        u"Taubaté",
-        u"Tejupá",
-        u"Teodoro Sampaio",
-        u"Terra Roxa",
-        u"Tietê",
-        u"Timburi",
-        u"Torre de Pedra",
-        u"Torrinha",
-        u"Trabiju",
-        u"Tremembé",
-        u"Três Fronteiras",
-        u"Tuiuti",
-        u"Tupã",
-        u"Tupi Paulista",
-        u"Turiúba",
-        u"Turmalina",
-        u"Ubarana",
-        u"Ubatuba",
-        u"Ubirajara",
-        u"Uchoa",
-        u"União Paulista",
-        u"Urânia",
-        u"Uru",
-        u"Urupês",
-        u"Valentim Gentil",
-        u"Valinhos",
-        u"Valparaíso",
-        u"Vargem",
-        u"Vargem Grande do Sul",
-        u"Vargem Grande Paulista",
-        u"VárzeaPaulista",
-        u"Vera Cruz",
-        u"Vinhedo",
-        u"Viradouro",
-        u"Vista Alegre do Alto",
-        u"Vitória Brasil",
-        u"Votorantim",
-        u"Votuporanga",
-        u"Zacarias",],
-    'SE':[
-        u"Amparo de São Francisco",
-        u"Aquidabã",
-        u"Aracaju",
-        u"Arauá",
-        u"Areia Branca",
-        u"Barra dos Coqueiros",
-        u"Boquim",
-        u"Brejo Grande",
-        u"Campo do Brito",
-        u"Canhoba",
-        u"Canindé de São Francisco",
-        u"Capela",
-        u"Carira",
-        u"Carmópolis",
-        u"Cedro de São João",
-        u"Cristinápolis",
-        u"Cumbe",
-        u"Divina Pastora",
-        u"Estância",
-        u"Feira Nova",
-        u"Frei Paulo",
-        u"Gararu",
-        u"General Maynard",
-        u"Gracho Cardoso",
-        u"Ilha das Flores",
-        u"Indiaroba",
-        u"Itabaiana",
-        u"Itabaianinha",
-        u"Itabi",
-        u"Itaporanga d'Ajuda",
-        u"Japaratuba",
-        u"Japoatã",
-        u"Lagarto",
-        u"Laranjeiras",
-        u"Macambira",
-        u"Malhada dos Bois",
-        u"Malhador",
-        u"Maruim",
-        u"Moita Bonita",
-        u"Monte Alegre de Sergipe",
-        u"Muribeca",
-        u"Neópolis",
-        u"Nossa Senhora Aparecida",
-        u"Nossa Senhora da Glória",
-        u"Nossa Senhora das Dores",
-        u"Nossa Senhora de Lourdes",
-        u"Nossa Senhora do Socorro",
-        u"Pacatuba",
-        u"Pedra Mole",
-        u"Pedrinhas",
-        u"Pinhão",
-        u"Pirambu",
-        u"Poço Redondo",
-        u"Poço Verde",
-        u"Porto da Folha",
-        u"Propriá",
-        u"Riachão do Dantas",
-        u"Riachuelo",
-        u"Ribeirópolis",
-        u"Rosário do Catete",
-        u"Salgado",
-        u"Santa Luzia do Itanhy",
-        u"Santa Rosa de Lima",
-        u"Santana do São Francisco",
-        u"Santo Amaro das Brotas",
-        u"São Cristóvão",
-        u"São Domingos",
-        u"São Francisco",
-        u"São Miguel do Aleixo",
-        u"Simão Dias",
-        u"Siriri",
-        u"Telha",
-        u"Tobias Barreto",
-        u"Tomar do Geru",
-        u"Umbaúba",],
-    'SE':[
-        u" TO",
-        u"Abreulândia",
-        u"Aguiarnópolis",
-        u"Aliança do Tocantins",
-        u"Almas",
-        u"Alvorada",
-        u"Ananás",
-        u"Angico",
-        u"Aparecida do Rio Negro",
-        u"Aragominas",
-        u"Araguacema",
-        u"Araguaçu",
-        u"Araguaína",
-        u"Araguanã",
-        u"Araguatins",
-        u"Arapoema",
-        u"Arraias",
-        u"Augustinópolis",
-        u"Aurora do Tocantins",
-        u"Axixá do Tocantins",
-        u"Babaçulândia",
-        u"Bandeirantes do Tocantins",
-        u"Barra do Ouro",
-        u"Barrolândia",
-        u"Bernardo Sayão",
-        u"Bom Jesus do Tocantins",
-        u"Brasilândia do Tocantins",
-        u"Brejinho de Nazaré",
-        u"Buriti do Tocantins",
-        u"Cachoeirinha",
-        u"Campos Lindos",
-        u"Cariri do Tocantins",
-        u"Carmolândia",
-        u"Carrasco Bonito",
-        u"Caseara",
-        u"Centenário",
-        u"Chapada da Natividade",
-        u"Chapada de Areia",
-        u"Colinas do Tocantins",
-        u"Colméia",
-        u"Combinado",
-        u"Conceição do Tocantins",
-        u"Couto Magalhães",
-        u"Cristalândia",
-        u"Crixás do Tocantins",
-        u"Darcinópolis",
-        u"Dianópolis",
-        u"Divinópolis do Tocantins",
-        u"Dois Irmãos do Tocantins",
-        u"Dueré",
-        u"Esperantina",
-        u"Fátima",
-        u"Figueirópolis",
-        u"Filadélfia",
-        u"Formoso do Araguaia",
-        u"Fortaleza do Tabocão",
-        u"Goianorte",
-        u"Goiatins",
-        u"Guaraí",
-        u"Gurupi",
-        u"Ipueiras",
-        u"Itacajá",
-        u"Itaguatins",
-        u"Itapiratins",
-        u"Itaporã do Tocantins",
-        u"Jaú do Tocantins",
-        u"Juarina",
-        u"Lagoa da Confusão",
-        u"Lagoa do Tocantins",
-        u"Lajeado",
-        u"Lavandeira",
-        u"Lizarda",
-        u"Luzinópolis",
-        u"Marianópolis do Tocantins",
-        u"Mateiros",
-        u"Maurilândia do Tocantins",
-        u"Miracema do Tocantins",
-        u"Miranorte",
-        u"Monte do Carmo",
-        u"Monte Santo do Tocantins",
-        u"Muricilândia",
-        u"Natividade",
-        u"Nazaré",
-        u"Nova Olinda",
-        u"Nova Rosalândia",
-        u"Novo Acordo",
-        u"Novo Alegre",
-        u"Novo Jardim",
-        u"Oliveira de Fátima",
-        u"Palmas",
-        u"Palmeirante",
-        u"Palmeiras do Tocantins",
-        u"Palmeirópolis",
-        u"Paraíso do Tocantins",
-        u"Paranã",
-        u"Pau D'Arco",
-        u"Pedro Afonso",
-        u"Peixe",
-        u"Pequizeiro",
-        u"Pindorama do Tocantins",
-        u"Piraquê",
-        u"Pium",
-        u"Ponte Alta do Bom Jesus",
-        u"Ponte Alta do Tocantins",
-        u"Porto Alegre do Tocantins",
-        u"Porto Nacional",
-        u"Praia Norte",
-        u"Presidente Kennedy",
-        u"Pugmil",
-        u"Recursolândia",
-        u"Riachinho",
-        u"Rio da Conceição",
-        u"Rio dos Bois",
-        u"Rio Sono",
-        u"Sampaio",
-        u"Sandolândia",
-        u"Santa Fé do Araguaia",
-        u"Santa Maria do Tocantins",
-        u"Santa Rita do Tocantins",
-        u"Santa Rosa do Tocantins",
-        u"Santa Tereza do Tocantins",
-        u"Santa Terezinha do Tocantins",
-        u"São Bento do Tocantins",
-        u"São Félix do Tocantins",
-        u"São Miguel do Tocantins",
-        u"São Salvadordo Tocantins",
-        u"São Sebastião do Tocantins",
-        u"São Valério da Natividade",
-        u"Silvanópolis",
-        u"Sítio Novo do Tocantins",
-        u"Sucupira",
-        u"Taguatinga",
-        u"Taipas do Tocantins",
-        u"Talismã",
-        u"Tocantínia",
-        u"Tocantinópolis",
-        u"Tupirama",
-        u"Tupiratins",
-        u"Wanderlândia",
-        u'Xambioá',]
+cidadesPorEstados = {
+    u"AC":[(1200013,u"Acrelândia","acrelandia",),
+           (1200054,u"Assis Brasil","assis brasil",),
+           (1200104,u"Brasiléia","brasileia",),
+           (1200138,u"Bujari","bujari",),
+           (1200179,u"Capixaba","capixaba",),
+           (1200203,u"Cruzeiro do Sul","cruzeiro do sul",),
+           (1200252,u"Epitaciolândia","epitaciolandia",),
+           (1200302,u"Feijó","feijo",),
+           (1200328,u"Jordão","jordao",),
+           (1200336,u"Mâncio Lima","mancio lima",),
+           (1200344,u"Manoel Urbano","manoel urbano",),
+           (1200351,u"Marechal Thaumaturgo","marechal thaumaturgo",),
+           (1200385,u"Plácido de Castro","placido de castro",),
+           (1200807,u"Porto Acre","porto acre",),
+           (1200393,u"Porto Walter","porto walter",),
+           (1200401,u"Rio Branco","rio branco",),
+           (1200427,u"Rodrigues Alves","rodrigues alves",),
+           (1200435,u"Santa Rosa do Purus","santa rosa do purus",),
+           (1200500,u"Sena Madureira","sena madureira",),
+           (1200450,u"Senador Guiomard","senador guiomard",),
+           (1200609,u"Tarauacá","tarauaca",),
+           (1200708,u"Xapuri","xapuri",),
+          ],
+    u"AL":[(2700102,u"Água Branca","agua branca",),
+           (2700201,u"Anadia","anadia",),
+           (2700300,u"Arapiraca","arapiraca",),
+           (2700409,u"Atalaia","atalaia",),
+           (2700508,u"Barra de Santo Antônio","barra de santo antonio",),
+           (2700607,u"Barra de São Miguel","barra de sao miguel",),
+           (2700706,u"Batalha","batalha",),
+           (2700805,u"Belém","belem",),
+           (2700904,u"Belo Monte","belo monte",),
+           (2701001,u"Boca da Mata","boca da mata",),
+           (2701100,u"Branquinha","branquinha",),
+           (2701209,u"Cacimbinhas","cacimbinhas",),
+           (2701308,u"Cajueiro","cajueiro",),
+           (2701357,u"Campestre","campestre",),
+           (2701407,u"Campo Alegre","campo alegre",),
+           (2701506,u"Campo Grande","campo grande",),
+           (2701605,u"Canapi","canapi",),
+           (2701704,u"Capela","capela",),
+           (2701803,u"Carneiros","carneiros",),
+           (2701902,u"Chã Preta","cha preta",),
+           (2702009,u"Coité do Nóia","coite do noia",),
+           (2702108,u"Colônia Leopoldina","colonia leopoldina",),
+           (2702207,u"Coqueiro Seco","coqueiro seco",),
+           (2702306,u"Coruripe","coruripe",),
+           (2702355,u"Craíbas","craibas",),
+           (2702405,u"Delmiro Gouveia","delmiro gouveia",),
+           (2702504,u"Dois Riachos","dois riachos",),
+           (2702553,u"Estrela de Alagoas","estrela de alagoas",),
+           (2702603,u"Feira Grande","feira grande",),
+           (2702702,u"Feliz Deserto","feliz deserto",),
+           (2702801,u"Flexeiras","flexeiras",),
+           (2702900,u"Girau do Ponciano","girau do ponciano",),
+           (2703007,u"Ibateguara","ibateguara",),
+           (2703106,u"Igaci","igaci",),
+           (2703205,u"Igreja Nova","igreja nova",),
+           (2703304,u"Inhapi","inhapi",),
+           (2703403,u"Jacaré dos Homens","jacare dos homens",),
+           (2703502,u"Jacuípe","jacuipe",),
+           (2703601,u"Japaratinga","japaratinga",),
+           (2703700,u"Jaramataia","jaramataia",),
+           (2703759,u"Jequiá da Praia","jequia da praia",),
+           (2703809,u"Joaquim Gomes","joaquim gomes",),
+           (2703908,u"Jundiá","jundia",),
+           (2704005,u"Junqueiro","junqueiro",),
+           (2704104,u"Lagoa da Canoa","lagoa da canoa",),
+           (2704203,u"Limoeiro de Anadia","limoeiro de anadia",),
+           (2704302,u"Maceió","maceio",),
+           (2704401,u"Major Isidoro","major isidoro",),
+           (2704906,u"Mar Vermelho","mar vermelho",),
+           (2704500,u"Maragogi","maragogi",),
+           (2704609,u"Maravilha","maravilha",),
+           (2704708,u"Marechal Deodoro","marechal deodoro",),
+           (2704807,u"Maribondo","maribondo",),
+           (2705002,u"Mata Grande","mata grande",),
+           (2705101,u"Matriz de Camaragibe","matriz de camaragibe",),
+           (2705200,u"Messias","messias",),
+           (2705309,u"Minador do Negrão","minador do negrao",),
+           (2705408,u"Monteirópolis","monteiropolis",),
+           (2705507,u"Murici","murici",),
+           (2705606,u"Novo Lino","novo lino",),
+           (2705705,u"Olho d'Água das Flores","olho d'agua das flores",),
+           (2705804,u"Olho d'Água do Casado","olho d'agua do casado",),
+           (2705903,u"Olho d'Água Grande","olho d'agua grande",),
+           (2706000,u"Olivença","olivenca",),
+           (2706109,u"Ouro Branco","ouro branco",),
+           (2706208,u"Palestina","palestina",),
+           (2706307,u"Palmeira dos Índios","palmeira dos indios",),
+           (2706406,u"Pão de Açúcar","pao de acucar",),
+           (2706422,u"Pariconha","pariconha",),
+           (2706448,u"Paripueira","paripueira",),
+           (2706505,u"Passo de Camaragibe","passo de camaragibe",),
+           (2706604,u"Paulo Jacinto","paulo jacinto",),
+           (2706703,u"Penedo","penedo",),
+           (2706802,u"Piaçabuçu","piacabucu",),
+           (2706901,u"Pilar","pilar",),
+           (2707008,u"Pindoba","pindoba",),
+           (2707107,u"Piranhas","piranhas",),
+           (2707206,u"Poço das Trincheiras","poco das trincheiras",),
+           (2707305,u"Porto Calvo","porto calvo",),
+           (2707404,u"Porto de Pedras","porto de pedras",),
+           (2707503,u"Porto Real do Colégio","porto real do colegio",),
+           (2707602,u"Quebrangulo","quebrangulo",),
+           (2707701,u"Rio Largo","rio largo",),
+           (2707800,u"Roteiro","roteiro",),
+           (2707909,u"Santa Luzia do Norte","santa luzia do norte",),
+           (2708006,u"Santana do Ipanema","santana do ipanema",),
+           (2708105,u"Santana do Mundaú","santana do mundau",),
+           (2708204,u"São Brás","sao bras",),
+           (2708303,u"São José da Laje","sao jose da laje",),
+           (2708402,u"São José da Tapera","sao jose da tapera",),
+           (2708501,u"São Luís do Quitunde","sao luis do quitunde",),
+           (2708600,u"São Miguel dos Campos","sao miguel dos campos",),
+           (2708709,u"São Miguel dos Milagres","sao miguel dos milagres",),
+           (2708808,u"São Sebastião","sao sebastiao",),
+           (2708907,u"Satuba","satuba",),
+           (2708956,u"Senador Rui Palmeira","senador rui palmeira",),
+           (2709004,u"Tanque d'Arca","tanque d'arca",),
+           (2709103,u"Taquarana","taquarana",),
+           (2709152,u"Teotônio Vilela","teotonio vilela",),
+           (2709202,u"Traipu","traipu",),
+           (2709301,u"União dos Palmares","uniao dos palmares",),
+           (2709400,u"Viçosa","vicosa",),
+           ],
+    u"AM":[(1300029,u"Alvarães","alvaraes",),
+           (1300060,u"Amaturá","amatura",),
+           (1300086,u"Anamã","anama",),
+           (1300102,u"Anori","anori",),
+           (1300144,u"Apuí","apui",),
+           (1300201,u"Atalaia do Norte","atalaia do norte",),
+           (1300300,u"Autazes","autazes",),
+           (1300409,u"Barcelos","barcelos",),
+           (1300508,u"Barreirinha","barreirinha",),
+           (1300607,u"Benjamin Constant","benjamin constant",),
+           (1300631,u"Beruri","beruri",),
+           (1300680,u"Boa Vista do Ramos","boa vista do ramos",),
+           (1300706,u"Boca do Acre","boca do acre",),
+           (1300805,u"Borba","borba",),
+           (1300839,u"Caapiranga","caapiranga",),
+           (1300904,u"Canutama","canutama",),
+           (1301001,u"Carauari","carauari",),
+           (1301159,u"Careiro da Várzea","careiro da varzea",),
+           (1301100,u"Careiro","careiro",),
+           (1301209,u"Coari","coari",),
+           (1301308,u"Codajás","codajas",),
+           (1301407,u"Eirunepé","eirunepe",),
+           (1301506,u"Envira","envira",),
+           (1301605,u"Fonte Boa","fonte boa",),
+           (1301654,u"Guajará","guajara",),
+           (1301704,u"Humaitá","humaita",),
+           (1301803,u"Ipixuna","ipixuna",),
+           (1301852,u"Iranduba","iranduba",),
+           (1301902,u"Itacoatiara","itacoatiara",),
+           (1301951,u"Itamarati","itamarati",),
+           (1302009,u"Itapiranga","itapiranga",),
+           (1302108,u"Japurá","japura",),
+           (1302207,u"Juruá","jurua",),
+           (1302306,u"Jutaí","jutai",),
+           (1302405,u"Lábrea","labrea",),
+           (1302504,u"Manacapuru","manacapuru",),
+           (1302553,u"Manaquiri","manaquiri",),
+           (1302603,u"Manaus","manaus",),
+           (1302702,u"Manicoré","manicore",),
+           (1302801,u"Maraã","maraa",),
+           (1302900,u"Maués","maues",),
+           (1303007,u"Nhamundá","nhamunda",),
+           (1303106,u"Nova Olinda do Norte","nova olinda do norte",),
+           (1303205,u"Novo Airão","novo airao",),
+           (1303304,u"Novo Aripuanã","novo aripuana",),
+           (1303403,u"Parintins","parintins",),
+           (1303502,u"Pauini","pauini",),
+           (1303536,u"Presidente Figueiredo","presidente figueiredo",),
+           (1303569,u"Rio Preto da Eva","rio preto da eva",),
+           (1303601,u"Santa Isabel do Rio Negro","santa isabel do rio negro",),
+           (1303700,u"Santo Antônio do Içá","santo antonio do ica",),
+           (1303809,u"São Gabriel da Cachoeira","sao gabriel da cachoeira",),
+           (1303908,u"São Paulo de Olivença","sao paulo de olivenca",),
+           (1303957,u"São Sebastião do Uatumã","sao sebastiao do uatuma",),
+           (1304005,u"Silves","silves",),
+           (1304062,u"Tabatinga","tabatinga",),
+           (1304104,u"Tapauá","tapaua",),
+           (1304203,u"Tefé","tefe",),
+           (1304237,u"Tonantins","tonantins",),
+           (1304260,u"Uarini","uarini",),
+           (1304302,u"Urucará","urucara",),
+           (1304401,u"Urucurituba","urucurituba",),
+         ],
+    u"AP":[(1600105,u"Amapá","amapa",),
+            (1600204,u"Calçoene","calcoene",),
+            (1600212,u"Cutias","cutias",),
+            (1600238,u"Ferreira Gomes","ferreira gomes",),
+            (1600253,u"Itaubal","itaubal",),
+            (1600279,u"Laranjal do Jari","laranjal do jari",),
+            (1600303,u"Macapá","macapa",),
+            (1600402,u"Mazagão","mazagao",),
+            (1600501,u"Oiapoque","oiapoque",),
+            (1600154,u"Pedra Branca do Amapari","pedra branca do amapari",),
+            (1600535,u"Porto Grande","porto grande",),
+            (1600550,u"Pracuúba","pracuuba",),
+            (1600600,u"Santana","santana",),
+            (1600055,u"Serra do Navio","serra do navio",),
+            (1600709,u"Tartarugalzinho","tartarugalzinho",),
+            (1600808,u"Vitória do Jari","vitoria do jari",),
+        ],
+    u"BA":[(2900108,u"Abaíra","abaira",),
+           (2900207,u"Abaré","abare",),
+           (2900306,u"Acajutiba","acajutiba",),
+           (2900355,u"Adustina","adustina",),
+           (2900405,u"Água Fria","agua fria",),
+           (2900603,u"Aiquara","aiquara",),
+           (2900702,u"Alagoinhas","alagoinhas",),
+           (2900801,u"Alcobaça","alcobaca",),
+           (2900900,u"Almadina","almadina",),
+           (2901007,u"Amargosa","amargosa",),
+           (2901106,u"Amélia Rodrigues","amelia rodrigues",),
+           (2901155,u"América Dourada","america dourada",),
+           (2901205,u"Anagé","anage",),
+           (2901304,u"Andaraí","andarai",),
+           (2901353,u"Andorinha","andorinha",),
+           (2901403,u"Angical","angical",),
+           (2901502,u"Anguera","anguera",),
+           (2901601,u"Antas","antas",),
+           (2901700,u"Antônio Cardoso","antonio cardoso",),
+           (2901809,u"Antônio Gonçalves","antonio goncalves",),
+           (2901908,u"Aporá","apora",),
+           (2901957,u"Apuarema","apuarema",),
+           (2902054,u"Araças","aracas",),
+           (2902005,u"Aracatu","aracatu",),
+           (2902104,u"Araci","araci",),
+           (2902203,u"Aramari","aramari",),
+           (2902252,u"Arataca","arataca",),
+           (2902302,u"Aratuípe","aratuipe",),
+           (2902401,u"Aurelino Leal","aurelino leal",),
+           (2902500,u"Baianópolis","baianopolis",),
+           (2902609,u"Baixa Grande","baixa grande",),
+           (2902658,u"Banzaê","banzae",),
+           (2902807,u"Barra da Estiva","barra da estiva",),
+           (2902906,u"Barra do Choça","barra do choca",),
+           (2903003,u"Barra do Mendes","barra do mendes",),
+           (2903102,u"Barra do Rocha","barra do rocha",),
+           (2902708,u"Barra","barra",),
+           (2903201,u"Barreiras","barreiras",),
+           (2903235,u"Barro Alto","barro alto",),
+           (2903300,u"Barro Preto","barro preto",),
+           (2903276,u"Barrocas","barrocas",),
+           (2903409,u"Belmonte","belmonte",),
+           (2903508,u"Belo Campo","belo campo",),
+           (2903607,u"Biritinga","biritinga",),
+           (2903706,u"Boa Nova","boa nova",),
+           (2903805,u"Boa Vista do Tupim","boa vista do tupim",),
+           (2903904,u"Bom Jesus da Lapa","bom jesus da lapa",),
+           (2903953,u"Bom Jesus da Serra","bom jesus da serra",),
+           (2904001,u"Boninal","boninal",),
+           (2904050,u"Bonito","bonito",),
+           (2904100,u"Boquira","boquira",),
+           (2904209,u"Botuporã","botupora",),
+           (2904308,u"Brejões","brejoes",),
+           (2904407,u"Brejolândia","brejolandia",),
+           (2904506,u"Brotas de Macaúbas","brotas de macaubas",),
+           (2904605,u"Brumado","brumado",),
+           (2904704,u"Buerarema","buerarema",),
+           (2904753,u"Buritirama","buritirama",),
+           (2904803,u"Caatiba","caatiba",),
+           (2904852,u"Cabaceiras do Paraguaçu","cabaceiras do paraguacu",),
+           (2904902,u"Cachoeira","cachoeira",),
+           (2905008,u"Caculé","cacule",),
+           (2905107,u"Caém","caem",),
+           (2905156,u"Caetanos","caetanos",),
+           (2905206,u"Caetité","caetite",),
+           (2905305,u"Cafarnaum","cafarnaum",),
+           (2905404,u"Cairu","cairu",),
+           (2905503,u"Caldeirão Grande","caldeirao grande",),
+           (2905602,u"Camacan","camacan",),
+           (2905701,u"Camaçari","camacari",),
+           (2905800,u"Camamu","camamu",),
+           (2905909,u"Campo Alegre de Lourdes","campo alegre de lourdes",),
+           (2906006,u"Campo Formoso","campo formoso",),
+           (2906105,u"Canápolis","canapolis",),
+           (2906204,u"Canarana","canarana",),
+           (2906303,u"Canavieiras","canavieiras",),
+           (2906402,u"Candeal","candeal",),
+           (2906501,u"Candeias","candeias",),
+           (2906600,u"Candiba","candiba",),
+           (2906709,u"Cândido Sales","candido sales",),
+           (2906808,u"Cansanção","cansancao",),
+           (2906824,u"Canudos","canudos",),
+           (2906857,u"Capela do Alto Alegre","capela do alto alegre",),
+           (2906873,u"Capim Grosso","capim grosso",),
+           (2906899,u"Caraíbas","caraibas",),
+           (2906907,u"Caravelas","caravelas",),
+           (2907004,u"Cardeal da Silva","cardeal da silva",),
+           (2907103,u"Carinhanha","carinhanha",),
+           (2907202,u"Casa Nova","casa nova",),
+           (2907301,u"Castro Alves","castro alves",),
+           (2907400,u"Catolândia","catolandia",),
+           (2907509,u"Catu","catu",),
+           (2907558,u"Caturama","caturama",),
+           (2907608,u"Central","central",),
+           (2907707,u"Chorrochó","chorrocho",),
+           (2907806,u"Cícero Dantas","cicero dantas",),
+           (2907905,u"Cipó","cipo",),
+           (2908002,u"Coaraci","coaraci",),
+           (2908101,u"Cocos","cocos",),
+           (2908200,u"Conceição da Feira","conceicao da feira",),
+           (2908309,u"Conceição do Almeida","conceicao do almeida",),
+           (2908408,u"Conceição do Coité","conceicao do coite",),
+           (2908507,u"Conceição do Jacuípe","conceicao do jacuipe",),
+           (2908606,u"Conde","conde",),
+           (2908705,u"Condeúba","condeuba",),
+           (2908804,u"Contendas do Sincorá","contendas do sincora",),
+           (2908903,u"Coração de Maria","coracao de maria",),
+           (2909000,u"Cordeiros","cordeiros",),
+           (2909109,u"Coribe","coribe",),
+           (2909208,u"Coronel João Sá","coronel joao sa",),
+           (2909307,u"Correntina","correntina",),
+           (2909406,u"Cotegipe","cotegipe",),
+           (2909505,u"Cravolândia","cravolandia",),
+           (2909604,u"Crisópolis","crisopolis",),
+           (2909703,u"Cristópolis","cristopolis",),
+           (2909802,u"Cruz das Almas","cruz das almas",),
+           (2909901,u"Curaçá","curaca",),
+           (2910008,u"Dário Meira","dario meira",),
+           (2910057,u"Dias d'Ávila","dias d'avila",),
+           (2910107,u"Dom Basílio","dom basilio",),
+           (2910206,u"Dom Macedo Costa","dom macedo costa",),
+           (2910305,u"Elísio Medrado","elisio medrado",),
+           (2910404,u"Encruzilhada","encruzilhada",),
+           (2910503,u"Entre Rios","entre rios",),
+           (2900504,u"Érico Cardoso","erico cardoso",),
+           (2910602,u"Esplanada","esplanada",),
+           (2910701,u"Euclides da Cunha","euclides da cunha",),
+           (2910727,u"Eunápolis","eunapolis",),
+           (2910750,u"Fátima","fatima",),
+           (2910776,u"Feira da Mata","feira da mata",),
+           (2910800,u"Feira de Santana","feira de santana",),
+           (2910859,u"Filadélfia","filadelfia",),
+           (2910909,u"Firmino Alves","firmino alves",),
+           (2911006,u"Floresta Azul","floresta azul",),
+           (2911105,u"Formosa do Rio Preto","formosa do rio preto",),
+           (2911204,u"Gandu","gandu",),
+           (2911253,u"Gavião","gaviao",),
+           (2911303,u"Gentio do Ouro","gentio do ouro",),
+           (2911402,u"Glória","gloria",),
+           (2911501,u"Gongogi","gongogi",),
+           (2911600,u"Governador Mangabeira","governador mangabeira",),
+           (2911659,u"Guajeru","guajeru",),
+           (2911709,u"Guanambi","guanambi",),
+           (2911808,u"Guaratinga","guaratinga",),
+           (2911857,u"Heliópolis","heliopolis",),
+           (2911907,u"Iaçu","iacu",),
+           (2912004,u"Ibiassucê","ibiassuce",),
+           (2912103,u"Ibicaraí","ibicarai",),
+           (2912202,u"Ibicoara","ibicoara",),
+           (2912301,u"Ibicuí","ibicui",),
+           (2912400,u"Ibipeba","ibipeba",),
+           (2912509,u"Ibipitanga","ibipitanga",),
+           (2912608,u"Ibiquera","ibiquera",),
+           (2912707,u"Ibirapitanga","ibirapitanga",),
+           (2912806,u"Ibirapuã","ibirapua",),
+           (2912905,u"Ibirataia","ibirataia",),
+           (2913002,u"Ibitiara","ibitiara",),
+           (2913101,u"Ibititá","ibitita",),
+           (2913200,u"Ibotirama","ibotirama",),
+           (2913309,u"Ichu","ichu",),
+           (2913408,u"Igaporã","igapora",),
+           (2913457,u"Igrapiúna","igrapiuna",),
+           (2913507,u"Iguaí","iguai",),
+           (2913606,u"Ilhéus","ilheus",),
+           (2913705,u"Inhambupe","inhambupe",),
+           (2913804,u"Ipecaetá","ipecaeta",),
+           (2913903,u"Ipiaú","ipiau",),
+           (2914000,u"Ipirá","ipira",),
+           (2914109,u"Ipupiara","ipupiara",),
+           (2914208,u"Irajuba","irajuba",),
+           (2914307,u"Iramaia","iramaia",),
+           (2914406,u"Iraquara","iraquara",),
+           (2914505,u"Irará","irara",),
+           (2914604,u"Irecê","irece",),
+           (2914653,u"Itabela","itabela",),
+           (2914703,u"Itaberaba","itaberaba",),
+           (2914802,u"Itabuna","itabuna",),
+           (2914901,u"Itacaré","itacare",),
+           (2915007,u"Itaeté","itaete",),
+           (2915106,u"Itagi","itagi",),
+           (2915205,u"Itagibá","itagiba",),
+           (2915304,u"Itagimirim","itagimirim",),
+           (2915353,u"Itaguaçu da Bahia","itaguacu da bahia",),
+           (2915403,u"Itaju do Colônia","itaju do colonia",),
+           (2915502,u"Itajuípe","itajuipe",),
+           (2915601,u"Itamaraju","itamaraju",),
+           (2915700,u"Itamari","itamari",),
+           (2915809,u"Itambé","itambe",),
+           (2915908,u"Itanagra","itanagra",),
+           (2916005,u"Itanhém","itanhem",),
+           (2916104,u"Itaparica","itaparica",),
+           (2916203,u"Itapé","itape",),
+           (2916302,u"Itapebi","itapebi",),
+           (2916401,u"Itapetinga","itapetinga",),
+           (2916500,u"Itapicuru","itapicuru",),
+           (2916609,u"Itapitanga","itapitanga",),
+           (2916708,u"Itaquara","itaquara",),
+           (2916807,u"Itarantim","itarantim",),
+           (2916856,u"Itatim","itatim",),
+           (2916906,u"Itiruçu","itirucu",),
+           (2917003,u"Itiúba","itiuba",),
+           (2917102,u"Itororó","itororo",),
+           (2917201,u"Ituaçu","ituacu",),
+           (2917300,u"Ituberá","itubera",),
+           (2917334,u"Iuiú","iuiu",),
+           (2917359,u"Jaborandi","jaborandi",),
+           (2917409,u"Jacaraci","jacaraci",),
+           (2917508,u"Jacobina","jacobina",),
+           (2917607,u"Jaguaquara","jaguaquara",),
+           (2917706,u"Jaguarari","jaguarari",),
+           (2917805,u"Jaguaripe","jaguaripe",),
+           (2917904,u"Jandaíra","jandaira",),
+           (2918001,u"Jequié","jequie",),
+           (2918100,u"Jeremoabo","jeremoabo",),
+           (2918209,u"Jiquiriçá","jiquirica",),
+           (2918308,u"Jitaúna","jitauna",),
+           (2918357,u"João Dourado","joao dourado",),
+           (2918407,u"Juazeiro","juazeiro",),
+           (2918456,u"Jucuruçu","jucurucu",),
+           (2918506,u"Jussara","jussara",),
+           (2918555,u"Jussari","jussari",),
+           (2918605,u"Jussiape","jussiape",),
+           (2918704,u"Lafaiete Coutinho","lafaiete coutinho",),
+           (2918753,u"Lagoa Real","lagoa real",),
+           (2918803,u"Laje","laje",),
+           (2918902,u"Lajedão","lajedao",),
+           (2919009,u"Lajedinho","lajedinho",),
+           (2919058,u"Lajedo do Tabocal","lajedo do tabocal",),
+           (2919108,u"Lamarão","lamarao",),
+           (2919157,u"Lapão","lapao",),
+           (2919207,u"Lauro de Freitas","lauro de freitas",),
+           (2919306,u"Lençóis","lencois",),
+           (2919405,u"Licínio de Almeida","licinio de almeida",),
+           (2919504,u"Livramento de Nossa Senhora","livramento de nossa senhora",),
+           (2919553,u"Luís Eduardo Magalhães","luis eduardo magalhaes",),
+           (2919603,u"Macajuba","macajuba",),
+           (2919702,u"Macarani","macarani",),
+           (2919801,u"Macaúbas","macaubas",),
+           (2919900,u"Macururé","macurure",),
+           (2919926,u"Madre de Deus","madre de deus",),
+           (2919959,u"Maetinga","maetinga",),
+           (2920007,u"Maiquinique","maiquinique",),
+           (2920106,u"Mairi","mairi",),
+           (2920304,u"Malhada de Pedras","malhada de pedras",),
+           (2920205,u"Malhada","malhada",),
+           (2920403,u"Manoel Vitorino","manoel vitorino",),
+           (2920452,u"Mansidão","mansidao",),
+           (2920502,u"Maracás","maracas",),
+           (2920601,u"Maragogipe","maragogipe",),
+           (2920700,u"Maraú","marau",),
+           (2920809,u"Marcionílio Souza","marcionilio souza",),
+           (2920908,u"Mascote","mascote",),
+           (2921005,u"Mata de São João","mata de sao joao",),
+           (2921054,u"Matina","matina",),
+           (2921104,u"Medeiros Neto","medeiros neto",),
+           (2921203,u"Miguel Calmon","miguel calmon",),
+           (2921302,u"Milagres","milagres",),
+           (2921401,u"Mirangaba","mirangaba",),
+           (2921450,u"Mirante","mirante",),
+           (2921500,u"Monte Santo","monte santo",),
+           (2921609,u"Morpará","morpara",),
+           (2921708,u"Morro do Chapéu","morro do chapeu",),
+           (2921807,u"Mortugaba","mortugaba",),
+           (2921906,u"Mucugê","mucuge",),
+           (2922003,u"Mucuri","mucuri",),
+           (2922052,u"Mulungu do Morro","mulungu do morro",),
+           (2922102,u"Mundo Novo","mundo novo",),
+           (2922201,u"Muniz Ferreira","muniz ferreira",),
+           (2922250,u"Muquém de São Francisco","muquem de sao francisco",),
+           (2922300,u"Muritiba","muritiba",),
+           (2922409,u"Mutuípe","mutuipe",),
+           (2922508,u"Nazaré","nazare",),
+           (2922607,u"Nilo Peçanha","nilo pecanha",),
+           (2922656,u"Nordestina","nordestina",),
+           (2922706,u"Nova Canaã","nova canaa",),
+           (2922730,u"Nova Fátima","nova fatima",),
+           (2922755,u"Nova Ibiá","nova ibia",),
+           (2922805,u"Nova Itarana","nova itarana",),
+           (2922854,u"Nova Redenção","nova redencao",),
+           (2922904,u"Nova Soure","nova soure",),
+           (2923001,u"Nova Viçosa","nova vicosa",),
+           (2923035,u"Novo Horizonte","novo horizonte",),
+           (2923050,u"Novo Triunfo","novo triunfo",),
+           (2923100,u"Olindina","olindina",),
+           (2923209,u"Oliveira dos Brejinhos","oliveira dos brejinhos",),
+           (2923308,u"Ouriçangas","ouricangas",),
+           (2923357,u"Ourolândia","ourolandia",),
+           (2923407,u"Palmas de Monte Alto","palmas de monte alto",),
+           (2923506,u"Palmeiras","palmeiras",),
+           (2923605,u"Paramirim","paramirim",),
+           (2923704,u"Paratinga","paratinga",),
+           (2923803,u"Paripiranga","paripiranga",),
+           (2923902,u"Pau Brasil","pau brasil",),
+           (2924009,u"Paulo Afonso","paulo afonso",),
+           (2924058,u"Pé de Serra","pe de serra",),
+           (2924108,u"Pedrão","pedrao",),
+           (2924207,u"Pedro Alexandre","pedro alexandre",),
+           (2924306,u"Piatã","piata",),
+           (2924405,u"Pilão Arcado","pilao arcado",),
+           (2924504,u"Pindaí","pindai",),
+           (2924603,u"Pindobaçu","pindobacu",),
+           (2924652,u"Pintadas","pintadas",),
+           (2924678,u"Piraí do Norte","pirai do norte",),
+           (2924702,u"Piripá","piripa",),
+           (2924801,u"Piritiba","piritiba",),
+           (2924900,u"Planaltino","planaltino",),
+           (2925006,u"Planalto","planalto",),
+           (2925105,u"Poções","pocoes",),
+           (2925204,u"Pojuca","pojuca",),
+           (2925253,u"Ponto Novo","ponto novo",),
+           (2925303,u"Porto Seguro","porto seguro",),
+           (2925402,u"Potiraguá","potiragua",),
+           (2925501,u"Prado","prado",),
+           (2925600,u"Presidente Dutra","presidente dutra",),
+           (2925709,u"Presidente Jânio Quadros","presidente janio quadros",),
+           (2925758,u"Presidente Tancredo Neves","presidente tancredo neves",),
+           (2925808,u"Queimadas","queimadas",),
+           (2925907,u"Quijingue","quijingue",),
+           (2925931,u"Quixabeira","quixabeira",),
+           (2925956,u"Rafael Jambeiro","rafael jambeiro",),
+           (2926004,u"Remanso","remanso",),
+           (2926103,u"Retirolândia","retirolandia",),
+           (2926202,u"Riachão das Neves","riachao das neves",),
+           (2926301,u"Riachão do Jacuípe","riachao do jacuipe",),
+           (2926400,u"Riacho de Santana","riacho de santana",),
+           (2926509,u"Ribeira do Amparo","ribeira do amparo",),
+           (2926608,u"Ribeira do Pombal","ribeira do pombal",),
+           (2926657,u"Ribeirão do Largo","ribeirao do largo",),
+           (2926707,u"Rio de Contas","rio de contas",),
+           (2926806,u"Rio do Antônio","rio do antonio",),
+           (2926905,u"Rio do Pires","rio do pires",),
+           (2927002,u"Rio Real","rio real",),
+           (2927101,u"Rodelas","rodelas",),
+           (2927200,u"Ruy Barbosa","ruy barbosa",),
+           (2927309,u"Salinas da Margarida","salinas da margarida",),
+           (2927408,u"Salvador","salvador",),
+           (2927507,u"Santa Bárbara","santa barbara",),
+           (2927606,u"Santa Brígida","santa brigida",),
+           (2927705,u"Santa Cruz Cabrália","santa cruz cabralia",),
+           (2927804,u"Santa Cruz da Vitória","santa cruz da vitoria",),
+           (2927903,u"Santa Inês","santa ines",),
+           (2928059,u"Santa Luzia","santa luzia",),
+           (2928109,u"Santa Maria da Vitória","santa maria da vitoria",),
+           (2928406,u"Santa Rita de Cássia","santa rita de cassia",),
+           (2928505,u"Santa Teresinha","santa teresinha",),
+           (2928000,u"Santaluz","santaluz",),
+           (2928208,u"Santana","santana",),
+           (2928307,u"Santanópolis","santanopolis",),
+           (2928604,u"Santo Amaro","santo amaro",),
+           (2928703,u"Santo Antônio de Jesus","santo antonio de jesus",),
+           (2928802,u"Santo Estêvão","santo estevao",),
+           (2928901,u"São Desidério","sao desiderio",),
+           (2928950,u"São Domingos","sao domingos",),
+           (2929107,u"São Felipe","sao felipe",),
+           (2929057,u"São Félix do Coribe","sao felix do coribe",),
+           (2929008,u"São Félix","sao felix",),
+           (2929206,u"São Francisco do Conde","sao francisco do conde",),
+           (2929255,u"São Gabriel","sao gabriel",),
+           (2929305,u"São Gonçalo dos Campos","sao goncalo dos campos",),
+           (2929354,u"São José da Vitória","sao jose da vitoria",),
+           (2929370,u"São José do Jacuípe","sao jose do jacuipe",),
+           (2929404,u"São Miguel das Matas","sao miguel das matas",),
+           (2929503,u"São Sebastião do Passé","sao sebastiao do passe",),
+           (2929602,u"Sapeaçu","sapeacu",),
+           (2929701,u"Sátiro Dias","satiro dias",),
+           (2929750,u"Saubara","saubara",),
+           (2929800,u"Saúde","saude",),
+           (2929909,u"Seabra","seabra",),
+           (2930006,u"Sebastião Laranjeiras","sebastiao laranjeiras",),
+           (2930105,u"Senhor do Bonfim","senhor do bonfim",),
+           (2930204,u"Sento Sé","sento se",),
+           (2930154,u"Serra do Ramalho","serra do ramalho",),
+           (2930303,u"Serra Dourada","serra dourada",),
+           (2930402,u"Serra Preta","serra preta",),
+           (2930501,u"Serrinha","serrinha",),
+           (2930600,u"Serrolândia","serrolandia",),
+           (2930709,u"Simões Filho","simoes filho",),
+           (2930758,u"Sítio do Mato","sitio do mato",),
+           (2930766,u"Sítio do Quinto","sitio do quinto",),
+           (2930774,u"Sobradinho","sobradinho",),
+           (2930808,u"Souto Soares","souto soares",),
+           (2930907,u"Tabocas do Brejo Velho","tabocas do brejo velho",),
+           (2931004,u"Tanhaçu","tanhacu",),
+           (2931053,u"Tanque Novo","tanque novo",),
+           (2931103,u"Tanquinho","tanquinho",),
+           (2931202,u"Taperoá","taperoa",),
+           (2931301,u"Tapiramutá","tapiramuta",),
+           (2931350,u"Teixeira de Freitas","teixeira de freitas",),
+           (2931400,u"Teodoro Sampaio","teodoro sampaio",),
+           (2931509,u"Teofilândia","teofilandia",),
+           (2931608,u"Teolândia","teolandia",),
+           (2931707,u"Terra Nova","terra nova",),
+           (2931806,u"Tremedal","tremedal",),
+           (2931905,u"Tucano","tucano",),
+           (2932002,u"Uauá","uaua",),
+           (2932101,u"Ubaíra","ubaira",),
+           (2932200,u"Ubaitaba","ubaitaba",),
+           (2932309,u"Ubatã","ubata",),
+           (2932408,u"Uibaí","uibai",),
+           (2932457,u"Umburanas","umburanas",),
+           (2932507,u"Una","una",),
+           (2932606,u"Urandi","urandi",),
+           (2932705,u"Uruçuca","urucuca",),
+           (2932804,u"Utinga","utinga",),
+           (2932903,u"Valença","valenca",),
+           (2933000,u"Valente","valente",),
+           (2933059,u"Várzea da Roça","varzea da roca",),
+           (2933109,u"Várzea do Poço","varzea do poco",),
+           (2933158,u"Várzea Nova","varzea nova",),
+           (2933174,u"Varzedo","varzedo",),
+           (2933208,u"Vera Cruz","vera cruz",),
+           (2933257,u"Vereda","vereda",),
+           (2933307,u"Vitória da Conquista","vitoria da conquista",),
+           (2933406,u"Wagner","wagner",),
+           (2933455,u"Wanderley","wanderley",),
+           (2933505,u"Wenceslau Guimarães","wenceslau guimaraes",),
+           (2933604,u"Xique-Xique","xique-xique",),
+         ],
+    u"CE":[(2300101,u"Abaiara","abaiara",),
+           (2300150,u"Acarape","acarape",),
+           (2300200,u"Acaraú","acarau",),
+           (2300309,u"Acopiara","acopiara",),
+           (2300408,u"Aiuaba","aiuaba",),
+           (2300507,u"Alcântaras","alcantaras",),
+           (2300606,u"Altaneira","altaneira",),
+           (2300705,u"Alto Santo","alto santo",),
+           (2300754,u"Amontada","amontada",),
+           (2300804,u"Antonina do Norte","antonina do norte",),
+           (2300903,u"Apuiarés","apuiares",),
+           (2301000,u"Aquiraz","aquiraz",),
+           (2301109,u"Aracati","aracati",),
+           (2301208,u"Aracoiaba","aracoiaba",),
+           (2301257,u"Ararendá","ararenda",),
+           (2301307,u"Araripe","araripe",),
+           (2301406,u"Aratuba","aratuba",),
+           (2301505,u"Arneiroz","arneiroz",),
+           (2301604,u"Assaré","assare",),
+           (2301703,u"Aurora","aurora",),
+           (2301802,u"Baixio","baixio",),
+           (2301851,u"Banabuiú","banabuiu",),
+           (2301901,u"Barbalha","barbalha",),
+           (2301950,u"Barreira","barreira",),
+           (2302008,u"Barro","barro",),
+           (2302057,u"Barroquinha","barroquinha",),
+           (2302107,u"Baturité","baturite",),
+           (2302206,u"Beberibe","beberibe",),
+           (2302305,u"Bela Cruz","bela cruz",),
+           (2302404,u"Boa Viagem","boa viagem",),
+           (2302503,u"Brejo Santo","brejo santo",),
+           (2302602,u"Camocim","camocim",),
+           (2302701,u"Campos Sales","campos sales",),
+           (2302800,u"Canindé","caninde",),
+           (2302909,u"Capistrano","capistrano",),
+           (2303006,u"Caridade","caridade",),
+           (2303105,u"Cariré","carire",),
+           (2303204,u"Caririaçu","caririacu",),
+           (2303303,u"Cariús","carius",),
+           (2303402,u"Carnaubal","carnaubal",),
+           (2303501,u"Cascavel","cascavel",),
+           (2303600,u"Catarina","catarina",),
+           (2303659,u"Catunda","catunda",),
+           (2303709,u"Caucaia","caucaia",),
+           (2303808,u"Cedro","cedro",),
+           (2303907,u"Chaval","chaval",),
+           (2303931,u"Choró","choro",),
+           (2303956,u"Chorozinho","chorozinho",),
+           (2304004,u"Coreaú","coreau",),
+           (2304103,u"Crateús","crateus",),
+           (2304202,u"Crato","crato",),
+           (2304236,u"Croatá","croata",),
+           (2304251,u"Cruz","cruz",),
+           (2304269,u"Deputado Irapuan Pinheiro","deputado irapuan pinheiro",),
+           (2304277,u"Ererê","erere",),
+           (2304285,u"Eusébio","eusebio",),
+           (2304301,u"Farias Brito","farias brito",),
+           (2304350,u"Forquilha","forquilha",),
+           (2304400,u"Fortaleza","fortaleza",),
+           (2304459,u"Fortim","fortim",),
+           (2304509,u"Frecheirinha","frecheirinha",),
+           (2304608,u"General Sampaio","general sampaio",),
+           (2304657,u"Graça","graca",),
+           (2304707,u"Granja","granja",),
+           (2304806,u"Granjeiro","granjeiro",),
+           (2304905,u"Groaíras","groairas",),
+           (2304954,u"Guaiúba","guaiuba",),
+           (2305001,u"Guaraciaba do Norte","guaraciaba do norte",),
+           (2305100,u"Guaramiranga","guaramiranga",),
+           (2305209,u"Hidrolândia","hidrolandia",),
+           (2305233,u"Horizonte","horizonte",),
+           (2305266,u"Ibaretama","ibaretama",),
+           (2305308,u"Ibiapina","ibiapina",),
+           (2305332,u"Ibicuitinga","ibicuitinga",),
+           (2305357,u"Icapuí","icapui",),
+           (2305407,u"Icó","ico",),
+           (2305506,u"Iguatu","iguatu",),
+           (2305605,u"Independência","independencia",),
+           (2305654,u"Ipaporanga","ipaporanga",),
+           (2305704,u"Ipaumirim","ipaumirim",),
+           (2305803,u"Ipu","ipu",),
+           (2305902,u"Ipueiras","ipueiras",),
+           (2306009,u"Iracema","iracema",),
+           (2306108,u"Irauçuba","iraucuba",),
+           (2306207,u"Itaiçaba","itaicaba",),
+           (2306256,u"Itaitinga","itaitinga",),
+           (2306306,u"Itapagé","itapage",),
+           (2306405,u"Itapipoca","itapipoca",),
+           (2306504,u"Itapiúna","itapiuna",),
+           (2306553,u"Itarema","itarema",),
+           (2306603,u"Itatira","itatira",),
+           (2306702,u"Jaguaretama","jaguaretama",),
+           (2306801,u"Jaguaribara","jaguaribara",),
+           (2306900,u"Jaguaribe","jaguaribe",),
+           (2307007,u"Jaguaruana","jaguaruana",),
+           (2307106,u"Jardim","jardim",),
+           (2307205,u"Jati","jati",),
+           (2307254,u"Jijoca de Jericoacoara","jijoca de jericoacoara",),
+           (2307304,u"Juazeiro do Norte","juazeiro do norte",),
+           (2307403,u"Jucás","jucas",),
+           (2307502,u"Lavras da Mangabeira","lavras da mangabeira",),
+           (2307601,u"Limoeiro do Norte","limoeiro do norte",),
+           (2307635,u"Madalena","madalena",),
+           (2307650,u"Maracanaú","maracanau",),
+           (2307700,u"Maranguape","maranguape",),
+           (2307809,u"Marco","marco",),
+           (2307908,u"Martinópole","martinopole",),
+           (2308005,u"Massapê","massape",),
+           (2308104,u"Mauriti","mauriti",),
+           (2308203,u"Meruoca","meruoca",),
+           (2308302,u"Milagres","milagres",),
+           (2308351,u"Milhã","milha",),
+           (2308377,u"Miraíma","miraima",),
+           (2308401,u"Missão Velha","missao velha",),
+           (2308500,u"Mombaça","mombaca",),
+           (2308609,u"Monsenhor Tabosa","monsenhor tabosa",),
+           (2308708,u"Morada Nova","morada nova",),
+           (2308807,u"Moraújo","moraujo",),
+           (2308906,u"Morrinhos","morrinhos",),
+           (2309003,u"Mucambo","mucambo",),
+           (2309102,u"Mulungu","mulungu",),
+           (2309201,u"Nova Olinda","nova olinda",),
+           (2309300,u"Nova Russas","nova russas",),
+           (2309409,u"Novo Oriente","novo oriente",),
+           (2309458,u"Ocara","ocara",),
+           (2309508,u"Orós","oros",),
+           (2309607,u"Pacajus","pacajus",),
+           (2309706,u"Pacatuba","pacatuba",),
+           (2309805,u"Pacoti","pacoti",),
+           (2309904,u"Pacujá","pacuja",),
+           (2310001,u"Palhano","palhano",),
+           (2310100,u"Palmácia","palmacia",),
+           (2310209,u"Paracuru","paracuru",),
+           (2310258,u"Paraipaba","paraipaba",),
+           (2310308,u"Parambu","parambu",),
+           (2310407,u"Paramoti","paramoti",),
+           (2310506,u"Pedra Branca","pedra branca",),
+           (2310605,u"Penaforte","penaforte",),
+           (2310704,u"Pentecoste","pentecoste",),
+           (2310803,u"Pereiro","pereiro",),
+           (2310852,u"Pindoretama","pindoretama",),
+           (2310902,u"Piquet Carneiro","piquet carneiro",),
+           (2310951,u"Pires Ferreira","pires ferreira",),
+           (2311009,u"Poranga","poranga",),
+           (2311108,u"Porteiras","porteiras",),
+           (2311207,u"Potengi","potengi",),
+           (2311231,u"Potiretama","potiretama",),
+           (2311264,u"Quiterianópolis","quiterianopolis",),
+           (2311306,u"Quixadá","quixada",),
+           (2311355,u"Quixelô","quixelo",),
+           (2311405,u"Quixeramobim","quixeramobim",),
+           (2311504,u"Quixeré","quixere",),
+           (2311603,u"Redenção","redencao",),
+           (2311702,u"Reriutaba","reriutaba",),
+           (2311801,u"Russas","russas",),
+           (2311900,u"Saboeiro","saboeiro",),
+           (2311959,u"Salitre","salitre",),
+           (2312205,u"Santa Quitéria","santa quiteria",),
+           (2312007,u"Santana do Acaraú","santana do acarau",),
+           (2312106,u"Santana do Cariri","santana do cariri",),
+           (2312304,u"São Benedito","sao benedito",),
+           (2312403,u"São Gonçalo do Amarante","sao goncalo do amarante",),
+           (2312502,u"São João do Jaguaribe","sao joao do jaguaribe",),
+           (2312601,u"São Luís do Curu","sao luis do curu",),
+           (2312700,u"Senador Pompeu","senador pompeu",),
+           (2312809,u"Senador Sá","senador sa",),
+           (2312908,u"Sobral","sobral",),
+           (2313005,u"Solonópole","solonopole",),
+           (2313104,u"Tabuleiro do Norte","tabuleiro do norte",),
+           (2313203,u"Tamboril","tamboril",),
+           (2313252,u"Tarrafas","tarrafas",),
+           (2313302,u"Tauá","taua",),
+           (2313351,u"Tejuçuoca","tejucuoca",),
+           (2313401,u"Tianguá","tiangua",),
+           (2313500,u"Trairi","trairi",),
+           (2313559,u"Tururu","tururu",),
+           (2313609,u"Ubajara","ubajara",),
+           (2313708,u"Umari","umari",),
+           (2313757,u"Umirim","umirim",),
+           (2313807,u"Uruburetama","uruburetama",),
+           (2313906,u"Uruoca","uruoca",),
+           (2313955,u"Varjota","varjota",),
+           (2314003,u"Várzea Alegre","varzea alegre",),
+           (2314102,u"Viçosa do Ceará","vicosa do ceara",),
+         ],
+    u"DF":[(5300108,u"Brasília","brasilia",),
+         ],
+    u"ES":[(3200102,u"Afonso Cláudio","afonso claudio",),
+            (3200169,u"Água Doce do Norte","agua doce do norte",),
+            (3200136,u"Águia Branca","aguia branca",),
+            (3200201,u"Alegre","alegre",),
+            (3200300,u"Alfredo Chaves","alfredo chaves",),
+            (3200359,u"Alto Rio Novo","alto rio novo",),
+            (3200409,u"Anchieta","anchieta",),
+            (3200508,u"Apiacá","apiaca",),
+            (3200607,u"Aracruz","aracruz",),
+            (3200706,u"Atilio Vivacqua","atilio vivacqua",),
+            (3200805,u"Baixo Guandu","baixo guandu",),
+            (3200904,u"Barra de São Francisco","barra de sao francisco",),
+            (3201001,u"Boa Esperança","boa esperanca",),
+            (3201100,u"Bom Jesus do Norte","bom jesus do norte",),
+            (3201159,u"Brejetuba","brejetuba",),
+            (3201209,u"Cachoeiro de Itapemirim","cachoeiro de itapemirim",),
+            (3201308,u"Cariacica","cariacica",),
+            (3201407,u"Castelo","castelo",),
+            (3201506,u"Colatina","colatina",),
+            (3201605,u"Conceição da Barra","conceicao da barra",),
+            (3201704,u"Conceição do Castelo","conceicao do castelo",),
+            (3201803,u"Divino de São Lourenço","divino de sao lourenco",),
+            (3201902,u"Domingos Martins","domingos martins",),
+            (3202009,u"Dores do Rio Preto","dores do rio preto",),
+            (3202108,u"Ecoporanga","ecoporanga",),
+            (3202207,u"Fundão","fundao",),
+            (3202256,u"Governador Lindenberg","governador lindenberg",),
+            (3202306,u"Guaçuí","guacui",),
+            (3202405,u"Guarapari","guarapari",),
+            (3202454,u"Ibatiba","ibatiba",),
+            (3202504,u"Ibiraçu","ibiracu",),
+            (3202553,u"Ibitirama","ibitirama",),
+            (3202603,u"Iconha","iconha",),
+            (3202652,u"Irupi","irupi",),
+            (3202702,u"Itaguaçu","itaguacu",),
+            (3202801,u"Itapemirim","itapemirim",),
+            (3202900,u"Itarana","itarana",),
+            (3203007,u"Iúna","iuna",),
+            (3203056,u"Jaguaré","jaguare",),
+            (3203106,u"Jerônimo Monteiro","jeronimo monteiro",),
+            (3203130,u"João Neiva","joao neiva",),
+            (3203163,u"Laranja da Terra","laranja da terra",),
+            (3203205,u"Linhares","linhares",),
+            (3203304,u"Mantenópolis","mantenopolis",),
+            (3203320,u"Marataízes","marataizes",),
+            (3203346,u"Marechal Floriano","marechal floriano",),
+            (3203353,u"Marilândia","marilandia",),
+            (3203403,u"Mimoso do Sul","mimoso do sul",),
+            (3203502,u"Montanha","montanha",),
+            (3203601,u"Mucurici","mucurici",),
+            (3203700,u"Muniz Freire","muniz freire",),
+            (3203809,u"Muqui","muqui",),
+            (3203908,u"Nova Venécia","nova venecia",),
+            (3204005,u"Pancas","pancas",),
+            (3204054,u"Pedro Canário","pedro canario",),
+            (3204104,u"Pinheiros","pinheiros",),
+            (3204203,u"Piúma","piuma",),
+            (3204252,u"Ponto Belo","ponto belo",),
+            (3204302,u"Presidente Kennedy","presidente kennedy",),
+            (3204351,u"Rio Bananal","rio bananal",),
+            (3204401,u"Rio Novo do Sul","rio novo do sul",),
+            (3204500,u"Santa Leopoldina","santa leopoldina",),
+            (3204559,u"Santa Maria de Jetibá","santa maria de jetiba",),
+            (3204609,u"Santa Teresa","santa teresa",),
+            (3204658,u"São Domingos do Norte","sao domingos do norte",),
+            (3204708,u"São Gabriel da Palha","sao gabriel da palha",),
+            (3204807,u"São José do Calçado","sao jose do calcado",),
+            (3204906,u"São Mateus","sao mateus",),
+            (3204955,u"São Roque do Canaã","sao roque do canaa",),
+            (3205002,u"Serra","serra",),
+            (3205010,u"Sooretama","sooretama",),
+            (3205036,u"Vargem Alta","vargem alta",),
+            (3205069,u"Venda Nova do Imigrante","venda nova do imigrante",),
+            (3205101,u"Viana","viana",),
+            (3205150,u"Vila Pavão","vila pavao",),
+            (3205176,u"Vila Valério","vila valerio",),
+            (3205200,u"Vila Velha","vila velha",),
+            (3205309,u"Vitória","vitoria",),
+         ],
+    u"GO":[(5200050,u"Abadia de Goiás","abadia de goias",),
+           (5200100,u"Abadiânia","abadiania",),
+           (5200134,u"Acreúna","acreuna",),
+           (5200159,u"Adelândia","adelandia",),
+           (5200175,u"Água Fria de Goiás","agua fria de goias",),
+           (5200209,u"Água Limpa","agua limpa",),
+           (5200258,u"Águas Lindas de Goiás","aguas lindas de goias",),
+           (5200308,u"Alexânia","alexania",),
+           (5200506,u"Aloândia","aloandia",),
+           (5200555,u"Alto Horizonte","alto horizonte",),
+           (5200605,u"Alto Paraíso de Goiás","alto paraiso de goias",),
+           (5200803,u"Alvorada do Norte","alvorada do norte",),
+           (5200829,u"Amaralina","amaralina",),
+           (5200852,u"Americano do Brasil","americano do brasil",),
+           (5200902,u"Amorinópolis","amorinopolis",),
+           (5201108,u"Anápolis","anapolis",),
+           (5201207,u"Anhanguera","anhanguera",),
+           (5201306,u"Anicuns","anicuns",),
+           (5201405,u"Aparecida de Goiânia","aparecida de goiania",),
+           (5201454,u"Aparecida do Rio Doce","aparecida do rio doce",),
+           (5201504,u"Aporé","apore",),
+           (5201603,u"Araçu","aracu",),
+           (5201702,u"Aragarças","aragarcas",),
+           (5201801,u"Aragoiânia","aragoiania",),
+           (5202155,u"Araguapaz","araguapaz",),
+           (5202353,u"Arenópolis","arenopolis",),
+           (5202502,u"Aruanã","aruana",),
+           (5202601,u"Aurilândia","aurilandia",),
+           (5202809,u"Avelinópolis","avelinopolis",),
+           (5203104,u"Baliza","baliza",),
+           (5203203,u"Barro Alto","barro alto",),
+           (5203302,u"Bela Vista de Goiás","bela vista de goias",),
+           (5203401,u"Bom Jardim de Goiás","bom jardim de goias",),
+           (5203500,u"Bom Jesus de Goiás","bom jesus de goias",),
+           (5203559,u"Bonfinópolis","bonfinopolis",),
+           (5203575,u"Bonópolis","bonopolis",),
+           (5203609,u"Brazabrantes","brazabrantes",),
+           (5203807,u"Britânia","britania",),
+           (5203906,u"Buriti Alegre","buriti alegre",),
+           (5203939,u"Buriti de Goiás","buriti de goias",),
+           (5203962,u"Buritinópolis","buritinopolis",),
+           (5204003,u"Cabeceiras","cabeceiras",),
+           (5204102,u"Cachoeira Alta","cachoeira alta",),
+           (5204201,u"Cachoeira de Goiás","cachoeira de goias",),
+           (5204250,u"Cachoeira Dourada","cachoeira dourada",),
+           (5204300,u"Caçu","cacu",),
+           (5204409,u"Caiapônia","caiaponia",),
+           (5204508,u"Caldas Novas","caldas novas",),
+           (5204557,u"Caldazinha","caldazinha",),
+           (5204607,u"Campestre de Goiás","campestre de goias",),
+           (5204656,u"Campinaçu","campinacu",),
+           (5204706,u"Campinorte","campinorte",),
+           (5204805,u"Campo Alegre de Goiás","campo alegre de goias",),
+           (5204854,u"Campo Limpo de Goiás","campo limpo de goias",),
+           (5204904,u"Campos Belos","campos belos",),
+           (5204953,u"Campos Verdes","campos verdes",),
+           (5205000,u"Carmo do Rio Verde","carmo do rio verde",),
+           (5205059,u"Castelândia","castelandia",),
+           (5205109,u"Catalão","catalao",),
+           (5205208,u"Caturaí","caturai",),
+           (5205307,u"Cavalcante","cavalcante",),
+           (5205406,u"Ceres","ceres",),
+           (5205455,u"Cezarina","cezarina",),
+           (5205471,u"Chapadão do Céu","chapadao do ceu",),
+           (5205497,u"Cidade Ocidental","cidade ocidental",),
+           (5205513,u"Cocalzinho de Goiás","cocalzinho de goias",),
+           (5205521,u"Colinas do Sul","colinas do sul",),
+           (5205703,u"Córrego do Ouro","corrego do ouro",),
+           (5205802,u"Corumbá de Goiás","corumba de goias",),
+           (5205901,u"Corumbaíba","corumbaiba",),
+           (5206206,u"Cristalina","cristalina",),
+           (5206305,u"Cristianópolis","cristianopolis",),
+           (5206404,u"Crixás","crixas",),
+           (5206503,u"Cromínia","crominia",),
+           (5206602,u"Cumari","cumari",),
+           (5206701,u"Damianópolis","damianopolis",),
+           (5206800,u"Damolândia","damolandia",),
+           (5206909,u"Davinópolis","davinopolis",),
+           (5207105,u"Diorama","diorama",),
+           (5208301,u"Divinópolis de Goiás","divinopolis de goias",),
+           (5207253,u"Doverlândia","doverlandia",),
+           (5207352,u"Edealina","edealina",),
+           (5207402,u"Edéia","edeia",),
+           (5207501,u"Estrela do Norte","estrela do norte",),
+           (5207535,u"Faina","faina",),
+           (5207600,u"Fazenda Nova","fazenda nova",),
+           (5207808,u"Firminópolis","firminopolis",),
+           (5207907,u"Flores de Goiás","flores de goias",),
+           (5208004,u"Formosa","formosa",),
+           (5208103,u"Formoso","formoso",),
+           (5208152,u"Gameleira de Goiás","gameleira de goias",),
+           (5208400,u"Goianápolis","goianapolis",),
+           (5208509,u"Goiandira","goiandira",),
+           (5208608,u"Goianésia","goianesia",),
+           (5208707,u"Goiânia","goiania",),
+           (5208806,u"Goianira","goianira",),
+           (5208905,u"Goiás","goias",),
+           (5209101,u"Goiatuba","goiatuba",),
+           (5209150,u"Gouvelândia","gouvelandia",),
+           (5209200,u"Guapó","guapo",),
+           (5209291,u"Guaraíta","guaraita",),
+           (5209408,u"Guarani de Goiás","guarani de goias",),
+           (5209457,u"Guarinos","guarinos",),
+           (5209606,u"Heitoraí","heitorai",),
+           (5209705,u"Hidrolândia","hidrolandia",),
+           (5209804,u"Hidrolina","hidrolina",),
+           (5209903,u"Iaciara","iaciara",),
+           (5209937,u"Inaciolândia","inaciolandia",),
+           (5209952,u"Indiara","indiara",),
+           (5210000,u"Inhumas","inhumas",),
+           (5210109,u"Ipameri","ipameri",),
+           (5210158,u"Ipiranga de Goiás","ipiranga de goias",),
+           (5210208,u"Iporá","ipora",),
+           (5210307,u"Israelândia","israelandia",),
+           (5210406,u"Itaberaí","itaberai",),
+           (5210562,u"Itaguari","itaguari",),
+           (5210604,u"Itaguaru","itaguaru",),
+           (5210802,u"Itajá","itaja",),
+           (5210901,u"Itapaci","itapaci",),
+           (5211008,u"Itapirapuã","itapirapua",),
+           (5211206,u"Itapuranga","itapuranga",),
+           (5211305,u"Itarumã","itaruma",),
+           (5211404,u"Itauçu","itaucu",),
+           (5211503,u"Itumbiara","itumbiara",),
+           (5211602,u"Ivolândia","ivolandia",),
+           (5211701,u"Jandaia","jandaia",),
+           (5211800,u"Jaraguá","jaragua",),
+           (5211909,u"Jataí","jatai",),
+           (5212006,u"Jaupaci","jaupaci",),
+           (5212055,u"Jesúpolis","jesupolis",),
+           (5212105,u"Joviânia","joviania",),
+           (5212204,u"Jussara","jussara",),
+           (5212253,u"Lagoa Santa","lagoa santa",),
+           (5212303,u"Leopoldo de Bulhões","leopoldo de bulhoes",),
+           (5212501,u"Luziânia","luziania",),
+           (5212600,u"Mairipotaba","mairipotaba",),
+           (5212709,u"Mambaí","mambai",),
+           (5212808,u"Mara Rosa","mara rosa",),
+           (5212907,u"Marzagão","marzagao",),
+           (5212956,u"Matrinchã","matrincha",),
+           (5213004,u"Maurilândia","maurilandia",),
+           (5213053,u"Mimoso de Goiás","mimoso de goias",),
+           (5213087,u"Minaçu","minacu",),
+           (5213103,u"Mineiros","mineiros",),
+           (5213400,u"Moiporá","moipora",),
+           (5213509,u"Monte Alegre de Goiás","monte alegre de goias",),
+           (5213707,u"Montes Claros de Goiás","montes claros de goias",),
+           (5213772,u"Montividiu do Norte","montividiu do norte",),
+           (5213756,u"Montividiu","montividiu",),
+           (5213806,u"Morrinhos","morrinhos",),
+           (5213855,u"Morro Agudo de Goiás","morro agudo de goias",),
+           (5213905,u"Mossâmedes","mossamedes",),
+           (5214002,u"Mozarlândia","mozarlandia",),
+           (5214051,u"Mundo Novo","mundo novo",),
+           (5214101,u"Mutunópolis","mutunopolis",),
+           (5214408,u"Nazário","nazario",),
+           (5214507,u"Nerópolis","neropolis",),
+           (5214606,u"Niquelândia","niquelandia",),
+           (5214705,u"Nova América","nova america",),
+           (5214804,u"Nova Aurora","nova aurora",),
+           (5214838,u"Nova Crixás","nova crixas",),
+           (5214861,u"Nova Glória","nova gloria",),
+           (5214879,u"Nova Iguaçu de Goiás","nova iguacu de goias",),
+           (5214903,u"Nova Roma","nova roma",),
+           (5215009,u"Nova Veneza","nova veneza",),
+           (5215207,u"Novo Brasil","novo brasil",),
+           (5215231,u"Novo Gama","novo gama",),
+           (5215256,u"Novo Planalto","novo planalto",),
+           (5215306,u"Orizona","orizona",),
+           (5215405,u"Ouro Verde de Goiás","ouro verde de goias",),
+           (5215504,u"Ouvidor","ouvidor",),
+           (5215603,u"Padre Bernardo","padre bernardo",),
+           (5215652,u"Palestina de Goiás","palestina de goias",),
+           (5215702,u"Palmeiras de Goiás","palmeiras de goias",),
+           (5215801,u"Palmelo","palmelo",),
+           (5215900,u"Palminópolis","palminopolis",),
+           (5216007,u"Panamá","panama",),
+           (5216304,u"Paranaiguara","paranaiguara",),
+           (5216403,u"Paraúna","parauna",),
+           (5216452,u"Perolândia","perolandia",),
+           (5216809,u"Petrolina de Goiás","petrolina de goias",),
+           (5216908,u"Pilar de Goiás","pilar de goias",),
+           (5217104,u"Piracanjuba","piracanjuba",),
+           (5217203,u"Piranhas","piranhas",),
+           (5217302,u"Pirenópolis","pirenopolis",),
+           (5217401,u"Pires do Rio","pires do rio",),
+           (5217609,u"Planaltina","planaltina",),
+           (5217708,u"Pontalina","pontalina",),
+           (5218003,u"Porangatu","porangatu",),
+           (5218052,u"Porteirão","porteirao",),
+           (5218102,u"Portelândia","portelandia",),
+           (5218300,u"Posse","posse",),
+           (5218391,u"Professor Jamil","professor jamil",),
+           (5218508,u"Quirinópolis","quirinopolis",),
+           (5218607,u"Rialma","rialma",),
+           (5218706,u"Rianápolis","rianapolis",),
+           (5218789,u"Rio Quente","rio quente",),
+           (5218805,u"Rio Verde","rio verde",),
+           (5218904,u"Rubiataba","rubiataba",),
+           (5219001,u"Sanclerlândia","sanclerlandia",),
+           (5219100,u"Santa Bárbara de Goiás","santa barbara de goias",),
+           (5219209,u"Santa Cruz de Goiás","santa cruz de goias",),
+           (5219258,u"Santa Fé de Goiás","santa fe de goias",),
+           (5219308,u"Santa Helena de Goiás","santa helena de goias",),
+           (5219357,u"Santa Isabel","santa isabel",),
+           (5219407,u"Santa Rita do Araguaia","santa rita do araguaia",),
+           (5219456,u"Santa Rita do Novo Destino","santa rita do novo destino",),
+           (5219506,u"Santa Rosa de Goiás","santa rosa de goias",),
+           (5219605,u"Santa Tereza de Goiás","santa tereza de goias",),
+           (5219704,u"Santa Terezinha de Goiás","santa terezinha de goias",),
+           (5219712,u"Santo Antônio da Barra","santo antonio da barra",),
+           (5219738,u"Santo Antônio de Goiás","santo antonio de goias",),
+           (5219753,u"Santo Antônio do Descoberto","santo antonio do descoberto",),
+           (5219803,u"São Domingos","sao domingos",),
+           (5219902,u"São Francisco de Goiás","sao francisco de goias",),
+           (5220009,u"São João d'Aliança","sao joao d'alianca",),
+           (5220058,u"São João da Paraúna","sao joao da parauna",),
+           (5220108,u"São Luís de Montes Belos","sao luis de montes belos",),
+           (5220157,u"São Luíz do Norte","sao luiz do norte",),
+           (5220207,u"São Miguel do Araguaia","sao miguel do araguaia",),
+           (5220264,u"São Miguel do Passa Quatro","sao miguel do passa quatro",),
+           (5220280,u"São Patrício","sao patricio",),
+           (5220405,u"São Simão","sao simao",),
+           (5220454,u"Senador Canedo","senador canedo",),
+           (5220504,u"Serranópolis","serranopolis",),
+           (5220603,u"Silvânia","silvania",),
+           (5220686,u"Simolândia","simolandia",),
+           (5220702,u"Sítio d'Abadia","sitio d'abadia",),
+           (5221007,u"Taquaral de Goiás","taquaral de goias",),
+           (5221080,u"Teresina de Goiás","teresina de goias",),
+           (5221197,u"Terezópolis de Goiás","terezopolis de goias",),
+           (5221304,u"Três Ranchos","tres ranchos",),
+           (5221403,u"Trindade","trindade",),
+           (5221452,u"Trombas","trombas",),
+           (5221502,u"Turvânia","turvania",),
+           (5221551,u"Turvelândia","turvelandia",),
+           (5221577,u"Uirapuru","uirapuru",),
+           (5221601,u"Uruaçu","uruacu",),
+           (5221700,u"Uruana","uruana",),
+           (5221809,u"Urutaí","urutai",),
+           (5221858,u"Valparaíso de Goiás","valparaiso de goias",),
+           (5221908,u"Varjão","varjao",),
+           (5222005,u"Vianópolis","vianopolis",),
+           (5222054,u"Vicentinópolis","vicentinopolis",),
+           (5222203,u"Vila Boa","vila boa",),
+           (5222302,u"Vila Propício","vila propicio",),
+         ],
+    u"MA":[(2100055,u"Açailândia","acailandia",),
+           (2100105,u"Afonso Cunha","afonso cunha",),
+           (2100154,u"Água Doce do Maranhão","agua doce do maranhao",),
+           (2100204,u"Alcântara","alcantara",),
+           (2100303,u"Aldeias Altas","aldeias altas",),
+           (2100402,u"Altamira do Maranhão","altamira do maranhao",),
+           (2100436,u"Alto Alegre do Maranhão","alto alegre do maranhao",),
+           (2100477,u"Alto Alegre do Pindaré","alto alegre do pindare",),
+           (2100501,u"Alto Parnaíba","alto parnaiba",),
+           (2100550,u"Amapá do Maranhão","amapa do maranhao",),
+           (2100600,u"Amarante do Maranhão","amarante do maranhao",),
+           (2100709,u"Anajatuba","anajatuba",),
+           (2100808,u"Anapurus","anapurus",),
+           (2100832,u"Apicum-Açu","apicum-acu",),
+           (2100873,u"Araguanã","araguana",),
+           (2100907,u"Araioses","araioses",),
+           (2100956,u"Arame","arame",),
+           (2101004,u"Arari","arari",),
+           (2101103,u"Axixá","axixa",),
+           (2101202,u"Bacabal","bacabal",),
+           (2101251,u"Bacabeira","bacabeira",),
+           (2101301,u"Bacuri","bacuri",),
+           (2101350,u"Bacurituba","bacurituba",),
+           (2101400,u"Balsas","balsas",),
+           (2101509,u"Barão de Grajaú","barao de grajau",),
+           (2101608,u"Barra do Corda","barra do corda",),
+           (2101707,u"Barreirinhas","barreirinhas",),
+           (2101772,u"Bela Vista do Maranhão","bela vista do maranhao",),
+           (2101731,u"Belágua","belagua",),
+           (2101806,u"Benedito Leite","benedito leite",),
+           (2101905,u"Bequimão","bequimao",),
+           (2101939,u"Bernardo do Mearim","bernardo do mearim",),
+           (2101970,u"Boa Vista do Gurupi","boa vista do gurupi",),
+           (2102002,u"Bom Jardim","bom jardim",),
+           (2102036,u"Bom Jesus das Selvas","bom jesus das selvas",),
+           (2102077,u"Bom Lugar","bom lugar",),
+           (2102150,u"Brejo de Areia","brejo de areia",),
+           (2102101,u"Brejo","brejo",),
+           (2102309,u"Buriti Bravo","buriti bravo",),
+           (2102200,u"Buriti","buriti",),
+           (2102325,u"Buriticupu","buriticupu",),
+           (2102358,u"Buritirana","buritirana",),
+           (2102374,u"Cachoeira Grande","cachoeira grande",),
+           (2102408,u"Cajapió","cajapio",),
+           (2102507,u"Cajari","cajari",),
+           (2102556,u"Campestre do Maranhão","campestre do maranhao",),
+           (2102606,u"Cândido Mendes","candido mendes",),
+           (2102705,u"Cantanhede","cantanhede",),
+           (2102754,u"Capinzal do Norte","capinzal do norte",),
+           (2102804,u"Carolina","carolina",),
+           (2102903,u"Carutapera","carutapera",),
+           (2103000,u"Caxias","caxias",),
+           (2103109,u"Cedral","cedral",),
+           (2103125,u"Central do Maranhão","central do maranhao",),
+           (2103158,u"Centro do Guilherme","centro do guilherme",),
+           (2103174,u"Centro Novo do Maranhão","centro novo do maranhao",),
+           (2103208,u"Chapadinha","chapadinha",),
+           (2103257,u"Cidelândia","cidelandia",),
+           (2103307,u"Codó","codo",),
+           (2103406,u"Coelho Neto","coelho neto",),
+           (2103505,u"Colinas","colinas",),
+           (2103554,u"Conceição do Lago-Açu","conceicao do lago-acu",),
+           (2103604,u"Coroatá","coroata",),
+           (2103703,u"Cururupu","cururupu",),
+           (2103752,u"Davinópolis","davinopolis",),
+           (2103802,u"Dom Pedro","dom pedro",),
+           (2103901,u"Duque Bacelar","duque bacelar",),
+           (2104008,u"Esperantinópolis","esperantinopolis",),
+           (2104057,u"Estreito","estreito",),
+           (2104073,u"Feira Nova do Maranhão","feira nova do maranhao",),
+           (2104081,u"Fernando Falcão","fernando falcao",),
+           (2104099,u"Formosa da Serra Negra","formosa da serra negra",),
+           (2104107,u"Fortaleza dos Nogueiras","fortaleza dos nogueiras",),
+           (2104206,u"Fortuna","fortuna",),
+           (2104305,u"Godofredo Viana","godofredo viana",),
+           (2104404,u"Gonçalves Dias","goncalves dias",),
+           (2104503,u"Governador Archer","governador archer",),
+           (2104552,u"Governador Edison Lobão","governador edison lobao",),
+           (2104602,u"Governador Eugênio Barros","governador eugenio barros",),
+           (2104628,u"Governador Luiz Rocha","governador luiz rocha",),
+           (2104651,u"Governador Newton Bello","governador newton bello",),
+           (2104677,u"Governador Nunes Freire","governador nunes freire",),
+           (2104701,u"Graça Aranha","graca aranha",),
+           (2104800,u"Grajaú","grajau",),
+           (2104909,u"Guimarães","guimaraes",),
+           (2105005,u"Humberto de Campos","humberto de campos",),
+           (2105104,u"Icatu","icatu",),
+           (2105153,u"Igarapé do Meio","igarape do meio",),
+           (2105203,u"Igarapé Grande","igarape grande",),
+           (2105302,u"Imperatriz","imperatriz",),
+           (2105351,u"Itaipava do Grajaú","itaipava do grajau",),
+           (2105401,u"Itapecuru Mirim","itapecuru mirim",),
+           (2105427,u"Itinga do Maranhão","itinga do maranhao",),
+           (2105450,u"Jatobá","jatoba",),
+           (2105476,u"Jenipapo dos Vieiras","jenipapo dos vieiras",),
+           (2105500,u"João Lisboa","joao lisboa",),
+           (2105609,u"Joselândia","joselandia",),
+           (2105658,u"Junco do Maranhão","junco do maranhao",),
+           (2105708,u"Lago da Pedra","lago da pedra",),
+           (2105807,u"Lago do Junco","lago do junco",),
+           (2105948,u"Lago dos Rodrigues","lago dos rodrigues",),
+           (2105906,u"Lago Verde","lago verde",),
+           (2105922,u"Lagoa do Mato","lagoa do mato",),
+           (2105963,u"Lagoa Grande do Maranhão","lagoa grande do maranhao",),
+           (2105989,u"Lajeado Novo","lajeado novo",),
+           (2106003,u"Lima Campos","lima campos",),
+           (2106102,u"Loreto","loreto",),
+           (2106201,u"Luís Domingues","luis domingues",),
+           (2106300,u"Magalhães de Almeida","magalhaes de almeida",),
+           (2106326,u"Maracaçumé","maracacume",),
+           (2106359,u"Marajá do Sena","maraja do sena",),
+           (2106375,u"Maranhãozinho","maranhaozinho",),
+           (2106409,u"Mata Roma","mata roma",),
+           (2106508,u"Matinha","matinha",),
+           (2106631,u"Matões do Norte","matoes do norte",),
+           (2106607,u"Matões","matoes",),
+           (2106672,u"Milagres do Maranhão","milagres do maranhao",),
+           (2106706,u"Mirador","mirador",),
+           (2106755,u"Miranda do Norte","miranda do norte",),
+           (2106805,u"Mirinzal","mirinzal",),
+           (2106904,u"Monção","moncao",),
+           (2107001,u"Montes Altos","montes altos",),
+           (2107100,u"Morros","morros",),
+           (2107209,u"Nina Rodrigues","nina rodrigues",),
+           (2107258,u"Nova Colinas","nova colinas",),
+           (2107308,u"Nova Iorque","nova iorque",),
+           (2107357,u"Nova Olinda do Maranhão","nova olinda do maranhao",),
+           (2107407,u"Olho d'Água das Cunhãs","olho d'agua das cunhas",),
+           (2107456,u"Olinda Nova do Maranhão","olinda nova do maranhao",),
+           (2107506,u"Paço do Lumiar","paco do lumiar",),
+           (2107605,u"Palmeirândia","palmeirandia",),
+           (2107704,u"Paraibano","paraibano",),
+           (2107803,u"Parnarama","parnarama",),
+           (2107902,u"Passagem Franca","passagem franca",),
+           (2108009,u"Pastos Bons","pastos bons",),
+           (2108058,u"Paulino Neves","paulino neves",),
+           (2108108,u"Paulo Ramos","paulo ramos",),
+           (2108207,u"Pedreiras","pedreiras",),
+           (2108256,u"Pedro do Rosário","pedro do rosario",),
+           (2108306,u"Penalva","penalva",),
+           (2108405,u"Peri Mirim","peri mirim",),
+           (2108454,u"Peritoró","peritoro",),
+           (2108504,u"Pindaré-Mirim","pindare-mirim",),
+           (2108603,u"Pinheiro","pinheiro",),
+           (2108702,u"Pio XII","pio xii",),
+           (2108801,u"Pirapemas","pirapemas",),
+           (2108900,u"Poção de Pedras","pocao de pedras",),
+           (2109007,u"Porto Franco","porto franco",),
+           (2109056,u"Porto Rico do Maranhão","porto rico do maranhao",),
+           (2109106,u"Presidente Dutra","presidente dutra",),
+           (2109205,u"Presidente Juscelino","presidente juscelino",),
+           (2109239,u"Presidente Médici","presidente medici",),
+           (2109270,u"Presidente Sarney","presidente sarney",),
+           (2109304,u"Presidente Vargas","presidente vargas",),
+           (2109403,u"Primeira Cruz","primeira cruz",),
+           (2109452,u"Raposa","raposa",),
+           (2109502,u"Riachão","riachao",),
+           (2109551,u"Ribamar Fiquene","ribamar fiquene",),
+           (2109601,u"Rosário","rosario",),
+           (2109700,u"Sambaíba","sambaiba",),
+           (2109759,u"Santa Filomena do Maranhão","santa filomena do maranhao",),
+           (2109809,u"Santa Helena","santa helena",),
+           (2109908,u"Santa Inês","santa ines",),
+           (2110039,u"Santa Luzia do Paruá","santa luzia do parua",),
+           (2110005,u"Santa Luzia","santa luzia",),
+           (2110104,u"Santa Quitéria do Maranhão","santa quiteria do maranhao",),
+           (2110203,u"Santa Rita","santa rita",),
+           (2110237,u"Santana do Maranhão","santana do maranhao",),
+           (2110278,u"Santo Amaro do Maranhão","santo amaro do maranhao",),
+           (2110302,u"Santo Antônio dos Lopes","santo antonio dos lopes",),
+           (2110401,u"São Benedito do Rio Preto","sao benedito do rio preto",),
+           (2110500,u"São Bento","sao bento",),
+           (2110609,u"São Bernardo","sao bernardo",),
+           (2110658,u"São Domingos do Azeitão","sao domingos do azeitao",),
+           (2110708,u"São Domingos do Maranhão","sao domingos do maranhao",),
+           (2110807,u"São Félix de Balsas","sao felix de balsas",),
+           (2110856,u"São Francisco do Brejão","sao francisco do brejao",),
+           (2110906,u"São Francisco do Maranhão","sao francisco do maranhao",),
+           (2111003,u"São João Batista","sao joao batista",),
+           (2111029,u"São João do Carú","sao joao do caru",),
+           (2111052,u"São João do Paraíso","sao joao do paraiso",),
+           (2111078,u"São João do Soter","sao joao do soter",),
+           (2111102,u"São João dos Patos","sao joao dos patos",),
+           (2111201,u"São José de Ribamar","sao jose de ribamar",),
+           (2111250,u"São José dos Basílios","sao jose dos basilios",),
+           (2111409,u"São Luís Gonzaga do Maranhão","sao luis gonzaga do maranhao",),
+           (2111300,u"São Luís","sao luis",),
+           (2111508,u"São Mateus do Maranhão","sao mateus do maranhao",),
+           (2111532,u"São Pedro da Água Branca","sao pedro da agua branca",),
+           (2111573,u"São Pedro dos Crentes","sao pedro dos crentes",),
+           (2111607,u"São Raimundo das Mangabeiras","sao raimundo das mangabeiras",),
+           (2111631,u"São Raimundo do Doca Bezerra","sao raimundo do doca bezerra",),
+           (2111672,u"São Roberto","sao roberto",),
+           (2111706,u"São Vicente Ferrer","sao vicente ferrer",),
+           (2111722,u"Satubinha","satubinha",),
+           (2111748,u"Senador Alexandre Costa","senador alexandre costa",),
+           (2111763,u"Senador La Rocque","senador la rocque",),
+           (2111789,u"Serrano do Maranhão","serrano do maranhao",),
+           (2111805,u"Sítio Novo","sitio novo",),
+           (2111904,u"Sucupira do Norte","sucupira do norte",),
+           (2111953,u"Sucupira do Riachão","sucupira do riachao",),
+           (2112001,u"Tasso Fragoso","tasso fragoso",),
+           (2112100,u"Timbiras","timbiras",),
+           (2112209,u"Timon","timon",),
+           (2112233,u"Trizidela do Vale","trizidela do vale",),
+           (2112274,u"Tufilândia","tufilandia",),
+           (2112308,u"Tuntum","tuntum",),
+           (2112407,u"Turiaçu","turiacu",),
+           (2112456,u"Turilândia","turilandia",),
+           (2112506,u"Tutóia","tutoia",),
+           (2112605,u"Urbano Santos","urbano santos",),
+           (2112704,u"Vargem Grande","vargem grande",),
+           (2112803,u"Viana","viana",),
+           (2112852,u"Vila Nova dos Martírios","vila nova dos martirios",),
+           (2112902,u"Vitória do Mearim","vitoria do mearim",),
+           (2113009,u"Vitorino Freire","vitorino freire",),
+           (2114007,u"Zé Doca","ze doca",),
+         ],
+    u"MG":[(3100104,u"Abadia dos Dourados","abadia dos dourados",),
+            (3100203,u"Abaeté","abaete",),
+            (3100302,u"Abre Campo","abre campo",),
+            (3100401,u"Acaiaca","acaiaca",),
+            (3100500,u"Açucena","acucena",),
+            (3100609,u"Água Boa","agua boa",),
+            (3100708,u"Água Comprida","agua comprida",),
+            (3100807,u"Aguanil","aguanil",),
+            (3100906,u"Águas Formosas","aguas formosas",),
+            (3101003,u"Águas Vermelhas","aguas vermelhas",),
+            (3101102,u"Aimorés","aimores",),
+            (3101201,u"Aiuruoca","aiuruoca",),
+            (3101300,u"Alagoa","alagoa",),
+            (3101409,u"Albertina","albertina",),
+            (3101508,u"Além Paraíba","alem paraiba",),
+            (3101607,u"Alfenas","alfenas",),
+            (3101631,u"Alfredo Vasconcelos","alfredo vasconcelos",),
+            (3101706,u"Almenara","almenara",),
+            (3101805,u"Alpercata","alpercata",),
+            (3101904,u"Alpinópolis","alpinopolis",),
+            (3102001,u"Alterosa","alterosa",),
+            (3102050,u"Alto Caparaó","alto caparao",),
+            (3153509,u"Alto Jequitibá","alto jequitiba",),
+            (3102100,u"Alto Rio Doce","alto rio doce",),
+            (3102209,u"Alvarenga","alvarenga",),
+            (3102308,u"Alvinópolis","alvinopolis",),
+            (3102407,u"Alvorada de Minas","alvorada de minas",),
+            (3102506,u"Amparo do Serra","amparo do serra",),
+            (3102605,u"Andradas","andradas",),
+            (3102803,u"Andrelândia","andrelandia",),
+            (3102852,u"Angelândia","angelandia",),
+            (3102902,u"Antônio Carlos","antonio carlos",),
+            (3103009,u"Antônio Dias","antonio dias",),
+            (3103108,u"Antônio Prado de Minas","antonio prado de minas",),
+            (3103207,u"Araçaí","aracai",),
+            (3103306,u"Aracitaba","aracitaba",),
+            (3103405,u"Araçuaí","aracuai",),
+            (3103504,u"Araguari","araguari",),
+            (3103603,u"Arantina","arantina",),
+            (3103702,u"Araponga","araponga",),
+            (3103751,u"Araporã","arapora",),
+            (3103801,u"Arapuá","arapua",),
+            (3103900,u"Araújos","araujos",),
+            (3104007,u"Araxá","araxa",),
+            (3104106,u"Arceburgo","arceburgo",),
+            (3104205,u"Arcos","arcos",),
+            (3104304,u"Areado","areado",),
+            (3104403,u"Argirita","argirita",),
+            (3104452,u"Aricanduva","aricanduva",),
+            (3104502,u"Arinos","arinos",),
+            (3104601,u"Astolfo Dutra","astolfo dutra",),
+            (3104700,u"Ataléia","ataleia",),
+            (3104809,u"Augusto de Lima","augusto de lima",),
+            (3104908,u"Baependi","baependi",),
+            (3105004,u"Baldim","baldim",),
+            (3105103,u"Bambuí","bambui",),
+            (3105301,u"Bandeira do Sul","bandeira do sul",),
+            (3105202,u"Bandeira","bandeira",),
+            (3105400,u"Barão de Cocais","barao de cocais",),
+            (3105509,u"Barão de Monte Alto","barao de monte alto",),
+            (3105608,u"Barbacena","barbacena",),
+            (3105707,u"Barra Longa","barra longa",),
+            (3105905,u"Barroso","barroso",),
+            (3106002,u"Bela Vista de Minas","bela vista de minas",),
+            (3106101,u"Belmiro Braga","belmiro braga",),
+            (3106200,u"Belo Horizonte","belo horizonte",),
+            (3106309,u"Belo Oriente","belo oriente",),
+            (3106408,u"Belo Vale","belo vale",),
+            (3106507,u"Berilo","berilo",),
+            (3106655,u"Berizal","berizal",),
+            (3106606,u"Bertópolis","bertopolis",),
+            (3106705,u"Betim","betim",),
+            (3106804,u"Bias Fortes","bias fortes",),
+            (3106903,u"Bicas","bicas",),
+            (3107000,u"Biquinhas","biquinhas",),
+            (3107109,u"Boa Esperança","boa esperanca",),
+            (3107208,u"Bocaina de Minas","bocaina de minas",),
+            (3107307,u"Bocaiúva","bocaiuva",),
+            (3107406,u"Bom Despacho","bom despacho",),
+            (3107505,u"Bom Jardim de Minas","bom jardim de minas",),
+            (3107604,u"Bom Jesus da Penha","bom jesus da penha",),
+            (3107703,u"Bom Jesus do Amparo","bom jesus do amparo",),
+            (3107802,u"Bom Jesus do Galho","bom jesus do galho",),
+            (3107901,u"Bom Repouso","bom repouso",),
+            (3108008,u"Bom Sucesso","bom sucesso",),
+            (3108107,u"Bonfim","bonfim",),
+            (3108206,u"Bonfinópolis de Minas","bonfinopolis de minas",),
+            (3108255,u"Bonito de Minas","bonito de minas",),
+            (3108305,u"Borda da Mata","borda da mata",),
+            (3108404,u"Botelhos","botelhos",),
+            (3108503,u"Botumirim","botumirim",),
+            (3108701,u"Brás Pires","bras pires",),
+            (3108552,u"Brasilândia de Minas","brasilandia de minas",),
+            (3108602,u"Brasília de Minas","brasilia de minas",),
+            (3108909,u"Brasópolis","brasopolis",),
+            (3108800,u"Braúnas","braunas",),
+            (3109006,u"Brumadinho","brumadinho",),
+            (3109105,u"Bueno Brandão","bueno brandao",),
+            (3109204,u"Buenópolis","buenopolis",),
+            (3109253,u"Bugre","bugre",),
+            (3109303,u"Buritis","buritis",),
+            (3109402,u"Buritizeiro","buritizeiro",),
+            (3109451,u"Cabeceira Grande","cabeceira grande",),
+            (3109501,u"Cabo Verde","cabo verde",),
+            (3109600,u"Cachoeira da Prata","cachoeira da prata",),
+            (3109709,u"Cachoeira de Minas","cachoeira de minas",),
+            (3102704,u"Cachoeira de Pajeú","cachoeira de pajeu",),
+            (3109808,u"Cachoeira Dourada","cachoeira dourada",),
+            (3109907,u"Caetanópolis","caetanopolis",),
+            (3110004,u"Caeté","caete",),
+            (3110103,u"Caiana","caiana",),
+            (3110202,u"Cajuri","cajuri",),
+            (3110301,u"Caldas","caldas",),
+            (3110400,u"Camacho","camacho",),
+            (3110509,u"Camanducaia","camanducaia",),
+            (3110608,u"Cambuí","cambui",),
+            (3110707,u"Cambuquira","cambuquira",),
+            (3110806,u"Campanário","campanario",),
+            (3110905,u"Campanha","campanha",),
+            (3111002,u"Campestre","campestre",),
+            (3111101,u"Campina Verde","campina verde",),
+            (3111150,u"Campo Azul","campo azul",),
+            (3111200,u"Campo Belo","campo belo",),
+            (3111309,u"Campo do Meio","campo do meio",),
+            (3111408,u"Campo Florido","campo florido",),
+            (3111507,u"Campos Altos","campos altos",),
+            (3111606,u"Campos Gerais","campos gerais",),
+            (3111903,u"Cana Verde","cana verde",),
+            (3111705,u"Canaã","canaa",),
+            (3111804,u"Canápolis","canapolis",),
+            (3112000,u"Candeias","candeias",),
+            (3112059,u"Cantagalo","cantagalo",),
+            (3112109,u"Caparaó","caparao",),
+            (3112208,u"Capela Nova","capela nova",),
+            (3112307,u"Capelinha","capelinha",),
+            (3112406,u"Capetinga","capetinga",),
+            (3112505,u"Capim Branco","capim branco",),
+            (3112604,u"Capinópolis","capinopolis",),
+            (3112653,u"Capitão Andrade","capitao andrade",),
+            (3112703,u"Capitão Enéas","capitao eneas",),
+            (3112802,u"Capitólio","capitolio",),
+            (3112901,u"Caputira","caputira",),
+            (3113008,u"Caraí","carai",),
+            (3113107,u"Caranaíba","caranaiba",),
+            (3113206,u"Carandaí","carandai",),
+            (3113305,u"Carangola","carangola",),
+            (3113404,u"Caratinga","caratinga",),
+            (3113503,u"Carbonita","carbonita",),
+            (3113602,u"Careaçu","careacu",),
+            (3113701,u"Carlos Chagas","carlos chagas",),
+            (3113800,u"Carmésia","carmesia",),
+            (3113909,u"Carmo da Cachoeira","carmo da cachoeira",),
+            (3114006,u"Carmo da Mata","carmo da mata",),
+            (3114105,u"Carmo de Minas","carmo de minas",),
+            (3114204,u"Carmo do Cajuru","carmo do cajuru",),
+            (3114303,u"Carmo do Paranaíba","carmo do paranaiba",),
+            (3114402,u"Carmo do Rio Claro","carmo do rio claro",),
+            (3114501,u"Carmópolis de Minas","carmopolis de minas",),
+            (3114550,u"Carneirinho","carneirinho",),
+            (3114600,u"Carrancas","carrancas",),
+            (3114709,u"Carvalhópolis","carvalhopolis",),
+            (3114808,u"Carvalhos","carvalhos",),
+            (3114907,u"Casa Grande","casa grande",),
+            (3115003,u"Cascalho Rico","cascalho rico",),
+            (3115102,u"Cássia","cassia",),
+            (3115300,u"Cataguases","cataguases",),
+            (3115409,u"Catas Altas da Noruega","catas altas da noruega",),
+            (3115359,u"Catas Altas","catas altas",),
+            (3115458,u"Catuji","catuji",),
+            (3115474,u"Catuti","catuti",),
+            (3115508,u"Caxambu","caxambu",),
+            (3115607,u"Cedro do Abaeté","cedro do abaete",),
+            (3115706,u"Central de Minas","central de minas",),
+            (3115805,u"Centralina","centralina",),
+            (3115904,u"Chácara","chacara",),
+            (3116001,u"Chalé","chale",),
+            (3116100,u"Chapada do Norte","chapada do norte",),
+            (3116159,u"Chapada Gaúcha","chapada gaucha",),
+            (3116209,u"Chiador","chiador",),
+            (3116308,u"Cipotânea","cipotanea",),
+            (3116407,u"Claraval","claraval",),
+            (3116506,u"Claro dos Poções","claro dos pocoes",),
+            (3116605,u"Cláudio","claudio",),
+            (3116704,u"Coimbra","coimbra",),
+            (3116803,u"Coluna","coluna",),
+            (3116902,u"Comendador Gomes","comendador gomes",),
+            (3117009,u"Comercinho","comercinho",),
+            (3117108,u"Conceição da Aparecida","conceicao da aparecida",),
+            (3115201,u"Conceição da Barra de Minas","conceicao da barra de minas",),
+            (3117306,u"Conceição das Alagoas","conceicao das alagoas",),
+            (3117207,u"Conceição das Pedras","conceicao das pedras",),
+            (3117405,u"Conceição de Ipanema","conceicao de ipanema",),
+            (3117504,u"Conceição do Mato Dentro","conceicao do mato dentro",),
+            (3117603,u"Conceição do Pará","conceicao do para",),
+            (3117702,u"Conceição do Rio Verde","conceicao do rio verde",),
+            (3117801,u"Conceição dos Ouros","conceicao dos ouros",),
+            (3117836,u"Cônego Marinho","conego marinho",),
+            (3117876,u"Confins","confins",),
+            (3117900,u"Congonhal","congonhal",),
+            (3118106,u"Congonhas do Norte","congonhas do norte",),
+            (3118007,u"Congonhas","congonhas",),
+            (3118205,u"Conquista","conquista",),
+            (3118304,u"Conselheiro Lafaiete","conselheiro lafaiete",),
+            (3118403,u"Conselheiro Pena","conselheiro pena",),
+            (3118502,u"Consolação","consolacao",),
+            (3118601,u"Contagem","contagem",),
+            (3118700,u"Coqueiral","coqueiral",),
+            (3118809,u"Coração de Jesus","coracao de jesus",),
+            (3118908,u"Cordisburgo","cordisburgo",),
+            (3119005,u"Cordislândia","cordislandia",),
+            (3119104,u"Corinto","corinto",),
+            (3119203,u"Coroaci","coroaci",),
+            (3119302,u"Coromandel","coromandel",),
+            (3119401,u"Coronel Fabriciano","coronel fabriciano",),
+            (3119500,u"Coronel Murta","coronel murta",),
+            (3119609,u"Coronel Pacheco","coronel pacheco",),
+            (3119708,u"Coronel Xavier Chaves","coronel xavier chaves",),
+            (3119807,u"Córrego Danta","corrego danta",),
+            (3119906,u"Córrego do Bom Jesus","corrego do bom jesus",),
+            (3119955,u"Córrego Fundo","corrego fundo",),
+            (3120003,u"Córrego Novo","corrego novo",),
+            (3120102,u"Couto de Magalhães de Minas","couto de magalhaes de minas",),
+            (3120151,u"Crisólita","crisolita",),
+            (3120201,u"Cristais","cristais",),
+            (3120300,u"Cristália","cristalia",),
+            (3120409,u"Cristiano Otoni","cristiano otoni",),
+            (3120508,u"Cristina","cristina",),
+            (3120607,u"Crucilândia","crucilandia",),
+            (3120706,u"Cruzeiro da Fortaleza","cruzeiro da fortaleza",),
+            (3120805,u"Cruzília","cruzilia",),
+            (3120839,u"Cuparaque","cuparaque",),
+            (3120870,u"Curral de Dentro","curral de dentro",),
+            (3120904,u"Curvelo","curvelo",),
+            (3121001,u"Datas","datas",),
+            (3121100,u"Delfim Moreira","delfim moreira",),
+            (3121209,u"Delfinópolis","delfinopolis",),
+            (3121258,u"Delta","delta",),
+            (3121308,u"Descoberto","descoberto",),
+            (3121407,u"Desterro de Entre Rios","desterro de entre rios",),
+            (3121506,u"Desterro do Melo","desterro do melo",),
+            (3121605,u"Diamantina","diamantina",),
+            (3121704,u"Diogo de Vasconcelos","diogo de vasconcelos",),
+            (3121803,u"Dionísio","dionisio",),
+            (3121902,u"Divinésia","divinesia",),
+            (3122108,u"Divino das Laranjeiras","divino das laranjeiras",),
+            (3122009,u"Divino","divino",),
+            (3122207,u"Divinolândia de Minas","divinolandia de minas",),
+            (3122306,u"Divinópolis","divinopolis",),
+            (3122355,u"Divisa Alegre","divisa alegre",),
+            (3122405,u"Divisa Nova","divisa nova",),
+            (3122454,u"Divisópolis","divisopolis",),
+            (3122470,u"Dom Bosco","dom bosco",),
+            (3122504,u"Dom Cavati","dom cavati",),
+            (3122603,u"Dom Joaquim","dom joaquim",),
+            (3122702,u"Dom Silvério","dom silverio",),
+            (3122801,u"Dom Viçoso","dom vicoso",),
+            (3122900,u"Dona Eusébia","dona eusebia",),
+            (3123007,u"Dores de Campos","dores de campos",),
+            (3123106,u"Dores de Guanhães","dores de guanhaes",),
+            (3123205,u"Dores do Indaiá","dores do indaia",),
+            (3123304,u"Dores do Turvo","dores do turvo",),
+            (3123403,u"Doresópolis","doresopolis",),
+            (3123502,u"Douradoquara","douradoquara",),
+            (3123528,u"Durandé","durande",),
+            (3123601,u"Elói Mendes","eloi mendes",),
+            (3123700,u"Engenheiro Caldas","engenheiro caldas",),
+            (3123809,u"Engenheiro Navarro","engenheiro navarro",),
+            (3123858,u"Entre Folhas","entre folhas",),
+            (3123908,u"Entre Rios de Minas","entre rios de minas",),
+            (3124005,u"Ervália","ervalia",),
+            (3124104,u"Esmeraldas","esmeraldas",),
+            (3124203,u"Espera Feliz","espera feliz",),
+            (3124302,u"Espinosa","espinosa",),
+            (3124401,u"Espírito Santo do Dourado","espirito santo do dourado",),
+            (3124500,u"Estiva","estiva",),
+            (3124609,u"Estrela Dalva","estrela dalva",),
+            (3124708,u"Estrela do Indaiá","estrela do indaia",),
+            (3124807,u"Estrela do Sul","estrela do sul",),
+            (3124906,u"Eugenópolis","eugenopolis",),
+            (3125002,u"Ewbank da Câmara","ewbank da camara",),
+            (3125101,u"Extrema","extrema",),
+            (3125200,u"Fama","fama",),
+            (3125309,u"Faria Lemos","faria lemos",),
+            (3125408,u"Felício dos Santos","felicio dos santos",),
+            (3125606,u"Felisburgo","felisburgo",),
+            (3125705,u"Felixlândia","felixlandia",),
+            (3125804,u"Fernandes Tourinho","fernandes tourinho",),
+            (3125903,u"Ferros","ferros",),
+            (3125952,u"Fervedouro","fervedouro",),
+            (3126000,u"Florestal","florestal",),
+            (3126109,u"Formiga","formiga",),
+            (3126208,u"Formoso","formoso",),
+            (3126307,u"Fortaleza de Minas","fortaleza de minas",),
+            (3126406,u"Fortuna de Minas","fortuna de minas",),
+            (3126505,u"Francisco Badaró","francisco badaro",),
+            (3126604,u"Francisco Dumont","francisco dumont",),
+            (3126703,u"Francisco Sá","francisco sa",),
+            (3126752,u"Franciscópolis","franciscopolis",),
+            (3126802,u"Frei Gaspar","frei gaspar",),
+            (3126901,u"Frei Inocêncio","frei inocencio",),
+            (3126950,u"Frei Lagonegro","frei lagonegro",),
+            (3127057,u"Fronteira dos Vales","fronteira dos vales",),
+            (3127008,u"Fronteira","fronteira",),
+            (3127073,u"Fruta de Leite","fruta de leite",),
+            (3127107,u"Frutal","frutal",),
+            (3127206,u"Funilândia","funilandia",),
+            (3127305,u"Galiléia","galileia",),
+            (3127339,u"Gameleiras","gameleiras",),
+            (3127354,u"Glaucilândia","glaucilandia",),
+            (3127370,u"Goiabeira","goiabeira",),
+            (3127388,u"Goianá","goiana",),
+            (3127404,u"Gonçalves","goncalves",),
+            (3127503,u"Gonzaga","gonzaga",),
+            (3127602,u"Gouveia","gouveia",),
+            (3127701,u"Governador Valadares","governador valadares",),
+            (3127800,u"Grão Mogol","grao mogol",),
+            (3127909,u"Grupiara","grupiara",),
+            (3128006,u"Guanhães","guanhaes",),
+            (3128105,u"Guapé","guape",),
+            (3128204,u"Guaraciaba","guaraciaba",),
+            (3128253,u"Guaraciama","guaraciama",),
+            (3128303,u"Guaranésia","guaranesia",),
+            (3128402,u"Guarani","guarani",),
+            (3128501,u"Guarará","guarara",),
+            (3128600,u"Guarda-Mor","guarda-mor",),
+            (3128709,u"Guaxupé","guaxupe",),
+            (3128808,u"Guidoval","guidoval",),
+            (3128907,u"Guimarânia","guimarania",),
+            (3129004,u"Guiricema","guiricema",),
+            (3129103,u"Gurinhatã","gurinhata",),
+            (3129202,u"Heliodora","heliodora",),
+            (3129301,u"Iapu","iapu",),
+            (3129400,u"Ibertioga","ibertioga",),
+            (3129509,u"Ibiá","ibia",),
+            (3129608,u"Ibiaí","ibiai",),
+            (3129657,u"Ibiracatu","ibiracatu",),
+            (3129707,u"Ibiraci","ibiraci",),
+            (3129806,u"Ibirité","ibirite",),
+            (3129905,u"Ibitiúra de Minas","ibitiura de minas",),
+            (3130002,u"Ibituruna","ibituruna",),
+            (3130051,u"Icaraí de Minas","icarai de minas",),
+            (3130101,u"Igarapé","igarape",),
+            (3130200,u"Igaratinga","igaratinga",),
+            (3130309,u"Iguatama","iguatama",),
+            (3130408,u"Ijaci","ijaci",),
+            (3130507,u"Ilicínea","ilicinea",),
+            (3130556,u"Imbé de Minas","imbe de minas",),
+            (3130606,u"Inconfidentes","inconfidentes",),
+            (3130655,u"Indaiabira","indaiabira",),
+            (3130705,u"Indianópolis","indianopolis",),
+            (3130804,u"Ingaí","ingai",),
+            (3130903,u"Inhapim","inhapim",),
+            (3131000,u"Inhaúma","inhauma",),
+            (3131109,u"Inimutaba","inimutaba",),
+            (3131158,u"Ipaba","ipaba",),
+            (3131208,u"Ipanema","ipanema",),
+            (3131307,u"Ipatinga","ipatinga",),
+            (3131406,u"Ipiaçu","ipiacu",),
+            (3131505,u"Ipuiúna","ipuiuna",),
+            (3131604,u"Iraí de Minas","irai de minas",),
+            (3131703,u"Itabira","itabira",),
+            (3131802,u"Itabirinha","itabirinha",),
+            (3131901,u"Itabirito","itabirito",),
+            (3132008,u"Itacambira","itacambira",),
+            (3132107,u"Itacarambi","itacarambi",),
+            (3132206,u"Itaguara","itaguara",),
+            (3132305,u"Itaipé","itaipe",),
+            (3132404,u"Itajubá","itajuba",),
+            (3132503,u"Itamarandiba","itamarandiba",),
+            (3132602,u"Itamarati de Minas","itamarati de minas",),
+            (3132701,u"Itambacuri","itambacuri",),
+            (3132800,u"Itambé do Mato Dentro","itambe do mato dentro",),
+            (3132909,u"Itamogi","itamogi",),
+            (3133006,u"Itamonte","itamonte",),
+            (3133105,u"Itanhandu","itanhandu",),
+            (3133204,u"Itanhomi","itanhomi",),
+            (3133303,u"Itaobim","itaobim",),
+            (3133402,u"Itapagipe","itapagipe",),
+            (3133501,u"Itapecerica","itapecerica",),
+            (3133600,u"Itapeva","itapeva",),
+            (3133709,u"Itatiaiuçu","itatiaiucu",),
+            (3133758,u"Itaú de Minas","itau de minas",),
+            (3133808,u"Itaúna","itauna",),
+            (3133907,u"Itaverava","itaverava",),
+            (3134004,u"Itinga","itinga",),
+            (3134103,u"Itueta","itueta",),
+            (3134202,u"Ituiutaba","ituiutaba",),
+            (3134301,u"Itumirim","itumirim",),
+            (3134400,u"Iturama","iturama",),
+            (3134509,u"Itutinga","itutinga",),
+            (3134608,u"Jaboticatubas","jaboticatubas",),
+            (3134707,u"Jacinto","jacinto",),
+            (3134806,u"Jacuí","jacui",),
+            (3134905,u"Jacutinga","jacutinga",),
+            (3135001,u"Jaguaraçu","jaguaracu",),
+            (3135050,u"Jaíba","jaiba",),
+            (3135076,u"Jampruca","jampruca",),
+            (3135100,u"Janaúba","janauba",),
+            (3135209,u"Januária","januaria",),
+            (3135308,u"Japaraíba","japaraiba",),
+            (3135357,u"Japonvar","japonvar",),
+            (3135407,u"Jeceaba","jeceaba",),
+            (3135456,u"Jenipapo de Minas","jenipapo de minas",),
+            (3135506,u"Jequeri","jequeri",),
+            (3135605,u"Jequitaí","jequitai",),
+            (3135704,u"Jequitibá","jequitiba",),
+            (3135803,u"Jequitinhonha","jequitinhonha",),
+            (3135902,u"Jesuânia","jesuania",),
+            (3136009,u"Joaíma","joaima",),
+            (3136108,u"Joanésia","joanesia",),
+            (3136207,u"João Monlevade","joao monlevade",),
+            (3136306,u"João Pinheiro","joao pinheiro",),
+            (3136405,u"Joaquim Felício","joaquim felicio",),
+            (3136504,u"Jordânia","jordania",),
+            (3136520,u"José Gonçalves de Minas","jose goncalves de minas",),
+            (3136553,u"José Raydan","jose raydan",),
+            (3136579,u"Josenópolis","josenopolis",),
+            (3136652,u"Juatuba","juatuba",),
+            (3136702,u"Juiz de Fora","juiz de fora",),
+            (3136801,u"Juramento","juramento",),
+            (3136900,u"Juruaia","juruaia",),
+            (3136959,u"Juvenília","juvenilia",),
+            (3137007,u"Ladainha","ladainha",),
+            (3137106,u"Lagamar","lagamar",),
+            (3137205,u"Lagoa da Prata","lagoa da prata",),
+            (3137304,u"Lagoa dos Patos","lagoa dos patos",),
+            (3137403,u"Lagoa Dourada","lagoa dourada",),
+            (3137502,u"Lagoa Formosa","lagoa formosa",),
+            (3137536,u"Lagoa Grande","lagoa grande",),
+            (3137601,u"Lagoa Santa","lagoa santa",),
+            (3137700,u"Lajinha","lajinha",),
+            (3137809,u"Lambari","lambari",),
+            (3137908,u"Lamim","lamim",),
+            (3138005,u"Laranjal","laranjal",),
+            (3138104,u"Lassance","lassance",),
+            (3138203,u"Lavras","lavras",),
+            (3138302,u"Leandro Ferreira","leandro ferreira",),
+            (3138351,u"Leme do Prado","leme do prado",),
+            (3138401,u"Leopoldina","leopoldina",),
+            (3138500,u"Liberdade","liberdade",),
+            (3138609,u"Lima Duarte","lima duarte",),
+            (3138625,u"Limeira do Oeste","limeira do oeste",),
+            (3138658,u"Lontra","lontra",),
+            (3138674,u"Luisburgo","luisburgo",),
+            (3138682,u"Luislândia","luislandia",),
+            (3138708,u"Luminárias","luminarias",),
+            (3138807,u"Luz","luz",),
+            (3138906,u"Machacalis","machacalis",),
+            (3139003,u"Machado","machado",),
+            (3139102,u"Madre de Deus de Minas","madre de deus de minas",),
+            (3139201,u"Malacacheta","malacacheta",),
+            (3139250,u"Mamonas","mamonas",),
+            (3139300,u"Manga","manga",),
+            (3139409,u"Manhuaçu","manhuacu",),
+            (3139508,u"Manhumirim","manhumirim",),
+            (3139607,u"Mantena","mantena",),
+            (3139805,u"Mar de Espanha","mar de espanha",),
+            (3139706,u"Maravilhas","maravilhas",),
+            (3139904,u"Maria da Fé","maria da fe",),
+            (3140001,u"Mariana","mariana",),
+            (3140100,u"Marilac","marilac",),
+            (3140159,u"Mário Campos","mario campos",),
+            (3140209,u"Maripá de Minas","maripa de minas",),
+            (3140308,u"Marliéria","marlieria",),
+            (3140407,u"Marmelópolis","marmelopolis",),
+            (3140506,u"Martinho Campos","martinho campos",),
+            (3140530,u"Martins Soares","martins soares",),
+            (3140555,u"Mata Verde","mata verde",),
+            (3140605,u"Materlândia","materlandia",),
+            (3140704,u"Mateus Leme","mateus leme",),
+            (3171501,u"Mathias Lobato","mathias lobato",),
+            (3140803,u"Matias Barbosa","matias barbosa",),
+            (3140852,u"Matias Cardoso","matias cardoso",),
+            (3140902,u"Matipó","matipo",),
+            (3141009,u"Mato Verde","mato verde",),
+            (3141108,u"Matozinhos","matozinhos",),
+            (3141207,u"Matutina","matutina",),
+            (3141306,u"Medeiros","medeiros",),
+            (3141405,u"Medina","medina",),
+            (3141504,u"Mendes Pimentel","mendes pimentel",),
+            (3141603,u"Mercês","merces",),
+            (3141702,u"Mesquita","mesquita",),
+            (3141801,u"Minas Novas","minas novas",),
+            (3141900,u"Minduri","minduri",),
+            (3142007,u"Mirabela","mirabela",),
+            (3142106,u"Miradouro","miradouro",),
+            (3142205,u"Miraí","mirai",),
+            (3142254,u"Miravânia","miravania",),
+            (3142304,u"Moeda","moeda",),
+            (3142403,u"Moema","moema",),
+            (3142502,u"Monjolos","monjolos",),
+            (3142601,u"Monsenhor Paulo","monsenhor paulo",),
+            (3142700,u"Montalvânia","montalvania",),
+            (3142809,u"Monte Alegre de Minas","monte alegre de minas",),
+            (3142908,u"Monte Azul","monte azul",),
+            (3143005,u"Monte Belo","monte belo",),
+            (3143104,u"Monte Carmelo","monte carmelo",),
+            (3143153,u"Monte Formoso","monte formoso",),
+            (3143203,u"Monte Santo de Minas","monte santo de minas",),
+            (3143401,u"Monte Sião","monte siao",),
+            (3143302,u"Montes Claros","montes claros",),
+            (3143450,u"Montezuma","montezuma",),
+            (3143500,u"Morada Nova de Minas","morada nova de minas",),
+            (3143609,u"Morro da Garça","morro da garca",),
+            (3143708,u"Morro do Pilar","morro do pilar",),
+            (3143807,u"Munhoz","munhoz",),
+            (3143906,u"Muriaé","muriae",),
+            (3144003,u"Mutum","mutum",),
+            (3144102,u"Muzambinho","muzambinho",),
+            (3144201,u"Nacip Raydan","nacip raydan",),
+            (3144300,u"Nanuque","nanuque",),
+            (3144359,u"Naque","naque",),
+            (3144375,u"Natalândia","natalandia",),
+            (3144409,u"Natércia","natercia",),
+            (3144508,u"Nazareno","nazareno",),
+            (3144607,u"Nepomuceno","nepomuceno",),
+            (3144656,u"Ninheira","ninheira",),
+            (3144672,u"Nova Belém","nova belem",),
+            (3144706,u"Nova Era","nova era",),
+            (3144805,u"Nova Lima","nova lima",),
+            (3144904,u"Nova Módica","nova modica",),
+            (3145000,u"Nova Ponte","nova ponte",),
+            (3145059,u"Nova Porteirinha","nova porteirinha",),
+            (3145109,u"Nova Resende","nova resende",),
+            (3145208,u"Nova Serrana","nova serrana",),
+            (3136603,u"Nova União","nova uniao",),
+            (3145307,u"Novo Cruzeiro","novo cruzeiro",),
+            (3145356,u"Novo Oriente de Minas","novo oriente de minas",),
+            (3145372,u"Novorizonte","novorizonte",),
+            (3145406,u"Olaria","olaria",),
+            (3145455,u"Olhos-d'Água","olhos-d'agua",),
+            (3145505,u"Olímpio Noronha","olimpio noronha",),
+            (3145703,u"Oliveira Fortes","oliveira fortes",),
+            (3145604,u"Oliveira","oliveira",),
+            (3145802,u"Onça de Pitangui","onca de pitangui",),
+            (3145851,u"Oratórios","oratorios",),
+            (3145877,u"Orizânia","orizania",),
+            (3145901,u"Ouro Branco","ouro branco",),
+            (3146008,u"Ouro Fino","ouro fino",),
+            (3146107,u"Ouro Preto","ouro preto",),
+            (3146206,u"Ouro Verde de Minas","ouro verde de minas",),
+            (3146255,u"Padre Carvalho","padre carvalho",),
+            (3146305,u"Padre Paraíso","padre paraiso",),
+            (3146552,u"Pai Pedro","pai pedro",),
+            (3146404,u"Paineiras","paineiras",),
+            (3146503,u"Pains","pains",),
+            (3146602,u"Paiva","paiva",),
+            (3146701,u"Palma","palma",),
+            (3146750,u"Palmópolis","palmopolis",),
+            (3146909,u"Papagaios","papagaios",),
+            (3147105,u"Pará de Minas","para de minas",),
+            (3147006,u"Paracatu","paracatu",),
+            (3147204,u"Paraguaçu","paraguacu",),
+            (3147303,u"Paraisópolis","paraisopolis",),
+            (3147402,u"Paraopeba","paraopeba",),
+            (3147600,u"Passa Quatro","passa quatro",),
+            (3147709,u"Passa Tempo","passa tempo",),
+            (3147808,u"Passa-Vinte","passa-vinte",),
+            (3147501,u"Passabém","passabem",),
+            (3147907,u"Passos","passos",),
+            (3147956,u"Patis","patis",),
+            (3148004,u"Patos de Minas","patos de minas",),
+            (3148202,u"Patrocínio do Muriaé","patrocinio do muriae",),
+            (3148103,u"Patrocínio","patrocinio",),
+            (3148301,u"Paula Cândido","paula candido",),
+            (3148400,u"Paulistas","paulistas",),
+            (3148509,u"Pavão","pavao",),
+            (3148608,u"Peçanha","pecanha",),
+            (3148707,u"Pedra Azul","pedra azul",),
+            (3148756,u"Pedra Bonita","pedra bonita",),
+            (3148806,u"Pedra do Anta","pedra do anta",),
+            (3148905,u"Pedra do Indaiá","pedra do indaia",),
+            (3149002,u"Pedra Dourada","pedra dourada",),
+            (3149101,u"Pedralva","pedralva",),
+            (3149150,u"Pedras de Maria da Cruz","pedras de maria da cruz",),
+            (3149200,u"Pedrinópolis","pedrinopolis",),
+            (3149309,u"Pedro Leopoldo","pedro leopoldo",),
+            (3149408,u"Pedro Teixeira","pedro teixeira",),
+            (3149507,u"Pequeri","pequeri",),
+            (3149606,u"Pequi","pequi",),
+            (3149705,u"Perdigão","perdigao",),
+            (3149804,u"Perdizes","perdizes",),
+            (3149903,u"Perdões","perdoes",),
+            (3149952,u"Periquito","periquito",),
+            (3150000,u"Pescador","pescador",),
+            (3150109,u"Piau","piau",),
+            (3150158,u"Piedade de Caratinga","piedade de caratinga",),
+            (3150208,u"Piedade de Ponte Nova","piedade de ponte nova",),
+            (3150307,u"Piedade do Rio Grande","piedade do rio grande",),
+            (3150406,u"Piedade dos Gerais","piedade dos gerais",),
+            (3150505,u"Pimenta","pimenta",),
+            (3150539,u"Pingo-d'Água","pingo-d'agua",),
+            (3150570,u"Pintópolis","pintopolis",),
+            (3150604,u"Piracema","piracema",),
+            (3150703,u"Pirajuba","pirajuba",),
+            (3150802,u"Piranga","piranga",),
+            (3150901,u"Piranguçu","pirangucu",),
+            (3151008,u"Piranguinho","piranguinho",),
+            (3151107,u"Pirapetinga","pirapetinga",),
+            (3151206,u"Pirapora","pirapora",),
+            (3151305,u"Piraúba","pirauba",),
+            (3151404,u"Pitangui","pitangui",),
+            (3151503,u"Piumhi","piumhi",),
+            (3151602,u"Planura","planura",),
+            (3151701,u"Poço Fundo","poco fundo",),
+            (3151800,u"Poços de Caldas","pocos de caldas",),
+            (3151909,u"Pocrane","pocrane",),
+            (3152006,u"Pompéu","pompeu",),
+            (3152105,u"Ponte Nova","ponte nova",),
+            (3152131,u"Ponto Chique","ponto chique",),
+            (3152170,u"Ponto dos Volantes","ponto dos volantes",),
+            (3152204,u"Porteirinha","porteirinha",),
+            (3152303,u"Porto Firme","porto firme",),
+            (3152402,u"Poté","pote",),
+            (3152501,u"Pouso Alegre","pouso alegre",),
+            (3152600,u"Pouso Alto","pouso alto",),
+            (3152709,u"Prados","prados",),
+            (3152808,u"Prata","prata",),
+            (3152907,u"Pratápolis","pratapolis",),
+            (3153004,u"Pratinha","pratinha",),
+            (3153103,u"Presidente Bernardes","presidente bernardes",),
+            (3153202,u"Presidente Juscelino","presidente juscelino",),
+            (3153301,u"Presidente Kubitschek","presidente kubitschek",),
+            (3153400,u"Presidente Olegário","presidente olegario",),
+            (3153608,u"Prudente de Morais","prudente de morais",),
+            (3153707,u"Quartel Geral","quartel geral",),
+            (3153806,u"Queluzito","queluzito",),
+            (3153905,u"Raposos","raposos",),
+            (3154002,u"Raul Soares","raul soares",),
+            (3154101,u"Recreio","recreio",),
+            (3154150,u"Reduto","reduto",),
+            (3154200,u"Resende Costa","resende costa",),
+            (3154309,u"Resplendor","resplendor",),
+            (3154408,u"Ressaquinha","ressaquinha",),
+            (3154457,u"Riachinho","riachinho",),
+            (3154507,u"Riacho dos Machados","riacho dos machados",),
+            (3154606,u"Ribeirão das Neves","ribeirao das neves",),
+            (3154705,u"Ribeirão Vermelho","ribeirao vermelho",),
+            (3154804,u"Rio Acima","rio acima",),
+            (3154903,u"Rio Casca","rio casca",),
+            (3155108,u"Rio do Prado","rio do prado",),
+            (3155009,u"Rio Doce","rio doce",),
+            (3155207,u"Rio Espera","rio espera",),
+            (3155306,u"Rio Manso","rio manso",),
+            (3155405,u"Rio Novo","rio novo",),
+            (3155504,u"Rio Paranaíba","rio paranaiba",),
+            (3155603,u"Rio Pardo de Minas","rio pardo de minas",),
+            (3155702,u"Rio Piracicaba","rio piracicaba",),
+            (3155801,u"Rio Pomba","rio pomba",),
+            (3155900,u"Rio Preto","rio preto",),
+            (3156007,u"Rio Vermelho","rio vermelho",),
+            (3156106,u"Ritápolis","ritapolis",),
+            (3156205,u"Rochedo de Minas","rochedo de minas",),
+            (3156304,u"Rodeiro","rodeiro",),
+            (3156403,u"Romaria","romaria",),
+            (3156452,u"Rosário da Limeira","rosario da limeira",),
+            (3156502,u"Rubelita","rubelita",),
+            (3156601,u"Rubim","rubim",),
+            (3156700,u"Sabará","sabara",),
+            (3156809,u"Sabinópolis","sabinopolis",),
+            (3156908,u"Sacramento","sacramento",),
+            (3157005,u"Salinas","salinas",),
+            (3157104,u"Salto da Divisa","salto da divisa",),
+            (3157252,u"Santa Bárbara do Leste","santa barbara do leste",),
+            (3157278,u"Santa Bárbara do Monte Verde","santa barbara do monte verde",),
+            (3157302,u"Santa Bárbara do Tugúrio","santa barbara do tugurio",),
+            (3157203,u"Santa Bárbara","santa barbara",),
+            (3157336,u"Santa Cruz de Minas","santa cruz de minas",),
+            (3157377,u"Santa Cruz de Salinas","santa cruz de salinas",),
+            (3157401,u"Santa Cruz do Escalvado","santa cruz do escalvado",),
+            (3157500,u"Santa Efigênia de Minas","santa efigenia de minas",),
+            (3157609,u"Santa Fé de Minas","santa fe de minas",),
+            (3157658,u"Santa Helena de Minas","santa helena de minas",),
+            (3157708,u"Santa Juliana","santa juliana",),
+            (3157807,u"Santa Luzia","santa luzia",),
+            (3157906,u"Santa Margarida","santa margarida",),
+            (3158003,u"Santa Maria de Itabira","santa maria de itabira",),
+            (3158102,u"Santa Maria do Salto","santa maria do salto",),
+            (3158201,u"Santa Maria do Suaçuí","santa maria do suacui",),
+            (3159209,u"Santa Rita de Caldas","santa rita de caldas",),
+            (3159407,u"Santa Rita de Ibitipoca","santa rita de ibitipoca",),
+            (3159308,u"Santa Rita de Jacutinga","santa rita de jacutinga",),
+            (3159357,u"Santa Rita de Minas","santa rita de minas",),
+            (3159506,u"Santa Rita do Itueto","santa rita do itueto",),
+            (3159605,u"Santa Rita do Sapucaí","santa rita do sapucai",),
+            (3159704,u"Santa Rosa da Serra","santa rosa da serra",),
+            (3159803,u"Santa Vitória","santa vitoria",),
+            (3158300,u"Santana da Vargem","santana da vargem",),
+            (3158409,u"Santana de Cataguases","santana de cataguases",),
+            (3158508,u"Santana de Pirapama","santana de pirapama",),
+            (3158607,u"Santana do Deserto","santana do deserto",),
+            (3158706,u"Santana do Garambéu","santana do garambeu",),
+            (3158805,u"Santana do Jacaré","santana do jacare",),
+            (3158904,u"Santana do Manhuaçu","santana do manhuacu",),
+            (3158953,u"Santana do Paraíso","santana do paraiso",),
+            (3159001,u"Santana do Riacho","santana do riacho",),
+            (3159100,u"Santana dos Montes","santana dos montes",),
+            (3159902,u"Santo Antônio do Amparo","santo antonio do amparo",),
+            (3160009,u"Santo Antônio do Aventureiro","santo antonio do aventureiro",),
+            (3160108,u"Santo Antônio do Grama","santo antonio do grama",),
+            (3160207,u"Santo Antônio do Itambé","santo antonio do itambe",),
+            (3160306,u"Santo Antônio do Jacinto","santo antonio do jacinto",),
+            (3160405,u"Santo Antônio do Monte","santo antonio do monte",),
+            (3160454,u"Santo Antônio do Retiro","santo antonio do retiro",),
+            (3160504,u"Santo Antônio do Rio Abaixo","santo antonio do rio abaixo",),
+            (3160603,u"Santo Hipólito","santo hipolito",),
+            (3160702,u"Santos Dumont","santos dumont",),
+            (3160801,u"São Bento Abade","sao bento abade",),
+            (3160900,u"São Brás do Suaçuí","sao bras do suacui",),
+            (3160959,u"São Domingos das Dores","sao domingos das dores",),
+            (3161007,u"São Domingos do Prata","sao domingos do prata",),
+            (3161056,u"São Félix de Minas","sao felix de minas",),
+            (3161205,u"São Francisco de Paula","sao francisco de paula",),
+            (3161304,u"São Francisco de Sales","sao francisco de sales",),
+            (3161403,u"São Francisco do Glória","sao francisco do gloria",),
+            (3161106,u"São Francisco","sao francisco",),
+            (3161601,u"São Geraldo da Piedade","sao geraldo da piedade",),
+            (3161650,u"São Geraldo do Baixio","sao geraldo do baixio",),
+            (3161502,u"São Geraldo","sao geraldo",),
+            (3161700,u"São Gonçalo do Abaeté","sao goncalo do abaete",),
+            (3161809,u"São Gonçalo do Pará","sao goncalo do para",),
+            (3161908,u"São Gonçalo do Rio Abaixo","sao goncalo do rio abaixo",),
+            (3125507,u"São Gonçalo do Rio Preto","sao goncalo do rio preto",),
+            (3162005,u"São Gonçalo do Sapucaí","sao goncalo do sapucai",),
+            (3162104,u"São Gotardo","sao gotardo",),
+            (3162203,u"São João Batista do Glória","sao joao batista do gloria",),
+            (3162252,u"São João da Lagoa","sao joao da lagoa",),
+            (3162302,u"São João da Mata","sao joao da mata",),
+            (3162401,u"São João da Ponte","sao joao da ponte",),
+            (3162450,u"São João das Missões","sao joao das missoes",),
+            (3162500,u"São João del Rei","sao joao del rei",),
+            (3162559,u"São João do Manhuaçu","sao joao do manhuacu",),
+            (3162575,u"São João do Manteninha","sao joao do manteninha",),
+            (3162609,u"São João do Oriente","sao joao do oriente",),
+            (3162658,u"São João do Pacuí","sao joao do pacui",),
+            (3162708,u"São João do Paraíso","sao joao do paraiso",),
+            (3162807,u"São João Evangelista","sao joao evangelista",),
+            (3162906,u"São João Nepomuceno","sao joao nepomuceno",),
+            (3162922,u"São Joaquim de Bicas","sao joaquim de bicas",),
+            (3162948,u"São José da Barra","sao jose da barra",),
+            (3162955,u"São José da Lapa","sao jose da lapa",),
+            (3163003,u"São José da Safira","sao jose da safira",),
+            (3163102,u"São José da Varginha","sao jose da varginha",),
+            (3163201,u"São José do Alegre","sao jose do alegre",),
+            (3163300,u"São José do Divino","sao jose do divino",),
+            (3163409,u"São José do Goiabal","sao jose do goiabal",),
+            (3163508,u"São José do Jacuri","sao jose do jacuri",),
+            (3163607,u"São José do Mantimento","sao jose do mantimento",),
+            (3163706,u"São Lourenço","sao lourenco",),
+            (3163805,u"São Miguel do Anta","sao miguel do anta",),
+            (3163904,u"São Pedro da União","sao pedro da uniao",),
+            (3164100,u"São Pedro do Suaçuí","sao pedro do suacui",),
+            (3164001,u"São Pedro dos Ferros","sao pedro dos ferros",),
+            (3164209,u"São Romão","sao romao",),
+            (3164308,u"São Roque de Minas","sao roque de minas",),
+            (3164407,u"São Sebastião da Bela Vista","sao sebastiao da bela vista",),
+            (3164431,u"São Sebastião da Vargem Alegre","sao sebastiao da vargem alegre",),
+            (3164472,u"São Sebastião do Anta","sao sebastiao do anta",),
+            (3164506,u"São Sebastião do Maranhão","sao sebastiao do maranhao",),
+            (3164605,u"São Sebastião do Oeste","sao sebastiao do oeste",),
+            (3164704,u"São Sebastião do Paraíso","sao sebastiao do paraiso",),
+            (3164803,u"São Sebastião do Rio Preto","sao sebastiao do rio preto",),
+            (3164902,u"São Sebastião do Rio Verde","sao sebastiao do rio verde",),
+            (3165206,u"São Thomé das Letras","sao thome das letras",),
+            (3165008,u"São Tiago","sao tiago",),
+            (3165107,u"São Tomás de Aquino","sao tomas de aquino",),
+            (3165305,u"São Vicente de Minas","sao vicente de minas",),
+            (3165404,u"Sapucaí-Mirim","sapucai-mirim",),
+            (3165503,u"Sardoá","sardoa",),
+            (3165537,u"Sarzedo","sarzedo",),
+            (3165560,u"Sem-Peixe","sem-peixe",),
+            (3165578,u"Senador Amaral","senador amaral",),
+            (3165602,u"Senador Cortes","senador cortes",),
+            (3165701,u"Senador Firmino","senador firmino",),
+            (3165800,u"Senador José Bento","senador jose bento",),
+            (3165909,u"Senador Modestino Gonçalves","senador modestino goncalves",),
+            (3166006,u"Senhora de Oliveira","senhora de oliveira",),
+            (3166105,u"Senhora do Porto","senhora do porto",),
+            (3166204,u"Senhora dos Remédios","senhora dos remedios",),
+            (3166303,u"Sericita","sericita",),
+            (3166402,u"Seritinga","seritinga",),
+            (3166501,u"Serra Azul de Minas","serra azul de minas",),
+            (3166600,u"Serra da Saudade","serra da saudade",),
+            (3166808,u"Serra do Salitre","serra do salitre",),
+            (3166709,u"Serra dos Aimorés","serra dos aimores",),
+            (3166907,u"Serrania","serrania",),
+            (3166956,u"Serranópolis de Minas","serranopolis de minas",),
+            (3167004,u"Serranos","serranos",),
+            (3167103,u"Serro","serro",),
+            (3167202,u"Sete Lagoas","sete lagoas",),
+            (3165552,u"Setubinha","setubinha",),
+            (3167301,u"Silveirânia","silveirania",),
+            (3167400,u"Silvianópolis","silvianopolis",),
+            (3167509,u"Simão Pereira","simao pereira",),
+            (3167608,u"Simonésia","simonesia",),
+            (3167707,u"Sobrália","sobralia",),
+            (3167806,u"Soledade de Minas","soledade de minas",),
+            (3167905,u"Tabuleiro","tabuleiro",),
+            (3168002,u"Taiobeiras","taiobeiras",),
+            (3168051,u"Taparuba","taparuba",),
+            (3168101,u"Tapira","tapira",),
+            (3168200,u"Tapiraí","tapirai",),
+            (3168309,u"Taquaraçu de Minas","taquaracu de minas",),
+            (3168408,u"Tarumirim","tarumirim",),
+            (3168507,u"Teixeiras","teixeiras",),
+            (3168606,u"Teófilo Otoni","teofilo otoni",),
+            (3168705,u"Timóteo","timoteo",),
+            (3168804,u"Tiradentes","tiradentes",),
+            (3168903,u"Tiros","tiros",),
+            (3169000,u"Tocantins","tocantins",),
+            (3169059,u"Tocos do Moji","tocos do moji",),
+            (3169109,u"Toledo","toledo",),
+            (3169208,u"Tombos","tombos",),
+            (3169307,u"Três Corações","tres coracoes",),
+            (3169356,u"Três Marias","tres marias",),
+            (3169406,u"Três Pontas","tres pontas",),
+            (3169505,u"Tumiritinga","tumiritinga",),
+            (3169604,u"Tupaciguara","tupaciguara",),
+            (3169703,u"Turmalina","turmalina",),
+            (3169802,u"Turvolândia","turvolandia",),
+            (3169901,u"Ubá","uba",),
+            (3170008,u"Ubaí","ubai",),
+            (3170057,u"Ubaporanga","ubaporanga",),
+            (3170107,u"Uberaba","uberaba",),
+            (3170206,u"Uberlândia","uberlandia",),
+            (3170305,u"Umburatiba","umburatiba",),
+            (3170404,u"Unaí","unai",),
+            (3170438,u"União de Minas","uniao de minas",),
+            (3170479,u"Uruana de Minas","uruana de minas",),
+            (3170503,u"Urucânia","urucania",),
+            (3170529,u"Urucuia","urucuia",),
+            (3170578,u"Vargem Alegre","vargem alegre",),
+            (3170602,u"Vargem Bonita","vargem bonita",),
+            (3170651,u"Vargem Grande do Rio Pardo","vargem grande do rio pardo",),
+            (3170701,u"Varginha","varginha",),
+            (3170750,u"Varjão de Minas","varjao de minas",),
+            (3170800,u"Várzea da Palma","varzea da palma",),
+            (3170909,u"Varzelândia","varzelandia",),
+            (3171006,u"Vazante","vazante",),
+            (3171030,u"Verdelândia","verdelandia",),
+            (3171071,u"Veredinha","veredinha",),
+            (3171105,u"Veríssimo","verissimo",),
+            (3171154,u"Vermelho Novo","vermelho novo",),
+            (3171204,u"Vespasiano","vespasiano",),
+            (3171303,u"Viçosa","vicosa",),
+            (3171402,u"Vieiras","vieiras",),
+            (3171600,u"Virgem da Lapa","virgem da lapa",),
+            (3171709,u"Virgínia","virginia",),
+            (3171808,u"Virginópolis","virginopolis",),
+            (3171907,u"Virgolândia","virgolandia",),
+            (3172004,u"Visconde do Rio Branco","visconde do rio branco",),
+            (3172103,u"Volta Grande","volta grande",),
+            (3172202,u"Wenceslau Braz","wenceslau braz",),
+        ],
+    u"MS":[(5000203,u"Água Clara","agua clara",),
+           (5000252,u"Alcinópolis","alcinopolis",),
+           (5000609,u"Amambai","amambai",),
+           (5000708,u"Anastácio","anastacio",),
+           (5000807,u"Anaurilândia","anaurilandia",),
+           (5000856,u"Angélica","angelica",),
+           (5000906,u"Antônio João","antonio joao",),
+           (5001003,u"Aparecida do Taboado","aparecida do taboado",),
+           (5001102,u"Aquidauana","aquidauana",),
+           (5001243,u"Aral Moreira","aral moreira",),
+           (5001508,u"Bandeirantes","bandeirantes",),
+           (5001904,u"Bataguassu","bataguassu",),
+           (5002001,u"Batayporã","bataypora",),
+           (5002100,u"Bela Vista","bela vista",),
+           (5002159,u"Bodoquena","bodoquena",),
+           (5002209,u"Bonito","bonito",),
+           (5002308,u"Brasilândia","brasilandia",),
+           (5002407,u"Caarapó","caarapo",),
+           (5002605,u"Camapuã","camapua",),
+           (5002704,u"Campo Grande","campo grande",),
+           (5002803,u"Caracol","caracol",),
+           (5002902,u"Cassilândia","cassilandia",),
+           (5002951,u"Chapadão do Sul","chapadao do sul",),
+           (5003108,u"Corguinho","corguinho",),
+           (5003157,u"Coronel Sapucaia","coronel sapucaia",),
+           (5003207,u"Corumbá","corumba",),
+           (5003256,u"Costa Rica","costa rica",),
+           (5003306,u"Coxim","coxim",),
+           (5003454,u"Deodápolis","deodapolis",),
+           (5003488,u"Dois Irmãos do Buriti","dois irmaos do buriti",),
+           (5003504,u"Douradina","douradina",),
+           (5003702,u"Dourados","dourados",),
+           (5003751,u"Eldorado","eldorado",),
+           (5003801,u"Fátima do Sul","fatima do sul",),
+           (5003900,u"Figueirão","figueirao",),
+           (5004007,u"Glória de Dourados","gloria de dourados",),
+           (5004106,u"Guia Lopes da Laguna","guia lopes da laguna",),
+           (5004304,u"Iguatemi","iguatemi",),
+           (5004403,u"Inocência","inocencia",),
+           (5004502,u"Itaporã","itapora",),
+           (5004601,u"Itaquiraí","itaquirai",),
+           (5004700,u"Ivinhema","ivinhema",),
+           (5004809,u"Japorã","japora",),
+           (5004908,u"Jaraguari","jaraguari",),
+           (5005004,u"Jardim","jardim",),
+           (5005103,u"Jateí","jatei",),
+           (5005152,u"Juti","juti",),
+           (5005202,u"Ladário","ladario",),
+           (5005251,u"Laguna Carapã","laguna carapa",),
+           (5005400,u"Maracaju","maracaju",),
+           (5005608,u"Miranda","miranda",),
+           (5005681,u"Mundo Novo","mundo novo",),
+           (5005707,u"Naviraí","navirai",),
+           (5005806,u"Nioaque","nioaque",),
+           (5006002,u"Nova Alvorada do Sul","nova alvorada do sul",),
+           (5006200,u"Nova Andradina","nova andradina",),
+           (5006259,u"Novo Horizonte do Sul","novo horizonte do sul",),
+           (5006309,u"Paranaíba","paranaiba",),
+           (5006358,u"Paranhos","paranhos",),
+           (5006408,u"Pedro Gomes","pedro gomes",),
+           (5006606,u"Ponta Porã","ponta pora",),
+           (5006903,u"Porto Murtinho","porto murtinho",),
+           (5007109,u"Ribas do Rio Pardo","ribas do rio pardo",),
+           (5007208,u"Rio Brilhante","rio brilhante",),
+           (5007307,u"Rio Negro","rio negro",),
+           (5007406,u"Rio Verde de Mato Grosso","rio verde de mato grosso",),
+           (5007505,u"Rochedo","rochedo",),
+           (5007554,u"Santa Rita do Pardo","santa rita do pardo",),
+           (5007695,u"São Gabriel do Oeste","sao gabriel do oeste",),
+           (5007802,u"Selvíria","selviria",),
+           (5007703,u"Sete Quedas","sete quedas",),
+           (5007901,u"Sidrolândia","sidrolandia",),
+           (5007935,u"Sonora","sonora",),
+           (5007950,u"Tacuru","tacuru",),
+           (5007976,u"Taquarussu","taquarussu",),
+           (5008008,u"Terenos","terenos",),
+           (5008305,u"Três Lagoas","tres lagoas",),
+           (5008404,u"Vicentina","vicentina",),
+         ],
+    u"MT":[(5100102,u"Acorizal","acorizal",),
+            (5100201,u"Água Boa","agua boa",),
+            (5100250,u"Alta Floresta","alta floresta",),
+            (5100300,u"Alto Araguaia","alto araguaia",),
+            (5100359,u"Alto Boa Vista","alto boa vista",),
+            (5100409,u"Alto Garças","alto garcas",),
+            (5100508,u"Alto Paraguai","alto paraguai",),
+            (5100607,u"Alto Taquari","alto taquari",),
+            (5100805,u"Apiacás","apiacas",),
+            (5101001,u"Araguaiana","araguaiana",),
+            (5101209,u"Araguainha","araguainha",),
+            (5101258,u"Araputanga","araputanga",),
+            (5101308,u"Arenápolis","arenapolis",),
+            (5101407,u"Aripuanã","aripuana",),
+            (5101605,u"Barão de Melgaço","barao de melgaco",),
+            (5101704,u"Barra do Bugres","barra do bugres",),
+            (5101803,u"Barra do Garças","barra do garcas",),
+            (5101852,u"Bom Jesus do Araguaia","bom jesus do araguaia",),
+            (5101902,u"Brasnorte","brasnorte",),
+            (5102504,u"Cáceres","caceres",),
+            (5102603,u"Campinápolis","campinapolis",),
+            (5102637,u"Campo Novo do Parecis","campo novo do parecis",),
+            (5102678,u"Campo Verde","campo verde",),
+            (5102686,u"Campos de Júlio","campos de julio",),
+            (5102694,u"Canabrava do Norte","canabrava do norte",),
+            (5102702,u"Canarana","canarana",),
+            (5102793,u"Carlinda","carlinda",),
+            (5102850,u"Castanheira","castanheira",),
+            (5103007,u"Chapada dos Guimarães","chapada dos guimaraes",),
+            (5103056,u"Cláudia","claudia",),
+            (5103106,u"Cocalinho","cocalinho",),
+            (5103205,u"Colíder","colider",),
+            (5103254,u"Colniza","colniza",),
+            (5103304,u"Comodoro","comodoro",),
+            (5103353,u"Confresa","confresa",),
+            (5103361,u"Conquista D'Oeste","conquista d'oeste",),
+            (5103379,u"Cotriguaçu","cotriguacu",),
+            (5103403,u"Cuiabá","cuiaba",),
+            (5103437,u"Curvelândia","curvelandia",),
+            (5103452,u"Denise","denise",),
+            (5103502,u"Diamantino","diamantino",),
+            (5103601,u"Dom Aquino","dom aquino",),
+            (5103700,u"Feliz Natal","feliz natal",),
+            (5103809,u"Figueirópolis D'Oeste","figueiropolis d'oeste",),
+            (5103858,u"Gaúcha do Norte","gaucha do norte",),
+            (5103908,u"General Carneiro","general carneiro",),
+            (5103957,u"Glória D'Oeste","gloria d'oeste",),
+            (5104104,u"Guarantã do Norte","guaranta do norte",),
+            (5104203,u"Guiratinga","guiratinga",),
+            (5104500,u"Indiavaí","indiavai",),
+            (5104526,u"Ipiranga do Norte","ipiranga do norte",),
+            (5104542,u"Itanhangá","itanhanga",),
+            (5104559,u"Itaúba","itauba",),
+            (5104609,u"Itiquira","itiquira",),
+            (5104807,u"Jaciara","jaciara",),
+            (5104906,u"Jangada","jangada",),
+            (5105002,u"Jauru","jauru",),
+            (5105101,u"Juara","juara",),
+            (5105150,u"Juína","juina",),
+            (5105176,u"Juruena","juruena",),
+            (5105200,u"Juscimeira","juscimeira",),
+            (5105234,u"Lambari D'Oeste","lambari d'oeste",),
+            (5105259,u"Lucas do Rio Verde","lucas do rio verde",),
+            (5105309,u"Luciara","luciara",),
+            (5105580,u"Marcelândia","marcelandia",),
+            (5105606,u"Matupá","matupa",),
+            (5105622,u"Mirassol d'Oeste","mirassol d'oeste",),
+            (5105903,u"Nobres","nobres",),
+            (5106000,u"Nortelândia","nortelandia",),
+            (5106109,u"Nossa Senhora do Livramento","nossa senhora do livramento",),
+            (5106158,u"Nova Bandeirantes","nova bandeirantes",),
+            (5106208,u"Nova Brasilândia","nova brasilandia",),
+            (5106216,u"Nova Canaã do Norte","nova canaa do norte",),
+            (5108808,u"Nova Guarita","nova guarita",),
+            (5106182,u"Nova Lacerda","nova lacerda",),
+            (5108857,u"Nova Marilândia","nova marilandia",),
+            (5108907,u"Nova Maringá","nova maringa",),
+            (5108956,u"Nova Monte Verde","nova monte verde",),
+            (5106224,u"Nova Mutum","nova mutum",),
+            (5106174,u"Nova Nazaré","nova nazare",),
+            (5106232,u"Nova Olímpia","nova olimpia",),
+            (5106190,u"Nova Santa Helena","nova santa helena",),
+            (5106240,u"Nova Ubiratã","nova ubirata",),
+            (5106257,u"Nova Xavantina","nova xavantina",),
+            (5106273,u"Novo Horizonte do Norte","novo horizonte do norte",),
+            (5106265,u"Novo Mundo","novo mundo",),
+            (5106315,u"Novo Santo Antônio","novo santo antonio",),
+            (5106281,u"Novo São Joaquim","novo sao joaquim",),
+            (5106299,u"Paranaíta","paranaita",),
+            (5106307,u"Paranatinga","paranatinga",),
+            (5106372,u"Pedra Preta","pedra preta",),
+            (5106422,u"Peixoto de Azevedo","peixoto de azevedo",),
+            (5106455,u"Planalto da Serra","planalto da serra",),
+            (5106505,u"Poconé","pocone",),
+            (5106653,u"Pontal do Araguaia","pontal do araguaia",),
+            (5106703,u"Ponte Branca","ponte branca",),
+            (5106752,u"Pontes e Lacerda","pontes e lacerda",),
+            (5106778,u"Porto Alegre do Norte","porto alegre do norte",),
+            (5106802,u"Porto dos Gaúchos","porto dos gauchos",),
+            (5106828,u"Porto Esperidião","porto esperidiao",),
+            (5106851,u"Porto Estrela","porto estrela",),
+            (5107008,u"Poxoréo","poxoreo",),
+            (5107040,u"Primavera do Leste","primavera do leste",),
+            (5107065,u"Querência","querencia",),
+            (5107156,u"Reserva do Cabaçal","reserva do cabacal",),
+            (5107180,u"Ribeirão Cascalheira","ribeirao cascalheira",),
+            (5107198,u"Ribeirãozinho","ribeiraozinho",),
+            (5107206,u"Rio Branco","rio branco",),
+            (5107578,u"Rondolândia","rondolandia",),
+            (5107602,u"Rondonópolis","rondonopolis",),
+            (5107701,u"Rosário Oeste","rosario oeste",),
+            (5107750,u"Salto do Céu","salto do ceu",),
+            (5107248,u"Santa Carmem","santa carmem",),
+            (5107743,u"Santa Cruz do Xingu","santa cruz do xingu",),
+            (5107768,u"Santa Rita do Trivelato","santa rita do trivelato",),
+            (5107776,u"Santa Terezinha","santa terezinha",),
+            (5107263,u"Santo Afonso","santo afonso",),
+            (5107792,u"Santo Antônio do Leste","santo antonio do leste",),
+            (5107800,u"Santo Antônio do Leverger","santo antonio do leverger",),
+            (5107859,u"São Félix do Araguaia","sao felix do araguaia",),
+            (5107297,u"São José do Povo","sao jose do povo",),
+            (5107305,u"São José do Rio Claro","sao jose do rio claro",),
+            (5107354,u"São José do Xingu","sao jose do xingu",),
+            (5107107,u"São José dos Quatro Marcos","sao jose dos quatro marcos",),
+            (5107404,u"São Pedro da Cipa","sao pedro da cipa",),
+            (5107875,u"Sapezal","sapezal",),
+            (5107883,u"Serra Nova Dourada","serra nova dourada",),
+            (5107909,u"Sinop","sinop",),
+            (5107925,u"Sorriso","sorriso",),
+            (5107941,u"Tabaporã","tabapora",),
+            (5107958,u"Tangará da Serra","tangara da serra",),
+            (5108006,u"Tapurah","tapurah",),
+            (5108055,u"Terra Nova do Norte","terra nova do norte",),
+            (5108105,u"Tesouro","tesouro",),
+            (5108204,u"Torixoréu","torixoreu",),
+            (5108303,u"União do Sul","uniao do sul",),
+            (5108352,u"Vale de São Domingos","vale de sao domingos",),
+            (5108402,u"Várzea Grande","varzea grande",),
+            (5108501,u"Vera","vera",),
+            (5105507,u"Vila Bela da Santíssima Trindade","vila bela da santissima trindade",),
+            (5108600,u"Vila Rica","vila rica",),
+        ],
+    u"PA":[(1500107,u"Abaetetuba","abaetetuba",),
+           (1500131,u"Abel Figueiredo","abel figueiredo",),
+           (1500206,u"Acará","acara",),
+           (1500305,u"Afuá","afua",),
+           (1500347,u"Água Azul do Norte","agua azul do norte",),
+           (1500404,u"Alenquer","alenquer",),
+           (1500503,u"Almeirim","almeirim",),
+           (1500602,u"Altamira","altamira",),
+           (1500701,u"Anajás","anajas",),
+           (1500800,u"Ananindeua","ananindeua",),
+           (1500859,u"Anapu","anapu",),
+           (1500909,u"Augusto Corrêa","augusto correa",),
+           (1500958,u"Aurora do Pará","aurora do para",),
+           (1501006,u"Aveiro","aveiro",),
+           (1501105,u"Bagre","bagre",),
+           (1501204,u"Baião","baiao",),
+           (1501253,u"Bannach","bannach",),
+           (1501303,u"Barcarena","barcarena",),
+           (1501402,u"Belém","belem",),
+           (1501451,u"Belterra","belterra",),
+           (1501501,u"Benevides","benevides",),
+           (1501576,u"Bom Jesus do Tocantins","bom jesus do tocantins",),
+           (1501600,u"Bonito","bonito",),
+           (1501709,u"Bragança","braganca",),
+           (1501725,u"Brasil Novo","brasil novo",),
+           (1501758,u"Brejo Grande do Araguaia","brejo grande do araguaia",),
+           (1501782,u"Breu Branco","breu branco",),
+           (1501808,u"Breves","breves",),
+           (1501907,u"Bujaru","bujaru",),
+           (1502004,u"Cachoeira do Arari","cachoeira do arari",),
+           (1501956,u"Cachoeira do Piriá","cachoeira do piria",),
+           (1502103,u"Cametá","cameta",),
+           (1502152,u"Canaã dos Carajás","canaa dos carajas",),
+           (1502202,u"Capanema","capanema",),
+           (1502301,u"Capitão Poço","capitao poco",),
+           (1502400,u"Castanhal","castanhal",),
+           (1502509,u"Chaves","chaves",),
+           (1502608,u"Colares","colares",),
+           (1502707,u"Conceição do Araguaia","conceicao do araguaia",),
+           (1502756,u"Concórdia do Pará","concordia do para",),
+           (1502764,u"Cumaru do Norte","cumaru do norte",),
+           (1502772,u"Curionópolis","curionopolis",),
+           (1502806,u"Curralinho","curralinho",),
+           (1502855,u"Curuá","curua",),
+           (1502905,u"Curuçá","curuca",),
+           (1502939,u"Dom Eliseu","dom eliseu",),
+           (1502954,u"Eldorado dos Carajás","eldorado dos carajas",),
+           (1503002,u"Faro","faro",),
+           (1503044,u"Floresta do Araguaia","floresta do araguaia",),
+           (1503077,u"Garrafão do Norte","garrafao do norte",),
+           (1503093,u"Goianésia do Pará","goianesia do para",),
+           (1503101,u"Gurupá","gurupa",),
+           (1503200,u"Igarapé-Açu","igarape-acu",),
+           (1503309,u"Igarapé-Miri","igarape-miri",),
+           (1503408,u"Inhangapi","inhangapi",),
+           (1503457,u"Ipixuna do Pará","ipixuna do para",),
+           (1503507,u"Irituia","irituia",),
+           (1503606,u"Itaituba","itaituba",),
+           (1503705,u"Itupiranga","itupiranga",),
+           (1503754,u"Jacareacanga","jacareacanga",),
+           (1503804,u"Jacundá","jacunda",),
+           (1503903,u"Juruti","juruti",),
+           (1504000,u"Limoeiro do Ajuru","limoeiro do ajuru",),
+           (1504059,u"Mãe do Rio","mae do rio",),
+           (1504109,u"Magalhães Barata","magalhaes barata",),
+           (1504208,u"Marabá","maraba",),
+           (1504307,u"Maracanã","maracana",),
+           (1504406,u"Marapanim","marapanim",),
+           (1504422,u"Marituba","marituba",),
+           (1504455,u"Medicilândia","medicilandia",),
+           (1504505,u"Melgaço","melgaco",),
+           (1504604,u"Mocajuba","mocajuba",),
+           (1504703,u"Moju","moju",),
+           (1504802,u"Monte Alegre","monte alegre",),
+           (1504901,u"Muaná","muana",),
+           (1504950,u"Nova Esperança do Piriá","nova esperanca do piria",),
+           (1504976,u"Nova Ipixuna","nova ipixuna",),
+           (1505007,u"Nova Timboteua","nova timboteua",),
+           (1505031,u"Novo Progresso","novo progresso",),
+           (1505064,u"Novo Repartimento","novo repartimento",),
+           (1505106,u"Óbidos","obidos",),
+           (1505205,u"Oeiras do Pará","oeiras do para",),
+           (1505304,u"Oriximiná","oriximina",),
+           (1505403,u"Ourém","ourem",),
+           (1505437,u"Ourilândia do Norte","ourilandia do norte",),
+           (1505486,u"Pacajá","pacaja",),
+           (1505494,u"Palestina do Pará","palestina do para",),
+           (1505502,u"Paragominas","paragominas",),
+           (1505536,u"Parauapebas","parauapebas",),
+           (1505551,u"Pau D'Arco","pau d'arco",),
+           (1505601,u"Peixe-Boi","peixe-boi",),
+           (1505635,u"Piçarra","picarra",),
+           (1505650,u"Placas","placas",),
+           (1505700,u"Ponta de Pedras","ponta de pedras",),
+           (1505809,u"Portel","portel",),
+           (1505908,u"Porto de Moz","porto de moz",),
+           (1506005,u"Prainha","prainha",),
+           (1506104,u"Primavera","primavera",),
+           (1506112,u"Quatipuru","quatipuru",),
+           (1506138,u"Redenção","redencao",),
+           (1506161,u"Rio Maria","rio maria",),
+           (1506187,u"Rondon do Pará","rondon do para",),
+           (1506195,u"Rurópolis","ruropolis",),
+           (1506203,u"Salinópolis","salinopolis",),
+           (1506302,u"Salvaterra","salvaterra",),
+           (1506351,u"Santa Bárbara do Pará","santa barbara do para",),
+           (1506401,u"Santa Cruz do Arari","santa cruz do arari",),
+           (1506500,u"Santa Isabel do Pará","santa isabel do para",),
+           (1506559,u"Santa Luzia do Pará","santa luzia do para",),
+           (1506583,u"Santa Maria das Barreiras","santa maria das barreiras",),
+           (1506609,u"Santa Maria do Pará","santa maria do para",),
+           (1506708,u"Santana do Araguaia","santana do araguaia",),
+           (1506906,u"Santarém Novo","santarem novo",),
+           (1506807,u"Santarém","santarem",),
+           (1507003,u"Santo Antônio do Tauá","santo antonio do taua",),
+           (1507102,u"São Caetano de Odivelas","sao caetano de odivelas",),
+           (1507151,u"São Domingos do Araguaia","sao domingos do araguaia",),
+           (1507201,u"São Domingos do Capim","sao domingos do capim",),
+           (1507300,u"São Félix do Xingu","sao felix do xingu",),
+           (1507409,u"São Francisco do Pará","sao francisco do para",),
+           (1507458,u"São Geraldo do Araguaia","sao geraldo do araguaia",),
+           (1507466,u"São João da Ponta","sao joao da ponta",),
+           (1507474,u"São João de Pirabas","sao joao de pirabas",),
+           (1507508,u"São João do Araguaia","sao joao do araguaia",),
+           (1507607,u"São Miguel do Guamá","sao miguel do guama",),
+           (1507706,u"São Sebastião da Boa Vista","sao sebastiao da boa vista",),
+           (1507755,u"Sapucaia","sapucaia",),
+           (1507805,u"Senador José Porfírio","senador jose porfirio",),
+           (1507904,u"Soure","soure",),
+           (1507953,u"Tailândia","tailandia",),
+           (1507961,u"Terra Alta","terra alta",),
+           (1507979,u"Terra Santa","terra santa",),
+           (1508001,u"Tomé-Açu","tome-acu",),
+           (1508035,u"Tracuateua","tracuateua",),
+           (1508050,u"Trairão","trairao",),
+           (1508084,u"Tucumã","tucuma",),
+           (1508100,u"Tucuruí","tucurui",),
+           (1508126,u"Ulianópolis","ulianopolis",),
+           (1508159,u"Uruará","uruara",),
+           (1508209,u"Vigia","vigia",),
+           (1508308,u"Viseu","viseu",),
+           (1508357,u"Vitória do Xingu","vitoria do xingu",),
+           (1508407,u"Xinguara","xinguara",),
+         ],
+    u"PB":[(2500106,u"Água Branca","agua branca",),
+           (2500205,u"Aguiar","aguiar",),
+           (2500304,u"Alagoa Grande","alagoa grande",),
+           (2500403,u"Alagoa Nova","alagoa nova",),
+           (2500502,u"Alagoinha","alagoinha",),
+           (2500536,u"Alcantil","alcantil",),
+           (2500577,u"Algodão de Jandaíra","algodao de jandaira",),
+           (2500601,u"Alhandra","alhandra",),
+           (2500734,u"Amparo","amparo",),
+           (2500775,u"Aparecida","aparecida",),
+           (2500809,u"Araçagi","aracagi",),
+           (2500908,u"Arara","arara",),
+           (2501005,u"Araruna","araruna",),
+           (2501153,u"Areia de Baraúnas","areia de baraunas",),
+           (2501104,u"Areia","areia",),
+           (2501203,u"Areial","areial",),
+           (2501302,u"Aroeiras","aroeiras",),
+           (2501351,u"Assunção","assuncao",),
+           (2501401,u"Baía da Traição","baia da traicao",),
+           (2501500,u"Bananeiras","bananeiras",),
+           (2501534,u"Baraúna","barauna",),
+           (2501609,u"Barra de Santa Rosa","barra de santa rosa",),
+           (2501575,u"Barra de Santana","barra de santana",),
+           (2501708,u"Barra de São Miguel","barra de sao miguel",),
+           (2501807,u"Bayeux","bayeux",),
+           (2502003,u"Belém do Brejo do Cruz","belem do brejo do cruz",),
+           (2501906,u"Belém","belem",),
+           (2502052,u"Bernardino Batista","bernardino batista",),
+           (2502102,u"Boa Ventura","boa ventura",),
+           (2502151,u"Boa Vista","boa vista",),
+           (2502201,u"Bom Jesus","bom jesus",),
+           (2502300,u"Bom Sucesso","bom sucesso",),
+           (2502409,u"Bonito de Santa Fé","bonito de santa fe",),
+           (2502508,u"Boqueirão","boqueirao",),
+           (2502706,u"Borborema","borborema",),
+           (2502805,u"Brejo do Cruz","brejo do cruz",),
+           (2502904,u"Brejo dos Santos","brejo dos santos",),
+           (2503001,u"Caaporã","caapora",),
+           (2503100,u"Cabaceiras","cabaceiras",),
+           (2503209,u"Cabedelo","cabedelo",),
+           (2503308,u"Cachoeira dos Índios","cachoeira dos indios",),
+           (2503407,u"Cacimba de Areia","cacimba de areia",),
+           (2503506,u"Cacimba de Dentro","cacimba de dentro",),
+           (2503555,u"Cacimbas","cacimbas",),
+           (2503605,u"Caiçara","caicara",),
+           (2503704,u"Cajazeiras","cajazeiras",),
+           (2503753,u"Cajazeirinhas","cajazeirinhas",),
+           (2503803,u"Caldas Brandão","caldas brandao",),
+           (2503902,u"Camalaú","camalau",),
+           (2504009,u"Campina Grande","campina grande",),
+           (2516409,u"Campo de Santana","campo de santana",),
+           (2504033,u"Capim","capim",),
+           (2504074,u"Caraúbas","caraubas",),
+           (2504108,u"Carrapateira","carrapateira",),
+           (2504157,u"Casserengue","casserengue",),
+           (2504207,u"Catingueira","catingueira",),
+           (2504306,u"Catolé do Rocha","catole do rocha",),
+           (2504355,u"Caturité","caturite",),
+           (2504405,u"Conceição","conceicao",),
+           (2504504,u"Condado","condado",),
+           (2504603,u"Conde","conde",),
+           (2504702,u"Congo","congo",),
+           (2504801,u"Coremas","coremas",),
+           (2504850,u"Coxixola","coxixola",),
+           (2504900,u"Cruz do Espírito Santo","cruz do espirito santo",),
+           (2505006,u"Cubati","cubati",),
+           (2505238,u"Cuité de Mamanguape","cuite de mamanguape",),
+           (2505105,u"Cuité","cuite",),
+           (2505204,u"Cuitegi","cuitegi",),
+           (2505279,u"Curral de Cima","curral de cima",),
+           (2505303,u"Curral Velho","curral velho",),
+           (2505352,u"Damião","damiao",),
+           (2505402,u"Desterro","desterro",),
+           (2505600,u"Diamante","diamante",),
+           (2505709,u"Dona Inês","dona ines",),
+           (2505808,u"Duas Estradas","duas estradas",),
+           (2505907,u"Emas","emas",),
+           (2506004,u"Esperança","esperanca",),
+           (2506103,u"Fagundes","fagundes",),
+           (2506202,u"Frei Martinho","frei martinho",),
+           (2506251,u"Gado Bravo","gado bravo",),
+           (2506301,u"Guarabira","guarabira",),
+           (2506400,u"Gurinhém","gurinhem",),
+           (2506509,u"Gurjão","gurjao",),
+           (2506608,u"Ibiara","ibiara",),
+           (2502607,u"Igaracy","igaracy",),
+           (2506707,u"Imaculada","imaculada",),
+           (2506806,u"Ingá","inga",),
+           (2506905,u"Itabaiana","itabaiana",),
+           (2507002,u"Itaporanga","itaporanga",),
+           (2507101,u"Itapororoca","itapororoca",),
+           (2507200,u"Itatuba","itatuba",),
+           (2507309,u"Jacaraú","jacarau",),
+           (2507408,u"Jericó","jerico",),
+           (2507507,u"João Pessoa","joao pessoa",),
+           (2507606,u"Juarez Távora","juarez tavora",),
+           (2507705,u"Juazeirinho","juazeirinho",),
+           (2507804,u"Junco do Seridó","junco do serido",),
+           (2507903,u"Juripiranga","juripiranga",),
+           (2508000,u"Juru","juru",),
+           (2508208,u"Lagoa de Dentro","lagoa de dentro",),
+           (2508307,u"Lagoa Seca","lagoa seca",),
+           (2508109,u"Lagoa","lagoa",),
+           (2508406,u"Lastro","lastro",),
+           (2508505,u"Livramento","livramento",),
+           (2508554,u"Logradouro","logradouro",),
+           (2508604,u"Lucena","lucena",),
+           (2508703,u"Mãe d'Água","mae d'agua",),
+           (2508802,u"Malta","malta",),
+           (2508901,u"Mamanguape","mamanguape",),
+           (2509008,u"Manaíra","manaira",),
+           (2509057,u"Marcação","marcacao",),
+           (2509107,u"Mari","mari",),
+           (2509156,u"Marizópolis","marizopolis",),
+           (2509206,u"Massaranduba","massaranduba",),
+           (2509305,u"Mataraca","mataraca",),
+           (2509339,u"Matinhas","matinhas",),
+           (2509370,u"Mato Grosso","mato grosso",),
+           (2509396,u"Maturéia","matureia",),
+           (2509404,u"Mogeiro","mogeiro",),
+           (2509503,u"Montadas","montadas",),
+           (2509602,u"Monte Horebe","monte horebe",),
+           (2509701,u"Monteiro","monteiro",),
+           (2509800,u"Mulungu","mulungu",),
+           (2509909,u"Natuba","natuba",),
+           (2510006,u"Nazarezinho","nazarezinho",),
+           (2510105,u"Nova Floresta","nova floresta",),
+           (2510204,u"Nova Olinda","nova olinda",),
+           (2510303,u"Nova Palmeira","nova palmeira",),
+           (2510402,u"Olho d'Água","olho d'agua",),
+           (2510501,u"Olivedos","olivedos",),
+           (2510600,u"Ouro Velho","ouro velho",),
+           (2510659,u"Parari","parari",),
+           (2510709,u"Passagem","passagem",),
+           (2510808,u"Patos","patos",),
+           (2510907,u"Paulista","paulista",),
+           (2511004,u"Pedra Branca","pedra branca",),
+           (2511103,u"Pedra Lavrada","pedra lavrada",),
+           (2511202,u"Pedras de Fogo","pedras de fogo",),
+           (2512721,u"Pedro Régis","pedro regis",),
+           (2511301,u"Piancó","pianco",),
+           (2511400,u"Picuí","picui",),
+           (2511509,u"Pilar","pilar",),
+           (2511608,u"Pilões","piloes",),
+           (2511707,u"Pilõezinhos","piloezinhos",),
+           (2511806,u"Pirpirituba","pirpirituba",),
+           (2511905,u"Pitimbu","pitimbu",),
+           (2512002,u"Pocinhos","pocinhos",),
+           (2512036,u"Poço Dantas","poco dantas",),
+           (2512077,u"Poço de José de Moura","poco de jose de moura",),
+           (2512101,u"Pombal","pombal",),
+           (2512200,u"Prata","prata",),
+           (2512309,u"Princesa Isabel","princesa isabel",),
+           (2512408,u"Puxinanã","puxinana",),
+           (2512507,u"Queimadas","queimadas",),
+           (2512606,u"Quixabá","quixaba",),
+           (2512705,u"Remígio","remigio",),
+           (2512754,u"Riachão do Bacamarte","riachao do bacamarte",),
+           (2512762,u"Riachão do Poço","riachao do poco",),
+           (2512747,u"Riachão","riachao",),
+           (2512788,u"Riacho de Santo Antônio","riacho de santo antonio",),
+           (2512804,u"Riacho dos Cavalos","riacho dos cavalos",),
+           (2512903,u"Rio Tinto","rio tinto",),
+           (2513000,u"Salgadinho","salgadinho",),
+           (2513109,u"Salgado de São Félix","salgado de sao felix",),
+           (2513158,u"Santa Cecília","santa cecilia",),
+           (2513208,u"Santa Cruz","santa cruz",),
+           (2513307,u"Santa Helena","santa helena",),
+           (2513356,u"Santa Inês","santa ines",),
+           (2513406,u"Santa Luzia","santa luzia",),
+           (2513703,u"Santa Rita","santa rita",),
+           (2513802,u"Santa Teresinha","santa teresinha",),
+           (2513505,u"Santana de Mangueira","santana de mangueira",),
+           (2513604,u"Santana dos Garrotes","santana dos garrotes",),
+           (2513653,u"Santarém","santarem",),
+           (2513851,u"Santo André","santo andre",),
+           (2513927,u"São Bentinho","sao bentinho",),
+           (2513901,u"São Bento","sao bento",),
+           (2513943,u"São Domingos do Cariri","sao domingos do cariri",),
+           (2513968,u"São Domingos","sao domingos",),
+           (2513984,u"São Francisco","sao francisco",),
+           (2514008,u"São João do Cariri","sao joao do cariri",),
+           (2500700,u"São João do Rio do Peixe","sao joao do rio do peixe",),
+           (2514107,u"São João do Tigre","sao joao do tigre",),
+           (2514206,u"São José da Lagoa Tapada","sao jose da lagoa tapada",),
+           (2514305,u"São José de Caiana","sao jose de caiana",),
+           (2514404,u"São José de Espinharas","sao jose de espinharas",),
+           (2514503,u"São José de Piranhas","sao jose de piranhas",),
+           (2514552,u"São José de Princesa","sao jose de princesa",),
+           (2514602,u"São José do Bonfim","sao jose do bonfim",),
+           (2514651,u"São José do Brejo do Cruz","sao jose do brejo do cruz",),
+           (2514701,u"São José do Sabugi","sao jose do sabugi",),
+           (2514800,u"São José dos Cordeiros","sao jose dos cordeiros",),
+           (2514453,u"São José dos Ramos","sao jose dos ramos",),
+           (2514909,u"São Mamede","sao mamede",),
+           (2515005,u"São Miguel de Taipu","sao miguel de taipu",),
+           (2515104,u"São Sebastião de Lagoa de Roça","sao sebastiao de lagoa de roca",),
+           (2515203,u"São Sebastião do Umbuzeiro","sao sebastiao do umbuzeiro",),
+           (2515302,u"Sapé","sape",),
+           (2515401,u"Seridó","serido",),
+           (2515500,u"Serra Branca","serra branca",),
+           (2515609,u"Serra da Raiz","serra da raiz",),
+           (2515708,u"Serra Grande","serra grande",),
+           (2515807,u"Serra Redonda","serra redonda",),
+           (2515906,u"Serraria","serraria",),
+           (2515930,u"Sertãozinho","sertaozinho",),
+           (2515971,u"Sobrado","sobrado",),
+           (2516003,u"Solânea","solanea",),
+           (2516102,u"Soledade","soledade",),
+           (2516151,u"Sossêgo","sossego",),
+           (2516201,u"Sousa","sousa",),
+           (2516300,u"Sumé","sume",),
+           (2516508,u"Taperoá","taperoa",),
+           (2516607,u"Tavares","tavares",),
+           (2516706,u"Teixeira","teixeira",),
+           (2516755,u"Tenório","tenorio",),
+           (2516805,u"Triunfo","triunfo",),
+           (2516904,u"Uiraúna","uirauna",),
+           (2517001,u"Umbuzeiro","umbuzeiro",),
+           (2517100,u"Várzea","varzea",),
+           (2517209,u"Vieirópolis","vieiropolis",),
+           (2505501,u"Vista Serrana","vista serrana",),
+           (2517407,u"Zabelê","zabele",),
+         ],
+    u"PE":[(2600054,u"Abreu e Lima","abreu e lima",),
+           (2600104,u"Afogados da Ingazeira","afogados da ingazeira",),
+           (2600203,u"Afrânio","afranio",),
+           (2600302,u"Agrestina","agrestina",),
+           (2600401,u"Água Preta","agua preta",),
+           (2600500,u"Águas Belas","aguas belas",),
+           (2600609,u"Alagoinha","alagoinha",),
+           (2600708,u"Aliança","alianca",),
+           (2600807,u"Altinho","altinho",),
+           (2600906,u"Amaraji","amaraji",),
+           (2601003,u"Angelim","angelim",),
+           (2601052,u"Araçoiaba","aracoiaba",),
+           (2601102,u"Araripina","araripina",),
+           (2601201,u"Arcoverde","arcoverde",),
+           (2601300,u"Barra de Guabiraba","barra de guabiraba",),
+           (2601409,u"Barreiros","barreiros",),
+           (2601508,u"Belém de Maria","belem de maria",),
+           (2601607,u"Belém de São Francisco","belem de sao francisco",),
+           (2601706,u"Belo Jardim","belo jardim",),
+           (2601805,u"Betânia","betania",),
+           (2601904,u"Bezerros","bezerros",),
+           (2602001,u"Bodocó","bodoco",),
+           (2602100,u"Bom Conselho","bom conselho",),
+           (2602209,u"Bom Jardim","bom jardim",),
+           (2602308,u"Bonito","bonito",),
+           (2602407,u"Brejão","brejao",),
+           (2602506,u"Brejinho","brejinho",),
+           (2602605,u"Brejo da Madre de Deus","brejo da madre de deus",),
+           (2602704,u"Buenos Aires","buenos aires",),
+           (2602803,u"Buíque","buique",),
+           (2602902,u"Cabo de Santo Agostinho","cabo de santo agostinho",),
+           (2603009,u"Cabrobó","cabrobo",),
+           (2603108,u"Cachoeirinha","cachoeirinha",),
+           (2603207,u"Caetés","caetes",),
+           (2603306,u"Calçado","calcado",),
+           (2603405,u"Calumbi","calumbi",),
+           (2603454,u"Camaragibe","camaragibe",),
+           (2603504,u"Camocim de São Félix","camocim de sao felix",),
+           (2603603,u"Camutanga","camutanga",),
+           (2603702,u"Canhotinho","canhotinho",),
+           (2603801,u"Capoeiras","capoeiras",),
+           (2603900,u"Carnaíba","carnaiba",),
+           (2603926,u"Carnaubeira da Penha","carnaubeira da penha",),
+           (2604007,u"Carpina","carpina",),
+           (2604106,u"Caruaru","caruaru",),
+           (2604155,u"Casinhas","casinhas",),
+           (2604205,u"Catende","catende",),
+           (2604304,u"Cedro","cedro",),
+           (2604403,u"Chã de Alegria","cha de alegria",),
+           (2604502,u"Chã Grande","cha grande",),
+           (2604601,u"Condado","condado",),
+           (2604700,u"Correntes","correntes",),
+           (2604809,u"Cortês","cortes",),
+           (2604908,u"Cumaru","cumaru",),
+           (2605004,u"Cupira","cupira",),
+           (2605103,u"Custódia","custodia",),
+           (2605152,u"Dormentes","dormentes",),
+           (2605202,u"Escada","escada",),
+           (2605301,u"Exu","exu",),
+           (2605400,u"Feira Nova","feira nova",),
+           (2605459,u"Fernando de Noronha","fernando de noronha",),
+           (2605509,u"Ferreiros","ferreiros",),
+           (2605608,u"Flores","flores",),
+           (2605707,u"Floresta","floresta",),
+           (2605806,u"Frei Miguelinho","frei miguelinho",),
+           (2605905,u"Gameleira","gameleira",),
+           (2606002,u"Garanhuns","garanhuns",),
+           (2606101,u"Glória do Goitá","gloria do goita",),
+           (2606200,u"Goiana","goiana",),
+           (2606309,u"Granito","granito",),
+           (2606408,u"Gravatá","gravata",),
+           (2606507,u"Iati","iati",),
+           (2606606,u"Ibimirim","ibimirim",),
+           (2606705,u"Ibirajuba","ibirajuba",),
+           (2606804,u"Igarassu","igarassu",),
+           (2606903,u"Iguaraci","iguaraci",),
+           (2607604,u"Ilha de Itamaracá","ilha de itamaraca",),
+           (2607000,u"Inajá","inaja",),
+           (2607109,u"Ingazeira","ingazeira",),
+           (2607208,u"Ipojuca","ipojuca",),
+           (2607307,u"Ipubi","ipubi",),
+           (2607406,u"Itacuruba","itacuruba",),
+           (2607505,u"Itaíba","itaiba",),
+           (2607653,u"Itambé","itambe",),
+           (2607703,u"Itapetim","itapetim",),
+           (2607752,u"Itapissuma","itapissuma",),
+           (2607802,u"Itaquitinga","itaquitinga",),
+           (2607901,u"Jaboatão dos Guararapes","jaboatao dos guararapes",),
+           (2607950,u"Jaqueira","jaqueira",),
+           (2608008,u"Jataúba","jatauba",),
+           (2608057,u"Jatobá","jatoba",),
+           (2608107,u"João Alfredo","joao alfredo",),
+           (2608206,u"Joaquim Nabuco","joaquim nabuco",),
+           (2608255,u"Jucati","jucati",),
+           (2608305,u"Jupi","jupi",),
+           (2608404,u"Jurema","jurema",),
+           (2608453,u"Lagoa do Carro","lagoa do carro",),
+           (2608503,u"Lagoa do Itaenga","lagoa do itaenga",),
+           (2608602,u"Lagoa do Ouro","lagoa do ouro",),
+           (2608701,u"Lagoa dos Gatos","lagoa dos gatos",),
+           (2608750,u"Lagoa Grande","lagoa grande",),
+           (2608800,u"Lajedo","lajedo",),
+           (2608909,u"Limoeiro","limoeiro",),
+           (2609006,u"Macaparana","macaparana",),
+           (2609105,u"Machados","machados",),
+           (2609154,u"Manari","manari",),
+           (2609204,u"Maraial","maraial",),
+           (2609303,u"Mirandiba","mirandiba",),
+           (2614303,u"Moreilândia","moreilandia",),
+           (2609402,u"Moreno","moreno",),
+           (2609501,u"Nazaré da Mata","nazare da mata",),
+           (2609600,u"Olinda","olinda",),
+           (2609709,u"Orobó","orobo",),
+           (2609808,u"Orocó","oroco",),
+           (2609907,u"Ouricuri","ouricuri",),
+           (2610004,u"Palmares","palmares",),
+           (2610103,u"Palmeirina","palmeirina",),
+           (2610202,u"Panelas","panelas",),
+           (2610301,u"Paranatama","paranatama",),
+           (2610400,u"Parnamirim","parnamirim",),
+           (2610509,u"Passira","passira",),
+           (2610608,u"Paudalho","paudalho",),
+           (2610707,u"Paulista","paulista",),
+           (2610806,u"Pedra","pedra",),
+           (2610905,u"Pesqueira","pesqueira",),
+           (2611002,u"Petrolândia","petrolandia",),
+           (2611101,u"Petrolina","petrolina",),
+           (2611200,u"Poção","pocao",),
+           (2611309,u"Pombos","pombos",),
+           (2611408,u"Primavera","primavera",),
+           (2611507,u"Quipapá","quipapa",),
+           (2611533,u"Quixaba","quixaba",),
+           (2611606,u"Recife","recife",),
+           (2611705,u"Riacho das Almas","riacho das almas",),
+           (2611804,u"Ribeirão","ribeirao",),
+           (2611903,u"Rio Formoso","rio formoso",),
+           (2612000,u"Sairé","saire",),
+           (2612109,u"Salgadinho","salgadinho",),
+           (2612208,u"Salgueiro","salgueiro",),
+           (2612307,u"Saloá","saloa",),
+           (2612406,u"Sanharó","sanharo",),
+           (2612471,u"Santa Cruz da Baixa Verde","santa cruz da baixa verde",),
+           (2612505,u"Santa Cruz do Capibaribe","santa cruz do capibaribe",),
+           (2612455,u"Santa Cruz","santa cruz",),
+           (2612554,u"Santa Filomena","santa filomena",),
+           (2612604,u"Santa Maria da Boa Vista","santa maria da boa vista",),
+           (2612703,u"Santa Maria do Cambucá","santa maria do cambuca",),
+           (2612802,u"Santa Terezinha","santa terezinha",),
+           (2612901,u"São Benedito do Sul","sao benedito do sul",),
+           (2613008,u"São Bento do Una","sao bento do una",),
+           (2613107,u"São Caitano","sao caitano",),
+           (2613206,u"São João","sao joao",),
+           (2613305,u"São Joaquim do Monte","sao joaquim do monte",),
+           (2613404,u"São José da Coroa Grande","sao jose da coroa grande",),
+           (2613503,u"São José do Belmonte","sao jose do belmonte",),
+           (2613602,u"São José do Egito","sao jose do egito",),
+           (2613701,u"São Lourenço da Mata","sao lourenco da mata",),
+           (2613800,u"São Vicente Ferrer","sao vicente ferrer",),
+           (2613909,u"Serra Talhada","serra talhada",),
+           (2614006,u"Serrita","serrita",),
+           (2614105,u"Sertânia","sertania",),
+           (2614204,u"Sirinhaém","sirinhaem",),
+           (2614402,u"Solidão","solidao",),
+           (2614501,u"Surubim","surubim",),
+           (2614600,u"Tabira","tabira",),
+           (2614709,u"Tacaimbó","tacaimbo",),
+           (2614808,u"Tacaratu","tacaratu",),
+           (2614857,u"Tamandaré","tamandare",),
+           (2615003,u"Taquaritinga do Norte","taquaritinga do norte",),
+           (2615102,u"Terezinha","terezinha",),
+           (2615201,u"Terra Nova","terra nova",),
+           (2615300,u"Timbaúba","timbauba",),
+           (2615409,u"Toritama","toritama",),
+           (2615508,u"Tracunhaém","tracunhaem",),
+           (2615607,u"Trindade","trindade",),
+           (2615706,u"Triunfo","triunfo",),
+           (2615805,u"Tupanatinga","tupanatinga",),
+           (2615904,u"Tuparetama","tuparetama",),
+           (2616001,u"Venturosa","venturosa",),
+           (2616100,u"Verdejante","verdejante",),
+           (2616183,u"Vertente do Lério","vertente do lerio",),
+           (2616209,u"Vertentes","vertentes",),
+           (2616308,u"Vicência","vicencia",),
+           (2616407,u"Vitória de Santo Antão","vitoria de santo antao",),
+           (2616506,u"Xexéu","xexeu",),
+         ],
+    u"PI":[(2200053,u"Acauã","acaua",),
+           (2200103,u"Agricolândia","agricolandia",),
+           (2200202,u"Água Branca","agua branca",),
+           (2200251,u"Alagoinha do Piauí","alagoinha do piaui",),
+           (2200277,u"Alegrete do Piauí","alegrete do piaui",),
+           (2200301,u"Alto Longá","alto longa",),
+           (2200400,u"Altos","altos",),
+           (2200459,u"Alvorada do Gurguéia","alvorada do gurgueia",),
+           (2200509,u"Amarante","amarante",),
+           (2200608,u"Angical do Piauí","angical do piaui",),
+           (2200707,u"Anísio de Abreu","anisio de abreu",),
+           (2200806,u"Antônio Almeida","antonio almeida",),
+           (2200905,u"Aroazes","aroazes",),
+           (2200954,u"Aroeiras do Itaim","aroeiras do itaim",),
+           (2201002,u"Arraial","arraial",),
+           (2201051,u"Assunção do Piauí","assuncao do piaui",),
+           (2201101,u"Avelino Lopes","avelino lopes",),
+           (2201150,u"Baixa Grande do Ribeiro","baixa grande do ribeiro",),
+           (2201176,u"Barra D'Alcântara","barra d'alcantara",),
+           (2201200,u"Barras","barras",),
+           (2201309,u"Barreiras do Piauí","barreiras do piaui",),
+           (2201408,u"Barro Duro","barro duro",),
+           (2201507,u"Batalha","batalha",),
+           (2201556,u"Bela Vista do Piauí","bela vista do piaui",),
+           (2201572,u"Belém do Piauí","belem do piaui",),
+           (2201606,u"Beneditinos","beneditinos",),
+           (2201705,u"Bertolínia","bertolinia",),
+           (2201739,u"Betânia do Piauí","betania do piaui",),
+           (2201770,u"Boa Hora","boa hora",),
+           (2201804,u"Bocaina","bocaina",),
+           (2201903,u"Bom Jesus","bom jesus",),
+           (2201919,u"Bom Princípio do Piauí","bom principio do piaui",),
+           (2201929,u"Bonfim do Piauí","bonfim do piaui",),
+           (2201945,u"Boqueirão do Piauí","boqueirao do piaui",),
+           (2201960,u"Brasileira","brasileira",),
+           (2201988,u"Brejo do Piauí","brejo do piaui",),
+           (2202000,u"Buriti dos Lopes","buriti dos lopes",),
+           (2202026,u"Buriti dos Montes","buriti dos montes",),
+           (2202059,u"Cabeceiras do Piauí","cabeceiras do piaui",),
+           (2202075,u"Cajazeiras do Piauí","cajazeiras do piaui",),
+           (2202083,u"Cajueiro da Praia","cajueiro da praia",),
+           (2202091,u"Caldeirão Grande do Piauí","caldeirao grande do piaui",),
+           (2202109,u"Campinas do Piauí","campinas do piaui",),
+           (2202117,u"Campo Alegre do Fidalgo","campo alegre do fidalgo",),
+           (2202133,u"Campo Grande do Piauí","campo grande do piaui",),
+           (2202174,u"Campo Largo do Piauí","campo largo do piaui",),
+           (2202208,u"Campo Maior","campo maior",),
+           (2202251,u"Canavieira","canavieira",),
+           (2202307,u"Canto do Buriti","canto do buriti",),
+           (2202406,u"Capitão de Campos","capitao de campos",),
+           (2202455,u"Capitão Gervásio Oliveira","capitao gervasio oliveira",),
+           (2202505,u"Caracol","caracol",),
+           (2202539,u"Caraúbas do Piauí","caraubas do piaui",),
+           (2202554,u"Caridade do Piauí","caridade do piaui",),
+           (2202604,u"Castelo do Piauí","castelo do piaui",),
+           (2202653,u"Caxingó","caxingo",),
+           (2202711,u"Cocal de Telha","cocal de telha",),
+           (2202729,u"Cocal dos Alves","cocal dos alves",),
+           (2202703,u"Cocal","cocal",),
+           (2202737,u"Coivaras","coivaras",),
+           (2202752,u"Colônia do Gurguéia","colonia do gurgueia",),
+           (2202778,u"Colônia do Piauí","colonia do piaui",),
+           (2202802,u"Conceição do Canindé","conceicao do caninde",),
+           (2202851,u"Coronel José Dias","coronel jose dias",),
+           (2202901,u"Corrente","corrente",),
+           (2203008,u"Cristalândia do Piauí","cristalandia do piaui",),
+           (2203107,u"Cristino Castro","cristino castro",),
+           (2203206,u"Curimatá","curimata",),
+           (2203230,u"Currais","currais",),
+           (2203271,u"Curral Novo do Piauí","curral novo do piaui",),
+           (2203255,u"Curralinhos","curralinhos",),
+           (2203305,u"Demerval Lobão","demerval lobao",),
+           (2203354,u"Dirceu Arcoverde","dirceu arcoverde",),
+           (2203404,u"Dom Expedito Lopes","dom expedito lopes",),
+           (2203453,u"Dom Inocêncio","dom inocencio",),
+           (2203420,u"Domingos Mourão","domingos mourao",),
+           (2203503,u"Elesbão Veloso","elesbao veloso",),
+           (2203602,u"Eliseu Martins","eliseu martins",),
+           (2203701,u"Esperantina","esperantina",),
+           (2203750,u"Fartura do Piauí","fartura do piaui",),
+           (2203800,u"Flores do Piauí","flores do piaui",),
+           (2203859,u"Floresta do Piauí","floresta do piaui",),
+           (2203909,u"Floriano","floriano",),
+           (2204006,u"Francinópolis","francinopolis",),
+           (2204105,u"Francisco Ayres","francisco ayres",),
+           (2204154,u"Francisco Macedo","francisco macedo",),
+           (2204204,u"Francisco Santos","francisco santos",),
+           (2204303,u"Fronteiras","fronteiras",),
+           (2204352,u"Geminiano","geminiano",),
+           (2204402,u"Gilbués","gilbues",),
+           (2204501,u"Guadalupe","guadalupe",),
+           (2204550,u"Guaribas","guaribas",),
+           (2204600,u"Hugo Napoleão","hugo napoleao",),
+           (2204659,u"Ilha Grande","ilha grande",),
+           (2204709,u"Inhuma","inhuma",),
+           (2204808,u"Ipiranga do Piauí","ipiranga do piaui",),
+           (2204907,u"Isaías Coelho","isaias coelho",),
+           (2205003,u"Itainópolis","itainopolis",),
+           (2205102,u"Itaueira","itaueira",),
+           (2205151,u"Jacobina do Piauí","jacobina do piaui",),
+           (2205201,u"Jaicós","jaicos",),
+           (2205250,u"Jardim do Mulato","jardim do mulato",),
+           (2205276,u"Jatobá do Piauí","jatoba do piaui",),
+           (2205300,u"Jerumenha","jerumenha",),
+           (2205359,u"João Costa","joao costa",),
+           (2205409,u"Joaquim Pires","joaquim pires",),
+           (2205458,u"Joca Marques","joca marques",),
+           (2205508,u"José de Freitas","jose de freitas",),
+           (2205516,u"Juazeiro do Piauí","juazeiro do piaui",),
+           (2205524,u"Júlio Borges","julio borges",),
+           (2205532,u"Jurema","jurema",),
+           (2205557,u"Lagoa Alegre","lagoa alegre",),
+           (2205573,u"Lagoa de São Francisco","lagoa de sao francisco",),
+           (2205565,u"Lagoa do Barro do Piauí","lagoa do barro do piaui",),
+           (2205581,u"Lagoa do Piauí","lagoa do piaui",),
+           (2205599,u"Lagoa do Sítio","lagoa do sitio",),
+           (2205540,u"Lagoinha do Piauí","lagoinha do piaui",),
+           (2205607,u"Landri Sales","landri sales",),
+           (2205706,u"Luís Correia","luis correia",),
+           (2205805,u"Luzilândia","luzilandia",),
+           (2205854,u"Madeiro","madeiro",),
+           (2205904,u"Manoel Emídio","manoel emidio",),
+           (2205953,u"Marcolândia","marcolandia",),
+           (2206001,u"Marcos Parente","marcos parente",),
+           (2206050,u"Massapê do Piauí","massape do piaui",),
+           (2206100,u"Matias Olímpio","matias olimpio",),
+           (2206209,u"Miguel Alves","miguel alves",),
+           (2206308,u"Miguel Leão","miguel leao",),
+           (2206357,u"Milton Brandão","milton brandao",),
+           (2206407,u"Monsenhor Gil","monsenhor gil",),
+           (2206506,u"Monsenhor Hipólito","monsenhor hipolito",),
+           (2206605,u"Monte Alegre do Piauí","monte alegre do piaui",),
+           (2206654,u"Morro Cabeça no Tempo","morro cabeca no tempo",),
+           (2206670,u"Morro do Chapéu do Piauí","morro do chapeu do piaui",),
+           (2206696,u"Murici dos Portelas","murici dos portelas",),
+           (2206704,u"Nazaré do Piauí","nazare do piaui",),
+           (2206720,u"Nazária","nazaria",),
+           (2206753,u"Nossa Senhora de Nazaré","nossa senhora de nazare",),
+           (2206803,u"Nossa Senhora dos Remédios","nossa senhora dos remedios",),
+           (2207959,u"Nova Santa Rita","nova santa rita",),
+           (2206902,u"Novo Oriente do Piauí","novo oriente do piaui",),
+           (2206951,u"Novo Santo Antônio","novo santo antonio",),
+           (2207009,u"Oeiras","oeiras",),
+           (2207108,u"Olho D'Água do Piauí","olho d'agua do piaui",),
+           (2207207,u"Padre Marcos","padre marcos",),
+           (2207306,u"Paes Landim","paes landim",),
+           (2207355,u"Pajeú do Piauí","pajeu do piaui",),
+           (2207405,u"Palmeira do Piauí","palmeira do piaui",),
+           (2207504,u"Palmeirais","palmeirais",),
+           (2207553,u"Paquetá","paqueta",),
+           (2207603,u"Parnaguá","parnagua",),
+           (2207702,u"Parnaíba","parnaiba",),
+           (2207751,u"Passagem Franca do Piauí","passagem franca do piaui",),
+           (2207777,u"Patos do Piauí","patos do piaui",),
+           (2207793,u"Pau D'Arco do Piauí","pau d'arco do piaui",),
+           (2207801,u"Paulistana","paulistana",),
+           (2207850,u"Pavussu","pavussu",),
+           (2207900,u"Pedro II","pedro ii",),
+           (2207934,u"Pedro Laurentino","pedro laurentino",),
+           (2208007,u"Picos","picos",),
+           (2208106,u"Pimenteiras","pimenteiras",),
+           (2208205,u"Pio IX","pio ix",),
+           (2208304,u"Piracuruca","piracuruca",),
+           (2208403,u"Piripiri","piripiri",),
+           (2208551,u"Porto Alegre do Piauí","porto alegre do piaui",),
+           (2208502,u"Porto","porto",),
+           (2208601,u"Prata do Piauí","prata do piaui",),
+           (2208650,u"Queimada Nova","queimada nova",),
+           (2208700,u"Redenção do Gurguéia","redencao do gurgueia",),
+           (2208809,u"Regeneração","regeneracao",),
+           (2208858,u"Riacho Frio","riacho frio",),
+           (2208874,u"Ribeira do Piauí","ribeira do piaui",),
+           (2208908,u"Ribeiro Gonçalves","ribeiro goncalves",),
+           (2209005,u"Rio Grande do Piauí","rio grande do piaui",),
+           (2209104,u"Santa Cruz do Piauí","santa cruz do piaui",),
+           (2209153,u"Santa Cruz dos Milagres","santa cruz dos milagres",),
+           (2209203,u"Santa Filomena","santa filomena",),
+           (2209302,u"Santa Luz","santa luz",),
+           (2209377,u"Santa Rosa do Piauí","santa rosa do piaui",),
+           (2209351,u"Santana do Piauí","santana do piaui",),
+           (2209401,u"Santo Antônio de Lisboa","santo antonio de lisboa",),
+           (2209450,u"Santo Antônio dos Milagres","santo antonio dos milagres",),
+           (2209500,u"Santo Inácio do Piauí","santo inacio do piaui",),
+           (2209559,u"São Braz do Piauí","sao braz do piaui",),
+           (2209609,u"São Félix do Piauí","sao felix do piaui",),
+           (2209658,u"São Francisco de Assis do Piauí","sao francisco de assis do piaui",),
+           (2209708,u"São Francisco do Piauí","sao francisco do piaui",),
+           (2209757,u"São Gonçalo do Gurguéia","sao goncalo do gurgueia",),
+           (2209807,u"São Gonçalo do Piauí","sao goncalo do piaui",),
+           (2209856,u"São João da Canabrava","sao joao da canabrava",),
+           (2209872,u"São João da Fronteira","sao joao da fronteira",),
+           (2209906,u"São João da Serra","sao joao da serra",),
+           (2209955,u"São João da Varjota","sao joao da varjota",),
+           (2209971,u"São João do Arraial","sao joao do arraial",),
+           (2210003,u"São João do Piauí","sao joao do piaui",),
+           (2210052,u"São José do Divino","sao jose do divino",),
+           (2210102,u"São José do Peixe","sao jose do peixe",),
+           (2210201,u"São José do Piauí","sao jose do piaui",),
+           (2210300,u"São Julião","sao juliao",),
+           (2210359,u"São Lourenço do Piauí","sao lourenco do piaui",),
+           (2210375,u"São Luis do Piauí","sao luis do piaui",),
+           (2210383,u"São Miguel da Baixa Grande","sao miguel da baixa grande",),
+           (2210391,u"São Miguel do Fidalgo","sao miguel do fidalgo",),
+           (2210409,u"São Miguel do Tapuio","sao miguel do tapuio",),
+           (2210508,u"São Pedro do Piauí","sao pedro do piaui",),
+           (2210607,u"São Raimundo Nonato","sao raimundo nonato",),
+           (2210623,u"Sebastião Barros","sebastiao barros",),
+           (2210631,u"Sebastião Leal","sebastiao leal",),
+           (2210656,u"Sigefredo Pacheco","sigefredo pacheco",),
+           (2210706,u"Simões","simoes",),
+           (2210805,u"Simplício Mendes","simplicio mendes",),
+           (2210904,u"Socorro do Piauí","socorro do piaui",),
+           (2210938,u"Sussuapara","sussuapara",),
+           (2210953,u"Tamboril do Piauí","tamboril do piaui",),
+           (2210979,u"Tanque do Piauí","tanque do piaui",),
+           (2211001,u"Teresina","teresina",),
+           (2211100,u"União","uniao",),
+           (2211209,u"Uruçuí","urucui",),
+           (2211308,u"Valença do Piauí","valenca do piaui",),
+           (2211357,u"Várzea Branca","varzea branca",),
+           (2211407,u"Várzea Grande","varzea grande",),
+           (2211506,u"Vera Mendes","vera mendes",),
+           (2211605,u"Vila Nova do Piauí","vila nova do piaui",),
+           (2211704,u"Wall Ferraz","wall ferraz",),
+        ],
+    u"PR":[(4100103,u"Abatiá","abatia",),
+           (4100202,u"Adrianópolis","adrianopolis",),
+           (4100301,u"Agudos do Sul","agudos do sul",),
+           (4100400,u"Almirante Tamandaré","almirante tamandare",),
+           (4100459,u"Altamira do Paraná","altamira do parana",),
+           (4128625,u"Alto Paraíso","alto paraiso",),
+           (4100608,u"Alto Paraná","alto parana",),
+           (4100707,u"Alto Piquiri","alto piquiri",),
+           (4100509,u"Altônia","altonia",),
+           (4100806,u"Alvorada do Sul","alvorada do sul",),
+           (4100905,u"Amaporã","amapora",),
+           (4101002,u"Ampére","ampere",),
+           (4101051,u"Anahy","anahy",),
+           (4101101,u"Andirá","andira",),
+           (4101150,u"Ângulo","angulo",),
+           (4101200,u"Antonina","antonina",),
+           (4101309,u"Antônio Olinto","antonio olinto",),
+           (4101408,u"Apucarana","apucarana",),
+           (4101507,u"Arapongas","arapongas",),
+           (4101606,u"Arapoti","arapoti",),
+           (4101655,u"Arapuã","arapua",),
+           (4101705,u"Araruna","araruna",),
+           (4101804,u"Araucária","araucaria",),
+           (4101853,u"Ariranha do Ivaí","ariranha do ivai",),
+           (4101903,u"Assaí","assai",),
+           (4102000,u"Assis Chateaubriand","assis chateaubriand",),
+           (4102109,u"Astorga","astorga",),
+           (4102208,u"Atalaia","atalaia",),
+           (4102307,u"Balsa Nova","balsa nova",),
+           (4102406,u"Bandeirantes","bandeirantes",),
+           (4102505,u"Barbosa Ferraz","barbosa ferraz",),
+           (4102703,u"Barra do Jacaré","barra do jacare",),
+           (4102604,u"Barracão","barracao",),
+           (4102752,u"Bela Vista da Caroba","bela vista da caroba",),
+           (4102802,u"Bela Vista do Paraíso","bela vista do paraiso",),
+           (4102901,u"Bituruna","bituruna",),
+           (4103024,u"Boa Esperança do Iguaçu","boa esperanca do iguacu",),
+           (4103008,u"Boa Esperança","boa esperanca",),
+           (4103040,u"Boa Ventura de São Roque","boa ventura de sao roque",),
+           (4103057,u"Boa Vista da Aparecida","boa vista da aparecida",),
+           (4103107,u"Bocaiúva do Sul","bocaiuva do sul",),
+           (4103156,u"Bom Jesus do Sul","bom jesus do sul",),
+           (4103222,u"Bom Sucesso do Sul","bom sucesso do sul",),
+           (4103206,u"Bom Sucesso","bom sucesso",),
+           (4103305,u"Borrazópolis","borrazopolis",),
+           (4103354,u"Braganey","braganey",),
+           (4103370,u"Brasilândia do Sul","brasilandia do sul",),
+           (4103404,u"Cafeara","cafeara",),
+           (4103453,u"Cafelândia","cafelandia",),
+           (4103479,u"Cafezal do Sul","cafezal do sul",),
+           (4103503,u"Califórnia","california",),
+           (4103602,u"Cambará","cambara",),
+           (4103701,u"Cambé","cambe",),
+           (4103800,u"Cambira","cambira",),
+           (4103909,u"Campina da Lagoa","campina da lagoa",),
+           (4103958,u"Campina do Simão","campina do simao",),
+           (4104006,u"Campina Grande do Sul","campina grande do sul",),
+           (4104055,u"Campo Bonito","campo bonito",),
+           (4104105,u"Campo do Tenente","campo do tenente",),
+           (4104204,u"Campo Largo","campo largo",),
+           (4104253,u"Campo Magro","campo magro",),
+           (4104303,u"Campo Mourão","campo mourao",),
+           (4104402,u"Cândido de Abreu","candido de abreu",),
+           (4104428,u"Candói","candoi",),
+           (4104451,u"Cantagalo","cantagalo",),
+           (4104501,u"Capanema","capanema",),
+           (4104600,u"Capitão Leônidas Marques","capitao leonidas marques",),
+           (4104659,u"Carambeí","carambei",),
+           (4104709,u"Carlópolis","carlopolis",),
+           (4104808,u"Cascavel","cascavel",),
+           (4104907,u"Castro","castro",),
+           (4105003,u"Catanduvas","catanduvas",),
+           (4105102,u"Centenário do Sul","centenario do sul",),
+           (4105201,u"Cerro Azul","cerro azul",),
+           (4105300,u"Céu Azul","ceu azul",),
+           (4105409,u"Chopinzinho","chopinzinho",),
+           (4105508,u"Cianorte","cianorte",),
+           (4105607,u"Cidade Gaúcha","cidade gaucha",),
+           (4105706,u"Clevelândia","clevelandia",),
+           (4105805,u"Colombo","colombo",),
+           (4105904,u"Colorado","colorado",),
+           (4106001,u"Congonhinhas","congonhinhas",),
+           (4106100,u"Conselheiro Mairinck","conselheiro mairinck",),
+           (4106209,u"Contenda","contenda",),
+           (4106308,u"Corbélia","corbelia",),
+           (4106407,u"Cornélio Procópio","cornelio procopio",),
+           (4106456,u"Coronel Domingos Soares","coronel domingos soares",),
+           (4106506,u"Coronel Vivida","coronel vivida",),
+           (4106555,u"Corumbataí do Sul","corumbatai do sul",),
+           (4106803,u"Cruz Machado","cruz machado",),
+           (4106571,u"Cruzeiro do Iguaçu","cruzeiro do iguacu",),
+           (4106605,u"Cruzeiro do Oeste","cruzeiro do oeste",),
+           (4106704,u"Cruzeiro do Sul","cruzeiro do sul",),
+           (4106852,u"Cruzmaltina","cruzmaltina",),
+           (4106902,u"Curitiba","curitiba",),
+           (4107009,u"Curiúva","curiuva",),
+           (4107157,u"Diamante D'Oeste","diamante d'oeste",),
+           (4107108,u"Diamante do Norte","diamante do norte",),
+           (4107124,u"Diamante do Sul","diamante do sul",),
+           (4107207,u"Dois Vizinhos","dois vizinhos",),
+           (4107256,u"Douradina","douradina",),
+           (4107306,u"Doutor Camargo","doutor camargo",),
+           (4128633,u"Doutor Ulysses","doutor ulysses",),
+           (4107405,u"Enéas Marques","eneas marques",),
+           (4107504,u"Engenheiro Beltrão","engenheiro beltrao",),
+           (4107538,u"Entre Rios do Oeste","entre rios do oeste",),
+           (4107520,u"Esperança Nova","esperanca nova",),
+           (4107546,u"Espigão Alto do Iguaçu","espigao alto do iguacu",),
+           (4107553,u"Farol","farol",),
+           (4107603,u"Faxinal","faxinal",),
+           (4107652,u"Fazenda Rio Grande","fazenda rio grande",),
+           (4107702,u"Fênix","fenix",),
+           (4107736,u"Fernandes Pinheiro","fernandes pinheiro",),
+           (4107751,u"Figueira","figueira",),
+           (4107850,u"Flor da Serra do Sul","flor da serra do sul",),
+           (4107801,u"Floraí","florai",),
+           (4107900,u"Floresta","floresta",),
+           (4108007,u"Florestópolis","florestopolis",),
+           (4108106,u"Flórida","florida",),
+           (4108205,u"Formosa do Oeste","formosa do oeste",),
+           (4108304,u"Foz do Iguaçu","foz do iguacu",),
+           (4108452,u"Foz do Jordão","foz do jordao",),
+           (4108320,u"Francisco Alves","francisco alves",),
+           (4108403,u"Francisco Beltrão","francisco beltrao",),
+           (4108502,u"General Carneiro","general carneiro",),
+           (4108551,u"Godoy Moreira","godoy moreira",),
+           (4108601,u"Goioerê","goioere",),
+           (4108650,u"Goioxim","goioxim",),
+           (4108700,u"Grandes Rios","grandes rios",),
+           (4108809,u"Guaíra","guaira",),
+           (4108908,u"Guairaçá","guairaca",),
+           (4108957,u"Guamiranga","guamiranga",),
+           (4109005,u"Guapirama","guapirama",),
+           (4109104,u"Guaporema","guaporema",),
+           (4109203,u"Guaraci","guaraci",),
+           (4109302,u"Guaraniaçu","guaraniacu",),
+           (4109401,u"Guarapuava","guarapuava",),
+           (4109500,u"Guaraqueçaba","guaraquecaba",),
+           (4109609,u"Guaratuba","guaratuba",),
+           (4109658,u"Honório Serpa","honorio serpa",),
+           (4109708,u"Ibaiti","ibaiti",),
+           (4109757,u"Ibema","ibema",),
+           (4109807,u"Ibiporã","ibipora",),
+           (4109906,u"Icaraíma","icaraima",),
+           (4110003,u"Iguaraçu","iguaracu",),
+           (4110052,u"Iguatu","iguatu",),
+           (4110078,u"Imbaú","imbau",),
+           (4110102,u"Imbituva","imbituva",),
+           (4110201,u"Inácio Martins","inacio martins",),
+           (4110300,u"Inajá","inaja",),
+           (4110409,u"Indianópolis","indianopolis",),
+           (4110508,u"Ipiranga","ipiranga",),
+           (4110607,u"Iporã","ipora",),
+           (4110656,u"Iracema do Oeste","iracema do oeste",),
+           (4110706,u"Irati","irati",),
+           (4110805,u"Iretama","iretama",),
+           (4110904,u"Itaguajé","itaguaje",),
+           (4110953,u"Itaipulândia","itaipulandia",),
+           (4111001,u"Itambaracá","itambaraca",),
+           (4111100,u"Itambé","itambe",),
+           (4111209,u"Itapejara d'Oeste","itapejara d'oeste",),
+           (4111258,u"Itaperuçu","itaperucu",),
+           (4111308,u"Itaúna do Sul","itauna do sul",),
+           (4111407,u"Ivaí","ivai",),
+           (4111506,u"Ivaiporã","ivaipora",),
+           (4111555,u"Ivaté","ivate",),
+           (4111605,u"Ivatuba","ivatuba",),
+           (4111704,u"Jaboti","jaboti",),
+           (4111803,u"Jacarezinho","jacarezinho",),
+           (4111902,u"Jaguapitã","jaguapita",),
+           (4112009,u"Jaguariaíva","jaguariaiva",),
+           (4112108,u"Jandaia do Sul","jandaia do sul",),
+           (4112207,u"Janiópolis","janiopolis",),
+           (4112306,u"Japira","japira",),
+           (4112405,u"Japurá","japura",),
+           (4112504,u"Jardim Alegre","jardim alegre",),
+           (4112603,u"Jardim Olinda","jardim olinda",),
+           (4112702,u"Jataizinho","jataizinho",),
+           (4112751,u"Jesuítas","jesuitas",),
+           (4112801,u"Joaquim Távora","joaquim tavora",),
+           (4112900,u"Jundiaí do Sul","jundiai do sul",),
+           (4112959,u"Juranda","juranda",),
+           (4113007,u"Jussara","jussara",),
+           (4113106,u"Kaloré","kalore",),
+           (4113205,u"Lapa","lapa",),
+           (4113254,u"Laranjal","laranjal",),
+           (4113304,u"Laranjeiras do Sul","laranjeiras do sul",),
+           (4113403,u"Leópolis","leopolis",),
+           (4113429,u"Lidianópolis","lidianopolis",),
+           (4113452,u"Lindoeste","lindoeste",),
+           (4113502,u"Loanda","loanda",),
+           (4113601,u"Lobato","lobato",),
+           (4113700,u"Londrina","londrina",),
+           (4113734,u"Luiziana","luiziana",),
+           (4113759,u"Lunardelli","lunardelli",),
+           (4113809,u"Lupionópolis","lupionopolis",),
+           (4113908,u"Mallet","mallet",),
+           (4114005,u"Mamborê","mambore",),
+           (4114104,u"Mandaguaçu","mandaguacu",),
+           (4114203,u"Mandaguari","mandaguari",),
+           (4114302,u"Mandirituba","mandirituba",),
+           (4114351,u"Manfrinópolis","manfrinopolis",),
+           (4114401,u"Mangueirinha","mangueirinha",),
+           (4114500,u"Manoel Ribas","manoel ribas",),
+           (4114609,u"Marechal Cândido Rondon","marechal candido rondon",),
+           (4114708,u"Maria Helena","maria helena",),
+           (4114807,u"Marialva","marialva",),
+           (4114906,u"Marilândia do Sul","marilandia do sul",),
+           (4115002,u"Marilena","marilena",),
+           (4115101,u"Mariluz","mariluz",),
+           (4115200,u"Maringá","maringa",),
+           (4115309,u"Mariópolis","mariopolis",),
+           (4115358,u"Maripá","maripa",),
+           (4115408,u"Marmeleiro","marmeleiro",),
+           (4115457,u"Marquinho","marquinho",),
+           (4115507,u"Marumbi","marumbi",),
+           (4115606,u"Matelândia","matelandia",),
+           (4115705,u"Matinhos","matinhos",),
+           (4115739,u"Mato Rico","mato rico",),
+           (4115754,u"Mauá da Serra","maua da serra",),
+           (4115804,u"Medianeira","medianeira",),
+           (4115853,u"Mercedes","mercedes",),
+           (4115903,u"Mirador","mirador",),
+           (4116000,u"Miraselva","miraselva",),
+           (4116059,u"Missal","missal",),
+           (4116109,u"Moreira Sales","moreira sales",),
+           (4116208,u"Morretes","morretes",),
+           (4116307,u"Munhoz de Melo","munhoz de melo",),
+           (4116406,u"Nossa Senhora das Graças","nossa senhora das gracas",),
+           (4116505,u"Nova Aliança do Ivaí","nova alianca do ivai",),
+           (4116604,u"Nova América da Colina","nova america da colina",),
+           (4116703,u"Nova Aurora","nova aurora",),
+           (4116802,u"Nova Cantu","nova cantu",),
+           (4116950,u"Nova Esperança do Sudoeste","nova esperanca do sudoeste",),
+           (4116901,u"Nova Esperança","nova esperanca",),
+           (4117008,u"Nova Fátima","nova fatima",),
+           (4117057,u"Nova Laranjeiras","nova laranjeiras",),
+           (4117107,u"Nova Londrina","nova londrina",),
+           (4117206,u"Nova Olímpia","nova olimpia",),
+           (4117255,u"Nova Prata do Iguaçu","nova prata do iguacu",),
+           (4117214,u"Nova Santa Bárbara","nova santa barbara",),
+           (4117222,u"Nova Santa Rosa","nova santa rosa",),
+           (4117271,u"Nova Tebas","nova tebas",),
+           (4117297,u"Novo Itacolomi","novo itacolomi",),
+           (4117305,u"Ortigueira","ortigueira",),
+           (4117404,u"Ourizona","ourizona",),
+           (4117453,u"Ouro Verde do Oeste","ouro verde do oeste",),
+           (4117503,u"Paiçandu","paicandu",),
+           (4117602,u"Palmas","palmas",),
+           (4117701,u"Palmeira","palmeira",),
+           (4117800,u"Palmital","palmital",),
+           (4117909,u"Palotina","palotina",),
+           (4118006,u"Paraíso do Norte","paraiso do norte",),
+           (4118105,u"Paranacity","paranacity",),
+           (4118204,u"Paranaguá","paranagua",),
+           (4118303,u"Paranapoema","paranapoema",),
+           (4118402,u"Paranavaí","paranavai",),
+           (4118451,u"Pato Bragado","pato bragado",),
+           (4118501,u"Pato Branco","pato branco",),
+           (4118600,u"Paula Freitas","paula freitas",),
+           (4118709,u"Paulo Frontin","paulo frontin",),
+           (4118808,u"Peabiru","peabiru",),
+           (4118857,u"Perobal","perobal",),
+           (4119004,u"Pérola d'Oeste","perola d'oeste",),
+           (4118907,u"Pérola","perola",),
+           (4119103,u"Piên","pien",),
+           (4119152,u"Pinhais","pinhais",),
+           (4119251,u"Pinhal de São Bento","pinhal de sao bento",),
+           (4119202,u"Pinhalão","pinhalao",),
+           (4119301,u"Pinhão","pinhao",),
+           (4119400,u"Piraí do Sul","pirai do sul",),
+           (4119509,u"Piraquara","piraquara",),
+           (4119608,u"Pitanga","pitanga",),
+           (4119657,u"Pitangueiras","pitangueiras",),
+           (4119707,u"Planaltina do Paraná","planaltina do parana",),
+           (4119806,u"Planalto","planalto",),
+           (4119905,u"Ponta Grossa","ponta grossa",),
+           (4119954,u"Pontal do Paraná","pontal do parana",),
+           (4120002,u"Porecatu","porecatu",),
+           (4120101,u"Porto Amazonas","porto amazonas",),
+           (4120150,u"Porto Barreiro","porto barreiro",),
+           (4120200,u"Porto Rico","porto rico",),
+           (4120309,u"Porto Vitória","porto vitoria",),
+           (4120333,u"Prado Ferreira","prado ferreira",),
+           (4120358,u"Pranchita","pranchita",),
+           (4120408,u"Presidente Castelo Branco","presidente castelo branco",),
+           (4120507,u"Primeiro de Maio","primeiro de maio",),
+           (4120606,u"Prudentópolis","prudentopolis",),
+           (4120655,u"Quarto Centenário","quarto centenario",),
+           (4120705,u"Quatiguá","quatigua",),
+           (4120804,u"Quatro Barras","quatro barras",),
+           (4120853,u"Quatro Pontes","quatro pontes",),
+           (4120903,u"Quedas do Iguaçu","quedas do iguacu",),
+           (4121000,u"Querência do Norte","querencia do norte",),
+           (4121109,u"Quinta do Sol","quinta do sol",),
+           (4121208,u"Quitandinha","quitandinha",),
+           (4121257,u"Ramilândia","ramilandia",),
+           (4121356,u"Rancho Alegre D'Oeste","rancho alegre d'oeste",),
+           (4121307,u"Rancho Alegre","rancho alegre",),
+           (4121406,u"Realeza","realeza",),
+           (4121505,u"Rebouças","reboucas",),
+           (4121604,u"Renascença","renascenca",),
+           (4121752,u"Reserva do Iguaçu","reserva do iguacu",),
+           (4121703,u"Reserva","reserva",),
+           (4121802,u"Ribeirão Claro","ribeirao claro",),
+           (4121901,u"Ribeirão do Pinhal","ribeirao do pinhal",),
+           (4122008,u"Rio Azul","rio azul",),
+           (4122107,u"Rio Bom","rio bom",),
+           (4122156,u"Rio Bonito do Iguaçu","rio bonito do iguacu",),
+           (4122172,u"Rio Branco do Ivaí","rio branco do ivai",),
+           (4122206,u"Rio Branco do Sul","rio branco do sul",),
+           (4122305,u"Rio Negro","rio negro",),
+           (4122404,u"Rolândia","rolandia",),
+           (4122503,u"Roncador","roncador",),
+           (4122602,u"Rondon","rondon",),
+           (4122651,u"Rosário do Ivaí","rosario do ivai",),
+           (4122701,u"Sabáudia","sabaudia",),
+           (4122800,u"Salgado Filho","salgado filho",),
+           (4122909,u"Salto do Itararé","salto do itarare",),
+           (4123006,u"Salto do Lontra","salto do lontra",),
+           (4123105,u"Santa Amélia","santa amelia",),
+           (4123204,u"Santa Cecília do Pavão","santa cecilia do pavao",),
+           (4123303,u"Santa Cruz de Monte Castelo","santa cruz de monte castelo",),
+           (4123402,u"Santa Fé","santa fe",),
+           (4123501,u"Santa Helena","santa helena",),
+           (4123600,u"Santa Inês","santa ines",),
+           (4123709,u"Santa Isabel do Ivaí","santa isabel do ivai",),
+           (4123808,u"Santa Izabel do Oeste","santa izabel do oeste",),
+           (4123824,u"Santa Lúcia","santa lucia",),
+           (4123857,u"Santa Maria do Oeste","santa maria do oeste",),
+           (4123907,u"Santa Mariana","santa mariana",),
+           (4123956,u"Santa Mônica","santa monica",),
+           (4124020,u"Santa Tereza do Oeste","santa tereza do oeste",),
+           (4124053,u"Santa Terezinha de Itaipu","santa terezinha de itaipu",),
+           (4124004,u"Santana do Itararé","santana do itarare",),
+           (4124103,u"Santo Antônio da Platina","santo antonio da platina",),
+           (4124202,u"Santo Antônio do Caiuá","santo antonio do caiua",),
+           (4124301,u"Santo Antônio do Paraíso","santo antonio do paraiso",),
+           (4124400,u"Santo Antônio do Sudoeste","santo antonio do sudoeste",),
+           (4124509,u"Santo Inácio","santo inacio",),
+           (4124608,u"São Carlos do Ivaí","sao carlos do ivai",),
+           (4124707,u"São Jerônimo da Serra","sao jeronimo da serra",),
+           (4124905,u"São João do Caiuá","sao joao do caiua",),
+           (4125001,u"São João do Ivaí","sao joao do ivai",),
+           (4125100,u"São João do Triunfo","sao joao do triunfo",),
+           (4124806,u"São João","sao joao",),
+           (4125209,u"São Jorge d'Oeste","sao jorge d'oeste",),
+           (4125308,u"São Jorge do Ivaí","sao jorge do ivai",),
+           (4125357,u"São Jorge do Patrocínio","sao jorge do patrocinio",),
+           (4125407,u"São José da Boa Vista","sao jose da boa vista",),
+           (4125456,u"São José das Palmeiras","sao jose das palmeiras",),
+           (4125506,u"São José dos Pinhais","sao jose dos pinhais",),
+           (4125555,u"São Manoel do Paraná","sao manoel do parana",),
+           (4125605,u"São Mateus do Sul","sao mateus do sul",),
+           (4125704,u"São Miguel do Iguaçu","sao miguel do iguacu",),
+           (4125753,u"São Pedro do Iguaçu","sao pedro do iguacu",),
+           (4125803,u"São Pedro do Ivaí","sao pedro do ivai",),
+           (4125902,u"São Pedro do Paraná","sao pedro do parana",),
+           (4126009,u"São Sebastião da Amoreira","sao sebastiao da amoreira",),
+           (4126108,u"São Tomé","sao tome",),
+           (4126207,u"Sapopema","sapopema",),
+           (4126256,u"Sarandi","sarandi",),
+           (4126272,u"Saudade do Iguaçu","saudade do iguacu",),
+           (4126306,u"Sengés","senges",),
+           (4126355,u"Serranópolis do Iguaçu","serranopolis do iguacu",),
+           (4126405,u"Sertaneja","sertaneja",),
+           (4126504,u"Sertanópolis","sertanopolis",),
+           (4126603,u"Siqueira Campos","siqueira campos",),
+           (4126652,u"Sulina","sulina",),
+           (4126678,u"Tamarana","tamarana",),
+           (4126702,u"Tamboara","tamboara",),
+           (4126801,u"Tapejara","tapejara",),
+           (4126900,u"Tapira","tapira",),
+           (4127007,u"Teixeira Soares","teixeira soares",),
+           (4127106,u"Telêmaco Borba","telemaco borba",),
+           (4127205,u"Terra Boa","terra boa",),
+           (4127304,u"Terra Rica","terra rica",),
+           (4127403,u"Terra Roxa","terra roxa",),
+           (4127502,u"Tibagi","tibagi",),
+           (4127601,u"Tijucas do Sul","tijucas do sul",),
+           (4127700,u"Toledo","toledo",),
+           (4127809,u"Tomazina","tomazina",),
+           (4127858,u"Três Barras do Paraná","tres barras do parana",),
+           (4127882,u"Tunas do Paraná","tunas do parana",),
+           (4127908,u"Tuneiras do Oeste","tuneiras do oeste",),
+           (4127957,u"Tupãssi","tupassi",),
+           (4127965,u"Turvo","turvo",),
+           (4128005,u"Ubiratã","ubirata",),
+           (4128104,u"Umuarama","umuarama",),
+           (4128203,u"União da Vitória","uniao da vitoria",),
+           (4128302,u"Uniflor","uniflor",),
+           (4128401,u"Uraí","urai",),
+           (4128534,u"Ventania","ventania",),
+           (4128559,u"Vera Cruz do Oeste","vera cruz do oeste",),
+           (4128609,u"Verê","vere",),
+           (4128658,u"Virmond","virmond",),
+           (4128708,u"Vitorino","vitorino",),
+           (4128500,u"Wenceslau Braz","wenceslau braz",),
+           (4128807,u"Xambrê","xambre",),
+         ],
+    u"RJ":[(3300100,u"Angra dos Reis","angra dos reis",),
+           (3300159,u"Aperibé","aperibe",),
+           (3300209,u"Araruama","araruama",),
+           (3300225,u"Areal","areal",),
+           (3300233,u"Armação dos Búzios","armacao dos buzios",),
+           (3300258,u"Arraial do Cabo","arraial do cabo",),
+           (3300308,u"Barra do Piraí","barra do pirai",),
+           (3300407,u"Barra Mansa","barra mansa",),
+           (3300456,u"Belford Roxo","belford roxo",),
+           (3300506,u"Bom Jardim","bom jardim",),
+           (3300605,u"Bom Jesus do Itabapoana","bom jesus do itabapoana",),
+           (3300704,u"Cabo Frio","cabo frio",),
+           (3300803,u"Cachoeiras de Macacu","cachoeiras de macacu",),
+           (3300902,u"Cambuci","cambuci",),
+           (3301009,u"Campos dos Goytacazes","campos dos goytacazes",),
+           (3301108,u"Cantagalo","cantagalo",),
+           (3300936,u"Carapebus","carapebus",),
+           (3301157,u"Cardoso Moreira","cardoso moreira",),
+           (3301207,u"Carmo","carmo",),
+           (3301306,u"Casimiro de Abreu","casimiro de abreu",),
+           (3300951,u"Comendador Levy Gasparian","comendador levy gasparian",),
+           (3301405,u"Conceição de Macabu","conceicao de macabu",),
+           (3301504,u"Cordeiro","cordeiro",),
+           (3301603,u"Duas Barras","duas barras",),
+           (3301702,u"Duque de Caxias","duque de caxias",),
+           (3301801,u"Engenheiro Paulo de Frontin","engenheiro paulo de frontin",),
+           (3301850,u"Guapimirim","guapimirim",),
+           (3301876,u"Iguaba Grande","iguaba grande",),
+           (3301900,u"Itaboraí","itaborai",),
+           (3302007,u"Itaguaí","itaguai",),
+           (3302056,u"Italva","italva",),
+           (3302106,u"Itaocara","itaocara",),
+           (3302205,u"Itaperuna","itaperuna",),
+           (3302254,u"Itatiaia","itatiaia",),
+           (3302270,u"Japeri","japeri",),
+           (3302304,u"Laje do Muriaé","laje do muriae",),
+           (3302403,u"Macaé","macae",),
+           (3302452,u"Macuco","macuco",),
+           (3302502,u"Magé","mage",),
+           (3302601,u"Mangaratiba","mangaratiba",),
+           (3302700,u"Maricá","marica",),
+           (3302809,u"Mendes","mendes",),
+           (3302858,u"Mesquita","mesquita",),
+           (3302908,u"Miguel Pereira","miguel pereira",),
+           (3303005,u"Miracema","miracema",),
+           (3303104,u"Natividade","natividade",),
+           (3303203,u"Nilópolis","nilopolis",),
+           (3303302,u"Niterói","niteroi",),
+           (3303401,u"Nova Friburgo","nova friburgo",),
+           (3303500,u"Nova Iguaçu","nova iguacu",),
+           (3303609,u"Paracambi","paracambi",),
+           (3303708,u"Paraíba do Sul","paraiba do sul",),
+           (3303807,u"Paraty","paraty",),
+           (3303856,u"Paty do Alferes","paty do alferes",),
+           (3303906,u"Petrópolis","petropolis",),
+           (3303955,u"Pinheiral","pinheiral",),
+           (3304003,u"Piraí","pirai",),
+           (3304102,u"Porciúncula","porciuncula",),
+           (3304110,u"Porto Real","porto real",),
+           (3304128,u"Quatis","quatis",),
+           (3304144,u"Queimados","queimados",),
+           (3304151,u"Quissamã","quissama",),
+           (3304201,u"Resende","resende",),
+           (3304300,u"Rio Bonito","rio bonito",),
+           (3304409,u"Rio Claro","rio claro",),
+           (3304508,u"Rio das Flores","rio das flores",),
+           (3304524,u"Rio das Ostras","rio das ostras",),
+           (3304557,u"Rio de Janeiro","rio de janeiro",),
+           (3304607,u"Santa Maria Madalena","santa maria madalena",),
+           (3304706,u"Santo Antônio de Pádua","santo antonio de padua",),
+           (3304805,u"São Fidélis","sao fidelis",),
+           (3304755,u"São Francisco de Itabapoana","sao francisco de itabapoana",),
+           (3304904,u"São Gonçalo","sao goncalo",),
+           (3305000,u"São João da Barra","sao joao da barra",),
+           (3305109,u"São João de Meriti","sao joao de meriti",),
+           (3305133,u"São José de Ubá","sao jose de uba",),
+           (3305158,u"São José do Vale do Rio Preto","sao jose do vale do rio preto",),
+           (3305208,u"São Pedro da Aldeia","sao pedro da aldeia",),
+           (3305307,u"São Sebastião do Alto","sao sebastiao do alto",),
+           (3305406,u"Sapucaia","sapucaia",),
+           (3305505,u"Saquarema","saquarema",),
+           (3305554,u"Seropédica","seropedica",),
+           (3305604,u"Silva Jardim","silva jardim",),
+           (3305703,u"Sumidouro","sumidouro",),
+           (3305752,u"Tanguá","tangua",),
+           (3305802,u"Teresópolis","teresopolis",),
+           (3305901,u"Trajano de Moraes","trajano de moraes",),
+           (3306008,u"Três Rios","tres rios",),
+           (3306107,u"Valença","valenca",),
+           (3306156,u"Varre-Sai","varre-sai",),
+           (3306206,u"Vassouras","vassouras",),
+           (3306305,u"Volta Redonda","volta redonda",),
+         ],
+    u"RN":[(2400109,u"Acari","acari",),
+           (2400208,u"Açu","acu",),
+           (2400307,u"Afonso Bezerra","afonso bezerra",),
+           (2400406,u"Água Nova","agua nova",),
+           (2400505,u"Alexandria","alexandria",),
+           (2400604,u"Almino Afonso","almino afonso",),
+           (2400703,u"Alto do Rodrigues","alto do rodrigues",),
+           (2400802,u"Angicos","angicos",),
+           (2400901,u"Antônio Martins","antonio martins",),
+           (2401008,u"Apodi","apodi",),
+           (2401107,u"Areia Branca","areia branca",),
+           (2401206,u"Arês","ares",),
+           (2401305,u"Augusto Severo","augusto severo",),
+           (2401404,u"Baía Formosa","baia formosa",),
+           (2401453,u"Baraúna","barauna",),
+           (2401503,u"Barcelona","barcelona",),
+           (2401602,u"Bento Fernandes","bento fernandes",),
+           (2401651,u"Bodó","bodo",),
+           (2401701,u"Bom Jesus","bom jesus",),
+           (2401800,u"Brejinho","brejinho",),
+           (2401859,u"Caiçara do Norte","caicara do norte",),
+           (2401909,u"Caiçara do Rio do Vento","caicara do rio do vento",),
+           (2402006,u"Caicó","caico",),
+           (2402105,u"Campo Redondo","campo redondo",),
+           (2402204,u"Canguaretama","canguaretama",),
+           (2402303,u"Caraúbas","caraubas",),
+           (2402402,u"Carnaúba dos Dantas","carnauba dos dantas",),
+           (2402501,u"Carnaubais","carnaubais",),
+           (2402600,u"Ceará-Mirim","ceara-mirim",),
+           (2402709,u"Cerro Corá","cerro cora",),
+           (2402808,u"Coronel Ezequiel","coronel ezequiel",),
+           (2402907,u"Coronel João Pessoa","coronel joao pessoa",),
+           (2403004,u"Cruzeta","cruzeta",),
+           (2403103,u"Currais Novos","currais novos",),
+           (2403202,u"Doutor Severiano","doutor severiano",),
+           (2403301,u"Encanto","encanto",),
+           (2403400,u"Equador","equador",),
+           (2403509,u"Espírito Santo","espirito santo",),
+           (2403608,u"Extremoz","extremoz",),
+           (2403707,u"Felipe Guerra","felipe guerra",),
+           (2403756,u"Fernando Pedroza","fernando pedroza",),
+           (2403806,u"Florânia","florania",),
+           (2403905,u"Francisco Dantas","francisco dantas",),
+           (2404002,u"Frutuoso Gomes","frutuoso gomes",),
+           (2404101,u"Galinhos","galinhos",),
+           (2404200,u"Goianinha","goianinha",),
+           (2404309,u"Governador Dix-Sept Rosado","governador dix-sept rosado",),
+           (2404408,u"Grossos","grossos",),
+           (2404507,u"Guamaré","guamare",),
+           (2404606,u"Ielmo Marinho","ielmo marinho",),
+           (2404705,u"Ipanguaçu","ipanguacu",),
+           (2404804,u"Ipueira","ipueira",),
+           (2404853,u"Itajá","itaja",),
+           (2404903,u"Itaú","itau",),
+           (2405009,u"Jaçanã","jacana",),
+           (2405108,u"Jandaíra","jandaira",),
+           (2405207,u"Janduís","janduis",),
+           (2405306,u"Januário Cicco","januario cicco",),
+           (2405405,u"Japi","japi",),
+           (2405504,u"Jardim de Angicos","jardim de angicos",),
+           (2405603,u"Jardim de Piranhas","jardim de piranhas",),
+           (2405702,u"Jardim do Seridó","jardim do serido",),
+           (2405801,u"João Câmara","joao camara",),
+           (2405900,u"João Dias","joao dias",),
+           (2406007,u"José da Penha","jose da penha",),
+           (2406106,u"Jucurutu","jucurutu",),
+           (2406155,u"Jundiá","jundia",),
+           (2406205,u"Lagoa d'Anta","lagoa d'anta",),
+           (2406304,u"Lagoa de Pedras","lagoa de pedras",),
+           (2406403,u"Lagoa de Velhos","lagoa de velhos",),
+           (2406502,u"Lagoa Nova","lagoa nova",),
+           (2406601,u"Lagoa Salgada","lagoa salgada",),
+           (2406809,u"Lajes Pintadas","lajes pintadas",),
+           (2406700,u"Lajes","lajes",),
+           (2406908,u"Lucrécia","lucrecia",),
+           (2407005,u"Luís Gomes","luis gomes",),
+           (2407104,u"Macaíba","macaiba",),
+           (2407203,u"Macau","macau",),
+           (2407252,u"Major Sales","major sales",),
+           (2407302,u"Marcelino Vieira","marcelino vieira",),
+           (2407401,u"Martins","martins",),
+           (2407500,u"Maxaranguape","maxaranguape",),
+           (2407609,u"Messias Targino","messias targino",),
+           (2407708,u"Montanhas","montanhas",),
+           (2407807,u"Monte Alegre","monte alegre",),
+           (2407906,u"Monte das Gameleiras","monte das gameleiras",),
+           (2408003,u"Mossoró","mossoro",),
+           (2408102,u"Natal","natal",),
+           (2408201,u"Nísia Floresta","nisia floresta",),
+           (2408300,u"Nova Cruz","nova cruz",),
+           (2408409,u"Olho-d'Água do Borges","olho-d'agua do borges",),
+           (2408508,u"Ouro Branco","ouro branco",),
+           (2408607,u"Paraná","parana",),
+           (2408706,u"Paraú","parau",),
+           (2408805,u"Parazinho","parazinho",),
+           (2408904,u"Parelhas","parelhas",),
+           (2403251,u"Parnamirim","parnamirim",),
+           (2409100,u"Passa e Fica","passa e fica",),
+           (2409209,u"Passagem","passagem",),
+           (2409308,u"Patu","patu",),
+           (2409407,u"Pau dos Ferros","pau dos ferros",),
+           (2409506,u"Pedra Grande","pedra grande",),
+           (2409605,u"Pedra Preta","pedra preta",),
+           (2409704,u"Pedro Avelino","pedro avelino",),
+           (2409803,u"Pedro Velho","pedro velho",),
+           (2409902,u"Pendências","pendencias",),
+           (2410009,u"Pilões","piloes",),
+           (2410108,u"Poço Branco","poco branco",),
+           (2410207,u"Portalegre","portalegre",),
+           (2410256,u"Porto do Mangue","porto do mangue",),
+           (2410306,u"Presidente Juscelino","presidente juscelino",),
+           (2410405,u"Pureza","pureza",),
+           (2410504,u"Rafael Fernandes","rafael fernandes",),
+           (2410603,u"Rafael Godeiro","rafael godeiro",),
+           (2410702,u"Riacho da Cruz","riacho da cruz",),
+           (2410801,u"Riacho de Santana","riacho de santana",),
+           (2410900,u"Riachuelo","riachuelo",),
+           (2408953,u"Rio do Fogo","rio do fogo",),
+           (2411007,u"Rodolfo Fernandes","rodolfo fernandes",),
+           (2411106,u"Ruy Barbosa","ruy barbosa",),
+           (2411205,u"Santa Cruz","santa cruz",),
+           (2409332,u"Santa Maria","santa maria",),
+           (2411403,u"Santana do Matos","santana do matos",),
+           (2411429,u"Santana do Seridó","santana do serido",),
+           (2411502,u"Santo Antônio","santo antonio",),
+           (2411601,u"São Bento do Norte","sao bento do norte",),
+           (2411700,u"São Bento do Trairí","sao bento do trairi",),
+           (2411809,u"São Fernando","sao fernando",),
+           (2411908,u"São Francisco do Oeste","sao francisco do oeste",),
+           (2412005,u"São Gonçalo do Amarante","sao goncalo do amarante",),
+           (2412104,u"São João do Sabugi","sao joao do sabugi",),
+           (2412203,u"São José de Mipibu","sao jose de mipibu",),
+           (2412302,u"São José do Campestre","sao jose do campestre",),
+           (2412401,u"São José do Seridó","sao jose do serido",),
+           (2412559,u"São Miguel do Gostoso","sao miguel do gostoso",),
+           (2412500,u"São Miguel","sao miguel",),
+           (2412609,u"São Paulo do Potengi","sao paulo do potengi",),
+           (2412708,u"São Pedro","sao pedro",),
+           (2412807,u"São Rafael","sao rafael",),
+           (2412906,u"São Tomé","sao tome",),
+           (2413003,u"São Vicente","sao vicente",),
+           (2413102,u"Senador Elói de Souza","senador eloi de souza",),
+           (2413201,u"Senador Georgino Avelino","senador georgino avelino",),
+           (2413300,u"Serra de São Bento","serra de sao bento",),
+           (2413359,u"Serra do Mel","serra do mel",),
+           (2413409,u"Serra Negra do Norte","serra negra do norte",),
+           (2413557,u"Serrinha dos Pintos","serrinha dos pintos",),
+           (2413508,u"Serrinha","serrinha",),
+           (2413607,u"Severiano Melo","severiano melo",),
+           (2413706,u"Sítio Novo","sitio novo",),
+           (2413805,u"Taboleiro Grande","taboleiro grande",),
+           (2413904,u"Taipu","taipu",),
+           (2414001,u"Tangará","tangara",),
+           (2414100,u"Tenente Ananias","tenente ananias",),
+           (2414159,u"Tenente Laurentino Cruz","tenente laurentino cruz",),
+           (2414209,u"Tibau do Sul","tibau do sul",),
+           (2411056,u"Tibau","tibau",),
+           (2414308,u"Timbaúba dos Batistas","timbauba dos batistas",),
+           (2414407,u"Touros","touros",),
+           (2414456,u"Triunfo Potiguar","triunfo potiguar",),
+           (2414506,u"Umarizal","umarizal",),
+           (2414605,u"Upanema","upanema",),
+           (2414704,u"Várzea","varzea",),
+           (2414753,u"Venha-Ver","venha-ver",),
+           (2414803,u"Vera Cruz","vera cruz",),
+           (2414902,u"Viçosa","vicosa",),
+           (2415008,u"Vila Flor","vila flor",),
+         ],
+    u"RO":[(1100015,u"Alta Floresta D'Oeste","alta floresta d'oeste",),
+           (1100379,u"Alto Alegre dos Parecis","alto alegre dos parecis",),
+           (1100403,u"Alto Paraíso","alto paraiso",),
+           (1100346,u"Alvorada D'Oeste","alvorada d'oeste",),
+           (1100023,u"Ariquemes","ariquemes",),
+           (1100452,u"Buritis","buritis",),
+           (1100031,u"Cabixi","cabixi",),
+           (1100601,u"Cacaulândia","cacaulandia",),
+           (1100049,u"Cacoal","cacoal",),
+           (1100700,u"Campo Novo de Rondônia","campo novo de rondonia",),
+           (1100809,u"Candeias do Jamari","candeias do jamari",),
+           (1100908,u"Castanheiras","castanheiras",),
+           (1100056,u"Cerejeiras","cerejeiras",),
+           (1100924,u"Chupinguaia","chupinguaia",),
+           (1100064,u"Colorado do Oeste","colorado do oeste",),
+           (1100072,u"Corumbiara","corumbiara",),
+           (1100080,u"Costa Marques","costa marques",),
+           (1100940,u"Cujubim","cujubim",),
+           (1100098,u"Espigão D'Oeste","espigao d'oeste",),
+           (1101005,u"Governador Jorge Teixeira","governador jorge teixeira",),
+           (1100106,u"Guajará-Mirim","guajara-mirim",),
+           (1101104,u"Itapuã do Oeste","itapua do oeste",),
+           (1100114,u"Jaru","jaru",),
+           (1100122,u"Ji-Paraná","ji-parana",),
+           (1100130,u"Machadinho D'Oeste","machadinho d'oeste",),
+           (1101203,u"Ministro Andreazza","ministro andreazza",),
+           (1101302,u"Mirante da Serra","mirante da serra",),
+           (1101401,u"Monte Negro","monte negro",),
+           (1100148,u"Nova Brasilândia D'Oeste","nova brasilandia d'oeste",),
+           (1100338,u"Nova Mamoré","nova mamore",),
+           (1101435,u"Nova União","nova uniao",),
+           (1100502,u"Novo Horizonte do Oeste","novo horizonte do oeste",),
+           (1100155,u"Ouro Preto do Oeste","ouro preto do oeste",),
+           (1101450,u"Parecis","parecis",),
+           (1100189,u"Pimenta Bueno","pimenta bueno",),
+           (1101468,u"Pimenteiras do Oeste","pimenteiras do oeste",),
+           (1100205,u"Porto Velho","porto velho",),
+           (1100254,u"Presidente Médici","presidente medici",),
+           (1101476,u"Primavera de Rondônia","primavera de rondonia",),
+           (1100262,u"Rio Crespo","rio crespo",),
+           (1100288,u"Rolim de Moura","rolim de moura",),
+           (1100296,u"Santa Luzia D'Oeste","santa luzia d'oeste",),
+           (1101484,u"São Felipe D'Oeste","sao felipe d'oeste",),
+           (1101492,u"São Francisco do Guaporé","sao francisco do guapore",),
+           (1100320,u"São Miguel do Guaporé","sao miguel do guapore",),
+           (1101500,u"Seringueiras","seringueiras",),
+           (1101559,u"Teixeirópolis","teixeiropolis",),
+           (1101609,u"Theobroma","theobroma",),
+           (1101708,u"Urupá","urupa",),
+           (1101757,u"Vale do Anari","vale do anari",),
+           (1101807,u"Vale do Paraíso","vale do paraiso",),
+           (1100304,u"Vilhena","vilhena",),
+         ],
+    u"RR":[(1400050,u"Alto Alegre","alto alegre",),
+          (1400027,u"Amajari","amajari",),
+          (1400100,u"Boa Vista","boa vista",),
+          (1400159,u"Bonfim","bonfim",),
+          (1400175,u"Cantá","canta",),
+          (1400209,u"Caracaraí","caracarai",),
+          (1400233,u"Caroebe","caroebe",),
+          (1400282,u"Iracema","iracema",),
+          (1400308,u"Mucajaí","mucajai",),
+          (1400407,u"Normandia","normandia",),
+          (1400456,u"Pacaraima","pacaraima",),
+          (1400472,u"Rorainópolis","rorainopolis",),
+          (1400506,u"São João da Baliza","sao joao da baliza",),
+          (1400605,u"São Luiz","sao luiz",),
+          (1400704,u"Uiramutã","uiramuta",),
+          ],
+    u"RS":[(4300034,u"Aceguá","acegua",),
+           (4300059,u"Água Santa","agua santa",),
+           (4300109,u"Agudo","agudo",),
+           (4300208,u"Ajuricaba","ajuricaba",),
+           (4300307,u"Alecrim","alecrim",),
+           (4300406,u"Alegrete","alegrete",),
+           (4300455,u"Alegria","alegria",),
+           (4300471,u"Almirante Tamandaré do Sul","almirante tamandare do sul",),
+           (4300505,u"Alpestre","alpestre",),
+           (4300554,u"Alto Alegre","alto alegre",),
+           (4300570,u"Alto Feliz","alto feliz",),
+           (4300604,u"Alvorada","alvorada",),
+           (4300638,u"Amaral Ferrador","amaral ferrador",),
+           (4300646,u"Ametista do Sul","ametista do sul",),
+           (4300661,u"André da Rocha","andre da rocha",),
+           (4300703,u"Anta Gorda","anta gorda",),
+           (4300802,u"Antônio Prado","antonio prado",),
+           (4300851,u"Arambaré","arambare",),
+           (4300877,u"Araricá","ararica",),
+           (4300901,u"Aratiba","aratiba",),
+           (4301008,u"Arroio do Meio","arroio do meio",),
+           (4301073,u"Arroio do Padre","arroio do padre",),
+           (4301057,u"Arroio do Sal","arroio do sal",),
+           (4301206,u"Arroio do Tigre","arroio do tigre",),
+           (4301107,u"Arroio dos Ratos","arroio dos ratos",),
+           (4301305,u"Arroio Grande","arroio grande",),
+           (4301404,u"Arvorezinha","arvorezinha",),
+           (4301503,u"Augusto Pestana","augusto pestana",),
+           (4301552,u"Áurea","aurea",),
+           (4301602,u"Bagé","bage",),
+           (4301636,u"Balneário Pinhal","balneario pinhal",),
+           (4301701,u"Barão de Cotegipe","barao de cotegipe",),
+           (4301750,u"Barão do Triunfo","barao do triunfo",),
+           (4301651,u"Barão","barao",),
+           (4301859,u"Barra do Guarita","barra do guarita",),
+           (4301875,u"Barra do Quaraí","barra do quarai",),
+           (4301909,u"Barra do Ribeiro","barra do ribeiro",),
+           (4301925,u"Barra do Rio Azul","barra do rio azul",),
+           (4301958,u"Barra Funda","barra funda",),
+           (4301800,u"Barracão","barracao",),
+           (4302006,u"Barros Cassal","barros cassal",),
+           (4302055,u"Benjamin Constant do Sul","benjamin constant do sul",),
+           (4302105,u"Bento Gonçalves","bento goncalves",),
+           (4302154,u"Boa Vista das Missões","boa vista das missoes",),
+           (4302204,u"Boa Vista do Buricá","boa vista do burica",),
+           (4302220,u"Boa Vista do Cadeado","boa vista do cadeado",),
+           (4302238,u"Boa Vista do Incra","boa vista do incra",),
+           (4302253,u"Boa Vista do Sul","boa vista do sul",),
+           (4302303,u"Bom Jesus","bom jesus",),
+           (4302352,u"Bom Princípio","bom principio",),
+           (4302378,u"Bom Progresso","bom progresso",),
+           (4302402,u"Bom Retiro do Sul","bom retiro do sul",),
+           (4302451,u"Boqueirão do Leão","boqueirao do leao",),
+           (4302501,u"Bossoroca","bossoroca",),
+           (4302584,u"Bozano","bozano",),
+           (4302600,u"Braga","braga",),
+           (4302659,u"Brochier","brochier",),
+           (4302709,u"Butiá","butia",),
+           (4302808,u"Caçapava do Sul","cacapava do sul",),
+           (4302907,u"Cacequi","cacequi",),
+           (4303004,u"Cachoeira do Sul","cachoeira do sul",),
+           (4303103,u"Cachoeirinha","cachoeirinha",),
+           (4303202,u"Cacique Doble","cacique doble",),
+           (4303301,u"Caibaté","caibate",),
+           (4303400,u"Caiçara","caicara",),
+           (4303509,u"Camaquã","camaqua",),
+           (4303558,u"Camargo","camargo",),
+           (4303608,u"Cambará do Sul","cambara do sul",),
+           (4303673,u"Campestre da Serra","campestre da serra",),
+           (4303707,u"Campina das Missões","campina das missoes",),
+           (4303806,u"Campinas do Sul","campinas do sul",),
+           (4303905,u"Campo Bom","campo bom",),
+           (4304002,u"Campo Novo","campo novo",),
+           (4304101,u"Campos Borges","campos borges",),
+           (4304200,u"Candelária","candelaria",),
+           (4304309,u"Cândido Godói","candido godoi",),
+           (4304358,u"Candiota","candiota",),
+           (4304408,u"Canela","canela",),
+           (4304507,u"Canguçu","cangucu",),
+           (4304606,u"Canoas","canoas",),
+           (4304614,u"Canudos do Vale","canudos do vale",),
+           (4304622,u"Capão Bonito do Sul","capao bonito do sul",),
+           (4304630,u"Capão da Canoa","capao da canoa",),
+           (4304655,u"Capão do Cipó","capao do cipo",),
+           (4304663,u"Capão do Leão","capao do leao",),
+           (4304689,u"Capela de Santana","capela de santana",),
+           (4304697,u"Capitão","capitao",),
+           (4304671,u"Capivari do Sul","capivari do sul",),
+           (4304713,u"Caraá","caraa",),
+           (4304705,u"Carazinho","carazinho",),
+           (4304804,u"Carlos Barbosa","carlos barbosa",),
+           (4304853,u"Carlos Gomes","carlos gomes",),
+           (4304903,u"Casca","casca",),
+           (4304952,u"Caseiros","caseiros",),
+           (4305009,u"Catuípe","catuipe",),
+           (4305108,u"Caxias do Sul","caxias do sul",),
+           (4305116,u"Centenário","centenario",),
+           (4305124,u"Cerrito","cerrito",),
+           (4305132,u"Cerro Branco","cerro branco",),
+           (4305173,u"Cerro Grande do Sul","cerro grande do sul",),
+           (4305157,u"Cerro Grande","cerro grande",),
+           (4305207,u"Cerro Largo","cerro largo",),
+           (4305306,u"Chapada","chapada",),
+           (4305355,u"Charqueadas","charqueadas",),
+           (4305371,u"Charrua","charrua",),
+           (4305405,u"Chiapetta","chiapetta",),
+           (4305439,u"Chuí","chui",),
+           (4305447,u"Chuvisca","chuvisca",),
+           (4305454,u"Cidreira","cidreira",),
+           (4305504,u"Ciríaco","ciriaco",),
+           (4305587,u"Colinas","colinas",),
+           (4305603,u"Colorado","colorado",),
+           (4305702,u"Condor","condor",),
+           (4305801,u"Constantina","constantina",),
+           (4305835,u"Coqueiro Baixo","coqueiro baixo",),
+           (4305850,u"Coqueiros do Sul","coqueiros do sul",),
+           (4305871,u"Coronel Barros","coronel barros",),
+           (4305900,u"Coronel Bicaco","coronel bicaco",),
+           (4305934,u"Coronel Pilar","coronel pilar",),
+           (4305959,u"Cotiporã","cotipora",),
+           (4305975,u"Coxilha","coxilha",),
+           (4306007,u"Crissiumal","crissiumal",),
+           (4306072,u"Cristal do Sul","cristal do sul",),
+           (4306056,u"Cristal","cristal",),
+           (4306106,u"Cruz Alta","cruz alta",),
+           (4306130,u"Cruzaltense","cruzaltense",),
+           (4306205,u"Cruzeiro do Sul","cruzeiro do sul",),
+           (4306304,u"David Canabarro","david canabarro",),
+           (4306320,u"Derrubadas","derrubadas",),
+           (4306353,u"Dezesseis de Novembro","dezesseis de novembro",),
+           (4306379,u"Dilermando de Aguiar","dilermando de aguiar",),
+           (4306429,u"Dois Irmãos das Missões","dois irmaos das missoes",),
+           (4306403,u"Dois Irmãos","dois irmaos",),
+           (4306452,u"Dois Lajeados","dois lajeados",),
+           (4306502,u"Dom Feliciano","dom feliciano",),
+           (4306601,u"Dom Pedrito","dom pedrito",),
+           (4306551,u"Dom Pedro de Alcântara","dom pedro de alcantara",),
+           (4306700,u"Dona Francisca","dona francisca",),
+           (4306734,u"Doutor Maurício Cardoso","doutor mauricio cardoso",),
+           (4306759,u"Doutor Ricardo","doutor ricardo",),
+           (4306767,u"Eldorado do Sul","eldorado do sul",),
+           (4306809,u"Encantado","encantado",),
+           (4306908,u"Encruzilhada do Sul","encruzilhada do sul",),
+           (4306924,u"Engenho Velho","engenho velho",),
+           (4306957,u"Entre Rios do Sul","entre rios do sul",),
+           (4306932,u"Entre-Ijuís","entre-ijuis",),
+           (4306973,u"Erebango","erebango",),
+           (4307005,u"Erechim","erechim",),
+           (4307054,u"Ernestina","ernestina",),
+           (4307203,u"Erval Grande","erval grande",),
+           (4307302,u"Erval Seco","erval seco",),
+           (4307401,u"Esmeralda","esmeralda",),
+           (4307450,u"Esperança do Sul","esperanca do sul",),
+           (4307500,u"Espumoso","espumoso",),
+           (4307559,u"Estação","estacao",),
+           (4307609,u"Estância Velha","estancia velha",),
+           (4307708,u"Esteio","esteio",),
+           (4307815,u"Estrela Velha","estrela velha",),
+           (4307807,u"Estrela","estrela",),
+           (4307831,u"Eugênio de Castro","eugenio de castro",),
+           (4307864,u"Fagundes Varela","fagundes varela",),
+           (4307906,u"Farroupilha","farroupilha",),
+           (4308003,u"Faxinal do Soturno","faxinal do soturno",),
+           (4308052,u"Faxinalzinho","faxinalzinho",),
+           (4308078,u"Fazenda Vilanova","fazenda vilanova",),
+           (4308102,u"Feliz","feliz",),
+           (4308201,u"Flores da Cunha","flores da cunha",),
+           (4308250,u"Floriano Peixoto","floriano peixoto",),
+           (4308300,u"Fontoura Xavier","fontoura xavier",),
+           (4308409,u"Formigueiro","formigueiro",),
+           (4308433,u"Forquetinha","forquetinha",),
+           (4308458,u"Fortaleza dos Valos","fortaleza dos valos",),
+           (4308508,u"Frederico Westphalen","frederico westphalen",),
+           (4308607,u"Garibaldi","garibaldi",),
+           (4308656,u"Garruchos","garruchos",),
+           (4308706,u"Gaurama","gaurama",),
+           (4308805,u"General Câmara","general camara",),
+           (4308854,u"Gentil","gentil",),
+           (4308904,u"Getúlio Vargas","getulio vargas",),
+           (4309001,u"Giruá","girua",),
+           (4309050,u"Glorinha","glorinha",),
+           (4309126,u"Gramado dos Loureiros","gramado dos loureiros",),
+           (4309159,u"Gramado Xavier","gramado xavier",),
+           (4309100,u"Gramado","gramado",),
+           (4309209,u"Gravataí","gravatai",),
+           (4309258,u"Guabiju","guabiju",),
+           (4309308,u"Guaíba","guaiba",),
+           (4309407,u"Guaporé","guapore",),
+           (4309506,u"Guarani das Missões","guarani das missoes",),
+           (4309555,u"Harmonia","harmonia",),
+           (4307104,u"Herval","herval",),
+           (4309571,u"Herveiras","herveiras",),
+           (4309605,u"Horizontina","horizontina",),
+           (4309654,u"Hulha Negra","hulha negra",),
+           (4309704,u"Humaitá","humaita",),
+           (4309753,u"Ibarama","ibarama",),
+           (4309803,u"Ibiaçá","ibiaca",),
+           (4309902,u"Ibiraiaras","ibiraiaras",),
+           (4309951,u"Ibirapuitã","ibirapuita",),
+           (4310009,u"Ibirubá","ibiruba",),
+           (4310108,u"Igrejinha","igrejinha",),
+           (4310207,u"Ijuí","ijui",),
+           (4310306,u"Ilópolis","ilopolis",),
+           (4310330,u"Imbé","imbe",),
+           (4310363,u"Imigrante","imigrante",),
+           (4310405,u"Independência","independencia",),
+           (4310413,u"Inhacorá","inhacora",),
+           (4310439,u"Ipê","ipe",),
+           (4310462,u"Ipiranga do Sul","ipiranga do sul",),
+           (4310504,u"Iraí","irai",),
+           (4310538,u"Itaara","itaara",),
+           (4310553,u"Itacurubi","itacurubi",),
+           (4310579,u"Itapuca","itapuca",),
+           (4310603,u"Itaqui","itaqui",),
+           (4310652,u"Itati","itati",),
+           (4310702,u"Itatiba do Sul","itatiba do sul",),
+           (4310751,u"Ivorá","ivora",),
+           (4310801,u"Ivoti","ivoti",),
+           (4310850,u"Jaboticaba","jaboticaba",),
+           (4310876,u"Jacuizinho","jacuizinho",),
+           (4310900,u"Jacutinga","jacutinga",),
+           (4311007,u"Jaguarão","jaguarao",),
+           (4311106,u"Jaguari","jaguari",),
+           (4311122,u"Jaquirana","jaquirana",),
+           (4311130,u"Jari","jari",),
+           (4311155,u"Jóia","joia",),
+           (4311205,u"Júlio de Castilhos","julio de castilhos",),
+           (4311239,u"Lagoa Bonita do Sul","lagoa bonita do sul",),
+           (4311270,u"Lagoa dos Três Cantos","lagoa dos tres cantos",),
+           (4311304,u"Lagoa Vermelha","lagoa vermelha",),
+           (4311254,u"Lagoão","lagoao",),
+           (4311429,u"Lajeado do Bugre","lajeado do bugre",),
+           (4311403,u"Lajeado","lajeado",),
+           (4311502,u"Lavras do Sul","lavras do sul",),
+           (4311601,u"Liberato Salzano","liberato salzano",),
+           (4311627,u"Lindolfo Collor","lindolfo collor",),
+           (4311643,u"Linha Nova","linha nova",),
+           (4311718,u"Maçambará","macambara",),
+           (4311700,u"Machadinho","machadinho",),
+           (4311734,u"Mampituba","mampituba",),
+           (4311759,u"Manoel Viana","manoel viana",),
+           (4311775,u"Maquiné","maquine",),
+           (4311791,u"Maratá","marata",),
+           (4311809,u"Marau","marau",),
+           (4311908,u"Marcelino Ramos","marcelino ramos",),
+           (4311981,u"Mariana Pimentel","mariana pimentel",),
+           (4312005,u"Mariano Moro","mariano moro",),
+           (4312054,u"Marques de Souza","marques de souza",),
+           (4312104,u"Mata","mata",),
+           (4312138,u"Mato Castelhano","mato castelhano",),
+           (4312153,u"Mato Leitão","mato leitao",),
+           (4312179,u"Mato Queimado","mato queimado",),
+           (4312203,u"Maximiliano de Almeida","maximiliano de almeida",),
+           (4312252,u"Minas do Leão","minas do leao",),
+           (4312302,u"Miraguaí","miraguai",),
+           (4312351,u"Montauri","montauri",),
+           (4312377,u"Monte Alegre dos Campos","monte alegre dos campos",),
+           (4312385,u"Monte Belo do Sul","monte belo do sul",),
+           (4312401,u"Montenegro","montenegro",),
+           (4312427,u"Mormaço","mormaco",),
+           (4312443,u"Morrinhos do Sul","morrinhos do sul",),
+           (4312450,u"Morro Redondo","morro redondo",),
+           (4312476,u"Morro Reuter","morro reuter",),
+           (4312500,u"Mostardas","mostardas",),
+           (4312609,u"Muçum","mucum",),
+           (4312617,u"Muitos Capões","muitos capoes",),
+           (4312625,u"Muliterno","muliterno",),
+           (4312658,u"Não-Me-Toque","nao-me-toque",),
+           (4312674,u"Nicolau Vergueiro","nicolau vergueiro",),
+           (4312708,u"Nonoai","nonoai",),
+           (4312757,u"Nova Alvorada","nova alvorada",),
+           (4312807,u"Nova Araçá","nova araca",),
+           (4312906,u"Nova Bassano","nova bassano",),
+           (4312955,u"Nova Boa Vista","nova boa vista",),
+           (4313003,u"Nova Bréscia","nova brescia",),
+           (4313011,u"Nova Candelária","nova candelaria",),
+           (4313037,u"Nova Esperança do Sul","nova esperanca do sul",),
+           (4313060,u"Nova Hartz","nova hartz",),
+           (4313086,u"Nova Pádua","nova padua",),
+           (4313102,u"Nova Palma","nova palma",),
+           (4313201,u"Nova Petrópolis","nova petropolis",),
+           (4313300,u"Nova Prata","nova prata",),
+           (4313334,u"Nova Ramada","nova ramada",),
+           (4313359,u"Nova Roma do Sul","nova roma do sul",),
+           (4313375,u"Nova Santa Rita","nova santa rita",),
+           (4313490,u"Novo Barreiro","novo barreiro",),
+           (4313391,u"Novo Cabrais","novo cabrais",),
+           (4313409,u"Novo Hamburgo","novo hamburgo",),
+           (4313425,u"Novo Machado","novo machado",),
+           (4313441,u"Novo Tiradentes","novo tiradentes",),
+           (4313466,u"Novo Xingu","novo xingu",),
+           (4313508,u"Osório","osorio",),
+           (4313607,u"Paim Filho","paim filho",),
+           (4313656,u"Palmares do Sul","palmares do sul",),
+           (4313706,u"Palmeira das Missões","palmeira das missoes",),
+           (4313805,u"Palmitinho","palmitinho",),
+           (4313904,u"Panambi","panambi",),
+           (4313953,u"Pantano Grande","pantano grande",),
+           (4314001,u"Paraí","parai",),
+           (4314027,u"Paraíso do Sul","paraiso do sul",),
+           (4314035,u"Pareci Novo","pareci novo",),
+           (4314050,u"Parobé","parobe",),
+           (4314068,u"Passa Sete","passa sete",),
+           (4314076,u"Passo do Sobrado","passo do sobrado",),
+           (4314100,u"Passo Fundo","passo fundo",),
+           (4314134,u"Paulo Bento","paulo bento",),
+           (4314159,u"Paverama","paverama",),
+           (4314175,u"Pedras Altas","pedras altas",),
+           (4314209,u"Pedro Osório","pedro osorio",),
+           (4314308,u"Pejuçara","pejucara",),
+           (4314407,u"Pelotas","pelotas",),
+           (4314423,u"Picada Café","picada cafe",),
+           (4314464,u"Pinhal da Serra","pinhal da serra",),
+           (4314472,u"Pinhal Grande","pinhal grande",),
+           (4314456,u"Pinhal","pinhal",),
+           (4314498,u"Pinheirinho do Vale","pinheirinho do vale",),
+           (4314506,u"Pinheiro Machado","pinheiro machado",),
+           (4314555,u"Pirapó","pirapo",),
+           (4314605,u"Piratini","piratini",),
+           (4314704,u"Planalto","planalto",),
+           (4314753,u"Poço das Antas","poco das antas",),
+           (4314779,u"Pontão","pontao",),
+           (4314787,u"Ponte Preta","ponte preta",),
+           (4314803,u"Portão","portao",),
+           (4314902,u"Porto Alegre","porto alegre",),
+           (4315008,u"Porto Lucena","porto lucena",),
+           (4315057,u"Porto Mauá","porto maua",),
+           (4315073,u"Porto Vera Cruz","porto vera cruz",),
+           (4315107,u"Porto Xavier","porto xavier",),
+           (4315131,u"Pouso Novo","pouso novo",),
+           (4315149,u"Presidente Lucena","presidente lucena",),
+           (4315156,u"Progresso","progresso",),
+           (4315172,u"Protásio Alves","protasio alves",),
+           (4315206,u"Putinga","putinga",),
+           (4315305,u"Quaraí","quarai",),
+           (4315313,u"Quatro Irmãos","quatro irmaos",),
+           (4315321,u"Quevedos","quevedos",),
+           (4315354,u"Quinze de Novembro","quinze de novembro",),
+           (4315404,u"Redentora","redentora",),
+           (4315453,u"Relvado","relvado",),
+           (4315503,u"Restinga Seca","restinga seca",),
+           (4315552,u"Rio dos Índios","rio dos indios",),
+           (4315602,u"Rio Grande","rio grande",),
+           (4315701,u"Rio Pardo","rio pardo",),
+           (4315750,u"Riozinho","riozinho",),
+           (4315800,u"Roca Sales","roca sales",),
+           (4315909,u"Rodeio Bonito","rodeio bonito",),
+           (4315958,u"Rolador","rolador",),
+           (4316006,u"Rolante","rolante",),
+           (4316105,u"Ronda Alta","ronda alta",),
+           (4316204,u"Rondinha","rondinha",),
+           (4316303,u"Roque Gonzales","roque gonzales",),
+           (4316402,u"Rosário do Sul","rosario do sul",),
+           (4316428,u"Sagrada Família","sagrada familia",),
+           (4316436,u"Saldanha Marinho","saldanha marinho",),
+           (4316451,u"Salto do Jacuí","salto do jacui",),
+           (4316477,u"Salvador das Missões","salvador das missoes",),
+           (4316501,u"Salvador do Sul","salvador do sul",),
+           (4316600,u"Sananduva","sananduva",),
+           (4317103,u"Sant'Ana do Livramento","sant'ana do livramento",),
+           (4316709,u"Santa Bárbara do Sul","santa barbara do sul",),
+           (4316733,u"Santa Cecília do Sul","santa cecilia do sul",),
+           (4316758,u"Santa Clara do Sul","santa clara do sul",),
+           (4316808,u"Santa Cruz do Sul","santa cruz do sul",),
+           (4316972,u"Santa Margarida do Sul","santa margarida do sul",),
+           (4316956,u"Santa Maria do Herval","santa maria do herval",),
+           (4316907,u"Santa Maria","santa maria",),
+           (4317202,u"Santa Rosa","santa rosa",),
+           (4317251,u"Santa Tereza","santa tereza",),
+           (4317301,u"Santa Vitória do Palmar","santa vitoria do palmar",),
+           (4317004,u"Santana da Boa Vista","santana da boa vista",),
+           (4317400,u"Santiago","santiago",),
+           (4317509,u"Santo Ângelo","santo angelo",),
+           (4317608,u"Santo Antônio da Patrulha","santo antonio da patrulha",),
+           (4317707,u"Santo Antônio das Missões","santo antonio das missoes",),
+           (4317558,u"Santo Antônio do Palma","santo antonio do palma",),
+           (4317756,u"Santo Antônio do Planalto","santo antonio do planalto",),
+           (4317806,u"Santo Augusto","santo augusto",),
+           (4317905,u"Santo Cristo","santo cristo",),
+           (4317954,u"Santo Expedito do Sul","santo expedito do sul",),
+           (4318002,u"São Borja","sao borja",),
+           (4318051,u"São Domingos do Sul","sao domingos do sul",),
+           (4318101,u"São Francisco de Assis","sao francisco de assis",),
+           (4318200,u"São Francisco de Paula","sao francisco de paula",),
+           (4318309,u"São Gabriel","sao gabriel",),
+           (4318408,u"São Jerônimo","sao jeronimo",),
+           (4318424,u"São João da Urtiga","sao joao da urtiga",),
+           (4318432,u"São João do Polêsine","sao joao do polesine",),
+           (4318440,u"São Jorge","sao jorge",),
+           (4318457,u"São José das Missões","sao jose das missoes",),
+           (4318465,u"São José do Herval","sao jose do herval",),
+           (4318481,u"São José do Hortêncio","sao jose do hortencio",),
+           (4318499,u"São José do Inhacorá","sao jose do inhacora",),
+           (4318507,u"São José do Norte","sao jose do norte",),
+           (4318606,u"São José do Ouro","sao jose do ouro",),
+           (4318614,u"São José do Sul","sao jose do sul",),
+           (4318622,u"São José dos Ausentes","sao jose dos ausentes",),
+           (4318705,u"São Leopoldo","sao leopoldo",),
+           (4318804,u"São Lourenço do Sul","sao lourenco do sul",),
+           (4318903,u"São Luiz Gonzaga","sao luiz gonzaga",),
+           (4319000,u"São Marcos","sao marcos",),
+           (4319125,u"São Martinho da Serra","sao martinho da serra",),
+           (4319109,u"São Martinho","sao martinho",),
+           (4319158,u"São Miguel das Missões","sao miguel das missoes",),
+           (4319208,u"São Nicolau","sao nicolau",),
+           (4319307,u"São Paulo das Missões","sao paulo das missoes",),
+           (4319356,u"São Pedro da Serra","sao pedro da serra",),
+           (4319364,u"São Pedro das Missões","sao pedro das missoes",),
+           (4319372,u"São Pedro do Butiá","sao pedro do butia",),
+           (4319406,u"São Pedro do Sul","sao pedro do sul",),
+           (4319505,u"São Sebastião do Caí","sao sebastiao do cai",),
+           (4319604,u"São Sepé","sao sepe",),
+           (4319711,u"São Valentim do Sul","sao valentim do sul",),
+           (4319703,u"São Valentim","sao valentim",),
+           (4319737,u"São Valério do Sul","sao valerio do sul",),
+           (4319752,u"São Vendelino","sao vendelino",),
+           (4319802,u"São Vicente do Sul","sao vicente do sul",),
+           (4319901,u"Sapiranga","sapiranga",),
+           (4320008,u"Sapucaia do Sul","sapucaia do sul",),
+           (4320107,u"Sarandi","sarandi",),
+           (4320206,u"Seberi","seberi",),
+           (4320230,u"Sede Nova","sede nova",),
+           (4320263,u"Segredo","segredo",),
+           (4320305,u"Selbach","selbach",),
+           (4320321,u"Senador Salgado Filho","senador salgado filho",),
+           (4320354,u"Sentinela do Sul","sentinela do sul",),
+           (4320404,u"Serafina Corrêa","serafina correa",),
+           (4320453,u"Sério","serio",),
+           (4320552,u"Sertão Santana","sertao santana",),
+           (4320503,u"Sertão","sertao",),
+           (4320578,u"Sete de Setembro","sete de setembro",),
+           (4320602,u"Severiano de Almeida","severiano de almeida",),
+           (4320651,u"Silveira Martins","silveira martins",),
+           (4320677,u"Sinimbu","sinimbu",),
+           (4320701,u"Sobradinho","sobradinho",),
+           (4320800,u"Soledade","soledade",),
+           (4320859,u"Tabaí","tabai",),
+           (4320909,u"Tapejara","tapejara",),
+           (4321006,u"Tapera","tapera",),
+           (4321105,u"Tapes","tapes",),
+           (4321204,u"Taquara","taquara",),
+           (4321303,u"Taquari","taquari",),
+           (4321329,u"Taquaruçu do Sul","taquarucu do sul",),
+           (4321352,u"Tavares","tavares",),
+           (4321402,u"Tenente Portela","tenente portela",),
+           (4321436,u"Terra de Areia","terra de areia",),
+           (4321451,u"Teutônia","teutonia",),
+           (4321469,u"Tio Hugo","tio hugo",),
+           (4321477,u"Tiradentes do Sul","tiradentes do sul",),
+           (4321493,u"Toropi","toropi",),
+           (4321501,u"Torres","torres",),
+           (4321600,u"Tramandaí","tramandai",),
+           (4321626,u"Travesseiro","travesseiro",),
+           (4321634,u"Três Arroios","tres arroios",),
+           (4321667,u"Três Cachoeiras","tres cachoeiras",),
+           (4321709,u"Três Coroas","tres coroas",),
+           (4321808,u"Três de Maio","tres de maio",),
+           (4321832,u"Três Forquilhas","tres forquilhas",),
+           (4321857,u"Três Palmeiras","tres palmeiras",),
+           (4321907,u"Três Passos","tres passos",),
+           (4321956,u"Trindade do Sul","trindade do sul",),
+           (4322004,u"Triunfo","triunfo",),
+           (4322103,u"Tucunduva","tucunduva",),
+           (4322152,u"Tunas","tunas",),
+           (4322186,u"Tupanci do Sul","tupanci do sul",),
+           (4322202,u"Tupanciretã","tupancireta",),
+           (4322251,u"Tupandi","tupandi",),
+           (4322301,u"Tuparendi","tuparendi",),
+           (4322327,u"Turuçu","turucu",),
+           (4322343,u"Ubiretama","ubiretama",),
+           (4322350,u"União da Serra","uniao da serra",),
+           (4322376,u"Unistalda","unistalda",),
+           (4322400,u"Uruguaiana","uruguaiana",),
+           (4322509,u"Vacaria","vacaria",),
+           (4322533,u"Vale do Sol","vale do sol",),
+           (4322541,u"Vale Real","vale real",),
+           (4322525,u"Vale Verde","vale verde",),
+           (4322558,u"Vanini","vanini",),
+           (4322608,u"Venâncio Aires","venancio aires",),
+           (4322707,u"Vera Cruz","vera cruz",),
+           (4322806,u"Veranópolis","veranopolis",),
+           (4322855,u"Vespasiano Correa","vespasiano correa",),
+           (4322905,u"Viadutos","viadutos",),
+           (4323002,u"Viamão","viamao",),
+           (4323101,u"Vicente Dutra","vicente dutra",),
+           (4323200,u"Victor Graeff","victor graeff",),
+           (4323309,u"Vila Flores","vila flores",),
+           (4323358,u"Vila Lângaro","vila langaro",),
+           (4323408,u"Vila Maria","vila maria",),
+           (4323457,u"Vila Nova do Sul","vila nova do sul",),
+           (4323606,u"Vista Alegre do Prata","vista alegre do prata",),
+           (4323507,u"Vista Alegre","vista alegre",),
+           (4323705,u"Vista Gaúcha","vista gaucha",),
+           (4323754,u"Vitória das Missões","vitoria das missoes",),
+           (4323770,u"Westfalia","westfalia",),
+           (4323804,u"Xangri-lá","xangri-la",),
+         ],
+    u"SC":[(4200051,u"Abdon Batista","abdon batista",),
+           (4200101,u"Abelardo Luz","abelardo luz",),
+           (4200200,u"Agrolândia","agrolandia",),
+           (4200309,u"Agronômica","agronomica",),
+           (4200408,u"Água Doce","agua doce",),
+           (4200507,u"Águas de Chapecó","aguas de chapeco",),
+           (4200556,u"Águas Frias","aguas frias",),
+           (4200606,u"Águas Mornas","aguas mornas",),
+           (4200705,u"Alfredo Wagner","alfredo wagner",),
+           (4200754,u"Alto Bela Vista","alto bela vista",),
+           (4200804,u"Anchieta","anchieta",),
+           (4200903,u"Angelina","angelina",),
+           (4201000,u"Anita Garibaldi","anita garibaldi",),
+           (4201109,u"Anitápolis","anitapolis",),
+           (4201208,u"Antônio Carlos","antonio carlos",),
+           (4201257,u"Apiúna","apiuna",),
+           (4201273,u"Arabutã","arabuta",),
+           (4201307,u"Araquari","araquari",),
+           (4201406,u"Araranguá","ararangua",),
+           (4201505,u"Armazém","armazem",),
+           (4201604,u"Arroio Trinta","arroio trinta",),
+           (4201653,u"Arvoredo","arvoredo",),
+           (4201703,u"Ascurra","ascurra",),
+           (4201802,u"Atalanta","atalanta",),
+           (4201901,u"Aurora","aurora",),
+           (4201950,u"Balneário Arroio do Silva","balneario arroio do silva",),
+           (4202057,u"Balneário Barra do Sul","balneario barra do sul",),
+           (4202008,u"Balneário Camboriú","balneario camboriu",),
+           (4202073,u"Balneário Gaivota","balneario gaivota",),
+           (4212809,u"Balneário Piçarras","balneario picarras",),
+           (4202081,u"Bandeirante","bandeirante",),
+           (4202099,u"Barra Bonita","barra bonita",),
+           (4202107,u"Barra Velha","barra velha",),
+           (4202131,u"Bela Vista do Toldo","bela vista do toldo",),
+           (4202156,u"Belmonte","belmonte",),
+           (4202206,u"Benedito Novo","benedito novo",),
+           (4202305,u"Biguaçu","biguacu",),
+           (4202404,u"Blumenau","blumenau",),
+           (4202438,u"Bocaina do Sul","bocaina do sul",),
+           (4202503,u"Bom Jardim da Serra","bom jardim da serra",),
+           (4202578,u"Bom Jesus do Oeste","bom jesus do oeste",),
+           (4202537,u"Bom Jesus","bom jesus",),
+           (4202602,u"Bom Retiro","bom retiro",),
+           (4202453,u"Bombinhas","bombinhas",),
+           (4202701,u"Botuverá","botuvera",),
+           (4202800,u"Braço do Norte","braco do norte",),
+           (4202859,u"Braço do Trombudo","braco do trombudo",),
+           (4202875,u"Brunópolis","brunopolis",),
+           (4202909,u"Brusque","brusque",),
+           (4203006,u"Caçador","cacador",),
+           (4203105,u"Caibi","caibi",),
+           (4203154,u"Calmon","calmon",),
+           (4203204,u"Camboriú","camboriu",),
+           (4203303,u"Campo Alegre","campo alegre",),
+           (4203402,u"Campo Belo do Sul","campo belo do sul",),
+           (4203501,u"Campo Erê","campo ere",),
+           (4203600,u"Campos Novos","campos novos",),
+           (4203709,u"Canelinha","canelinha",),
+           (4203808,u"Canoinhas","canoinhas",),
+           (4203253,u"Capão Alto","capao alto",),
+           (4203907,u"Capinzal","capinzal",),
+           (4203956,u"Capivari de Baixo","capivari de baixo",),
+           (4204004,u"Catanduvas","catanduvas",),
+           (4204103,u"Caxambu do Sul","caxambu do sul",),
+           (4204152,u"Celso Ramos","celso ramos",),
+           (4204178,u"Cerro Negro","cerro negro",),
+           (4204194,u"Chapadão do Lageado","chapadao do lageado",),
+           (4204202,u"Chapecó","chapeco",),
+           (4204251,u"Cocal do Sul","cocal do sul",),
+           (4204301,u"Concórdia","concordia",),
+           (4204350,u"Cordilheira Alta","cordilheira alta",),
+           (4204400,u"Coronel Freitas","coronel freitas",),
+           (4204459,u"Coronel Martins","coronel martins",),
+           (4204558,u"Correia Pinto","correia pinto",),
+           (4204509,u"Corupá","corupa",),
+           (4204608,u"Criciúma","criciuma",),
+           (4204707,u"Cunha Porã","cunha pora",),
+           (4204756,u"Cunhataí","cunhatai",),
+           (4204806,u"Curitibanos","curitibanos",),
+           (4204905,u"Descanso","descanso",),
+           (4205001,u"Dionísio Cerqueira","dionisio cerqueira",),
+           (4205100,u"Dona Emma","dona emma",),
+           (4205159,u"Doutor Pedrinho","doutor pedrinho",),
+           (4205175,u"Entre Rios","entre rios",),
+           (4205191,u"Ermo","ermo",),
+           (4205209,u"Erval Velho","erval velho",),
+           (4205308,u"Faxinal dos Guedes","faxinal dos guedes",),
+           (4205357,u"Flor do Sertão","flor do sertao",),
+           (4205407,u"Florianópolis","florianopolis",),
+           (4205431,u"Formosa do Sul","formosa do sul",),
+           (4205456,u"Forquilhinha","forquilhinha",),
+           (4205506,u"Fraiburgo","fraiburgo",),
+           (4205555,u"Frei Rogério","frei rogerio",),
+           (4205605,u"Galvão","galvao",),
+           (4205704,u"Garopaba","garopaba",),
+           (4205803,u"Garuva","garuva",),
+           (4205902,u"Gaspar","gaspar",),
+           (4206009,u"Governador Celso Ramos","governador celso ramos",),
+           (4206108,u"Grão Pará","grao para",),
+           (4206207,u"Gravatal","gravatal",),
+           (4206306,u"Guabiruba","guabiruba",),
+           (4206405,u"Guaraciaba","guaraciaba",),
+           (4206504,u"Guaramirim","guaramirim",),
+           (4206603,u"Guarujá do Sul","guaruja do sul",),
+           (4206652,u"Guatambú","guatambu",),
+           (4206702,u"Herval d'Oeste","herval d'oeste",),
+           (4206751,u"Ibiam","ibiam",),
+           (4206801,u"Ibicaré","ibicare",),
+           (4206900,u"Ibirama","ibirama",),
+           (4207007,u"Içara","icara",),
+           (4207106,u"Ilhota","ilhota",),
+           (4207205,u"Imaruí","imarui",),
+           (4207304,u"Imbituba","imbituba",),
+           (4207403,u"Imbuia","imbuia",),
+           (4207502,u"Indaial","indaial",),
+           (4207577,u"Iomerê","iomere",),
+           (4207601,u"Ipira","ipira",),
+           (4207650,u"Iporã do Oeste","ipora do oeste",),
+           (4207684,u"Ipuaçu","ipuacu",),
+           (4207700,u"Ipumirim","ipumirim",),
+           (4207759,u"Iraceminha","iraceminha",),
+           (4207809,u"Irani","irani",),
+           (4207858,u"Irati","irati",),
+           (4207908,u"Irineópolis","irineopolis",),
+           (4208005,u"Itá","ita",),
+           (4208104,u"Itaiópolis","itaiopolis",),
+           (4208203,u"Itajaí","itajai",),
+           (4208302,u"Itapema","itapema",),
+           (4208401,u"Itapiranga","itapiranga",),
+           (4208450,u"Itapoá","itapoa",),
+           (4208500,u"Ituporanga","ituporanga",),
+           (4208609,u"Jaborá","jabora",),
+           (4208708,u"Jacinto Machado","jacinto machado",),
+           (4208807,u"Jaguaruna","jaguaruna",),
+           (4208906,u"Jaraguá do Sul","jaragua do sul",),
+           (4208955,u"Jardinópolis","jardinopolis",),
+           (4209003,u"Joaçaba","joacaba",),
+           (4209102,u"Joinville","joinville",),
+           (4209151,u"José Boiteux","jose boiteux",),
+           (4209177,u"Jupiá","jupia",),
+           (4209201,u"Lacerdópolis","lacerdopolis",),
+           (4209300,u"Lages","lages",),
+           (4209409,u"Laguna","laguna",),
+           (4209458,u"Lajeado Grande","lajeado grande",),
+           (4209508,u"Laurentino","laurentino",),
+           (4209607,u"Lauro Muller","lauro muller",),
+           (4209706,u"Lebon Régis","lebon regis",),
+           (4209805,u"Leoberto Leal","leoberto leal",),
+           (4209854,u"Lindóia do Sul","lindoia do sul",),
+           (4209904,u"Lontras","lontras",),
+           (4210001,u"Luiz Alves","luiz alves",),
+           (4210035,u"Luzerna","luzerna",),
+           (4210050,u"Macieira","macieira",),
+           (4210100,u"Mafra","mafra",),
+           (4210209,u"Major Gercino","major gercino",),
+           (4210308,u"Major Vieira","major vieira",),
+           (4210407,u"Maracajá","maracaja",),
+           (4210506,u"Maravilha","maravilha",),
+           (4210555,u"Marema","marema",),
+           (4210605,u"Massaranduba","massaranduba",),
+           (4210704,u"Matos Costa","matos costa",),
+           (4210803,u"Meleiro","meleiro",),
+           (4210852,u"Mirim Doce","mirim doce",),
+           (4210902,u"Modelo","modelo",),
+           (4211009,u"Mondaí","mondai",),
+           (4211058,u"Monte Carlo","monte carlo",),
+           (4211108,u"Monte Castelo","monte castelo",),
+           (4211207,u"Morro da Fumaça","morro da fumaca",),
+           (4211256,u"Morro Grande","morro grande",),
+           (4211306,u"Navegantes","navegantes",),
+           (4211405,u"Nova Erechim","nova erechim",),
+           (4211454,u"Nova Itaberaba","nova itaberaba",),
+           (4211504,u"Nova Trento","nova trento",),
+           (4211603,u"Nova Veneza","nova veneza",),
+           (4211652,u"Novo Horizonte","novo horizonte",),
+           (4211702,u"Orleans","orleans",),
+           (4211751,u"Otacílio Costa","otacilio costa",),
+           (4211850,u"Ouro Verde","ouro verde",),
+           (4211801,u"Ouro","ouro",),
+           (4211876,u"Paial","paial",),
+           (4211892,u"Painel","painel",),
+           (4211900,u"Palhoça","palhoca",),
+           (4212007,u"Palma Sola","palma sola",),
+           (4212056,u"Palmeira","palmeira",),
+           (4212106,u"Palmitos","palmitos",),
+           (4212205,u"Papanduva","papanduva",),
+           (4212239,u"Paraíso","paraiso",),
+           (4212254,u"Passo de Torres","passo de torres",),
+           (4212270,u"Passos Maia","passos maia",),
+           (4212304,u"Paulo Lopes","paulo lopes",),
+           (4212403,u"Pedras Grandes","pedras grandes",),
+           (4212502,u"Penha","penha",),
+           (4212601,u"Peritiba","peritiba",),
+           (4212700,u"Petrolândia","petrolandia",),
+           (4212908,u"Pinhalzinho","pinhalzinho",),
+           (4213005,u"Pinheiro Preto","pinheiro preto",),
+           (4213104,u"Piratuba","piratuba",),
+           (4213153,u"Planalto Alegre","planalto alegre",),
+           (4213203,u"Pomerode","pomerode",),
+           (4213351,u"Ponte Alta do Norte","ponte alta do norte",),
+           (4213302,u"Ponte Alta","ponte alta",),
+           (4213401,u"Ponte Serrada","ponte serrada",),
+           (4213500,u"Porto Belo","porto belo",),
+           (4213609,u"Porto União","porto uniao",),
+           (4213708,u"Pouso Redondo","pouso redondo",),
+           (4213807,u"Praia Grande","praia grande",),
+           (4213906,u"Presidente Castello Branco","presidente castello branco",),
+           (4214003,u"Presidente Getúlio","presidente getulio",),
+           (4214102,u"Presidente Nereu","presidente nereu",),
+           (4214151,u"Princesa","princesa",),
+           (4214201,u"Quilombo","quilombo",),
+           (4214300,u"Rancho Queimado","rancho queimado",),
+           (4214409,u"Rio das Antas","rio das antas",),
+           (4214508,u"Rio do Campo","rio do campo",),
+           (4214607,u"Rio do Oeste","rio do oeste",),
+           (4214805,u"Rio do Sul","rio do sul",),
+           (4214706,u"Rio dos Cedros","rio dos cedros",),
+           (4214904,u"Rio Fortuna","rio fortuna",),
+           (4215000,u"Rio Negrinho","rio negrinho",),
+           (4215059,u"Rio Rufino","rio rufino",),
+           (4215075,u"Riqueza","riqueza",),
+           (4215109,u"Rodeio","rodeio",),
+           (4215208,u"Romelândia","romelandia",),
+           (4215307,u"Salete","salete",),
+           (4215356,u"Saltinho","saltinho",),
+           (4215406,u"Salto Veloso","salto veloso",),
+           (4215455,u"Sangão","sangao",),
+           (4215505,u"Santa Cecília","santa cecilia",),
+           (4215554,u"Santa Helena","santa helena",),
+           (4215604,u"Santa Rosa de Lima","santa rosa de lima",),
+           (4215653,u"Santa Rosa do Sul","santa rosa do sul",),
+           (4215687,u"Santa Terezinha do Progresso","santa terezinha do progresso",),
+           (4215679,u"Santa Terezinha","santa terezinha",),
+           (4215695,u"Santiago do Sul","santiago do sul",),
+           (4215703,u"Santo Amaro da Imperatriz","santo amaro da imperatriz",),
+           (4215802,u"São Bento do Sul","sao bento do sul",),
+           (4215752,u"São Bernardino","sao bernardino",),
+           (4215901,u"São Bonifácio","sao bonifacio",),
+           (4216008,u"São Carlos","sao carlos",),
+           (4216057,u"São Cristovão do Sul","sao cristovao do sul",),
+           (4216107,u"São Domingos","sao domingos",),
+           (4216206,u"São Francisco do Sul","sao francisco do sul",),
+           (4216305,u"São João Batista","sao joao batista",),
+           (4216354,u"São João do Itaperiú","sao joao do itaperiu",),
+           (4216255,u"São João do Oeste","sao joao do oeste",),
+           (4216404,u"São João do Sul","sao joao do sul",),
+           (4216503,u"São Joaquim","sao joaquim",),
+           (4216701,u"São José do Cedro","sao jose do cedro",),
+           (4216800,u"São José do Cerrito","sao jose do cerrito",),
+           (4216602,u"São José","sao jose",),
+           (4216909,u"São Lourenço do Oeste","sao lourenco do oeste",),
+           (4217006,u"São Ludgero","sao ludgero",),
+           (4217105,u"São Martinho","sao martinho",),
+           (4217154,u"São Miguel da Boa Vista","sao miguel da boa vista",),
+           (4217204,u"São Miguel do Oeste","sao miguel do oeste",),
+           (4217253,u"São Pedro de Alcântara","sao pedro de alcantara",),
+           (4217303,u"Saudades","saudades",),
+           (4217402,u"Schroeder","schroeder",),
+           (4217501,u"Seara","seara",),
+           (4217550,u"Serra Alta","serra alta",),
+           (4217600,u"Siderópolis","sideropolis",),
+           (4217709,u"Sombrio","sombrio",),
+           (4217758,u"Sul Brasil","sul brasil",),
+           (4217808,u"Taió","taio",),
+           (4217907,u"Tangará","tangara",),
+           (4217956,u"Tigrinhos","tigrinhos",),
+           (4218004,u"Tijucas","tijucas",),
+           (4218103,u"Timbé do Sul","timbe do sul",),
+           (4218251,u"Timbó Grande","timbo grande",),
+           (4218202,u"Timbó","timbo",),
+           (4218301,u"Três Barras","tres barras",),
+           (4218350,u"Treviso","treviso",),
+           (4218400,u"Treze de Maio","treze de maio",),
+           (4218509,u"Treze Tílias","treze tilias",),
+           (4218608,u"Trombudo Central","trombudo central",),
+           (4218707,u"Tubarão","tubarao",),
+           (4218756,u"Tunápolis","tunapolis",),
+           (4218806,u"Turvo","turvo",),
+           (4218855,u"União do Oeste","uniao do oeste",),
+           (4218905,u"Urubici","urubici",),
+           (4218954,u"Urupema","urupema",),
+           (4219002,u"Urussanga","urussanga",),
+           (4219101,u"Vargeão","vargeao",),
+           (4219176,u"Vargem Bonita","vargem bonita",),
+           (4219150,u"Vargem","vargem",),
+           (4219200,u"Vidal Ramos","vidal ramos",),
+           (4219309,u"Videira","videira",),
+           (4219358,u"Vitor Meireles","vitor meireles",),
+           (4219408,u"Witmarsum","witmarsum",),
+           (4219507,u"Xanxerê","xanxere",),
+           (4219606,u"Xavantina","xavantina",),
+           (4219705,u"Xaxim","xaxim",),
+           (4219853,u"Zortéa","zortea",),
+         ],
+    u"SE":[(2800100,u"Amparo de São Francisco","amparo de sao francisco",),
+           (2800209,u"Aquidabã","aquidaba",),
+           (2800308,u"Aracaju","aracaju",),
+           (2800407,u"Arauá","araua",),
+           (2800506,u"Areia Branca","areia branca",),
+           (2800605,u"Barra dos Coqueiros","barra dos coqueiros",),
+           (2800670,u"Boquim","boquim",),
+           (2800704,u"Brejo Grande","brejo grande",),
+           (2801009,u"Campo do Brito","campo do brito",),
+           (2801108,u"Canhoba","canhoba",),
+           (2801207,u"Canindé de São Francisco","caninde de sao francisco",),
+           (2801306,u"Capela","capela",),
+           (2801405,u"Carira","carira",),
+           (2801504,u"Carmópolis","carmopolis",),
+           (2801603,u"Cedro de São João","cedro de sao joao",),
+           (2801702,u"Cristinápolis","cristinapolis",),
+           (2801900,u"Cumbe","cumbe",),
+           (2802007,u"Divina Pastora","divina pastora",),
+           (2802106,u"Estância","estancia",),
+           (2802205,u"Feira Nova","feira nova",),
+           (2802304,u"Frei Paulo","frei paulo",),
+           (2802403,u"Gararu","gararu",),
+           (2802502,u"General Maynard","general maynard",),
+           (2802601,u"Gracho Cardoso","gracho cardoso",),
+           (2802700,u"Ilha das Flores","ilha das flores",),
+           (2802809,u"Indiaroba","indiaroba",),
+           (2802908,u"Itabaiana","itabaiana",),
+           (2803005,u"Itabaianinha","itabaianinha",),
+           (2803104,u"Itabi","itabi",),
+           (2803203,u"Itaporanga d'Ajuda","itaporanga d'ajuda",),
+           (2803302,u"Japaratuba","japaratuba",),
+           (2803401,u"Japoatã","japoata",),
+           (2803500,u"Lagarto","lagarto",),
+           (2803609,u"Laranjeiras","laranjeiras",),
+           (2803708,u"Macambira","macambira",),
+           (2803807,u"Malhada dos Bois","malhada dos bois",),
+           (2803906,u"Malhador","malhador",),
+           (2804003,u"Maruim","maruim",),
+           (2804102,u"Moita Bonita","moita bonita",),
+           (2804201,u"Monte Alegre de Sergipe","monte alegre de sergipe",),
+           (2804300,u"Muribeca","muribeca",),
+           (2804409,u"Neópolis","neopolis",),
+           (2804458,u"Nossa Senhora Aparecida","nossa senhora aparecida",),
+           (2804508,u"Nossa Senhora da Glória","nossa senhora da gloria",),
+           (2804607,u"Nossa Senhora das Dores","nossa senhora das dores",),
+           (2804706,u"Nossa Senhora de Lourdes","nossa senhora de lourdes",),
+           (2804805,u"Nossa Senhora do Socorro","nossa senhora do socorro",),
+           (2804904,u"Pacatuba","pacatuba",),
+           (2805000,u"Pedra Mole","pedra mole",),
+           (2805109,u"Pedrinhas","pedrinhas",),
+           (2805208,u"Pinhão","pinhao",),
+           (2805307,u"Pirambu","pirambu",),
+           (2805406,u"Poço Redondo","poco redondo",),
+           (2805505,u"Poço Verde","poco verde",),
+           (2805604,u"Porto da Folha","porto da folha",),
+           (2805703,u"Propriá","propria",),
+           (2805802,u"Riachão do Dantas","riachao do dantas",),
+           (2805901,u"Riachuelo","riachuelo",),
+           (2806008,u"Ribeirópolis","ribeiropolis",),
+           (2806107,u"Rosário do Catete","rosario do catete",),
+           (2806206,u"Salgado","salgado",),
+           (2806305,u"Santa Luzia do Itanhy","santa luzia do itanhy",),
+           (2806503,u"Santa Rosa de Lima","santa rosa de lima",),
+           (2806404,u"Santana do São Francisco","santana do sao francisco",),
+           (2806602,u"Santo Amaro das Brotas","santo amaro das brotas",),
+           (2806701,u"São Cristóvão","sao cristovao",),
+           (2806800,u"São Domingos","sao domingos",),
+           (2806909,u"São Francisco","sao francisco",),
+           (2807006,u"São Miguel do Aleixo","sao miguel do aleixo",),
+           (2807105,u"Simão Dias","simao dias",),
+           (2807204,u"Siriri","siriri",),
+           (2807303,u"Telha","telha",),
+           (2807402,u"Tobias Barreto","tobias barreto",),
+           (2807501,u"Tomar do Geru","tomar do geru",),
+           (2807600,u"Umbaúba","umbauba",),
+         ],
+    u"SP":[(3500105,u"Adamantina","adamantina",),
+           (3500204,u"Adolfo","adolfo",),
+           (3500303,u"Aguaí","aguai",),
+           (3500402,u"Águas da Prata","aguas da prata",),
+           (3500501,u"Águas de Lindóia","aguas de lindoia",),
+           (3500550,u"Águas de Santa Bárbara","aguas de santa barbara",),
+           (3500600,u"Águas de São Pedro","aguas de sao pedro",),
+           (3500709,u"Agudos","agudos",),
+           (3500758,u"Alambari","alambari",),
+           (3500808,u"Alfredo Marcondes","alfredo marcondes",),
+           (3500907,u"Altair","altair",),
+           (3501004,u"Altinópolis","altinopolis",),
+           (3501103,u"Alto Alegre","alto alegre",),
+           (3501152,u"Alumínio","aluminio",),
+           (3501202,u"Álvares Florence","alvares florence",),
+           (3501301,u"Álvares Machado","alvares machado",),
+           (3501400,u"Álvaro de Carvalho","alvaro de carvalho",),
+           (3501509,u"Alvinlândia","alvinlandia",),
+           (3501608,u"Americana","americana",),
+           (3501707,u"Américo Brasiliense","americo brasiliense",),
+           (3501806,u"Américo de Campos","americo de campos",),
+           (3501905,u"Amparo","amparo",),
+           (3502002,u"Analândia","analandia",),
+           (3502101,u"Andradina","andradina",),
+           (3502200,u"Angatuba","angatuba",),
+           (3502309,u"Anhembi","anhembi",),
+           (3502408,u"Anhumas","anhumas",),
+           (3502606,u"Aparecida d'Oeste","aparecida d'oeste",),
+           (3502507,u"Aparecida","aparecida",),
+           (3502705,u"Apiaí","apiai",),
+           (3502754,u"Araçariguama","aracariguama",),
+           (3502804,u"Araçatuba","aracatuba",),
+           (3502903,u"Araçoiaba da Serra","aracoiaba da serra",),
+           (3503000,u"Aramina","aramina",),
+           (3503109,u"Arandu","arandu",),
+           (3503158,u"Arapeí","arapei",),
+           (3503208,u"Araraquara","araraquara",),
+           (3503307,u"Araras","araras",),
+           (3503356,u"Arco-Íris","arco-iris",),
+           (3503406,u"Arealva","arealva",),
+           (3503505,u"Areias","areias",),
+           (3503604,u"Areiópolis","areiopolis",),
+           (3503703,u"Ariranha","ariranha",),
+           (3503802,u"Artur Nogueira","artur nogueira",),
+           (3503901,u"Arujá","aruja",),
+           (3503950,u"Aspásia","aspasia",),
+           (3504008,u"Assis","assis",),
+           (3504107,u"Atibaia","atibaia",),
+           (3504206,u"Auriflama","auriflama",),
+           (3504305,u"Avaí","avai",),
+           (3504404,u"Avanhandava","avanhandava",),
+           (3504503,u"Avaré","avare",),
+           (3504602,u"Bady Bassitt","bady bassitt",),
+           (3504701,u"Balbinos","balbinos",),
+           (3504800,u"Bálsamo","balsamo",),
+           (3504909,u"Bananal","bananal",),
+           (3505005,u"Barão de Antonina","barao de antonina",),
+           (3505104,u"Barbosa","barbosa",),
+           (3505203,u"Bariri","bariri",),
+           (3505302,u"Barra Bonita","barra bonita",),
+           (3505351,u"Barra do Chapéu","barra do chapeu",),
+           (3505401,u"Barra do Turvo","barra do turvo",),
+           (3505500,u"Barretos","barretos",),
+           (3505609,u"Barrinha","barrinha",),
+           (3505708,u"Barueri","barueri",),
+           (3505807,u"Bastos","bastos",),
+           (3505906,u"Batatais","batatais",),
+           (3506003,u"Bauru","bauru",),
+           (3506102,u"Bebedouro","bebedouro",),
+           (3506201,u"Bento de Abreu","bento de abreu",),
+           (3506300,u"Bernardino de Campos","bernardino de campos",),
+           (3506359,u"Bertioga","bertioga",),
+           (3506409,u"Bilac","bilac",),
+           (3506508,u"Birigui","birigui",),
+           (3506607,u"Biritiba-Mirim","biritiba-mirim",),
+           (3506706,u"Boa Esperança do Sul","boa esperanca do sul",),
+           (3506805,u"Bocaina","bocaina",),
+           (3506904,u"Bofete","bofete",),
+           (3507001,u"Boituva","boituva",),
+           (3507100,u"Bom Jesus dos Perdões","bom jesus dos perdoes",),
+           (3507159,u"Bom Sucesso de Itararé","bom sucesso de itarare",),
+           (3507209,u"Borá","bora",),
+           (3507308,u"Boracéia","boraceia",),
+           (3507407,u"Borborema","borborema",),
+           (3507456,u"Borebi","borebi",),
+           (3507506,u"Botucatu","botucatu",),
+           (3507605,u"Bragança Paulista","braganca paulista",),
+           (3507704,u"Braúna","brauna",),
+           (3507753,u"Brejo Alegre","brejo alegre",),
+           (3507803,u"Brodowski","brodowski",),
+           (3507902,u"Brotas","brotas",),
+           (3508009,u"Buri","buri",),
+           (3508108,u"Buritama","buritama",),
+           (3508207,u"Buritizal","buritizal",),
+           (3508306,u"Cabrália Paulista","cabralia paulista",),
+           (3508405,u"Cabreúva","cabreuva",),
+           (3508504,u"Caçapava","cacapava",),
+           (3508603,u"Cachoeira Paulista","cachoeira paulista",),
+           (3508702,u"Caconde","caconde",),
+           (3508801,u"Cafelândia","cafelandia",),
+           (3508900,u"Caiabu","caiabu",),
+           (3509007,u"Caieiras","caieiras",),
+           (3509106,u"Caiuá","caiua",),
+           (3509205,u"Cajamar","cajamar",),
+           (3509254,u"Cajati","cajati",),
+           (3509304,u"Cajobi","cajobi",),
+           (3509403,u"Cajuru","cajuru",),
+           (3509452,u"Campina do Monte Alegre","campina do monte alegre",),
+           (3509502,u"Campinas","campinas",),
+           (3509601,u"Campo Limpo Paulista","campo limpo paulista",),
+           (3509700,u"Campos do Jordão","campos do jordao",),
+           (3509809,u"Campos Novos Paulista","campos novos paulista",),
+           (3509908,u"Cananéia","cananeia",),
+           (3509957,u"Canas","canas",),
+           (3510005,u"Cândido Mota","candido mota",),
+           (3510104,u"Cândido Rodrigues","candido rodrigues",),
+           (3510153,u"Canitar","canitar",),
+           (3510203,u"Capão Bonito","capao bonito",),
+           (3510302,u"Capela do Alto","capela do alto",),
+           (3510401,u"Capivari","capivari",),
+           (3510500,u"Caraguatatuba","caraguatatuba",),
+           (3510609,u"Carapicuíba","carapicuiba",),
+           (3510708,u"Cardoso","cardoso",),
+           (3510807,u"Casa Branca","casa branca",),
+           (3510906,u"Cássia dos Coqueiros","cassia dos coqueiros",),
+           (3511003,u"Castilho","castilho",),
+           (3511102,u"Catanduva","catanduva",),
+           (3511201,u"Catiguá","catigua",),
+           (3511300,u"Cedral","cedral",),
+           (3511409,u"Cerqueira César","cerqueira cesar",),
+           (3511508,u"Cerquilho","cerquilho",),
+           (3511607,u"Cesário Lange","cesario lange",),
+           (3511706,u"Charqueada","charqueada",),
+           (3557204,u"Chavantes","chavantes",),
+           (3511904,u"Clementina","clementina",),
+           (3512001,u"Colina","colina",),
+           (3512100,u"Colômbia","colombia",),
+           (3512209,u"Conchal","conchal",),
+           (3512308,u"Conchas","conchas",),
+           (3512407,u"Cordeirópolis","cordeiropolis",),
+           (3512506,u"Coroados","coroados",),
+           (3512605,u"Coronel Macedo","coronel macedo",),
+           (3512704,u"Corumbataí","corumbatai",),
+           (3512803,u"Cosmópolis","cosmopolis",),
+           (3512902,u"Cosmorama","cosmorama",),
+           (3513009,u"Cotia","cotia",),
+           (3513108,u"Cravinhos","cravinhos",),
+           (3513207,u"Cristais Paulista","cristais paulista",),
+           (3513306,u"Cruzália","cruzalia",),
+           (3513405,u"Cruzeiro","cruzeiro",),
+           (3513504,u"Cubatão","cubatao",),
+           (3513603,u"Cunha","cunha",),
+           (3513702,u"Descalvado","descalvado",),
+           (3513801,u"Diadema","diadema",),
+           (3513850,u"Dirce Reis","dirce reis",),
+           (3513900,u"Divinolândia","divinolandia",),
+           (3514007,u"Dobrada","dobrada",),
+           (3514106,u"Dois Córregos","dois corregos",),
+           (3514205,u"Dolcinópolis","dolcinopolis",),
+           (3514304,u"Dourado","dourado",),
+           (3514403,u"Dracena","dracena",),
+           (3514502,u"Duartina","duartina",),
+           (3514601,u"Dumont","dumont",),
+           (3514700,u"Echaporã","echapora",),
+           (3514809,u"Eldorado","eldorado",),
+           (3514908,u"Elias Fausto","elias fausto",),
+           (3514924,u"Elisiário","elisiario",),
+           (3514957,u"Embaúba","embauba",),
+           (3515004,u"Embu","embu",),
+           (3515103,u"Embu-Guaçu","embu-guacu",),
+           (3515129,u"Emilianópolis","emilianopolis",),
+           (3515152,u"Engenheiro Coelho","engenheiro coelho",),
+           (3515186,u"Espírito Santo do Pinhal","espirito santo do pinhal",),
+           (3515194,u"Espírito Santo do Turvo","espirito santo do turvo",),
+           (3557303,u"Estiva Gerbi","estiva gerbi",),
+           (3515202,u"Estrela d'Oeste","estrela d'oeste",),
+           (3515301,u"Estrela do Norte","estrela do norte",),
+           (3515350,u"Euclides da Cunha Paulista","euclides da cunha paulista",),
+           (3515400,u"Fartura","fartura",),
+           (3515608,u"Fernando Prestes","fernando prestes",),
+           (3515509,u"Fernandópolis","fernandopolis",),
+           (3515657,u"Fernão","fernao",),
+           (3515707,u"Ferraz de Vasconcelos","ferraz de vasconcelos",),
+           (3515806,u"Flora Rica","flora rica",),
+           (3515905,u"Floreal","floreal",),
+           (3516002,u"Flórida Paulista","florida paulista",),
+           (3516101,u"Florínia","florinia",),
+           (3516200,u"Franca","franca",),
+           (3516309,u"Francisco Morato","francisco morato",),
+           (3516408,u"Franco da Rocha","franco da rocha",),
+           (3516507,u"Gabriel Monteiro","gabriel monteiro",),
+           (3516606,u"Gália","galia",),
+           (3516705,u"Garça","garca",),
+           (3516804,u"Gastão Vidigal","gastao vidigal",),
+           (3516853,u"Gavião Peixoto","gaviao peixoto",),
+           (3516903,u"General Salgado","general salgado",),
+           (3517000,u"Getulina","getulina",),
+           (3517109,u"Glicério","glicerio",),
+           (3517208,u"Guaiçara","guaicara",),
+           (3517307,u"Guaimbê","guaimbe",),
+           (3517406,u"Guaíra","guaira",),
+           (3517505,u"Guapiaçu","guapiacu",),
+           (3517604,u"Guapiara","guapiara",),
+           (3517703,u"Guará","guara",),
+           (3517802,u"Guaraçaí","guaracai",),
+           (3517901,u"Guaraci","guaraci",),
+           (3518008,u"Guarani d'Oeste","guarani d'oeste",),
+           (3518107,u"Guarantã","guaranta",),
+           (3518206,u"Guararapes","guararapes",),
+           (3518305,u"Guararema","guararema",),
+           (3518404,u"Guaratinguetá","guaratingueta",),
+           (3518503,u"Guareí","guarei",),
+           (3518602,u"Guariba","guariba",),
+           (3518701,u"Guarujá","guaruja",),
+           (3518800,u"Guarulhos","guarulhos",),
+           (3518859,u"Guatapará","guatapara",),
+           (3518909,u"Guzolândia","guzolandia",),
+           (3519006,u"Herculândia","herculandia",),
+           (3519055,u"Holambra","holambra",),
+           (3519071,u"Hortolândia","hortolandia",),
+           (3519105,u"Iacanga","iacanga",),
+           (3519204,u"Iacri","iacri",),
+           (3519253,u"Iaras","iaras",),
+           (3519303,u"Ibaté","ibate",),
+           (3519402,u"Ibirá","ibira",),
+           (3519501,u"Ibirarema","ibirarema",),
+           (3519600,u"Ibitinga","ibitinga",),
+           (3519709,u"Ibiúna","ibiuna",),
+           (3519808,u"Icém","icem",),
+           (3519907,u"Iepê","iepe",),
+           (3520004,u"Igaraçu do Tietê","igaracu do tiete",),
+           (3520103,u"Igarapava","igarapava",),
+           (3520202,u"Igaratá","igarata",),
+           (3520301,u"Iguape","iguape",),
+           (3520426,u"Ilha Comprida","ilha comprida",),
+           (3520442,u"Ilha Solteira","ilha solteira",),
+           (3520400,u"Ilhabela","ilhabela",),
+           (3520509,u"Indaiatuba","indaiatuba",),
+           (3520608,u"Indiana","indiana",),
+           (3520707,u"Indiaporã","indiapora",),
+           (3520806,u"Inúbia Paulista","inubia paulista",),
+           (3520905,u"Ipaussu","ipaussu",),
+           (3521002,u"Iperó","ipero",),
+           (3521101,u"Ipeúna","ipeuna",),
+           (3521150,u"Ipiguá","ipigua",),
+           (3521200,u"Iporanga","iporanga",),
+           (3521309,u"Ipuã","ipua",),
+           (3521408,u"Iracemápolis","iracemapolis",),
+           (3521507,u"Irapuã","irapua",),
+           (3521606,u"Irapuru","irapuru",),
+           (3521705,u"Itaberá","itabera",),
+           (3521804,u"Itaí","itai",),
+           (3521903,u"Itajobi","itajobi",),
+           (3522000,u"Itaju","itaju",),
+           (3522109,u"Itanhaém","itanhaem",),
+           (3522158,u"Itaóca","itaoca",),
+           (3522208,u"Itapecerica da Serra","itapecerica da serra",),
+           (3522307,u"Itapetininga","itapetininga",),
+           (3522406,u"Itapeva","itapeva",),
+           (3522505,u"Itapevi","itapevi",),
+           (3522604,u"Itapira","itapira",),
+           (3522653,u"Itapirapuã Paulista","itapirapua paulista",),
+           (3522703,u"Itápolis","itapolis",),
+           (3522802,u"Itaporanga","itaporanga",),
+           (3522901,u"Itapuí","itapui",),
+           (3523008,u"Itapura","itapura",),
+           (3523107,u"Itaquaquecetuba","itaquaquecetuba",),
+           (3523206,u"Itararé","itarare",),
+           (3523305,u"Itariri","itariri",),
+           (3523404,u"Itatiba","itatiba",),
+           (3523503,u"Itatinga","itatinga",),
+           (3523602,u"Itirapina","itirapina",),
+           (3523701,u"Itirapuã","itirapua",),
+           (3523800,u"Itobi","itobi",),
+           (3523909,u"Itu","itu",),
+           (3524006,u"Itupeva","itupeva",),
+           (3524105,u"Ituverava","ituverava",),
+           (3524204,u"Jaborandi","jaborandi",),
+           (3524303,u"Jaboticabal","jaboticabal",),
+           (3524402,u"Jacareí","jacarei",),
+           (3524501,u"Jaci","jaci",),
+           (3524600,u"Jacupiranga","jacupiranga",),
+           (3524709,u"Jaguariúna","jaguariuna",),
+           (3524808,u"Jales","jales",),
+           (3524907,u"Jambeiro","jambeiro",),
+           (3525003,u"Jandira","jandira",),
+           (3525102,u"Jardinópolis","jardinopolis",),
+           (3525201,u"Jarinu","jarinu",),
+           (3525300,u"Jaú","jau",),
+           (3525409,u"Jeriquara","jeriquara",),
+           (3525508,u"Joanópolis","joanopolis",),
+           (3525607,u"João Ramalho","joao ramalho",),
+           (3525706,u"José Bonifácio","jose bonifacio",),
+           (3525805,u"Júlio Mesquita","julio mesquita",),
+           (3525854,u"Jumirim","jumirim",),
+           (3525904,u"Jundiaí","jundiai",),
+           (3526001,u"Junqueirópolis","junqueiropolis",),
+           (3526100,u"Juquiá","juquia",),
+           (3526209,u"Juquitiba","juquitiba",),
+           (3526308,u"Lagoinha","lagoinha",),
+           (3526407,u"Laranjal Paulista","laranjal paulista",),
+           (3526506,u"Lavínia","lavinia",),
+           (3526605,u"Lavrinhas","lavrinhas",),
+           (3526704,u"Leme","leme",),
+           (3526803,u"Lençóis Paulista","lencois paulista",),
+           (3526902,u"Limeira","limeira",),
+           (3527009,u"Lindóia","lindoia",),
+           (3527108,u"Lins","lins",),
+           (3527207,u"Lorena","lorena",),
+           (3527256,u"Lourdes","lourdes",),
+           (3527306,u"Louveira","louveira",),
+           (3527405,u"Lucélia","lucelia",),
+           (3527504,u"Lucianópolis","lucianopolis",),
+           (3527603,u"Luís Antônio","luis antonio",),
+           (3527702,u"Luiziânia","luiziania",),
+           (3527801,u"Lupércio","lupercio",),
+           (3527900,u"Lutécia","lutecia",),
+           (3528007,u"Macatuba","macatuba",),
+           (3528106,u"Macaubal","macaubal",),
+           (3528205,u"Macedônia","macedonia",),
+           (3528304,u"Magda","magda",),
+           (3528403,u"Mairinque","mairinque",),
+           (3528502,u"Mairiporã","mairipora",),
+           (3528601,u"Manduri","manduri",),
+           (3528700,u"Marabá Paulista","maraba paulista",),
+           (3528809,u"Maracaí","maracai",),
+           (3528858,u"Marapoama","marapoama",),
+           (3528908,u"Mariápolis","mariapolis",),
+           (3529005,u"Marília","marilia",),
+           (3529104,u"Marinópolis","marinopolis",),
+           (3529203,u"Martinópolis","martinopolis",),
+           (3529302,u"Matão","matao",),
+           (3529401,u"Mauá","maua",),
+           (3529500,u"Mendonça","mendonca",),
+           (3529609,u"Meridiano","meridiano",),
+           (3529658,u"Mesópolis","mesopolis",),
+           (3529708,u"Miguelópolis","miguelopolis",),
+           (3529807,u"Mineiros do Tietê","mineiros do tiete",),
+           (3530003,u"Mira Estrela","mira estrela",),
+           (3529906,u"Miracatu","miracatu",),
+           (3530102,u"Mirandópolis","mirandopolis",),
+           (3530201,u"Mirante do Paranapanema","mirante do paranapanema",),
+           (3530300,u"Mirassol","mirassol",),
+           (3530409,u"Mirassolândia","mirassolandia",),
+           (3530508,u"Mococa","mococa",),
+           (3530607,u"Mogi das Cruzes","mogi das cruzes",),
+           (3530706,u"Mogi Guaçu","mogi guacu",),
+           (3530805,u"Moji Mirim","moji mirim",),
+           (3530904,u"Mombuca","mombuca",),
+           (3531001,u"Monções","moncoes",),
+           (3531100,u"Mongaguá","mongagua",),
+           (3531209,u"Monte Alegre do Sul","monte alegre do sul",),
+           (3531308,u"Monte Alto","monte alto",),
+           (3531407,u"Monte Aprazível","monte aprazivel",),
+           (3531506,u"Monte Azul Paulista","monte azul paulista",),
+           (3531605,u"Monte Castelo","monte castelo",),
+           (3531803,u"Monte Mor","monte mor",),
+           (3531704,u"Monteiro Lobato","monteiro lobato",),
+           (3531902,u"Morro Agudo","morro agudo",),
+           (3532009,u"Morungaba","morungaba",),
+           (3532058,u"Motuca","motuca",),
+           (3532108,u"Murutinga do Sul","murutinga do sul",),
+           (3532157,u"Nantes","nantes",),
+           (3532207,u"Narandiba","narandiba",),
+           (3532306,u"Natividade da Serra","natividade da serra",),
+           (3532405,u"Nazaré Paulista","nazare paulista",),
+           (3532504,u"Neves Paulista","neves paulista",),
+           (3532603,u"Nhandeara","nhandeara",),
+           (3532702,u"Nipoã","nipoa",),
+           (3532801,u"Nova Aliança","nova alianca",),
+           (3532827,u"Nova Campina","nova campina",),
+           (3532843,u"Nova Canaã Paulista","nova canaa paulista",),
+           (3532868,u"Nova Castilho","nova castilho",),
+           (3532900,u"Nova Europa","nova europa",),
+           (3533007,u"Nova Granada","nova granada",),
+           (3533106,u"Nova Guataporanga","nova guataporanga",),
+           (3533205,u"Nova Independência","nova independencia",),
+           (3533304,u"Nova Luzitânia","nova luzitania",),
+           (3533403,u"Nova Odessa","nova odessa",),
+           (3533254,u"Novais","novais",),
+           (3533502,u"Novo Horizonte","novo horizonte",),
+           (3533601,u"Nuporanga","nuporanga",),
+           (3533700,u"Ocauçu","ocaucu",),
+           (3533809,u"Óleo","oleo",),
+           (3533908,u"Olímpia","olimpia",),
+           (3534005,u"Onda Verde","onda verde",),
+           (3534104,u"Oriente","oriente",),
+           (3534203,u"Orindiúva","orindiuva",),
+           (3534302,u"Orlândia","orlandia",),
+           (3534401,u"Osasco","osasco",),
+           (3534500,u"Oscar Bressane","oscar bressane",),
+           (3534609,u"Osvaldo Cruz","osvaldo cruz",),
+           (3534708,u"Ourinhos","ourinhos",),
+           (3534807,u"Ouro Verde","ouro verde",),
+           (3534757,u"Ouroeste","ouroeste",),
+           (3534906,u"Pacaembu","pacaembu",),
+           (3535002,u"Palestina","palestina",),
+           (3535101,u"Palmares Paulista","palmares paulista",),
+           (3535200,u"Palmeira d'Oeste","palmeira d'oeste",),
+           (3535309,u"Palmital","palmital",),
+           (3535408,u"Panorama","panorama",),
+           (3535507,u"Paraguaçu Paulista","paraguacu paulista",),
+           (3535606,u"Paraibuna","paraibuna",),
+           (3535705,u"Paraíso","paraiso",),
+           (3535804,u"Paranapanema","paranapanema",),
+           (3535903,u"Paranapuã","paranapua",),
+           (3536000,u"Parapuã","parapua",),
+           (3536109,u"Pardinho","pardinho",),
+           (3536208,u"Pariquera-Açu","pariquera-acu",),
+           (3536257,u"Parisi","parisi",),
+           (3536307,u"Patrocínio Paulista","patrocinio paulista",),
+           (3536406,u"Paulicéia","pauliceia",),
+           (3536505,u"Paulínia","paulinia",),
+           (3536570,u"Paulistânia","paulistania",),
+           (3536604,u"Paulo de Faria","paulo de faria",),
+           (3536703,u"Pederneiras","pederneiras",),
+           (3536802,u"Pedra Bela","pedra bela",),
+           (3536901,u"Pedranópolis","pedranopolis",),
+           (3537008,u"Pedregulho","pedregulho",),
+           (3537107,u"Pedreira","pedreira",),
+           (3537156,u"Pedrinhas Paulista","pedrinhas paulista",),
+           (3537206,u"Pedro de Toledo","pedro de toledo",),
+           (3537305,u"Penápolis","penapolis",),
+           (3537404,u"Pereira Barreto","pereira barreto",),
+           (3537503,u"Pereiras","pereiras",),
+           (3537602,u"Peruíbe","peruibe",),
+           (3537701,u"Piacatu","piacatu",),
+           (3537800,u"Piedade","piedade",),
+           (3537909,u"Pilar do Sul","pilar do sul",),
+           (3538006,u"Pindamonhangaba","pindamonhangaba",),
+           (3538105,u"Pindorama","pindorama",),
+           (3538204,u"Pinhalzinho","pinhalzinho",),
+           (3538303,u"Piquerobi","piquerobi",),
+           (3538501,u"Piquete","piquete",),
+           (3538600,u"Piracaia","piracaia",),
+           (3538709,u"Piracicaba","piracicaba",),
+           (3538808,u"Piraju","piraju",),
+           (3538907,u"Pirajuí","pirajui",),
+           (3539004,u"Pirangi","pirangi",),
+           (3539103,u"Pirapora do Bom Jesus","pirapora do bom jesus",),
+           (3539202,u"Pirapozinho","pirapozinho",),
+           (3539301,u"Pirassununga","pirassununga",),
+           (3539400,u"Piratininga","piratininga",),
+           (3539509,u"Pitangueiras","pitangueiras",),
+           (3539608,u"Planalto","planalto",),
+           (3539707,u"Platina","platina",),
+           (3539806,u"Poá","poa",),
+           (3539905,u"Poloni","poloni",),
+           (3540002,u"Pompéia","pompeia",),
+           (3540101,u"Pongaí","pongai",),
+           (3540200,u"Pontal","pontal",),
+           (3540259,u"Pontalinda","pontalinda",),
+           (3540309,u"Pontes Gestal","pontes gestal",),
+           (3540408,u"Populina","populina",),
+           (3540507,u"Porangaba","porangaba",),
+           (3540606,u"Porto Feliz","porto feliz",),
+           (3540705,u"Porto Ferreira","porto ferreira",),
+           (3540754,u"Potim","potim",),
+           (3540804,u"Potirendaba","potirendaba",),
+           (3540853,u"Pracinha","pracinha",),
+           (3540903,u"Pradópolis","pradopolis",),
+           (3541000,u"Praia Grande","praia grande",),
+           (3541059,u"Pratânia","pratania",),
+           (3541109,u"Presidente Alves","presidente alves",),
+           (3541208,u"Presidente Bernardes","presidente bernardes",),
+           (3541307,u"Presidente Epitácio","presidente epitacio",),
+           (3541406,u"Presidente Prudente","presidente prudente",),
+           (3541505,u"Presidente Venceslau","presidente venceslau",),
+           (3541604,u"Promissão","promissao",),
+           (3541653,u"Quadra","quadra",),
+           (3541703,u"Quatá","quata",),
+           (3541802,u"Queiroz","queiroz",),
+           (3541901,u"Queluz","queluz",),
+           (3542008,u"Quintana","quintana",),
+           (3542107,u"Rafard","rafard",),
+           (3542206,u"Rancharia","rancharia",),
+           (3542305,u"Redenção da Serra","redencao da serra",),
+           (3542404,u"Regente Feijó","regente feijo",),
+           (3542503,u"Reginópolis","reginopolis",),
+           (3542602,u"Registro","registro",),
+           (3542701,u"Restinga","restinga",),
+           (3542800,u"Ribeira","ribeira",),
+           (3542909,u"Ribeirão Bonito","ribeirao bonito",),
+           (3543006,u"Ribeirão Branco","ribeirao branco",),
+           (3543105,u"Ribeirão Corrente","ribeirao corrente",),
+           (3543204,u"Ribeirão do Sul","ribeirao do sul",),
+           (3543238,u"Ribeirão dos Índios","ribeirao dos indios",),
+           (3543253,u"Ribeirão Grande","ribeirao grande",),
+           (3543303,u"Ribeirão Pires","ribeirao pires",),
+           (3543402,u"Ribeirão Preto","ribeirao preto",),
+           (3543600,u"Rifaina","rifaina",),
+           (3543709,u"Rincão","rincao",),
+           (3543808,u"Rinópolis","rinopolis",),
+           (3543907,u"Rio Claro","rio claro",),
+           (3544004,u"Rio das Pedras","rio das pedras",),
+           (3544103,u"Rio Grande da Serra","rio grande da serra",),
+           (3544202,u"Riolândia","riolandia",),
+           (3543501,u"Riversul","riversul",),
+           (3544251,u"Rosana","rosana",),
+           (3544301,u"Roseira","roseira",),
+           (3544400,u"Rubiácea","rubiacea",),
+           (3544509,u"Rubinéia","rubineia",),
+           (3544608,u"Sabino","sabino",),
+           (3544707,u"Sagres","sagres",),
+           (3544905,u"Sales Oliveira","sales oliveira",),
+           (3544806,u"Sales","sales",),
+           (3545001,u"Salesópolis","salesopolis",),
+           (3545100,u"Salmourão","salmourao",),
+           (3545159,u"Saltinho","saltinho",),
+           (3545308,u"Salto de Pirapora","salto de pirapora",),
+           (3545407,u"Salto Grande","salto grande",),
+           (3545209,u"Salto","salto",),
+           (3545506,u"Sandovalina","sandovalina",),
+           (3545605,u"Santa Adélia","santa adelia",),
+           (3545704,u"Santa Albertina","santa albertina",),
+           (3545803,u"Santa Bárbara d'Oeste","santa barbara d'oeste",),
+           (3546009,u"Santa Branca","santa branca",),
+           (3546108,u"Santa Clara d'Oeste","santa clara d'oeste",),
+           (3546207,u"Santa Cruz da Conceição","santa cruz da conceicao",),
+           (3546256,u"Santa Cruz da Esperança","santa cruz da esperanca",),
+           (3546306,u"Santa Cruz das Palmeiras","santa cruz das palmeiras",),
+           (3546405,u"Santa Cruz do Rio Pardo","santa cruz do rio pardo",),
+           (3546504,u"Santa Ernestina","santa ernestina",),
+           (3546603,u"Santa Fé do Sul","santa fe do sul",),
+           (3546702,u"Santa Gertrudes","santa gertrudes",),
+           (3546801,u"Santa Isabel","santa isabel",),
+           (3546900,u"Santa Lúcia","santa lucia",),
+           (3547007,u"Santa Maria da Serra","santa maria da serra",),
+           (3547106,u"Santa Mercedes","santa mercedes",),
+           (3547403,u"Santa Rita d'Oeste","santa rita d'oeste",),
+           (3547502,u"Santa Rita do Passa Quatro","santa rita do passa quatro",),
+           (3547601,u"Santa Rosa de Viterbo","santa rosa de viterbo",),
+           (3547650,u"Santa Salete","santa salete",),
+           (3547205,u"Santana da Ponte Pensa","santana da ponte pensa",),
+           (3547304,u"Santana de Parnaíba","santana de parnaiba",),
+           (3547700,u"Santo Anastácio","santo anastacio",),
+           (3547809,u"Santo André","santo andre",),
+           (3547908,u"Santo Antônio da Alegria","santo antonio da alegria",),
+           (3548005,u"Santo Antônio de Posse","santo antonio de posse",),
+           (3548054,u"Santo Antônio do Aracanguá","santo antonio do aracangua",),
+           (3548104,u"Santo Antônio do Jardim","santo antonio do jardim",),
+           (3548203,u"Santo Antônio do Pinhal","santo antonio do pinhal",),
+           (3548302,u"Santo Expedito","santo expedito",),
+           (3548401,u"Santópolis do Aguapeí","santopolis do aguapei",),
+           (3548500,u"Santos","santos",),
+           (3548609,u"São Bento do Sapucaí","sao bento do sapucai",),
+           (3548708,u"São Bernardo do Campo","sao bernardo do campo",),
+           (3548807,u"São Caetano do Sul","sao caetano do sul",),
+           (3548906,u"São Carlos","sao carlos",),
+           (3549003,u"São Francisco","sao francisco",),
+           (3549102,u"São João da Boa Vista","sao joao da boa vista",),
+           (3549201,u"São João das Duas Pontes","sao joao das duas pontes",),
+           (3549250,u"São João de Iracema","sao joao de iracema",),
+           (3549300,u"São João do Pau d'Alho","sao joao do pau d'alho",),
+           (3549409,u"São Joaquim da Barra","sao joaquim da barra",),
+           (3549508,u"São José da Bela Vista","sao jose da bela vista",),
+           (3549607,u"São José do Barreiro","sao jose do barreiro",),
+           (3549706,u"São José do Rio Pardo","sao jose do rio pardo",),
+           (3549805,u"São José do Rio Preto","sao jose do rio preto",),
+           (3549904,u"São José dos Campos","sao jose dos campos",),
+           (3549953,u"São Lourenço da Serra","sao lourenco da serra",),
+           (3550001,u"São Luís do Paraitinga","sao luis do paraitinga",),
+           (3550100,u"São Manuel","sao manuel",),
+           (3550209,u"São Miguel Arcanjo","sao miguel arcanjo",),
+           (3550308,u"São Paulo","sao paulo",),
+           (3550506,u"São Pedro do Turvo","sao pedro do turvo",),
+           (3550407,u"São Pedro","sao pedro",),
+           (3550605,u"São Roque","sao roque",),
+           (3550803,u"São Sebastião da Grama","sao sebastiao da grama",),
+           (3550704,u"São Sebastião","sao sebastiao",),
+           (3550902,u"São Simão","sao simao",),
+           (3551009,u"São Vicente","sao vicente",),
+           (3551108,u"Sarapuí","sarapui",),
+           (3551207,u"Sarutaiá","sarutaia",),
+           (3551306,u"Sebastianópolis do Sul","sebastianopolis do sul",),
+           (3551405,u"Serra Azul","serra azul",),
+           (3551603,u"Serra Negra","serra negra",),
+           (3551504,u"Serrana","serrana",),
+           (3551702,u"Sertãozinho","sertaozinho",),
+           (3551801,u"Sete Barras","sete barras",),
+           (3551900,u"Severínia","severinia",),
+           (3552007,u"Silveiras","silveiras",),
+           (3552106,u"Socorro","socorro",),
+           (3552205,u"Sorocaba","sorocaba",),
+           (3552304,u"Sud Mennucci","sud mennucci",),
+           (3552403,u"Sumaré","sumare",),
+           (3552551,u"Suzanápolis","suzanapolis",),
+           (3552502,u"Suzano","suzano",),
+           (3552601,u"Tabapuã","tabapua",),
+           (3552700,u"Tabatinga","tabatinga",),
+           (3552809,u"Taboão da Serra","taboao da serra",),
+           (3552908,u"Taciba","taciba",),
+           (3553005,u"Taguaí","taguai",),
+           (3553104,u"Taiaçu","taiacu",),
+           (3553203,u"Taiúva","taiuva",),
+           (3553302,u"Tambaú","tambau",),
+           (3553401,u"Tanabi","tanabi",),
+           (3553500,u"Tapiraí","tapirai",),
+           (3553609,u"Tapiratiba","tapiratiba",),
+           (3553658,u"Taquaral","taquaral",),
+           (3553708,u"Taquaritinga","taquaritinga",),
+           (3553807,u"Taquarituba","taquarituba",),
+           (3553856,u"Taquarivaí","taquarivai",),
+           (3553906,u"Tarabai","tarabai",),
+           (3553955,u"Tarumã","taruma",),
+           (3554003,u"Tatuí","tatui",),
+           (3554102,u"Taubaté","taubate",),
+           (3554201,u"Tejupá","tejupa",),
+           (3554300,u"Teodoro Sampaio","teodoro sampaio",),
+           (3554409,u"Terra Roxa","terra roxa",),
+           (3554508,u"Tietê","tiete",),
+           (3554607,u"Timburi","timburi",),
+           (3554656,u"Torre de Pedra","torre de pedra",),
+           (3554706,u"Torrinha","torrinha",),
+           (3554755,u"Trabiju","trabiju",),
+           (3554805,u"Tremembé","tremembe",),
+           (3554904,u"Três Fronteiras","tres fronteiras",),
+           (3554953,u"Tuiuti","tuiuti",),
+           (3555000,u"Tupã","tupa",),
+           (3555109,u"Tupi Paulista","tupi paulista",),
+           (3555208,u"Turiúba","turiuba",),
+           (3555307,u"Turmalina","turmalina",),
+           (3555356,u"Ubarana","ubarana",),
+           (3555406,u"Ubatuba","ubatuba",),
+           (3555505,u"Ubirajara","ubirajara",),
+           (3555604,u"Uchoa","uchoa",),
+           (3555703,u"União Paulista","uniao paulista",),
+           (3555802,u"Urânia","urania",),
+           (3555901,u"Uru","uru",),
+           (3556008,u"Urupês","urupes",),
+           (3556107,u"Valentim Gentil","valentim gentil",),
+           (3556206,u"Valinhos","valinhos",),
+           (3556305,u"Valparaíso","valparaiso",),
+           (3556404,u"Vargem Grande do Sul","vargem grande do sul",),
+           (3556453,u"Vargem Grande Paulista","vargem grande paulista",),
+           (3556354,u"Vargem","vargem",),
+           (3556503,u"Várzea Paulista","varzea paulista",),
+           (3556602,u"Vera Cruz","vera cruz",),
+           (3556701,u"Vinhedo","vinhedo",),
+           (3556800,u"Viradouro","viradouro",),
+           (3556909,u"Vista Alegre do Alto","vista alegre do alto",),
+           (3556958,u"Vitória Brasil","vitoria brasil",),
+           (3557006,u"Votorantim","votorantim",),
+           (3557105,u"Votuporanga","votuporanga",),
+           (3557154,u"Zacarias","zacarias",),
+         ],
+    u"TO":[(1700251,u"Abreulândia","abreulandia",),
+           (1700301,u"Aguiarnópolis","aguiarnopolis",),
+           (1700350,u"Aliança do Tocantins","alianca do tocantins",),
+           (1700400,u"Almas","almas",),
+           (1700707,u"Alvorada","alvorada",),
+           (1701002,u"Ananás","ananas",),
+           (1701051,u"Angico","angico",),
+           (1701101,u"Aparecida do Rio Negro","aparecida do rio negro",),
+           (1701309,u"Aragominas","aragominas",),
+           (1701903,u"Araguacema","araguacema",),
+           (1702000,u"Araguaçu","araguacu",),
+           (1702109,u"Araguaína","araguaina",),
+           (1702158,u"Araguanã","araguana",),
+           (1702208,u"Araguatins","araguatins",),
+           (1702307,u"Arapoema","arapoema",),
+           (1702406,u"Arraias","arraias",),
+           (1702554,u"Augustinópolis","augustinopolis",),
+           (1702703,u"Aurora do Tocantins","aurora do tocantins",),
+           (1702901,u"Axixá do Tocantins","axixa do tocantins",),
+           (1703008,u"Babaçulândia","babaculandia",),
+           (1703057,u"Bandeirantes do Tocantins","bandeirantes do tocantins",),
+           (1703073,u"Barra do Ouro","barra do ouro",),
+           (1703107,u"Barrolândia","barrolandia",),
+           (1703206,u"Bernardo Sayão","bernardo sayao",),
+           (1703305,u"Bom Jesus do Tocantins","bom jesus do tocantins",),
+           (1703602,u"Brasilândia do Tocantins","brasilandia do tocantins",),
+           (1703701,u"Brejinho de Nazaré","brejinho de nazare",),
+           (1703800,u"Buriti do Tocantins","buriti do tocantins",),
+           (1703826,u"Cachoeirinha","cachoeirinha",),
+           (1703842,u"Campos Lindos","campos lindos",),
+           (1703867,u"Cariri do Tocantins","cariri do tocantins",),
+           (1703883,u"Carmolândia","carmolandia",),
+           (1703891,u"Carrasco Bonito","carrasco bonito",),
+           (1703909,u"Caseara","caseara",),
+           (1704105,u"Centenário","centenario",),
+           (1705102,u"Chapada da Natividade","chapada da natividade",),
+           (1704600,u"Chapada de Areia","chapada de areia",),
+           (1705508,u"Colinas do Tocantins","colinas do tocantins",),
+           (1716703,u"Colméia","colmeia",),
+           (1705557,u"Combinado","combinado",),
+           (1705607,u"Conceição do Tocantins","conceicao do tocantins",),
+           (1706001,u"Couto Magalhães","couto magalhaes",),
+           (1706100,u"Cristalândia","cristalandia",),
+           (1706258,u"Crixás do Tocantins","crixas do tocantins",),
+           (1706506,u"Darcinópolis","darcinopolis",),
+           (1707009,u"Dianópolis","dianopolis",),
+           (1707108,u"Divinópolis do Tocantins","divinopolis do tocantins",),
+           (1707207,u"Dois Irmãos do Tocantins","dois irmaos do tocantins",),
+           (1707306,u"Dueré","duere",),
+           (1707405,u"Esperantina","esperantina",),
+           (1707553,u"Fátima","fatima",),
+           (1707652,u"Figueirópolis","figueiropolis",),
+           (1707702,u"Filadélfia","filadelfia",),
+           (1708205,u"Formoso do Araguaia","formoso do araguaia",),
+           (1708254,u"Fortaleza do Tabocão","fortaleza do tabocao",),
+           (1708304,u"Goianorte","goianorte",),
+           (1709005,u"Goiatins","goiatins",),
+           (1709302,u"Guaraí","guarai",),
+           (1709500,u"Gurupi","gurupi",),
+           (1709807,u"Ipueiras","ipueiras",),
+           (1710508,u"Itacajá","itacaja",),
+           (1710706,u"Itaguatins","itaguatins",),
+           (1710904,u"Itapiratins","itapiratins",),
+           (1711100,u"Itaporã do Tocantins","itapora do tocantins",),
+           (1711506,u"Jaú do Tocantins","jau do tocantins",),
+           (1711803,u"Juarina","juarina",),
+           (1711902,u"Lagoa da Confusão","lagoa da confusao",),
+           (1711951,u"Lagoa do Tocantins","lagoa do tocantins",),
+           (1712009,u"Lajeado","lajeado",),
+           (1712157,u"Lavandeira","lavandeira",),
+           (1712405,u"Lizarda","lizarda",),
+           (1712454,u"Luzinópolis","luzinopolis",),
+           (1712504,u"Marianópolis do Tocantins","marianopolis do tocantins",),
+           (1712702,u"Mateiros","mateiros",),
+           (1712801,u"Maurilândia do Tocantins","maurilandia do tocantins",),
+           (1713205,u"Miracema do Tocantins","miracema do tocantins",),
+           (1713304,u"Miranorte","miranorte",),
+           (1713601,u"Monte do Carmo","monte do carmo",),
+           (1713700,u"Monte Santo do Tocantins","monte santo do tocantins",),
+           (1713957,u"Muricilândia","muricilandia",),
+           (1714203,u"Natividade","natividade",),
+           (1714302,u"Nazaré","nazare",),
+           (1714880,u"Nova Olinda","nova olinda",),
+           (1715002,u"Nova Rosalândia","nova rosalandia",),
+           (1715101,u"Novo Acordo","novo acordo",),
+           (1715150,u"Novo Alegre","novo alegre",),
+           (1715259,u"Novo Jardim","novo jardim",),
+           (1715507,u"Oliveira de Fátima","oliveira de fatima",),
+           (1721000,u"Palmas","palmas",),
+           (1715705,u"Palmeirante","palmeirante",),
+           (1713809,u"Palmeiras do Tocantins","palmeiras do tocantins",),
+           (1715754,u"Palmeirópolis","palmeiropolis",),
+           (1716109,u"Paraíso do Tocantins","paraiso do tocantins",),
+           (1716208,u"Paranã","parana",),
+           (1716307,u"Pau D'Arco","pau d'arco",),
+           (1716505,u"Pedro Afonso","pedro afonso",),
+           (1716604,u"Peixe","peixe",),
+           (1716653,u"Pequizeiro","pequizeiro",),
+           (1717008,u"Pindorama do Tocantins","pindorama do tocantins",),
+           (1717206,u"Piraquê","piraque",),
+           (1717503,u"Pium","pium",),
+           (1717800,u"Ponte Alta do Bom Jesus","ponte alta do bom jesus",),
+           (1717909,u"Ponte Alta do Tocantins","ponte alta do tocantins",),
+           (1718006,u"Porto Alegre do Tocantins","porto alegre do tocantins",),
+           (1718204,u"Porto Nacional","porto nacional",),
+           (1718303,u"Praia Norte","praia norte",),
+           (1718402,u"Presidente Kennedy","presidente kennedy",),
+           (1718451,u"Pugmil","pugmil",),
+           (1718501,u"Recursolândia","recursolandia",),
+           (1718550,u"Riachinho","riachinho",),
+           (1718659,u"Rio da Conceição","rio da conceicao",),
+           (1718709,u"Rio dos Bois","rio dos bois",),
+           (1718758,u"Rio Sono","rio sono",),
+           (1718808,u"Sampaio","sampaio",),
+           (1718840,u"Sandolândia","sandolandia",),
+           (1718865,u"Santa Fé do Araguaia","santa fe do araguaia",),
+           (1718881,u"Santa Maria do Tocantins","santa maria do tocantins",),
+           (1718899,u"Santa Rita do Tocantins","santa rita do tocantins",),
+           (1718907,u"Santa Rosa do Tocantins","santa rosa do tocantins",),
+           (1719004,u"Santa Tereza do Tocantins","santa tereza do tocantins",),
+           (1720002,u"Santa Terezinha do Tocantins","santa terezinha do tocantins",),
+           (1720101,u"São Bento do Tocantins","sao bento do tocantins",),
+           (1720150,u"São Félix do Tocantins","sao felix do tocantins",),
+           (1720200,u"São Miguel do Tocantins","sao miguel do tocantins",),
+           (1720259,u"São Salvador do Tocantins","sao salvador do tocantins",),
+           (1720309,u"São Sebastião do Tocantins","sao sebastiao do tocantins",),
+           (1720499,u"São Valério","sao valerio",),
+           (1720655,u"Silvanópolis","silvanopolis",),
+           (1720804,u"Sítio Novo do Tocantins","sitio novo do tocantins",),
+           (1720853,u"Sucupira","sucupira",),
+           (1720903,u"Taguatinga","taguatinga",),
+           (1720937,u"Taipas do Tocantins","taipas do tocantins",),
+           (1720978,u"Talismã","talisma",),
+           (1721109,u"Tocantínia","tocantinia",),
+           (1721208,u"Tocantinópolis","tocantinopolis",),
+           (1721257,u"Tupirama","tupirama",),
+           (1721307,u"Tupiratins","tupiratins",),
+           (1722081,u"Wanderlândia","wanderlandia",),
+           (1722107,u"Xambioá","xambioa",),
+    ]
 }
 
 cidades = [
-        (5200050,u"Abadia de Goiás",u"GO")
-        (3100104,u"Abadia dos Dourados",u"MG")
-        (5200100,u"Abadiânia",u"GO")
-        (3100203,u"Abaeté",u"MG")
-        (1500107,u"Abaetetuba",u"PA")
-        (2300101,u"Abaiara",u"CE")
-        (2900108,u"Abaíra",u"BA")
-        (2900207,u"Abaré",u"BA")
-        (4100103,u"Abatiá",u"PR")
-        (4200051,u"Abdon Batista",u"SC")
-        (1500131,u"Abel Figueiredo",u"PA")
-        (4200101,u"Abelardo Luz",u"SC")
-        (3100302,u"Abre Campo",u"MG")
-        (2600054,u"Abreu e Lima",u"PE")
-        (1700251,u"Abreulândia",u"TO")
-        (3100401,u"Acaiaca",u"MG")
-        (2100055,u"Açailândia",u"MA")
-        (2900306,u"Acajutiba",u"BA")
-        (1500206,u"Acará",u"PA")
-        (2300150,u"Acarape",u"CE")
-        (2300200,u"Acaraú",u"CE")
-        (2400109,u"Acari",u"RN")
-        (2200053,u"Acauã",u"PI")
-        (4300034,u"Aceguá",u"RS")
-        (2300309,u"Acopiara",u"CE")
-        (5100102,u"Acorizal",u"MT")
-        (1200013,u"Acrelândia",u"AC")
-        (5200134,u"Acreúna",u"GO")
-        (2400208,u"Açu",u"RN")
-        (3100500,u"Açucena",u"MG")
-        (3500105,u"Adamantina",u"SP")
-        (5200159,u"Adelândia",u"GO")
-        (3500204,u"Adolfo",u"SP")
-        (4100202,u"Adrianópolis",u"PR")
-        (2900355,u"Adustina",u"BA")
-        (2600104,u"Afogados da Ingazeira",u"PE")
-        (2400307,u"Afonso Bezerra",u"RN")
-        (3200102,u"Afonso Cláudio",u"ES")
-        (2100105,u"Afonso Cunha",u"MA")
-        (2600203,u"Afrânio",u"PE")
-        (1500305,u"Afuá",u"PA")
-        (2600302,u"Agrestina",u"PE")
-        (2200103,u"Agricolândia",u"PI")
-        (4200200,u"Agrolândia",u"SC")
-        (4200309,u"Agronômica",u"SC")
-        (1500347,u"Água Azul do Norte",u"PA")
-        (3100609,u"Água Boa",u"MG")
-        (5100201,u"Água Boa",u"MT")
-        (2200202,u"Água Branca",u"PI")
-        (2500106,u"Água Branca",u"PB")
-        (2700102,u"Água Branca",u"AL")
-        (5000203,u"Água Clara",u"MS")
-        (3100708,u"Água Comprida",u"MG")
-        (4200408,u"Água Doce",u"SC")
-        (2100154,u"Água Doce do Maranhão",u"MA")
-        (3200169,u"Água Doce do Norte",u"ES")
-        (2900405,u"Água Fria",u"BA")
-        (5200175,u"Água Fria de Goiás",u"GO")
-        (5200209,u"Água Limpa",u"GO")
-        (2400406,u"Água Nova",u"RN")
-        (2600401,u"Água Preta",u"PE")
-        (4300059,u"Água Santa",u"RS")
-        (3500303,u"Aguaí",u"SP")
-        (3100807,u"Aguanil",u"MG")
-        (2600500,u"Águas Belas",u"PE")
-        (3500402,u"Águas da Prata",u"SP")
-        (4200507,u"Águas de Chapecó",u"SC")
-        (3500501,u"Águas de Lindóia",u"SP")
-        (3500550,u"Águas de Santa Bárbara",u"SP")
-        (3500600,u"Águas de São Pedro",u"SP")
-        (3100906,u"Águas Formosas",u"MG")
-        (4200556,u"Águas Frias",u"SC")
-        (5200258,u"Águas Lindas de Goiás",u"GO")
-        (4200606,u"Águas Mornas",u"SC")
-        (3101003,u"Águas Vermelhas",u"MG")
-        (4300109,u"Agudo",u"RS")
-        (3500709,u"Agudos",u"SP")
-        (4100301,u"Agudos do Sul",u"PR")
-        (3200136,u"Águia Branca",u"ES")
-        (2500205,u"Aguiar",u"PB")
-        (1700301,u"Aguiarnópolis",u"TO")
-        (3101102,u"Aimorés",u"MG")
-        (2900603,u"Aiquara",u"BA")
-        (2300408,u"Aiuaba",u"CE")
-        (3101201,u"Aiuruoca",u"MG")
-        (4300208,u"Ajuricaba",u"RS")
-        (3101300,u"Alagoa",u"MG")
-        (2500304,u"Alagoa Grande",u"PB")
-        (2500403,u"Alagoa Nova",u"PB")
-        (2500502,u"Alagoinha",u"PB")
-        (2600609,u"Alagoinha",u"PE")
-        (2200251,u"Alagoinha do Piauí",u"PI")
-        (2900702,u"Alagoinhas",u"BA")
-        (3500758,u"Alambari",u"SP")
-        (3101409,u"Albertina",u"MG")
-        (2100204,u"Alcântara",u"MA")
-        (2300507,u"Alcântaras",u"CE")
-        (2500536,u"Alcantil",u"PB")
-        (5000252,u"Alcinópolis",u"MS")
-        (2900801,u"Alcobaça",u"BA")
-        (2100303,u"Aldeias Altas",u"MA")
-        (4300307,u"Alecrim",u"RS")
-        (3200201,u"Alegre",u"ES")
-        (4300406,u"Alegrete",u"RS")
-        (2200277,u"Alegrete do Piauí",u"PI")
-        (4300455,u"Alegria",u"RS")
-        (3101508,u"Além Paraíba",u"MG")
-        (1500404,u"Alenquer",u"PA")
-        (2400505,u"Alexandria",u"RN")
-        (5200308,u"Alexânia",u"GO")
-        (3101607,u"Alfenas",u"MG")
-        (3200300,u"Alfredo Chaves",u"ES")
-        (3500808,u"Alfredo Marcondes",u"SP")
-        (3101631,u"Alfredo Vasconcelos",u"MG")
-        (4200705,u"Alfredo Wagner",u"SC")
-        (2500577,u"Algodão de Jandaíra",u"PB")
-        (2500601,u"Alhandra",u"PB")
-        (2600708,u"Aliança",u"PE")
-        (1700350,u"Aliança do Tocantins",u"TO")
-        (2900900,u"Almadina",u"BA")
-        (1700400,u"Almas",u"TO")
-        (1500503,u"Almeirim",u"PA")
-        (3101706,u"Almenara",u"MG")
-        (2400604,u"Almino Afonso",u"RN")
-        (4100400,u"Almirante Tamandaré",u"PR")
-        (4300471,u"Almirante Tamandaré do Sul",u"RS")
-        (5200506,u"Aloândia",u"GO")
-        (3101805,u"Alpercata",u"MG")
-        (4300505,u"Alpestre",u"RS")
-        (3101904,u"Alpinópolis",u"MG")
-        (5100250,u"Alta Floresta",u"MT")
-        (1100015,u"Alta Floresta D'Oeste",u"RO")
-        (3500907,u"Altair",u"SP")
-        (1500602,u"Altamira",u"PA")
-        (2100402,u"Altamira do Maranhão",u"MA")
-        (4100459,u"Altamira do Paraná",u"PR")
-        (2300606,u"Altaneira",u"CE")
-        (3102001,u"Alterosa",u"MG")
-        (2600807,u"Altinho",u"PE")
-        (3501004,u"Altinópolis",u"SP")
-        (1400050,u"Alto Alegre",u"RR")
-        (3501103,u"Alto Alegre",u"SP")
-        (4300554,u"Alto Alegre",u"RS")
-        (2100436,u"Alto Alegre do Maranhão",u"MA")
-        (2100477,u"Alto Alegre do Pindaré",u"MA")
-        (1100379,u"Alto Alegre dos Parecis",u"RO")
-        (5100300,u"Alto Araguaia",u"MT")
-        (4200754,u"Alto Bela Vista",u"SC")
-        (5100359,u"Alto Boa Vista",u"MT")
-        (3102050,u"Alto Caparaó",u"MG")
-        (2400703,u"Alto do Rodrigues",u"RN")
-        (4300570,u"Alto Feliz",u"RS")
-        (5100409,u"Alto Garças",u"MT")
-        (5200555,u"Alto Horizonte",u"GO")
-        (3153509,u"Alto Jequitibá",u"MG")
-        (2200301,u"Alto Longá",u"PI")
-        (5100508,u"Alto Paraguai",u"MT")
-        (1100403,u"Alto Paraíso",u"RO")
-        (4128625,u"Alto Paraíso",u"PR")
-        (5200605,u"Alto Paraíso de Goiás",u"GO")
-        (4100608,u"Alto Paraná",u"PR")
-        (2100501,u"Alto Parnaíba",u"MA")
-        (4100707,u"Alto Piquiri",u"PR")
-        (3102100,u"Alto Rio Doce",u"MG")
-        (3200359,u"Alto Rio Novo",u"ES")
-        (2300705,u"Alto Santo",u"CE")
-        (5100607,u"Alto Taquari",u"MT")
-        (4100509,u"Altônia",u"PR")
-        (2200400,u"Altos",u"PI")
-        (3501152,u"Alumínio",u"SP")
-        (1300029,u"Alvarães",u"AM")
-        (3102209,u"Alvarenga",u"MG")
-        (3501202,u"Álvares Florence",u"SP")
-        (3501301,u"Álvares Machado",u"SP")
-        (3501400,u"Álvaro de Carvalho",u"SP")
-        (3501509,u"Alvinlândia",u"SP")
-        (3102308,u"Alvinópolis",u"MG")
-        (1700707,u"Alvorada",u"TO")
-        (4300604,u"Alvorada",u"RS")
-        (1100346,u"Alvorada D'Oeste",u"RO")
-        (3102407,u"Alvorada de Minas",u"MG")
-        (2200459,u"Alvorada do Gurguéia",u"PI")
-        (5200803,u"Alvorada do Norte",u"GO")
-        (4100806,u"Alvorada do Sul",u"PR")
-        (1400027,u"Amajari",u"RR")
-        (5000609,u"Amambai",u"MS")
-        (1600105,u"Amapá",u"AP")
-        (2100550,u"Amapá do Maranhão",u"MA")
-        (4100905,u"Amaporã",u"PR")
-        (2600906,u"Amaraji",u"PE")
-        (4300638,u"Amaral Ferrador",u"RS")
-        (5200829,u"Amaralina",u"GO")
-        (2200509,u"Amarante",u"PI")
-        (2100600,u"Amarante do Maranhão",u"MA")
-        (2901007,u"Amargosa",u"BA")
-        (1300060,u"Amaturá",u"AM")
-        (2901106,u"Amélia Rodrigues",u"BA")
-        (2901155,u"América Dourada",u"BA")
-        (3501608,u"Americana",u"SP")
-        (5200852,u"Americano do Brasil",u"GO")
-        (3501707,u"Américo Brasiliense",u"SP")
-        (3501806,u"Américo de Campos",u"SP")
-        (4300646,u"Ametista do Sul",u"RS")
-        (2300754,u"Amontada",u"CE")
-        (5200902,u"Amorinópolis",u"GO")
-        (2500734,u"Amparo",u"PB")
-        (3501905,u"Amparo",u"SP")
-        (2800100,u"Amparo de São Francisco",u"SE")
-        (3102506,u"Amparo do Serra",u"MG")
-        (4101002,u"Ampére",u"PR")
-        (2700201,u"Anadia",u"AL")
-        (2901205,u"Anagé",u"BA")
-        (4101051,u"Anahy",u"PR")
-        (1500701,u"Anajás",u"PA")
-        (2100709,u"Anajatuba",u"MA")
-        (3502002,u"Analândia",u"SP")
-        (1300086,u"Anamã",u"AM")
-        (1701002,u"Ananás",u"TO")
-        (1500800,u"Ananindeua",u"PA")
-        (5201108,u"Anápolis",u"GO")
-        (1500859,u"Anapu",u"PA")
-        (2100808,u"Anapurus",u"MA")
-        (5000708,u"Anastácio",u"MS")
-        (5000807,u"Anaurilândia",u"MS")
-        (3200409,u"Anchieta",u"ES")
-        (4200804,u"Anchieta",u"SC")
-        (2901304,u"Andaraí",u"BA")
-        (4101101,u"Andirá",u"PR")
-        (2901353,u"Andorinha",u"BA")
-        (3102605,u"Andradas",u"MG")
-        (3502101,u"Andradina",u"SP")
-        (4300661,u"André da Rocha",u"RS")
-        (3102803,u"Andrelândia",u"MG")
-        (3502200,u"Angatuba",u"SP")
-        (3102852,u"Angelândia",u"MG")
-        (5000856,u"Angélica",u"MS")
-        (2601003,u"Angelim",u"PE")
-        (4200903,u"Angelina",u"SC")
-        (2901403,u"Angical",u"BA")
-        (2200608,u"Angical do Piauí",u"PI")
-        (1701051,u"Angico",u"TO")
-        (2400802,u"Angicos",u"RN")
-        (3300100,u"Angra dos Reis",u"RJ")
-        (2901502,u"Anguera",u"BA")
-        (4101150,u"Ângulo",u"PR")
-        (5201207,u"Anhanguera",u"GO")
-        (3502309,u"Anhembi",u"SP")
-        (3502408,u"Anhumas",u"SP")
-        (5201306,u"Anicuns",u"GO")
-        (2200707,u"Anísio de Abreu",u"PI")
-        (4201000,u"Anita Garibaldi",u"SC")
-        (4201109,u"Anitápolis",u"SC")
-        (1300102,u"Anori",u"AM")
-        (4300703,u"Anta Gorda",u"RS")
-        (2901601,u"Antas",u"BA")
-        (4101200,u"Antonina",u"PR")
-        (2300804,u"Antonina do Norte",u"CE")
-        (2200806,u"Antônio Almeida",u"PI")
-        (2901700,u"Antônio Cardoso",u"BA")
-        (3102902,u"Antônio Carlos",u"MG")
-        (4201208,u"Antônio Carlos",u"SC")
-        (3103009,u"Antônio Dias",u"MG")
-        (2901809,u"Antônio Gonçalves",u"BA")
-        (5000906,u"Antônio João",u"MS")
-        (2400901,u"Antônio Martins",u"RN")
-        (4101309,u"Antônio Olinto",u"PR")
-        (4300802,u"Antônio Prado",u"RS")
-        (3103108,u"Antônio Prado de Minas",u"MG")
-        (2500775,u"Aparecida",u"PB")
-        (3502507,u"Aparecida",u"SP")
-        (3502606,u"Aparecida d'Oeste",u"SP")
-        (5201405,u"Aparecida de Goiânia",u"GO")
-        (5201454,u"Aparecida do Rio Doce",u"GO")
-        (1701101,u"Aparecida do Rio Negro",u"TO")
-        (5001003,u"Aparecida do Taboado",u"MS")
-        (3300159,u"Aperibé",u"RJ")
-        (3200508,u"Apiacá",u"ES")
-        (5100805,u"Apiacás",u"MT")
-        (3502705,u"Apiaí",u"SP")
-        (2100832,u"Apicum-Açu",u"MA")
-        (4201257,u"Apiúna",u"SC")
-        (2401008,u"Apodi",u"RN")
-        (2901908,u"Aporá",u"BA")
-        (5201504,u"Aporé",u"GO")
-        (2901957,u"Apuarema",u"BA")
-        (4101408,u"Apucarana",u"PR")
-        (1300144,u"Apuí",u"AM")
-        (2300903,u"Apuiarés",u"CE")
-        (2800209,u"Aquidabã",u"SE")
-        (5001102,u"Aquidauana",u"MS")
-        (2301000,u"Aquiraz",u"CE")
-        (4201273,u"Arabutã",u"SC")
-        (2500809,u"Araçagi",u"PB")
-        (3103207,u"Araçaí",u"MG")
-        (2800308,u"Aracaju",u"SE")
-        (3502754,u"Araçariguama",u"SP")
-        (2902054,u"Araças",u"BA")
-        (2301109,u"Aracati",u"CE")
-        (2902005,u"Aracatu",u"BA")
-        (3502804,u"Araçatuba",u"SP")
-        (2902104,u"Araci",u"BA")
-        (3103306,u"Aracitaba",u"MG")
-        (2301208,u"Aracoiaba",u"CE")
-        (2601052,u"Araçoiaba",u"PE")
-        (3502903,u"Araçoiaba da Serra",u"SP")
-        (3200607,u"Aracruz",u"ES")
-        (5201603,u"Araçu",u"GO")
-        (3103405,u"Araçuaí",u"MG")
-        (5201702,u"Aragarças",u"GO")
-        (5201801,u"Aragoiânia",u"GO")
-        (1701309,u"Aragominas",u"TO")
-        (1701903,u"Araguacema",u"TO")
-        (1702000,u"Araguaçu",u"TO")
-        (5101001,u"Araguaiana",u"MT")
-        (1702109,u"Araguaína",u"TO")
-        (5101209,u"Araguainha",u"MT")
-        (1702158,u"Araguanã",u"TO")
-        (2100873,u"Araguanã",u"MA")
-        (5202155,u"Araguapaz",u"GO")
-        (3103504,u"Araguari",u"MG")
-        (1702208,u"Araguatins",u"TO")
-        (2100907,u"Araioses",u"MA")
-        (5001243,u"Aral Moreira",u"MS")
-        (2902203,u"Aramari",u"BA")
-        (4300851,u"Arambaré",u"RS")
-        (2100956,u"Arame",u"MA")
-        (3503000,u"Aramina",u"SP")
-        (3503109,u"Arandu",u"SP")
-        (3103603,u"Arantina",u"MG")
-        (3503158,u"Arapeí",u"SP")
-        (2700300,u"Arapiraca",u"AL")
-        (1702307,u"Arapoema",u"TO")
-        (3103702,u"Araponga",u"MG")
-        (4101507,u"Arapongas",u"PR")
-        (3103751,u"Araporã",u"MG")
-        (4101606,u"Arapoti",u"PR")
-        (3103801,u"Arapuá",u"MG")
-        (4101655,u"Arapuã",u"PR")
-        (5101258,u"Araputanga",u"MT")
-        (4201307,u"Araquari",u"SC")
-        (2500908,u"Arara",u"PB")
-        (4201406,u"Araranguá",u"SC")
-        (3503208,u"Araraquara",u"SP")
-        (3503307,u"Araras",u"SP")
-        (2301257,u"Ararendá",u"CE")
-        (2101004,u"Arari",u"MA")
-        (4300877,u"Araricá",u"RS")
-        (2301307,u"Araripe",u"CE")
-        (2601102,u"Araripina",u"PE")
-        (3300209,u"Araruama",u"RJ")
-        (2501005,u"Araruna",u"PB")
-        (4101705,u"Araruna",u"PR")
-        (2902252,u"Arataca",u"BA")
-        (4300901,u"Aratiba",u"RS")
-        (2301406,u"Aratuba",u"CE")
-        (2902302,u"Aratuípe",u"BA")
-        (2800407,u"Arauá",u"SE")
-        (4101804,u"Araucária",u"PR")
-        (3103900,u"Araújos",u"MG")
-        (3104007,u"Araxá",u"MG")
-        (3104106,u"Arceburgo",u"MG")
-        (3503356,u"Arco-Íris",u"SP")
-        (3104205,u"Arcos",u"MG")
-        (2601201,u"Arcoverde",u"PE")
-        (3104304,u"Areado",u"MG")
-        (3300225,u"Areal",u"RJ")
-        (3503406,u"Arealva",u"SP")
-        (2501104,u"Areia",u"PB")
-        (2401107,u"Areia Branca",u"RN")
-        (2800506,u"Areia Branca",u"SE")
-        (2501153,u"Areia de Baraúnas",u"PB")
-        (2501203,u"Areial",u"PB")
-        (3503505,u"Areias",u"SP")
-        (3503604,u"Areiópolis",u"SP")
-        (5101308,u"Arenápolis",u"MT")
-        (5202353,u"Arenópolis",u"GO")
-        (2401206,u"Arês",u"RN")
-        (3104403,u"Argirita",u"MG")
-        (3104452,u"Aricanduva",u"MG")
-        (3104502,u"Arinos",u"MG")
-        (5101407,u"Aripuanã",u"MT")
-        (1100023,u"Ariquemes",u"RO")
-        (3503703,u"Ariranha",u"SP")
-        (4101853,u"Ariranha do Ivaí",u"PR")
-        (3300233,u"Armação dos Búzios",u"RJ")
-        (4201505,u"Armazém",u"SC")
-        (2301505,u"Arneiroz",u"CE")
-        (2200905,u"Aroazes",u"PI")
-        (2501302,u"Aroeiras",u"PB")
-        (2200954,u"Aroeiras do Itaim",u"PI")
-        (2201002,u"Arraial",u"PI")
-        (3300258,u"Arraial do Cabo",u"RJ")
-        (1702406,u"Arraias",u"TO")
-        (4301008,u"Arroio do Meio",u"RS")
-        (4301073,u"Arroio do Padre",u"RS")
-        (4301057,u"Arroio do Sal",u"RS")
-        (4301206,u"Arroio do Tigre",u"RS")
-        (4301107,u"Arroio dos Ratos",u"RS")
-        (4301305,u"Arroio Grande",u"RS")
-        (4201604,u"Arroio Trinta",u"SC")
-        (3503802,u"Artur Nogueira",u"SP")
-        (5202502,u"Aruanã",u"GO")
-        (3503901,u"Arujá",u"SP")
-        (4201653,u"Arvoredo",u"SC")
-        (4301404,u"Arvorezinha",u"RS")
-        (4201703,u"Ascurra",u"SC")
-        (3503950,u"Aspásia",u"SP")
-        (4101903,u"Assaí",u"PR")
-        (2301604,u"Assaré",u"CE")
-        (3504008,u"Assis",u"SP")
-        (1200054,u"Assis Brasil",u"AC")
-        (4102000,u"Assis Chateaubriand",u"PR")
-        (2501351,u"Assunção",u"PB")
-        (2201051,u"Assunção do Piauí",u"PI")
-        (3104601,u"Astolfo Dutra",u"MG")
-        (4102109,u"Astorga",u"PR")
-        (2700409,u"Atalaia",u"AL")
-        (4102208,u"Atalaia",u"PR")
-        (1300201,u"Atalaia do Norte",u"AM")
-        (4201802,u"Atalanta",u"SC")
-        (3104700,u"Ataléia",u"MG")
-        (3504107,u"Atibaia",u"SP")
-        (3200706,u"Atilio Vivacqua",u"ES")
-        (1702554,u"Augustinópolis",u"TO")
-        (1500909,u"Augusto Corrêa",u"PA")
-        (3104809,u"Augusto de Lima",u"MG")
-        (4301503,u"Augusto Pestana",u"RS")
-        (2401305,u"Augusto Severo",u"RN")
-        (4301552,u"Áurea",u"RS")
-        (2902401,u"Aurelino Leal",u"BA")
-        (3504206,u"Auriflama",u"SP")
-        (5202601,u"Aurilândia",u"GO")
-        (2301703,u"Aurora",u"CE")
-        (4201901,u"Aurora",u"SC")
-        (1500958,u"Aurora do Pará",u"PA")
-        (1702703,u"Aurora do Tocantins",u"TO")
-        (1300300,u"Autazes",u"AM")
-        (3504305,u"Avaí",u"SP")
-        (3504404,u"Avanhandava",u"SP")
-        (3504503,u"Avaré",u"SP")
-        (1501006,u"Aveiro",u"PA")
-        (2201101,u"Avelino Lopes",u"PI")
-        (5202809,u"Avelinópolis",u"GO")
-        (2101103,u"Axixá",u"MA")
-        (1702901,u"Axixá do Tocantins",u"TO")
-        (1703008,u"Babaçulândia",u"TO")
-        (2101202,u"Bacabal",u"MA")
-        (2101251,u"Bacabeira",u"MA")
-        (2101301,u"Bacuri",u"MA")
-        (2101350,u"Bacurituba",u"MA")
-        (3504602,u"Bady Bassitt",u"SP")
-        (3104908,u"Baependi",u"MG")
-        (4301602,u"Bagé",u"RS")
-        (1501105,u"Bagre",u"PA")
-        (2501401,u"Baía da Traição",u"PB")
-        (2401404,u"Baía Formosa",u"RN")
-        (2902500,u"Baianópolis",u"BA")
-        (1501204,u"Baião",u"PA")
-        (2902609,u"Baixa Grande",u"BA")
-        (2201150,u"Baixa Grande do Ribeiro",u"PI")
-        (2301802,u"Baixio",u"CE")
-        (3200805,u"Baixo Guandu",u"ES")
-        (3504701,u"Balbinos",u"SP")
-        (3105004,u"Baldim",u"MG")
-        (5203104,u"Baliza",u"GO")
-        (4201950,u"Balneário Arroio do Silva",u"SC")
-        (4202057,u"Balneário Barra do Sul",u"SC")
-        (4202008,u"Balneário Camboriú",u"SC")
-        (4202073,u"Balneário Gaivota",u"SC")
-        (4212809,u"Balneário Piçarras",u"SC")
-        (4301636,u"Balneário Pinhal",u"RS")
-        (4102307,u"Balsa Nova",u"PR")
-        (3504800,u"Bálsamo",u"SP")
-        (2101400,u"Balsas",u"MA")
-        (3105103,u"Bambuí",u"MG")
-        (2301851,u"Banabuiú",u"CE")
-        (3504909,u"Bananal",u"SP")
-        (2501500,u"Bananeiras",u"PB")
-        (3105202,u"Bandeira",u"MG")
-        (3105301,u"Bandeira do Sul",u"MG")
-        (4202081,u"Bandeirante",u"SC")
-        (4102406,u"Bandeirantes",u"PR")
-        (5001508,u"Bandeirantes",u"MS")
-        (1703057,u"Bandeirantes do Tocantins",u"TO")
-        (1501253,u"Bannach",u"PA")
-        (2902658,u"Banzaê",u"BA")
-        (4301651,u"Barão",u"RS")
-        (3505005,u"Barão de Antonina",u"SP")
-        (3105400,u"Barão de Cocais",u"MG")
-        (4301701,u"Barão de Cotegipe",u"RS")
-        (2101509,u"Barão de Grajaú",u"MA")
-        (5101605,u"Barão de Melgaço",u"MT")
-        (3105509,u"Barão de Monte Alto",u"MG")
-        (4301750,u"Barão do Triunfo",u"RS")
-        (2401453,u"Baraúna",u"RN")
-        (2501534,u"Baraúna",u"PB")
-        (3105608,u"Barbacena",u"MG")
-        (2301901,u"Barbalha",u"CE")
-        (3505104,u"Barbosa",u"SP")
-        (4102505,u"Barbosa Ferraz",u"PR")
-        (1501303,u"Barcarena",u"PA")
-        (2401503,u"Barcelona",u"RN")
-        (1300409,u"Barcelos",u"AM")
-        (3505203,u"Bariri",u"SP")
-        (2902708,u"Barra",u"BA")
-        (3505302,u"Barra Bonita",u"SP")
-        (4202099,u"Barra Bonita",u"SC")
-        (2201176,u"Barra D'Alcântara",u"PI")
-        (2902807,u"Barra da Estiva",u"BA")
-        (2601300,u"Barra de Guabiraba",u"PE")
-        (2501609,u"Barra de Santa Rosa",u"PB")
-        (2501575,u"Barra de Santana",u"PB")
-        (2700508,u"Barra de Santo Antônio",u"AL")
-        (3200904,u"Barra de São Francisco",u"ES")
-        (2501708,u"Barra de São Miguel",u"PB")
-        (2700607,u"Barra de São Miguel",u"AL")
-        (5101704,u"Barra do Bugres",u"MT")
-        (3505351,u"Barra do Chapéu",u"SP")
-        (2902906,u"Barra do Choça",u"BA")
-        (2101608,u"Barra do Corda",u"MA")
-        (5101803,u"Barra do Garças",u"MT")
-        (4301859,u"Barra do Guarita",u"RS")
-        (4102703,u"Barra do Jacaré",u"PR")
-        (2903003,u"Barra do Mendes",u"BA")
-        (1703073,u"Barra do Ouro",u"TO")
-        (3300308,u"Barra do Piraí",u"RJ")
-        (4301875,u"Barra do Quaraí",u"RS")
-        (4301909,u"Barra do Ribeiro",u"RS")
-        (4301925,u"Barra do Rio Azul",u"RS")
-        (2903102,u"Barra do Rocha",u"BA")
-        (3505401,u"Barra do Turvo",u"SP")
-        (2800605,u"Barra dos Coqueiros",u"SE")
-        (4301958,u"Barra Funda",u"RS")
-        (3105707,u"Barra Longa",u"MG")
-        (3300407,u"Barra Mansa",u"RJ")
-        (4202107,u"Barra Velha",u"SC")
-        (4102604,u"Barracão",u"PR")
-        (4301800,u"Barracão",u"RS")
-        (2201200,u"Barras",u"PI")
-        (2301950,u"Barreira",u"CE")
-        (2903201,u"Barreiras",u"BA")
-        (2201309,u"Barreiras do Piauí",u"PI")
-        (1300508,u"Barreirinha",u"AM")
-        (2101707,u"Barreirinhas",u"MA")
-        (2601409,u"Barreiros",u"PE")
-        (3505500,u"Barretos",u"SP")
-        (3505609,u"Barrinha",u"SP")
-        (2302008,u"Barro",u"CE")
-        (2903235,u"Barro Alto",u"BA")
-        (5203203,u"Barro Alto",u"GO")
-        (2201408,u"Barro Duro",u"PI")
-        (2903300,u"Barro Preto",u"BA")
-        (2903276,u"Barrocas",u"BA")
-        (1703107,u"Barrolândia",u"TO")
-        (2302057,u"Barroquinha",u"CE")
-        (4302006,u"Barros Cassal",u"RS")
-        (3105905,u"Barroso",u"MG")
-        (3505708,u"Barueri",u"SP")
-        (3505807,u"Bastos",u"SP")
-        (5001904,u"Bataguassu",u"MS")
-        (2201507,u"Batalha",u"PI")
-        (2700706,u"Batalha",u"AL")
-        (3505906,u"Batatais",u"SP")
-        (5002001,u"Batayporã",u"MS")
-        (2302107,u"Baturité",u"CE")
-        (3506003,u"Bauru",u"SP")
-        (2501807,u"Bayeux",u"PB")
-        (3506102,u"Bebedouro",u"SP")
-        (2302206,u"Beberibe",u"CE")
-        (2302305,u"Bela Cruz",u"CE")
-        (5002100,u"Bela Vista",u"MS")
-        (4102752,u"Bela Vista da Caroba",u"PR")
-        (5203302,u"Bela Vista de Goiás",u"GO")
-        (3106002,u"Bela Vista de Minas",u"MG")
-        (2101772,u"Bela Vista do Maranhão",u"MA")
-        (4102802,u"Bela Vista do Paraíso",u"PR")
-        (2201556,u"Bela Vista do Piauí",u"PI")
-        (4202131,u"Bela Vista do Toldo",u"SC")
-        (2101731,u"Belágua",u"MA")
-        (1501402,u"Belém",u"PA")
-        (2501906,u"Belém",u"PB")
-        (2700805,u"Belém",u"AL")
-        (2601508,u"Belém de Maria",u"PE")
-        (2601607,u"Belém de São Francisco",u"PE")
-        (2502003,u"Belém do Brejo do Cruz",u"PB")
-        (2201572,u"Belém do Piauí",u"PI")
-        (3300456,u"Belford Roxo",u"RJ")
-        (3106101,u"Belmiro Braga",u"MG")
-        (2903409,u"Belmonte",u"BA")
-        (4202156,u"Belmonte",u"SC")
-        (2903508,u"Belo Campo",u"BA")
-        (3106200,u"Belo Horizonte",u"MG")
-        (2601706,u"Belo Jardim",u"PE")
-        (2700904,u"Belo Monte",u"AL")
-        (3106309,u"Belo Oriente",u"MG")
-        (3106408,u"Belo Vale",u"MG")
-        (1501451,u"Belterra",u"PA")
-        (2201606,u"Beneditinos",u"PI")
-        (2101806,u"Benedito Leite",u"MA")
-        (4202206,u"Benedito Novo",u"SC")
-        (1501501,u"Benevides",u"PA")
-        (1300607,u"Benjamin Constant",u"AM")
-        (4302055,u"Benjamin Constant do Sul",u"RS")
-        (3506201,u"Bento de Abreu",u"SP")
-        (2401602,u"Bento Fernandes",u"RN")
-        (4302105,u"Bento Gonçalves",u"RS")
-        (2101905,u"Bequimão",u"MA")
-        (3106507,u"Berilo",u"MG")
-        (3106655,u"Berizal",u"MG")
-        (2502052,u"Bernardino Batista",u"PB")
-        (3506300,u"Bernardino de Campos",u"SP")
-        (2101939,u"Bernardo do Mearim",u"MA")
-        (1703206,u"Bernardo Sayão",u"TO")
-        (3506359,u"Bertioga",u"SP")
-        (2201705,u"Bertolínia",u"PI")
-        (3106606,u"Bertópolis",u"MG")
-        (1300631,u"Beruri",u"AM")
-        (2601805,u"Betânia",u"PE")
-        (2201739,u"Betânia do Piauí",u"PI")
-        (3106705,u"Betim",u"MG")
-        (2601904,u"Bezerros",u"PE")
-        (3106804,u"Bias Fortes",u"MG")
-        (3106903,u"Bicas",u"MG")
-        (4202305,u"Biguaçu",u"SC")
-        (3506409,u"Bilac",u"SP")
-        (3107000,u"Biquinhas",u"MG")
-        (3506508,u"Birigui",u"SP")
-        (3506607,u"Biritiba-Mirim",u"SP")
-        (2903607,u"Biritinga",u"BA")
-        (4102901,u"Bituruna",u"PR")
-        (4202404,u"Blumenau",u"SC")
-        (3107109,u"Boa Esperança",u"MG")
-        (3201001,u"Boa Esperança",u"ES")
-        (4103008,u"Boa Esperança",u"PR")
-        (4103024,u"Boa Esperança do Iguaçu",u"PR")
-        (3506706,u"Boa Esperança do Sul",u"SP")
-        (2201770,u"Boa Hora",u"PI")
-        (2903706,u"Boa Nova",u"BA")
-        (2502102,u"Boa Ventura",u"PB")
-        (4103040,u"Boa Ventura de São Roque",u"PR")
-        (2302404,u"Boa Viagem",u"CE")
-        (1400100,u"Boa Vista",u"RR")
-        (2502151,u"Boa Vista",u"PB")
-        (4103057,u"Boa Vista da Aparecida",u"PR")
-        (4302154,u"Boa Vista das Missões",u"RS")
-        (4302204,u"Boa Vista do Buricá",u"RS")
-        (4302220,u"Boa Vista do Cadeado",u"RS")
-        (2101970,u"Boa Vista do Gurupi",u"MA")
-        (4302238,u"Boa Vista do Incra",u"RS")
-        (1300680,u"Boa Vista do Ramos",u"AM")
-        (4302253,u"Boa Vista do Sul",u"RS")
-        (2903805,u"Boa Vista do Tupim",u"BA")
-        (2701001,u"Boca da Mata",u"AL")
-        (1300706,u"Boca do Acre",u"AM")
-        (2201804,u"Bocaina",u"PI")
-        (3506805,u"Bocaina",u"SP")
-        (3107208,u"Bocaina de Minas",u"MG")
-        (4202438,u"Bocaina do Sul",u"SC")
-        (3107307,u"Bocaiúva",u"MG")
-        (4103107,u"Bocaiúva do Sul",u"PR")
-        (2401651,u"Bodó",u"RN")
-        (2602001,u"Bodocó",u"PE")
-        (5002159,u"Bodoquena",u"MS")
-        (3506904,u"Bofete",u"SP")
-        (3507001,u"Boituva",u"SP")
-        (2602100,u"Bom Conselho",u"PE")
-        (3107406,u"Bom Despacho",u"MG")
-        (2102002,u"Bom Jardim",u"MA")
-        (2602209,u"Bom Jardim",u"PE")
-        (3300506,u"Bom Jardim",u"RJ")
-        (4202503,u"Bom Jardim da Serra",u"SC")
-        (5203401,u"Bom Jardim de Goiás",u"GO")
-        (3107505,u"Bom Jardim de Minas",u"MG")
-        (2201903,u"Bom Jesus",u"PI")
-        (2401701,u"Bom Jesus",u"RN")
-        (2502201,u"Bom Jesus",u"PB")
-        (4202537,u"Bom Jesus",u"SC")
-        (4302303,u"Bom Jesus",u"RS")
-        (2903904,u"Bom Jesus da Lapa",u"BA")
-        (3107604,u"Bom Jesus da Penha",u"MG")
-        (2903953,u"Bom Jesus da Serra",u"BA")
-        (2102036,u"Bom Jesus das Selvas",u"MA")
-        (5203500,u"Bom Jesus de Goiás",u"GO")
-        (3107703,u"Bom Jesus do Amparo",u"MG")
-        (5101852,u"Bom Jesus do Araguaia",u"MT")
-        (3107802,u"Bom Jesus do Galho",u"MG")
-        (3300605,u"Bom Jesus do Itabapoana",u"RJ")
-        (3201100,u"Bom Jesus do Norte",u"ES")
-        (4202578,u"Bom Jesus do Oeste",u"SC")
-        (4103156,u"Bom Jesus do Sul",u"PR")
-        (1501576,u"Bom Jesus do Tocantins",u"PA")
-        (1703305,u"Bom Jesus do Tocantins",u"TO")
-        (3507100,u"Bom Jesus dos Perdões",u"SP")
-        (2102077,u"Bom Lugar",u"MA")
-        (4302352,u"Bom Princípio",u"RS")
-        (2201919,u"Bom Princípio do Piauí",u"PI")
-        (4302378,u"Bom Progresso",u"RS")
-        (3107901,u"Bom Repouso",u"MG")
-        (4202602,u"Bom Retiro",u"SC")
-        (4302402,u"Bom Retiro do Sul",u"RS")
-        (2502300,u"Bom Sucesso",u"PB")
-        (3108008,u"Bom Sucesso",u"MG")
-        (4103206,u"Bom Sucesso",u"PR")
-        (3507159,u"Bom Sucesso de Itararé",u"SP")
-        (4103222,u"Bom Sucesso do Sul",u"PR")
-        (4202453,u"Bombinhas",u"SC")
-        (1400159,u"Bonfim",u"RR")
-        (3108107,u"Bonfim",u"MG")
-        (2201929,u"Bonfim do Piauí",u"PI")
-        (5203559,u"Bonfinópolis",u"GO")
-        (3108206,u"Bonfinópolis de Minas",u"MG")
-        (2904001,u"Boninal",u"BA")
-        (1501600,u"Bonito",u"PA")
-        (2602308,u"Bonito",u"PE")
-        (2904050,u"Bonito",u"BA")
-        (5002209,u"Bonito",u"MS")
-        (3108255,u"Bonito de Minas",u"MG")
-        (2502409,u"Bonito de Santa Fé",u"PB")
-        (5203575,u"Bonópolis",u"GO")
-        (2502508,u"Boqueirão",u"PB")
-        (4302451,u"Boqueirão do Leão",u"RS")
-        (2201945,u"Boqueirão do Piauí",u"PI")
-        (2800670,u"Boquim",u"SE")
-        (2904100,u"Boquira",u"BA")
-        (3507209,u"Borá",u"SP")
-        (3507308,u"Boracéia",u"SP")
-        (1300805,u"Borba",u"AM")
-        (2502706,u"Borborema",u"PB")
-        (3507407,u"Borborema",u"SP")
-        (3108305,u"Borda da Mata",u"MG")
-        (3507456,u"Borebi",u"SP")
-        (4103305,u"Borrazópolis",u"PR")
-        (4302501,u"Bossoroca",u"RS")
-        (3108404,u"Botelhos",u"MG")
-        (3507506,u"Botucatu",u"SP")
-        (3108503,u"Botumirim",u"MG")
-        (2904209,u"Botuporã",u"BA")
-        (4202701,u"Botuverá",u"SC")
-        (4302584,u"Bozano",u"RS")
-        (4202800,u"Braço do Norte",u"SC")
-        (4202859,u"Braço do Trombudo",u"SC")
-        (4302600,u"Braga",u"RS")
-        (1501709,u"Bragança",u"PA")
-        (3507605,u"Bragança Paulista",u"SP")
-        (4103354,u"Braganey",u"PR")
-        (2701100,u"Branquinha",u"AL")
-        (3108701,u"Brás Pires",u"MG")
-        (1501725,u"Brasil Novo",u"PA")
-        (5002308,u"Brasilândia",u"MS")
-        (3108552,u"Brasilândia de Minas",u"MG")
-        (4103370,u"Brasilândia do Sul",u"PR")
-        (1703602,u"Brasilândia do Tocantins",u"TO")
-        (1200104,u"Brasiléia",u"AC")
-        (2201960,u"Brasileira",u"PI")
-        (5300108,u"Brasília",u"DF")
-        (3108602,u"Brasília de Minas",u"MG")
-        (5101902,u"Brasnorte",u"MT")
-        (3108909,u"Brasópolis",u"MG")
-        (3507704,u"Braúna",u"SP")
-        (3108800,u"Braúnas",u"MG")
-        (5203609,u"Brazabrantes",u"GO")
-        (2602407,u"Brejão",u"PE")
-        (3201159,u"Brejetuba",u"ES")
-        (2401800,u"Brejinho",u"RN")
-        (2602506,u"Brejinho",u"PE")
-        (1703701,u"Brejinho de Nazaré",u"TO")
-        (2102101,u"Brejo",u"MA")
-        (3507753,u"Brejo Alegre",u"SP")
-        (2602605,u"Brejo da Madre de Deus",u"PE")
-        (2102150,u"Brejo de Areia",u"MA")
-        (2502805,u"Brejo do Cruz",u"PB")
-        (2201988,u"Brejo do Piauí",u"PI")
-        (2502904,u"Brejo dos Santos",u"PB")
-        (2800704,u"Brejo Grande",u"SE")
-        (1501758,u"Brejo Grande do Araguaia",u"PA")
-        (2302503,u"Brejo Santo",u"CE")
-        (2904308,u"Brejões",u"BA")
-        (2904407,u"Brejolândia",u"BA")
-        (1501782,u"Breu Branco",u"PA")
-        (1501808,u"Breves",u"PA")
-        (5203807,u"Britânia",u"GO")
-        (4302659,u"Brochier",u"RS")
-        (3507803,u"Brodowski",u"SP")
-        (3507902,u"Brotas",u"SP")
-        (2904506,u"Brotas de Macaúbas",u"BA")
-        (3109006,u"Brumadinho",u"MG")
-        (2904605,u"Brumado",u"BA")
-        (4202875,u"Brunópolis",u"SC")
-        (4202909,u"Brusque",u"SC")
-        (3109105,u"Bueno Brandão",u"MG")
-        (3109204,u"Buenópolis",u"MG")
-        (2602704,u"Buenos Aires",u"PE")
-        (2904704,u"Buerarema",u"BA")
-        (3109253,u"Bugre",u"MG")
-        (2602803,u"Buíque",u"PE")
-        (1200138,u"Bujari",u"AC")
-        (1501907,u"Bujaru",u"PA")
-        (3508009,u"Buri",u"SP")
-        (3508108,u"Buritama",u"SP")
-        (2102200,u"Buriti",u"MA")
-        (5203906,u"Buriti Alegre",u"GO")
-        (2102309,u"Buriti Bravo",u"MA")
-        (5203939,u"Buriti de Goiás",u"GO")
-        (1703800,u"Buriti do Tocantins",u"TO")
-        (2202000,u"Buriti dos Lopes",u"PI")
-        (2202026,u"Buriti dos Montes",u"PI")
-        (2102325,u"Buriticupu",u"MA")
-        (5203962,u"Buritinópolis",u"GO")
-        (2904753,u"Buritirama",u"BA")
-        (2102358,u"Buritirana",u"MA")
-        (1100452,u"Buritis",u"RO")
-        (3109303,u"Buritis",u"MG")
-        (3508207,u"Buritizal",u"SP")
-        (3109402,u"Buritizeiro",u"MG")
-        (4302709,u"Butiá",u"RS")
-        (1300839,u"Caapiranga",u"AM")
-        (2503001,u"Caaporã",u"PB")
-        (5002407,u"Caarapó",u"MS")
-        (2904803,u"Caatiba",u"BA")
-        (2503100,u"Cabaceiras",u"PB")
-        (2904852,u"Cabaceiras do Paraguaçu",u"BA")
-        (3109451,u"Cabeceira Grande",u"MG")
-        (5204003,u"Cabeceiras",u"GO")
-        (2202059,u"Cabeceiras do Piauí",u"PI")
-        (2503209,u"Cabedelo",u"PB")
-        (1100031,u"Cabixi",u"RO")
-        (2602902,u"Cabo de Santo Agostinho",u"PE")
-        (3300704,u"Cabo Frio",u"RJ")
-        (3109501,u"Cabo Verde",u"MG")
-        (3508306,u"Cabrália Paulista",u"SP")
-        (3508405,u"Cabreúva",u"SP")
-        (2603009,u"Cabrobó",u"PE")
-        (4203006,u"Caçador",u"SC")
-        (3508504,u"Caçapava",u"SP")
-        (4302808,u"Caçapava do Sul",u"RS")
-        (1100601,u"Cacaulândia",u"RO")
-        (4302907,u"Cacequi",u"RS")
-        (5102504,u"Cáceres",u"MT")
-        (2904902,u"Cachoeira",u"BA")
-        (5204102,u"Cachoeira Alta",u"GO")
-        (3109600,u"Cachoeira da Prata",u"MG")
-        (5204201,u"Cachoeira de Goiás",u"GO")
-        (3109709,u"Cachoeira de Minas",u"MG")
-        (3102704,u"Cachoeira de Pajeú",u"MG")
-        (1502004,u"Cachoeira do Arari",u"PA")
-        (1501956,u"Cachoeira do Piriá",u"PA")
-        (4303004,u"Cachoeira do Sul",u"RS")
-        (2503308,u"Cachoeira dos Índios",u"PB")
-        (3109808,u"Cachoeira Dourada",u"MG")
-        (5204250,u"Cachoeira Dourada",u"GO")
-        (2102374,u"Cachoeira Grande",u"MA")
-        (3508603,u"Cachoeira Paulista",u"SP")
-        (3300803,u"Cachoeiras de Macacu",u"RJ")
-        (1703826,u"Cachoeirinha",u"TO")
-        (2603108,u"Cachoeirinha",u"PE")
-        (4303103,u"Cachoeirinha",u"RS")
-        (3201209,u"Cachoeiro de Itapemirim",u"ES")
-        (2503407,u"Cacimba de Areia",u"PB")
-        (2503506,u"Cacimba de Dentro",u"PB")
-        (2503555,u"Cacimbas",u"PB")
-        (2701209,u"Cacimbinhas",u"AL")
-        (4303202,u"Cacique Doble",u"RS")
-        (1100049,u"Cacoal",u"RO")
-        (3508702,u"Caconde",u"SP")
-        (5204300,u"Caçu",u"GO")
-        (2905008,u"Caculé",u"BA")
-        (2905107,u"Caém",u"BA")
-        (3109907,u"Caetanópolis",u"MG")
-        (2905156,u"Caetanos",u"BA")
-        (3110004,u"Caeté",u"MG")
-        (2603207,u"Caetés",u"PE")
-        (2905206,u"Caetité",u"BA")
-        (2905305,u"Cafarnaum",u"BA")
-        (4103404,u"Cafeara",u"PR")
-        (3508801,u"Cafelândia",u"SP")
-        (4103453,u"Cafelândia",u"PR")
-        (4103479,u"Cafezal do Sul",u"PR")
-        (3508900,u"Caiabu",u"SP")
-        (3110103,u"Caiana",u"MG")
-        (5204409,u"Caiapônia",u"GO")
-        (4303301,u"Caibaté",u"RS")
-        (4203105,u"Caibi",u"SC")
-        (2503605,u"Caiçara",u"PB")
-        (4303400,u"Caiçara",u"RS")
-        (2401859,u"Caiçara do Norte",u"RN")
-        (2401909,u"Caiçara do Rio do Vento",u"RN")
-        (2402006,u"Caicó",u"RN")
-        (3509007,u"Caieiras",u"SP")
-        (2905404,u"Cairu",u"BA")
-        (3509106,u"Caiuá",u"SP")
-        (3509205,u"Cajamar",u"SP")
-        (2102408,u"Cajapió",u"MA")
-        (2102507,u"Cajari",u"MA")
-        (3509254,u"Cajati",u"SP")
-        (2503704,u"Cajazeiras",u"PB")
-        (2202075,u"Cajazeiras do Piauí",u"PI")
-        (2503753,u"Cajazeirinhas",u"PB")
-        (3509304,u"Cajobi",u"SP")
-        (2701308,u"Cajueiro",u"AL")
-        (2202083,u"Cajueiro da Praia",u"PI")
-        (3110202,u"Cajuri",u"MG")
-        (3509403,u"Cajuru",u"SP")
-        (2603306,u"Calçado",u"PE")
-        (1600204,u"Calçoene",u"AP")
-        (3110301,u"Caldas",u"MG")
-        (2503803,u"Caldas Brandão",u"PB")
-        (5204508,u"Caldas Novas",u"GO")
-        (5204557,u"Caldazinha",u"GO")
-        (2905503,u"Caldeirão Grande",u"BA")
-        (2202091,u"Caldeirão Grande do Piauí",u"PI")
-        (4103503,u"Califórnia",u"PR")
-        (4203154,u"Calmon",u"SC")
-        (2603405,u"Calumbi",u"PE")
-        (2905602,u"Camacan",u"BA")
-        (2905701,u"Camaçari",u"BA")
-        (3110400,u"Camacho",u"MG")
-        (2503902,u"Camalaú",u"PB")
-        (2905800,u"Camamu",u"BA")
-        (3110509,u"Camanducaia",u"MG")
-        (5002605,u"Camapuã",u"MS")
-        (4303509,u"Camaquã",u"RS")
-        (2603454,u"Camaragibe",u"PE")
-        (4303558,u"Camargo",u"RS")
-        (4103602,u"Cambará",u"PR")
-        (4303608,u"Cambará do Sul",u"RS")
-        (4103701,u"Cambé",u"PR")
-        (4103800,u"Cambira",u"PR")
-        (4203204,u"Camboriú",u"SC")
-        (3300902,u"Cambuci",u"RJ")
-        (3110608,u"Cambuí",u"MG")
-        (3110707,u"Cambuquira",u"MG")
-        (1502103,u"Cametá",u"PA")
-        (2302602,u"Camocim",u"CE")
-        (2603504,u"Camocim de São Félix",u"PE")
-        (3110806,u"Campanário",u"MG")
-        (3110905,u"Campanha",u"MG")
-        (2701357,u"Campestre",u"AL")
-        (3111002,u"Campestre",u"MG")
-        (4303673,u"Campestre da Serra",u"RS")
-        (5204607,u"Campestre de Goiás",u"GO")
-        (2102556,u"Campestre do Maranhão",u"MA")
-        (4103909,u"Campina da Lagoa",u"PR")
-        (4303707,u"Campina das Missões",u"RS")
-        (3509452,u"Campina do Monte Alegre",u"SP")
-        (4103958,u"Campina do Simão",u"PR")
-        (2504009,u"Campina Grande",u"PB")
-        (4104006,u"Campina Grande do Sul",u"PR")
-        (3111101,u"Campina Verde",u"MG")
-        (5204656,u"Campinaçu",u"GO")
-        (5102603,u"Campinápolis",u"MT")
-        (3509502,u"Campinas",u"SP")
-        (2202109,u"Campinas do Piauí",u"PI")
-        (4303806,u"Campinas do Sul",u"RS")
-        (5204706,u"Campinorte",u"GO")
-        (2701407,u"Campo Alegre",u"AL")
-        (4203303,u"Campo Alegre",u"SC")
-        (5204805,u"Campo Alegre de Goiás",u"GO")
-        (2905909,u"Campo Alegre de Lourdes",u"BA")
-        (2202117,u"Campo Alegre do Fidalgo",u"PI")
-        (3111150,u"Campo Azul",u"MG")
-        (3111200,u"Campo Belo",u"MG")
-        (4203402,u"Campo Belo do Sul",u"SC")
-        (4303905,u"Campo Bom",u"RS")
-        (4104055,u"Campo Bonito",u"PR")
-        (2516409,u"Campo de Santana",u"PB")
-        (2801009,u"Campo do Brito",u"SE")
-        (3111309,u"Campo do Meio",u"MG")
-        (4104105,u"Campo do Tenente",u"PR")
-        (4203501,u"Campo Erê",u"SC")
-        (3111408,u"Campo Florido",u"MG")
-        (2906006,u"Campo Formoso",u"BA")
-        (2701506,u"Campo Grande",u"AL")
-        (5002704,u"Campo Grande",u"MS")
-        (2202133,u"Campo Grande do Piauí",u"PI")
-        (4104204,u"Campo Largo",u"PR")
-        (2202174,u"Campo Largo do Piauí",u"PI")
-        (5204854,u"Campo Limpo de Goiás",u"GO")
-        (3509601,u"Campo Limpo Paulista",u"SP")
-        (4104253,u"Campo Magro",u"PR")
-        (2202208,u"Campo Maior",u"PI")
-        (4104303,u"Campo Mourão",u"PR")
-        (4304002,u"Campo Novo",u"RS")
-        (1100700,u"Campo Novo de Rondônia",u"RO")
-        (5102637,u"Campo Novo do Parecis",u"MT")
-        (2402105,u"Campo Redondo",u"RN")
-        (5102678,u"Campo Verde",u"MT")
-        (3111507,u"Campos Altos",u"MG")
-        (5204904,u"Campos Belos",u"GO")
-        (4304101,u"Campos Borges",u"RS")
-        (5102686,u"Campos de Júlio",u"MT")
-        (3509700,u"Campos do Jordão",u"SP")
-        (3301009,u"Campos dos Goytacazes",u"RJ")
-        (3111606,u"Campos Gerais",u"MG")
-        (1703842,u"Campos Lindos",u"TO")
-        (4203600,u"Campos Novos",u"SC")
-        (3509809,u"Campos Novos Paulista",u"SP")
-        (2302701,u"Campos Sales",u"CE")
-        (5204953,u"Campos Verdes",u"GO")
-        (2603603,u"Camutanga",u"PE")
-        (3111903,u"Cana Verde",u"MG")
-        (3111705,u"Canaã",u"MG")
-        (1502152,u"Canaã dos Carajás",u"PA")
-        (5102694,u"Canabrava do Norte",u"MT")
-        (3509908,u"Cananéia",u"SP")
-        (2701605,u"Canapi",u"AL")
-        (2906105,u"Canápolis",u"BA")
-        (3111804,u"Canápolis",u"MG")
-        (2906204,u"Canarana",u"BA")
-        (5102702,u"Canarana",u"MT")
-        (3509957,u"Canas",u"SP")
-        (2202251,u"Canavieira",u"PI")
-        (2906303,u"Canavieiras",u"BA")
-        (2906402,u"Candeal",u"BA")
-        (2906501,u"Candeias",u"BA")
-        (3112000,u"Candeias",u"MG")
-        (1100809,u"Candeias do Jamari",u"RO")
-        (4304200,u"Candelária",u"RS")
-        (2906600,u"Candiba",u"BA")
-        (4104402,u"Cândido de Abreu",u"PR")
-        (4304309,u"Cândido Godói",u"RS")
-        (2102606,u"Cândido Mendes",u"MA")
-        (3510005,u"Cândido Mota",u"SP")
-        (3510104,u"Cândido Rodrigues",u"SP")
-        (2906709,u"Cândido Sales",u"BA")
-        (4304358,u"Candiota",u"RS")
-        (4104428,u"Candói",u"PR")
-        (4304408,u"Canela",u"RS")
-        (4203709,u"Canelinha",u"SC")
-        (2402204,u"Canguaretama",u"RN")
-        (4304507,u"Canguçu",u"RS")
-        (2801108,u"Canhoba",u"SE")
-        (2603702,u"Canhotinho",u"PE")
-        (2302800,u"Canindé",u"CE")
-        (2801207,u"Canindé de São Francisco",u"SE")
-        (3510153,u"Canitar",u"SP")
-        (4304606,u"Canoas",u"RS")
-        (4203808,u"Canoinhas",u"SC")
-        (2906808,u"Cansanção",u"BA")
-        (1400175,u"Cantá",u"RR")
-        (3112059,u"Cantagalo",u"MG")
-        (3301108,u"Cantagalo",u"RJ")
-        (4104451,u"Cantagalo",u"PR")
-        (2102705,u"Cantanhede",u"MA")
-        (2202307,u"Canto do Buriti",u"PI")
-        (2906824,u"Canudos",u"BA")
-        (4304614,u"Canudos do Vale",u"RS")
-        (1300904,u"Canutama",u"AM")
-        (1502202,u"Capanema",u"PA")
-        (4104501,u"Capanema",u"PR")
-        (4203253,u"Capão Alto",u"SC")
-        (3510203,u"Capão Bonito",u"SP")
-        (4304622,u"Capão Bonito do Sul",u"RS")
-        (4304630,u"Capão da Canoa",u"RS")
-        (4304655,u"Capão do Cipó",u"RS")
-        (4304663,u"Capão do Leão",u"RS")
-        (3112109,u"Caparaó",u"MG")
-        (2701704,u"Capela",u"AL")
-        (2801306,u"Capela",u"SE")
-        (4304689,u"Capela de Santana",u"RS")
-        (3510302,u"Capela do Alto",u"SP")
-        (2906857,u"Capela do Alto Alegre",u"BA")
-        (3112208,u"Capela Nova",u"MG")
-        (3112307,u"Capelinha",u"MG")
-        (3112406,u"Capetinga",u"MG")
-        (2504033,u"Capim",u"PB")
-        (3112505,u"Capim Branco",u"MG")
-        (2906873,u"Capim Grosso",u"BA")
-        (3112604,u"Capinópolis",u"MG")
-        (4203907,u"Capinzal",u"SC")
-        (2102754,u"Capinzal do Norte",u"MA")
-        (2302909,u"Capistrano",u"CE")
-        (4304697,u"Capitão",u"RS")
-        (3112653,u"Capitão Andrade",u"MG")
-        (2202406,u"Capitão de Campos",u"PI")
-        (3112703,u"Capitão Enéas",u"MG")
-        (2202455,u"Capitão Gervásio Oliveira",u"PI")
-        (4104600,u"Capitão Leônidas Marques",u"PR")
-        (1502301,u"Capitão Poço",u"PA")
-        (3112802,u"Capitólio",u"MG")
-        (3510401,u"Capivari",u"SP")
-        (4203956,u"Capivari de Baixo",u"SC")
-        (4304671,u"Capivari do Sul",u"RS")
-        (1200179,u"Capixaba",u"AC")
-        (2603801,u"Capoeiras",u"PE")
-        (3112901,u"Caputira",u"MG")
-        (4304713,u"Caraá",u"RS")
-        (1400209,u"Caracaraí",u"RR")
-        (2202505,u"Caracol",u"PI")
-        (5002803,u"Caracol",u"MS")
-        (3510500,u"Caraguatatuba",u"SP")
-        (3113008,u"Caraí",u"MG")
-        (2906899,u"Caraíbas",u"BA")
-        (4104659,u"Carambeí",u"PR")
-        (3113107,u"Caranaíba",u"MG")
-        (3113206,u"Carandaí",u"MG")
-        (3113305,u"Carangola",u"MG")
-        (3300936,u"Carapebus",u"RJ")
-        (3510609,u"Carapicuíba",u"SP")
-        (3113404,u"Caratinga",u"MG")
-        (1301001,u"Carauari",u"AM")
-        (2402303,u"Caraúbas",u"RN")
-        (2504074,u"Caraúbas",u"PB")
-        (2202539,u"Caraúbas do Piauí",u"PI")
-        (2906907,u"Caravelas",u"BA")
-        (4304705,u"Carazinho",u"RS")
-        (3113503,u"Carbonita",u"MG")
-        (2907004,u"Cardeal da Silva",u"BA")
-        (3510708,u"Cardoso",u"SP")
-        (3301157,u"Cardoso Moreira",u"RJ")
-        (3113602,u"Careaçu",u"MG")
-        (1301100,u"Careiro",u"AM")
-        (1301159,u"Careiro da Várzea",u"AM")
-        (3201308,u"Cariacica",u"ES")
-        (2303006,u"Caridade",u"CE")
-        (2202554,u"Caridade do Piauí",u"PI")
-        (2907103,u"Carinhanha",u"BA")
-        (2801405,u"Carira",u"SE")
-        (2303105,u"Cariré",u"CE")
-        (1703867,u"Cariri do Tocantins",u"TO")
-        (2303204,u"Caririaçu",u"CE")
-        (2303303,u"Cariús",u"CE")
-        (5102793,u"Carlinda",u"MT")
-        (4104709,u"Carlópolis",u"PR")
-        (4304804,u"Carlos Barbosa",u"RS")
-        (3113701,u"Carlos Chagas",u"MG")
-        (4304853,u"Carlos Gomes",u"RS")
-        (3113800,u"Carmésia",u"MG")
-        (3301207,u"Carmo",u"RJ")
-        (3113909,u"Carmo da Cachoeira",u"MG")
-        (3114006,u"Carmo da Mata",u"MG")
-        (3114105,u"Carmo de Minas",u"MG")
-        (3114204,u"Carmo do Cajuru",u"MG")
-        (3114303,u"Carmo do Paranaíba",u"MG")
-        (3114402,u"Carmo do Rio Claro",u"MG")
-        (5205000,u"Carmo do Rio Verde",u"GO")
-        (1703883,u"Carmolândia",u"TO")
-        (2801504,u"Carmópolis",u"SE")
-        (3114501,u"Carmópolis de Minas",u"MG")
-        (2603900,u"Carnaíba",u"PE")
-        (2402402,u"Carnaúba dos Dantas",u"RN")
-        (2402501,u"Carnaubais",u"RN")
-        (2303402,u"Carnaubal",u"CE")
-        (2603926,u"Carnaubeira da Penha",u"PE")
-        (3114550,u"Carneirinho",u"MG")
-        (2701803,u"Carneiros",u"AL")
-        (1400233,u"Caroebe",u"RR")
-        (2102804,u"Carolina",u"MA")
-        (2604007,u"Carpina",u"PE")
-        (3114600,u"Carrancas",u"MG")
-        (2504108,u"Carrapateira",u"PB")
-        (1703891,u"Carrasco Bonito",u"TO")
-        (2604106,u"Caruaru",u"PE")
-        (2102903,u"Carutapera",u"MA")
-        (3114709,u"Carvalhópolis",u"MG")
-        (3114808,u"Carvalhos",u"MG")
-        (3510807,u"Casa Branca",u"SP")
-        (3114907,u"Casa Grande",u"MG")
-        (2907202,u"Casa Nova",u"BA")
-        (4304903,u"Casca",u"RS")
-        (3115003,u"Cascalho Rico",u"MG")
-        (2303501,u"Cascavel",u"CE")
-        (4104808,u"Cascavel",u"PR")
-        (1703909,u"Caseara",u"TO")
-        (4304952,u"Caseiros",u"RS")
-        (3301306,u"Casimiro de Abreu",u"RJ")
-        (2604155,u"Casinhas",u"PE")
-        (2504157,u"Casserengue",u"PB")
-        (3115102,u"Cássia",u"MG")
-        (3510906,u"Cássia dos Coqueiros",u"SP")
-        (5002902,u"Cassilândia",u"MS")
-        (1502400,u"Castanhal",u"PA")
-        (5102850,u"Castanheira",u"MT")
-        (1100908,u"Castanheiras",u"RO")
-        (5205059,u"Castelândia",u"GO")
-        (3201407,u"Castelo",u"ES")
-        (2202604,u"Castelo do Piauí",u"PI")
-        (3511003,u"Castilho",u"SP")
-        (4104907,u"Castro",u"PR")
-        (2907301,u"Castro Alves",u"BA")
-        (3115300,u"Cataguases",u"MG")
-        (5205109,u"Catalão",u"GO")
-        (3511102,u"Catanduva",u"SP")
-        (4105003,u"Catanduvas",u"PR")
-        (4204004,u"Catanduvas",u"SC")
-        (2303600,u"Catarina",u"CE")
-        (3115359,u"Catas Altas",u"MG")
-        (3115409,u"Catas Altas da Noruega",u"MG")
-        (2604205,u"Catende",u"PE")
-        (3511201,u"Catiguá",u"SP")
-        (2504207,u"Catingueira",u"PB")
-        (2907400,u"Catolândia",u"BA")
-        (2504306,u"Catolé do Rocha",u"PB")
-        (2907509,u"Catu",u"BA")
-        (4305009,u"Catuípe",u"RS")
-        (3115458,u"Catuji",u"MG")
-        (2303659,u"Catunda",u"CE")
-        (5205208,u"Caturaí",u"GO")
-        (2907558,u"Caturama",u"BA")
-        (2504355,u"Caturité",u"PB")
-        (3115474,u"Catuti",u"MG")
-        (2303709,u"Caucaia",u"CE")
-        (5205307,u"Cavalcante",u"GO")
-        (3115508,u"Caxambu",u"MG")
-        (4204103,u"Caxambu do Sul",u"SC")
-        (2103000,u"Caxias",u"MA")
-        (4305108,u"Caxias do Sul",u"RS")
-        (2202653,u"Caxingó",u"PI")
-        (2402600,u"Ceará-Mirim",u"RN")
-        (2103109,u"Cedral",u"MA")
-        (3511300,u"Cedral",u"SP")
-        (2303808,u"Cedro",u"CE")
-        (2604304,u"Cedro",u"PE")
-        (2801603,u"Cedro de São João",u"SE")
-        (3115607,u"Cedro do Abaeté",u"MG")
-        (4204152,u"Celso Ramos",u"SC")
-        (1704105,u"Centenário",u"TO")
-        (4305116,u"Centenário",u"RS")
-        (4105102,u"Centenário do Sul",u"PR")
-        (2907608,u"Central",u"BA")
-        (3115706,u"Central de Minas",u"MG")
-        (2103125,u"Central do Maranhão",u"MA")
-        (3115805,u"Centralina",u"MG")
-        (2103158,u"Centro do Guilherme",u"MA")
-        (2103174,u"Centro Novo do Maranhão",u"MA")
-        (1100056,u"Cerejeiras",u"RO")
-        (5205406,u"Ceres",u"GO")
-        (3511409,u"Cerqueira César",u"SP")
-        (3511508,u"Cerquilho",u"SP")
-        (4305124,u"Cerrito",u"RS")
-        (4105201,u"Cerro Azul",u"PR")
-        (4305132,u"Cerro Branco",u"RS")
-        (2402709,u"Cerro Corá",u"RN")
-        (4305157,u"Cerro Grande",u"RS")
-        (4305173,u"Cerro Grande do Sul",u"RS")
-        (4305207,u"Cerro Largo",u"RS")
-        (4204178,u"Cerro Negro",u"SC")
-        (3511607,u"Cesário Lange",u"SP")
-        (4105300,u"Céu Azul",u"PR")
-        (5205455,u"Cezarina",u"GO")
-        (2604403,u"Chã de Alegria",u"PE")
-        (2604502,u"Chã Grande",u"PE")
-        (2701902,u"Chã Preta",u"AL")
-        (3115904,u"Chácara",u"MG")
-        (3116001,u"Chalé",u"MG")
-        (4305306,u"Chapada",u"RS")
-        (1705102,u"Chapada da Natividade",u"TO")
-        (1704600,u"Chapada de Areia",u"TO")
-        (3116100,u"Chapada do Norte",u"MG")
-        (5103007,u"Chapada dos Guimarães",u"MT")
-        (3116159,u"Chapada Gaúcha",u"MG")
-        (5205471,u"Chapadão do Céu",u"GO")
-        (4204194,u"Chapadão do Lageado",u"SC")
-        (5002951,u"Chapadão do Sul",u"MS")
-        (2103208,u"Chapadinha",u"MA")
-        (4204202,u"Chapecó",u"SC")
-        (3511706,u"Charqueada",u"SP")
-        (4305355,u"Charqueadas",u"RS")
-        (4305371,u"Charrua",u"RS")
-        (2303907,u"Chaval",u"CE")
-        (3557204,u"Chavantes",u"SP")
-        (1502509,u"Chaves",u"PA")
-        (3116209,u"Chiador",u"MG")
-        (4305405,u"Chiapetta",u"RS")
-        (4105409,u"Chopinzinho",u"PR")
-        (2303931,u"Choró",u"CE")
-        (2303956,u"Chorozinho",u"CE")
-        (2907707,u"Chorrochó",u"BA")
-        (4305439,u"Chuí",u"RS")
-        (1100924,u"Chupinguaia",u"RO")
-        (4305447,u"Chuvisca",u"RS")
-        (4105508,u"Cianorte",u"PR")
-        (2907806,u"Cícero Dantas",u"BA")
-        (4105607,u"Cidade Gaúcha",u"PR")
-        (5205497,u"Cidade Ocidental",u"GO")
-        (2103257,u"Cidelândia",u"MA")
-        (4305454,u"Cidreira",u"RS")
-        (2907905,u"Cipó",u"BA")
-        (3116308,u"Cipotânea",u"MG")
-        (4305504,u"Ciríaco",u"RS")
-        (3116407,u"Claraval",u"MG")
-        (3116506,u"Claro dos Poções",u"MG")
-        (5103056,u"Cláudia",u"MT")
-        (3116605,u"Cláudio",u"MG")
-        (3511904,u"Clementina",u"SP")
-        (4105706,u"Clevelândia",u"PR")
-        (2908002,u"Coaraci",u"BA")
-        (1301209,u"Coari",u"AM")
-        (2202703,u"Cocal",u"PI")
-        (2202711,u"Cocal de Telha",u"PI")
-        (4204251,u"Cocal do Sul",u"SC")
-        (2202729,u"Cocal dos Alves",u"PI")
-        (5103106,u"Cocalinho",u"MT")
-        (5205513,u"Cocalzinho de Goiás",u"GO")
-        (2908101,u"Cocos",u"BA")
-        (1301308,u"Codajás",u"AM")
-        (2103307,u"Codó",u"MA")
-        (2103406,u"Coelho Neto",u"MA")
-        (3116704,u"Coimbra",u"MG")
-        (2702009,u"Coité do Nóia",u"AL")
-        (2202737,u"Coivaras",u"PI")
-        (1502608,u"Colares",u"PA")
-        (3201506,u"Colatina",u"ES")
-        (5103205,u"Colíder",u"MT")
-        (3512001,u"Colina",u"SP")
-        (2103505,u"Colinas",u"MA")
-        (4305587,u"Colinas",u"RS")
-        (5205521,u"Colinas do Sul",u"GO")
-        (1705508,u"Colinas do Tocantins",u"TO")
-        (1716703,u"Colméia",u"TO")
-        (5103254,u"Colniza",u"MT")
-        (3512100,u"Colômbia",u"SP")
-        (4105805,u"Colombo",u"PR")
-        (2202752,u"Colônia do Gurguéia",u"PI")
-        (2202778,u"Colônia do Piauí",u"PI")
-        (2702108,u"Colônia Leopoldina",u"AL")
-        (4105904,u"Colorado",u"PR")
-        (4305603,u"Colorado",u"RS")
-        (1100064,u"Colorado do Oeste",u"RO")
-        (3116803,u"Coluna",u"MG")
-        (1705557,u"Combinado",u"TO")
-        (3116902,u"Comendador Gomes",u"MG")
-        (3300951,u"Comendador Levy Gasparian",u"RJ")
-        (3117009,u"Comercinho",u"MG")
-        (5103304,u"Comodoro",u"MT")
-        (2504405,u"Conceição",u"PB")
-        (3117108,u"Conceição da Aparecida",u"MG")
-        (3201605,u"Conceição da Barra",u"ES")
-        (3115201,u"Conceição da Barra de Minas",u"MG")
-        (2908200,u"Conceição da Feira",u"BA")
-        (3117306,u"Conceição das Alagoas",u"MG")
-        (3117207,u"Conceição das Pedras",u"MG")
-        (3117405,u"Conceição de Ipanema",u"MG")
-        (3301405,u"Conceição de Macabu",u"RJ")
-        (2908309,u"Conceição do Almeida",u"BA")
-        (1502707,u"Conceição do Araguaia",u"PA")
-        (2202802,u"Conceição do Canindé",u"PI")
-        (3201704,u"Conceição do Castelo",u"ES")
-        (2908408,u"Conceição do Coité",u"BA")
-        (2908507,u"Conceição do Jacuípe",u"BA")
-        (2103554,u"Conceição do Lago-Açu",u"MA")
-        (3117504,u"Conceição do Mato Dentro",u"MG")
-        (3117603,u"Conceição do Pará",u"MG")
-        (3117702,u"Conceição do Rio Verde",u"MG")
-        (1705607,u"Conceição do Tocantins",u"TO")
-        (3117801,u"Conceição dos Ouros",u"MG")
-        (3512209,u"Conchal",u"SP")
-        (3512308,u"Conchas",u"SP")
-        (4204301,u"Concórdia",u"SC")
-        (1502756,u"Concórdia do Pará",u"PA")
-        (2504504,u"Condado",u"PB")
-        (2604601,u"Condado",u"PE")
-        (2504603,u"Conde",u"PB")
-        (2908606,u"Conde",u"BA")
-        (2908705,u"Condeúba",u"BA")
-        (4305702,u"Condor",u"RS")
-        (3117836,u"Cônego Marinho",u"MG")
-        (3117876,u"Confins",u"MG")
-        (5103353,u"Confresa",u"MT")
-        (2504702,u"Congo",u"PB")
-        (3117900,u"Congonhal",u"MG")
-        (3118007,u"Congonhas",u"MG")
-        (3118106,u"Congonhas do Norte",u"MG")
-        (4106001,u"Congonhinhas",u"PR")
-        (3118205,u"Conquista",u"MG")
-        (5103361,u"Conquista D'Oeste",u"MT")
-        (3118304,u"Conselheiro Lafaiete",u"MG")
-        (4106100,u"Conselheiro Mairinck",u"PR")
-        (3118403,u"Conselheiro Pena",u"MG")
-        (3118502,u"Consolação",u"MG")
-        (4305801,u"Constantina",u"RS")
-        (3118601,u"Contagem",u"MG")
-        (4106209,u"Contenda",u"PR")
-        (2908804,u"Contendas do Sincorá",u"BA")
-        (3118700,u"Coqueiral",u"MG")
-        (4305835,u"Coqueiro Baixo",u"RS")
-        (2702207,u"Coqueiro Seco",u"AL")
-        (4305850,u"Coqueiros do Sul",u"RS")
-        (3118809,u"Coração de Jesus",u"MG")
-        (2908903,u"Coração de Maria",u"BA")
-        (4106308,u"Corbélia",u"PR")
-        (3301504,u"Cordeiro",u"RJ")
-        (3512407,u"Cordeirópolis",u"SP")
-        (2909000,u"Cordeiros",u"BA")
-        (4204350,u"Cordilheira Alta",u"SC")
-        (3118908,u"Cordisburgo",u"MG")
-        (3119005,u"Cordislândia",u"MG")
-        (2304004,u"Coreaú",u"CE")
-        (2504801,u"Coremas",u"PB")
-        (5003108,u"Corguinho",u"MS")
-        (2909109,u"Coribe",u"BA")
-        (3119104,u"Corinto",u"MG")
-        (4106407,u"Cornélio Procópio",u"PR")
-        (3119203,u"Coroaci",u"MG")
-        (3512506,u"Coroados",u"SP")
-        (2103604,u"Coroatá",u"MA")
-        (3119302,u"Coromandel",u"MG")
-        (4305871,u"Coronel Barros",u"RS")
-        (4305900,u"Coronel Bicaco",u"RS")
-        (4106456,u"Coronel Domingos Soares",u"PR")
-        (2402808,u"Coronel Ezequiel",u"RN")
-        (3119401,u"Coronel Fabriciano",u"MG")
-        (4204400,u"Coronel Freitas",u"SC")
-        (2402907,u"Coronel João Pessoa",u"RN")
-        (2909208,u"Coronel João Sá",u"BA")
-        (2202851,u"Coronel José Dias",u"PI")
-        (3512605,u"Coronel Macedo",u"SP")
-        (4204459,u"Coronel Martins",u"SC")
-        (3119500,u"Coronel Murta",u"MG")
-        (3119609,u"Coronel Pacheco",u"MG")
-        (4305934,u"Coronel Pilar",u"RS")
-        (5003157,u"Coronel Sapucaia",u"MS")
-        (4106506,u"Coronel Vivida",u"PR")
-        (3119708,u"Coronel Xavier Chaves",u"MG")
-        (3119807,u"Córrego Danta",u"MG")
-        (3119906,u"Córrego do Bom Jesus",u"MG")
-        (5205703,u"Córrego do Ouro",u"GO")
-        (3119955,u"Córrego Fundo",u"MG")
-        (3120003,u"Córrego Novo",u"MG")
-        (4204558,u"Correia Pinto",u"SC")
-        (2202901,u"Corrente",u"PI")
-        (2604700,u"Correntes",u"PE")
-        (2909307,u"Correntina",u"BA")
-        (2604809,u"Cortês",u"PE")
-        (5003207,u"Corumbá",u"MS")
-        (5205802,u"Corumbá de Goiás",u"GO")
-        (5205901,u"Corumbaíba",u"GO")
-        (3512704,u"Corumbataí",u"SP")
-        (4106555,u"Corumbataí do Sul",u"PR")
-        (1100072,u"Corumbiara",u"RO")
-        (4204509,u"Corupá",u"SC")
-        (2702306,u"Coruripe",u"AL")
-        (3512803,u"Cosmópolis",u"SP")
-        (3512902,u"Cosmorama",u"SP")
-        (1100080,u"Costa Marques",u"RO")
-        (5003256,u"Costa Rica",u"MS")
-        (2909406,u"Cotegipe",u"BA")
-        (3513009,u"Cotia",u"SP")
-        (4305959,u"Cotiporã",u"RS")
-        (5103379,u"Cotriguaçu",u"MT")
-        (3120102,u"Couto de Magalhães de Minas",u"MG")
-        (1706001,u"Couto Magalhães",u"TO")
-        (4305975,u"Coxilha",u"RS")
-        (5003306,u"Coxim",u"MS")
-        (2504850,u"Coxixola",u"PB")
-        (2702355,u"Craíbas",u"AL")
-        (2304103,u"Crateús",u"CE")
-        (2304202,u"Crato",u"CE")
-        (3513108,u"Cravinhos",u"SP")
-        (2909505,u"Cravolândia",u"BA")
-        (4204608,u"Criciúma",u"SC")
-        (3120151,u"Crisólita",u"MG")
-        (2909604,u"Crisópolis",u"BA")
-        (4306007,u"Crissiumal",u"RS")
-        (3120201,u"Cristais",u"MG")
-        (3513207,u"Cristais Paulista",u"SP")
-        (4306056,u"Cristal",u"RS")
-        (4306072,u"Cristal do Sul",u"RS")
-        (1706100,u"Cristalândia",u"TO")
-        (2203008,u"Cristalândia do Piauí",u"PI")
-        (3120300,u"Cristália",u"MG")
-        (5206206,u"Cristalina",u"GO")
-        (3120409,u"Cristiano Otoni",u"MG")
-        (5206305,u"Cristianópolis",u"GO")
-        (3120508,u"Cristina",u"MG")
-        (2801702,u"Cristinápolis",u"SE")
-        (2203107,u"Cristino Castro",u"PI")
-        (2909703,u"Cristópolis",u"BA")
-        (5206404,u"Crixás",u"GO")
-        (1706258,u"Crixás do Tocantins",u"TO")
-        (2304236,u"Croatá",u"CE")
-        (5206503,u"Cromínia",u"GO")
-        (3120607,u"Crucilândia",u"MG")
-        (2304251,u"Cruz",u"CE")
-        (4306106,u"Cruz Alta",u"RS")
-        (2909802,u"Cruz das Almas",u"BA")
-        (2504900,u"Cruz do Espírito Santo",u"PB")
-        (4106803,u"Cruz Machado",u"PR")
-        (3513306,u"Cruzália",u"SP")
-        (4306130,u"Cruzaltense",u"RS")
-        (3513405,u"Cruzeiro",u"SP")
-        (3120706,u"Cruzeiro da Fortaleza",u"MG")
-        (4106571,u"Cruzeiro do Iguaçu",u"PR")
-        (4106605,u"Cruzeiro do Oeste",u"PR")
-        (1200203,u"Cruzeiro do Sul",u"AC")
-        (4106704,u"Cruzeiro do Sul",u"PR")
-        (4306205,u"Cruzeiro do Sul",u"RS")
-        (2403004,u"Cruzeta",u"RN")
-        (3120805,u"Cruzília",u"MG")
-        (4106852,u"Cruzmaltina",u"PR")
-        (3513504,u"Cubatão",u"SP")
-        (2505006,u"Cubati",u"PB")
-        (5103403,u"Cuiabá",u"MT")
-        (2505105,u"Cuité",u"PB")
-        (2505238,u"Cuité de Mamanguape",u"PB")
-        (2505204,u"Cuitegi",u"PB")
-        (1100940,u"Cujubim",u"RO")
-        (5206602,u"Cumari",u"GO")
-        (2604908,u"Cumaru",u"PE")
-        (1502764,u"Cumaru do Norte",u"PA")
-        (2801900,u"Cumbe",u"SE")
-        (3513603,u"Cunha",u"SP")
-        (4204707,u"Cunha Porã",u"SC")
-        (4204756,u"Cunhataí",u"SC")
-        (3120839,u"Cuparaque",u"MG")
-        (2605004,u"Cupira",u"PE")
-        (2909901,u"Curaçá",u"BA")
-        (2203206,u"Curimatá",u"PI")
-        (1502772,u"Curionópolis",u"PA")
-        (4106902,u"Curitiba",u"PR")
-        (4204806,u"Curitibanos",u"SC")
-        (4107009,u"Curiúva",u"PR")
-        (2203230,u"Currais",u"PI")
-        (2403103,u"Currais Novos",u"RN")
-        (2505279,u"Curral de Cima",u"PB")
-        (3120870,u"Curral de Dentro",u"MG")
-        (2203271,u"Curral Novo do Piauí",u"PI")
-        (2505303,u"Curral Velho",u"PB")
-        (1502806,u"Curralinho",u"PA")
-        (2203255,u"Curralinhos",u"PI")
-        (1502855,u"Curuá",u"PA")
-        (1502905,u"Curuçá",u"PA")
-        (2103703,u"Cururupu",u"MA")
-        (5103437,u"Curvelândia",u"MT")
-        (3120904,u"Curvelo",u"MG")
-        (2605103,u"Custódia",u"PE")
-        (1600212,u"Cutias",u"AP")
-        (5206701,u"Damianópolis",u"GO")
-        (2505352,u"Damião",u"PB")
-        (5206800,u"Damolândia",u"GO")
-        (1706506,u"Darcinópolis",u"TO")
-        (2910008,u"Dário Meira",u"BA")
-        (3121001,u"Datas",u"MG")
-        (4306304,u"David Canabarro",u"RS")
-        (2103752,u"Davinópolis",u"MA")
-        (5206909,u"Davinópolis",u"GO")
-        (3121100,u"Delfim Moreira",u"MG")
-        (3121209,u"Delfinópolis",u"MG")
-        (2702405,u"Delmiro Gouveia",u"AL")
-        (3121258,u"Delta",u"MG")
-        (2203305,u"Demerval Lobão",u"PI")
-        (5103452,u"Denise",u"MT")
-        (5003454,u"Deodápolis",u"MS")
-        (2304269,u"Deputado Irapuan Pinheiro",u"CE")
-        (4306320,u"Derrubadas",u"RS")
-        (3513702,u"Descalvado",u"SP")
-        (4204905,u"Descanso",u"SC")
-        (3121308,u"Descoberto",u"MG")
-        (2505402,u"Desterro",u"PB")
-        (3121407,u"Desterro de Entre Rios",u"MG")
-        (3121506,u"Desterro do Melo",u"MG")
-        (4306353,u"Dezesseis de Novembro",u"RS")
-        (3513801,u"Diadema",u"SP")
-        (2505600,u"Diamante",u"PB")
-        (4107157,u"Diamante D'Oeste",u"PR")
-        (4107108,u"Diamante do Norte",u"PR")
-        (4107124,u"Diamante do Sul",u"PR")
-        (3121605,u"Diamantina",u"MG")
-        (5103502,u"Diamantino",u"MT")
-        (1707009,u"Dianópolis",u"TO")
-        (2910057,u"Dias d'Ávila",u"BA")
-        (4306379,u"Dilermando de Aguiar",u"RS")
-        (3121704,u"Diogo de Vasconcelos",u"MG")
-        (3121803,u"Dionísio",u"MG")
-        (4205001,u"Dionísio Cerqueira",u"SC")
-        (5207105,u"Diorama",u"GO")
-        (3513850,u"Dirce Reis",u"SP")
-        (2203354,u"Dirceu Arcoverde",u"PI")
-        (2802007,u"Divina Pastora",u"SE")
-        (3121902,u"Divinésia",u"MG")
-        (3122009,u"Divino",u"MG")
-        (3122108,u"Divino das Laranjeiras",u"MG")
-        (3201803,u"Divino de São Lourenço",u"ES")
-        (3513900,u"Divinolândia",u"SP")
-        (3122207,u"Divinolândia de Minas",u"MG")
-        (3122306,u"Divinópolis",u"MG")
-        (5208301,u"Divinópolis de Goiás",u"GO")
-        (1707108,u"Divinópolis do Tocantins",u"TO")
-        (3122355,u"Divisa Alegre",u"MG")
-        (3122405,u"Divisa Nova",u"MG")
-        (3122454,u"Divisópolis",u"MG")
-        (3514007,u"Dobrada",u"SP")
-        (3514106,u"Dois Córregos",u"SP")
-        (4306403,u"Dois Irmãos",u"RS")
-        (4306429,u"Dois Irmãos das Missões",u"RS")
-        (5003488,u"Dois Irmãos do Buriti",u"MS")
-        (1707207,u"Dois Irmãos do Tocantins",u"TO")
-        (4306452,u"Dois Lajeados",u"RS")
-        (2702504,u"Dois Riachos",u"AL")
-        (4107207,u"Dois Vizinhos",u"PR")
-        (3514205,u"Dolcinópolis",u"SP")
-        (5103601,u"Dom Aquino",u"MT")
-        (2910107,u"Dom Basílio",u"BA")
-        (3122470,u"Dom Bosco",u"MG")
-        (3122504,u"Dom Cavati",u"MG")
-        (1502939,u"Dom Eliseu",u"PA")
-        (2203404,u"Dom Expedito Lopes",u"PI")
-        (4306502,u"Dom Feliciano",u"RS")
-        (2203453,u"Dom Inocêncio",u"PI")
-        (3122603,u"Dom Joaquim",u"MG")
-        (2910206,u"Dom Macedo Costa",u"BA")
-        (4306601,u"Dom Pedrito",u"RS")
-        (2103802,u"Dom Pedro",u"MA")
-        (4306551,u"Dom Pedro de Alcântara",u"RS")
-        (3122702,u"Dom Silvério",u"MG")
-        (3122801,u"Dom Viçoso",u"MG")
-        (3201902,u"Domingos Martins",u"ES")
-        (2203420,u"Domingos Mourão",u"PI")
-        (4205100,u"Dona Emma",u"SC")
-        (3122900,u"Dona Eusébia",u"MG")
-        (4306700,u"Dona Francisca",u"RS")
-        (2505709,u"Dona Inês",u"PB")
-        (3123007,u"Dores de Campos",u"MG")
-        (3123106,u"Dores de Guanhães",u"MG")
-        (3123205,u"Dores do Indaiá",u"MG")
-        (3202009,u"Dores do Rio Preto",u"ES")
-        (3123304,u"Dores do Turvo",u"MG")
-        (3123403,u"Doresópolis",u"MG")
-        (2605152,u"Dormentes",u"PE")
-        (4107256,u"Douradina",u"PR")
-        (5003504,u"Douradina",u"MS")
-        (3514304,u"Dourado",u"SP")
-        (3123502,u"Douradoquara",u"MG")
-        (5003702,u"Dourados",u"MS")
-        (4107306,u"Doutor Camargo",u"PR")
-        (4306734,u"Doutor Maurício Cardoso",u"RS")
-        (4205159,u"Doutor Pedrinho",u"SC")
-        (4306759,u"Doutor Ricardo",u"RS")
-        (2403202,u"Doutor Severiano",u"RN")
-        (4128633,u"Doutor Ulysses",u"PR")
-        (5207253,u"Doverlândia",u"GO")
-        (3514403,u"Dracena",u"SP")
-        (3514502,u"Duartina",u"SP")
-        (3301603,u"Duas Barras",u"RJ")
-        (2505808,u"Duas Estradas",u"PB")
-        (1707306,u"Dueré",u"TO")
-        (3514601,u"Dumont",u"SP")
-        (2103901,u"Duque Bacelar",u"MA")
-        (3301702,u"Duque de Caxias",u"RJ")
-        (3123528,u"Durandé",u"MG")
-        (3514700,u"Echaporã",u"SP")
-        (3202108,u"Ecoporanga",u"ES")
-        (5207352,u"Edealina",u"GO")
-        (5207402,u"Edéia",u"GO")
-        (1301407,u"Eirunepé",u"AM")
-        (3514809,u"Eldorado",u"SP")
-        (5003751,u"Eldorado",u"MS")
-        (4306767,u"Eldorado do Sul",u"RS")
-        (1502954,u"Eldorado dos Carajás",u"PA")
-        (2203503,u"Elesbão Veloso",u"PI")
-        (3514908,u"Elias Fausto",u"SP")
-        (2203602,u"Eliseu Martins",u"PI")
-        (3514924,u"Elisiário",u"SP")
-        (2910305,u"Elísio Medrado",u"BA")
-        (3123601,u"Elói Mendes",u"MG")
-        (2505907,u"Emas",u"PB")
-        (3514957,u"Embaúba",u"SP")
-        (3515004,u"Embu",u"SP")
-        (3515103,u"Embu-Guaçu",u"SP")
-        (3515129,u"Emilianópolis",u"SP")
-        (4306809,u"Encantado",u"RS")
-        (2403301,u"Encanto",u"RN")
-        (2910404,u"Encruzilhada",u"BA")
-        (4306908,u"Encruzilhada do Sul",u"RS")
-        (4107405,u"Enéas Marques",u"PR")
-        (4107504,u"Engenheiro Beltrão",u"PR")
-        (3123700,u"Engenheiro Caldas",u"MG")
-        (3515152,u"Engenheiro Coelho",u"SP")
-        (3123809,u"Engenheiro Navarro",u"MG")
-        (3301801,u"Engenheiro Paulo de Frontin",u"RJ")
-        (4306924,u"Engenho Velho",u"RS")
-        (3123858,u"Entre Folhas",u"MG")
-        (2910503,u"Entre Rios",u"BA")
-        (4205175,u"Entre Rios",u"SC")
-        (3123908,u"Entre Rios de Minas",u"MG")
-        (4107538,u"Entre Rios do Oeste",u"PR")
-        (4306957,u"Entre Rios do Sul",u"RS")
-        (4306932,u"Entre-Ijuís",u"RS")
-        (1301506,u"Envira",u"AM")
-        (1200252,u"Epitaciolândia",u"AC")
-        (2403400,u"Equador",u"RN")
-        (4306973,u"Erebango",u"RS")
-        (4307005,u"Erechim",u"RS")
-        (2304277,u"Ererê",u"CE")
-        (2900504,u"Érico Cardoso",u"BA")
-        (4205191,u"Ermo",u"SC")
-        (4307054,u"Ernestina",u"RS")
-        (4307203,u"Erval Grande",u"RS")
-        (4307302,u"Erval Seco",u"RS")
-        (4205209,u"Erval Velho",u"SC")
-        (3124005,u"Ervália",u"MG")
-        (2605202,u"Escada",u"PE")
-        (4307401,u"Esmeralda",u"RS")
-        (3124104,u"Esmeraldas",u"MG")
-        (3124203,u"Espera Feliz",u"MG")
-        (2506004,u"Esperança",u"PB")
-        (4307450,u"Esperança do Sul",u"RS")
-        (4107520,u"Esperança Nova",u"PR")
-        (1707405,u"Esperantina",u"TO")
-        (2203701,u"Esperantina",u"PI")
-        (2104008,u"Esperantinópolis",u"MA")
-        (4107546,u"Espigão Alto do Iguaçu",u"PR")
-        (1100098,u"Espigão D'Oeste",u"RO")
-        (3124302,u"Espinosa",u"MG")
-        (2403509,u"Espírito Santo",u"RN")
-        (3124401,u"Espírito Santo do Dourado",u"MG")
-        (3515186,u"Espírito Santo do Pinhal",u"SP")
-        (3515194,u"Espírito Santo do Turvo",u"SP")
-        (2910602,u"Esplanada",u"BA")
-        (4307500,u"Espumoso",u"RS")
-        (4307559,u"Estação",u"RS")
-        (2802106,u"Estância",u"SE")
-        (4307609,u"Estância Velha",u"RS")
-        (4307708,u"Esteio",u"RS")
-        (3124500,u"Estiva",u"MG")
-        (3557303,u"Estiva Gerbi",u"SP")
-        (2104057,u"Estreito",u"MA")
-        (4307807,u"Estrela",u"RS")
-        (3515202,u"Estrela d'Oeste",u"SP")
-        (3124609,u"Estrela Dalva",u"MG")
-        (2702553,u"Estrela de Alagoas",u"AL")
-        (3124708,u"Estrela do Indaiá",u"MG")
-        (3515301,u"Estrela do Norte",u"SP")
-        (5207501,u"Estrela do Norte",u"GO")
-        (3124807,u"Estrela do Sul",u"MG")
-        (4307815,u"Estrela Velha",u"RS")
-        (2910701,u"Euclides da Cunha",u"BA")
-        (3515350,u"Euclides da Cunha Paulista",u"SP")
-        (4307831,u"Eugênio de Castro",u"RS")
-        (3124906,u"Eugenópolis",u"MG")
-        (2910727,u"Eunápolis",u"BA")
-        (2304285,u"Eusébio",u"CE")
-        (3125002,u"Ewbank da Câmara",u"MG")
-        (3125101,u"Extrema",u"MG")
-        (2403608,u"Extremoz",u"RN")
-        (2605301,u"Exu",u"PE")
-        (2506103,u"Fagundes",u"PB")
-        (4307864,u"Fagundes Varela",u"RS")
-        (5207535,u"Faina",u"GO")
-        (3125200,u"Fama",u"MG")
-        (3125309,u"Faria Lemos",u"MG")
-        (2304301,u"Farias Brito",u"CE")
-        (1503002,u"Faro",u"PA")
-        (4107553,u"Farol",u"PR")
-        (4307906,u"Farroupilha",u"RS")
-        (3515400,u"Fartura",u"SP")
-        (2203750,u"Fartura do Piauí",u"PI")
-        (1707553,u"Fátima",u"TO")
-        (2910750,u"Fátima",u"BA")
-        (5003801,u"Fátima do Sul",u"MS")
-        (4107603,u"Faxinal",u"PR")
-        (4308003,u"Faxinal do Soturno",u"RS")
-        (4205308,u"Faxinal dos Guedes",u"SC")
-        (4308052,u"Faxinalzinho",u"RS")
-        (5207600,u"Fazenda Nova",u"GO")
-        (4107652,u"Fazenda Rio Grande",u"PR")
-        (4308078,u"Fazenda Vilanova",u"RS")
-        (1200302,u"Feijó",u"AC")
-        (2910776,u"Feira da Mata",u"BA")
-        (2910800,u"Feira de Santana",u"BA")
-        (2702603,u"Feira Grande",u"AL")
-        (2605400,u"Feira Nova",u"PE")
-        (2802205,u"Feira Nova",u"SE")
-        (2104073,u"Feira Nova do Maranhão",u"MA")
-        (3125408,u"Felício dos Santos",u"MG")
-        (2403707,u"Felipe Guerra",u"RN")
-        (3125606,u"Felisburgo",u"MG")
-        (3125705,u"Felixlândia",u"MG")
-        (4308102,u"Feliz",u"RS")
-        (2702702,u"Feliz Deserto",u"AL")
-        (5103700,u"Feliz Natal",u"MT")
-        (4107702,u"Fênix",u"PR")
-        (4107736,u"Fernandes Pinheiro",u"PR")
-        (3125804,u"Fernandes Tourinho",u"MG")
-        (2605459,u"Fernando de Noronha",u"PE")
-        (2104081,u"Fernando Falcão",u"MA")
-        (2403756,u"Fernando Pedroza",u"RN")
-        (3515608,u"Fernando Prestes",u"SP")
-        (3515509,u"Fernandópolis",u"SP")
-        (3515657,u"Fernão",u"SP")
-        (3515707,u"Ferraz de Vasconcelos",u"SP")
-        (1600238,u"Ferreira Gomes",u"AP")
-        (2605509,u"Ferreiros",u"PE")
-        (3125903,u"Ferros",u"MG")
-        (3125952,u"Fervedouro",u"MG")
-        (4107751,u"Figueira",u"PR")
-        (5003900,u"Figueirão",u"MS")
-        (1707652,u"Figueirópolis",u"TO")
-        (5103809,u"Figueirópolis D'Oeste",u"MT")
-        (1707702,u"Filadélfia",u"TO")
-        (2910859,u"Filadélfia",u"BA")
-        (2910909,u"Firmino Alves",u"BA")
-        (5207808,u"Firminópolis",u"GO")
-        (2702801,u"Flexeiras",u"AL")
-        (4107850,u"Flor da Serra do Sul",u"PR")
-        (4205357,u"Flor do Sertão",u"SC")
-        (3515806,u"Flora Rica",u"SP")
-        (4107801,u"Floraí",u"PR")
-        (2403806,u"Florânia",u"RN")
-        (3515905,u"Floreal",u"SP")
-        (2605608,u"Flores",u"PE")
-        (4308201,u"Flores da Cunha",u"RS")
-        (5207907,u"Flores de Goiás",u"GO")
-        (2203800,u"Flores do Piauí",u"PI")
-        (2605707,u"Floresta",u"PE")
-        (4107900,u"Floresta",u"PR")
-        (2911006,u"Floresta Azul",u"BA")
-        (1503044,u"Floresta do Araguaia",u"PA")
-        (2203859,u"Floresta do Piauí",u"PI")
-        (3126000,u"Florestal",u"MG")
-        (4108007,u"Florestópolis",u"PR")
-        (2203909,u"Floriano",u"PI")
-        (4308250,u"Floriano Peixoto",u"RS")
-        (4205407,u"Florianópolis",u"SC")
-        (4108106,u"Flórida",u"PR")
-        (3516002,u"Flórida Paulista",u"SP")
-        (3516101,u"Florínia",u"SP")
-        (1301605,u"Fonte Boa",u"AM")
-        (4308300,u"Fontoura Xavier",u"RS")
-        (3126109,u"Formiga",u"MG")
-        (4308409,u"Formigueiro",u"RS")
-        (5208004,u"Formosa",u"GO")
-        (2104099,u"Formosa da Serra Negra",u"MA")
-        (4108205,u"Formosa do Oeste",u"PR")
-        (2911105,u"Formosa do Rio Preto",u"BA")
-        (4205431,u"Formosa do Sul",u"SC")
-        (3126208,u"Formoso",u"MG")
-        (5208103,u"Formoso",u"GO")
-        (1708205,u"Formoso do Araguaia",u"TO")
-        (4308433,u"Forquetinha",u"RS")
-        (2304350,u"Forquilha",u"CE")
-        (4205456,u"Forquilhinha",u"SC")
-        (2304400,u"Fortaleza",u"CE")
-        (3126307,u"Fortaleza de Minas",u"MG")
-        (1708254,u"Fortaleza do Tabocão",u"TO")
-        (2104107,u"Fortaleza dos Nogueiras",u"MA")
-        (4308458,u"Fortaleza dos Valos",u"RS")
-        (2304459,u"Fortim",u"CE")
-        (2104206,u"Fortuna",u"MA")
-        (3126406,u"Fortuna de Minas",u"MG")
-        (4108304,u"Foz do Iguaçu",u"PR")
-        (4108452,u"Foz do Jordão",u"PR")
-        (4205506,u"Fraiburgo",u"SC")
-        (3516200,u"Franca",u"SP")
-        (2204006,u"Francinópolis",u"PI")
-        (4108320,u"Francisco Alves",u"PR")
-        (2204105,u"Francisco Ayres",u"PI")
-        (3126505,u"Francisco Badaró",u"MG")
-        (4108403,u"Francisco Beltrão",u"PR")
-        (2403905,u"Francisco Dantas",u"RN")
-        (3126604,u"Francisco Dumont",u"MG")
-        (2204154,u"Francisco Macedo",u"PI")
-        (3516309,u"Francisco Morato",u"SP")
-        (3126703,u"Francisco Sá",u"MG")
-        (2204204,u"Francisco Santos",u"PI")
-        (3126752,u"Franciscópolis",u"MG")
-        (3516408,u"Franco da Rocha",u"SP")
-        (2304509,u"Frecheirinha",u"CE")
-        (4308508,u"Frederico Westphalen",u"RS")
-        (3126802,u"Frei Gaspar",u"MG")
-        (3126901,u"Frei Inocêncio",u"MG")
-        (3126950,u"Frei Lagonegro",u"MG")
-        (2506202,u"Frei Martinho",u"PB")
-        (2605806,u"Frei Miguelinho",u"PE")
-        (2802304,u"Frei Paulo",u"SE")
-        (4205555,u"Frei Rogério",u"SC")
-        (3127008,u"Fronteira",u"MG")
-        (3127057,u"Fronteira dos Vales",u"MG")
-        (2204303,u"Fronteiras",u"PI")
-        (3127073,u"Fruta de Leite",u"MG")
-        (3127107,u"Frutal",u"MG")
-        (2404002,u"Frutuoso Gomes",u"RN")
-        (3202207,u"Fundão",u"ES")
-        (3127206,u"Funilândia",u"MG")
-        (3516507,u"Gabriel Monteiro",u"SP")
-        (2506251,u"Gado Bravo",u"PB")
-        (3516606,u"Gália",u"SP")
-        (3127305,u"Galiléia",u"MG")
-        (2404101,u"Galinhos",u"RN")
-        (4205605,u"Galvão",u"SC")
-        (2605905,u"Gameleira",u"PE")
-        (5208152,u"Gameleira de Goiás",u"GO")
-        (3127339,u"Gameleiras",u"MG")
-        (2911204,u"Gandu",u"BA")
-        (2606002,u"Garanhuns",u"PE")
-        (2802403,u"Gararu",u"SE")
-        (3516705,u"Garça",u"SP")
-        (4308607,u"Garibaldi",u"RS")
-        (4205704,u"Garopaba",u"SC")
-        (1503077,u"Garrafão do Norte",u"PA")
-        (4308656,u"Garruchos",u"RS")
-        (4205803,u"Garuva",u"SC")
-        (4205902,u"Gaspar",u"SC")
-        (3516804,u"Gastão Vidigal",u"SP")
-        (5103858,u"Gaúcha do Norte",u"MT")
-        (4308706,u"Gaurama",u"RS")
-        (2911253,u"Gavião",u"BA")
-        (3516853,u"Gavião Peixoto",u"SP")
-        (2204352,u"Geminiano",u"PI")
-        (4308805,u"General Câmara",u"RS")
-        (4108502,u"General Carneiro",u"PR")
-        (5103908,u"General Carneiro",u"MT")
-        (2802502,u"General Maynard",u"SE")
-        (3516903,u"General Salgado",u"SP")
-        (2304608,u"General Sampaio",u"CE")
-        (4308854,u"Gentil",u"RS")
-        (2911303,u"Gentio do Ouro",u"BA")
-        (3517000,u"Getulina",u"SP")
-        (4308904,u"Getúlio Vargas",u"RS")
-        (2204402,u"Gilbués",u"PI")
-        (2702900,u"Girau do Ponciano",u"AL")
-        (4309001,u"Giruá",u"RS")
-        (3127354,u"Glaucilândia",u"MG")
-        (3517109,u"Glicério",u"SP")
-        (2911402,u"Glória",u"BA")
-        (5103957,u"Glória D'Oeste",u"MT")
-        (5004007,u"Glória de Dourados",u"MS")
-        (2606101,u"Glória do Goitá",u"PE")
-        (4309050,u"Glorinha",u"RS")
-        (2104305,u"Godofredo Viana",u"MA")
-        (4108551,u"Godoy Moreira",u"PR")
-        (3127370,u"Goiabeira",u"MG")
-        (2606200,u"Goiana",u"PE")
-        (3127388,u"Goianá",u"MG")
-        (5208400,u"Goianápolis",u"GO")
-        (5208509,u"Goiandira",u"GO")
-        (5208608,u"Goianésia",u"GO")
-        (1503093,u"Goianésia do Pará",u"PA")
-        (5208707,u"Goiânia",u"GO")
-        (2404200,u"Goianinha",u"RN")
-        (5208806,u"Goianira",u"GO")
-        (1708304,u"Goianorte",u"TO")
-        (5208905,u"Goiás",u"GO")
-        (1709005,u"Goiatins",u"TO")
-        (5209101,u"Goiatuba",u"GO")
-        (4108601,u"Goioerê",u"PR")
-        (4108650,u"Goioxim",u"PR")
-        (3127404,u"Gonçalves",u"MG")
-        (2104404,u"Gonçalves Dias",u"MA")
-        (2911501,u"Gongogi",u"BA")
-        (3127503,u"Gonzaga",u"MG")
-        (3127602,u"Gouveia",u"MG")
-        (5209150,u"Gouvelândia",u"GO")
-        (2104503,u"Governador Archer",u"MA")
-        (4206009,u"Governador Celso Ramos",u"SC")
-        (2404309,u"Governador Dix-Sept Rosado",u"RN")
-        (2104552,u"Governador Edison Lobão",u"MA")
-        (2104602,u"Governador Eugênio Barros",u"MA")
-        (1101005,u"Governador Jorge Teixeira",u"RO")
-        (3202256,u"Governador Lindenberg",u"ES")
-        (2104628,u"Governador Luiz Rocha",u"MA")
-        (2911600,u"Governador Mangabeira",u"BA")
-        (2104651,u"Governador Newton Bello",u"MA")
-        (2104677,u"Governador Nunes Freire",u"MA")
-        (3127701,u"Governador Valadares",u"MG")
-        (2304657,u"Graça",u"CE")
-        (2104701,u"Graça Aranha",u"MA")
-        (2802601,u"Gracho Cardoso",u"SE")
-        (2104800,u"Grajaú",u"MA")
-        (4309100,u"Gramado",u"RS")
-        (4309126,u"Gramado dos Loureiros",u"RS")
-        (4309159,u"Gramado Xavier",u"RS")
-        (4108700,u"Grandes Rios",u"PR")
-        (2606309,u"Granito",u"PE")
-        (2304707,u"Granja",u"CE")
-        (2304806,u"Granjeiro",u"CE")
-        (3127800,u"Grão Mogol",u"MG")
-        (4206108,u"Grão Pará",u"SC")
-        (2606408,u"Gravatá",u"PE")
-        (4309209,u"Gravataí",u"RS")
-        (4206207,u"Gravatal",u"SC")
-        (2304905,u"Groaíras",u"CE")
-        (2404408,u"Grossos",u"RN")
-        (3127909,u"Grupiara",u"MG")
-        (4309258,u"Guabiju",u"RS")
-        (4206306,u"Guabiruba",u"SC")
-        (3202306,u"Guaçuí",u"ES")
-        (2204501,u"Guadalupe",u"PI")
-        (4309308,u"Guaíba",u"RS")
-        (3517208,u"Guaiçara",u"SP")
-        (3517307,u"Guaimbê",u"SP")
-        (3517406,u"Guaíra",u"SP")
-        (4108809,u"Guaíra",u"PR")
-        (4108908,u"Guairaçá",u"PR")
-        (2304954,u"Guaiúba",u"CE")
-        (1301654,u"Guajará",u"AM")
-        (1100106,u"Guajará-Mirim",u"RO")
-        (2911659,u"Guajeru",u"BA")
-        (2404507,u"Guamaré",u"RN")
-        (4108957,u"Guamiranga",u"PR")
-        (2911709,u"Guanambi",u"BA")
-        (3128006,u"Guanhães",u"MG")
-        (3128105,u"Guapé",u"MG")
-        (3517505,u"Guapiaçu",u"SP")
-        (3517604,u"Guapiara",u"SP")
-        (3301850,u"Guapimirim",u"RJ")
-        (4109005,u"Guapirama",u"PR")
-        (5209200,u"Guapó",u"GO")
-        (4309407,u"Guaporé",u"RS")
-        (4109104,u"Guaporema",u"PR")
-        (3517703,u"Guará",u"SP")
-        (2506301,u"Guarabira",u"PB")
-        (3517802,u"Guaraçaí",u"SP")
-        (3517901,u"Guaraci",u"SP")
-        (4109203,u"Guaraci",u"PR")
-        (3128204,u"Guaraciaba",u"MG")
-        (4206405,u"Guaraciaba",u"SC")
-        (2305001,u"Guaraciaba do Norte",u"CE")
-        (3128253,u"Guaraciama",u"MG")
-        (1709302,u"Guaraí",u"TO")
-        (5209291,u"Guaraíta",u"GO")
-        (2305100,u"Guaramiranga",u"CE")
-        (4206504,u"Guaramirim",u"SC")
-        (3128303,u"Guaranésia",u"MG")
-        (3128402,u"Guarani",u"MG")
-        (3518008,u"Guarani d'Oeste",u"SP")
-        (4309506,u"Guarani das Missões",u"RS")
-        (5209408,u"Guarani de Goiás",u"GO")
-        (4109302,u"Guaraniaçu",u"PR")
-        (3518107,u"Guarantã",u"SP")
-        (5104104,u"Guarantã do Norte",u"MT")
-        (3202405,u"Guarapari",u"ES")
-        (4109401,u"Guarapuava",u"PR")
-        (4109500,u"Guaraqueçaba",u"PR")
-        (3128501,u"Guarará",u"MG")
-        (3518206,u"Guararapes",u"SP")
-        (3518305,u"Guararema",u"SP")
-        (2911808,u"Guaratinga",u"BA")
-        (3518404,u"Guaratinguetá",u"SP")
-        (4109609,u"Guaratuba",u"PR")
-        (3128600,u"Guarda-Mor",u"MG")
-        (3518503,u"Guareí",u"SP")
-        (3518602,u"Guariba",u"SP")
-        (2204550,u"Guaribas",u"PI")
-        (5209457,u"Guarinos",u"GO")
-        (3518701,u"Guarujá",u"SP")
-        (4206603,u"Guarujá do Sul",u"SC")
-        (3518800,u"Guarulhos",u"SP")
-        (4206652,u"Guatambú",u"SC")
-        (3518859,u"Guatapará",u"SP")
-        (3128709,u"Guaxupé",u"MG")
-        (5004106,u"Guia Lopes da Laguna",u"MS")
-        (3128808,u"Guidoval",u"MG")
-        (2104909,u"Guimarães",u"MA")
-        (3128907,u"Guimarânia",u"MG")
-        (5104203,u"Guiratinga",u"MT")
-        (3129004,u"Guiricema",u"MG")
-        (3129103,u"Gurinhatã",u"MG")
-        (2506400,u"Gurinhém",u"PB")
-        (2506509,u"Gurjão",u"PB")
-        (1503101,u"Gurupá",u"PA")
-        (1709500,u"Gurupi",u"TO")
-        (3518909,u"Guzolândia",u"SP")
-        (4309555,u"Harmonia",u"RS")
-        (5209606,u"Heitoraí",u"GO")
-        (3129202,u"Heliodora",u"MG")
-        (2911857,u"Heliópolis",u"BA")
-        (3519006,u"Herculândia",u"SP")
-        (4307104,u"Herval",u"RS")
-        (4206702,u"Herval d'Oeste",u"SC")
-        (4309571,u"Herveiras",u"RS")
-        (2305209,u"Hidrolândia",u"CE")
-        (5209705,u"Hidrolândia",u"GO")
-        (5209804,u"Hidrolina",u"GO")
-        (3519055,u"Holambra",u"SP")
-        (4109658,u"Honório Serpa",u"PR")
-        (2305233,u"Horizonte",u"CE")
-        (4309605,u"Horizontina",u"RS")
-        (3519071,u"Hortolândia",u"SP")
-        (2204600,u"Hugo Napoleão",u"PI")
-        (4309654,u"Hulha Negra",u"RS")
-        (1301704,u"Humaitá",u"AM")
-        (4309704,u"Humaitá",u"RS")
-        (2105005,u"Humberto de Campos",u"MA")
-        (3519105,u"Iacanga",u"SP")
-        (5209903,u"Iaciara",u"GO")
-        (3519204,u"Iacri",u"SP")
-        (2911907,u"Iaçu",u"BA")
-        (3129301,u"Iapu",u"MG")
-        (3519253,u"Iaras",u"SP")
-        (2606507,u"Iati",u"PE")
-        (4109708,u"Ibaiti",u"PR")
-        (4309753,u"Ibarama",u"RS")
-        (2305266,u"Ibaretama",u"CE")
-        (3519303,u"Ibaté",u"SP")
-        (2703007,u"Ibateguara",u"AL")
-        (3202454,u"Ibatiba",u"ES")
-        (4109757,u"Ibema",u"PR")
-        (3129400,u"Ibertioga",u"MG")
-        (3129509,u"Ibiá",u"MG")
-        (4309803,u"Ibiaçá",u"RS")
-        (3129608,u"Ibiaí",u"MG")
-        (4206751,u"Ibiam",u"SC")
-        (2305308,u"Ibiapina",u"CE")
-        (2506608,u"Ibiara",u"PB")
-        (2912004,u"Ibiassucê",u"BA")
-        (2912103,u"Ibicaraí",u"BA")
-        (4206801,u"Ibicaré",u"SC")
-        (2912202,u"Ibicoara",u"BA")
-        (2912301,u"Ibicuí",u"BA")
-        (2305332,u"Ibicuitinga",u"CE")
-        (2606606,u"Ibimirim",u"PE")
-        (2912400,u"Ibipeba",u"BA")
-        (2912509,u"Ibipitanga",u"BA")
-        (4109807,u"Ibiporã",u"PR")
-        (2912608,u"Ibiquera",u"BA")
-        (3519402,u"Ibirá",u"SP")
-        (3129657,u"Ibiracatu",u"MG")
-        (3129707,u"Ibiraci",u"MG")
-        (3202504,u"Ibiraçu",u"ES")
-        (4309902,u"Ibiraiaras",u"RS")
-        (2606705,u"Ibirajuba",u"PE")
-        (4206900,u"Ibirama",u"SC")
-        (2912707,u"Ibirapitanga",u"BA")
-        (2912806,u"Ibirapuã",u"BA")
-        (4309951,u"Ibirapuitã",u"RS")
-        (3519501,u"Ibirarema",u"SP")
-        (2912905,u"Ibirataia",u"BA")
-        (3129806,u"Ibirité",u"MG")
-        (4310009,u"Ibirubá",u"RS")
-        (2913002,u"Ibitiara",u"BA")
-        (3519600,u"Ibitinga",u"SP")
-        (3202553,u"Ibitirama",u"ES")
-        (2913101,u"Ibititá",u"BA")
-        (3129905,u"Ibitiúra de Minas",u"MG")
-        (3130002,u"Ibituruna",u"MG")
-        (3519709,u"Ibiúna",u"SP")
-        (2913200,u"Ibotirama",u"BA")
-        (2305357,u"Icapuí",u"CE")
-        (4207007,u"Içara",u"SC")
-        (3130051,u"Icaraí de Minas",u"MG")
-        (4109906,u"Icaraíma",u"PR")
-        (2105104,u"Icatu",u"MA")
-        (3519808,u"Icém",u"SP")
-        (2913309,u"Ichu",u"BA")
-        (2305407,u"Icó",u"CE")
-        (3202603,u"Iconha",u"ES")
-        (2404606,u"Ielmo Marinho",u"RN")
-        (3519907,u"Iepê",u"SP")
-        (2703106,u"Igaci",u"AL")
-        (2913408,u"Igaporã",u"BA")
-        (3520004,u"Igaraçu do Tietê",u"SP")
-        (2502607,u"Igaracy",u"PB")
-        (3520103,u"Igarapava",u"SP")
-        (3130101,u"Igarapé",u"MG")
-        (2105153,u"Igarapé do Meio",u"MA")
-        (2105203,u"Igarapé Grande",u"MA")
-        (1503200,u"Igarapé-Açu",u"PA")
-        (1503309,u"Igarapé-Miri",u"PA")
-        (2606804,u"Igarassu",u"PE")
-        (3520202,u"Igaratá",u"SP")
-        (3130200,u"Igaratinga",u"MG")
-        (2913457,u"Igrapiúna",u"BA")
-        (2703205,u"Igreja Nova",u"AL")
-        (4310108,u"Igrejinha",u"RS")
-        (3301876,u"Iguaba Grande",u"RJ")
-        (2913507,u"Iguaí",u"BA")
-        (3520301,u"Iguape",u"SP")
-        (2606903,u"Iguaraci",u"PE")
-        (4110003,u"Iguaraçu",u"PR")
-        (3130309,u"Iguatama",u"MG")
-        (5004304,u"Iguatemi",u"MS")
-        (2305506,u"Iguatu",u"CE")
-        (4110052,u"Iguatu",u"PR")
-        (3130408,u"Ijaci",u"MG")
-        (4310207,u"Ijuí",u"RS")
-        (3520426,u"Ilha Comprida",u"SP")
-        (2802700,u"Ilha das Flores",u"SE")
-        (2607604,u"Ilha de Itamaracá",u"PE")
-        (2204659,u"Ilha Grande",u"PI")
-        (3520442,u"Ilha Solteira",u"SP")
-        (3520400,u"Ilhabela",u"SP")
-        (2913606,u"Ilhéus",u"BA")
-        (4207106,u"Ilhota",u"SC")
-        (3130507,u"Ilicínea",u"MG")
-        (4310306,u"Ilópolis",u"RS")
-        (2506707,u"Imaculada",u"PB")
-        (4207205,u"Imaruí",u"SC")
-        (4110078,u"Imbaú",u"PR")
-        (4310330,u"Imbé",u"RS")
-        (3130556,u"Imbé de Minas",u"MG")
-        (4207304,u"Imbituba",u"SC")
-        (4110102,u"Imbituva",u"PR")
-        (4207403,u"Imbuia",u"SC")
-        (4310363,u"Imigrante",u"RS")
-        (2105302,u"Imperatriz",u"MA")
-        (4110201,u"Inácio Martins",u"PR")
-        (5209937,u"Inaciolândia",u"GO")
-        (2607000,u"Inajá",u"PE")
-        (4110300,u"Inajá",u"PR")
-        (3130606,u"Inconfidentes",u"MG")
-        (3130655,u"Indaiabira",u"MG")
-        (4207502,u"Indaial",u"SC")
-        (3520509,u"Indaiatuba",u"SP")
-        (2305605,u"Independência",u"CE")
-        (4310405,u"Independência",u"RS")
-        (3520608,u"Indiana",u"SP")
-        (3130705,u"Indianópolis",u"MG")
-        (4110409,u"Indianópolis",u"PR")
-        (3520707,u"Indiaporã",u"SP")
-        (5209952,u"Indiara",u"GO")
-        (2802809,u"Indiaroba",u"SE")
-        (5104500,u"Indiavaí",u"MT")
-        (2506806,u"Ingá",u"PB")
-        (3130804,u"Ingaí",u"MG")
-        (2607109,u"Ingazeira",u"PE")
-        (4310413,u"Inhacorá",u"RS")
-        (2913705,u"Inhambupe",u"BA")
-        (1503408,u"Inhangapi",u"PA")
-        (2703304,u"Inhapi",u"AL")
-        (3130903,u"Inhapim",u"MG")
-        (3131000,u"Inhaúma",u"MG")
-        (2204709,u"Inhuma",u"PI")
-        (5210000,u"Inhumas",u"GO")
-        (3131109,u"Inimutaba",u"MG")
-        (5004403,u"Inocência",u"MS")
-        (3520806,u"Inúbia Paulista",u"SP")
-        (4207577,u"Iomerê",u"SC")
-        (3131158,u"Ipaba",u"MG")
-        (5210109,u"Ipameri",u"GO")
-        (3131208,u"Ipanema",u"MG")
-        (2404705,u"Ipanguaçu",u"RN")
-        (2305654,u"Ipaporanga",u"CE")
-        (3131307,u"Ipatinga",u"MG")
-        (2305704,u"Ipaumirim",u"CE")
-        (3520905,u"Ipaussu",u"SP")
-        (4310439,u"Ipê",u"RS")
-        (2913804,u"Ipecaetá",u"BA")
-        (3521002,u"Iperó",u"SP")
-        (3521101,u"Ipeúna",u"SP")
-        (3131406,u"Ipiaçu",u"MG")
-        (2913903,u"Ipiaú",u"BA")
-        (3521150,u"Ipiguá",u"SP")
-        (2914000,u"Ipirá",u"BA")
-        (4207601,u"Ipira",u"SC")
-        (4110508,u"Ipiranga",u"PR")
-        (5210158,u"Ipiranga de Goiás",u"GO")
-        (5104526,u"Ipiranga do Norte",u"MT")
-        (2204808,u"Ipiranga do Piauí",u"PI")
-        (4310462,u"Ipiranga do Sul",u"RS")
-        (1301803,u"Ipixuna",u"AM")
-        (1503457,u"Ipixuna do Pará",u"PA")
-        (2607208,u"Ipojuca",u"PE")
-        (4110607,u"Iporã",u"PR")
-        (5210208,u"Iporá",u"GO")
-        (4207650,u"Iporã do Oeste",u"SC")
-        (3521200,u"Iporanga",u"SP")
-        (2305803,u"Ipu",u"CE")
-        (3521309,u"Ipuã",u"SP")
-        (4207684,u"Ipuaçu",u"SC")
-        (2607307,u"Ipubi",u"PE")
-        (2404804,u"Ipueira",u"RN")
-        (1709807,u"Ipueiras",u"TO")
-        (2305902,u"Ipueiras",u"CE")
-        (3131505,u"Ipuiúna",u"MG")
-        (4207700,u"Ipumirim",u"SC")
-        (2914109,u"Ipupiara",u"BA")
-        (1400282,u"Iracema",u"RR")
-        (2306009,u"Iracema",u"CE")
-        (4110656,u"Iracema do Oeste",u"PR")
-        (3521408,u"Iracemápolis",u"SP")
-        (4207759,u"Iraceminha",u"SC")
-        (4310504,u"Iraí",u"RS")
-        (3131604,u"Iraí de Minas",u"MG")
-        (2914208,u"Irajuba",u"BA")
-        (2914307,u"Iramaia",u"BA")
-        (1301852,u"Iranduba",u"AM")
-        (4207809,u"Irani",u"SC")
-        (3521507,u"Irapuã",u"SP")
-        (3521606,u"Irapuru",u"SP")
-        (2914406,u"Iraquara",u"BA")
-        (2914505,u"Irará",u"BA")
-        (4110706,u"Irati",u"PR")
-        (4207858,u"Irati",u"SC")
-        (2306108,u"Irauçuba",u"CE")
-        (2914604,u"Irecê",u"BA")
-        (4110805,u"Iretama",u"PR")
-        (4207908,u"Irineópolis",u"SC")
-        (1503507,u"Irituia",u"PA")
-        (3202652,u"Irupi",u"ES")
-        (2204907,u"Isaías Coelho",u"PI")
-        (5210307,u"Israelândia",u"GO")
-        (4208005,u"Itá",u"SC")
-        (4310538,u"Itaara",u"RS")
-        (2506905,u"Itabaiana",u"PB")
-        (2802908,u"Itabaiana",u"SE")
-        (2803005,u"Itabaianinha",u"SE")
-        (2914653,u"Itabela",u"BA")
-        (3521705,u"Itaberá",u"SP")
-        (2914703,u"Itaberaba",u"BA")
-        (5210406,u"Itaberaí",u"GO")
-        (2803104,u"Itabi",u"SE")
-        (3131703,u"Itabira",u"MG")
-        (3131802,u"Itabirinha",u"MG")
-        (3131901,u"Itabirito",u"MG")
-        (3301900,u"Itaboraí",u"RJ")
-        (2914802,u"Itabuna",u"BA")
-        (1710508,u"Itacajá",u"TO")
-        (3132008,u"Itacambira",u"MG")
-        (3132107,u"Itacarambi",u"MG")
-        (2914901,u"Itacaré",u"BA")
-        (1301902,u"Itacoatiara",u"AM")
-        (2607406,u"Itacuruba",u"PE")
-        (4310553,u"Itacurubi",u"RS")
-        (2915007,u"Itaeté",u"BA")
-        (2915106,u"Itagi",u"BA")
-        (2915205,u"Itagibá",u"BA")
-        (2915304,u"Itagimirim",u"BA")
-        (3202702,u"Itaguaçu",u"ES")
-        (2915353,u"Itaguaçu da Bahia",u"BA")
-        (3302007,u"Itaguaí",u"RJ")
-        (4110904,u"Itaguajé",u"PR")
-        (3132206,u"Itaguara",u"MG")
-        (5210562,u"Itaguari",u"GO")
-        (5210604,u"Itaguaru",u"GO")
-        (1710706,u"Itaguatins",u"TO")
-        (3521804,u"Itaí",u"SP")
-        (2607505,u"Itaíba",u"PE")
-        (2306207,u"Itaiçaba",u"CE")
-        (2205003,u"Itainópolis",u"PI")
-        (4208104,u"Itaiópolis",u"SC")
-        (2105351,u"Itaipava do Grajaú",u"MA")
-        (3132305,u"Itaipé",u"MG")
-        (4110953,u"Itaipulândia",u"PR")
-        (2306256,u"Itaitinga",u"CE")
-        (1503606,u"Itaituba",u"PA")
-        (2404853,u"Itajá",u"RN")
-        (5210802,u"Itajá",u"GO")
-        (4208203,u"Itajaí",u"SC")
-        (3521903,u"Itajobi",u"SP")
-        (3522000,u"Itaju",u"SP")
-        (2915403,u"Itaju do Colônia",u"BA")
-        (3132404,u"Itajubá",u"MG")
-        (2915502,u"Itajuípe",u"BA")
-        (3302056,u"Italva",u"RJ")
-        (2915601,u"Itamaraju",u"BA")
-        (3132503,u"Itamarandiba",u"MG")
-        (1301951,u"Itamarati",u"AM")
-        (3132602,u"Itamarati de Minas",u"MG")
-        (2915700,u"Itamari",u"BA")
-        (3132701,u"Itambacuri",u"MG")
-        (4111001,u"Itambaracá",u"PR")
-        (2607653,u"Itambé",u"PE")
-        (2915809,u"Itambé",u"BA")
-        (4111100,u"Itambé",u"PR")
-        (3132800,u"Itambé do Mato Dentro",u"MG")
-        (3132909,u"Itamogi",u"MG")
-        (3133006,u"Itamonte",u"MG")
-        (2915908,u"Itanagra",u"BA")
-        (3522109,u"Itanhaém",u"SP")
-        (3133105,u"Itanhandu",u"MG")
-        (5104542,u"Itanhangá",u"MT")
-        (2916005,u"Itanhém",u"BA")
-        (3133204,u"Itanhomi",u"MG")
-        (3133303,u"Itaobim",u"MG")
-        (3522158,u"Itaóca",u"SP")
-        (3302106,u"Itaocara",u"RJ")
-        (5210901,u"Itapaci",u"GO")
-        (2306306,u"Itapagé",u"CE")
-        (3133402,u"Itapagipe",u"MG")
-        (2916104,u"Itaparica",u"BA")
-        (2916203,u"Itapé",u"BA")
-        (2916302,u"Itapebi",u"BA")
-        (3133501,u"Itapecerica",u"MG")
-        (3522208,u"Itapecerica da Serra",u"SP")
-        (2105401,u"Itapecuru Mirim",u"MA")
-        (4111209,u"Itapejara d'Oeste",u"PR")
-        (4208302,u"Itapema",u"SC")
-        (3202801,u"Itapemirim",u"ES")
-        (4111258,u"Itaperuçu",u"PR")
-        (3302205,u"Itaperuna",u"RJ")
-        (2607703,u"Itapetim",u"PE")
-        (2916401,u"Itapetinga",u"BA")
-        (3522307,u"Itapetininga",u"SP")
-        (3133600,u"Itapeva",u"MG")
-        (3522406,u"Itapeva",u"SP")
-        (3522505,u"Itapevi",u"SP")
-        (2916500,u"Itapicuru",u"BA")
-        (2306405,u"Itapipoca",u"CE")
-        (3522604,u"Itapira",u"SP")
-        (1302009,u"Itapiranga",u"AM")
-        (4208401,u"Itapiranga",u"SC")
-        (5211008,u"Itapirapuã",u"GO")
-        (3522653,u"Itapirapuã Paulista",u"SP")
-        (1710904,u"Itapiratins",u"TO")
-        (2607752,u"Itapissuma",u"PE")
-        (2916609,u"Itapitanga",u"BA")
-        (2306504,u"Itapiúna",u"CE")
-        (4208450,u"Itapoá",u"SC")
-        (3522703,u"Itápolis",u"SP")
-        (5004502,u"Itaporã",u"MS")
-        (1711100,u"Itaporã do Tocantins",u"TO")
-        (2507002,u"Itaporanga",u"PB")
-        (3522802,u"Itaporanga",u"SP")
-        (2803203,u"Itaporanga d'Ajuda",u"SE")
-        (2507101,u"Itapororoca",u"PB")
-        (1101104,u"Itapuã do Oeste",u"RO")
-        (4310579,u"Itapuca",u"RS")
-        (3522901,u"Itapuí",u"SP")
-        (3523008,u"Itapura",u"SP")
-        (5211206,u"Itapuranga",u"GO")
-        (3523107,u"Itaquaquecetuba",u"SP")
-        (2916708,u"Itaquara",u"BA")
-        (4310603,u"Itaqui",u"RS")
-        (5004601,u"Itaquiraí",u"MS")
-        (2607802,u"Itaquitinga",u"PE")
-        (3202900,u"Itarana",u"ES")
-        (2916807,u"Itarantim",u"BA")
-        (3523206,u"Itararé",u"SP")
-        (2306553,u"Itarema",u"CE")
-        (3523305,u"Itariri",u"SP")
-        (5211305,u"Itarumã",u"GO")
-        (4310652,u"Itati",u"RS")
-        (3302254,u"Itatiaia",u"RJ")
-        (3133709,u"Itatiaiuçu",u"MG")
-        (3523404,u"Itatiba",u"SP")
-        (4310702,u"Itatiba do Sul",u"RS")
-        (2916856,u"Itatim",u"BA")
-        (3523503,u"Itatinga",u"SP")
-        (2306603,u"Itatira",u"CE")
-        (2507200,u"Itatuba",u"PB")
-        (2404903,u"Itaú",u"RN")
-        (3133758,u"Itaú de Minas",u"MG")
-        (5104559,u"Itaúba",u"MT")
-        (1600253,u"Itaubal",u"AP")
-        (5211404,u"Itauçu",u"GO")
-        (2205102,u"Itaueira",u"PI")
-        (3133808,u"Itaúna",u"MG")
-        (4111308,u"Itaúna do Sul",u"PR")
-        (3133907,u"Itaverava",u"MG")
-        (3134004,u"Itinga",u"MG")
-        (2105427,u"Itinga do Maranhão",u"MA")
-        (5104609,u"Itiquira",u"MT")
-        (3523602,u"Itirapina",u"SP")
-        (3523701,u"Itirapuã",u"SP")
-        (2916906,u"Itiruçu",u"BA")
-        (2917003,u"Itiúba",u"BA")
-        (3523800,u"Itobi",u"SP")
-        (2917102,u"Itororó",u"BA")
-        (3523909,u"Itu",u"SP")
-        (2917201,u"Ituaçu",u"BA")
-        (2917300,u"Ituberá",u"BA")
-        (3134103,u"Itueta",u"MG")
-        (3134202,u"Ituiutaba",u"MG")
-        (5211503,u"Itumbiara",u"GO")
-        (3134301,u"Itumirim",u"MG")
-        (3524006,u"Itupeva",u"SP")
-        (1503705,u"Itupiranga",u"PA")
-        (4208500,u"Ituporanga",u"SC")
-        (3134400,u"Iturama",u"MG")
-        (3134509,u"Itutinga",u"MG")
-        (3524105,u"Ituverava",u"SP")
-        (2917334,u"Iuiú",u"BA")
-        (3203007,u"Iúna",u"ES")
-        (4111407,u"Ivaí",u"PR")
-        (4111506,u"Ivaiporã",u"PR")
-        (4111555,u"Ivaté",u"PR")
-        (4111605,u"Ivatuba",u"PR")
-        (5004700,u"Ivinhema",u"MS")
-        (5211602,u"Ivolândia",u"GO")
-        (4310751,u"Ivorá",u"RS")
-        (4310801,u"Ivoti",u"RS")
-        (2607901,u"Jaboatão dos Guararapes",u"PE")
-        (4208609,u"Jaborá",u"SC")
-        (2917359,u"Jaborandi",u"BA")
-        (3524204,u"Jaborandi",u"SP")
-        (4111704,u"Jaboti",u"PR")
-        (4310850,u"Jaboticaba",u"RS")
-        (3524303,u"Jaboticabal",u"SP")
-        (3134608,u"Jaboticatubas",u"MG")
-        (2405009,u"Jaçanã",u"RN")
-        (2917409,u"Jacaraci",u"BA")
-        (2507309,u"Jacaraú",u"PB")
-        (2703403,u"Jacaré dos Homens",u"AL")
-        (1503754,u"Jacareacanga",u"PA")
-        (3524402,u"Jacareí",u"SP")
-        (4111803,u"Jacarezinho",u"PR")
-        (3524501,u"Jaci",u"SP")
-        (5104807,u"Jaciara",u"MT")
-        (3134707,u"Jacinto",u"MG")
-        (4208708,u"Jacinto Machado",u"SC")
-        (2917508,u"Jacobina",u"BA")
-        (2205151,u"Jacobina do Piauí",u"PI")
-        (3134806,u"Jacuí",u"MG")
-        (2703502,u"Jacuípe",u"AL")
-        (4310876,u"Jacuizinho",u"RS")
-        (1503804,u"Jacundá",u"PA")
-        (3524600,u"Jacupiranga",u"SP")
-        (3134905,u"Jacutinga",u"MG")
-        (4310900,u"Jacutinga",u"RS")
-        (4111902,u"Jaguapitã",u"PR")
-        (2917607,u"Jaguaquara",u"BA")
-        (3135001,u"Jaguaraçu",u"MG")
-        (4311007,u"Jaguarão",u"RS")
-        (2917706,u"Jaguarari",u"BA")
-        (3203056,u"Jaguaré",u"ES")
-        (2306702,u"Jaguaretama",u"CE")
-        (4311106,u"Jaguari",u"RS")
-        (4112009,u"Jaguariaíva",u"PR")
-        (2306801,u"Jaguaribara",u"CE")
-        (2306900,u"Jaguaribe",u"CE")
-        (2917805,u"Jaguaripe",u"BA")
-        (3524709,u"Jaguariúna",u"SP")
-        (2307007,u"Jaguaruana",u"CE")
-        (4208807,u"Jaguaruna",u"SC")
-        (3135050,u"Jaíba",u"MG")
-        (2205201,u"Jaicós",u"PI")
-        (3524808,u"Jales",u"SP")
-        (3524907,u"Jambeiro",u"SP")
-        (3135076,u"Jampruca",u"MG")
-        (3135100,u"Janaúba",u"MG")
-        (5211701,u"Jandaia",u"GO")
-        (4112108,u"Jandaia do Sul",u"PR")
-        (2405108,u"Jandaíra",u"RN")
-        (2917904,u"Jandaíra",u"BA")
-        (3525003,u"Jandira",u"SP")
-        (2405207,u"Janduís",u"RN")
-        (5104906,u"Jangada",u"MT")
-        (4112207,u"Janiópolis",u"PR")
-        (3135209,u"Januária",u"MG")
-        (2405306,u"Januário Cicco",u"RN")
-        (3135308,u"Japaraíba",u"MG")
-        (2703601,u"Japaratinga",u"AL")
-        (2803302,u"Japaratuba",u"SE")
-        (3302270,u"Japeri",u"RJ")
-        (2405405,u"Japi",u"RN")
-        (4112306,u"Japira",u"PR")
-        (2803401,u"Japoatã",u"SE")
-        (3135357,u"Japonvar",u"MG")
-        (5004809,u"Japorã",u"MS")
-        (1302108,u"Japurá",u"AM")
-        (4112405,u"Japurá",u"PR")
-        (2607950,u"Jaqueira",u"PE")
-        (4311122,u"Jaquirana",u"RS")
-        (5211800,u"Jaraguá",u"GO")
-        (4208906,u"Jaraguá do Sul",u"SC")
-        (5004908,u"Jaraguari",u"MS")
-        (2703700,u"Jaramataia",u"AL")
-        (2307106,u"Jardim",u"CE")
-        (5005004,u"Jardim",u"MS")
-        (4112504,u"Jardim Alegre",u"PR")
-        (2405504,u"Jardim de Angicos",u"RN")
-        (2405603,u"Jardim de Piranhas",u"RN")
-        (2205250,u"Jardim do Mulato",u"PI")
-        (2405702,u"Jardim do Seridó",u"RN")
-        (4112603,u"Jardim Olinda",u"PR")
-        (3525102,u"Jardinópolis",u"SP")
-        (4208955,u"Jardinópolis",u"SC")
-        (4311130,u"Jari",u"RS")
-        (3525201,u"Jarinu",u"SP")
-        (1100114,u"Jaru",u"RO")
-        (5211909,u"Jataí",u"GO")
-        (4112702,u"Jataizinho",u"PR")
-        (2608008,u"Jataúba",u"PE")
-        (5005103,u"Jateí",u"MS")
-        (2307205,u"Jati",u"CE")
-        (2105450,u"Jatobá",u"MA")
-        (2608057,u"Jatobá",u"PE")
-        (2205276,u"Jatobá do Piauí",u"PI")
-        (3525300,u"Jaú",u"SP")
-        (1711506,u"Jaú do Tocantins",u"TO")
-        (5212006,u"Jaupaci",u"GO")
-        (5105002,u"Jauru",u"MT")
-        (3135407,u"Jeceaba",u"MG")
-        (3135456,u"Jenipapo de Minas",u"MG")
-        (2105476,u"Jenipapo dos Vieiras",u"MA")
-        (3135506,u"Jequeri",u"MG")
-        (2703759,u"Jequiá da Praia",u"AL")
-        (2918001,u"Jequié",u"BA")
-        (3135605,u"Jequitaí",u"MG")
-        (3135704,u"Jequitibá",u"MG")
-        (3135803,u"Jequitinhonha",u"MG")
-        (2918100,u"Jeremoabo",u"BA")
-        (2507408,u"Jericó",u"PB")
-        (3525409,u"Jeriquara",u"SP")
-        (3203106,u"Jerônimo Monteiro",u"ES")
-        (2205300,u"Jerumenha",u"PI")
-        (3135902,u"Jesuânia",u"MG")
-        (4112751,u"Jesuítas",u"PR")
-        (5212055,u"Jesúpolis",u"GO")
-        (1100122,u"Ji-Paraná",u"RO")
-        (2307254,u"Jijoca de Jericoacoara",u"CE")
-        (2918209,u"Jiquiriçá",u"BA")
-        (2918308,u"Jitaúna",u"BA")
-        (4209003,u"Joaçaba",u"SC")
-        (3136009,u"Joaíma",u"MG")
-        (3136108,u"Joanésia",u"MG")
-        (3525508,u"Joanópolis",u"SP")
-        (2608107,u"João Alfredo",u"PE")
-        (2405801,u"João Câmara",u"RN")
-        (2205359,u"João Costa",u"PI")
-        (2405900,u"João Dias",u"RN")
-        (2918357,u"João Dourado",u"BA")
-        (2105500,u"João Lisboa",u"MA")
-        (3136207,u"João Monlevade",u"MG")
-        (3203130,u"João Neiva",u"ES")
-        (2507507,u"João Pessoa",u"PB")
-        (3136306,u"João Pinheiro",u"MG")
-        (3525607,u"João Ramalho",u"SP")
-        (3136405,u"Joaquim Felício",u"MG")
-        (2703809,u"Joaquim Gomes",u"AL")
-        (2608206,u"Joaquim Nabuco",u"PE")
-        (2205409,u"Joaquim Pires",u"PI")
-        (4112801,u"Joaquim Távora",u"PR")
-        (2205458,u"Joca Marques",u"PI")
-        (4311155,u"Jóia",u"RS")
-        (4209102,u"Joinville",u"SC")
-        (3136504,u"Jordânia",u"MG")
-        (1200328,u"Jordão",u"AC")
-        (4209151,u"José Boiteux",u"SC")
-        (3525706,u"José Bonifácio",u"SP")
-        (2406007,u"José da Penha",u"RN")
-        (2205508,u"José de Freitas",u"PI")
-        (3136520,u"José Gonçalves de Minas",u"MG")
-        (3136553,u"José Raydan",u"MG")
-        (2105609,u"Joselândia",u"MA")
-        (3136579,u"Josenópolis",u"MG")
-        (5212105,u"Joviânia",u"GO")
-        (5105101,u"Juara",u"MT")
-        (2507606,u"Juarez Távora",u"PB")
-        (1711803,u"Juarina",u"TO")
-        (3136652,u"Juatuba",u"MG")
-        (2507705,u"Juazeirinho",u"PB")
-        (2918407,u"Juazeiro",u"BA")
-        (2307304,u"Juazeiro do Norte",u"CE")
-        (2205516,u"Juazeiro do Piauí",u"PI")
-        (2307403,u"Jucás",u"CE")
-        (2608255,u"Jucati",u"PE")
-        (2918456,u"Jucuruçu",u"BA")
-        (2406106,u"Jucurutu",u"RN")
-        (5105150,u"Juína",u"MT")
-        (3136702,u"Juiz de Fora",u"MG")
-        (2205524,u"Júlio Borges",u"PI")
-        (4311205,u"Júlio de Castilhos",u"RS")
-        (3525805,u"Júlio Mesquita",u"SP")
-        (3525854,u"Jumirim",u"SP")
-        (2105658,u"Junco do Maranhão",u"MA")
-        (2507804,u"Junco do Seridó",u"PB")
-        (2406155,u"Jundiá",u"RN")
-        (2703908,u"Jundiá",u"AL")
-        (3525904,u"Jundiaí",u"SP")
-        (4112900,u"Jundiaí do Sul",u"PR")
-        (2704005,u"Junqueiro",u"AL")
-        (3526001,u"Junqueirópolis",u"SP")
-        (2608305,u"Jupi",u"PE")
-        (4209177,u"Jupiá",u"SC")
-        (3526100,u"Juquiá",u"SP")
-        (3526209,u"Juquitiba",u"SP")
-        (3136801,u"Juramento",u"MG")
-        (4112959,u"Juranda",u"PR")
-        (2205532,u"Jurema",u"PI")
-        (2608404,u"Jurema",u"PE")
-        (2507903,u"Juripiranga",u"PB")
-        (2508000,u"Juru",u"PB")
-        (1302207,u"Juruá",u"AM")
-        (3136900,u"Juruaia",u"MG")
-        (5105176,u"Juruena",u"MT")
-        (1503903,u"Juruti",u"PA")
-        (5105200,u"Juscimeira",u"MT")
-        (2918506,u"Jussara",u"BA")
-        (4113007,u"Jussara",u"PR")
-        (5212204,u"Jussara",u"GO")
-        (2918555,u"Jussari",u"BA")
-        (2918605,u"Jussiape",u"BA")
-        (1302306,u"Jutaí",u"AM")
-        (5005152,u"Juti",u"MS")
-        (3136959,u"Juvenília",u"MG")
-        (4113106,u"Kaloré",u"PR")
-        (1302405,u"Lábrea",u"AM")
-        (4209201,u"Lacerdópolis",u"SC")
-        (3137007,u"Ladainha",u"MG")
-        (5005202,u"Ladário",u"MS")
-        (2918704,u"Lafaiete Coutinho",u"BA")
-        (3137106,u"Lagamar",u"MG")
-        (2803500,u"Lagarto",u"SE")
-        (4209300,u"Lages",u"SC")
-        (2105708,u"Lago da Pedra",u"MA")
-        (2105807,u"Lago do Junco",u"MA")
-        (2105948,u"Lago dos Rodrigues",u"MA")
-        (2105906,u"Lago Verde",u"MA")
-        (2508109,u"Lagoa",u"PB")
-        (2205557,u"Lagoa Alegre",u"PI")
-        (4311239,u"Lagoa Bonita do Sul",u"RS")
-        (2406205,u"Lagoa d'Anta",u"RN")
-        (2704104,u"Lagoa da Canoa",u"AL")
-        (1711902,u"Lagoa da Confusão",u"TO")
-        (3137205,u"Lagoa da Prata",u"MG")
-        (2508208,u"Lagoa de Dentro",u"PB")
-        (2406304,u"Lagoa de Pedras",u"RN")
-        (2205573,u"Lagoa de São Francisco",u"PI")
-        (2406403,u"Lagoa de Velhos",u"RN")
-        (2205565,u"Lagoa do Barro do Piauí",u"PI")
-        (2608453,u"Lagoa do Carro",u"PE")
-        (2608503,u"Lagoa do Itaenga",u"PE")
-        (2105922,u"Lagoa do Mato",u"MA")
-        (2608602,u"Lagoa do Ouro",u"PE")
-        (2205581,u"Lagoa do Piauí",u"PI")
-        (2205599,u"Lagoa do Sítio",u"PI")
-        (1711951,u"Lagoa do Tocantins",u"TO")
-        (2608701,u"Lagoa dos Gatos",u"PE")
-        (3137304,u"Lagoa dos Patos",u"MG")
-        (4311270,u"Lagoa dos Três Cantos",u"RS")
-        (3137403,u"Lagoa Dourada",u"MG")
-        (3137502,u"Lagoa Formosa",u"MG")
-        (2608750,u"Lagoa Grande",u"PE")
-        (3137536,u"Lagoa Grande",u"MG")
-        (2105963,u"Lagoa Grande do Maranhão",u"MA")
-        (2406502,u"Lagoa Nova",u"RN")
-        (2918753,u"Lagoa Real",u"BA")
-        (2406601,u"Lagoa Salgada",u"RN")
-        (3137601,u"Lagoa Santa",u"MG")
-        (5212253,u"Lagoa Santa",u"GO")
-        (2508307,u"Lagoa Seca",u"PB")
-        (4311304,u"Lagoa Vermelha",u"RS")
-        (4311254,u"Lagoão",u"RS")
-        (3526308,u"Lagoinha",u"SP")
-        (2205540,u"Lagoinha do Piauí",u"PI")
-        (4209409,u"Laguna",u"SC")
-        (5005251,u"Laguna Carapã",u"MS")
-        (2918803,u"Laje",u"BA")
-        (3302304,u"Laje do Muriaé",u"RJ")
-        (1712009,u"Lajeado",u"TO")
-        (4311403,u"Lajeado",u"RS")
-        (4311429,u"Lajeado do Bugre",u"RS")
-        (4209458,u"Lajeado Grande",u"SC")
-        (2105989,u"Lajeado Novo",u"MA")
-        (2918902,u"Lajedão",u"BA")
-        (2919009,u"Lajedinho",u"BA")
-        (2608800,u"Lajedo",u"PE")
-        (2919058,u"Lajedo do Tabocal",u"BA")
-        (2406700,u"Lajes",u"RN")
-        (2406809,u"Lajes Pintadas",u"RN")
-        (3137700,u"Lajinha",u"MG")
-        (2919108,u"Lamarão",u"BA")
-        (3137809,u"Lambari",u"MG")
-        (5105234,u"Lambari D'Oeste",u"MT")
-        (3137908,u"Lamim",u"MG")
-        (2205607,u"Landri Sales",u"PI")
-        (4113205,u"Lapa",u"PR")
-        (2919157,u"Lapão",u"BA")
-        (3203163,u"Laranja da Terra",u"ES")
-        (3138005,u"Laranjal",u"MG")
-        (4113254,u"Laranjal",u"PR")
-        (1600279,u"Laranjal do Jari",u"AP")
-        (3526407,u"Laranjal Paulista",u"SP")
-        (2803609,u"Laranjeiras",u"SE")
-        (4113304,u"Laranjeiras do Sul",u"PR")
-        (3138104,u"Lassance",u"MG")
-        (2508406,u"Lastro",u"PB")
-        (4209508,u"Laurentino",u"SC")
-        (2919207,u"Lauro de Freitas",u"BA")
-        (4209607,u"Lauro Muller",u"SC")
-        (1712157,u"Lavandeira",u"TO")
-        (3526506,u"Lavínia",u"SP")
-        (3138203,u"Lavras",u"MG")
-        (2307502,u"Lavras da Mangabeira",u"CE")
-        (4311502,u"Lavras do Sul",u"RS")
-        (3526605,u"Lavrinhas",u"SP")
-        (3138302,u"Leandro Ferreira",u"MG")
-        (4209706,u"Lebon Régis",u"SC")
-        (3526704,u"Leme",u"SP")
-        (3138351,u"Leme do Prado",u"MG")
-        (2919306,u"Lençóis",u"BA")
-        (3526803,u"Lençóis Paulista",u"SP")
-        (4209805,u"Leoberto Leal",u"SC")
-        (3138401,u"Leopoldina",u"MG")
-        (5212303,u"Leopoldo de Bulhões",u"GO")
-        (4113403,u"Leópolis",u"PR")
-        (4311601,u"Liberato Salzano",u"RS")
-        (3138500,u"Liberdade",u"MG")
-        (2919405,u"Licínio de Almeida",u"BA")
-        (4113429,u"Lidianópolis",u"PR")
-        (2106003,u"Lima Campos",u"MA")
-        (3138609,u"Lima Duarte",u"MG")
-        (3526902,u"Limeira",u"SP")
-        (3138625,u"Limeira do Oeste",u"MG")
-        (2608909,u"Limoeiro",u"PE")
-        (2704203,u"Limoeiro de Anadia",u"AL")
-        (1504000,u"Limoeiro do Ajuru",u"PA")
-        (2307601,u"Limoeiro do Norte",u"CE")
-        (4113452,u"Lindoeste",u"PR")
-        (3527009,u"Lindóia",u"SP")
-        (4209854,u"Lindóia do Sul",u"SC")
-        (4311627,u"Lindolfo Collor",u"RS")
-        (4311643,u"Linha Nova",u"RS")
-        (3203205,u"Linhares",u"ES")
-        (3527108,u"Lins",u"SP")
-        (2508505,u"Livramento",u"PB")
-        (2919504,u"Livramento de Nossa Senhora",u"BA")
-        (1712405,u"Lizarda",u"TO")
-        (4113502,u"Loanda",u"PR")
-        (4113601,u"Lobato",u"PR")
-        (2508554,u"Logradouro",u"PB")
-        (4113700,u"Londrina",u"PR")
-        (3138658,u"Lontra",u"MG")
-        (4209904,u"Lontras",u"SC")
-        (3527207,u"Lorena",u"SP")
-        (2106102,u"Loreto",u"MA")
-        (3527256,u"Lourdes",u"SP")
-        (3527306,u"Louveira",u"SP")
-        (5105259,u"Lucas do Rio Verde",u"MT")
-        (3527405,u"Lucélia",u"SP")
-        (2508604,u"Lucena",u"PB")
-        (3527504,u"Lucianópolis",u"SP")
-        (5105309,u"Luciara",u"MT")
-        (2406908,u"Lucrécia",u"RN")
-        (3527603,u"Luís Antônio",u"SP")
-        (2205706,u"Luís Correia",u"PI")
-        (2106201,u"Luís Domingues",u"MA")
-        (2919553,u"Luís Eduardo Magalhães",u"BA")
-        (2407005,u"Luís Gomes",u"RN")
-        (3138674,u"Luisburgo",u"MG")
-        (3138682,u"Luislândia",u"MG")
-        (4210001,u"Luiz Alves",u"SC")
-        (4113734,u"Luiziana",u"PR")
-        (3527702,u"Luiziânia",u"SP")
-        (3138708,u"Luminárias",u"MG")
-        (4113759,u"Lunardelli",u"PR")
-        (3527801,u"Lupércio",u"SP")
-        (4113809,u"Lupionópolis",u"PR")
-        (3527900,u"Lutécia",u"SP")
-        (3138807,u"Luz",u"MG")
-        (4210035,u"Luzerna",u"SC")
-        (5212501,u"Luziânia",u"GO")
-        (2205805,u"Luzilândia",u"PI")
-        (1712454,u"Luzinópolis",u"TO")
-        (3302403,u"Macaé",u"RJ")
-        (2407104,u"Macaíba",u"RN")
-        (2919603,u"Macajuba",u"BA")
-        (4311718,u"Maçambará",u"RS")
-        (2803708,u"Macambira",u"SE")
-        (1600303,u"Macapá",u"AP")
-        (2609006,u"Macaparana",u"PE")
-        (2919702,u"Macarani",u"BA")
-        (3528007,u"Macatuba",u"SP")
-        (2407203,u"Macau",u"RN")
-        (3528106,u"Macaubal",u"SP")
-        (2919801,u"Macaúbas",u"BA")
-        (3528205,u"Macedônia",u"SP")
-        (2704302,u"Maceió",u"AL")
-        (3138906,u"Machacalis",u"MG")
-        (4311700,u"Machadinho",u"RS")
-        (1100130,u"Machadinho D'Oeste",u"RO")
-        (3139003,u"Machado",u"MG")
-        (2609105,u"Machados",u"PE")
-        (4210050,u"Macieira",u"SC")
-        (3302452,u"Macuco",u"RJ")
-        (2919900,u"Macururé",u"BA")
-        (2307635,u"Madalena",u"CE")
-        (2205854,u"Madeiro",u"PI")
-        (2919926,u"Madre de Deus",u"BA")
-        (3139102,u"Madre de Deus de Minas",u"MG")
-        (2508703,u"Mãe d'Água",u"PB")
-        (1504059,u"Mãe do Rio",u"PA")
-        (2919959,u"Maetinga",u"BA")
-        (4210100,u"Mafra",u"SC")
-        (1504109,u"Magalhães Barata",u"PA")
-        (2106300,u"Magalhães de Almeida",u"MA")
-        (3528304,u"Magda",u"SP")
-        (3302502,u"Magé",u"RJ")
-        (2920007,u"Maiquinique",u"BA")
-        (2920106,u"Mairi",u"BA")
-        (3528403,u"Mairinque",u"SP")
-        (3528502,u"Mairiporã",u"SP")
-        (5212600,u"Mairipotaba",u"GO")
-        (4210209,u"Major Gercino",u"SC")
-        (2704401,u"Major Isidoro",u"AL")
-        (2407252,u"Major Sales",u"RN")
-        (4210308,u"Major Vieira",u"SC")
-        (3139201,u"Malacacheta",u"MG")
-        (2920205,u"Malhada",u"BA")
-        (2920304,u"Malhada de Pedras",u"BA")
-        (2803807,u"Malhada dos Bois",u"SE")
-        (2803906,u"Malhador",u"SE")
-        (4113908,u"Mallet",u"PR")
-        (2508802,u"Malta",u"PB")
-        (2508901,u"Mamanguape",u"PB")
-        (5212709,u"Mambaí",u"GO")
-        (4114005,u"Mamborê",u"PR")
-        (3139250,u"Mamonas",u"MG")
-        (4311734,u"Mampituba",u"RS")
-        (1302504,u"Manacapuru",u"AM")
-        (2509008,u"Manaíra",u"PB")
-        (1302553,u"Manaquiri",u"AM")
-        (2609154,u"Manari",u"PE")
-        (1302603,u"Manaus",u"AM")
-        (1200336,u"Mâncio Lima",u"AC")
-        (4114104,u"Mandaguaçu",u"PR")
-        (4114203,u"Mandaguari",u"PR")
-        (4114302,u"Mandirituba",u"PR")
-        (3528601,u"Manduri",u"SP")
-        (4114351,u"Manfrinópolis",u"PR")
-        (3139300,u"Manga",u"MG")
-        (3302601,u"Mangaratiba",u"RJ")
-        (4114401,u"Mangueirinha",u"PR")
-        (3139409,u"Manhuaçu",u"MG")
-        (3139508,u"Manhumirim",u"MG")
-        (1302702,u"Manicoré",u"AM")
-        (2205904,u"Manoel Emídio",u"PI")
-        (4114500,u"Manoel Ribas",u"PR")
-        (1200344,u"Manoel Urbano",u"AC")
-        (4311759,u"Manoel Viana",u"RS")
-        (2920403,u"Manoel Vitorino",u"BA")
-        (2920452,u"Mansidão",u"BA")
-        (3139607,u"Mantena",u"MG")
-        (3203304,u"Mantenópolis",u"ES")
-        (4311775,u"Maquiné",u"RS")
-        (3139805,u"Mar de Espanha",u"MG")
-        (2704906,u"Mar Vermelho",u"AL")
-        (5212808,u"Mara Rosa",u"GO")
-        (1302801,u"Maraã",u"AM")
-        (1504208,u"Marabá",u"PA")
-        (3528700,u"Marabá Paulista",u"SP")
-        (2106326,u"Maracaçumé",u"MA")
-        (3528809,u"Maracaí",u"SP")
-        (4210407,u"Maracajá",u"SC")
-        (5005400,u"Maracaju",u"MS")
-        (1504307,u"Maracanã",u"PA")
-        (2307650,u"Maracanaú",u"CE")
-        (2920502,u"Maracás",u"BA")
-        (2704500,u"Maragogi",u"AL")
-        (2920601,u"Maragogipe",u"BA")
-        (2609204,u"Maraial",u"PE")
-        (2106359,u"Marajá do Sena",u"MA")
-        (2307700,u"Maranguape",u"CE")
-        (2106375,u"Maranhãozinho",u"MA")
-        (1504406,u"Marapanim",u"PA")
-        (3528858,u"Marapoama",u"SP")
-        (4311791,u"Maratá",u"RS")
-        (3203320,u"Marataízes",u"ES")
-        (2920700,u"Maraú",u"BA")
-        (4311809,u"Marau",u"RS")
-        (2704609,u"Maravilha",u"AL")
-        (4210506,u"Maravilha",u"SC")
-        (3139706,u"Maravilhas",u"MG")
-        (2509057,u"Marcação",u"PB")
-        (5105580,u"Marcelândia",u"MT")
-        (4311908,u"Marcelino Ramos",u"RS")
-        (2407302,u"Marcelino Vieira",u"RN")
-        (2920809,u"Marcionílio Souza",u"BA")
-        (2307809,u"Marco",u"CE")
-        (2205953,u"Marcolândia",u"PI")
-        (2206001,u"Marcos Parente",u"PI")
-        (4114609,u"Marechal Cândido Rondon",u"PR")
-        (2704708,u"Marechal Deodoro",u"AL")
-        (3203346,u"Marechal Floriano",u"ES")
-        (1200351,u"Marechal Thaumaturgo",u"AC")
-        (4210555,u"Marema",u"SC")
-        (2509107,u"Mari",u"PB")
-        (3139904,u"Maria da Fé",u"MG")
-        (4114708,u"Maria Helena",u"PR")
-        (4114807,u"Marialva",u"PR")
-        (3140001,u"Mariana",u"MG")
-        (4311981,u"Mariana Pimentel",u"RS")
-        (4312005,u"Mariano Moro",u"RS")
-        (1712504,u"Marianópolis do Tocantins",u"TO")
-        (3528908,u"Mariápolis",u"SP")
-        (2704807,u"Maribondo",u"AL")
-        (3302700,u"Maricá",u"RJ")
-        (3140100,u"Marilac",u"MG")
-        (3203353,u"Marilândia",u"ES")
-        (4114906,u"Marilândia do Sul",u"PR")
-        (4115002,u"Marilena",u"PR")
-        (3529005,u"Marília",u"SP")
-        (4115101,u"Mariluz",u"PR")
-        (4115200,u"Maringá",u"PR")
-        (3529104,u"Marinópolis",u"SP")
-        (3140159,u"Mário Campos",u"MG")
-        (4115309,u"Mariópolis",u"PR")
-        (4115358,u"Maripá",u"PR")
-        (3140209,u"Maripá de Minas",u"MG")
-        (1504422,u"Marituba",u"PA")
-        (2509156,u"Marizópolis",u"PB")
-        (3140308,u"Marliéria",u"MG")
-        (4115408,u"Marmeleiro",u"PR")
-        (3140407,u"Marmelópolis",u"MG")
-        (4312054,u"Marques de Souza",u"RS")
-        (4115457,u"Marquinho",u"PR")
-        (3140506,u"Martinho Campos",u"MG")
-        (2307908,u"Martinópole",u"CE")
-        (3529203,u"Martinópolis",u"SP")
-        (2407401,u"Martins",u"RN")
-        (3140530,u"Martins Soares",u"MG")
-        (2804003,u"Maruim",u"SE")
-        (4115507,u"Marumbi",u"PR")
-        (5212907,u"Marzagão",u"GO")
-        (2920908,u"Mascote",u"BA")
-        (2308005,u"Massapê",u"CE")
-        (2206050,u"Massapê do Piauí",u"PI")
-        (2509206,u"Massaranduba",u"PB")
-        (4210605,u"Massaranduba",u"SC")
-        (4312104,u"Mata",u"RS")
-        (2921005,u"Mata de São João",u"BA")
-        (2705002,u"Mata Grande",u"AL")
-        (2106409,u"Mata Roma",u"MA")
-        (3140555,u"Mata Verde",u"MG")
-        (3529302,u"Matão",u"SP")
-        (2509305,u"Mataraca",u"PB")
-        (1712702,u"Mateiros",u"TO")
-        (4115606,u"Matelândia",u"PR")
-        (3140605,u"Materlândia",u"MG")
-        (3140704,u"Mateus Leme",u"MG")
-        (3171501,u"Mathias Lobato",u"MG")
-        (3140803,u"Matias Barbosa",u"MG")
-        (3140852,u"Matias Cardoso",u"MG")
-        (2206100,u"Matias Olímpio",u"PI")
-        (2921054,u"Matina",u"BA")
-        (2106508,u"Matinha",u"MA")
-        (2509339,u"Matinhas",u"PB")
-        (4115705,u"Matinhos",u"PR")
-        (3140902,u"Matipó",u"MG")
-        (4312138,u"Mato Castelhano",u"RS")
-        (2509370,u"Mato Grosso",u"PB")
-        (4312153,u"Mato Leitão",u"RS")
-        (4312179,u"Mato Queimado",u"RS")
-        (4115739,u"Mato Rico",u"PR")
-        (3141009,u"Mato Verde",u"MG")
-        (2106607,u"Matões",u"MA")
-        (2106631,u"Matões do Norte",u"MA")
-        (4210704,u"Matos Costa",u"SC")
-        (3141108,u"Matozinhos",u"MG")
-        (5212956,u"Matrinchã",u"GO")
-        (2705101,u"Matriz de Camaragibe",u"AL")
-        (5105606,u"Matupá",u"MT")
-        (2509396,u"Maturéia",u"PB")
-        (3141207,u"Matutina",u"MG")
-        (3529401,u"Mauá",u"SP")
-        (4115754,u"Mauá da Serra",u"PR")
-        (1302900,u"Maués",u"AM")
-        (5213004,u"Maurilândia",u"GO")
-        (1712801,u"Maurilândia do Tocantins",u"TO")
-        (2308104,u"Mauriti",u"CE")
-        (2407500,u"Maxaranguape",u"RN")
-        (4312203,u"Maximiliano de Almeida",u"RS")
-        (1600402,u"Mazagão",u"AP")
-        (3141306,u"Medeiros",u"MG")
-        (2921104,u"Medeiros Neto",u"BA")
-        (4115804,u"Medianeira",u"PR")
-        (1504455,u"Medicilândia",u"PA")
-        (3141405,u"Medina",u"MG")
-        (4210803,u"Meleiro",u"SC")
-        (1504505,u"Melgaço",u"PA")
-        (3302809,u"Mendes",u"RJ")
-        (3141504,u"Mendes Pimentel",u"MG")
-        (3529500,u"Mendonça",u"SP")
-        (4115853,u"Mercedes",u"PR")
-        (3141603,u"Mercês",u"MG")
-        (3529609,u"Meridiano",u"SP")
-        (2308203,u"Meruoca",u"CE")
-        (3529658,u"Mesópolis",u"SP")
-        (3141702,u"Mesquita",u"MG")
-        (3302858,u"Mesquita",u"RJ")
-        (2705200,u"Messias",u"AL")
-        (2407609,u"Messias Targino",u"RN")
-        (2206209,u"Miguel Alves",u"PI")
-        (2921203,u"Miguel Calmon",u"BA")
-        (2206308,u"Miguel Leão",u"PI")
-        (3302908,u"Miguel Pereira",u"RJ")
-        (3529708,u"Miguelópolis",u"SP")
-        (2308302,u"Milagres",u"CE")
-        (2921302,u"Milagres",u"BA")
-        (2106672,u"Milagres do Maranhão",u"MA")
-        (2308351,u"Milhã",u"CE")
-        (2206357,u"Milton Brandão",u"PI")
-        (5213053,u"Mimoso de Goiás",u"GO")
-        (3203403,u"Mimoso do Sul",u"ES")
-        (5213087,u"Minaçu",u"GO")
-        (2705309,u"Minador do Negrão",u"AL")
-        (4312252,u"Minas do Leão",u"RS")
-        (3141801,u"Minas Novas",u"MG")
-        (3141900,u"Minduri",u"MG")
-        (5213103,u"Mineiros",u"GO")
-        (3529807,u"Mineiros do Tietê",u"SP")
-        (1101203,u"Ministro Andreazza",u"RO")
-        (3530003,u"Mira Estrela",u"SP")
-        (3142007,u"Mirabela",u"MG")
-        (3529906,u"Miracatu",u"SP")
-        (3303005,u"Miracema",u"RJ")
-        (1713205,u"Miracema do Tocantins",u"TO")
-        (2106706,u"Mirador",u"MA")
-        (4115903,u"Mirador",u"PR")
-        (3142106,u"Miradouro",u"MG")
-        (4312302,u"Miraguaí",u"RS")
-        (3142205,u"Miraí",u"MG")
-        (2308377,u"Miraíma",u"CE")
-        (5005608,u"Miranda",u"MS")
-        (2106755,u"Miranda do Norte",u"MA")
-        (2609303,u"Mirandiba",u"PE")
-        (3530102,u"Mirandópolis",u"SP")
-        (2921401,u"Mirangaba",u"BA")
-        (1713304,u"Miranorte",u"TO")
-        (2921450,u"Mirante",u"BA")
-        (1101302,u"Mirante da Serra",u"RO")
-        (3530201,u"Mirante do Paranapanema",u"SP")
-        (4116000,u"Miraselva",u"PR")
-        (3530300,u"Mirassol",u"SP")
-        (5105622,u"Mirassol d'Oeste",u"MT")
-        (3530409,u"Mirassolândia",u"SP")
-        (3142254,u"Miravânia",u"MG")
-        (4210852,u"Mirim Doce",u"SC")
-        (2106805,u"Mirinzal",u"MA")
-        (4116059,u"Missal",u"PR")
-        (2308401,u"Missão Velha",u"CE")
-        (1504604,u"Mocajuba",u"PA")
-        (3530508,u"Mococa",u"SP")
-        (4210902,u"Modelo",u"SC")
-        (3142304,u"Moeda",u"MG")
-        (3142403,u"Moema",u"MG")
-        (2509404,u"Mogeiro",u"PB")
-        (3530607,u"Mogi das Cruzes",u"SP")
-        (3530706,u"Mogi Guaçu",u"SP")
-        (5213400,u"Moiporá",u"GO")
-        (2804102,u"Moita Bonita",u"SE")
-        (3530805,u"Moji Mirim",u"SP")
-        (1504703,u"Moju",u"PA")
-        (2308500,u"Mombaça",u"CE")
-        (3530904,u"Mombuca",u"SP")
-        (2106904,u"Monção",u"MA")
-        (3531001,u"Monções",u"SP")
-        (4211009,u"Mondaí",u"SC")
-        (3531100,u"Mongaguá",u"SP")
-        (3142502,u"Monjolos",u"MG")
-        (2206407,u"Monsenhor Gil",u"PI")
-        (2206506,u"Monsenhor Hipólito",u"PI")
-        (3142601,u"Monsenhor Paulo",u"MG")
-        (2308609,u"Monsenhor Tabosa",u"CE")
-        (2509503,u"Montadas",u"PB")
-        (3142700,u"Montalvânia",u"MG")
-        (3203502,u"Montanha",u"ES")
-        (2407708,u"Montanhas",u"RN")
-        (4312351,u"Montauri",u"RS")
-        (1504802,u"Monte Alegre",u"PA")
-        (2407807,u"Monte Alegre",u"RN")
-        (5213509,u"Monte Alegre de Goiás",u"GO")
-        (3142809,u"Monte Alegre de Minas",u"MG")
-        (2804201,u"Monte Alegre de Sergipe",u"SE")
-        (2206605,u"Monte Alegre do Piauí",u"PI")
-        (3531209,u"Monte Alegre do Sul",u"SP")
-        (4312377,u"Monte Alegre dos Campos",u"RS")
-        (3531308,u"Monte Alto",u"SP")
-        (3531407,u"Monte Aprazível",u"SP")
-        (3142908,u"Monte Azul",u"MG")
-        (3531506,u"Monte Azul Paulista",u"SP")
-        (3143005,u"Monte Belo",u"MG")
-        (4312385,u"Monte Belo do Sul",u"RS")
-        (4211058,u"Monte Carlo",u"SC")
-        (3143104,u"Monte Carmelo",u"MG")
-        (3531605,u"Monte Castelo",u"SP")
-        (4211108,u"Monte Castelo",u"SC")
-        (2407906,u"Monte das Gameleiras",u"RN")
-        (1713601,u"Monte do Carmo",u"TO")
-        (3143153,u"Monte Formoso",u"MG")
-        (2509602,u"Monte Horebe",u"PB")
-        (3531803,u"Monte Mor",u"SP")
-        (1101401,u"Monte Negro",u"RO")
-        (2921500,u"Monte Santo",u"BA")
-        (3143203,u"Monte Santo de Minas",u"MG")
-        (1713700,u"Monte Santo do Tocantins",u"TO")
-        (3143401,u"Monte Sião",u"MG")
-        (2509701,u"Monteiro",u"PB")
-        (3531704,u"Monteiro Lobato",u"SP")
-        (2705408,u"Monteirópolis",u"AL")
-        (4312401,u"Montenegro",u"RS")
-        (2107001,u"Montes Altos",u"MA")
-        (3143302,u"Montes Claros",u"MG")
-        (5213707,u"Montes Claros de Goiás",u"GO")
-        (3143450,u"Montezuma",u"MG")
-        (5213756,u"Montividiu",u"GO")
-        (5213772,u"Montividiu do Norte",u"GO")
-        (2308708,u"Morada Nova",u"CE")
-        (3143500,u"Morada Nova de Minas",u"MG")
-        (2308807,u"Moraújo",u"CE")
-        (2614303,u"Moreilândia",u"PE")
-        (4116109,u"Moreira Sales",u"PR")
-        (2609402,u"Moreno",u"PE")
-        (4312427,u"Mormaço",u"RS")
-        (2921609,u"Morpará",u"BA")
-        (4116208,u"Morretes",u"PR")
-        (2308906,u"Morrinhos",u"CE")
-        (5213806,u"Morrinhos",u"GO")
-        (4312443,u"Morrinhos do Sul",u"RS")
-        (3531902,u"Morro Agudo",u"SP")
-        (5213855,u"Morro Agudo de Goiás",u"GO")
-        (2206654,u"Morro Cabeça no Tempo",u"PI")
-        (4211207,u"Morro da Fumaça",u"SC")
-        (3143609,u"Morro da Garça",u"MG")
-        (2921708,u"Morro do Chapéu",u"BA")
-        (2206670,u"Morro do Chapéu do Piauí",u"PI")
-        (3143708,u"Morro do Pilar",u"MG")
-        (4211256,u"Morro Grande",u"SC")
-        (4312450,u"Morro Redondo",u"RS")
-        (4312476,u"Morro Reuter",u"RS")
-        (2107100,u"Morros",u"MA")
-        (2921807,u"Mortugaba",u"BA")
-        (3532009,u"Morungaba",u"SP")
-        (5213905,u"Mossâmedes",u"GO")
-        (2408003,u"Mossoró",u"RN")
-        (4312500,u"Mostardas",u"RS")
-        (3532058,u"Motuca",u"SP")
-        (5214002,u"Mozarlândia",u"GO")
-        (1504901,u"Muaná",u"PA")
-        (1400308,u"Mucajaí",u"RR")
-        (2309003,u"Mucambo",u"CE")
-        (2921906,u"Mucugê",u"BA")
-        (4312609,u"Muçum",u"RS")
-        (2922003,u"Mucuri",u"BA")
-        (3203601,u"Mucurici",u"ES")
-        (4312617,u"Muitos Capões",u"RS")
-        (4312625,u"Muliterno",u"RS")
-        (2309102,u"Mulungu",u"CE")
-        (2509800,u"Mulungu",u"PB")
-        (2922052,u"Mulungu do Morro",u"BA")
-        (2922102,u"Mundo Novo",u"BA")
-        (5005681,u"Mundo Novo",u"MS")
-        (5214051,u"Mundo Novo",u"GO")
-        (3143807,u"Munhoz",u"MG")
-        (4116307,u"Munhoz de Melo",u"PR")
-        (2922201,u"Muniz Ferreira",u"BA")
-        (3203700,u"Muniz Freire",u"ES")
-        (2922250,u"Muquém de São Francisco",u"BA")
-        (3203809,u"Muqui",u"ES")
-        (3143906,u"Muriaé",u"MG")
-        (2804300,u"Muribeca",u"SE")
-        (2705507,u"Murici",u"AL")
-        (2206696,u"Murici dos Portelas",u"PI")
-        (1713957,u"Muricilândia",u"TO")
-        (2922300,u"Muritiba",u"BA")
-        (3532108,u"Murutinga do Sul",u"SP")
-        (2922409,u"Mutuípe",u"BA")
-        (3144003,u"Mutum",u"MG")
-        (5214101,u"Mutunópolis",u"GO")
-        (3144102,u"Muzambinho",u"MG")
-        (3144201,u"Nacip Raydan",u"MG")
-        (3532157,u"Nantes",u"SP")
-        (3144300,u"Nanuque",u"MG")
-        (4312658,u"Não-Me-Toque",u"RS")
-        (3144359,u"Naque",u"MG")
-        (3532207,u"Narandiba",u"SP")
-        (2408102,u"Natal",u"RN")
-        (3144375,u"Natalândia",u"MG")
-        (3144409,u"Natércia",u"MG")
-        (1714203,u"Natividade",u"TO")
-        (3303104,u"Natividade",u"RJ")
-        (3532306,u"Natividade da Serra",u"SP")
-        (2509909,u"Natuba",u"PB")
-        (4211306,u"Navegantes",u"SC")
-        (5005707,u"Naviraí",u"MS")
-        (1714302,u"Nazaré",u"TO")
-        (2922508,u"Nazaré",u"BA")
-        (2609501,u"Nazaré da Mata",u"PE")
-        (2206704,u"Nazaré do Piauí",u"PI")
-        (3532405,u"Nazaré Paulista",u"SP")
-        (3144508,u"Nazareno",u"MG")
-        (2510006,u"Nazarezinho",u"PB")
-        (2206720,u"Nazária",u"PI")
-        (5214408,u"Nazário",u"GO")
-        (2804409,u"Neópolis",u"SE")
-        (3144607,u"Nepomuceno",u"MG")
-        (5214507,u"Nerópolis",u"GO")
-        (3532504,u"Neves Paulista",u"SP")
-        (1303007,u"Nhamundá",u"AM")
-        (3532603,u"Nhandeara",u"SP")
-        (4312674,u"Nicolau Vergueiro",u"RS")
-        (2922607,u"Nilo Peçanha",u"BA")
-        (3303203,u"Nilópolis",u"RJ")
-        (2107209,u"Nina Rodrigues",u"MA")
-        (3144656,u"Ninheira",u"MG")
-        (5005806,u"Nioaque",u"MS")
-        (3532702,u"Nipoã",u"SP")
-        (5214606,u"Niquelândia",u"GO")
-        (2408201,u"Nísia Floresta",u"RN")
-        (3303302,u"Niterói",u"RJ")
-        (5105903,u"Nobres",u"MT")
-        (4312708,u"Nonoai",u"RS")
-        (2922656,u"Nordestina",u"BA")
-        (1400407,u"Normandia",u"RR")
-        (5106000,u"Nortelândia",u"MT")
-        (2804458,u"Nossa Senhora Aparecida",u"SE")
-        (2804508,u"Nossa Senhora da Glória",u"SE")
-        (2804607,u"Nossa Senhora das Dores",u"SE")
-        (4116406,u"Nossa Senhora das Graças",u"PR")
-        (2804706,u"Nossa Senhora de Lourdes",u"SE")
-        (2206753,u"Nossa Senhora de Nazaré",u"PI")
-        (5106109,u"Nossa Senhora do Livramento",u"MT")
-        (2804805,u"Nossa Senhora do Socorro",u"SE")
-        (2206803,u"Nossa Senhora dos Remédios",u"PI")
-        (3532801,u"Nova Aliança",u"SP")
-        (4116505,u"Nova Aliança do Ivaí",u"PR")
-        (4312757,u"Nova Alvorada",u"RS")
-        (5006002,u"Nova Alvorada do Sul",u"MS")
-        (5214705,u"Nova América",u"GO")
-        (4116604,u"Nova América da Colina",u"PR")
-        (5006200,u"Nova Andradina",u"MS")
-        (4312807,u"Nova Araçá",u"RS")
-        (4116703,u"Nova Aurora",u"PR")
-        (5214804,u"Nova Aurora",u"GO")
-        (5106158,u"Nova Bandeirantes",u"MT")
-        (4312906,u"Nova Bassano",u"RS")
-        (3144672,u"Nova Belém",u"MG")
-        (4312955,u"Nova Boa Vista",u"RS")
-        (5106208,u"Nova Brasilândia",u"MT")
-        (1100148,u"Nova Brasilândia D'Oeste",u"RO")
-        (4313003,u"Nova Bréscia",u"RS")
-        (3532827,u"Nova Campina",u"SP")
-        (2922706,u"Nova Canaã",u"BA")
-        (5106216,u"Nova Canaã do Norte",u"MT")
-        (3532843,u"Nova Canaã Paulista",u"SP")
-        (4313011,u"Nova Candelária",u"RS")
-        (4116802,u"Nova Cantu",u"PR")
-        (3532868,u"Nova Castilho",u"SP")
-        (2107258,u"Nova Colinas",u"MA")
-        (5214838,u"Nova Crixás",u"GO")
-        (2408300,u"Nova Cruz",u"RN")
-        (3144706,u"Nova Era",u"MG")
-        (4211405,u"Nova Erechim",u"SC")
-        (4116901,u"Nova Esperança",u"PR")
-        (1504950,u"Nova Esperança do Piriá",u"PA")
-        (4116950,u"Nova Esperança do Sudoeste",u"PR")
-        (4313037,u"Nova Esperança do Sul",u"RS")
-        (3532900,u"Nova Europa",u"SP")
-        (2922730,u"Nova Fátima",u"BA")
-        (4117008,u"Nova Fátima",u"PR")
-        (2510105,u"Nova Floresta",u"PB")
-        (3303401,u"Nova Friburgo",u"RJ")
-        (5214861,u"Nova Glória",u"GO")
-        (3533007,u"Nova Granada",u"SP")
-        (5108808,u"Nova Guarita",u"MT")
-        (3533106,u"Nova Guataporanga",u"SP")
-        (4313060,u"Nova Hartz",u"RS")
-        (2922755,u"Nova Ibiá",u"BA")
-        (3303500,u"Nova Iguaçu",u"RJ")
-        (5214879,u"Nova Iguaçu de Goiás",u"GO")
-        (3533205,u"Nova Independência",u"SP")
-        (2107308,u"Nova Iorque",u"MA")
-        (1504976,u"Nova Ipixuna",u"PA")
-        (4211454,u"Nova Itaberaba",u"SC")
-        (2922805,u"Nova Itarana",u"BA")
-        (5106182,u"Nova Lacerda",u"MT")
-        (4117057,u"Nova Laranjeiras",u"PR")
-        (3144805,u"Nova Lima",u"MG")
-        (4117107,u"Nova Londrina",u"PR")
-        (3533304,u"Nova Luzitânia",u"SP")
-        (1100338,u"Nova Mamoré",u"RO")
-        (5108857,u"Nova Marilândia",u"MT")
-        (5108907,u"Nova Maringá",u"MT")
-        (3144904,u"Nova Módica",u"MG")
-        (5108956,u"Nova Monte Verde",u"MT")
-        (5106224,u"Nova Mutum",u"MT")
-        (5106174,u"Nova Nazaré",u"MT")
-        (3533403,u"Nova Odessa",u"SP")
-        (4117206,u"Nova Olímpia",u"PR")
-        (5106232,u"Nova Olímpia",u"MT")
-        (1714880,u"Nova Olinda",u"TO")
-        (2309201,u"Nova Olinda",u"CE")
-        (2510204,u"Nova Olinda",u"PB")
-        (2107357,u"Nova Olinda do Maranhão",u"MA")
-        (1303106,u"Nova Olinda do Norte",u"AM")
-        (4313086,u"Nova Pádua",u"RS")
-        (4313102,u"Nova Palma",u"RS")
-        (2510303,u"Nova Palmeira",u"PB")
-        (4313201,u"Nova Petrópolis",u"RS")
-        (3145000,u"Nova Ponte",u"MG")
-        (3145059,u"Nova Porteirinha",u"MG")
-        (4313300,u"Nova Prata",u"RS")
-        (4117255,u"Nova Prata do Iguaçu",u"PR")
-        (4313334,u"Nova Ramada",u"RS")
-        (2922854,u"Nova Redenção",u"BA")
-        (3145109,u"Nova Resende",u"MG")
-        (5214903,u"Nova Roma",u"GO")
-        (4313359,u"Nova Roma do Sul",u"RS")
-        (1715002,u"Nova Rosalândia",u"TO")
-        (2309300,u"Nova Russas",u"CE")
-        (4117214,u"Nova Santa Bárbara",u"PR")
-        (5106190,u"Nova Santa Helena",u"MT")
-        (2207959,u"Nova Santa Rita",u"PI")
-        (4313375,u"Nova Santa Rita",u"RS")
-        (4117222,u"Nova Santa Rosa",u"PR")
-        (3145208,u"Nova Serrana",u"MG")
-        (2922904,u"Nova Soure",u"BA")
-        (4117271,u"Nova Tebas",u"PR")
-        (1505007,u"Nova Timboteua",u"PA")
-        (4211504,u"Nova Trento",u"SC")
-        (5106240,u"Nova Ubiratã",u"MT")
-        (1101435,u"Nova União",u"RO")
-        (3136603,u"Nova União",u"MG")
-        (3203908,u"Nova Venécia",u"ES")
-        (4211603,u"Nova Veneza",u"SC")
-        (5215009,u"Nova Veneza",u"GO")
-        (2923001,u"Nova Viçosa",u"BA")
-        (5106257,u"Nova Xavantina",u"MT")
-        (3533254,u"Novais",u"SP")
-        (1715101,u"Novo Acordo",u"TO")
-        (1303205,u"Novo Airão",u"AM")
-        (1715150,u"Novo Alegre",u"TO")
-        (1303304,u"Novo Aripuanã",u"AM")
-        (4313490,u"Novo Barreiro",u"RS")
-        (5215207,u"Novo Brasil",u"GO")
-        (4313391,u"Novo Cabrais",u"RS")
-        (3145307,u"Novo Cruzeiro",u"MG")
-        (5215231,u"Novo Gama",u"GO")
-        (4313409,u"Novo Hamburgo",u"RS")
-        (2923035,u"Novo Horizonte",u"BA")
-        (3533502,u"Novo Horizonte",u"SP")
-        (4211652,u"Novo Horizonte",u"SC")
-        (5106273,u"Novo Horizonte do Norte",u"MT")
-        (1100502,u"Novo Horizonte do Oeste",u"RO")
-        (5006259,u"Novo Horizonte do Sul",u"MS")
-        (4117297,u"Novo Itacolomi",u"PR")
-        (1715259,u"Novo Jardim",u"TO")
-        (2705606,u"Novo Lino",u"AL")
-        (4313425,u"Novo Machado",u"RS")
-        (5106265,u"Novo Mundo",u"MT")
-        (2309409,u"Novo Oriente",u"CE")
-        (3145356,u"Novo Oriente de Minas",u"MG")
-        (2206902,u"Novo Oriente do Piauí",u"PI")
-        (5215256,u"Novo Planalto",u"GO")
-        (1505031,u"Novo Progresso",u"PA")
-        (1505064,u"Novo Repartimento",u"PA")
-        (2206951,u"Novo Santo Antônio",u"PI")
-        (5106315,u"Novo Santo Antônio",u"MT")
-        (5106281,u"Novo São Joaquim",u"MT")
-        (4313441,u"Novo Tiradentes",u"RS")
-        (2923050,u"Novo Triunfo",u"BA")
-        (4313466,u"Novo Xingu",u"RS")
-        (3145372,u"Novorizonte",u"MG")
-        (3533601,u"Nuporanga",u"SP")
-        (1505106,u"Óbidos",u"PA")
-        (2309458,u"Ocara",u"CE")
-        (3533700,u"Ocauçu",u"SP")
-        (2207009,u"Oeiras",u"PI")
-        (1505205,u"Oeiras do Pará",u"PA")
-        (1600501,u"Oiapoque",u"AP")
-        (3145406,u"Olaria",u"MG")
-        (3533809,u"Óleo",u"SP")
-        (2510402,u"Olho d'Água",u"PB")
-        (2107407,u"Olho d'Água das Cunhãs",u"MA")
-        (2705705,u"Olho d'Água das Flores",u"AL")
-        (2705804,u"Olho d'Água do Casado",u"AL")
-        (2207108,u"Olho D'Água do Piauí",u"PI")
-        (2705903,u"Olho d'Água Grande",u"AL")
-        (2408409,u"Olho-d'Água do Borges",u"RN")
-        (3145455,u"Olhos-d'Água",u"MG")
-        (3533908,u"Olímpia",u"SP")
-        (3145505,u"Olímpio Noronha",u"MG")
-        (2609600,u"Olinda",u"PE")
-        (2107456,u"Olinda Nova do Maranhão",u"MA")
-        (2923100,u"Olindina",u"BA")
-        (2510501,u"Olivedos",u"PB")
-        (3145604,u"Oliveira",u"MG")
-        (1715507,u"Oliveira de Fátima",u"TO")
-        (2923209,u"Oliveira dos Brejinhos",u"BA")
-        (3145703,u"Oliveira Fortes",u"MG")
-        (2706000,u"Olivença",u"AL")
-        (3145802,u"Onça de Pitangui",u"MG")
-        (3534005,u"Onda Verde",u"SP")
-        (3145851,u"Oratórios",u"MG")
-        (3534104,u"Oriente",u"SP")
-        (3534203,u"Orindiúva",u"SP")
-        (1505304,u"Oriximiná",u"PA")
-        (3145877,u"Orizânia",u"MG")
-        (5215306,u"Orizona",u"GO")
-        (3534302,u"Orlândia",u"SP")
-        (4211702,u"Orleans",u"SC")
-        (2609709,u"Orobó",u"PE")
-        (2609808,u"Orocó",u"PE")
-        (2309508,u"Orós",u"CE")
-        (4117305,u"Ortigueira",u"PR")
-        (3534401,u"Osasco",u"SP")
-        (3534500,u"Oscar Bressane",u"SP")
-        (4313508,u"Osório",u"RS")
-        (3534609,u"Osvaldo Cruz",u"SP")
-        (4211751,u"Otacílio Costa",u"SC")
-        (1505403,u"Ourém",u"PA")
-        (2923308,u"Ouriçangas",u"BA")
-        (2609907,u"Ouricuri",u"PE")
-        (1505437,u"Ourilândia do Norte",u"PA")
-        (3534708,u"Ourinhos",u"SP")
-        (4117404,u"Ourizona",u"PR")
-        (4211801,u"Ouro",u"SC")
-        (2408508,u"Ouro Branco",u"RN")
-        (2706109,u"Ouro Branco",u"AL")
-        (3145901,u"Ouro Branco",u"MG")
-        (3146008,u"Ouro Fino",u"MG")
-        (3146107,u"Ouro Preto",u"MG")
-        (1100155,u"Ouro Preto do Oeste",u"RO")
-        (2510600,u"Ouro Velho",u"PB")
-        (3534807,u"Ouro Verde",u"SP")
-        (4211850,u"Ouro Verde",u"SC")
-        (5215405,u"Ouro Verde de Goiás",u"GO")
-        (3146206,u"Ouro Verde de Minas",u"MG")
-        (4117453,u"Ouro Verde do Oeste",u"PR")
-        (3534757,u"Ouroeste",u"SP")
-        (2923357,u"Ourolândia",u"BA")
-        (5215504,u"Ouvidor",u"GO")
-        (3534906,u"Pacaembu",u"SP")
-        (1505486,u"Pacajá",u"PA")
-        (2309607,u"Pacajus",u"CE")
-        (1400456,u"Pacaraima",u"RR")
-        (2309706,u"Pacatuba",u"CE")
-        (2804904,u"Pacatuba",u"SE")
-        (2107506,u"Paço do Lumiar",u"MA")
-        (2309805,u"Pacoti",u"CE")
-        (2309904,u"Pacujá",u"CE")
-        (5215603,u"Padre Bernardo",u"GO")
-        (3146255,u"Padre Carvalho",u"MG")
-        (2207207,u"Padre Marcos",u"PI")
-        (3146305,u"Padre Paraíso",u"MG")
-        (2207306,u"Paes Landim",u"PI")
-        (3146552,u"Pai Pedro",u"MG")
-        (4211876,u"Paial",u"SC")
-        (4117503,u"Paiçandu",u"PR")
-        (4313607,u"Paim Filho",u"RS")
-        (3146404,u"Paineiras",u"MG")
-        (4211892,u"Painel",u"SC")
-        (3146503,u"Pains",u"MG")
-        (3146602,u"Paiva",u"MG")
-        (2207355,u"Pajeú do Piauí",u"PI")
-        (2706208,u"Palestina",u"AL")
-        (3535002,u"Palestina",u"SP")
-        (5215652,u"Palestina de Goiás",u"GO")
-        (1505494,u"Palestina do Pará",u"PA")
-        (2310001,u"Palhano",u"CE")
-        (4211900,u"Palhoça",u"SC")
-        (3146701,u"Palma",u"MG")
-        (4212007,u"Palma Sola",u"SC")
-        (2310100,u"Palmácia",u"CE")
-        (2610004,u"Palmares",u"PE")
-        (4313656,u"Palmares do Sul",u"RS")
-        (3535101,u"Palmares Paulista",u"SP")
-        (1721000,u"Palmas",u"TO")
-        (4117602,u"Palmas",u"PR")
-        (2923407,u"Palmas de Monte Alto",u"BA")
-        (4117701,u"Palmeira",u"PR")
-        (4212056,u"Palmeira",u"SC")
-        (3535200,u"Palmeira d'Oeste",u"SP")
-        (4313706,u"Palmeira das Missões",u"RS")
-        (2207405,u"Palmeira do Piauí",u"PI")
-        (2706307,u"Palmeira dos Índios",u"AL")
-        (2207504,u"Palmeirais",u"PI")
-        (2107605,u"Palmeirândia",u"MA")
-        (1715705,u"Palmeirante",u"TO")
-        (2923506,u"Palmeiras",u"BA")
-        (5215702,u"Palmeiras de Goiás",u"GO")
-        (1713809,u"Palmeiras do Tocantins",u"TO")
-        (2610103,u"Palmeirina",u"PE")
-        (1715754,u"Palmeirópolis",u"TO")
-        (5215801,u"Palmelo",u"GO")
-        (5215900,u"Palminópolis",u"GO")
-        (3535309,u"Palmital",u"SP")
-        (4117800,u"Palmital",u"PR")
-        (4313805,u"Palmitinho",u"RS")
-        (4212106,u"Palmitos",u"SC")
-        (3146750,u"Palmópolis",u"MG")
-        (4117909,u"Palotina",u"PR")
-        (5216007,u"Panamá",u"GO")
-        (4313904,u"Panambi",u"RS")
-        (3204005,u"Pancas",u"ES")
-        (2610202,u"Panelas",u"PE")
-        (3535408,u"Panorama",u"SP")
-        (4313953,u"Pantano Grande",u"RS")
-        (2706406,u"Pão de Açúcar",u"AL")
-        (3146909,u"Papagaios",u"MG")
-        (4212205,u"Papanduva",u"SC")
-        (2207553,u"Paquetá",u"PI")
-        (3147105,u"Pará de Minas",u"MG")
-        (3303609,u"Paracambi",u"RJ")
-        (3147006,u"Paracatu",u"MG")
-        (2310209,u"Paracuru",u"CE")
-        (1505502,u"Paragominas",u"PA")
-        (3147204,u"Paraguaçu",u"MG")
-        (3535507,u"Paraguaçu Paulista",u"SP")
-        (4314001,u"Paraí",u"RS")
-        (3303708,u"Paraíba do Sul",u"RJ")
-        (2107704,u"Paraibano",u"MA")
-        (3535606,u"Paraibuna",u"SP")
-        (2310258,u"Paraipaba",u"CE")
-        (3535705,u"Paraíso",u"SP")
-        (4212239,u"Paraíso",u"SC")
-        (4118006,u"Paraíso do Norte",u"PR")
-        (4314027,u"Paraíso do Sul",u"RS")
-        (1716109,u"Paraíso do Tocantins",u"TO")
-        (3147303,u"Paraisópolis",u"MG")
-        (2310308,u"Parambu",u"CE")
-        (2923605,u"Paramirim",u"BA")
-        (2310407,u"Paramoti",u"CE")
-        (1716208,u"Paranã",u"TO")
-        (2408607,u"Paraná",u"RN")
-        (4118105,u"Paranacity",u"PR")
-        (4118204,u"Paranaguá",u"PR")
-        (5006309,u"Paranaíba",u"MS")
-        (5216304,u"Paranaiguara",u"GO")
-        (5106299,u"Paranaíta",u"MT")
-        (3535804,u"Paranapanema",u"SP")
-        (4118303,u"Paranapoema",u"PR")
-        (3535903,u"Paranapuã",u"SP")
-        (2610301,u"Paranatama",u"PE")
-        (5106307,u"Paranatinga",u"MT")
-        (4118402,u"Paranavaí",u"PR")
-        (5006358,u"Paranhos",u"MS")
-        (3147402,u"Paraopeba",u"MG")
-        (3536000,u"Parapuã",u"SP")
-        (2510659,u"Parari",u"PB")
-        (2923704,u"Paratinga",u"BA")
-        (3303807,u"Paraty",u"RJ")
-        (2408706,u"Paraú",u"RN")
-        (1505536,u"Parauapebas",u"PA")
-        (5216403,u"Paraúna",u"GO")
-        (2408805,u"Parazinho",u"RN")
-        (3536109,u"Pardinho",u"SP")
-        (4314035,u"Pareci Novo",u"RS")
-        (1101450,u"Parecis",u"RO")
-        (2408904,u"Parelhas",u"RN")
-        (2706422,u"Pariconha",u"AL")
-        (1303403,u"Parintins",u"AM")
-        (2923803,u"Paripiranga",u"BA")
-        (2706448,u"Paripueira",u"AL")
-        (3536208,u"Pariquera-Açu",u"SP")
-        (3536257,u"Parisi",u"SP")
-        (2207603,u"Parnaguá",u"PI")
-        (2207702,u"Parnaíba",u"PI")
-        (2403251,u"Parnamirim",u"RN")
-        (2610400,u"Parnamirim",u"PE")
-        (2107803,u"Parnarama",u"MA")
-        (4314050,u"Parobé",u"RS")
-        (2409100,u"Passa e Fica",u"RN")
-        (3147600,u"Passa Quatro",u"MG")
-        (4314068,u"Passa Sete",u"RS")
-        (3147709,u"Passa Tempo",u"MG")
-        (3147808,u"Passa-Vinte",u"MG")
-        (3147501,u"Passabém",u"MG")
-        (2409209,u"Passagem",u"RN")
-        (2510709,u"Passagem",u"PB")
-        (2107902,u"Passagem Franca",u"MA")
-        (2207751,u"Passagem Franca do Piauí",u"PI")
-        (2610509,u"Passira",u"PE")
-        (2706505,u"Passo de Camaragibe",u"AL")
-        (4212254,u"Passo de Torres",u"SC")
-        (4314076,u"Passo do Sobrado",u"RS")
-        (4314100,u"Passo Fundo",u"RS")
-        (3147907,u"Passos",u"MG")
-        (4212270,u"Passos Maia",u"SC")
-        (2108009,u"Pastos Bons",u"MA")
-        (3147956,u"Patis",u"MG")
-        (4118451,u"Pato Bragado",u"PR")
-        (4118501,u"Pato Branco",u"PR")
-        (2510808,u"Patos",u"PB")
-        (3148004,u"Patos de Minas",u"MG")
-        (2207777,u"Patos do Piauí",u"PI")
-        (3148103,u"Patrocínio",u"MG")
-        (3148202,u"Patrocínio do Muriaé",u"MG")
-        (3536307,u"Patrocínio Paulista",u"SP")
-        (2409308,u"Patu",u"RN")
-        (3303856,u"Paty do Alferes",u"RJ")
-        (2923902,u"Pau Brasil",u"BA")
-        (1505551,u"Pau D'Arco",u"PA")
-        (1716307,u"Pau D'Arco",u"TO")
-        (2207793,u"Pau D'Arco do Piauí",u"PI")
-        (2409407,u"Pau dos Ferros",u"RN")
-        (2610608,u"Paudalho",u"PE")
-        (1303502,u"Pauini",u"AM")
-        (3148301,u"Paula Cândido",u"MG")
-        (4118600,u"Paula Freitas",u"PR")
-        (3536406,u"Paulicéia",u"SP")
-        (3536505,u"Paulínia",u"SP")
-        (2108058,u"Paulino Neves",u"MA")
-        (2510907,u"Paulista",u"PB")
-        (2610707,u"Paulista",u"PE")
-        (2207801,u"Paulistana",u"PI")
-        (3536570,u"Paulistânia",u"SP")
-        (3148400,u"Paulistas",u"MG")
-        (2924009,u"Paulo Afonso",u"BA")
-        (4314134,u"Paulo Bento",u"RS")
-        (3536604,u"Paulo de Faria",u"SP")
-        (4118709,u"Paulo Frontin",u"PR")
-        (2706604,u"Paulo Jacinto",u"AL")
-        (4212304,u"Paulo Lopes",u"SC")
-        (2108108,u"Paulo Ramos",u"MA")
-        (3148509,u"Pavão",u"MG")
-        (4314159,u"Paverama",u"RS")
-        (2207850,u"Pavussu",u"PI")
-        (2924058,u"Pé de Serra",u"BA")
-        (4118808,u"Peabiru",u"PR")
-        (3148608,u"Peçanha",u"MG")
-        (3536703,u"Pederneiras",u"SP")
-        (2610806,u"Pedra",u"PE")
-        (3148707,u"Pedra Azul",u"MG")
-        (3536802,u"Pedra Bela",u"SP")
-        (3148756,u"Pedra Bonita",u"MG")
-        (2310506,u"Pedra Branca",u"CE")
-        (2511004,u"Pedra Branca",u"PB")
-        (1600154,u"Pedra Branca do Amapari",u"AP")
-        (3148806,u"Pedra do Anta",u"MG")
-        (3148905,u"Pedra do Indaiá",u"MG")
-        (3149002,u"Pedra Dourada",u"MG")
-        (2409506,u"Pedra Grande",u"RN")
-        (2511103,u"Pedra Lavrada",u"PB")
-        (2805000,u"Pedra Mole",u"SE")
-        (2409605,u"Pedra Preta",u"RN")
-        (5106372,u"Pedra Preta",u"MT")
-        (3149101,u"Pedralva",u"MG")
-        (3536901,u"Pedranópolis",u"SP")
-        (2924108,u"Pedrão",u"BA")
-        (4314175,u"Pedras Altas",u"RS")
-        (2511202,u"Pedras de Fogo",u"PB")
-        (3149150,u"Pedras de Maria da Cruz",u"MG")
-        (4212403,u"Pedras Grandes",u"SC")
-        (3537008,u"Pedregulho",u"SP")
-        (3537107,u"Pedreira",u"SP")
-        (2108207,u"Pedreiras",u"MA")
-        (2805109,u"Pedrinhas",u"SE")
-        (3537156,u"Pedrinhas Paulista",u"SP")
-        (3149200,u"Pedrinópolis",u"MG")
-        (1716505,u"Pedro Afonso",u"TO")
-        (2924207,u"Pedro Alexandre",u"BA")
-        (2409704,u"Pedro Avelino",u"RN")
-        (3204054,u"Pedro Canário",u"ES")
-        (3537206,u"Pedro de Toledo",u"SP")
-        (2108256,u"Pedro do Rosário",u"MA")
-        (5006408,u"Pedro Gomes",u"MS")
-        (2207900,u"Pedro II",u"PI")
-        (2207934,u"Pedro Laurentino",u"PI")
-        (3149309,u"Pedro Leopoldo",u"MG")
-        (4314209,u"Pedro Osório",u"RS")
-        (2512721,u"Pedro Régis",u"PB")
-        (3149408,u"Pedro Teixeira",u"MG")
-        (2409803,u"Pedro Velho",u"RN")
-        (1716604,u"Peixe",u"TO")
-        (1505601,u"Peixe-Boi",u"PA")
-        (5106422,u"Peixoto de Azevedo",u"MT")
-        (4314308,u"Pejuçara",u"RS")
-        (4314407,u"Pelotas",u"RS")
-        (2310605,u"Penaforte",u"CE")
-        (2108306,u"Penalva",u"MA")
-        (3537305,u"Penápolis",u"SP")
-        (2409902,u"Pendências",u"RN")
-        (2706703,u"Penedo",u"AL")
-        (4212502,u"Penha",u"SC")
-        (2310704,u"Pentecoste",u"CE")
-        (3149507,u"Pequeri",u"MG")
-        (3149606,u"Pequi",u"MG")
-        (1716653,u"Pequizeiro",u"TO")
-        (3149705,u"Perdigão",u"MG")
-        (3149804,u"Perdizes",u"MG")
-        (3149903,u"Perdões",u"MG")
-        (3537404,u"Pereira Barreto",u"SP")
-        (3537503,u"Pereiras",u"SP")
-        (2310803,u"Pereiro",u"CE")
-        (2108405,u"Peri Mirim",u"MA")
-        (3149952,u"Periquito",u"MG")
-        (4212601,u"Peritiba",u"SC")
-        (2108454,u"Peritoró",u"MA")
-        (4118857,u"Perobal",u"PR")
-        (4118907,u"Pérola",u"PR")
-        (4119004,u"Pérola d'Oeste",u"PR")
-        (5216452,u"Perolândia",u"GO")
-        (3537602,u"Peruíbe",u"SP")
-        (3150000,u"Pescador",u"MG")
-        (2610905,u"Pesqueira",u"PE")
-        (2611002,u"Petrolândia",u"PE")
-        (4212700,u"Petrolândia",u"SC")
-        (2611101,u"Petrolina",u"PE")
-        (5216809,u"Petrolina de Goiás",u"GO")
-        (3303906,u"Petrópolis",u"RJ")
-        (2706802,u"Piaçabuçu",u"AL")
-        (3537701,u"Piacatu",u"SP")
-        (2511301,u"Piancó",u"PB")
-        (2924306,u"Piatã",u"BA")
-        (3150109,u"Piau",u"MG")
-        (4314423,u"Picada Café",u"RS")
-        (1505635,u"Piçarra",u"PA")
-        (2208007,u"Picos",u"PI")
-        (2511400,u"Picuí",u"PB")
-        (3537800,u"Piedade",u"SP")
-        (3150158,u"Piedade de Caratinga",u"MG")
-        (3150208,u"Piedade de Ponte Nova",u"MG")
-        (3150307,u"Piedade do Rio Grande",u"MG")
-        (3150406,u"Piedade dos Gerais",u"MG")
-        (4119103,u"Piên",u"PR")
-        (2924405,u"Pilão Arcado",u"BA")
-        (2511509,u"Pilar",u"PB")
-        (2706901,u"Pilar",u"AL")
-        (5216908,u"Pilar de Goiás",u"GO")
-        (3537909,u"Pilar do Sul",u"SP")
-        (2410009,u"Pilões",u"RN")
-        (2511608,u"Pilões",u"PB")
-        (2511707,u"Pilõezinhos",u"PB")
-        (3150505,u"Pimenta",u"MG")
-        (1100189,u"Pimenta Bueno",u"RO")
-        (2208106,u"Pimenteiras",u"PI")
-        (1101468,u"Pimenteiras do Oeste",u"RO")
-        (2924504,u"Pindaí",u"BA")
-        (3538006,u"Pindamonhangaba",u"SP")
-        (2108504,u"Pindaré-Mirim",u"MA")
-        (2707008,u"Pindoba",u"AL")
-        (2924603,u"Pindobaçu",u"BA")
-        (3538105,u"Pindorama",u"SP")
-        (1717008,u"Pindorama do Tocantins",u"TO")
-        (2310852,u"Pindoretama",u"CE")
-        (3150539,u"Pingo-d'Água",u"MG")
-        (4119152,u"Pinhais",u"PR")
-        (4314456,u"Pinhal",u"RS")
-        (4314464,u"Pinhal da Serra",u"RS")
-        (4119251,u"Pinhal de São Bento",u"PR")
-        (4314472,u"Pinhal Grande",u"RS")
-        (4119202,u"Pinhalão",u"PR")
-        (3538204,u"Pinhalzinho",u"SP")
-        (4212908,u"Pinhalzinho",u"SC")
-        (2805208,u"Pinhão",u"SE")
-        (4119301,u"Pinhão",u"PR")
-        (3303955,u"Pinheiral",u"RJ")
-        (4314498,u"Pinheirinho do Vale",u"RS")
-        (2108603,u"Pinheiro",u"MA")
-        (4314506,u"Pinheiro Machado",u"RS")
-        (4213005,u"Pinheiro Preto",u"SC")
-        (3204104,u"Pinheiros",u"ES")
-        (2924652,u"Pintadas",u"BA")
-        (3150570,u"Pintópolis",u"MG")
-        (2208205,u"Pio IX",u"PI")
-        (2108702,u"Pio XII",u"MA")
-        (3538303,u"Piquerobi",u"SP")
-        (2310902,u"Piquet Carneiro",u"CE")
-        (3538501,u"Piquete",u"SP")
-        (3538600,u"Piracaia",u"SP")
-        (5217104,u"Piracanjuba",u"GO")
-        (3150604,u"Piracema",u"MG")
-        (3538709,u"Piracicaba",u"SP")
-        (2208304,u"Piracuruca",u"PI")
-        (3304003,u"Piraí",u"RJ")
-        (2924678,u"Piraí do Norte",u"BA")
-        (4119400,u"Piraí do Sul",u"PR")
-        (3538808,u"Piraju",u"SP")
-        (3150703,u"Pirajuba",u"MG")
-        (3538907,u"Pirajuí",u"SP")
-        (2805307,u"Pirambu",u"SE")
-        (3150802,u"Piranga",u"MG")
-        (3539004,u"Pirangi",u"SP")
-        (3150901,u"Piranguçu",u"MG")
-        (3151008,u"Piranguinho",u"MG")
-        (2707107,u"Piranhas",u"AL")
-        (5217203,u"Piranhas",u"GO")
-        (2108801,u"Pirapemas",u"MA")
-        (3151107,u"Pirapetinga",u"MG")
-        (4314555,u"Pirapó",u"RS")
-        (3151206,u"Pirapora",u"MG")
-        (3539103,u"Pirapora do Bom Jesus",u"SP")
-        (3539202,u"Pirapozinho",u"SP")
-        (4119509,u"Piraquara",u"PR")
-        (1717206,u"Piraquê",u"TO")
-        (3539301,u"Pirassununga",u"SP")
-        (4314605,u"Piratini",u"RS")
-        (3539400,u"Piratininga",u"SP")
-        (4213104,u"Piratuba",u"SC")
-        (3151305,u"Piraúba",u"MG")
-        (5217302,u"Pirenópolis",u"GO")
-        (5217401,u"Pires do Rio",u"GO")
-        (2310951,u"Pires Ferreira",u"CE")
-        (2924702,u"Piripá",u"BA")
-        (2208403,u"Piripiri",u"PI")
-        (2924801,u"Piritiba",u"BA")
-        (2511806,u"Pirpirituba",u"PB")
-        (4119608,u"Pitanga",u"PR")
-        (3539509,u"Pitangueiras",u"SP")
-        (4119657,u"Pitangueiras",u"PR")
-        (3151404,u"Pitangui",u"MG")
-        (2511905,u"Pitimbu",u"PB")
-        (1717503,u"Pium",u"TO")
-        (3204203,u"Piúma",u"ES")
-        (3151503,u"Piumhi",u"MG")
-        (1505650,u"Placas",u"PA")
-        (1200385,u"Plácido de Castro",u"AC")
-        (5217609,u"Planaltina",u"GO")
-        (4119707,u"Planaltina do Paraná",u"PR")
-        (2924900,u"Planaltino",u"BA")
-        (2925006,u"Planalto",u"BA")
-        (3539608,u"Planalto",u"SP")
-        (4119806,u"Planalto",u"PR")
-        (4314704,u"Planalto",u"RS")
-        (4213153,u"Planalto Alegre",u"SC")
-        (5106455,u"Planalto da Serra",u"MT")
-        (3151602,u"Planura",u"MG")
-        (3539707,u"Platina",u"SP")
-        (3539806,u"Poá",u"SP")
-        (2611200,u"Poção",u"PE")
-        (2108900,u"Poção de Pedras",u"MA")
-        (2512002,u"Pocinhos",u"PB")
-        (2410108,u"Poço Branco",u"RN")
-        (2512036,u"Poço Dantas",u"PB")
-        (4314753,u"Poço das Antas",u"RS")
-        (2707206,u"Poço das Trincheiras",u"AL")
-        (2512077,u"Poço de José de Moura",u"PB")
-        (3151701,u"Poço Fundo",u"MG")
-        (2805406,u"Poço Redondo",u"SE")
-        (2805505,u"Poço Verde",u"SE")
-        (2925105,u"Poções",u"BA")
-        (5106505,u"Poconé",u"MT")
-        (3151800,u"Poços de Caldas",u"MG")
-        (3151909,u"Pocrane",u"MG")
-        (2925204,u"Pojuca",u"BA")
-        (3539905,u"Poloni",u"SP")
-        (2512101,u"Pombal",u"PB")
-        (2611309,u"Pombos",u"PE")
-        (4213203,u"Pomerode",u"SC")
-        (3540002,u"Pompéia",u"SP")
-        (3152006,u"Pompéu",u"MG")
-        (3540101,u"Pongaí",u"SP")
-        (1505700,u"Ponta de Pedras",u"PA")
-        (4119905,u"Ponta Grossa",u"PR")
-        (5006606,u"Ponta Porã",u"MS")
-        (3540200,u"Pontal",u"SP")
-        (5106653,u"Pontal do Araguaia",u"MT")
-        (4119954,u"Pontal do Paraná",u"PR")
-        (5217708,u"Pontalina",u"GO")
-        (3540259,u"Pontalinda",u"SP")
-        (4314779,u"Pontão",u"RS")
-        (4213302,u"Ponte Alta",u"SC")
-        (1717800,u"Ponte Alta do Bom Jesus",u"TO")
-        (4213351,u"Ponte Alta do Norte",u"SC")
-        (1717909,u"Ponte Alta do Tocantins",u"TO")
-        (5106703,u"Ponte Branca",u"MT")
-        (3152105,u"Ponte Nova",u"MG")
-        (4314787,u"Ponte Preta",u"RS")
-        (4213401,u"Ponte Serrada",u"SC")
-        (5106752,u"Pontes e Lacerda",u"MT")
-        (3540309,u"Pontes Gestal",u"SP")
-        (3204252,u"Ponto Belo",u"ES")
-        (3152131,u"Ponto Chique",u"MG")
-        (3152170,u"Ponto dos Volantes",u"MG")
-        (2925253,u"Ponto Novo",u"BA")
-        (3540408,u"Populina",u"SP")
-        (2311009,u"Poranga",u"CE")
-        (3540507,u"Porangaba",u"SP")
-        (5218003,u"Porangatu",u"GO")
-        (3304102,u"Porciúncula",u"RJ")
-        (4120002,u"Porecatu",u"PR")
-        (2410207,u"Portalegre",u"RN")
-        (4314803,u"Portão",u"RS")
-        (5218052,u"Porteirão",u"GO")
-        (2311108,u"Porteiras",u"CE")
-        (3152204,u"Porteirinha",u"MG")
-        (1505809,u"Portel",u"PA")
-        (5218102,u"Portelândia",u"GO")
-        (2208502,u"Porto",u"PI")
-        (1200807,u"Porto Acre",u"AC")
-        (4314902,u"Porto Alegre",u"RS")
-        (5106778,u"Porto Alegre do Norte",u"MT")
-        (2208551,u"Porto Alegre do Piauí",u"PI")
-        (1718006,u"Porto Alegre do Tocantins",u"TO")
-        (4120101,u"Porto Amazonas",u"PR")
-        (4120150,u"Porto Barreiro",u"PR")
-        (4213500,u"Porto Belo",u"SC")
-        (2707305,u"Porto Calvo",u"AL")
-        (2805604,u"Porto da Folha",u"SE")
-        (1505908,u"Porto de Moz",u"PA")
-        (2707404,u"Porto de Pedras",u"AL")
-        (2410256,u"Porto do Mangue",u"RN")
-        (5106802,u"Porto dos Gaúchos",u"MT")
-        (5106828,u"Porto Esperidião",u"MT")
-        (5106851,u"Porto Estrela",u"MT")
-        (3540606,u"Porto Feliz",u"SP")
-        (3540705,u"Porto Ferreira",u"SP")
-        (3152303,u"Porto Firme",u"MG")
-        (2109007,u"Porto Franco",u"MA")
-        (1600535,u"Porto Grande",u"AP")
-        (4315008,u"Porto Lucena",u"RS")
-        (4315057,u"Porto Mauá",u"RS")
-        (5006903,u"Porto Murtinho",u"MS")
-        (1718204,u"Porto Nacional",u"TO")
-        (3304110,u"Porto Real",u"RJ")
-        (2707503,u"Porto Real do Colégio",u"AL")
-        (4120200,u"Porto Rico",u"PR")
-        (2109056,u"Porto Rico do Maranhão",u"MA")
-        (2925303,u"Porto Seguro",u"BA")
-        (4213609,u"Porto União",u"SC")
-        (1100205,u"Porto Velho",u"RO")
-        (4315073,u"Porto Vera Cruz",u"RS")
-        (4120309,u"Porto Vitória",u"PR")
-        (1200393,u"Porto Walter",u"AC")
-        (4315107,u"Porto Xavier",u"RS")
-        (5218300,u"Posse",u"GO")
-        (3152402,u"Poté",u"MG")
-        (2311207,u"Potengi",u"CE")
-        (3540754,u"Potim",u"SP")
-        (2925402,u"Potiraguá",u"BA")
-        (3540804,u"Potirendaba",u"SP")
-        (2311231,u"Potiretama",u"CE")
-        (3152501,u"Pouso Alegre",u"MG")
-        (3152600,u"Pouso Alto",u"MG")
-        (4315131,u"Pouso Novo",u"RS")
-        (4213708,u"Pouso Redondo",u"SC")
-        (5107008,u"Poxoréo",u"MT")
-        (3540853,u"Pracinha",u"SP")
-        (1600550,u"Pracuúba",u"AP")
-        (2925501,u"Prado",u"BA")
-        (4120333,u"Prado Ferreira",u"PR")
-        (3540903,u"Pradópolis",u"SP")
-        (3152709,u"Prados",u"MG")
-        (3541000,u"Praia Grande",u"SP")
-        (4213807,u"Praia Grande",u"SC")
-        (1718303,u"Praia Norte",u"TO")
-        (1506005,u"Prainha",u"PA")
-        (4120358,u"Pranchita",u"PR")
-        (2512200,u"Prata",u"PB")
-        (3152808,u"Prata",u"MG")
-        (2208601,u"Prata do Piauí",u"PI")
-        (3541059,u"Pratânia",u"SP")
-        (3152907,u"Pratápolis",u"MG")
-        (3153004,u"Pratinha",u"MG")
-        (3541109,u"Presidente Alves",u"SP")
-        (3153103,u"Presidente Bernardes",u"MG")
-        (3541208,u"Presidente Bernardes",u"SP")
-        (4213906,u"Presidente Castello Branco",u"SC")
-        (4120408,u"Presidente Castelo Branco",u"PR")
-        (2109106,u"Presidente Dutra",u"MA")
-        (2925600,u"Presidente Dutra",u"BA")
-        (3541307,u"Presidente Epitácio",u"SP")
-        (1303536,u"Presidente Figueiredo",u"AM")
-        (4214003,u"Presidente Getúlio",u"SC")
-        (2925709,u"Presidente Jânio Quadros",u"BA")
-        (2109205,u"Presidente Juscelino",u"MA")
-        (2410306,u"Presidente Juscelino",u"RN")
-        (3153202,u"Presidente Juscelino",u"MG")
-        (1718402,u"Presidente Kennedy",u"TO")
-        (3204302,u"Presidente Kennedy",u"ES")
-        (3153301,u"Presidente Kubitschek",u"MG")
-        (4315149,u"Presidente Lucena",u"RS")
-        (1100254,u"Presidente Médici",u"RO")
-        (2109239,u"Presidente Médici",u"MA")
-        (4214102,u"Presidente Nereu",u"SC")
-        (3153400,u"Presidente Olegário",u"MG")
-        (3541406,u"Presidente Prudente",u"SP")
-        (2109270,u"Presidente Sarney",u"MA")
-        (2925758,u"Presidente Tancredo Neves",u"BA")
-        (2109304,u"Presidente Vargas",u"MA")
-        (3541505,u"Presidente Venceslau",u"SP")
-        (1506104,u"Primavera",u"PA")
-        (2611408,u"Primavera",u"PE")
-        (1101476,u"Primavera de Rondônia",u"RO")
-        (5107040,u"Primavera do Leste",u"MT")
-        (2109403,u"Primeira Cruz",u"MA")
-        (4120507,u"Primeiro de Maio",u"PR")
-        (4214151,u"Princesa",u"SC")
-        (2512309,u"Princesa Isabel",u"PB")
-        (5218391,u"Professor Jamil",u"GO")
-        (4315156,u"Progresso",u"RS")
-        (3541604,u"Promissão",u"SP")
-        (2805703,u"Propriá",u"SE")
-        (4315172,u"Protásio Alves",u"RS")
-        (3153608,u"Prudente de Morais",u"MG")
-        (4120606,u"Prudentópolis",u"PR")
-        (1718451,u"Pugmil",u"TO")
-        (2410405,u"Pureza",u"RN")
-        (4315206,u"Putinga",u"RS")
-        (2512408,u"Puxinanã",u"PB")
-        (3541653,u"Quadra",u"SP")
-        (4315305,u"Quaraí",u"RS")
-        (3153707,u"Quartel Geral",u"MG")
-        (4120655,u"Quarto Centenário",u"PR")
-        (3541703,u"Quatá",u"SP")
-        (4120705,u"Quatiguá",u"PR")
-        (1506112,u"Quatipuru",u"PA")
-        (3304128,u"Quatis",u"RJ")
-        (4120804,u"Quatro Barras",u"PR")
-        (4315313,u"Quatro Irmãos",u"RS")
-        (4120853,u"Quatro Pontes",u"PR")
-        (2707602,u"Quebrangulo",u"AL")
-        (4120903,u"Quedas do Iguaçu",u"PR")
-        (2208650,u"Queimada Nova",u"PI")
-        (2512507,u"Queimadas",u"PB")
-        (2925808,u"Queimadas",u"BA")
-        (3304144,u"Queimados",u"RJ")
-        (3541802,u"Queiroz",u"SP")
-        (3541901,u"Queluz",u"SP")
-        (3153806,u"Queluzito",u"MG")
-        (5107065,u"Querência",u"MT")
-        (4121000,u"Querência do Norte",u"PR")
-        (4315321,u"Quevedos",u"RS")
-        (2925907,u"Quijingue",u"BA")
-        (4214201,u"Quilombo",u"SC")
-        (4121109,u"Quinta do Sol",u"PR")
-        (3542008,u"Quintana",u"SP")
-        (4315354,u"Quinze de Novembro",u"RS")
-        (2611507,u"Quipapá",u"PE")
-        (5218508,u"Quirinópolis",u"GO")
-        (3304151,u"Quissamã",u"RJ")
-        (4121208,u"Quitandinha",u"PR")
-        (2311264,u"Quiterianópolis",u"CE")
-        (2512606,u"Quixabá",u"PB")
-        (2611533,u"Quixaba",u"PE")
-        (2925931,u"Quixabeira",u"BA")
-        (2311306,u"Quixadá",u"CE")
-        (2311355,u"Quixelô",u"CE")
-        (2311405,u"Quixeramobim",u"CE")
-        (2311504,u"Quixeré",u"CE")
-        (2410504,u"Rafael Fernandes",u"RN")
-        (2410603,u"Rafael Godeiro",u"RN")
-        (2925956,u"Rafael Jambeiro",u"BA")
-        (3542107,u"Rafard",u"SP")
-        (4121257,u"Ramilândia",u"PR")
-        (3542206,u"Rancharia",u"SP")
-        (4121307,u"Rancho Alegre",u"PR")
-        (4121356,u"Rancho Alegre D'Oeste",u"PR")
-        (4214300,u"Rancho Queimado",u"SC")
-        (2109452,u"Raposa",u"MA")
-        (3153905,u"Raposos",u"MG")
-        (3154002,u"Raul Soares",u"MG")
-        (4121406,u"Realeza",u"PR")
-        (4121505,u"Rebouças",u"PR")
-        (2611606,u"Recife",u"PE")
-        (3154101,u"Recreio",u"MG")
-        (1718501,u"Recursolândia",u"TO")
-        (1506138,u"Redenção",u"PA")
-        (2311603,u"Redenção",u"CE")
-        (3542305,u"Redenção da Serra",u"SP")
-        (2208700,u"Redenção do Gurguéia",u"PI")
-        (4315404,u"Redentora",u"RS")
-        (3154150,u"Reduto",u"MG")
-        (2208809,u"Regeneração",u"PI")
-        (3542404,u"Regente Feijó",u"SP")
-        (3542503,u"Reginópolis",u"SP")
-        (3542602,u"Registro",u"SP")
-        (4315453,u"Relvado",u"RS")
-        (2926004,u"Remanso",u"BA")
-        (2512705,u"Remígio",u"PB")
-        (4121604,u"Renascença",u"PR")
-        (2311702,u"Reriutaba",u"CE")
-        (3304201,u"Resende",u"RJ")
-        (3154200,u"Resende Costa",u"MG")
-        (4121703,u"Reserva",u"PR")
-        (5107156,u"Reserva do Cabaçal",u"MT")
-        (4121752,u"Reserva do Iguaçu",u"PR")
-        (3154309,u"Resplendor",u"MG")
-        (3154408,u"Ressaquinha",u"MG")
-        (3542701,u"Restinga",u"SP")
-        (4315503,u"Restinga Seca",u"RS")
-        (2926103,u"Retirolândia",u"BA")
-        (2109502,u"Riachão",u"MA")
-        (2512747,u"Riachão",u"PB")
-        (2926202,u"Riachão das Neves",u"BA")
-        (2512754,u"Riachão do Bacamarte",u"PB")
-        (2805802,u"Riachão do Dantas",u"SE")
-        (2926301,u"Riachão do Jacuípe",u"BA")
-        (2512762,u"Riachão do Poço",u"PB")
-        (1718550,u"Riachinho",u"TO")
-        (3154457,u"Riachinho",u"MG")
-        (2410702,u"Riacho da Cruz",u"RN")
-        (2611705,u"Riacho das Almas",u"PE")
-        (2410801,u"Riacho de Santana",u"RN")
-        (2926400,u"Riacho de Santana",u"BA")
-        (2512788,u"Riacho de Santo Antônio",u"PB")
-        (2512804,u"Riacho dos Cavalos",u"PB")
-        (3154507,u"Riacho dos Machados",u"MG")
-        (2208858,u"Riacho Frio",u"PI")
-        (2410900,u"Riachuelo",u"RN")
-        (2805901,u"Riachuelo",u"SE")
-        (5218607,u"Rialma",u"GO")
-        (5218706,u"Rianápolis",u"GO")
-        (2109551,u"Ribamar Fiquene",u"MA")
-        (5007109,u"Ribas do Rio Pardo",u"MS")
-        (3542800,u"Ribeira",u"SP")
-        (2926509,u"Ribeira do Amparo",u"BA")
-        (2208874,u"Ribeira do Piauí",u"PI")
-        (2926608,u"Ribeira do Pombal",u"BA")
-        (2611804,u"Ribeirão",u"PE")
-        (3542909,u"Ribeirão Bonito",u"SP")
-        (3543006,u"Ribeirão Branco",u"SP")
-        (5107180,u"Ribeirão Cascalheira",u"MT")
-        (4121802,u"Ribeirão Claro",u"PR")
-        (3543105,u"Ribeirão Corrente",u"SP")
-        (3154606,u"Ribeirão das Neves",u"MG")
-        (2926657,u"Ribeirão do Largo",u"BA")
-        (4121901,u"Ribeirão do Pinhal",u"PR")
-        (3543204,u"Ribeirão do Sul",u"SP")
-        (3543238,u"Ribeirão dos Índios",u"SP")
-        (3543253,u"Ribeirão Grande",u"SP")
-        (3543303,u"Ribeirão Pires",u"SP")
-        (3543402,u"Ribeirão Preto",u"SP")
-        (3154705,u"Ribeirão Vermelho",u"MG")
-        (5107198,u"Ribeirãozinho",u"MT")
-        (2208908,u"Ribeiro Gonçalves",u"PI")
-        (2806008,u"Ribeirópolis",u"SE")
-        (3543600,u"Rifaina",u"SP")
-        (3543709,u"Rincão",u"SP")
-        (3543808,u"Rinópolis",u"SP")
-        (3154804,u"Rio Acima",u"MG")
-        (4122008,u"Rio Azul",u"PR")
-        (3204351,u"Rio Bananal",u"ES")
-        (4122107,u"Rio Bom",u"PR")
-        (3304300,u"Rio Bonito",u"RJ")
-        (4122156,u"Rio Bonito do Iguaçu",u"PR")
-        (1200401,u"Rio Branco",u"AC")
-        (5107206,u"Rio Branco",u"MT")
-        (4122172,u"Rio Branco do Ivaí",u"PR")
-        (4122206,u"Rio Branco do Sul",u"PR")
-        (5007208,u"Rio Brilhante",u"MS")
-        (3154903,u"Rio Casca",u"MG")
-        (3304409,u"Rio Claro",u"RJ")
-        (3543907,u"Rio Claro",u"SP")
-        (1100262,u"Rio Crespo",u"RO")
-        (1718659,u"Rio da Conceição",u"TO")
-        (4214409,u"Rio das Antas",u"SC")
-        (3304508,u"Rio das Flores",u"RJ")
-        (3304524,u"Rio das Ostras",u"RJ")
-        (3544004,u"Rio das Pedras",u"SP")
-        (2926707,u"Rio de Contas",u"BA")
-        (3304557,u"Rio de Janeiro",u"RJ")
-        (2926806,u"Rio do Antônio",u"BA")
-        (4214508,u"Rio do Campo",u"SC")
-        (2408953,u"Rio do Fogo",u"RN")
-        (4214607,u"Rio do Oeste",u"SC")
-        (2926905,u"Rio do Pires",u"BA")
-        (3155108,u"Rio do Prado",u"MG")
-        (4214805,u"Rio do Sul",u"SC")
-        (3155009,u"Rio Doce",u"MG")
-        (1718709,u"Rio dos Bois",u"TO")
-        (4214706,u"Rio dos Cedros",u"SC")
-        (4315552,u"Rio dos Índios",u"RS")
-        (3155207,u"Rio Espera",u"MG")
-        (2611903,u"Rio Formoso",u"PE")
-        (4214904,u"Rio Fortuna",u"SC")
-        (4315602,u"Rio Grande",u"RS")
-        (3544103,u"Rio Grande da Serra",u"SP")
-        (2209005,u"Rio Grande do Piauí",u"PI")
-        (2707701,u"Rio Largo",u"AL")
-        (3155306,u"Rio Manso",u"MG")
-        (1506161,u"Rio Maria",u"PA")
-        (4215000,u"Rio Negrinho",u"SC")
-        (4122305,u"Rio Negro",u"PR")
-        (5007307,u"Rio Negro",u"MS")
-        (3155405,u"Rio Novo",u"MG")
-        (3204401,u"Rio Novo do Sul",u"ES")
-        (3155504,u"Rio Paranaíba",u"MG")
-        (4315701,u"Rio Pardo",u"RS")
-        (3155603,u"Rio Pardo de Minas",u"MG")
-        (3155702,u"Rio Piracicaba",u"MG")
-        (3155801,u"Rio Pomba",u"MG")
-        (3155900,u"Rio Preto",u"MG")
-        (1303569,u"Rio Preto da Eva",u"AM")
-        (5218789,u"Rio Quente",u"GO")
-        (2927002,u"Rio Real",u"BA")
-        (4215059,u"Rio Rufino",u"SC")
-        (1718758,u"Rio Sono",u"TO")
-        (2512903,u"Rio Tinto",u"PB")
-        (5218805,u"Rio Verde",u"GO")
-        (5007406,u"Rio Verde de Mato Grosso",u"MS")
-        (3156007,u"Rio Vermelho",u"MG")
-        (3544202,u"Riolândia",u"SP")
-        (4315750,u"Riozinho",u"RS")
-        (4215075,u"Riqueza",u"SC")
-        (3156106,u"Ritápolis",u"MG")
-        (3543501,u"Riversul",u"SP")
-        (4315800,u"Roca Sales",u"RS")
-        (5007505,u"Rochedo",u"MS")
-        (3156205,u"Rochedo de Minas",u"MG")
-        (4215109,u"Rodeio",u"SC")
-        (4315909,u"Rodeio Bonito",u"RS")
-        (3156304,u"Rodeiro",u"MG")
-        (2927101,u"Rodelas",u"BA")
-        (2411007,u"Rodolfo Fernandes",u"RN")
-        (1200427,u"Rodrigues Alves",u"AC")
-        (4315958,u"Rolador",u"RS")
-        (4122404,u"Rolândia",u"PR")
-        (4316006,u"Rolante",u"RS")
-        (1100288,u"Rolim de Moura",u"RO")
-        (3156403,u"Romaria",u"MG")
-        (4215208,u"Romelândia",u"SC")
-        (4122503,u"Roncador",u"PR")
-        (4316105,u"Ronda Alta",u"RS")
-        (4316204,u"Rondinha",u"RS")
-        (5107578,u"Rondolândia",u"MT")
-        (4122602,u"Rondon",u"PR")
-        (1506187,u"Rondon do Pará",u"PA")
-        (5107602,u"Rondonópolis",u"MT")
-        (4316303,u"Roque Gonzales",u"RS")
-        (1400472,u"Rorainópolis",u"RR")
-        (3544251,u"Rosana",u"SP")
-        (2109601,u"Rosário",u"MA")
-        (3156452,u"Rosário da Limeira",u"MG")
-        (2806107,u"Rosário do Catete",u"SE")
-        (4122651,u"Rosário do Ivaí",u"PR")
-        (4316402,u"Rosário do Sul",u"RS")
-        (5107701,u"Rosário Oeste",u"MT")
-        (3544301,u"Roseira",u"SP")
-        (2707800,u"Roteiro",u"AL")
-        (3156502,u"Rubelita",u"MG")
-        (3544400,u"Rubiácea",u"SP")
-        (5218904,u"Rubiataba",u"GO")
-        (3156601,u"Rubim",u"MG")
-        (3544509,u"Rubinéia",u"SP")
-        (1506195,u"Rurópolis",u"PA")
-        (2311801,u"Russas",u"CE")
-        (2411106,u"Ruy Barbosa",u"RN")
-        (2927200,u"Ruy Barbosa",u"BA")
-        (3156700,u"Sabará",u"MG")
-        (4122701,u"Sabáudia",u"PR")
-        (3544608,u"Sabino",u"SP")
-        (3156809,u"Sabinópolis",u"MG")
-        (2311900,u"Saboeiro",u"CE")
-        (3156908,u"Sacramento",u"MG")
-        (4316428,u"Sagrada Família",u"RS")
-        (3544707,u"Sagres",u"SP")
-        (2612000,u"Sairé",u"PE")
-        (4316436,u"Saldanha Marinho",u"RS")
-        (3544806,u"Sales",u"SP")
-        (3544905,u"Sales Oliveira",u"SP")
-        (3545001,u"Salesópolis",u"SP")
-        (4215307,u"Salete",u"SC")
-        (2513000,u"Salgadinho",u"PB")
-        (2612109,u"Salgadinho",u"PE")
-        (2806206,u"Salgado",u"SE")
-        (2513109,u"Salgado de São Félix",u"PB")
-        (4122800,u"Salgado Filho",u"PR")
-        (2612208,u"Salgueiro",u"PE")
-        (3157005,u"Salinas",u"MG")
-        (2927309,u"Salinas da Margarida",u"BA")
-        (1506203,u"Salinópolis",u"PA")
-        (2311959,u"Salitre",u"CE")
-        (3545100,u"Salmourão",u"SP")
-        (2612307,u"Saloá",u"PE")
-        (3545159,u"Saltinho",u"SP")
-        (4215356,u"Saltinho",u"SC")
-        (3545209,u"Salto",u"SP")
-        (3157104,u"Salto da Divisa",u"MG")
-        (3545308,u"Salto de Pirapora",u"SP")
-        (5107750,u"Salto do Céu",u"MT")
-        (4122909,u"Salto do Itararé",u"PR")
-        (4316451,u"Salto do Jacuí",u"RS")
-        (4123006,u"Salto do Lontra",u"PR")
-        (3545407,u"Salto Grande",u"SP")
-        (4215406,u"Salto Veloso",u"SC")
-        (2927408,u"Salvador",u"BA")
-        (4316477,u"Salvador das Missões",u"RS")
-        (4316501,u"Salvador do Sul",u"RS")
-        (1506302,u"Salvaterra",u"PA")
-        (2109700,u"Sambaíba",u"MA")
-        (1718808,u"Sampaio",u"TO")
-        (4316600,u"Sananduva",u"RS")
-        (5219001,u"Sanclerlândia",u"GO")
-        (1718840,u"Sandolândia",u"TO")
-        (3545506,u"Sandovalina",u"SP")
-        (4215455,u"Sangão",u"SC")
-        (2612406,u"Sanharó",u"PE")
-        (4317103,u"Sant'Ana do Livramento",u"RS")
-        (3545605,u"Santa Adélia",u"SP")
-        (3545704,u"Santa Albertina",u"SP")
-        (4123105,u"Santa Amélia",u"PR")
-        (2927507,u"Santa Bárbara",u"BA")
-        (3157203,u"Santa Bárbara",u"MG")
-        (3545803,u"Santa Bárbara d'Oeste",u"SP")
-        (5219100,u"Santa Bárbara de Goiás",u"GO")
-        (3157252,u"Santa Bárbara do Leste",u"MG")
-        (3157278,u"Santa Bárbara do Monte Verde",u"MG")
-        (1506351,u"Santa Bárbara do Pará",u"PA")
-        (4316709,u"Santa Bárbara do Sul",u"RS")
-        (3157302,u"Santa Bárbara do Tugúrio",u"MG")
-        (3546009,u"Santa Branca",u"SP")
-        (2927606,u"Santa Brígida",u"BA")
-        (5107248,u"Santa Carmem",u"MT")
-        (2513158,u"Santa Cecília",u"PB")
-        (4215505,u"Santa Cecília",u"SC")
-        (4123204,u"Santa Cecília do Pavão",u"PR")
-        (4316733,u"Santa Cecília do Sul",u"RS")
-        (3546108,u"Santa Clara d'Oeste",u"SP")
-        (4316758,u"Santa Clara do Sul",u"RS")
-        (2411205,u"Santa Cruz",u"RN")
-        (2513208,u"Santa Cruz",u"PB")
-        (2612455,u"Santa Cruz",u"PE")
-        (2927705,u"Santa Cruz Cabrália",u"BA")
-        (2612471,u"Santa Cruz da Baixa Verde",u"PE")
-        (3546207,u"Santa Cruz da Conceição",u"SP")
-        (3546256,u"Santa Cruz da Esperança",u"SP")
-        (2927804,u"Santa Cruz da Vitória",u"BA")
-        (3546306,u"Santa Cruz das Palmeiras",u"SP")
-        (5219209,u"Santa Cruz de Goiás",u"GO")
-        (3157336,u"Santa Cruz de Minas",u"MG")
-        (4123303,u"Santa Cruz de Monte Castelo",u"PR")
-        (3157377,u"Santa Cruz de Salinas",u"MG")
-        (1506401,u"Santa Cruz do Arari",u"PA")
-        (2612505,u"Santa Cruz do Capibaribe",u"PE")
-        (3157401,u"Santa Cruz do Escalvado",u"MG")
-        (2209104,u"Santa Cruz do Piauí",u"PI")
-        (3546405,u"Santa Cruz do Rio Pardo",u"SP")
-        (4316808,u"Santa Cruz do Sul",u"RS")
-        (5107743,u"Santa Cruz do Xingu",u"MT")
-        (2209153,u"Santa Cruz dos Milagres",u"PI")
-        (3157500,u"Santa Efigênia de Minas",u"MG")
-        (3546504,u"Santa Ernestina",u"SP")
-        (4123402,u"Santa Fé",u"PR")
-        (5219258,u"Santa Fé de Goiás",u"GO")
-        (3157609,u"Santa Fé de Minas",u"MG")
-        (1718865,u"Santa Fé do Araguaia",u"TO")
-        (3546603,u"Santa Fé do Sul",u"SP")
-        (2209203,u"Santa Filomena",u"PI")
-        (2612554,u"Santa Filomena",u"PE")
-        (2109759,u"Santa Filomena do Maranhão",u"MA")
-        (3546702,u"Santa Gertrudes",u"SP")
-        (2109809,u"Santa Helena",u"MA")
-        (2513307,u"Santa Helena",u"PB")
-        (4123501,u"Santa Helena",u"PR")
-        (4215554,u"Santa Helena",u"SC")
-        (5219308,u"Santa Helena de Goiás",u"GO")
-        (3157658,u"Santa Helena de Minas",u"MG")
-        (2109908,u"Santa Inês",u"MA")
-        (2513356,u"Santa Inês",u"PB")
-        (2927903,u"Santa Inês",u"BA")
-        (4123600,u"Santa Inês",u"PR")
-        (3546801,u"Santa Isabel",u"SP")
-        (5219357,u"Santa Isabel",u"GO")
-        (4123709,u"Santa Isabel do Ivaí",u"PR")
-        (1506500,u"Santa Isabel do Pará",u"PA")
-        (1303601,u"Santa Isabel do Rio Negro",u"AM")
-        (4123808,u"Santa Izabel do Oeste",u"PR")
-        (3157708,u"Santa Juliana",u"MG")
-        (3204500,u"Santa Leopoldina",u"ES")
-        (3546900,u"Santa Lúcia",u"SP")
-        (4123824,u"Santa Lúcia",u"PR")
-        (2209302,u"Santa Luz",u"PI")
-        (2110005,u"Santa Luzia",u"MA")
-        (2513406,u"Santa Luzia",u"PB")
-        (2928059,u"Santa Luzia",u"BA")
-        (3157807,u"Santa Luzia",u"MG")
-        (1100296,u"Santa Luzia D'Oeste",u"RO")
-        (2806305,u"Santa Luzia do Itanhy",u"SE")
-        (2707909,u"Santa Luzia do Norte",u"AL")
-        (1506559,u"Santa Luzia do Pará",u"PA")
-        (2110039,u"Santa Luzia do Paruá",u"MA")
-        (3157906,u"Santa Margarida",u"MG")
-        (4316972,u"Santa Margarida do Sul",u"RS")
-        (2409332,u"Santa Maria",u"RN")
-        (4316907,u"Santa Maria",u"RS")
-        (2612604,u"Santa Maria da Boa Vista",u"PE")
-        (3547007,u"Santa Maria da Serra",u"SP")
-        (2928109,u"Santa Maria da Vitória",u"BA")
-        (1506583,u"Santa Maria das Barreiras",u"PA")
-        (3158003,u"Santa Maria de Itabira",u"MG")
-        (3204559,u"Santa Maria de Jetibá",u"ES")
-        (2612703,u"Santa Maria do Cambucá",u"PE")
-        (4316956,u"Santa Maria do Herval",u"RS")
-        (4123857,u"Santa Maria do Oeste",u"PR")
-        (1506609,u"Santa Maria do Pará",u"PA")
-        (3158102,u"Santa Maria do Salto",u"MG")
-        (3158201,u"Santa Maria do Suaçuí",u"MG")
-        (1718881,u"Santa Maria do Tocantins",u"TO")
-        (3304607,u"Santa Maria Madalena",u"RJ")
-        (4123907,u"Santa Mariana",u"PR")
-        (3547106,u"Santa Mercedes",u"SP")
-        (4123956,u"Santa Mônica",u"PR")
-        (2312205,u"Santa Quitéria",u"CE")
-        (2110104,u"Santa Quitéria do Maranhão",u"MA")
-        (2110203,u"Santa Rita",u"MA")
-        (2513703,u"Santa Rita",u"PB")
-        (3547403,u"Santa Rita d'Oeste",u"SP")
-        (3159209,u"Santa Rita de Caldas",u"MG")
-        (2928406,u"Santa Rita de Cássia",u"BA")
-        (3159407,u"Santa Rita de Ibitipoca",u"MG")
-        (3159308,u"Santa Rita de Jacutinga",u"MG")
-        (3159357,u"Santa Rita de Minas",u"MG")
-        (5219407,u"Santa Rita do Araguaia",u"GO")
-        (3159506,u"Santa Rita do Itueto",u"MG")
-        (5219456,u"Santa Rita do Novo Destino",u"GO")
-        (5007554,u"Santa Rita do Pardo",u"MS")
-        (3547502,u"Santa Rita do Passa Quatro",u"SP")
-        (3159605,u"Santa Rita do Sapucaí",u"MG")
-        (1718899,u"Santa Rita do Tocantins",u"TO")
-        (5107768,u"Santa Rita do Trivelato",u"MT")
-        (4317202,u"Santa Rosa",u"RS")
-        (3159704,u"Santa Rosa da Serra",u"MG")
-        (5219506,u"Santa Rosa de Goiás",u"GO")
-        (2806503,u"Santa Rosa de Lima",u"SE")
-        (4215604,u"Santa Rosa de Lima",u"SC")
-        (3547601,u"Santa Rosa de Viterbo",u"SP")
-        (2209377,u"Santa Rosa do Piauí",u"PI")
-        (1200435,u"Santa Rosa do Purus",u"AC")
-        (4215653,u"Santa Rosa do Sul",u"SC")
-        (1718907,u"Santa Rosa do Tocantins",u"TO")
-        (3547650,u"Santa Salete",u"SP")
-        (3204609,u"Santa Teresa",u"ES")
-        (2513802,u"Santa Teresinha",u"PB")
-        (2928505,u"Santa Teresinha",u"BA")
-        (4317251,u"Santa Tereza",u"RS")
-        (5219605,u"Santa Tereza de Goiás",u"GO")
-        (4124020,u"Santa Tereza do Oeste",u"PR")
-        (1719004,u"Santa Tereza do Tocantins",u"TO")
-        (2612802,u"Santa Terezinha",u"PE")
-        (4215679,u"Santa Terezinha",u"SC")
-        (5107776,u"Santa Terezinha",u"MT")
-        (5219704,u"Santa Terezinha de Goiás",u"GO")
-        (4124053,u"Santa Terezinha de Itaipu",u"PR")
-        (4215687,u"Santa Terezinha do Progresso",u"SC")
-        (1720002,u"Santa Terezinha do Tocantins",u"TO")
-        (3159803,u"Santa Vitória",u"MG")
-        (4317301,u"Santa Vitória do Palmar",u"RS")
-        (2928000,u"Santaluz",u"BA")
-        (1600600,u"Santana",u"AP")
-        (2928208,u"Santana",u"BA")
-        (4317004,u"Santana da Boa Vista",u"RS")
-        (3547205,u"Santana da Ponte Pensa",u"SP")
-        (3158300,u"Santana da Vargem",u"MG")
-        (3158409,u"Santana de Cataguases",u"MG")
-        (2513505,u"Santana de Mangueira",u"PB")
-        (3547304,u"Santana de Parnaíba",u"SP")
-        (3158508,u"Santana de Pirapama",u"MG")
-        (2312007,u"Santana do Acaraú",u"CE")
-        (1506708,u"Santana do Araguaia",u"PA")
-        (2312106,u"Santana do Cariri",u"CE")
-        (3158607,u"Santana do Deserto",u"MG")
-        (3158706,u"Santana do Garambéu",u"MG")
-        (2708006,u"Santana do Ipanema",u"AL")
-        (4124004,u"Santana do Itararé",u"PR")
-        (3158805,u"Santana do Jacaré",u"MG")
-        (3158904,u"Santana do Manhuaçu",u"MG")
-        (2110237,u"Santana do Maranhão",u"MA")
-        (2411403,u"Santana do Matos",u"RN")
-        (2708105,u"Santana do Mundaú",u"AL")
-        (3158953,u"Santana do Paraíso",u"MG")
-        (2209351,u"Santana do Piauí",u"PI")
-        (3159001,u"Santana do Riacho",u"MG")
-        (2806404,u"Santana do São Francisco",u"SE")
-        (2411429,u"Santana do Seridó",u"RN")
-        (2513604,u"Santana dos Garrotes",u"PB")
-        (3159100,u"Santana dos Montes",u"MG")
-        (2928307,u"Santanópolis",u"BA")
-        (1506807,u"Santarém",u"PA")
-        (2513653,u"Santarém",u"PB")
-        (1506906,u"Santarém Novo",u"PA")
-        (4317400,u"Santiago",u"RS")
-        (4215695,u"Santiago do Sul",u"SC")
-        (5107263,u"Santo Afonso",u"MT")
-        (2928604,u"Santo Amaro",u"BA")
-        (4215703,u"Santo Amaro da Imperatriz",u"SC")
-        (2806602,u"Santo Amaro das Brotas",u"SE")
-        (2110278,u"Santo Amaro do Maranhão",u"MA")
-        (3547700,u"Santo Anastácio",u"SP")
-        (2513851,u"Santo André",u"PB")
-        (3547809,u"Santo André",u"SP")
-        (4317509,u"Santo Ângelo",u"RS")
-        (2411502,u"Santo Antônio",u"RN")
-        (3547908,u"Santo Antônio da Alegria",u"SP")
-        (5219712,u"Santo Antônio da Barra",u"GO")
-        (4317608,u"Santo Antônio da Patrulha",u"RS")
-        (4124103,u"Santo Antônio da Platina",u"PR")
-        (4317707,u"Santo Antônio das Missões",u"RS")
-        (5219738,u"Santo Antônio de Goiás",u"GO")
-        (2928703,u"Santo Antônio de Jesus",u"BA")
-        (2209401,u"Santo Antônio de Lisboa",u"PI")
-        (3304706,u"Santo Antônio de Pádua",u"RJ")
-        (3548005,u"Santo Antônio de Posse",u"SP")
-        (3159902,u"Santo Antônio do Amparo",u"MG")
-        (3548054,u"Santo Antônio do Aracanguá",u"SP")
-        (3160009,u"Santo Antônio do Aventureiro",u"MG")
-        (4124202,u"Santo Antônio do Caiuá",u"PR")
-        (5219753,u"Santo Antônio do Descoberto",u"GO")
-        (3160108,u"Santo Antônio do Grama",u"MG")
-        (1303700,u"Santo Antônio do Içá",u"AM")
-        (3160207,u"Santo Antônio do Itambé",u"MG")
-        (3160306,u"Santo Antônio do Jacinto",u"MG")
-        (3548104,u"Santo Antônio do Jardim",u"SP")
-        (5107792,u"Santo Antônio do Leste",u"MT")
-        (5107800,u"Santo Antônio do Leverger",u"MT")
-        (3160405,u"Santo Antônio do Monte",u"MG")
-        (4317558,u"Santo Antônio do Palma",u"RS")
-        (4124301,u"Santo Antônio do Paraíso",u"PR")
-        (3548203,u"Santo Antônio do Pinhal",u"SP")
-        (4317756,u"Santo Antônio do Planalto",u"RS")
-        (3160454,u"Santo Antônio do Retiro",u"MG")
-        (3160504,u"Santo Antônio do Rio Abaixo",u"MG")
-        (4124400,u"Santo Antônio do Sudoeste",u"PR")
-        (1507003,u"Santo Antônio do Tauá",u"PA")
-        (2110302,u"Santo Antônio dos Lopes",u"MA")
-        (2209450,u"Santo Antônio dos Milagres",u"PI")
-        (4317806,u"Santo Augusto",u"RS")
-        (4317905,u"Santo Cristo",u"RS")
-        (2928802,u"Santo Estêvão",u"BA")
-        (3548302,u"Santo Expedito",u"SP")
-        (4317954,u"Santo Expedito do Sul",u"RS")
-        (3160603,u"Santo Hipólito",u"MG")
-        (4124509,u"Santo Inácio",u"PR")
-        (2209500,u"Santo Inácio do Piauí",u"PI")
-        (3548401,u"Santópolis do Aguapeí",u"SP")
-        (3548500,u"Santos",u"SP")
-        (3160702,u"Santos Dumont",u"MG")
-        (2312304,u"São Benedito",u"CE")
-        (2110401,u"São Benedito do Rio Preto",u"MA")
-        (2612901,u"São Benedito do Sul",u"PE")
-        (2513927,u"São Bentinho",u"PB")
-        (2110500,u"São Bento",u"MA")
-        (2513901,u"São Bento",u"PB")
-        (3160801,u"São Bento Abade",u"MG")
-        (2411601,u"São Bento do Norte",u"RN")
-        (3548609,u"São Bento do Sapucaí",u"SP")
-        (4215802,u"São Bento do Sul",u"SC")
-        (1720101,u"São Bento do Tocantins",u"TO")
-        (2411700,u"São Bento do Trairí",u"RN")
-        (2613008,u"São Bento do Una",u"PE")
-        (4215752,u"São Bernardino",u"SC")
-        (2110609,u"São Bernardo",u"MA")
-        (3548708,u"São Bernardo do Campo",u"SP")
-        (4215901,u"São Bonifácio",u"SC")
-        (4318002,u"São Borja",u"RS")
-        (2708204,u"São Brás",u"AL")
-        (3160900,u"São Brás do Suaçuí",u"MG")
-        (2209559,u"São Braz do Piauí",u"PI")
-        (1507102,u"São Caetano de Odivelas",u"PA")
-        (3548807,u"São Caetano do Sul",u"SP")
-        (2613107,u"São Caitano",u"PE")
-        (3548906,u"São Carlos",u"SP")
-        (4216008,u"São Carlos",u"SC")
-        (4124608,u"São Carlos do Ivaí",u"PR")
-        (2806701,u"São Cristóvão",u"SE")
-        (4216057,u"São Cristovão do Sul",u"SC")
-        (2928901,u"São Desidério",u"BA")
-        (2513968,u"São Domingos",u"PB")
-        (2806800,u"São Domingos",u"SE")
-        (2928950,u"São Domingos",u"BA")
-        (4216107,u"São Domingos",u"SC")
-        (5219803,u"São Domingos",u"GO")
-        (3160959,u"São Domingos das Dores",u"MG")
-        (1507151,u"São Domingos do Araguaia",u"PA")
-        (2110658,u"São Domingos do Azeitão",u"MA")
-        (1507201,u"São Domingos do Capim",u"PA")
-        (2513943,u"São Domingos do Cariri",u"PB")
-        (2110708,u"São Domingos do Maranhão",u"MA")
-        (3204658,u"São Domingos do Norte",u"ES")
-        (3161007,u"São Domingos do Prata",u"MG")
-        (4318051,u"São Domingos do Sul",u"RS")
-        (2929107,u"São Felipe",u"BA")
-        (1101484,u"São Felipe D'Oeste",u"RO")
-        (2929008,u"São Félix",u"BA")
-        (2110807,u"São Félix de Balsas",u"MA")
-        (3161056,u"São Félix de Minas",u"MG")
-        (5107859,u"São Félix do Araguaia",u"MT")
-        (2929057,u"São Félix do Coribe",u"BA")
-        (2209609,u"São Félix do Piauí",u"PI")
-        (1720150,u"São Félix do Tocantins",u"TO")
-        (1507300,u"São Félix do Xingu",u"PA")
-        (2411809,u"São Fernando",u"RN")
-        (3304805,u"São Fidélis",u"RJ")
-        (2513984,u"São Francisco",u"PB")
-        (2806909,u"São Francisco",u"SE")
-        (3161106,u"São Francisco",u"MG")
-        (3549003,u"São Francisco",u"SP")
-        (4318101,u"São Francisco de Assis",u"RS")
-        (2209658,u"São Francisco de Assis do Piauí",u"PI")
-        (5219902,u"São Francisco de Goiás",u"GO")
-        (3304755,u"São Francisco de Itabapoana",u"RJ")
-        (3161205,u"São Francisco de Paula",u"MG")
-        (4318200,u"São Francisco de Paula",u"RS")
-        (3161304,u"São Francisco de Sales",u"MG")
-        (2110856,u"São Francisco do Brejão",u"MA")
-        (2929206,u"São Francisco do Conde",u"BA")
-        (3161403,u"São Francisco do Glória",u"MG")
-        (1101492,u"São Francisco do Guaporé",u"RO")
-        (2110906,u"São Francisco do Maranhão",u"MA")
-        (2411908,u"São Francisco do Oeste",u"RN")
-        (1507409,u"São Francisco do Pará",u"PA")
-        (2209708,u"São Francisco do Piauí",u"PI")
-        (4216206,u"São Francisco do Sul",u"SC")
-        (2929255,u"São Gabriel",u"BA")
-        (4318309,u"São Gabriel",u"RS")
-        (1303809,u"São Gabriel da Cachoeira",u"AM")
-        (3204708,u"São Gabriel da Palha",u"ES")
-        (5007695,u"São Gabriel do Oeste",u"MS")
-        (3161502,u"São Geraldo",u"MG")
-        (3161601,u"São Geraldo da Piedade",u"MG")
-        (1507458,u"São Geraldo do Araguaia",u"PA")
-        (3161650,u"São Geraldo do Baixio",u"MG")
-        (3304904,u"São Gonçalo",u"RJ")
-        (3161700,u"São Gonçalo do Abaeté",u"MG")
-        (2312403,u"São Gonçalo do Amarante",u"CE")
-        (2412005,u"São Gonçalo do Amarante",u"RN")
-        (2209757,u"São Gonçalo do Gurguéia",u"PI")
-        (3161809,u"São Gonçalo do Pará",u"MG")
-        (2209807,u"São Gonçalo do Piauí",u"PI")
-        (3161908,u"São Gonçalo do Rio Abaixo",u"MG")
-        (3125507,u"São Gonçalo do Rio Preto",u"MG")
-        (3162005,u"São Gonçalo do Sapucaí",u"MG")
-        (2929305,u"São Gonçalo dos Campos",u"BA")
-        (3162104,u"São Gotardo",u"MG")
-        (4318408,u"São Jerônimo",u"RS")
-        (4124707,u"São Jerônimo da Serra",u"PR")
-        (2613206,u"São João",u"PE")
-        (4124806,u"São João",u"PR")
-        (2111003,u"São João Batista",u"MA")
-        (4216305,u"São João Batista",u"SC")
-        (3162203,u"São João Batista do Glória",u"MG")
-        (5220009,u"São João d'Aliança",u"GO")
-        (1400506,u"São João da Baliza",u"RR")
-        (3305000,u"São João da Barra",u"RJ")
-        (3549102,u"São João da Boa Vista",u"SP")
-        (2209856,u"São João da Canabrava",u"PI")
-        (2209872,u"São João da Fronteira",u"PI")
-        (3162252,u"São João da Lagoa",u"MG")
-        (3162302,u"São João da Mata",u"MG")
-        (5220058,u"São João da Paraúna",u"GO")
-        (1507466,u"São João da Ponta",u"PA")
-        (3162401,u"São João da Ponte",u"MG")
-        (2209906,u"São João da Serra",u"PI")
-        (4318424,u"São João da Urtiga",u"RS")
-        (2209955,u"São João da Varjota",u"PI")
-        (3549201,u"São João das Duas Pontes",u"SP")
-        (3162450,u"São João das Missões",u"MG")
-        (3549250,u"São João de Iracema",u"SP")
-        (3305109,u"São João de Meriti",u"RJ")
-        (1507474,u"São João de Pirabas",u"PA")
-        (3162500,u"São João del Rei",u"MG")
-        (1507508,u"São João do Araguaia",u"PA")
-        (2209971,u"São João do Arraial",u"PI")
-        (4124905,u"São João do Caiuá",u"PR")
-        (2514008,u"São João do Cariri",u"PB")
-        (2111029,u"São João do Carú",u"MA")
-        (4216354,u"São João do Itaperiú",u"SC")
-        (4125001,u"São João do Ivaí",u"PR")
-        (2312502,u"São João do Jaguaribe",u"CE")
-        (3162559,u"São João do Manhuaçu",u"MG")
-        (3162575,u"São João do Manteninha",u"MG")
-        (4216255,u"São João do Oeste",u"SC")
-        (3162609,u"São João do Oriente",u"MG")
-        (3162658,u"São João do Pacuí",u"MG")
-        (2111052,u"São João do Paraíso",u"MA")
-        (3162708,u"São João do Paraíso",u"MG")
-        (3549300,u"São João do Pau d'Alho",u"SP")
-        (2210003,u"São João do Piauí",u"PI")
-        (4318432,u"São João do Polêsine",u"RS")
-        (2500700,u"São João do Rio do Peixe",u"PB")
-        (2412104,u"São João do Sabugi",u"RN")
-        (2111078,u"São João do Soter",u"MA")
-        (4216404,u"São João do Sul",u"SC")
-        (2514107,u"São João do Tigre",u"PB")
-        (4125100,u"São João do Triunfo",u"PR")
-        (2111102,u"São João dos Patos",u"MA")
-        (3162807,u"São João Evangelista",u"MG")
-        (3162906,u"São João Nepomuceno",u"MG")
-        (4216503,u"São Joaquim",u"SC")
-        (3549409,u"São Joaquim da Barra",u"SP")
-        (3162922,u"São Joaquim de Bicas",u"MG")
-        (2613305,u"São Joaquim do Monte",u"PE")
-        (4318440,u"São Jorge",u"RS")
-        (4125209,u"São Jorge d'Oeste",u"PR")
-        (4125308,u"São Jorge do Ivaí",u"PR")
-        (4125357,u"São Jorge do Patrocínio",u"PR")
-        (4216602,u"São José",u"SC")
-        (3162948,u"São José da Barra",u"MG")
-        (3549508,u"São José da Bela Vista",u"SP")
-        (4125407,u"São José da Boa Vista",u"PR")
-        (2613404,u"São José da Coroa Grande",u"PE")
-        (2514206,u"São José da Lagoa Tapada",u"PB")
-        (2708303,u"São José da Laje",u"AL")
-        (3162955,u"São José da Lapa",u"MG")
-        (3163003,u"São José da Safira",u"MG")
-        (2708402,u"São José da Tapera",u"AL")
-        (3163102,u"São José da Varginha",u"MG")
-        (2929354,u"São José da Vitória",u"BA")
-        (4318457,u"São José das Missões",u"RS")
-        (4125456,u"São José das Palmeiras",u"PR")
-        (2514305,u"São José de Caiana",u"PB")
-        (2514404,u"São José de Espinharas",u"PB")
-        (2412203,u"São José de Mipibu",u"RN")
-        (2514503,u"São José de Piranhas",u"PB")
-        (2514552,u"São José de Princesa",u"PB")
-        (2111201,u"São José de Ribamar",u"MA")
-        (3305133,u"São José de Ubá",u"RJ")
-        (3163201,u"São José do Alegre",u"MG")
-        (3549607,u"São José do Barreiro",u"SP")
-        (2613503,u"São José do Belmonte",u"PE")
-        (2514602,u"São José do Bonfim",u"PB")
-        (2514651,u"São José do Brejo do Cruz",u"PB")
-        (3204807,u"São José do Calçado",u"ES")
-        (2412302,u"São José do Campestre",u"RN")
-        (4216701,u"São José do Cedro",u"SC")
-        (4216800,u"São José do Cerrito",u"SC")
-        (2210052,u"São José do Divino",u"PI")
-        (3163300,u"São José do Divino",u"MG")
-        (2613602,u"São José do Egito",u"PE")
-        (3163409,u"São José do Goiabal",u"MG")
-        (4318465,u"São José do Herval",u"RS")
-        (4318481,u"São José do Hortêncio",u"RS")
-        (4318499,u"São José do Inhacorá",u"RS")
-        (2929370,u"São José do Jacuípe",u"BA")
-        (3163508,u"São José do Jacuri",u"MG")
-        (3163607,u"São José do Mantimento",u"MG")
-        (4318507,u"São José do Norte",u"RS")
-        (4318606,u"São José do Ouro",u"RS")
-        (2210102,u"São José do Peixe",u"PI")
-        (2210201,u"São José do Piauí",u"PI")
-        (5107297,u"São José do Povo",u"MT")
-        (5107305,u"São José do Rio Claro",u"MT")
-        (3549706,u"São José do Rio Pardo",u"SP")
-        (3549805,u"São José do Rio Preto",u"SP")
-        (2514701,u"São José do Sabugi",u"PB")
-        (2412401,u"São José do Seridó",u"RN")
-        (4318614,u"São José do Sul",u"RS")
-        (3305158,u"São José do Vale do Rio Preto",u"RJ")
-        (5107354,u"São José do Xingu",u"MT")
-        (4318622,u"São José dos Ausentes",u"RS")
-        (2111250,u"São José dos Basílios",u"MA")
-        (3549904,u"São José dos Campos",u"SP")
-        (2514800,u"São José dos Cordeiros",u"PB")
-        (4125506,u"São José dos Pinhais",u"PR")
-        (5107107,u"São José dos Quatro Marcos",u"MT")
-        (2514453,u"São José dos Ramos",u"PB")
-        (2210300,u"São Julião",u"PI")
-        (4318705,u"São Leopoldo",u"RS")
-        (3163706,u"São Lourenço",u"MG")
-        (2613701,u"São Lourenço da Mata",u"PE")
-        (3549953,u"São Lourenço da Serra",u"SP")
-        (4216909,u"São Lourenço do Oeste",u"SC")
-        (2210359,u"São Lourenço do Piauí",u"PI")
-        (4318804,u"São Lourenço do Sul",u"RS")
-        (4217006,u"São Ludgero",u"SC")
-        (2111300,u"São Luís",u"MA")
-        (5220108,u"São Luís de Montes Belos",u"GO")
-        (2312601,u"São Luís do Curu",u"CE")
-        (3550001,u"São Luís do Paraitinga",u"SP")
-        (2210375,u"São Luis do Piauí",u"PI")
-        (2708501,u"São Luís do Quitunde",u"AL")
-        (2111409,u"São Luís Gonzaga do Maranhão",u"MA")
-        (1400605,u"São Luiz",u"RR")
-        (5220157,u"São Luíz do Norte",u"GO")
-        (4318903,u"São Luiz Gonzaga",u"RS")
-        (2514909,u"São Mamede",u"PB")
-        (4125555,u"São Manoel do Paraná",u"PR")
-        (3550100,u"São Manuel",u"SP")
-        (4319000,u"São Marcos",u"RS")
-        (4217105,u"São Martinho",u"SC")
-        (4319109,u"São Martinho",u"RS")
-        (4319125,u"São Martinho da Serra",u"RS")
-        (3204906,u"São Mateus",u"ES")
-        (2111508,u"São Mateus do Maranhão",u"MA")
-        (4125605,u"São Mateus do Sul",u"PR")
-        (2412500,u"São Miguel",u"RN")
-        (3550209,u"São Miguel Arcanjo",u"SP")
-        (2210383,u"São Miguel da Baixa Grande",u"PI")
-        (4217154,u"São Miguel da Boa Vista",u"SC")
-        (2929404,u"São Miguel das Matas",u"BA")
-        (4319158,u"São Miguel das Missões",u"RS")
-        (2515005,u"São Miguel de Taipu",u"PB")
-        (2807006,u"São Miguel do Aleixo",u"SE")
-        (3163805,u"São Miguel do Anta",u"MG")
-        (5220207,u"São Miguel do Araguaia",u"GO")
-        (2210391,u"São Miguel do Fidalgo",u"PI")
-        (2412559,u"São Miguel do Gostoso",u"RN")
-        (1507607,u"São Miguel do Guamá",u"PA")
-        (1100320,u"São Miguel do Guaporé",u"RO")
-        (4125704,u"São Miguel do Iguaçu",u"PR")
-        (4217204,u"São Miguel do Oeste",u"SC")
-        (5220264,u"São Miguel do Passa Quatro",u"GO")
-        (2210409,u"São Miguel do Tapuio",u"PI")
-        (1720200,u"São Miguel do Tocantins",u"TO")
-        (2708600,u"São Miguel dos Campos",u"AL")
-        (2708709,u"São Miguel dos Milagres",u"AL")
-        (4319208,u"São Nicolau",u"RS")
-        (5220280,u"São Patrício",u"GO")
-        (3550308,u"São Paulo",u"SP")
-        (4319307,u"São Paulo das Missões",u"RS")
-        (1303908,u"São Paulo de Olivença",u"AM")
-        (2412609,u"São Paulo do Potengi",u"RN")
-        (2412708,u"São Pedro",u"RN")
-        (3550407,u"São Pedro",u"SP")
-        (2111532,u"São Pedro da Água Branca",u"MA")
-        (3305208,u"São Pedro da Aldeia",u"RJ")
-        (5107404,u"São Pedro da Cipa",u"MT")
-        (4319356,u"São Pedro da Serra",u"RS")
-        (3163904,u"São Pedro da União",u"MG")
-        (4319364,u"São Pedro das Missões",u"RS")
-        (4217253,u"São Pedro de Alcântara",u"SC")
-        (4319372,u"São Pedro do Butiá",u"RS")
-        (4125753,u"São Pedro do Iguaçu",u"PR")
-        (4125803,u"São Pedro do Ivaí",u"PR")
-        (4125902,u"São Pedro do Paraná",u"PR")
-        (2210508,u"São Pedro do Piauí",u"PI")
-        (3164100,u"São Pedro do Suaçuí",u"MG")
-        (4319406,u"São Pedro do Sul",u"RS")
-        (3550506,u"São Pedro do Turvo",u"SP")
-        (2111573,u"São Pedro dos Crentes",u"MA")
-        (3164001,u"São Pedro dos Ferros",u"MG")
-        (2412807,u"São Rafael",u"RN")
-        (2111607,u"São Raimundo das Mangabeiras",u"MA")
-        (2111631,u"São Raimundo do Doca Bezerra",u"MA")
-        (2210607,u"São Raimundo Nonato",u"PI")
-        (2111672,u"São Roberto",u"MA")
-        (3164209,u"São Romão",u"MG")
-        (3550605,u"São Roque",u"SP")
-        (3164308,u"São Roque de Minas",u"MG")
-        (3204955,u"São Roque do Canaã",u"ES")
-        (1720259,u"São Salvador do Tocantins",u"TO")
-        (2708808,u"São Sebastião",u"AL")
-        (3550704,u"São Sebastião",u"SP")
-        (4126009,u"São Sebastião da Amoreira",u"PR")
-        (3164407,u"São Sebastião da Bela Vista",u"MG")
-        (1507706,u"São Sebastião da Boa Vista",u"PA")
-        (3550803,u"São Sebastião da Grama",u"SP")
-        (3164431,u"São Sebastião da Vargem Alegre",u"MG")
-        (2515104,u"São Sebastião de Lagoa de Roça",u"PB")
-        (3305307,u"São Sebastião do Alto",u"RJ")
-        (3164472,u"São Sebastião do Anta",u"MG")
-        (4319505,u"São Sebastião do Caí",u"RS")
-        (3164506,u"São Sebastião do Maranhão",u"MG")
-        (3164605,u"São Sebastião do Oeste",u"MG")
-        (3164704,u"São Sebastião do Paraíso",u"MG")
-        (2929503,u"São Sebastião do Passé",u"BA")
-        (3164803,u"São Sebastião do Rio Preto",u"MG")
-        (3164902,u"São Sebastião do Rio Verde",u"MG")
-        (1720309,u"São Sebastião do Tocantins",u"TO")
-        (1303957,u"São Sebastião do Uatumã",u"AM")
-        (2515203,u"São Sebastião do Umbuzeiro",u"PB")
-        (4319604,u"São Sepé",u"RS")
-        (3550902,u"São Simão",u"SP")
-        (5220405,u"São Simão",u"GO")
-        (3165206,u"São Thomé das Letras",u"MG")
-        (3165008,u"São Tiago",u"MG")
-        (3165107,u"São Tomás de Aquino",u"MG")
-        (2412906,u"São Tomé",u"RN")
-        (4126108,u"São Tomé",u"PR")
-        (4319703,u"São Valentim",u"RS")
-        (4319711,u"São Valentim do Sul",u"RS")
-        (1720499,u"São Valério",u"TO")
-        (4319737,u"São Valério do Sul",u"RS")
-        (4319752,u"São Vendelino",u"RS")
-        (2413003,u"São Vicente",u"RN")
-        (3551009,u"São Vicente",u"SP")
-        (3165305,u"São Vicente de Minas",u"MG")
-        (4319802,u"São Vicente do Sul",u"RS")
-        (2111706,u"São Vicente Ferrer",u"MA")
-        (2613800,u"São Vicente Ferrer",u"PE")
-        (2515302,u"Sapé",u"PB")
-        (2929602,u"Sapeaçu",u"BA")
-        (5107875,u"Sapezal",u"MT")
-        (4319901,u"Sapiranga",u"RS")
-        (4126207,u"Sapopema",u"PR")
-        (3165404,u"Sapucaí-Mirim",u"MG")
-        (1507755,u"Sapucaia",u"PA")
-        (3305406,u"Sapucaia",u"RJ")
-        (4320008,u"Sapucaia do Sul",u"RS")
-        (3305505,u"Saquarema",u"RJ")
-        (4126256,u"Sarandi",u"PR")
-        (4320107,u"Sarandi",u"RS")
-        (3551108,u"Sarapuí",u"SP")
-        (3165503,u"Sardoá",u"MG")
-        (3551207,u"Sarutaiá",u"SP")
-        (3165537,u"Sarzedo",u"MG")
-        (2929701,u"Sátiro Dias",u"BA")
-        (2708907,u"Satuba",u"AL")
-        (2111722,u"Satubinha",u"MA")
-        (2929750,u"Saubara",u"BA")
-        (4126272,u"Saudade do Iguaçu",u"PR")
-        (4217303,u"Saudades",u"SC")
-        (2929800,u"Saúde",u"BA")
-        (4217402,u"Schroeder",u"SC")
-        (2929909,u"Seabra",u"BA")
-        (4217501,u"Seara",u"SC")
-        (3551306,u"Sebastianópolis do Sul",u"SP")
-        (2210623,u"Sebastião Barros",u"PI")
-        (2930006,u"Sebastião Laranjeiras",u"BA")
-        (2210631,u"Sebastião Leal",u"PI")
-        (4320206,u"Seberi",u"RS")
-        (4320230,u"Sede Nova",u"RS")
-        (4320263,u"Segredo",u"RS")
-        (4320305,u"Selbach",u"RS")
-        (5007802,u"Selvíria",u"MS")
-        (3165560,u"Sem-Peixe",u"MG")
-        (1200500,u"Sena Madureira",u"AC")
-        (2111748,u"Senador Alexandre Costa",u"MA")
-        (3165578,u"Senador Amaral",u"MG")
-        (5220454,u"Senador Canedo",u"GO")
-        (3165602,u"Senador Cortes",u"MG")
-        (2413102,u"Senador Elói de Souza",u"RN")
-        (3165701,u"Senador Firmino",u"MG")
-        (2413201,u"Senador Georgino Avelino",u"RN")
-        (1200450,u"Senador Guiomard",u"AC")
-        (3165800,u"Senador José Bento",u"MG")
-        (1507805,u"Senador José Porfírio",u"PA")
-        (2111763,u"Senador La Rocque",u"MA")
-        (3165909,u"Senador Modestino Gonçalves",u"MG")
-        (2312700,u"Senador Pompeu",u"CE")
-        (2708956,u"Senador Rui Palmeira",u"AL")
-        (2312809,u"Senador Sá",u"CE")
-        (4320321,u"Senador Salgado Filho",u"RS")
-        (4126306,u"Sengés",u"PR")
-        (2930105,u"Senhor do Bonfim",u"BA")
-        (3166006,u"Senhora de Oliveira",u"MG")
-        (3166105,u"Senhora do Porto",u"MG")
-        (3166204,u"Senhora dos Remédios",u"MG")
-        (4320354,u"Sentinela do Sul",u"RS")
-        (2930204,u"Sento Sé",u"BA")
-        (4320404,u"Serafina Corrêa",u"RS")
-        (3166303,u"Sericita",u"MG")
-        (2515401,u"Seridó",u"PB")
-        (1101500,u"Seringueiras",u"RO")
-        (4320453,u"Sério",u"RS")
-        (3166402,u"Seritinga",u"MG")
-        (3305554,u"Seropédica",u"RJ")
-        (3205002,u"Serra",u"ES")
-        (4217550,u"Serra Alta",u"SC")
-        (3551405,u"Serra Azul",u"SP")
-        (3166501,u"Serra Azul de Minas",u"MG")
-        (2515500,u"Serra Branca",u"PB")
-        (2515609,u"Serra da Raiz",u"PB")
-        (3166600,u"Serra da Saudade",u"MG")
-        (2413300,u"Serra de São Bento",u"RN")
-        (2413359,u"Serra do Mel",u"RN")
-        (1600055,u"Serra do Navio",u"AP")
-        (2930154,u"Serra do Ramalho",u"BA")
-        (3166808,u"Serra do Salitre",u"MG")
-        (3166709,u"Serra dos Aimorés",u"MG")
-        (2930303,u"Serra Dourada",u"BA")
-        (2515708,u"Serra Grande",u"PB")
-        (3551603,u"Serra Negra",u"SP")
-        (2413409,u"Serra Negra do Norte",u"RN")
-        (5107883,u"Serra Nova Dourada",u"MT")
-        (2930402,u"Serra Preta",u"BA")
-        (2515807,u"Serra Redonda",u"PB")
-        (2613909,u"Serra Talhada",u"PE")
-        (3551504,u"Serrana",u"SP")
-        (3166907,u"Serrania",u"MG")
-        (2111789,u"Serrano do Maranhão",u"MA")
-        (5220504,u"Serranópolis",u"GO")
-        (3166956,u"Serranópolis de Minas",u"MG")
-        (4126355,u"Serranópolis do Iguaçu",u"PR")
-        (3167004,u"Serranos",u"MG")
-        (2515906,u"Serraria",u"PB")
-        (2413508,u"Serrinha",u"RN")
-        (2930501,u"Serrinha",u"BA")
-        (2413557,u"Serrinha dos Pintos",u"RN")
-        (2614006,u"Serrita",u"PE")
-        (3167103,u"Serro",u"MG")
-        (2930600,u"Serrolândia",u"BA")
-        (4126405,u"Sertaneja",u"PR")
-        (2614105,u"Sertânia",u"PE")
-        (4126504,u"Sertanópolis",u"PR")
-        (4320503,u"Sertão",u"RS")
-        (4320552,u"Sertão Santana",u"RS")
-        (2515930,u"Sertãozinho",u"PB")
-        (3551702,u"Sertãozinho",u"SP")
-        (3551801,u"Sete Barras",u"SP")
-        (4320578,u"Sete de Setembro",u"RS")
-        (3167202,u"Sete Lagoas",u"MG")
-        (5007703,u"Sete Quedas",u"MS")
-        (3165552,u"Setubinha",u"MG")
-        (4320602,u"Severiano de Almeida",u"RS")
-        (2413607,u"Severiano Melo",u"RN")
-        (3551900,u"Severínia",u"SP")
-        (4217600,u"Siderópolis",u"SC")
-        (5007901,u"Sidrolândia",u"MS")
-        (2210656,u"Sigefredo Pacheco",u"PI")
-        (3305604,u"Silva Jardim",u"RJ")
-        (5220603,u"Silvânia",u"GO")
-        (1720655,u"Silvanópolis",u"TO")
-        (4320651,u"Silveira Martins",u"RS")
-        (3167301,u"Silveirânia",u"MG")
-        (3552007,u"Silveiras",u"SP")
-        (1304005,u"Silves",u"AM")
-        (3167400,u"Silvianópolis",u"MG")
-        (2807105,u"Simão Dias",u"SE")
-        (3167509,u"Simão Pereira",u"MG")
-        (2210706,u"Simões",u"PI")
-        (2930709,u"Simões Filho",u"BA")
-        (5220686,u"Simolândia",u"GO")
-        (3167608,u"Simonésia",u"MG")
-        (2210805,u"Simplício Mendes",u"PI")
-        (4320677,u"Sinimbu",u"RS")
-        (5107909,u"Sinop",u"MT")
-        (4126603,u"Siqueira Campos",u"PR")
-        (2614204,u"Sirinhaém",u"PE")
-        (2807204,u"Siriri",u"SE")
-        (5220702,u"Sítio d'Abadia",u"GO")
-        (2930758,u"Sítio do Mato",u"BA")
-        (2930766,u"Sítio do Quinto",u"BA")
-        (2111805,u"Sítio Novo",u"MA")
-        (2413706,u"Sítio Novo",u"RN")
-        (1720804,u"Sítio Novo do Tocantins",u"TO")
-        (2930774,u"Sobradinho",u"BA")
-        (4320701,u"Sobradinho",u"RS")
-        (2515971,u"Sobrado",u"PB")
-        (2312908,u"Sobral",u"CE")
-        (3167707,u"Sobrália",u"MG")
-        (3552106,u"Socorro",u"SP")
-        (2210904,u"Socorro do Piauí",u"PI")
-        (2516003,u"Solânea",u"PB")
-        (2516102,u"Soledade",u"PB")
-        (4320800,u"Soledade",u"RS")
-        (3167806,u"Soledade de Minas",u"MG")
-        (2614402,u"Solidão",u"PE")
-        (2313005,u"Solonópole",u"CE")
-        (4217709,u"Sombrio",u"SC")
-        (5007935,u"Sonora",u"MS")
-        (3205010,u"Sooretama",u"ES")
-        (3552205,u"Sorocaba",u"SP")
-        (5107925,u"Sorriso",u"MT")
-        (2516151,u"Sossêgo",u"PB")
-        (1507904,u"Soure",u"PA")
-        (2516201,u"Sousa",u"PB")
-        (2930808,u"Souto Soares",u"BA")
-        (1720853,u"Sucupira",u"TO")
-        (2111904,u"Sucupira do Norte",u"MA")
-        (2111953,u"Sucupira do Riachão",u"MA")
-        (3552304,u"Sud Mennucci",u"SP")
-        (4217758,u"Sul Brasil",u"SC")
-        (4126652,u"Sulina",u"PR")
-        (3552403,u"Sumaré",u"SP")
-        (2516300,u"Sumé",u"PB")
-        (3305703,u"Sumidouro",u"RJ")
-        (2614501,u"Surubim",u"PE")
-        (2210938,u"Sussuapara",u"PI")
-        (3552551,u"Suzanápolis",u"SP")
-        (3552502,u"Suzano",u"SP")
-        (4320859,u"Tabaí",u"RS")
-        (5107941,u"Tabaporã",u"MT")
-        (3552601,u"Tabapuã",u"SP")
-        (1304062,u"Tabatinga",u"AM")
-        (3552700,u"Tabatinga",u"SP")
-        (2614600,u"Tabira",u"PE")
-        (3552809,u"Taboão da Serra",u"SP")
-        (2930907,u"Tabocas do Brejo Velho",u"BA")
-        (2413805,u"Taboleiro Grande",u"RN")
-        (3167905,u"Tabuleiro",u"MG")
-        (2313104,u"Tabuleiro do Norte",u"CE")
-        (2614709,u"Tacaimbó",u"PE")
-        (2614808,u"Tacaratu",u"PE")
-        (3552908,u"Taciba",u"SP")
-        (5007950,u"Tacuru",u"MS")
-        (3553005,u"Taguaí",u"SP")
-        (1720903,u"Taguatinga",u"TO")
-        (3553104,u"Taiaçu",u"SP")
-        (1507953,u"Tailândia",u"PA")
-        (4217808,u"Taió",u"SC")
-        (3168002,u"Taiobeiras",u"MG")
-        (1720937,u"Taipas do Tocantins",u"TO")
-        (2413904,u"Taipu",u"RN")
-        (3553203,u"Taiúva",u"SP")
-        (1720978,u"Talismã",u"TO")
-        (2614857,u"Tamandaré",u"PE")
-        (4126678,u"Tamarana",u"PR")
-        (3553302,u"Tambaú",u"SP")
-        (4126702,u"Tamboara",u"PR")
-        (2313203,u"Tamboril",u"CE")
-        (2210953,u"Tamboril do Piauí",u"PI")
-        (3553401,u"Tanabi",u"SP")
-        (2414001,u"Tangará",u"RN")
-        (4217907,u"Tangará",u"SC")
-        (5107958,u"Tangará da Serra",u"MT")
-        (3305752,u"Tanguá",u"RJ")
-        (2931004,u"Tanhaçu",u"BA")
-        (2709004,u"Tanque d'Arca",u"AL")
-        (2210979,u"Tanque do Piauí",u"PI")
-        (2931053,u"Tanque Novo",u"BA")
-        (2931103,u"Tanquinho",u"BA")
-        (3168051,u"Taparuba",u"MG")
-        (1304104,u"Tapauá",u"AM")
-        (4126801,u"Tapejara",u"PR")
-        (4320909,u"Tapejara",u"RS")
-        (4321006,u"Tapera",u"RS")
-        (2516508,u"Taperoá",u"PB")
-        (2931202,u"Taperoá",u"BA")
-        (4321105,u"Tapes",u"RS")
-        (3168101,u"Tapira",u"MG")
-        (4126900,u"Tapira",u"PR")
-        (3168200,u"Tapiraí",u"MG")
-        (3553500,u"Tapiraí",u"SP")
-        (2931301,u"Tapiramutá",u"BA")
-        (3553609,u"Tapiratiba",u"SP")
-        (5108006,u"Tapurah",u"MT")
-        (4321204,u"Taquara",u"RS")
-        (3168309,u"Taquaraçu de Minas",u"MG")
-        (3553658,u"Taquaral",u"SP")
-        (5221007,u"Taquaral de Goiás",u"GO")
-        (2709103,u"Taquarana",u"AL")
-        (4321303,u"Taquari",u"RS")
-        (3553708,u"Taquaritinga",u"SP")
-        (2615003,u"Taquaritinga do Norte",u"PE")
-        (3553807,u"Taquarituba",u"SP")
-        (3553856,u"Taquarivaí",u"SP")
-        (4321329,u"Taquaruçu do Sul",u"RS")
-        (5007976,u"Taquarussu",u"MS")
-        (3553906,u"Tarabai",u"SP")
-        (1200609,u"Tarauacá",u"AC")
-        (2313252,u"Tarrafas",u"CE")
-        (1600709,u"Tartarugalzinho",u"AP")
-        (3553955,u"Tarumã",u"SP")
-        (3168408,u"Tarumirim",u"MG")
-        (2112001,u"Tasso Fragoso",u"MA")
-        (3554003,u"Tatuí",u"SP")
-        (2313302,u"Tauá",u"CE")
-        (3554102,u"Taubaté",u"SP")
-        (2516607,u"Tavares",u"PB")
-        (4321352,u"Tavares",u"RS")
-        (1304203,u"Tefé",u"AM")
-        (2516706,u"Teixeira",u"PB")
-        (2931350,u"Teixeira de Freitas",u"BA")
-        (4127007,u"Teixeira Soares",u"PR")
-        (3168507,u"Teixeiras",u"MG")
-        (1101559,u"Teixeirópolis",u"RO")
-        (2313351,u"Tejuçuoca",u"CE")
-        (3554201,u"Tejupá",u"SP")
-        (4127106,u"Telêmaco Borba",u"PR")
-        (2807303,u"Telha",u"SE")
-        (2414100,u"Tenente Ananias",u"RN")
-        (2414159,u"Tenente Laurentino Cruz",u"RN")
-        (4321402,u"Tenente Portela",u"RS")
-        (2516755,u"Tenório",u"PB")
-        (2931400,u"Teodoro Sampaio",u"BA")
-        (3554300,u"Teodoro Sampaio",u"SP")
-        (2931509,u"Teofilândia",u"BA")
-        (3168606,u"Teófilo Otoni",u"MG")
-        (2931608,u"Teolândia",u"BA")
-        (2709152,u"Teotônio Vilela",u"AL")
-        (5008008,u"Terenos",u"MS")
-        (2211001,u"Teresina",u"PI")
-        (5221080,u"Teresina de Goiás",u"GO")
-        (3305802,u"Teresópolis",u"RJ")
-        (2615102,u"Terezinha",u"PE")
-        (5221197,u"Terezópolis de Goiás",u"GO")
-        (1507961,u"Terra Alta",u"PA")
-        (4127205,u"Terra Boa",u"PR")
-        (4321436,u"Terra de Areia",u"RS")
-        (2615201,u"Terra Nova",u"PE")
-        (2931707,u"Terra Nova",u"BA")
-        (5108055,u"Terra Nova do Norte",u"MT")
-        (4127304,u"Terra Rica",u"PR")
-        (3554409,u"Terra Roxa",u"SP")
-        (4127403,u"Terra Roxa",u"PR")
-        (1507979,u"Terra Santa",u"PA")
-        (5108105,u"Tesouro",u"MT")
-        (4321451,u"Teutônia",u"RS")
-        (1101609,u"Theobroma",u"RO")
-        (2313401,u"Tianguá",u"CE")
-        (4127502,u"Tibagi",u"PR")
-        (2411056,u"Tibau",u"RN")
-        (2414209,u"Tibau do Sul",u"RN")
-        (3554508,u"Tietê",u"SP")
-        (4217956,u"Tigrinhos",u"SC")
-        (4218004,u"Tijucas",u"SC")
-        (4127601,u"Tijucas do Sul",u"PR")
-        (2615300,u"Timbaúba",u"PE")
-        (2414308,u"Timbaúba dos Batistas",u"RN")
-        (4218103,u"Timbé do Sul",u"SC")
-        (2112100,u"Timbiras",u"MA")
-        (4218202,u"Timbó",u"SC")
-        (4218251,u"Timbó Grande",u"SC")
-        (3554607,u"Timburi",u"SP")
-        (2112209,u"Timon",u"MA")
-        (3168705,u"Timóteo",u"MG")
-        (4321469,u"Tio Hugo",u"RS")
-        (3168804,u"Tiradentes",u"MG")
-        (4321477,u"Tiradentes do Sul",u"RS")
-        (3168903,u"Tiros",u"MG")
-        (2807402,u"Tobias Barreto",u"SE")
-        (1721109,u"Tocantínia",u"TO")
-        (1721208,u"Tocantinópolis",u"TO")
-        (3169000,u"Tocantins",u"MG")
-        (3169059,u"Tocos do Moji",u"MG")
-        (3169109,u"Toledo",u"MG")
-        (4127700,u"Toledo",u"PR")
-        (2807501,u"Tomar do Geru",u"SE")
-        (4127809,u"Tomazina",u"PR")
-        (3169208,u"Tombos",u"MG")
-        (1508001,u"Tomé-Açu",u"PA")
-        (1304237,u"Tonantins",u"AM")
-        (2615409,u"Toritama",u"PE")
-        (5108204,u"Torixoréu",u"MT")
-        (4321493,u"Toropi",u"RS")
-        (3554656,u"Torre de Pedra",u"SP")
-        (4321501,u"Torres",u"RS")
-        (3554706,u"Torrinha",u"SP")
-        (2414407,u"Touros",u"RN")
-        (3554755,u"Trabiju",u"SP")
-        (1508035,u"Tracuateua",u"PA")
-        (2615508,u"Tracunhaém",u"PE")
-        (2709202,u"Traipu",u"AL")
-        (1508050,u"Trairão",u"PA")
-        (2313500,u"Trairi",u"CE")
-        (3305901,u"Trajano de Moraes",u"RJ")
-        (4321600,u"Tramandaí",u"RS")
-        (4321626,u"Travesseiro",u"RS")
-        (2931806,u"Tremedal",u"BA")
-        (3554805,u"Tremembé",u"SP")
-        (4321634,u"Três Arroios",u"RS")
-        (4218301,u"Três Barras",u"SC")
-        (4127858,u"Três Barras do Paraná",u"PR")
-        (4321667,u"Três Cachoeiras",u"RS")
-        (3169307,u"Três Corações",u"MG")
-        (4321709,u"Três Coroas",u"RS")
-        (4321808,u"Três de Maio",u"RS")
-        (4321832,u"Três Forquilhas",u"RS")
-        (3554904,u"Três Fronteiras",u"SP")
-        (5008305,u"Três Lagoas",u"MS")
-        (3169356,u"Três Marias",u"MG")
-        (4321857,u"Três Palmeiras",u"RS")
-        (4321907,u"Três Passos",u"RS")
-        (3169406,u"Três Pontas",u"MG")
-        (5221304,u"Três Ranchos",u"GO")
-        (3306008,u"Três Rios",u"RJ")
-        (4218350,u"Treviso",u"SC")
-        (4218400,u"Treze de Maio",u"SC")
-        (4218509,u"Treze Tílias",u"SC")
-        (2615607,u"Trindade",u"PE")
-        (5221403,u"Trindade",u"GO")
-        (4321956,u"Trindade do Sul",u"RS")
-        (2516805,u"Triunfo",u"PB")
-        (2615706,u"Triunfo",u"PE")
-        (4322004,u"Triunfo",u"RS")
-        (2414456,u"Triunfo Potiguar",u"RN")
-        (2112233,u"Trizidela do Vale",u"MA")
-        (5221452,u"Trombas",u"GO")
-        (4218608,u"Trombudo Central",u"SC")
-        (4218707,u"Tubarão",u"SC")
-        (2931905,u"Tucano",u"BA")
-        (1508084,u"Tucumã",u"PA")
-        (4322103,u"Tucunduva",u"RS")
-        (1508100,u"Tucuruí",u"PA")
-        (2112274,u"Tufilândia",u"MA")
-        (3554953,u"Tuiuti",u"SP")
-        (3169505,u"Tumiritinga",u"MG")
-        (4218756,u"Tunápolis",u"SC")
-        (4322152,u"Tunas",u"RS")
-        (4127882,u"Tunas do Paraná",u"PR")
-        (4127908,u"Tuneiras do Oeste",u"PR")
-        (2112308,u"Tuntum",u"MA")
-        (3555000,u"Tupã",u"SP")
-        (3169604,u"Tupaciguara",u"MG")
-        (2615805,u"Tupanatinga",u"PE")
-        (4322186,u"Tupanci do Sul",u"RS")
-        (4322202,u"Tupanciretã",u"RS")
-        (4322251,u"Tupandi",u"RS")
-        (4322301,u"Tuparendi",u"RS")
-        (2615904,u"Tuparetama",u"PE")
-        (4127957,u"Tupãssi",u"PR")
-        (3555109,u"Tupi Paulista",u"SP")
-        (1721257,u"Tupirama",u"TO")
-        (1721307,u"Tupiratins",u"TO")
-        (2112407,u"Turiaçu",u"MA")
-        (2112456,u"Turilândia",u"MA")
-        (3555208,u"Turiúba",u"SP")
-        (3169703,u"Turmalina",u"MG")
-        (3555307,u"Turmalina",u"SP")
-        (4322327,u"Turuçu",u"RS")
-        (2313559,u"Tururu",u"CE")
-        (5221502,u"Turvânia",u"GO")
-        (5221551,u"Turvelândia",u"GO")
-        (4127965,u"Turvo",u"PR")
-        (4218806,u"Turvo",u"SC")
-        (3169802,u"Turvolândia",u"MG")
-        (2112506,u"Tutóia",u"MA")
-        (1304260,u"Uarini",u"AM")
-        (2932002,u"Uauá",u"BA")
-        (3169901,u"Ubá",u"MG")
-        (3170008,u"Ubaí",u"MG")
-        (2932101,u"Ubaíra",u"BA")
-        (2932200,u"Ubaitaba",u"BA")
-        (2313609,u"Ubajara",u"CE")
-        (3170057,u"Ubaporanga",u"MG")
-        (3555356,u"Ubarana",u"SP")
-        (2932309,u"Ubatã",u"BA")
-        (3555406,u"Ubatuba",u"SP")
-        (3170107,u"Uberaba",u"MG")
-        (3170206,u"Uberlândia",u"MG")
-        (3555505,u"Ubirajara",u"SP")
-        (4128005,u"Ubiratã",u"PR")
-        (4322343,u"Ubiretama",u"RS")
-        (3555604,u"Uchoa",u"SP")
-        (2932408,u"Uibaí",u"BA")
-        (1400704,u"Uiramutã",u"RR")
-        (5221577,u"Uirapuru",u"GO")
-        (2516904,u"Uiraúna",u"PB")
-        (1508126,u"Ulianópolis",u"PA")
-        (2313708,u"Umari",u"CE")
-        (2414506,u"Umarizal",u"RN")
-        (2807600,u"Umbaúba",u"SE")
-        (2932457,u"Umburanas",u"BA")
-        (3170305,u"Umburatiba",u"MG")
-        (2517001,u"Umbuzeiro",u"PB")
-        (2313757,u"Umirim",u"CE")
-        (4128104,u"Umuarama",u"PR")
-        (2932507,u"Una",u"BA")
-        (3170404,u"Unaí",u"MG")
-        (2211100,u"União",u"PI")
-        (4322350,u"União da Serra",u"RS")
-        (4128203,u"União da Vitória",u"PR")
-        (3170438,u"União de Minas",u"MG")
-        (4218855,u"União do Oeste",u"SC")
-        (5108303,u"União do Sul",u"MT")
-        (2709301,u"União dos Palmares",u"AL")
-        (3555703,u"União Paulista",u"SP")
-        (4128302,u"Uniflor",u"PR")
-        (4322376,u"Unistalda",u"RS")
-        (2414605,u"Upanema",u"RN")
-        (4128401,u"Uraí",u"PR")
-        (2932606,u"Urandi",u"BA")
-        (3555802,u"Urânia",u"SP")
-        (2112605,u"Urbano Santos",u"MA")
-        (3555901,u"Uru",u"SP")
-        (5221601,u"Uruaçu",u"GO")
-        (5221700,u"Uruana",u"GO")
-        (3170479,u"Uruana de Minas",u"MG")
-        (1508159,u"Uruará",u"PA")
-        (4218905,u"Urubici",u"SC")
-        (2313807,u"Uruburetama",u"CE")
-        (3170503,u"Urucânia",u"MG")
-        (1304302,u"Urucará",u"AM")
-        (2932705,u"Uruçuca",u"BA")
-        (2211209,u"Uruçuí",u"PI")
-        (3170529,u"Urucuia",u"MG")
-        (1304401,u"Urucurituba",u"AM")
-        (4322400,u"Uruguaiana",u"RS")
-        (2313906,u"Uruoca",u"CE")
-        (1101708,u"Urupá",u"RO")
-        (4218954,u"Urupema",u"SC")
-        (3556008,u"Urupês",u"SP")
-        (4219002,u"Urussanga",u"SC")
-        (5221809,u"Urutaí",u"GO")
-        (2932804,u"Utinga",u"BA")
-        (4322509,u"Vacaria",u"RS")
-        (5108352,u"Vale de São Domingos",u"MT")
-        (1101757,u"Vale do Anari",u"RO")
-        (1101807,u"Vale do Paraíso",u"RO")
-        (4322533,u"Vale do Sol",u"RS")
-        (4322541,u"Vale Real",u"RS")
-        (4322525,u"Vale Verde",u"RS")
-        (2932903,u"Valença",u"BA")
-        (3306107,u"Valença",u"RJ")
-        (2211308,u"Valença do Piauí",u"PI")
-        (2933000,u"Valente",u"BA")
-        (3556107,u"Valentim Gentil",u"SP")
-        (3556206,u"Valinhos",u"SP")
-        (3556305,u"Valparaíso",u"SP")
-        (5221858,u"Valparaíso de Goiás",u"GO")
-        (4322558,u"Vanini",u"RS")
-        (4219101,u"Vargeão",u"SC")
-        (3556354,u"Vargem",u"SP")
-        (4219150,u"Vargem",u"SC")
-        (3170578,u"Vargem Alegre",u"MG")
-        (3205036,u"Vargem Alta",u"ES")
-        (3170602,u"Vargem Bonita",u"MG")
-        (4219176,u"Vargem Bonita",u"SC")
-        (2112704,u"Vargem Grande",u"MA")
-        (3170651,u"Vargem Grande do Rio Pardo",u"MG")
-        (3556404,u"Vargem Grande do Sul",u"SP")
-        (3556453,u"Vargem Grande Paulista",u"SP")
-        (3170701,u"Varginha",u"MG")
-        (5221908,u"Varjão",u"GO")
-        (3170750,u"Varjão de Minas",u"MG")
-        (2313955,u"Varjota",u"CE")
-        (3306156,u"Varre-Sai",u"RJ")
-        (2414704,u"Várzea",u"RN")
-        (2517100,u"Várzea",u"PB")
-        (2314003,u"Várzea Alegre",u"CE")
-        (2211357,u"Várzea Branca",u"PI")
-        (3170800,u"Várzea da Palma",u"MG")
-        (2933059,u"Várzea da Roça",u"BA")
-        (2933109,u"Várzea do Poço",u"BA")
-        (2211407,u"Várzea Grande",u"PI")
-        (5108402,u"Várzea Grande",u"MT")
-        (2933158,u"Várzea Nova",u"BA")
-        (3556503,u"Várzea Paulista",u"SP")
-        (2933174,u"Varzedo",u"BA")
-        (3170909,u"Varzelândia",u"MG")
-        (3306206,u"Vassouras",u"RJ")
-        (3171006,u"Vazante",u"MG")
-        (4322608,u"Venâncio Aires",u"RS")
-        (3205069,u"Venda Nova do Imigrante",u"ES")
-        (2414753,u"Venha-Ver",u"RN")
-        (4128534,u"Ventania",u"PR")
-        (2616001,u"Venturosa",u"PE")
-        (5108501,u"Vera",u"MT")
-        (2414803,u"Vera Cruz",u"RN")
-        (2933208,u"Vera Cruz",u"BA")
-        (3556602,u"Vera Cruz",u"SP")
-        (4322707,u"Vera Cruz",u"RS")
-        (4128559,u"Vera Cruz do Oeste",u"PR")
-        (2211506,u"Vera Mendes",u"PI")
-        (4322806,u"Veranópolis",u"RS")
-        (2616100,u"Verdejante",u"PE")
-        (3171030,u"Verdelândia",u"MG")
-        (4128609,u"Verê",u"PR")
-        (2933257,u"Vereda",u"BA")
-        (3171071,u"Veredinha",u"MG")
-        (3171105,u"Veríssimo",u"MG")
-        (3171154,u"Vermelho Novo",u"MG")
-        (2616183,u"Vertente do Lério",u"PE")
-        (2616209,u"Vertentes",u"PE")
-        (3171204,u"Vespasiano",u"MG")
-        (4322855,u"Vespasiano Correa",u"RS")
-        (4322905,u"Viadutos",u"RS")
-        (4323002,u"Viamão",u"RS")
-        (2112803,u"Viana",u"MA")
-        (3205101,u"Viana",u"ES")
-        (5222005,u"Vianópolis",u"GO")
-        (2616308,u"Vicência",u"PE")
-        (4323101,u"Vicente Dutra",u"RS")
-        (5008404,u"Vicentina",u"MS")
-        (5222054,u"Vicentinópolis",u"GO")
-        (2414902,u"Viçosa",u"RN")
-        (2709400,u"Viçosa",u"AL")
-        (3171303,u"Viçosa",u"MG")
-        (2314102,u"Viçosa do Ceará",u"CE")
-        (4323200,u"Victor Graeff",u"RS")
-        (4219200,u"Vidal Ramos",u"SC")
-        (4219309,u"Videira",u"SC")
-        (3171402,u"Vieiras",u"MG")
-        (2517209,u"Vieirópolis",u"PB")
-        (1508209,u"Vigia",u"PA")
-        (5105507,u"Vila Bela da Santíssima Trindade",u"MT")
-        (5222203,u"Vila Boa",u"GO")
-        (2415008,u"Vila Flor",u"RN")
-        (4323309,u"Vila Flores",u"RS")
-        (4323358,u"Vila Lângaro",u"RS")
-        (4323408,u"Vila Maria",u"RS")
-        (2211605,u"Vila Nova do Piauí",u"PI")
-        (4323457,u"Vila Nova do Sul",u"RS")
-        (2112852,u"Vila Nova dos Martírios",u"MA")
-        (3205150,u"Vila Pavão",u"ES")
-        (5222302,u"Vila Propício",u"GO")
-        (5108600,u"Vila Rica",u"MT")
-        (3205176,u"Vila Valério",u"ES")
-        (3205200,u"Vila Velha",u"ES")
-        (1100304,u"Vilhena",u"RO")
-        (3556701,u"Vinhedo",u"SP")
-        (3556800,u"Viradouro",u"SP")
-        (3171600,u"Virgem da Lapa",u"MG")
-        (3171709,u"Virgínia",u"MG")
-        (3171808,u"Virginópolis",u"MG")
-        (3171907,u"Virgolândia",u"MG")
-        (4128658,u"Virmond",u"PR")
-        (3172004,u"Visconde do Rio Branco",u"MG")
-        (1508308,u"Viseu",u"PA")
-        (4323507,u"Vista Alegre",u"RS")
-        (3556909,u"Vista Alegre do Alto",u"SP")
-        (4323606,u"Vista Alegre do Prata",u"RS")
-        (4323705,u"Vista Gaúcha",u"RS")
-        (2505501,u"Vista Serrana",u"PB")
-        (4219358,u"Vitor Meireles",u"SC")
-        (3205309,u"Vitória",u"ES")
-        (3556958,u"Vitória Brasil",u"SP")
-        (2933307,u"Vitória da Conquista",u"BA")
-        (4323754,u"Vitória das Missões",u"RS")
-        (2616407,u"Vitória de Santo Antão",u"PE")
-        (1600808,u"Vitória do Jari",u"AP")
-        (2112902,u"Vitória do Mearim",u"MA")
-        (1508357,u"Vitória do Xingu",u"PA")
-        (4128708,u"Vitorino",u"PR")
-        (2113009,u"Vitorino Freire",u"MA")
-        (3172103,u"Volta Grande",u"MG")
-        (3306305,u"Volta Redonda",u"RJ")
-        (3557006,u"Votorantim",u"SP")
-        (3557105,u"Votuporanga",u"SP")
-        (2933406,u"Wagner",u"BA")
-        (2211704,u"Wall Ferraz",u"PI")
-        (1722081,u"Wanderlândia",u"TO")
-        (2933455,u"Wanderley",u"BA")
-        (3172202,u"Wenceslau Braz",u"MG")
-        (4128500,u"Wenceslau Braz",u"PR")
-        (2933505,u"Wenceslau Guimarães",u"BA")
-        (4323770,u"Westfalia",u"RS")
-        (4219408,u"Witmarsum",u"SC")
-        (1722107,u"Xambioá",u"TO")
-        (4128807,u"Xambrê",u"PR")
-        (4323804,u"Xangri-lá",u"RS")
-        (4219507,u"Xanxerê",u"SC")
-        (1200708,u"Xapuri",u"AC")
-        (4219606,u"Xavantina",u"SC")
-        (4219705,u"Xaxim",u"SC")
-        (2616506,u"Xexéu",u"PE")
-        (1508407,u"Xinguara",u"PA")
-        (2933604,u"Xique-Xique",u"BA")
-        (2517407,u"Zabelê",u"PB")
-        (3557154,u"Zacarias",u"SP")
-        (2114007,u"Zé Doca",u"MA")
-        (4219853,u"Zortéa",u"SC")
+        (5200050,u"Abadia de Goiás",u"GO","abadia de goias",),
+        (3100104,u"Abadia dos Dourados",u"MG","abadia dos dourados",),
+        (5200100,u"Abadiânia",u"GO","abadiania",),
+        (3100203,u"Abaeté",u"MG","abaete",),
+        (1500107,u"Abaetetuba",u"PA","abaetetuba",),
+        (2300101,u"Abaiara",u"CE","abaiara",),
+        (2900108,u"Abaíra",u"BA","abaira",),
+        (2900207,u"Abaré",u"BA","abare",),
+        (4100103,u"Abatiá",u"PR","abatia",),
+        (4200051,u"Abdon Batista",u"SC","abdon batista",),
+        (1500131,u"Abel Figueiredo",u"PA","abel figueiredo",),
+        (4200101,u"Abelardo Luz",u"SC","abelardo luz",),
+        (3100302,u"Abre Campo",u"MG","abre campo",),
+        (2600054,u"Abreu e Lima",u"PE","abreu e lima",),
+        (1700251,u"Abreulândia",u"TO","abreulandia",),
+        (3100401,u"Acaiaca",u"MG","acaiaca",),
+        (2100055,u"Açailândia",u"MA","acailandia",),
+        (2900306,u"Acajutiba",u"BA","acajutiba",),
+        (1500206,u"Acará",u"PA","acara",),
+        (2300150,u"Acarape",u"CE","acarape",),
+        (2300200,u"Acaraú",u"CE","acarau",),
+        (2400109,u"Acari",u"RN","acari",),
+        (2200053,u"Acauã",u"PI","acaua",),
+        (4300034,u"Aceguá",u"RS","acegua",),
+        (2300309,u"Acopiara",u"CE","acopiara",),
+        (5100102,u"Acorizal",u"MT","acorizal",),
+        (1200013,u"Acrelândia",u"AC","acrelandia",),
+        (5200134,u"Acreúna",u"GO","acreuna",),
+        (2400208,u"Açu",u"RN","acu",),
+        (3100500,u"Açucena",u"MG","acucena",),
+        (3500105,u"Adamantina",u"SP","adamantina",),
+        (5200159,u"Adelândia",u"GO","adelandia",),
+        (3500204,u"Adolfo",u"SP","adolfo",),
+        (4100202,u"Adrianópolis",u"PR","adrianopolis",),
+        (2900355,u"Adustina",u"BA","adustina",),
+        (2600104,u"Afogados da Ingazeira",u"PE","afogados da ingazeira",),
+        (2400307,u"Afonso Bezerra",u"RN","afonso bezerra",),
+        (3200102,u"Afonso Cláudio",u"ES","afonso claudio",),
+        (2100105,u"Afonso Cunha",u"MA","afonso cunha",),
+        (2600203,u"Afrânio",u"PE","afranio",),
+        (1500305,u"Afuá",u"PA","afua",),
+        (2600302,u"Agrestina",u"PE","agrestina",),
+        (2200103,u"Agricolândia",u"PI","agricolandia",),
+        (4200200,u"Agrolândia",u"SC","agrolandia",),
+        (4200309,u"Agronômica",u"SC","agronomica",),
+        (1500347,u"Água Azul do Norte",u"PA","agua azul do norte",),
+        (3100609,u"Água Boa",u"MG","agua boa",),
+        (5100201,u"Água Boa",u"MT","agua boa",),
+        (2200202,u"Água Branca",u"PI","agua branca",),
+        (2500106,u"Água Branca",u"PB","agua branca",),
+        (2700102,u"Água Branca",u"AL","agua branca",),
+        (5000203,u"Água Clara",u"MS","agua clara",),
+        (3100708,u"Água Comprida",u"MG","agua comprida",),
+        (4200408,u"Água Doce",u"SC","agua doce",),
+        (2100154,u"Água Doce do Maranhão",u"MA","agua doce do maranhao",),
+        (3200169,u"Água Doce do Norte",u"ES","agua doce do norte",),
+        (2900405,u"Água Fria",u"BA","agua fria",),
+        (5200175,u"Água Fria de Goiás",u"GO","agua fria de goias",),
+        (5200209,u"Água Limpa",u"GO","agua limpa",),
+        (2400406,u"Água Nova",u"RN","agua nova",),
+        (2600401,u"Água Preta",u"PE","agua preta",),
+        (4300059,u"Água Santa",u"RS","agua santa",),
+        (3500303,u"Aguaí",u"SP","aguai",),
+        (3100807,u"Aguanil",u"MG","aguanil",),
+        (2600500,u"Águas Belas",u"PE","aguas belas",),
+        (3500402,u"Águas da Prata",u"SP","aguas da prata",),
+        (4200507,u"Águas de Chapecó",u"SC","aguas de chapeco",),
+        (3500501,u"Águas de Lindóia",u"SP","aguas de lindoia",),
+        (3500550,u"Águas de Santa Bárbara",u"SP","aguas de santa barbara",),
+        (3500600,u"Águas de São Pedro",u"SP","aguas de sao pedro",),
+        (3100906,u"Águas Formosas",u"MG","aguas formosas",),
+        (4200556,u"Águas Frias",u"SC","aguas frias",),
+        (5200258,u"Águas Lindas de Goiás",u"GO","aguas lindas de goias",),
+        (4200606,u"Águas Mornas",u"SC","aguas mornas",),
+        (3101003,u"Águas Vermelhas",u"MG","aguas vermelhas",),
+        (4300109,u"Agudo",u"RS","agudo",),
+        (3500709,u"Agudos",u"SP","agudos",),
+        (4100301,u"Agudos do Sul",u"PR","agudos do sul",),
+        (3200136,u"Águia Branca",u"ES","aguia branca",),
+        (2500205,u"Aguiar",u"PB","aguiar",),
+        (1700301,u"Aguiarnópolis",u"TO","aguiarnopolis",),
+        (3101102,u"Aimorés",u"MG","aimores",),
+        (2900603,u"Aiquara",u"BA","aiquara",),
+        (2300408,u"Aiuaba",u"CE","aiuaba",),
+        (3101201,u"Aiuruoca",u"MG","aiuruoca",),
+        (4300208,u"Ajuricaba",u"RS","ajuricaba",),
+        (3101300,u"Alagoa",u"MG","alagoa",),
+        (2500304,u"Alagoa Grande",u"PB","alagoa grande",),
+        (2500403,u"Alagoa Nova",u"PB","alagoa nova",),
+        (2500502,u"Alagoinha",u"PB","alagoinha",),
+        (2600609,u"Alagoinha",u"PE","alagoinha",),
+        (2200251,u"Alagoinha do Piauí",u"PI","alagoinha do piaui",),
+        (2900702,u"Alagoinhas",u"BA","alagoinhas",),
+        (3500758,u"Alambari",u"SP","alambari",),
+        (3101409,u"Albertina",u"MG","albertina",),
+        (2100204,u"Alcântara",u"MA","alcantara",),
+        (2300507,u"Alcântaras",u"CE","alcantaras",),
+        (2500536,u"Alcantil",u"PB","alcantil",),
+        (5000252,u"Alcinópolis",u"MS","alcinopolis",),
+        (2900801,u"Alcobaça",u"BA","alcobaca",),
+        (2100303,u"Aldeias Altas",u"MA","aldeias altas",),
+        (4300307,u"Alecrim",u"RS","alecrim",),
+        (3200201,u"Alegre",u"ES","alegre",),
+        (4300406,u"Alegrete",u"RS","alegrete",),
+        (2200277,u"Alegrete do Piauí",u"PI","alegrete do piaui",),
+        (4300455,u"Alegria",u"RS","alegria",),
+        (3101508,u"Além Paraíba",u"MG","alem paraiba",),
+        (1500404,u"Alenquer",u"PA","alenquer",),
+        (2400505,u"Alexandria",u"RN","alexandria",),
+        (5200308,u"Alexânia",u"GO","alexania",),
+        (3101607,u"Alfenas",u"MG","alfenas",),
+        (3200300,u"Alfredo Chaves",u"ES","alfredo chaves",),
+        (3500808,u"Alfredo Marcondes",u"SP","alfredo marcondes",),
+        (3101631,u"Alfredo Vasconcelos",u"MG","alfredo vasconcelos",),
+        (4200705,u"Alfredo Wagner",u"SC","alfredo wagner",),
+        (2500577,u"Algodão de Jandaíra",u"PB","algodao de jandaira",),
+        (2500601,u"Alhandra",u"PB","alhandra",),
+        (2600708,u"Aliança",u"PE","alianca",),
+        (1700350,u"Aliança do Tocantins",u"TO","alianca do tocantins",),
+        (2900900,u"Almadina",u"BA","almadina",),
+        (1700400,u"Almas",u"TO","almas",),
+        (1500503,u"Almeirim",u"PA","almeirim",),
+        (3101706,u"Almenara",u"MG","almenara",),
+        (2400604,u"Almino Afonso",u"RN","almino afonso",),
+        (4100400,u"Almirante Tamandaré",u"PR","almirante tamandare",),
+        (4300471,u"Almirante Tamandaré do Sul",u"RS","almirante tamandare do sul",),
+        (5200506,u"Aloândia",u"GO","aloandia",),
+        (3101805,u"Alpercata",u"MG","alpercata",),
+        (4300505,u"Alpestre",u"RS","alpestre",),
+        (3101904,u"Alpinópolis",u"MG","alpinopolis",),
+        (5100250,u"Alta Floresta",u"MT","alta floresta",),
+        (1100015,u"Alta Floresta D'Oeste",u"RO","alta floresta d'oeste",),
+        (3500907,u"Altair",u"SP","altair",),
+        (1500602,u"Altamira",u"PA","altamira",),
+        (2100402,u"Altamira do Maranhão",u"MA","altamira do maranhao",),
+        (4100459,u"Altamira do Paraná",u"PR","altamira do parana",),
+        (2300606,u"Altaneira",u"CE","altaneira",),
+        (3102001,u"Alterosa",u"MG","alterosa",),
+        (2600807,u"Altinho",u"PE","altinho",),
+        (3501004,u"Altinópolis",u"SP","altinopolis",),
+        (1400050,u"Alto Alegre",u"RR","alto alegre",),
+        (3501103,u"Alto Alegre",u"SP","alto alegre",),
+        (4300554,u"Alto Alegre",u"RS","alto alegre",),
+        (2100436,u"Alto Alegre do Maranhão",u"MA","alto alegre do maranhao",),
+        (2100477,u"Alto Alegre do Pindaré",u"MA","alto alegre do pindare",),
+        (1100379,u"Alto Alegre dos Parecis",u"RO","alto alegre dos parecis",),
+        (5100300,u"Alto Araguaia",u"MT","alto araguaia",),
+        (4200754,u"Alto Bela Vista",u"SC","alto bela vista",),
+        (5100359,u"Alto Boa Vista",u"MT","alto boa vista",),
+        (3102050,u"Alto Caparaó",u"MG","alto caparao",),
+        (2400703,u"Alto do Rodrigues",u"RN","alto do rodrigues",),
+        (4300570,u"Alto Feliz",u"RS","alto feliz",),
+        (5100409,u"Alto Garças",u"MT","alto garcas",),
+        (5200555,u"Alto Horizonte",u"GO","alto horizonte",),
+        (3153509,u"Alto Jequitibá",u"MG","alto jequitiba",),
+        (2200301,u"Alto Longá",u"PI","alto longa",),
+        (5100508,u"Alto Paraguai",u"MT","alto paraguai",),
+        (1100403,u"Alto Paraíso",u"RO","alto paraiso",),
+        (4128625,u"Alto Paraíso",u"PR","alto paraiso",),
+        (5200605,u"Alto Paraíso de Goiás",u"GO","alto paraiso de goias",),
+        (4100608,u"Alto Paraná",u"PR","alto parana",),
+        (2100501,u"Alto Parnaíba",u"MA","alto parnaiba",),
+        (4100707,u"Alto Piquiri",u"PR","alto piquiri",),
+        (3102100,u"Alto Rio Doce",u"MG","alto rio doce",),
+        (3200359,u"Alto Rio Novo",u"ES","alto rio novo",),
+        (2300705,u"Alto Santo",u"CE","alto santo",),
+        (5100607,u"Alto Taquari",u"MT","alto taquari",),
+        (4100509,u"Altônia",u"PR","altonia",),
+        (2200400,u"Altos",u"PI","altos",),
+        (3501152,u"Alumínio",u"SP","aluminio",),
+        (1300029,u"Alvarães",u"AM","alvaraes",),
+        (3102209,u"Alvarenga",u"MG","alvarenga",),
+        (3501202,u"Álvares Florence",u"SP","alvares florence",),
+        (3501301,u"Álvares Machado",u"SP","alvares machado",),
+        (3501400,u"Álvaro de Carvalho",u"SP","alvaro de carvalho",),
+        (3501509,u"Alvinlândia",u"SP","alvinlandia",),
+        (3102308,u"Alvinópolis",u"MG","alvinopolis",),
+        (1700707,u"Alvorada",u"TO","alvorada",),
+        (4300604,u"Alvorada",u"RS","alvorada",),
+        (1100346,u"Alvorada D'Oeste",u"RO","alvorada d'oeste",),
+        (3102407,u"Alvorada de Minas",u"MG","alvorada de minas",),
+        (2200459,u"Alvorada do Gurguéia",u"PI","alvorada do gurgueia",),
+        (5200803,u"Alvorada do Norte",u"GO","alvorada do norte",),
+        (4100806,u"Alvorada do Sul",u"PR","alvorada do sul",),
+        (1400027,u"Amajari",u"RR","amajari",),
+        (5000609,u"Amambai",u"MS","amambai",),
+        (1600105,u"Amapá",u"AP","amapa",),
+        (2100550,u"Amapá do Maranhão",u"MA","amapa do maranhao",),
+        (4100905,u"Amaporã",u"PR","amapora",),
+        (2600906,u"Amaraji",u"PE","amaraji",),
+        (4300638,u"Amaral Ferrador",u"RS","amaral ferrador",),
+        (5200829,u"Amaralina",u"GO","amaralina",),
+        (2200509,u"Amarante",u"PI","amarante",),
+        (2100600,u"Amarante do Maranhão",u"MA","amarante do maranhao",),
+        (2901007,u"Amargosa",u"BA","amargosa",),
+        (1300060,u"Amaturá",u"AM","amatura",),
+        (2901106,u"Amélia Rodrigues",u"BA","amelia rodrigues",),
+        (2901155,u"América Dourada",u"BA","america dourada",),
+        (3501608,u"Americana",u"SP","americana",),
+        (5200852,u"Americano do Brasil",u"GO","americano do brasil",),
+        (3501707,u"Américo Brasiliense",u"SP","americo brasiliense",),
+        (3501806,u"Américo de Campos",u"SP","americo de campos",),
+        (4300646,u"Ametista do Sul",u"RS","ametista do sul",),
+        (2300754,u"Amontada",u"CE","amontada",),
+        (5200902,u"Amorinópolis",u"GO","amorinopolis",),
+        (2500734,u"Amparo",u"PB","amparo",),
+        (3501905,u"Amparo",u"SP","amparo",),
+        (2800100,u"Amparo de São Francisco",u"SE","amparo de sao francisco",),
+        (3102506,u"Amparo do Serra",u"MG","amparo do serra",),
+        (4101002,u"Ampére",u"PR","ampere",),
+        (2700201,u"Anadia",u"AL","anadia",),
+        (2901205,u"Anagé",u"BA","anage",),
+        (4101051,u"Anahy",u"PR","anahy",),
+        (1500701,u"Anajás",u"PA","anajas",),
+        (2100709,u"Anajatuba",u"MA","anajatuba",),
+        (3502002,u"Analândia",u"SP","analandia",),
+        (1300086,u"Anamã",u"AM","anama",),
+        (1701002,u"Ananás",u"TO","ananas",),
+        (1500800,u"Ananindeua",u"PA","ananindeua",),
+        (5201108,u"Anápolis",u"GO","anapolis",),
+        (1500859,u"Anapu",u"PA","anapu",),
+        (2100808,u"Anapurus",u"MA","anapurus",),
+        (5000708,u"Anastácio",u"MS","anastacio",),
+        (5000807,u"Anaurilândia",u"MS","anaurilandia",),
+        (3200409,u"Anchieta",u"ES","anchieta",),
+        (4200804,u"Anchieta",u"SC","anchieta",),
+        (2901304,u"Andaraí",u"BA","andarai",),
+        (4101101,u"Andirá",u"PR","andira",),
+        (2901353,u"Andorinha",u"BA","andorinha",),
+        (3102605,u"Andradas",u"MG","andradas",),
+        (3502101,u"Andradina",u"SP","andradina",),
+        (4300661,u"André da Rocha",u"RS","andre da rocha",),
+        (3102803,u"Andrelândia",u"MG","andrelandia",),
+        (3502200,u"Angatuba",u"SP","angatuba",),
+        (3102852,u"Angelândia",u"MG","angelandia",),
+        (5000856,u"Angélica",u"MS","angelica",),
+        (2601003,u"Angelim",u"PE","angelim",),
+        (4200903,u"Angelina",u"SC","angelina",),
+        (2901403,u"Angical",u"BA","angical",),
+        (2200608,u"Angical do Piauí",u"PI","angical do piaui",),
+        (1701051,u"Angico",u"TO","angico",),
+        (2400802,u"Angicos",u"RN","angicos",),
+        (3300100,u"Angra dos Reis",u"RJ","angra dos reis",),
+        (2901502,u"Anguera",u"BA","anguera",),
+        (4101150,u"Ângulo",u"PR","angulo",),
+        (5201207,u"Anhanguera",u"GO","anhanguera",),
+        (3502309,u"Anhembi",u"SP","anhembi",),
+        (3502408,u"Anhumas",u"SP","anhumas",),
+        (5201306,u"Anicuns",u"GO","anicuns",),
+        (2200707,u"Anísio de Abreu",u"PI","anisio de abreu",),
+        (4201000,u"Anita Garibaldi",u"SC","anita garibaldi",),
+        (4201109,u"Anitápolis",u"SC","anitapolis",),
+        (1300102,u"Anori",u"AM","anori",),
+        (4300703,u"Anta Gorda",u"RS","anta gorda",),
+        (2901601,u"Antas",u"BA","antas",),
+        (4101200,u"Antonina",u"PR","antonina",),
+        (2300804,u"Antonina do Norte",u"CE","antonina do norte",),
+        (2200806,u"Antônio Almeida",u"PI","antonio almeida",),
+        (2901700,u"Antônio Cardoso",u"BA","antonio cardoso",),
+        (3102902,u"Antônio Carlos",u"MG","antonio carlos",),
+        (4201208,u"Antônio Carlos",u"SC","antonio carlos",),
+        (3103009,u"Antônio Dias",u"MG","antonio dias",),
+        (2901809,u"Antônio Gonçalves",u"BA","antonio goncalves",),
+        (5000906,u"Antônio João",u"MS","antonio joao",),
+        (2400901,u"Antônio Martins",u"RN","antonio martins",),
+        (4101309,u"Antônio Olinto",u"PR","antonio olinto",),
+        (4300802,u"Antônio Prado",u"RS","antonio prado",),
+        (3103108,u"Antônio Prado de Minas",u"MG","antonio prado de minas",),
+        (2500775,u"Aparecida",u"PB","aparecida",),
+        (3502507,u"Aparecida",u"SP","aparecida",),
+        (3502606,u"Aparecida d'Oeste",u"SP","aparecida d'oeste",),
+        (5201405,u"Aparecida de Goiânia",u"GO","aparecida de goiania",),
+        (5201454,u"Aparecida do Rio Doce",u"GO","aparecida do rio doce",),
+        (1701101,u"Aparecida do Rio Negro",u"TO","aparecida do rio negro",),
+        (5001003,u"Aparecida do Taboado",u"MS","aparecida do taboado",),
+        (3300159,u"Aperibé",u"RJ","aperibe",),
+        (3200508,u"Apiacá",u"ES","apiaca",),
+        (5100805,u"Apiacás",u"MT","apiacas",),
+        (3502705,u"Apiaí",u"SP","apiai",),
+        (2100832,u"Apicum-Açu",u"MA","apicum-acu",),
+        (4201257,u"Apiúna",u"SC","apiuna",),
+        (2401008,u"Apodi",u"RN","apodi",),
+        (2901908,u"Aporá",u"BA","apora",),
+        (5201504,u"Aporé",u"GO","apore",),
+        (2901957,u"Apuarema",u"BA","apuarema",),
+        (4101408,u"Apucarana",u"PR","apucarana",),
+        (1300144,u"Apuí",u"AM","apui",),
+        (2300903,u"Apuiarés",u"CE","apuiares",),
+        (2800209,u"Aquidabã",u"SE","aquidaba",),
+        (5001102,u"Aquidauana",u"MS","aquidauana",),
+        (2301000,u"Aquiraz",u"CE","aquiraz",),
+        (4201273,u"Arabutã",u"SC","arabuta",),
+        (2500809,u"Araçagi",u"PB","aracagi",),
+        (3103207,u"Araçaí",u"MG","aracai",),
+        (2800308,u"Aracaju",u"SE","aracaju",),
+        (3502754,u"Araçariguama",u"SP","aracariguama",),
+        (2902054,u"Araças",u"BA","aracas",),
+        (2301109,u"Aracati",u"CE","aracati",),
+        (2902005,u"Aracatu",u"BA","aracatu",),
+        (3502804,u"Araçatuba",u"SP","aracatuba",),
+        (2902104,u"Araci",u"BA","araci",),
+        (3103306,u"Aracitaba",u"MG","aracitaba",),
+        (2301208,u"Aracoiaba",u"CE","aracoiaba",),
+        (2601052,u"Araçoiaba",u"PE","aracoiaba",),
+        (3502903,u"Araçoiaba da Serra",u"SP","aracoiaba da serra",),
+        (3200607,u"Aracruz",u"ES","aracruz",),
+        (5201603,u"Araçu",u"GO","aracu",),
+        (3103405,u"Araçuaí",u"MG","aracuai",),
+        (5201702,u"Aragarças",u"GO","aragarcas",),
+        (5201801,u"Aragoiânia",u"GO","aragoiania",),
+        (1701309,u"Aragominas",u"TO","aragominas",),
+        (1701903,u"Araguacema",u"TO","araguacema",),
+        (1702000,u"Araguaçu",u"TO","araguacu",),
+        (5101001,u"Araguaiana",u"MT","araguaiana",),
+        (1702109,u"Araguaína",u"TO","araguaina",),
+        (5101209,u"Araguainha",u"MT","araguainha",),
+        (1702158,u"Araguanã",u"TO","araguana",),
+        (2100873,u"Araguanã",u"MA","araguana",),
+        (5202155,u"Araguapaz",u"GO","araguapaz",),
+        (3103504,u"Araguari",u"MG","araguari",),
+        (1702208,u"Araguatins",u"TO","araguatins",),
+        (2100907,u"Araioses",u"MA","araioses",),
+        (5001243,u"Aral Moreira",u"MS","aral moreira",),
+        (2902203,u"Aramari",u"BA","aramari",),
+        (4300851,u"Arambaré",u"RS","arambare",),
+        (2100956,u"Arame",u"MA","arame",),
+        (3503000,u"Aramina",u"SP","aramina",),
+        (3503109,u"Arandu",u"SP","arandu",),
+        (3103603,u"Arantina",u"MG","arantina",),
+        (3503158,u"Arapeí",u"SP","arapei",),
+        (2700300,u"Arapiraca",u"AL","arapiraca",),
+        (1702307,u"Arapoema",u"TO","arapoema",),
+        (3103702,u"Araponga",u"MG","araponga",),
+        (4101507,u"Arapongas",u"PR","arapongas",),
+        (3103751,u"Araporã",u"MG","arapora",),
+        (4101606,u"Arapoti",u"PR","arapoti",),
+        (3103801,u"Arapuá",u"MG","arapua",),
+        (4101655,u"Arapuã",u"PR","arapua",),
+        (5101258,u"Araputanga",u"MT","araputanga",),
+        (4201307,u"Araquari",u"SC","araquari",),
+        (2500908,u"Arara",u"PB","arara",),
+        (4201406,u"Araranguá",u"SC","ararangua",),
+        (3503208,u"Araraquara",u"SP","araraquara",),
+        (3503307,u"Araras",u"SP","araras",),
+        (2301257,u"Ararendá",u"CE","ararenda",),
+        (2101004,u"Arari",u"MA","arari",),
+        (4300877,u"Araricá",u"RS","ararica",),
+        (2301307,u"Araripe",u"CE","araripe",),
+        (2601102,u"Araripina",u"PE","araripina",),
+        (3300209,u"Araruama",u"RJ","araruama",),
+        (2501005,u"Araruna",u"PB","araruna",),
+        (4101705,u"Araruna",u"PR","araruna",),
+        (2902252,u"Arataca",u"BA","arataca",),
+        (4300901,u"Aratiba",u"RS","aratiba",),
+        (2301406,u"Aratuba",u"CE","aratuba",),
+        (2902302,u"Aratuípe",u"BA","aratuipe",),
+        (2800407,u"Arauá",u"SE","araua",),
+        (4101804,u"Araucária",u"PR","araucaria",),
+        (3103900,u"Araújos",u"MG","araujos",),
+        (3104007,u"Araxá",u"MG","araxa",),
+        (3104106,u"Arceburgo",u"MG","arceburgo",),
+        (3503356,u"Arco-Íris",u"SP","arco-iris",),
+        (3104205,u"Arcos",u"MG","arcos",),
+        (2601201,u"Arcoverde",u"PE","arcoverde",),
+        (3104304,u"Areado",u"MG","areado",),
+        (3300225,u"Areal",u"RJ","areal",),
+        (3503406,u"Arealva",u"SP","arealva",),
+        (2501104,u"Areia",u"PB","areia",),
+        (2401107,u"Areia Branca",u"RN","areia branca",),
+        (2800506,u"Areia Branca",u"SE","areia branca",),
+        (2501153,u"Areia de Baraúnas",u"PB","areia de baraunas",),
+        (2501203,u"Areial",u"PB","areial",),
+        (3503505,u"Areias",u"SP","areias",),
+        (3503604,u"Areiópolis",u"SP","areiopolis",),
+        (5101308,u"Arenápolis",u"MT","arenapolis",),
+        (5202353,u"Arenópolis",u"GO","arenopolis",),
+        (2401206,u"Arês",u"RN","ares",),
+        (3104403,u"Argirita",u"MG","argirita",),
+        (3104452,u"Aricanduva",u"MG","aricanduva",),
+        (3104502,u"Arinos",u"MG","arinos",),
+        (5101407,u"Aripuanã",u"MT","aripuana",),
+        (1100023,u"Ariquemes",u"RO","ariquemes",),
+        (3503703,u"Ariranha",u"SP","ariranha",),
+        (4101853,u"Ariranha do Ivaí",u"PR","ariranha do ivai",),
+        (3300233,u"Armação dos Búzios",u"RJ","armacao dos buzios",),
+        (4201505,u"Armazém",u"SC","armazem",),
+        (2301505,u"Arneiroz",u"CE","arneiroz",),
+        (2200905,u"Aroazes",u"PI","aroazes",),
+        (2501302,u"Aroeiras",u"PB","aroeiras",),
+        (2200954,u"Aroeiras do Itaim",u"PI","aroeiras do itaim",),
+        (2201002,u"Arraial",u"PI","arraial",),
+        (3300258,u"Arraial do Cabo",u"RJ","arraial do cabo",),
+        (1702406,u"Arraias",u"TO","arraias",),
+        (4301008,u"Arroio do Meio",u"RS","arroio do meio",),
+        (4301073,u"Arroio do Padre",u"RS","arroio do padre",),
+        (4301057,u"Arroio do Sal",u"RS","arroio do sal",),
+        (4301206,u"Arroio do Tigre",u"RS","arroio do tigre",),
+        (4301107,u"Arroio dos Ratos",u"RS","arroio dos ratos",),
+        (4301305,u"Arroio Grande",u"RS","arroio grande",),
+        (4201604,u"Arroio Trinta",u"SC","arroio trinta",),
+        (3503802,u"Artur Nogueira",u"SP","artur nogueira",),
+        (5202502,u"Aruanã",u"GO","aruana",),
+        (3503901,u"Arujá",u"SP","aruja",),
+        (4201653,u"Arvoredo",u"SC","arvoredo",),
+        (4301404,u"Arvorezinha",u"RS","arvorezinha",),
+        (4201703,u"Ascurra",u"SC","ascurra",),
+        (3503950,u"Aspásia",u"SP","aspasia",),
+        (4101903,u"Assaí",u"PR","assai",),
+        (2301604,u"Assaré",u"CE","assare",),
+        (3504008,u"Assis",u"SP","assis",),
+        (1200054,u"Assis Brasil",u"AC","assis brasil",),
+        (4102000,u"Assis Chateaubriand",u"PR","assis chateaubriand",),
+        (2501351,u"Assunção",u"PB","assuncao",),
+        (2201051,u"Assunção do Piauí",u"PI","assuncao do piaui",),
+        (3104601,u"Astolfo Dutra",u"MG","astolfo dutra",),
+        (4102109,u"Astorga",u"PR","astorga",),
+        (2700409,u"Atalaia",u"AL","atalaia",),
+        (4102208,u"Atalaia",u"PR","atalaia",),
+        (1300201,u"Atalaia do Norte",u"AM","atalaia do norte",),
+        (4201802,u"Atalanta",u"SC","atalanta",),
+        (3104700,u"Ataléia",u"MG","ataleia",),
+        (3504107,u"Atibaia",u"SP","atibaia",),
+        (3200706,u"Atilio Vivacqua",u"ES","atilio vivacqua",),
+        (1702554,u"Augustinópolis",u"TO","augustinopolis",),
+        (1500909,u"Augusto Corrêa",u"PA","augusto correa",),
+        (3104809,u"Augusto de Lima",u"MG","augusto de lima",),
+        (4301503,u"Augusto Pestana",u"RS","augusto pestana",),
+        (2401305,u"Augusto Severo",u"RN","augusto severo",),
+        (4301552,u"Áurea",u"RS","aurea",),
+        (2902401,u"Aurelino Leal",u"BA","aurelino leal",),
+        (3504206,u"Auriflama",u"SP","auriflama",),
+        (5202601,u"Aurilândia",u"GO","aurilandia",),
+        (2301703,u"Aurora",u"CE","aurora",),
+        (4201901,u"Aurora",u"SC","aurora",),
+        (1500958,u"Aurora do Pará",u"PA","aurora do para",),
+        (1702703,u"Aurora do Tocantins",u"TO","aurora do tocantins",),
+        (1300300,u"Autazes",u"AM","autazes",),
+        (3504305,u"Avaí",u"SP","avai",),
+        (3504404,u"Avanhandava",u"SP","avanhandava",),
+        (3504503,u"Avaré",u"SP","avare",),
+        (1501006,u"Aveiro",u"PA","aveiro",),
+        (2201101,u"Avelino Lopes",u"PI","avelino lopes",),
+        (5202809,u"Avelinópolis",u"GO","avelinopolis",),
+        (2101103,u"Axixá",u"MA","axixa",),
+        (1702901,u"Axixá do Tocantins",u"TO","axixa do tocantins",),
+        (1703008,u"Babaçulândia",u"TO","babaculandia",),
+        (2101202,u"Bacabal",u"MA","bacabal",),
+        (2101251,u"Bacabeira",u"MA","bacabeira",),
+        (2101301,u"Bacuri",u"MA","bacuri",),
+        (2101350,u"Bacurituba",u"MA","bacurituba",),
+        (3504602,u"Bady Bassitt",u"SP","bady bassitt",),
+        (3104908,u"Baependi",u"MG","baependi",),
+        (4301602,u"Bagé",u"RS","bage",),
+        (1501105,u"Bagre",u"PA","bagre",),
+        (2501401,u"Baía da Traição",u"PB","baia da traicao",),
+        (2401404,u"Baía Formosa",u"RN","baia formosa",),
+        (2902500,u"Baianópolis",u"BA","baianopolis",),
+        (1501204,u"Baião",u"PA","baiao",),
+        (2902609,u"Baixa Grande",u"BA","baixa grande",),
+        (2201150,u"Baixa Grande do Ribeiro",u"PI","baixa grande do ribeiro",),
+        (2301802,u"Baixio",u"CE","baixio",),
+        (3200805,u"Baixo Guandu",u"ES","baixo guandu",),
+        (3504701,u"Balbinos",u"SP","balbinos",),
+        (3105004,u"Baldim",u"MG","baldim",),
+        (5203104,u"Baliza",u"GO","baliza",),
+        (4201950,u"Balneário Arroio do Silva",u"SC","balneario arroio do silva",),
+        (4202057,u"Balneário Barra do Sul",u"SC","balneario barra do sul",),
+        (4202008,u"Balneário Camboriú",u"SC","balneario camboriu",),
+        (4202073,u"Balneário Gaivota",u"SC","balneario gaivota",),
+        (4212809,u"Balneário Piçarras",u"SC","balneario picarras",),
+        (4301636,u"Balneário Pinhal",u"RS","balneario pinhal",),
+        (4102307,u"Balsa Nova",u"PR","balsa nova",),
+        (3504800,u"Bálsamo",u"SP","balsamo",),
+        (2101400,u"Balsas",u"MA","balsas",),
+        (3105103,u"Bambuí",u"MG","bambui",),
+        (2301851,u"Banabuiú",u"CE","banabuiu",),
+        (3504909,u"Bananal",u"SP","bananal",),
+        (2501500,u"Bananeiras",u"PB","bananeiras",),
+        (3105202,u"Bandeira",u"MG","bandeira",),
+        (3105301,u"Bandeira do Sul",u"MG","bandeira do sul",),
+        (4202081,u"Bandeirante",u"SC","bandeirante",),
+        (4102406,u"Bandeirantes",u"PR","bandeirantes",),
+        (5001508,u"Bandeirantes",u"MS","bandeirantes",),
+        (1703057,u"Bandeirantes do Tocantins",u"TO","bandeirantes do tocantins",),
+        (1501253,u"Bannach",u"PA","bannach",),
+        (2902658,u"Banzaê",u"BA","banzae",),
+        (4301651,u"Barão",u"RS","barao",),
+        (3505005,u"Barão de Antonina",u"SP","barao de antonina",),
+        (3105400,u"Barão de Cocais",u"MG","barao de cocais",),
+        (4301701,u"Barão de Cotegipe",u"RS","barao de cotegipe",),
+        (2101509,u"Barão de Grajaú",u"MA","barao de grajau",),
+        (5101605,u"Barão de Melgaço",u"MT","barao de melgaco",),
+        (3105509,u"Barão de Monte Alto",u"MG","barao de monte alto",),
+        (4301750,u"Barão do Triunfo",u"RS","barao do triunfo",),
+        (2401453,u"Baraúna",u"RN","barauna",),
+        (2501534,u"Baraúna",u"PB","barauna",),
+        (3105608,u"Barbacena",u"MG","barbacena",),
+        (2301901,u"Barbalha",u"CE","barbalha",),
+        (3505104,u"Barbosa",u"SP","barbosa",),
+        (4102505,u"Barbosa Ferraz",u"PR","barbosa ferraz",),
+        (1501303,u"Barcarena",u"PA","barcarena",),
+        (2401503,u"Barcelona",u"RN","barcelona",),
+        (1300409,u"Barcelos",u"AM","barcelos",),
+        (3505203,u"Bariri",u"SP","bariri",),
+        (2902708,u"Barra",u"BA","barra",),
+        (3505302,u"Barra Bonita",u"SP","barra bonita",),
+        (4202099,u"Barra Bonita",u"SC","barra bonita",),
+        (2201176,u"Barra D'Alcântara",u"PI","barra d'alcantara",),
+        (2902807,u"Barra da Estiva",u"BA","barra da estiva",),
+        (2601300,u"Barra de Guabiraba",u"PE","barra de guabiraba",),
+        (2501609,u"Barra de Santa Rosa",u"PB","barra de santa rosa",),
+        (2501575,u"Barra de Santana",u"PB","barra de santana",),
+        (2700508,u"Barra de Santo Antônio",u"AL","barra de santo antonio",),
+        (3200904,u"Barra de São Francisco",u"ES","barra de sao francisco",),
+        (2501708,u"Barra de São Miguel",u"PB","barra de sao miguel",),
+        (2700607,u"Barra de São Miguel",u"AL","barra de sao miguel",),
+        (5101704,u"Barra do Bugres",u"MT","barra do bugres",),
+        (3505351,u"Barra do Chapéu",u"SP","barra do chapeu",),
+        (2902906,u"Barra do Choça",u"BA","barra do choca",),
+        (2101608,u"Barra do Corda",u"MA","barra do corda",),
+        (5101803,u"Barra do Garças",u"MT","barra do garcas",),
+        (4301859,u"Barra do Guarita",u"RS","barra do guarita",),
+        (4102703,u"Barra do Jacaré",u"PR","barra do jacare",),
+        (2903003,u"Barra do Mendes",u"BA","barra do mendes",),
+        (1703073,u"Barra do Ouro",u"TO","barra do ouro",),
+        (3300308,u"Barra do Piraí",u"RJ","barra do pirai",),
+        (4301875,u"Barra do Quaraí",u"RS","barra do quarai",),
+        (4301909,u"Barra do Ribeiro",u"RS","barra do ribeiro",),
+        (4301925,u"Barra do Rio Azul",u"RS","barra do rio azul",),
+        (2903102,u"Barra do Rocha",u"BA","barra do rocha",),
+        (3505401,u"Barra do Turvo",u"SP","barra do turvo",),
+        (2800605,u"Barra dos Coqueiros",u"SE","barra dos coqueiros",),
+        (4301958,u"Barra Funda",u"RS","barra funda",),
+        (3105707,u"Barra Longa",u"MG","barra longa",),
+        (3300407,u"Barra Mansa",u"RJ","barra mansa",),
+        (4202107,u"Barra Velha",u"SC","barra velha",),
+        (4102604,u"Barracão",u"PR","barracao",),
+        (4301800,u"Barracão",u"RS","barracao",),
+        (2201200,u"Barras",u"PI","barras",),
+        (2301950,u"Barreira",u"CE","barreira",),
+        (2903201,u"Barreiras",u"BA","barreiras",),
+        (2201309,u"Barreiras do Piauí",u"PI","barreiras do piaui",),
+        (1300508,u"Barreirinha",u"AM","barreirinha",),
+        (2101707,u"Barreirinhas",u"MA","barreirinhas",),
+        (2601409,u"Barreiros",u"PE","barreiros",),
+        (3505500,u"Barretos",u"SP","barretos",),
+        (3505609,u"Barrinha",u"SP","barrinha",),
+        (2302008,u"Barro",u"CE","barro",),
+        (2903235,u"Barro Alto",u"BA","barro alto",),
+        (5203203,u"Barro Alto",u"GO","barro alto",),
+        (2201408,u"Barro Duro",u"PI","barro duro",),
+        (2903300,u"Barro Preto",u"BA","barro preto",),
+        (2903276,u"Barrocas",u"BA","barrocas",),
+        (1703107,u"Barrolândia",u"TO","barrolandia",),
+        (2302057,u"Barroquinha",u"CE","barroquinha",),
+        (4302006,u"Barros Cassal",u"RS","barros cassal",),
+        (3105905,u"Barroso",u"MG","barroso",),
+        (3505708,u"Barueri",u"SP","barueri",),
+        (3505807,u"Bastos",u"SP","bastos",),
+        (5001904,u"Bataguassu",u"MS","bataguassu",),
+        (2201507,u"Batalha",u"PI","batalha",),
+        (2700706,u"Batalha",u"AL","batalha",),
+        (3505906,u"Batatais",u"SP","batatais",),
+        (5002001,u"Batayporã",u"MS","bataypora",),
+        (2302107,u"Baturité",u"CE","baturite",),
+        (3506003,u"Bauru",u"SP","bauru",),
+        (2501807,u"Bayeux",u"PB","bayeux",),
+        (3506102,u"Bebedouro",u"SP","bebedouro",),
+        (2302206,u"Beberibe",u"CE","beberibe",),
+        (2302305,u"Bela Cruz",u"CE","bela cruz",),
+        (5002100,u"Bela Vista",u"MS","bela vista",),
+        (4102752,u"Bela Vista da Caroba",u"PR","bela vista da caroba",),
+        (5203302,u"Bela Vista de Goiás",u"GO","bela vista de goias",),
+        (3106002,u"Bela Vista de Minas",u"MG","bela vista de minas",),
+        (2101772,u"Bela Vista do Maranhão",u"MA","bela vista do maranhao",),
+        (4102802,u"Bela Vista do Paraíso",u"PR","bela vista do paraiso",),
+        (2201556,u"Bela Vista do Piauí",u"PI","bela vista do piaui",),
+        (4202131,u"Bela Vista do Toldo",u"SC","bela vista do toldo",),
+        (2101731,u"Belágua",u"MA","belagua",),
+        (1501402,u"Belém",u"PA","belem",),
+        (2501906,u"Belém",u"PB","belem",),
+        (2700805,u"Belém",u"AL","belem",),
+        (2601508,u"Belém de Maria",u"PE","belem de maria",),
+        (2601607,u"Belém de São Francisco",u"PE","belem de sao francisco",),
+        (2502003,u"Belém do Brejo do Cruz",u"PB","belem do brejo do cruz",),
+        (2201572,u"Belém do Piauí",u"PI","belem do piaui",),
+        (3300456,u"Belford Roxo",u"RJ","belford roxo",),
+        (3106101,u"Belmiro Braga",u"MG","belmiro braga",),
+        (2903409,u"Belmonte",u"BA","belmonte",),
+        (4202156,u"Belmonte",u"SC","belmonte",),
+        (2903508,u"Belo Campo",u"BA","belo campo",),
+        (3106200,u"Belo Horizonte",u"MG","belo horizonte",),
+        (2601706,u"Belo Jardim",u"PE","belo jardim",),
+        (2700904,u"Belo Monte",u"AL","belo monte",),
+        (3106309,u"Belo Oriente",u"MG","belo oriente",),
+        (3106408,u"Belo Vale",u"MG","belo vale",),
+        (1501451,u"Belterra",u"PA","belterra",),
+        (2201606,u"Beneditinos",u"PI","beneditinos",),
+        (2101806,u"Benedito Leite",u"MA","benedito leite",),
+        (4202206,u"Benedito Novo",u"SC","benedito novo",),
+        (1501501,u"Benevides",u"PA","benevides",),
+        (1300607,u"Benjamin Constant",u"AM","benjamin constant",),
+        (4302055,u"Benjamin Constant do Sul",u"RS","benjamin constant do sul",),
+        (3506201,u"Bento de Abreu",u"SP","bento de abreu",),
+        (2401602,u"Bento Fernandes",u"RN","bento fernandes",),
+        (4302105,u"Bento Gonçalves",u"RS","bento goncalves",),
+        (2101905,u"Bequimão",u"MA","bequimao",),
+        (3106507,u"Berilo",u"MG","berilo",),
+        (3106655,u"Berizal",u"MG","berizal",),
+        (2502052,u"Bernardino Batista",u"PB","bernardino batista",),
+        (3506300,u"Bernardino de Campos",u"SP","bernardino de campos",),
+        (2101939,u"Bernardo do Mearim",u"MA","bernardo do mearim",),
+        (1703206,u"Bernardo Sayão",u"TO","bernardo sayao",),
+        (3506359,u"Bertioga",u"SP","bertioga",),
+        (2201705,u"Bertolínia",u"PI","bertolinia",),
+        (3106606,u"Bertópolis",u"MG","bertopolis",),
+        (1300631,u"Beruri",u"AM","beruri",),
+        (2601805,u"Betânia",u"PE","betania",),
+        (2201739,u"Betânia do Piauí",u"PI","betania do piaui",),
+        (3106705,u"Betim",u"MG","betim",),
+        (2601904,u"Bezerros",u"PE","bezerros",),
+        (3106804,u"Bias Fortes",u"MG","bias fortes",),
+        (3106903,u"Bicas",u"MG","bicas",),
+        (4202305,u"Biguaçu",u"SC","biguacu",),
+        (3506409,u"Bilac",u"SP","bilac",),
+        (3107000,u"Biquinhas",u"MG","biquinhas",),
+        (3506508,u"Birigui",u"SP","birigui",),
+        (3506607,u"Biritiba-Mirim",u"SP","biritiba-mirim",),
+        (2903607,u"Biritinga",u"BA","biritinga",),
+        (4102901,u"Bituruna",u"PR","bituruna",),
+        (4202404,u"Blumenau",u"SC","blumenau",),
+        (3107109,u"Boa Esperança",u"MG","boa esperanca",),
+        (3201001,u"Boa Esperança",u"ES","boa esperanca",),
+        (4103008,u"Boa Esperança",u"PR","boa esperanca",),
+        (4103024,u"Boa Esperança do Iguaçu",u"PR","boa esperanca do iguacu",),
+        (3506706,u"Boa Esperança do Sul",u"SP","boa esperanca do sul",),
+        (2201770,u"Boa Hora",u"PI","boa hora",),
+        (2903706,u"Boa Nova",u"BA","boa nova",),
+        (2502102,u"Boa Ventura",u"PB","boa ventura",),
+        (4103040,u"Boa Ventura de São Roque",u"PR","boa ventura de sao roque",),
+        (2302404,u"Boa Viagem",u"CE","boa viagem",),
+        (1400100,u"Boa Vista",u"RR","boa vista",),
+        (2502151,u"Boa Vista",u"PB","boa vista",),
+        (4103057,u"Boa Vista da Aparecida",u"PR","boa vista da aparecida",),
+        (4302154,u"Boa Vista das Missões",u"RS","boa vista das missoes",),
+        (4302204,u"Boa Vista do Buricá",u"RS","boa vista do burica",),
+        (4302220,u"Boa Vista do Cadeado",u"RS","boa vista do cadeado",),
+        (2101970,u"Boa Vista do Gurupi",u"MA","boa vista do gurupi",),
+        (4302238,u"Boa Vista do Incra",u"RS","boa vista do incra",),
+        (1300680,u"Boa Vista do Ramos",u"AM","boa vista do ramos",),
+        (4302253,u"Boa Vista do Sul",u"RS","boa vista do sul",),
+        (2903805,u"Boa Vista do Tupim",u"BA","boa vista do tupim",),
+        (2701001,u"Boca da Mata",u"AL","boca da mata",),
+        (1300706,u"Boca do Acre",u"AM","boca do acre",),
+        (2201804,u"Bocaina",u"PI","bocaina",),
+        (3506805,u"Bocaina",u"SP","bocaina",),
+        (3107208,u"Bocaina de Minas",u"MG","bocaina de minas",),
+        (4202438,u"Bocaina do Sul",u"SC","bocaina do sul",),
+        (3107307,u"Bocaiúva",u"MG","bocaiuva",),
+        (4103107,u"Bocaiúva do Sul",u"PR","bocaiuva do sul",),
+        (2401651,u"Bodó",u"RN","bodo",),
+        (2602001,u"Bodocó",u"PE","bodoco",),
+        (5002159,u"Bodoquena",u"MS","bodoquena",),
+        (3506904,u"Bofete",u"SP","bofete",),
+        (3507001,u"Boituva",u"SP","boituva",),
+        (2602100,u"Bom Conselho",u"PE","bom conselho",),
+        (3107406,u"Bom Despacho",u"MG","bom despacho",),
+        (2102002,u"Bom Jardim",u"MA","bom jardim",),
+        (2602209,u"Bom Jardim",u"PE","bom jardim",),
+        (3300506,u"Bom Jardim",u"RJ","bom jardim",),
+        (4202503,u"Bom Jardim da Serra",u"SC","bom jardim da serra",),
+        (5203401,u"Bom Jardim de Goiás",u"GO","bom jardim de goias",),
+        (3107505,u"Bom Jardim de Minas",u"MG","bom jardim de minas",),
+        (2201903,u"Bom Jesus",u"PI","bom jesus",),
+        (2401701,u"Bom Jesus",u"RN","bom jesus",),
+        (2502201,u"Bom Jesus",u"PB","bom jesus",),
+        (4202537,u"Bom Jesus",u"SC","bom jesus",),
+        (4302303,u"Bom Jesus",u"RS","bom jesus",),
+        (2903904,u"Bom Jesus da Lapa",u"BA","bom jesus da lapa",),
+        (3107604,u"Bom Jesus da Penha",u"MG","bom jesus da penha",),
+        (2903953,u"Bom Jesus da Serra",u"BA","bom jesus da serra",),
+        (2102036,u"Bom Jesus das Selvas",u"MA","bom jesus das selvas",),
+        (5203500,u"Bom Jesus de Goiás",u"GO","bom jesus de goias",),
+        (3107703,u"Bom Jesus do Amparo",u"MG","bom jesus do amparo",),
+        (5101852,u"Bom Jesus do Araguaia",u"MT","bom jesus do araguaia",),
+        (3107802,u"Bom Jesus do Galho",u"MG","bom jesus do galho",),
+        (3300605,u"Bom Jesus do Itabapoana",u"RJ","bom jesus do itabapoana",),
+        (3201100,u"Bom Jesus do Norte",u"ES","bom jesus do norte",),
+        (4202578,u"Bom Jesus do Oeste",u"SC","bom jesus do oeste",),
+        (4103156,u"Bom Jesus do Sul",u"PR","bom jesus do sul",),
+        (1501576,u"Bom Jesus do Tocantins",u"PA","bom jesus do tocantins",),
+        (1703305,u"Bom Jesus do Tocantins",u"TO","bom jesus do tocantins",),
+        (3507100,u"Bom Jesus dos Perdões",u"SP","bom jesus dos perdoes",),
+        (2102077,u"Bom Lugar",u"MA","bom lugar",),
+        (4302352,u"Bom Princípio",u"RS","bom principio",),
+        (2201919,u"Bom Princípio do Piauí",u"PI","bom principio do piaui",),
+        (4302378,u"Bom Progresso",u"RS","bom progresso",),
+        (3107901,u"Bom Repouso",u"MG","bom repouso",),
+        (4202602,u"Bom Retiro",u"SC","bom retiro",),
+        (4302402,u"Bom Retiro do Sul",u"RS","bom retiro do sul",),
+        (2502300,u"Bom Sucesso",u"PB","bom sucesso",),
+        (3108008,u"Bom Sucesso",u"MG","bom sucesso",),
+        (4103206,u"Bom Sucesso",u"PR","bom sucesso",),
+        (3507159,u"Bom Sucesso de Itararé",u"SP","bom sucesso de itarare",),
+        (4103222,u"Bom Sucesso do Sul",u"PR","bom sucesso do sul",),
+        (4202453,u"Bombinhas",u"SC","bombinhas",),
+        (1400159,u"Bonfim",u"RR","bonfim",),
+        (3108107,u"Bonfim",u"MG","bonfim",),
+        (2201929,u"Bonfim do Piauí",u"PI","bonfim do piaui",),
+        (5203559,u"Bonfinópolis",u"GO","bonfinopolis",),
+        (3108206,u"Bonfinópolis de Minas",u"MG","bonfinopolis de minas",),
+        (2904001,u"Boninal",u"BA","boninal",),
+        (1501600,u"Bonito",u"PA","bonito",),
+        (2602308,u"Bonito",u"PE","bonito",),
+        (2904050,u"Bonito",u"BA","bonito",),
+        (5002209,u"Bonito",u"MS","bonito",),
+        (3108255,u"Bonito de Minas",u"MG","bonito de minas",),
+        (2502409,u"Bonito de Santa Fé",u"PB","bonito de santa fe",),
+        (5203575,u"Bonópolis",u"GO","bonopolis",),
+        (2502508,u"Boqueirão",u"PB","boqueirao",),
+        (4302451,u"Boqueirão do Leão",u"RS","boqueirao do leao",),
+        (2201945,u"Boqueirão do Piauí",u"PI","boqueirao do piaui",),
+        (2800670,u"Boquim",u"SE","boquim",),
+        (2904100,u"Boquira",u"BA","boquira",),
+        (3507209,u"Borá",u"SP","bora",),
+        (3507308,u"Boracéia",u"SP","boraceia",),
+        (1300805,u"Borba",u"AM","borba",),
+        (2502706,u"Borborema",u"PB","borborema",),
+        (3507407,u"Borborema",u"SP","borborema",),
+        (3108305,u"Borda da Mata",u"MG","borda da mata",),
+        (3507456,u"Borebi",u"SP","borebi",),
+        (4103305,u"Borrazópolis",u"PR","borrazopolis",),
+        (4302501,u"Bossoroca",u"RS","bossoroca",),
+        (3108404,u"Botelhos",u"MG","botelhos",),
+        (3507506,u"Botucatu",u"SP","botucatu",),
+        (3108503,u"Botumirim",u"MG","botumirim",),
+        (2904209,u"Botuporã",u"BA","botupora",),
+        (4202701,u"Botuverá",u"SC","botuvera",),
+        (4302584,u"Bozano",u"RS","bozano",),
+        (4202800,u"Braço do Norte",u"SC","braco do norte",),
+        (4202859,u"Braço do Trombudo",u"SC","braco do trombudo",),
+        (4302600,u"Braga",u"RS","braga",),
+        (1501709,u"Bragança",u"PA","braganca",),
+        (3507605,u"Bragança Paulista",u"SP","braganca paulista",),
+        (4103354,u"Braganey",u"PR","braganey",),
+        (2701100,u"Branquinha",u"AL","branquinha",),
+        (3108701,u"Brás Pires",u"MG","bras pires",),
+        (1501725,u"Brasil Novo",u"PA","brasil novo",),
+        (5002308,u"Brasilândia",u"MS","brasilandia",),
+        (3108552,u"Brasilândia de Minas",u"MG","brasilandia de minas",),
+        (4103370,u"Brasilândia do Sul",u"PR","brasilandia do sul",),
+        (1703602,u"Brasilândia do Tocantins",u"TO","brasilandia do tocantins",),
+        (1200104,u"Brasiléia",u"AC","brasileia",),
+        (2201960,u"Brasileira",u"PI","brasileira",),
+        (5300108,u"Brasília",u"DF","brasilia",),
+        (3108602,u"Brasília de Minas",u"MG","brasilia de minas",),
+        (5101902,u"Brasnorte",u"MT","brasnorte",),
+        (3108909,u"Brasópolis",u"MG","brasopolis",),
+        (3507704,u"Braúna",u"SP","brauna",),
+        (3108800,u"Braúnas",u"MG","braunas",),
+        (5203609,u"Brazabrantes",u"GO","brazabrantes",),
+        (2602407,u"Brejão",u"PE","brejao",),
+        (3201159,u"Brejetuba",u"ES","brejetuba",),
+        (2401800,u"Brejinho",u"RN","brejinho",),
+        (2602506,u"Brejinho",u"PE","brejinho",),
+        (1703701,u"Brejinho de Nazaré",u"TO","brejinho de nazare",),
+        (2102101,u"Brejo",u"MA","brejo",),
+        (3507753,u"Brejo Alegre",u"SP","brejo alegre",),
+        (2602605,u"Brejo da Madre de Deus",u"PE","brejo da madre de deus",),
+        (2102150,u"Brejo de Areia",u"MA","brejo de areia",),
+        (2502805,u"Brejo do Cruz",u"PB","brejo do cruz",),
+        (2201988,u"Brejo do Piauí",u"PI","brejo do piaui",),
+        (2502904,u"Brejo dos Santos",u"PB","brejo dos santos",),
+        (2800704,u"Brejo Grande",u"SE","brejo grande",),
+        (1501758,u"Brejo Grande do Araguaia",u"PA","brejo grande do araguaia",),
+        (2302503,u"Brejo Santo",u"CE","brejo santo",),
+        (2904308,u"Brejões",u"BA","brejoes",),
+        (2904407,u"Brejolândia",u"BA","brejolandia",),
+        (1501782,u"Breu Branco",u"PA","breu branco",),
+        (1501808,u"Breves",u"PA","breves",),
+        (5203807,u"Britânia",u"GO","britania",),
+        (4302659,u"Brochier",u"RS","brochier",),
+        (3507803,u"Brodowski",u"SP","brodowski",),
+        (3507902,u"Brotas",u"SP","brotas",),
+        (2904506,u"Brotas de Macaúbas",u"BA","brotas de macaubas",),
+        (3109006,u"Brumadinho",u"MG","brumadinho",),
+        (2904605,u"Brumado",u"BA","brumado",),
+        (4202875,u"Brunópolis",u"SC","brunopolis",),
+        (4202909,u"Brusque",u"SC","brusque",),
+        (3109105,u"Bueno Brandão",u"MG","bueno brandao",),
+        (3109204,u"Buenópolis",u"MG","buenopolis",),
+        (2602704,u"Buenos Aires",u"PE","buenos aires",),
+        (2904704,u"Buerarema",u"BA","buerarema",),
+        (3109253,u"Bugre",u"MG","bugre",),
+        (2602803,u"Buíque",u"PE","buique",),
+        (1200138,u"Bujari",u"AC","bujari",),
+        (1501907,u"Bujaru",u"PA","bujaru",),
+        (3508009,u"Buri",u"SP","buri",),
+        (3508108,u"Buritama",u"SP","buritama",),
+        (2102200,u"Buriti",u"MA","buriti",),
+        (5203906,u"Buriti Alegre",u"GO","buriti alegre",),
+        (2102309,u"Buriti Bravo",u"MA","buriti bravo",),
+        (5203939,u"Buriti de Goiás",u"GO","buriti de goias",),
+        (1703800,u"Buriti do Tocantins",u"TO","buriti do tocantins",),
+        (2202000,u"Buriti dos Lopes",u"PI","buriti dos lopes",),
+        (2202026,u"Buriti dos Montes",u"PI","buriti dos montes",),
+        (2102325,u"Buriticupu",u"MA","buriticupu",),
+        (5203962,u"Buritinópolis",u"GO","buritinopolis",),
+        (2904753,u"Buritirama",u"BA","buritirama",),
+        (2102358,u"Buritirana",u"MA","buritirana",),
+        (1100452,u"Buritis",u"RO","buritis",),
+        (3109303,u"Buritis",u"MG","buritis",),
+        (3508207,u"Buritizal",u"SP","buritizal",),
+        (3109402,u"Buritizeiro",u"MG","buritizeiro",),
+        (4302709,u"Butiá",u"RS","butia",),
+        (1300839,u"Caapiranga",u"AM","caapiranga",),
+        (2503001,u"Caaporã",u"PB","caapora",),
+        (5002407,u"Caarapó",u"MS","caarapo",),
+        (2904803,u"Caatiba",u"BA","caatiba",),
+        (2503100,u"Cabaceiras",u"PB","cabaceiras",),
+        (2904852,u"Cabaceiras do Paraguaçu",u"BA","cabaceiras do paraguacu",),
+        (3109451,u"Cabeceira Grande",u"MG","cabeceira grande",),
+        (5204003,u"Cabeceiras",u"GO","cabeceiras",),
+        (2202059,u"Cabeceiras do Piauí",u"PI","cabeceiras do piaui",),
+        (2503209,u"Cabedelo",u"PB","cabedelo",),
+        (1100031,u"Cabixi",u"RO","cabixi",),
+        (2602902,u"Cabo de Santo Agostinho",u"PE","cabo de santo agostinho",),
+        (3300704,u"Cabo Frio",u"RJ","cabo frio",),
+        (3109501,u"Cabo Verde",u"MG","cabo verde",),
+        (3508306,u"Cabrália Paulista",u"SP","cabralia paulista",),
+        (3508405,u"Cabreúva",u"SP","cabreuva",),
+        (2603009,u"Cabrobó",u"PE","cabrobo",),
+        (4203006,u"Caçador",u"SC","cacador",),
+        (3508504,u"Caçapava",u"SP","cacapava",),
+        (4302808,u"Caçapava do Sul",u"RS","cacapava do sul",),
+        (1100601,u"Cacaulândia",u"RO","cacaulandia",),
+        (4302907,u"Cacequi",u"RS","cacequi",),
+        (5102504,u"Cáceres",u"MT","caceres",),
+        (2904902,u"Cachoeira",u"BA","cachoeira",),
+        (5204102,u"Cachoeira Alta",u"GO","cachoeira alta",),
+        (3109600,u"Cachoeira da Prata",u"MG","cachoeira da prata",),
+        (5204201,u"Cachoeira de Goiás",u"GO","cachoeira de goias",),
+        (3109709,u"Cachoeira de Minas",u"MG","cachoeira de minas",),
+        (3102704,u"Cachoeira de Pajeú",u"MG","cachoeira de pajeu",),
+        (1502004,u"Cachoeira do Arari",u"PA","cachoeira do arari",),
+        (1501956,u"Cachoeira do Piriá",u"PA","cachoeira do piria",),
+        (4303004,u"Cachoeira do Sul",u"RS","cachoeira do sul",),
+        (2503308,u"Cachoeira dos Índios",u"PB","cachoeira dos indios",),
+        (3109808,u"Cachoeira Dourada",u"MG","cachoeira dourada",),
+        (5204250,u"Cachoeira Dourada",u"GO","cachoeira dourada",),
+        (2102374,u"Cachoeira Grande",u"MA","cachoeira grande",),
+        (3508603,u"Cachoeira Paulista",u"SP","cachoeira paulista",),
+        (3300803,u"Cachoeiras de Macacu",u"RJ","cachoeiras de macacu",),
+        (1703826,u"Cachoeirinha",u"TO","cachoeirinha",),
+        (2603108,u"Cachoeirinha",u"PE","cachoeirinha",),
+        (4303103,u"Cachoeirinha",u"RS","cachoeirinha",),
+        (3201209,u"Cachoeiro de Itapemirim",u"ES","cachoeiro de itapemirim",),
+        (2503407,u"Cacimba de Areia",u"PB","cacimba de areia",),
+        (2503506,u"Cacimba de Dentro",u"PB","cacimba de dentro",),
+        (2503555,u"Cacimbas",u"PB","cacimbas",),
+        (2701209,u"Cacimbinhas",u"AL","cacimbinhas",),
+        (4303202,u"Cacique Doble",u"RS","cacique doble",),
+        (1100049,u"Cacoal",u"RO","cacoal",),
+        (3508702,u"Caconde",u"SP","caconde",),
+        (5204300,u"Caçu",u"GO","cacu",),
+        (2905008,u"Caculé",u"BA","cacule",),
+        (2905107,u"Caém",u"BA","caem",),
+        (3109907,u"Caetanópolis",u"MG","caetanopolis",),
+        (2905156,u"Caetanos",u"BA","caetanos",),
+        (3110004,u"Caeté",u"MG","caete",),
+        (2603207,u"Caetés",u"PE","caetes",),
+        (2905206,u"Caetité",u"BA","caetite",),
+        (2905305,u"Cafarnaum",u"BA","cafarnaum",),
+        (4103404,u"Cafeara",u"PR","cafeara",),
+        (3508801,u"Cafelândia",u"SP","cafelandia",),
+        (4103453,u"Cafelândia",u"PR","cafelandia",),
+        (4103479,u"Cafezal do Sul",u"PR","cafezal do sul",),
+        (3508900,u"Caiabu",u"SP","caiabu",),
+        (3110103,u"Caiana",u"MG","caiana",),
+        (5204409,u"Caiapônia",u"GO","caiaponia",),
+        (4303301,u"Caibaté",u"RS","caibate",),
+        (4203105,u"Caibi",u"SC","caibi",),
+        (2503605,u"Caiçara",u"PB","caicara",),
+        (4303400,u"Caiçara",u"RS","caicara",),
+        (2401859,u"Caiçara do Norte",u"RN","caicara do norte",),
+        (2401909,u"Caiçara do Rio do Vento",u"RN","caicara do rio do vento",),
+        (2402006,u"Caicó",u"RN","caico",),
+        (3509007,u"Caieiras",u"SP","caieiras",),
+        (2905404,u"Cairu",u"BA","cairu",),
+        (3509106,u"Caiuá",u"SP","caiua",),
+        (3509205,u"Cajamar",u"SP","cajamar",),
+        (2102408,u"Cajapió",u"MA","cajapio",),
+        (2102507,u"Cajari",u"MA","cajari",),
+        (3509254,u"Cajati",u"SP","cajati",),
+        (2503704,u"Cajazeiras",u"PB","cajazeiras",),
+        (2202075,u"Cajazeiras do Piauí",u"PI","cajazeiras do piaui",),
+        (2503753,u"Cajazeirinhas",u"PB","cajazeirinhas",),
+        (3509304,u"Cajobi",u"SP","cajobi",),
+        (2701308,u"Cajueiro",u"AL","cajueiro",),
+        (2202083,u"Cajueiro da Praia",u"PI","cajueiro da praia",),
+        (3110202,u"Cajuri",u"MG","cajuri",),
+        (3509403,u"Cajuru",u"SP","cajuru",),
+        (2603306,u"Calçado",u"PE","calcado",),
+        (1600204,u"Calçoene",u"AP","calcoene",),
+        (3110301,u"Caldas",u"MG","caldas",),
+        (2503803,u"Caldas Brandão",u"PB","caldas brandao",),
+        (5204508,u"Caldas Novas",u"GO","caldas novas",),
+        (5204557,u"Caldazinha",u"GO","caldazinha",),
+        (2905503,u"Caldeirão Grande",u"BA","caldeirao grande",),
+        (2202091,u"Caldeirão Grande do Piauí",u"PI","caldeirao grande do piaui",),
+        (4103503,u"Califórnia",u"PR","california",),
+        (4203154,u"Calmon",u"SC","calmon",),
+        (2603405,u"Calumbi",u"PE","calumbi",),
+        (2905602,u"Camacan",u"BA","camacan",),
+        (2905701,u"Camaçari",u"BA","camacari",),
+        (3110400,u"Camacho",u"MG","camacho",),
+        (2503902,u"Camalaú",u"PB","camalau",),
+        (2905800,u"Camamu",u"BA","camamu",),
+        (3110509,u"Camanducaia",u"MG","camanducaia",),
+        (5002605,u"Camapuã",u"MS","camapua",),
+        (4303509,u"Camaquã",u"RS","camaqua",),
+        (2603454,u"Camaragibe",u"PE","camaragibe",),
+        (4303558,u"Camargo",u"RS","camargo",),
+        (4103602,u"Cambará",u"PR","cambara",),
+        (4303608,u"Cambará do Sul",u"RS","cambara do sul",),
+        (4103701,u"Cambé",u"PR","cambe",),
+        (4103800,u"Cambira",u"PR","cambira",),
+        (4203204,u"Camboriú",u"SC","camboriu",),
+        (3300902,u"Cambuci",u"RJ","cambuci",),
+        (3110608,u"Cambuí",u"MG","cambui",),
+        (3110707,u"Cambuquira",u"MG","cambuquira",),
+        (1502103,u"Cametá",u"PA","cameta",),
+        (2302602,u"Camocim",u"CE","camocim",),
+        (2603504,u"Camocim de São Félix",u"PE","camocim de sao felix",),
+        (3110806,u"Campanário",u"MG","campanario",),
+        (3110905,u"Campanha",u"MG","campanha",),
+        (2701357,u"Campestre",u"AL","campestre",),
+        (3111002,u"Campestre",u"MG","campestre",),
+        (4303673,u"Campestre da Serra",u"RS","campestre da serra",),
+        (5204607,u"Campestre de Goiás",u"GO","campestre de goias",),
+        (2102556,u"Campestre do Maranhão",u"MA","campestre do maranhao",),
+        (4103909,u"Campina da Lagoa",u"PR","campina da lagoa",),
+        (4303707,u"Campina das Missões",u"RS","campina das missoes",),
+        (3509452,u"Campina do Monte Alegre",u"SP","campina do monte alegre",),
+        (4103958,u"Campina do Simão",u"PR","campina do simao",),
+        (2504009,u"Campina Grande",u"PB","campina grande",),
+        (4104006,u"Campina Grande do Sul",u"PR","campina grande do sul",),
+        (3111101,u"Campina Verde",u"MG","campina verde",),
+        (5204656,u"Campinaçu",u"GO","campinacu",),
+        (5102603,u"Campinápolis",u"MT","campinapolis",),
+        (3509502,u"Campinas",u"SP","campinas",),
+        (2202109,u"Campinas do Piauí",u"PI","campinas do piaui",),
+        (4303806,u"Campinas do Sul",u"RS","campinas do sul",),
+        (5204706,u"Campinorte",u"GO","campinorte",),
+        (2701407,u"Campo Alegre",u"AL","campo alegre",),
+        (4203303,u"Campo Alegre",u"SC","campo alegre",),
+        (5204805,u"Campo Alegre de Goiás",u"GO","campo alegre de goias",),
+        (2905909,u"Campo Alegre de Lourdes",u"BA","campo alegre de lourdes",),
+        (2202117,u"Campo Alegre do Fidalgo",u"PI","campo alegre do fidalgo",),
+        (3111150,u"Campo Azul",u"MG","campo azul",),
+        (3111200,u"Campo Belo",u"MG","campo belo",),
+        (4203402,u"Campo Belo do Sul",u"SC","campo belo do sul",),
+        (4303905,u"Campo Bom",u"RS","campo bom",),
+        (4104055,u"Campo Bonito",u"PR","campo bonito",),
+        (2516409,u"Campo de Santana",u"PB","campo de santana",),
+        (2801009,u"Campo do Brito",u"SE","campo do brito",),
+        (3111309,u"Campo do Meio",u"MG","campo do meio",),
+        (4104105,u"Campo do Tenente",u"PR","campo do tenente",),
+        (4203501,u"Campo Erê",u"SC","campo ere",),
+        (3111408,u"Campo Florido",u"MG","campo florido",),
+        (2906006,u"Campo Formoso",u"BA","campo formoso",),
+        (2701506,u"Campo Grande",u"AL","campo grande",),
+        (5002704,u"Campo Grande",u"MS","campo grande",),
+        (2202133,u"Campo Grande do Piauí",u"PI","campo grande do piaui",),
+        (4104204,u"Campo Largo",u"PR","campo largo",),
+        (2202174,u"Campo Largo do Piauí",u"PI","campo largo do piaui",),
+        (5204854,u"Campo Limpo de Goiás",u"GO","campo limpo de goias",),
+        (3509601,u"Campo Limpo Paulista",u"SP","campo limpo paulista",),
+        (4104253,u"Campo Magro",u"PR","campo magro",),
+        (2202208,u"Campo Maior",u"PI","campo maior",),
+        (4104303,u"Campo Mourão",u"PR","campo mourao",),
+        (4304002,u"Campo Novo",u"RS","campo novo",),
+        (1100700,u"Campo Novo de Rondônia",u"RO","campo novo de rondonia",),
+        (5102637,u"Campo Novo do Parecis",u"MT","campo novo do parecis",),
+        (2402105,u"Campo Redondo",u"RN","campo redondo",),
+        (5102678,u"Campo Verde",u"MT","campo verde",),
+        (3111507,u"Campos Altos",u"MG","campos altos",),
+        (5204904,u"Campos Belos",u"GO","campos belos",),
+        (4304101,u"Campos Borges",u"RS","campos borges",),
+        (5102686,u"Campos de Júlio",u"MT","campos de julio",),
+        (3509700,u"Campos do Jordão",u"SP","campos do jordao",),
+        (3301009,u"Campos dos Goytacazes",u"RJ","campos dos goytacazes",),
+        (3111606,u"Campos Gerais",u"MG","campos gerais",),
+        (1703842,u"Campos Lindos",u"TO","campos lindos",),
+        (4203600,u"Campos Novos",u"SC","campos novos",),
+        (3509809,u"Campos Novos Paulista",u"SP","campos novos paulista",),
+        (2302701,u"Campos Sales",u"CE","campos sales",),
+        (5204953,u"Campos Verdes",u"GO","campos verdes",),
+        (2603603,u"Camutanga",u"PE","camutanga",),
+        (3111903,u"Cana Verde",u"MG","cana verde",),
+        (3111705,u"Canaã",u"MG","canaa",),
+        (1502152,u"Canaã dos Carajás",u"PA","canaa dos carajas",),
+        (5102694,u"Canabrava do Norte",u"MT","canabrava do norte",),
+        (3509908,u"Cananéia",u"SP","cananeia",),
+        (2701605,u"Canapi",u"AL","canapi",),
+        (2906105,u"Canápolis",u"BA","canapolis",),
+        (3111804,u"Canápolis",u"MG","canapolis",),
+        (2906204,u"Canarana",u"BA","canarana",),
+        (5102702,u"Canarana",u"MT","canarana",),
+        (3509957,u"Canas",u"SP","canas",),
+        (2202251,u"Canavieira",u"PI","canavieira",),
+        (2906303,u"Canavieiras",u"BA","canavieiras",),
+        (2906402,u"Candeal",u"BA","candeal",),
+        (2906501,u"Candeias",u"BA","candeias",),
+        (3112000,u"Candeias",u"MG","candeias",),
+        (1100809,u"Candeias do Jamari",u"RO","candeias do jamari",),
+        (4304200,u"Candelária",u"RS","candelaria",),
+        (2906600,u"Candiba",u"BA","candiba",),
+        (4104402,u"Cândido de Abreu",u"PR","candido de abreu",),
+        (4304309,u"Cândido Godói",u"RS","candido godoi",),
+        (2102606,u"Cândido Mendes",u"MA","candido mendes",),
+        (3510005,u"Cândido Mota",u"SP","candido mota",),
+        (3510104,u"Cândido Rodrigues",u"SP","candido rodrigues",),
+        (2906709,u"Cândido Sales",u"BA","candido sales",),
+        (4304358,u"Candiota",u"RS","candiota",),
+        (4104428,u"Candói",u"PR","candoi",),
+        (4304408,u"Canela",u"RS","canela",),
+        (4203709,u"Canelinha",u"SC","canelinha",),
+        (2402204,u"Canguaretama",u"RN","canguaretama",),
+        (4304507,u"Canguçu",u"RS","cangucu",),
+        (2801108,u"Canhoba",u"SE","canhoba",),
+        (2603702,u"Canhotinho",u"PE","canhotinho",),
+        (2302800,u"Canindé",u"CE","caninde",),
+        (2801207,u"Canindé de São Francisco",u"SE","caninde de sao francisco",),
+        (3510153,u"Canitar",u"SP","canitar",),
+        (4304606,u"Canoas",u"RS","canoas",),
+        (4203808,u"Canoinhas",u"SC","canoinhas",),
+        (2906808,u"Cansanção",u"BA","cansancao",),
+        (1400175,u"Cantá",u"RR","canta",),
+        (3112059,u"Cantagalo",u"MG","cantagalo",),
+        (3301108,u"Cantagalo",u"RJ","cantagalo",),
+        (4104451,u"Cantagalo",u"PR","cantagalo",),
+        (2102705,u"Cantanhede",u"MA","cantanhede",),
+        (2202307,u"Canto do Buriti",u"PI","canto do buriti",),
+        (2906824,u"Canudos",u"BA","canudos",),
+        (4304614,u"Canudos do Vale",u"RS","canudos do vale",),
+        (1300904,u"Canutama",u"AM","canutama",),
+        (1502202,u"Capanema",u"PA","capanema",),
+        (4104501,u"Capanema",u"PR","capanema",),
+        (4203253,u"Capão Alto",u"SC","capao alto",),
+        (3510203,u"Capão Bonito",u"SP","capao bonito",),
+        (4304622,u"Capão Bonito do Sul",u"RS","capao bonito do sul",),
+        (4304630,u"Capão da Canoa",u"RS","capao da canoa",),
+        (4304655,u"Capão do Cipó",u"RS","capao do cipo",),
+        (4304663,u"Capão do Leão",u"RS","capao do leao",),
+        (3112109,u"Caparaó",u"MG","caparao",),
+        (2701704,u"Capela",u"AL","capela",),
+        (2801306,u"Capela",u"SE","capela",),
+        (4304689,u"Capela de Santana",u"RS","capela de santana",),
+        (3510302,u"Capela do Alto",u"SP","capela do alto",),
+        (2906857,u"Capela do Alto Alegre",u"BA","capela do alto alegre",),
+        (3112208,u"Capela Nova",u"MG","capela nova",),
+        (3112307,u"Capelinha",u"MG","capelinha",),
+        (3112406,u"Capetinga",u"MG","capetinga",),
+        (2504033,u"Capim",u"PB","capim",),
+        (3112505,u"Capim Branco",u"MG","capim branco",),
+        (2906873,u"Capim Grosso",u"BA","capim grosso",),
+        (3112604,u"Capinópolis",u"MG","capinopolis",),
+        (4203907,u"Capinzal",u"SC","capinzal",),
+        (2102754,u"Capinzal do Norte",u"MA","capinzal do norte",),
+        (2302909,u"Capistrano",u"CE","capistrano",),
+        (4304697,u"Capitão",u"RS","capitao",),
+        (3112653,u"Capitão Andrade",u"MG","capitao andrade",),
+        (2202406,u"Capitão de Campos",u"PI","capitao de campos",),
+        (3112703,u"Capitão Enéas",u"MG","capitao eneas",),
+        (2202455,u"Capitão Gervásio Oliveira",u"PI","capitao gervasio oliveira",),
+        (4104600,u"Capitão Leônidas Marques",u"PR","capitao leonidas marques",),
+        (1502301,u"Capitão Poço",u"PA","capitao poco",),
+        (3112802,u"Capitólio",u"MG","capitolio",),
+        (3510401,u"Capivari",u"SP","capivari",),
+        (4203956,u"Capivari de Baixo",u"SC","capivari de baixo",),
+        (4304671,u"Capivari do Sul",u"RS","capivari do sul",),
+        (1200179,u"Capixaba",u"AC","capixaba",),
+        (2603801,u"Capoeiras",u"PE","capoeiras",),
+        (3112901,u"Caputira",u"MG","caputira",),
+        (4304713,u"Caraá",u"RS","caraa",),
+        (1400209,u"Caracaraí",u"RR","caracarai",),
+        (2202505,u"Caracol",u"PI","caracol",),
+        (5002803,u"Caracol",u"MS","caracol",),
+        (3510500,u"Caraguatatuba",u"SP","caraguatatuba",),
+        (3113008,u"Caraí",u"MG","carai",),
+        (2906899,u"Caraíbas",u"BA","caraibas",),
+        (4104659,u"Carambeí",u"PR","carambei",),
+        (3113107,u"Caranaíba",u"MG","caranaiba",),
+        (3113206,u"Carandaí",u"MG","carandai",),
+        (3113305,u"Carangola",u"MG","carangola",),
+        (3300936,u"Carapebus",u"RJ","carapebus",),
+        (3510609,u"Carapicuíba",u"SP","carapicuiba",),
+        (3113404,u"Caratinga",u"MG","caratinga",),
+        (1301001,u"Carauari",u"AM","carauari",),
+        (2402303,u"Caraúbas",u"RN","caraubas",),
+        (2504074,u"Caraúbas",u"PB","caraubas",),
+        (2202539,u"Caraúbas do Piauí",u"PI","caraubas do piaui",),
+        (2906907,u"Caravelas",u"BA","caravelas",),
+        (4304705,u"Carazinho",u"RS","carazinho",),
+        (3113503,u"Carbonita",u"MG","carbonita",),
+        (2907004,u"Cardeal da Silva",u"BA","cardeal da silva",),
+        (3510708,u"Cardoso",u"SP","cardoso",),
+        (3301157,u"Cardoso Moreira",u"RJ","cardoso moreira",),
+        (3113602,u"Careaçu",u"MG","careacu",),
+        (1301100,u"Careiro",u"AM","careiro",),
+        (1301159,u"Careiro da Várzea",u"AM","careiro da varzea",),
+        (3201308,u"Cariacica",u"ES","cariacica",),
+        (2303006,u"Caridade",u"CE","caridade",),
+        (2202554,u"Caridade do Piauí",u"PI","caridade do piaui",),
+        (2907103,u"Carinhanha",u"BA","carinhanha",),
+        (2801405,u"Carira",u"SE","carira",),
+        (2303105,u"Cariré",u"CE","carire",),
+        (1703867,u"Cariri do Tocantins",u"TO","cariri do tocantins",),
+        (2303204,u"Caririaçu",u"CE","caririacu",),
+        (2303303,u"Cariús",u"CE","carius",),
+        (5102793,u"Carlinda",u"MT","carlinda",),
+        (4104709,u"Carlópolis",u"PR","carlopolis",),
+        (4304804,u"Carlos Barbosa",u"RS","carlos barbosa",),
+        (3113701,u"Carlos Chagas",u"MG","carlos chagas",),
+        (4304853,u"Carlos Gomes",u"RS","carlos gomes",),
+        (3113800,u"Carmésia",u"MG","carmesia",),
+        (3301207,u"Carmo",u"RJ","carmo",),
+        (3113909,u"Carmo da Cachoeira",u"MG","carmo da cachoeira",),
+        (3114006,u"Carmo da Mata",u"MG","carmo da mata",),
+        (3114105,u"Carmo de Minas",u"MG","carmo de minas",),
+        (3114204,u"Carmo do Cajuru",u"MG","carmo do cajuru",),
+        (3114303,u"Carmo do Paranaíba",u"MG","carmo do paranaiba",),
+        (3114402,u"Carmo do Rio Claro",u"MG","carmo do rio claro",),
+        (5205000,u"Carmo do Rio Verde",u"GO","carmo do rio verde",),
+        (1703883,u"Carmolândia",u"TO","carmolandia",),
+        (2801504,u"Carmópolis",u"SE","carmopolis",),
+        (3114501,u"Carmópolis de Minas",u"MG","carmopolis de minas",),
+        (2603900,u"Carnaíba",u"PE","carnaiba",),
+        (2402402,u"Carnaúba dos Dantas",u"RN","carnauba dos dantas",),
+        (2402501,u"Carnaubais",u"RN","carnaubais",),
+        (2303402,u"Carnaubal",u"CE","carnaubal",),
+        (2603926,u"Carnaubeira da Penha",u"PE","carnaubeira da penha",),
+        (3114550,u"Carneirinho",u"MG","carneirinho",),
+        (2701803,u"Carneiros",u"AL","carneiros",),
+        (1400233,u"Caroebe",u"RR","caroebe",),
+        (2102804,u"Carolina",u"MA","carolina",),
+        (2604007,u"Carpina",u"PE","carpina",),
+        (3114600,u"Carrancas",u"MG","carrancas",),
+        (2504108,u"Carrapateira",u"PB","carrapateira",),
+        (1703891,u"Carrasco Bonito",u"TO","carrasco bonito",),
+        (2604106,u"Caruaru",u"PE","caruaru",),
+        (2102903,u"Carutapera",u"MA","carutapera",),
+        (3114709,u"Carvalhópolis",u"MG","carvalhopolis",),
+        (3114808,u"Carvalhos",u"MG","carvalhos",),
+        (3510807,u"Casa Branca",u"SP","casa branca",),
+        (3114907,u"Casa Grande",u"MG","casa grande",),
+        (2907202,u"Casa Nova",u"BA","casa nova",),
+        (4304903,u"Casca",u"RS","casca",),
+        (3115003,u"Cascalho Rico",u"MG","cascalho rico",),
+        (2303501,u"Cascavel",u"CE","cascavel",),
+        (4104808,u"Cascavel",u"PR","cascavel",),
+        (1703909,u"Caseara",u"TO","caseara",),
+        (4304952,u"Caseiros",u"RS","caseiros",),
+        (3301306,u"Casimiro de Abreu",u"RJ","casimiro de abreu",),
+        (2604155,u"Casinhas",u"PE","casinhas",),
+        (2504157,u"Casserengue",u"PB","casserengue",),
+        (3115102,u"Cássia",u"MG","cassia",),
+        (3510906,u"Cássia dos Coqueiros",u"SP","cassia dos coqueiros",),
+        (5002902,u"Cassilândia",u"MS","cassilandia",),
+        (1502400,u"Castanhal",u"PA","castanhal",),
+        (5102850,u"Castanheira",u"MT","castanheira",),
+        (1100908,u"Castanheiras",u"RO","castanheiras",),
+        (5205059,u"Castelândia",u"GO","castelandia",),
+        (3201407,u"Castelo",u"ES","castelo",),
+        (2202604,u"Castelo do Piauí",u"PI","castelo do piaui",),
+        (3511003,u"Castilho",u"SP","castilho",),
+        (4104907,u"Castro",u"PR","castro",),
+        (2907301,u"Castro Alves",u"BA","castro alves",),
+        (3115300,u"Cataguases",u"MG","cataguases",),
+        (5205109,u"Catalão",u"GO","catalao",),
+        (3511102,u"Catanduva",u"SP","catanduva",),
+        (4105003,u"Catanduvas",u"PR","catanduvas",),
+        (4204004,u"Catanduvas",u"SC","catanduvas",),
+        (2303600,u"Catarina",u"CE","catarina",),
+        (3115359,u"Catas Altas",u"MG","catas altas",),
+        (3115409,u"Catas Altas da Noruega",u"MG","catas altas da noruega",),
+        (2604205,u"Catende",u"PE","catende",),
+        (3511201,u"Catiguá",u"SP","catigua",),
+        (2504207,u"Catingueira",u"PB","catingueira",),
+        (2907400,u"Catolândia",u"BA","catolandia",),
+        (2504306,u"Catolé do Rocha",u"PB","catole do rocha",),
+        (2907509,u"Catu",u"BA","catu",),
+        (4305009,u"Catuípe",u"RS","catuipe",),
+        (3115458,u"Catuji",u"MG","catuji",),
+        (2303659,u"Catunda",u"CE","catunda",),
+        (5205208,u"Caturaí",u"GO","caturai",),
+        (2907558,u"Caturama",u"BA","caturama",),
+        (2504355,u"Caturité",u"PB","caturite",),
+        (3115474,u"Catuti",u"MG","catuti",),
+        (2303709,u"Caucaia",u"CE","caucaia",),
+        (5205307,u"Cavalcante",u"GO","cavalcante",),
+        (3115508,u"Caxambu",u"MG","caxambu",),
+        (4204103,u"Caxambu do Sul",u"SC","caxambu do sul",),
+        (2103000,u"Caxias",u"MA","caxias",),
+        (4305108,u"Caxias do Sul",u"RS","caxias do sul",),
+        (2202653,u"Caxingó",u"PI","caxingo",),
+        (2402600,u"Ceará-Mirim",u"RN","ceara-mirim",),
+        (2103109,u"Cedral",u"MA","cedral",),
+        (3511300,u"Cedral",u"SP","cedral",),
+        (2303808,u"Cedro",u"CE","cedro",),
+        (2604304,u"Cedro",u"PE","cedro",),
+        (2801603,u"Cedro de São João",u"SE","cedro de sao joao",),
+        (3115607,u"Cedro do Abaeté",u"MG","cedro do abaete",),
+        (4204152,u"Celso Ramos",u"SC","celso ramos",),
+        (1704105,u"Centenário",u"TO","centenario",),
+        (4305116,u"Centenário",u"RS","centenario",),
+        (4105102,u"Centenário do Sul",u"PR","centenario do sul",),
+        (2907608,u"Central",u"BA","central",),
+        (3115706,u"Central de Minas",u"MG","central de minas",),
+        (2103125,u"Central do Maranhão",u"MA","central do maranhao",),
+        (3115805,u"Centralina",u"MG","centralina",),
+        (2103158,u"Centro do Guilherme",u"MA","centro do guilherme",),
+        (2103174,u"Centro Novo do Maranhão",u"MA","centro novo do maranhao",),
+        (1100056,u"Cerejeiras",u"RO","cerejeiras",),
+        (5205406,u"Ceres",u"GO","ceres",),
+        (3511409,u"Cerqueira César",u"SP","cerqueira cesar",),
+        (3511508,u"Cerquilho",u"SP","cerquilho",),
+        (4305124,u"Cerrito",u"RS","cerrito",),
+        (4105201,u"Cerro Azul",u"PR","cerro azul",),
+        (4305132,u"Cerro Branco",u"RS","cerro branco",),
+        (2402709,u"Cerro Corá",u"RN","cerro cora",),
+        (4305157,u"Cerro Grande",u"RS","cerro grande",),
+        (4305173,u"Cerro Grande do Sul",u"RS","cerro grande do sul",),
+        (4305207,u"Cerro Largo",u"RS","cerro largo",),
+        (4204178,u"Cerro Negro",u"SC","cerro negro",),
+        (3511607,u"Cesário Lange",u"SP","cesario lange",),
+        (4105300,u"Céu Azul",u"PR","ceu azul",),
+        (5205455,u"Cezarina",u"GO","cezarina",),
+        (2604403,u"Chã de Alegria",u"PE","cha de alegria",),
+        (2604502,u"Chã Grande",u"PE","cha grande",),
+        (2701902,u"Chã Preta",u"AL","cha preta",),
+        (3115904,u"Chácara",u"MG","chacara",),
+        (3116001,u"Chalé",u"MG","chale",),
+        (4305306,u"Chapada",u"RS","chapada",),
+        (1705102,u"Chapada da Natividade",u"TO","chapada da natividade",),
+        (1704600,u"Chapada de Areia",u"TO","chapada de areia",),
+        (3116100,u"Chapada do Norte",u"MG","chapada do norte",),
+        (5103007,u"Chapada dos Guimarães",u"MT","chapada dos guimaraes",),
+        (3116159,u"Chapada Gaúcha",u"MG","chapada gaucha",),
+        (5205471,u"Chapadão do Céu",u"GO","chapadao do ceu",),
+        (4204194,u"Chapadão do Lageado",u"SC","chapadao do lageado",),
+        (5002951,u"Chapadão do Sul",u"MS","chapadao do sul",),
+        (2103208,u"Chapadinha",u"MA","chapadinha",),
+        (4204202,u"Chapecó",u"SC","chapeco",),
+        (3511706,u"Charqueada",u"SP","charqueada",),
+        (4305355,u"Charqueadas",u"RS","charqueadas",),
+        (4305371,u"Charrua",u"RS","charrua",),
+        (2303907,u"Chaval",u"CE","chaval",),
+        (3557204,u"Chavantes",u"SP","chavantes",),
+        (1502509,u"Chaves",u"PA","chaves",),
+        (3116209,u"Chiador",u"MG","chiador",),
+        (4305405,u"Chiapetta",u"RS","chiapetta",),
+        (4105409,u"Chopinzinho",u"PR","chopinzinho",),
+        (2303931,u"Choró",u"CE","choro",),
+        (2303956,u"Chorozinho",u"CE","chorozinho",),
+        (2907707,u"Chorrochó",u"BA","chorrocho",),
+        (4305439,u"Chuí",u"RS","chui",),
+        (1100924,u"Chupinguaia",u"RO","chupinguaia",),
+        (4305447,u"Chuvisca",u"RS","chuvisca",),
+        (4105508,u"Cianorte",u"PR","cianorte",),
+        (2907806,u"Cícero Dantas",u"BA","cicero dantas",),
+        (4105607,u"Cidade Gaúcha",u"PR","cidade gaucha",),
+        (5205497,u"Cidade Ocidental",u"GO","cidade ocidental",),
+        (2103257,u"Cidelândia",u"MA","cidelandia",),
+        (4305454,u"Cidreira",u"RS","cidreira",),
+        (2907905,u"Cipó",u"BA","cipo",),
+        (3116308,u"Cipotânea",u"MG","cipotanea",),
+        (4305504,u"Ciríaco",u"RS","ciriaco",),
+        (3116407,u"Claraval",u"MG","claraval",),
+        (3116506,u"Claro dos Poções",u"MG","claro dos pocoes",),
+        (5103056,u"Cláudia",u"MT","claudia",),
+        (3116605,u"Cláudio",u"MG","claudio",),
+        (3511904,u"Clementina",u"SP","clementina",),
+        (4105706,u"Clevelândia",u"PR","clevelandia",),
+        (2908002,u"Coaraci",u"BA","coaraci",),
+        (1301209,u"Coari",u"AM","coari",),
+        (2202703,u"Cocal",u"PI","cocal",),
+        (2202711,u"Cocal de Telha",u"PI","cocal de telha",),
+        (4204251,u"Cocal do Sul",u"SC","cocal do sul",),
+        (2202729,u"Cocal dos Alves",u"PI","cocal dos alves",),
+        (5103106,u"Cocalinho",u"MT","cocalinho",),
+        (5205513,u"Cocalzinho de Goiás",u"GO","cocalzinho de goias",),
+        (2908101,u"Cocos",u"BA","cocos",),
+        (1301308,u"Codajás",u"AM","codajas",),
+        (2103307,u"Codó",u"MA","codo",),
+        (2103406,u"Coelho Neto",u"MA","coelho neto",),
+        (3116704,u"Coimbra",u"MG","coimbra",),
+        (2702009,u"Coité do Nóia",u"AL","coite do noia",),
+        (2202737,u"Coivaras",u"PI","coivaras",),
+        (1502608,u"Colares",u"PA","colares",),
+        (3201506,u"Colatina",u"ES","colatina",),
+        (5103205,u"Colíder",u"MT","colider",),
+        (3512001,u"Colina",u"SP","colina",),
+        (2103505,u"Colinas",u"MA","colinas",),
+        (4305587,u"Colinas",u"RS","colinas",),
+        (5205521,u"Colinas do Sul",u"GO","colinas do sul",),
+        (1705508,u"Colinas do Tocantins",u"TO","colinas do tocantins",),
+        (1716703,u"Colméia",u"TO","colmeia",),
+        (5103254,u"Colniza",u"MT","colniza",),
+        (3512100,u"Colômbia",u"SP","colombia",),
+        (4105805,u"Colombo",u"PR","colombo",),
+        (2202752,u"Colônia do Gurguéia",u"PI","colonia do gurgueia",),
+        (2202778,u"Colônia do Piauí",u"PI","colonia do piaui",),
+        (2702108,u"Colônia Leopoldina",u"AL","colonia leopoldina",),
+        (4105904,u"Colorado",u"PR","colorado",),
+        (4305603,u"Colorado",u"RS","colorado",),
+        (1100064,u"Colorado do Oeste",u"RO","colorado do oeste",),
+        (3116803,u"Coluna",u"MG","coluna",),
+        (1705557,u"Combinado",u"TO","combinado",),
+        (3116902,u"Comendador Gomes",u"MG","comendador gomes",),
+        (3300951,u"Comendador Levy Gasparian",u"RJ","comendador levy gasparian",),
+        (3117009,u"Comercinho",u"MG","comercinho",),
+        (5103304,u"Comodoro",u"MT","comodoro",),
+        (2504405,u"Conceição",u"PB","conceicao",),
+        (3117108,u"Conceição da Aparecida",u"MG","conceicao da aparecida",),
+        (3201605,u"Conceição da Barra",u"ES","conceicao da barra",),
+        (3115201,u"Conceição da Barra de Minas",u"MG","conceicao da barra de minas",),
+        (2908200,u"Conceição da Feira",u"BA","conceicao da feira",),
+        (3117306,u"Conceição das Alagoas",u"MG","conceicao das alagoas",),
+        (3117207,u"Conceição das Pedras",u"MG","conceicao das pedras",),
+        (3117405,u"Conceição de Ipanema",u"MG","conceicao de ipanema",),
+        (3301405,u"Conceição de Macabu",u"RJ","conceicao de macabu",),
+        (2908309,u"Conceição do Almeida",u"BA","conceicao do almeida",),
+        (1502707,u"Conceição do Araguaia",u"PA","conceicao do araguaia",),
+        (2202802,u"Conceição do Canindé",u"PI","conceicao do caninde",),
+        (3201704,u"Conceição do Castelo",u"ES","conceicao do castelo",),
+        (2908408,u"Conceição do Coité",u"BA","conceicao do coite",),
+        (2908507,u"Conceição do Jacuípe",u"BA","conceicao do jacuipe",),
+        (2103554,u"Conceição do Lago-Açu",u"MA","conceicao do lago-acu",),
+        (3117504,u"Conceição do Mato Dentro",u"MG","conceicao do mato dentro",),
+        (3117603,u"Conceição do Pará",u"MG","conceicao do para",),
+        (3117702,u"Conceição do Rio Verde",u"MG","conceicao do rio verde",),
+        (1705607,u"Conceição do Tocantins",u"TO","conceicao do tocantins",),
+        (3117801,u"Conceição dos Ouros",u"MG","conceicao dos ouros",),
+        (3512209,u"Conchal",u"SP","conchal",),
+        (3512308,u"Conchas",u"SP","conchas",),
+        (4204301,u"Concórdia",u"SC","concordia",),
+        (1502756,u"Concórdia do Pará",u"PA","concordia do para",),
+        (2504504,u"Condado",u"PB","condado",),
+        (2604601,u"Condado",u"PE","condado",),
+        (2504603,u"Conde",u"PB","conde",),
+        (2908606,u"Conde",u"BA","conde",),
+        (2908705,u"Condeúba",u"BA","condeuba",),
+        (4305702,u"Condor",u"RS","condor",),
+        (3117836,u"Cônego Marinho",u"MG","conego marinho",),
+        (3117876,u"Confins",u"MG","confins",),
+        (5103353,u"Confresa",u"MT","confresa",),
+        (2504702,u"Congo",u"PB","congo",),
+        (3117900,u"Congonhal",u"MG","congonhal",),
+        (3118007,u"Congonhas",u"MG","congonhas",),
+        (3118106,u"Congonhas do Norte",u"MG","congonhas do norte",),
+        (4106001,u"Congonhinhas",u"PR","congonhinhas",),
+        (3118205,u"Conquista",u"MG","conquista",),
+        (5103361,u"Conquista D'Oeste",u"MT","conquista d'oeste",),
+        (3118304,u"Conselheiro Lafaiete",u"MG","conselheiro lafaiete",),
+        (4106100,u"Conselheiro Mairinck",u"PR","conselheiro mairinck",),
+        (3118403,u"Conselheiro Pena",u"MG","conselheiro pena",),
+        (3118502,u"Consolação",u"MG","consolacao",),
+        (4305801,u"Constantina",u"RS","constantina",),
+        (3118601,u"Contagem",u"MG","contagem",),
+        (4106209,u"Contenda",u"PR","contenda",),
+        (2908804,u"Contendas do Sincorá",u"BA","contendas do sincora",),
+        (3118700,u"Coqueiral",u"MG","coqueiral",),
+        (4305835,u"Coqueiro Baixo",u"RS","coqueiro baixo",),
+        (2702207,u"Coqueiro Seco",u"AL","coqueiro seco",),
+        (4305850,u"Coqueiros do Sul",u"RS","coqueiros do sul",),
+        (3118809,u"Coração de Jesus",u"MG","coracao de jesus",),
+        (2908903,u"Coração de Maria",u"BA","coracao de maria",),
+        (4106308,u"Corbélia",u"PR","corbelia",),
+        (3301504,u"Cordeiro",u"RJ","cordeiro",),
+        (3512407,u"Cordeirópolis",u"SP","cordeiropolis",),
+        (2909000,u"Cordeiros",u"BA","cordeiros",),
+        (4204350,u"Cordilheira Alta",u"SC","cordilheira alta",),
+        (3118908,u"Cordisburgo",u"MG","cordisburgo",),
+        (3119005,u"Cordislândia",u"MG","cordislandia",),
+        (2304004,u"Coreaú",u"CE","coreau",),
+        (2504801,u"Coremas",u"PB","coremas",),
+        (5003108,u"Corguinho",u"MS","corguinho",),
+        (2909109,u"Coribe",u"BA","coribe",),
+        (3119104,u"Corinto",u"MG","corinto",),
+        (4106407,u"Cornélio Procópio",u"PR","cornelio procopio",),
+        (3119203,u"Coroaci",u"MG","coroaci",),
+        (3512506,u"Coroados",u"SP","coroados",),
+        (2103604,u"Coroatá",u"MA","coroata",),
+        (3119302,u"Coromandel",u"MG","coromandel",),
+        (4305871,u"Coronel Barros",u"RS","coronel barros",),
+        (4305900,u"Coronel Bicaco",u"RS","coronel bicaco",),
+        (4106456,u"Coronel Domingos Soares",u"PR","coronel domingos soares",),
+        (2402808,u"Coronel Ezequiel",u"RN","coronel ezequiel",),
+        (3119401,u"Coronel Fabriciano",u"MG","coronel fabriciano",),
+        (4204400,u"Coronel Freitas",u"SC","coronel freitas",),
+        (2402907,u"Coronel João Pessoa",u"RN","coronel joao pessoa",),
+        (2909208,u"Coronel João Sá",u"BA","coronel joao sa",),
+        (2202851,u"Coronel José Dias",u"PI","coronel jose dias",),
+        (3512605,u"Coronel Macedo",u"SP","coronel macedo",),
+        (4204459,u"Coronel Martins",u"SC","coronel martins",),
+        (3119500,u"Coronel Murta",u"MG","coronel murta",),
+        (3119609,u"Coronel Pacheco",u"MG","coronel pacheco",),
+        (4305934,u"Coronel Pilar",u"RS","coronel pilar",),
+        (5003157,u"Coronel Sapucaia",u"MS","coronel sapucaia",),
+        (4106506,u"Coronel Vivida",u"PR","coronel vivida",),
+        (3119708,u"Coronel Xavier Chaves",u"MG","coronel xavier chaves",),
+        (3119807,u"Córrego Danta",u"MG","corrego danta",),
+        (3119906,u"Córrego do Bom Jesus",u"MG","corrego do bom jesus",),
+        (5205703,u"Córrego do Ouro",u"GO","corrego do ouro",),
+        (3119955,u"Córrego Fundo",u"MG","corrego fundo",),
+        (3120003,u"Córrego Novo",u"MG","corrego novo",),
+        (4204558,u"Correia Pinto",u"SC","correia pinto",),
+        (2202901,u"Corrente",u"PI","corrente",),
+        (2604700,u"Correntes",u"PE","correntes",),
+        (2909307,u"Correntina",u"BA","correntina",),
+        (2604809,u"Cortês",u"PE","cortes",),
+        (5003207,u"Corumbá",u"MS","corumba",),
+        (5205802,u"Corumbá de Goiás",u"GO","corumba de goias",),
+        (5205901,u"Corumbaíba",u"GO","corumbaiba",),
+        (3512704,u"Corumbataí",u"SP","corumbatai",),
+        (4106555,u"Corumbataí do Sul",u"PR","corumbatai do sul",),
+        (1100072,u"Corumbiara",u"RO","corumbiara",),
+        (4204509,u"Corupá",u"SC","corupa",),
+        (2702306,u"Coruripe",u"AL","coruripe",),
+        (3512803,u"Cosmópolis",u"SP","cosmopolis",),
+        (3512902,u"Cosmorama",u"SP","cosmorama",),
+        (1100080,u"Costa Marques",u"RO","costa marques",),
+        (5003256,u"Costa Rica",u"MS","costa rica",),
+        (2909406,u"Cotegipe",u"BA","cotegipe",),
+        (3513009,u"Cotia",u"SP","cotia",),
+        (4305959,u"Cotiporã",u"RS","cotipora",),
+        (5103379,u"Cotriguaçu",u"MT","cotriguacu",),
+        (3120102,u"Couto de Magalhães de Minas",u"MG","couto de magalhaes de minas",),
+        (1706001,u"Couto Magalhães",u"TO","couto magalhaes",),
+        (4305975,u"Coxilha",u"RS","coxilha",),
+        (5003306,u"Coxim",u"MS","coxim",),
+        (2504850,u"Coxixola",u"PB","coxixola",),
+        (2702355,u"Craíbas",u"AL","craibas",),
+        (2304103,u"Crateús",u"CE","crateus",),
+        (2304202,u"Crato",u"CE","crato",),
+        (3513108,u"Cravinhos",u"SP","cravinhos",),
+        (2909505,u"Cravolândia",u"BA","cravolandia",),
+        (4204608,u"Criciúma",u"SC","criciuma",),
+        (3120151,u"Crisólita",u"MG","crisolita",),
+        (2909604,u"Crisópolis",u"BA","crisopolis",),
+        (4306007,u"Crissiumal",u"RS","crissiumal",),
+        (3120201,u"Cristais",u"MG","cristais",),
+        (3513207,u"Cristais Paulista",u"SP","cristais paulista",),
+        (4306056,u"Cristal",u"RS","cristal",),
+        (4306072,u"Cristal do Sul",u"RS","cristal do sul",),
+        (1706100,u"Cristalândia",u"TO","cristalandia",),
+        (2203008,u"Cristalândia do Piauí",u"PI","cristalandia do piaui",),
+        (3120300,u"Cristália",u"MG","cristalia",),
+        (5206206,u"Cristalina",u"GO","cristalina",),
+        (3120409,u"Cristiano Otoni",u"MG","cristiano otoni",),
+        (5206305,u"Cristianópolis",u"GO","cristianopolis",),
+        (3120508,u"Cristina",u"MG","cristina",),
+        (2801702,u"Cristinápolis",u"SE","cristinapolis",),
+        (2203107,u"Cristino Castro",u"PI","cristino castro",),
+        (2909703,u"Cristópolis",u"BA","cristopolis",),
+        (5206404,u"Crixás",u"GO","crixas",),
+        (1706258,u"Crixás do Tocantins",u"TO","crixas do tocantins",),
+        (2304236,u"Croatá",u"CE","croata",),
+        (5206503,u"Cromínia",u"GO","crominia",),
+        (3120607,u"Crucilândia",u"MG","crucilandia",),
+        (2304251,u"Cruz",u"CE","cruz",),
+        (4306106,u"Cruz Alta",u"RS","cruz alta",),
+        (2909802,u"Cruz das Almas",u"BA","cruz das almas",),
+        (2504900,u"Cruz do Espírito Santo",u"PB","cruz do espirito santo",),
+        (4106803,u"Cruz Machado",u"PR","cruz machado",),
+        (3513306,u"Cruzália",u"SP","cruzalia",),
+        (4306130,u"Cruzaltense",u"RS","cruzaltense",),
+        (3513405,u"Cruzeiro",u"SP","cruzeiro",),
+        (3120706,u"Cruzeiro da Fortaleza",u"MG","cruzeiro da fortaleza",),
+        (4106571,u"Cruzeiro do Iguaçu",u"PR","cruzeiro do iguacu",),
+        (4106605,u"Cruzeiro do Oeste",u"PR","cruzeiro do oeste",),
+        (1200203,u"Cruzeiro do Sul",u"AC","cruzeiro do sul",),
+        (4106704,u"Cruzeiro do Sul",u"PR","cruzeiro do sul",),
+        (4306205,u"Cruzeiro do Sul",u"RS","cruzeiro do sul",),
+        (2403004,u"Cruzeta",u"RN","cruzeta",),
+        (3120805,u"Cruzília",u"MG","cruzilia",),
+        (4106852,u"Cruzmaltina",u"PR","cruzmaltina",),
+        (3513504,u"Cubatão",u"SP","cubatao",),
+        (2505006,u"Cubati",u"PB","cubati",),
+        (5103403,u"Cuiabá",u"MT","cuiaba",),
+        (2505105,u"Cuité",u"PB","cuite",),
+        (2505238,u"Cuité de Mamanguape",u"PB","cuite de mamanguape",),
+        (2505204,u"Cuitegi",u"PB","cuitegi",),
+        (1100940,u"Cujubim",u"RO","cujubim",),
+        (5206602,u"Cumari",u"GO","cumari",),
+        (2604908,u"Cumaru",u"PE","cumaru",),
+        (1502764,u"Cumaru do Norte",u"PA","cumaru do norte",),
+        (2801900,u"Cumbe",u"SE","cumbe",),
+        (3513603,u"Cunha",u"SP","cunha",),
+        (4204707,u"Cunha Porã",u"SC","cunha pora",),
+        (4204756,u"Cunhataí",u"SC","cunhatai",),
+        (3120839,u"Cuparaque",u"MG","cuparaque",),
+        (2605004,u"Cupira",u"PE","cupira",),
+        (2909901,u"Curaçá",u"BA","curaca",),
+        (2203206,u"Curimatá",u"PI","curimata",),
+        (1502772,u"Curionópolis",u"PA","curionopolis",),
+        (4106902,u"Curitiba",u"PR","curitiba",),
+        (4204806,u"Curitibanos",u"SC","curitibanos",),
+        (4107009,u"Curiúva",u"PR","curiuva",),
+        (2203230,u"Currais",u"PI","currais",),
+        (2403103,u"Currais Novos",u"RN","currais novos",),
+        (2505279,u"Curral de Cima",u"PB","curral de cima",),
+        (3120870,u"Curral de Dentro",u"MG","curral de dentro",),
+        (2203271,u"Curral Novo do Piauí",u"PI","curral novo do piaui",),
+        (2505303,u"Curral Velho",u"PB","curral velho",),
+        (1502806,u"Curralinho",u"PA","curralinho",),
+        (2203255,u"Curralinhos",u"PI","curralinhos",),
+        (1502855,u"Curuá",u"PA","curua",),
+        (1502905,u"Curuçá",u"PA","curuca",),
+        (2103703,u"Cururupu",u"MA","cururupu",),
+        (5103437,u"Curvelândia",u"MT","curvelandia",),
+        (3120904,u"Curvelo",u"MG","curvelo",),
+        (2605103,u"Custódia",u"PE","custodia",),
+        (1600212,u"Cutias",u"AP","cutias",),
+        (5206701,u"Damianópolis",u"GO","damianopolis",),
+        (2505352,u"Damião",u"PB","damiao",),
+        (5206800,u"Damolândia",u"GO","damolandia",),
+        (1706506,u"Darcinópolis",u"TO","darcinopolis",),
+        (2910008,u"Dário Meira",u"BA","dario meira",),
+        (3121001,u"Datas",u"MG","datas",),
+        (4306304,u"David Canabarro",u"RS","david canabarro",),
+        (2103752,u"Davinópolis",u"MA","davinopolis",),
+        (5206909,u"Davinópolis",u"GO","davinopolis",),
+        (3121100,u"Delfim Moreira",u"MG","delfim moreira",),
+        (3121209,u"Delfinópolis",u"MG","delfinopolis",),
+        (2702405,u"Delmiro Gouveia",u"AL","delmiro gouveia",),
+        (3121258,u"Delta",u"MG","delta",),
+        (2203305,u"Demerval Lobão",u"PI","demerval lobao",),
+        (5103452,u"Denise",u"MT","denise",),
+        (5003454,u"Deodápolis",u"MS","deodapolis",),
+        (2304269,u"Deputado Irapuan Pinheiro",u"CE","deputado irapuan pinheiro",),
+        (4306320,u"Derrubadas",u"RS","derrubadas",),
+        (3513702,u"Descalvado",u"SP","descalvado",),
+        (4204905,u"Descanso",u"SC","descanso",),
+        (3121308,u"Descoberto",u"MG","descoberto",),
+        (2505402,u"Desterro",u"PB","desterro",),
+        (3121407,u"Desterro de Entre Rios",u"MG","desterro de entre rios",),
+        (3121506,u"Desterro do Melo",u"MG","desterro do melo",),
+        (4306353,u"Dezesseis de Novembro",u"RS","dezesseis de novembro",),
+        (3513801,u"Diadema",u"SP","diadema",),
+        (2505600,u"Diamante",u"PB","diamante",),
+        (4107157,u"Diamante D'Oeste",u"PR","diamante d'oeste",),
+        (4107108,u"Diamante do Norte",u"PR","diamante do norte",),
+        (4107124,u"Diamante do Sul",u"PR","diamante do sul",),
+        (3121605,u"Diamantina",u"MG","diamantina",),
+        (5103502,u"Diamantino",u"MT","diamantino",),
+        (1707009,u"Dianópolis",u"TO","dianopolis",),
+        (2910057,u"Dias d'Ávila",u"BA","dias d'avila",),
+        (4306379,u"Dilermando de Aguiar",u"RS","dilermando de aguiar",),
+        (3121704,u"Diogo de Vasconcelos",u"MG","diogo de vasconcelos",),
+        (3121803,u"Dionísio",u"MG","dionisio",),
+        (4205001,u"Dionísio Cerqueira",u"SC","dionisio cerqueira",),
+        (5207105,u"Diorama",u"GO","diorama",),
+        (3513850,u"Dirce Reis",u"SP","dirce reis",),
+        (2203354,u"Dirceu Arcoverde",u"PI","dirceu arcoverde",),
+        (2802007,u"Divina Pastora",u"SE","divina pastora",),
+        (3121902,u"Divinésia",u"MG","divinesia",),
+        (3122009,u"Divino",u"MG","divino",),
+        (3122108,u"Divino das Laranjeiras",u"MG","divino das laranjeiras",),
+        (3201803,u"Divino de São Lourenço",u"ES","divino de sao lourenco",),
+        (3513900,u"Divinolândia",u"SP","divinolandia",),
+        (3122207,u"Divinolândia de Minas",u"MG","divinolandia de minas",),
+        (3122306,u"Divinópolis",u"MG","divinopolis",),
+        (5208301,u"Divinópolis de Goiás",u"GO","divinopolis de goias",),
+        (1707108,u"Divinópolis do Tocantins",u"TO","divinopolis do tocantins",),
+        (3122355,u"Divisa Alegre",u"MG","divisa alegre",),
+        (3122405,u"Divisa Nova",u"MG","divisa nova",),
+        (3122454,u"Divisópolis",u"MG","divisopolis",),
+        (3514007,u"Dobrada",u"SP","dobrada",),
+        (3514106,u"Dois Córregos",u"SP","dois corregos",),
+        (4306403,u"Dois Irmãos",u"RS","dois irmaos",),
+        (4306429,u"Dois Irmãos das Missões",u"RS","dois irmaos das missoes",),
+        (5003488,u"Dois Irmãos do Buriti",u"MS","dois irmaos do buriti",),
+        (1707207,u"Dois Irmãos do Tocantins",u"TO","dois irmaos do tocantins",),
+        (4306452,u"Dois Lajeados",u"RS","dois lajeados",),
+        (2702504,u"Dois Riachos",u"AL","dois riachos",),
+        (4107207,u"Dois Vizinhos",u"PR","dois vizinhos",),
+        (3514205,u"Dolcinópolis",u"SP","dolcinopolis",),
+        (5103601,u"Dom Aquino",u"MT","dom aquino",),
+        (2910107,u"Dom Basílio",u"BA","dom basilio",),
+        (3122470,u"Dom Bosco",u"MG","dom bosco",),
+        (3122504,u"Dom Cavati",u"MG","dom cavati",),
+        (1502939,u"Dom Eliseu",u"PA","dom eliseu",),
+        (2203404,u"Dom Expedito Lopes",u"PI","dom expedito lopes",),
+        (4306502,u"Dom Feliciano",u"RS","dom feliciano",),
+        (2203453,u"Dom Inocêncio",u"PI","dom inocencio",),
+        (3122603,u"Dom Joaquim",u"MG","dom joaquim",),
+        (2910206,u"Dom Macedo Costa",u"BA","dom macedo costa",),
+        (4306601,u"Dom Pedrito",u"RS","dom pedrito",),
+        (2103802,u"Dom Pedro",u"MA","dom pedro",),
+        (4306551,u"Dom Pedro de Alcântara",u"RS","dom pedro de alcantara",),
+        (3122702,u"Dom Silvério",u"MG","dom silverio",),
+        (3122801,u"Dom Viçoso",u"MG","dom vicoso",),
+        (3201902,u"Domingos Martins",u"ES","domingos martins",),
+        (2203420,u"Domingos Mourão",u"PI","domingos mourao",),
+        (4205100,u"Dona Emma",u"SC","dona emma",),
+        (3122900,u"Dona Eusébia",u"MG","dona eusebia",),
+        (4306700,u"Dona Francisca",u"RS","dona francisca",),
+        (2505709,u"Dona Inês",u"PB","dona ines",),
+        (3123007,u"Dores de Campos",u"MG","dores de campos",),
+        (3123106,u"Dores de Guanhães",u"MG","dores de guanhaes",),
+        (3123205,u"Dores do Indaiá",u"MG","dores do indaia",),
+        (3202009,u"Dores do Rio Preto",u"ES","dores do rio preto",),
+        (3123304,u"Dores do Turvo",u"MG","dores do turvo",),
+        (3123403,u"Doresópolis",u"MG","doresopolis",),
+        (2605152,u"Dormentes",u"PE","dormentes",),
+        (4107256,u"Douradina",u"PR","douradina",),
+        (5003504,u"Douradina",u"MS","douradina",),
+        (3514304,u"Dourado",u"SP","dourado",),
+        (3123502,u"Douradoquara",u"MG","douradoquara",),
+        (5003702,u"Dourados",u"MS","dourados",),
+        (4107306,u"Doutor Camargo",u"PR","doutor camargo",),
+        (4306734,u"Doutor Maurício Cardoso",u"RS","doutor mauricio cardoso",),
+        (4205159,u"Doutor Pedrinho",u"SC","doutor pedrinho",),
+        (4306759,u"Doutor Ricardo",u"RS","doutor ricardo",),
+        (2403202,u"Doutor Severiano",u"RN","doutor severiano",),
+        (4128633,u"Doutor Ulysses",u"PR","doutor ulysses",),
+        (5207253,u"Doverlândia",u"GO","doverlandia",),
+        (3514403,u"Dracena",u"SP","dracena",),
+        (3514502,u"Duartina",u"SP","duartina",),
+        (3301603,u"Duas Barras",u"RJ","duas barras",),
+        (2505808,u"Duas Estradas",u"PB","duas estradas",),
+        (1707306,u"Dueré",u"TO","duere",),
+        (3514601,u"Dumont",u"SP","dumont",),
+        (2103901,u"Duque Bacelar",u"MA","duque bacelar",),
+        (3301702,u"Duque de Caxias",u"RJ","duque de caxias",),
+        (3123528,u"Durandé",u"MG","durande",),
+        (3514700,u"Echaporã",u"SP","echapora",),
+        (3202108,u"Ecoporanga",u"ES","ecoporanga",),
+        (5207352,u"Edealina",u"GO","edealina",),
+        (5207402,u"Edéia",u"GO","edeia",),
+        (1301407,u"Eirunepé",u"AM","eirunepe",),
+        (3514809,u"Eldorado",u"SP","eldorado",),
+        (5003751,u"Eldorado",u"MS","eldorado",),
+        (4306767,u"Eldorado do Sul",u"RS","eldorado do sul",),
+        (1502954,u"Eldorado dos Carajás",u"PA","eldorado dos carajas",),
+        (2203503,u"Elesbão Veloso",u"PI","elesbao veloso",),
+        (3514908,u"Elias Fausto",u"SP","elias fausto",),
+        (2203602,u"Eliseu Martins",u"PI","eliseu martins",),
+        (3514924,u"Elisiário",u"SP","elisiario",),
+        (2910305,u"Elísio Medrado",u"BA","elisio medrado",),
+        (3123601,u"Elói Mendes",u"MG","eloi mendes",),
+        (2505907,u"Emas",u"PB","emas",),
+        (3514957,u"Embaúba",u"SP","embauba",),
+        (3515004,u"Embu",u"SP","embu",),
+        (3515103,u"Embu-Guaçu",u"SP","embu-guacu",),
+        (3515129,u"Emilianópolis",u"SP","emilianopolis",),
+        (4306809,u"Encantado",u"RS","encantado",),
+        (2403301,u"Encanto",u"RN","encanto",),
+        (2910404,u"Encruzilhada",u"BA","encruzilhada",),
+        (4306908,u"Encruzilhada do Sul",u"RS","encruzilhada do sul",),
+        (4107405,u"Enéas Marques",u"PR","eneas marques",),
+        (4107504,u"Engenheiro Beltrão",u"PR","engenheiro beltrao",),
+        (3123700,u"Engenheiro Caldas",u"MG","engenheiro caldas",),
+        (3515152,u"Engenheiro Coelho",u"SP","engenheiro coelho",),
+        (3123809,u"Engenheiro Navarro",u"MG","engenheiro navarro",),
+        (3301801,u"Engenheiro Paulo de Frontin",u"RJ","engenheiro paulo de frontin",),
+        (4306924,u"Engenho Velho",u"RS","engenho velho",),
+        (3123858,u"Entre Folhas",u"MG","entre folhas",),
+        (2910503,u"Entre Rios",u"BA","entre rios",),
+        (4205175,u"Entre Rios",u"SC","entre rios",),
+        (3123908,u"Entre Rios de Minas",u"MG","entre rios de minas",),
+        (4107538,u"Entre Rios do Oeste",u"PR","entre rios do oeste",),
+        (4306957,u"Entre Rios do Sul",u"RS","entre rios do sul",),
+        (4306932,u"Entre-Ijuís",u"RS","entre-ijuis",),
+        (1301506,u"Envira",u"AM","envira",),
+        (1200252,u"Epitaciolândia",u"AC","epitaciolandia",),
+        (2403400,u"Equador",u"RN","equador",),
+        (4306973,u"Erebango",u"RS","erebango",),
+        (4307005,u"Erechim",u"RS","erechim",),
+        (2304277,u"Ererê",u"CE","erere",),
+        (2900504,u"Érico Cardoso",u"BA","erico cardoso",),
+        (4205191,u"Ermo",u"SC","ermo",),
+        (4307054,u"Ernestina",u"RS","ernestina",),
+        (4307203,u"Erval Grande",u"RS","erval grande",),
+        (4307302,u"Erval Seco",u"RS","erval seco",),
+        (4205209,u"Erval Velho",u"SC","erval velho",),
+        (3124005,u"Ervália",u"MG","ervalia",),
+        (2605202,u"Escada",u"PE","escada",),
+        (4307401,u"Esmeralda",u"RS","esmeralda",),
+        (3124104,u"Esmeraldas",u"MG","esmeraldas",),
+        (3124203,u"Espera Feliz",u"MG","espera feliz",),
+        (2506004,u"Esperança",u"PB","esperanca",),
+        (4307450,u"Esperança do Sul",u"RS","esperanca do sul",),
+        (4107520,u"Esperança Nova",u"PR","esperanca nova",),
+        (1707405,u"Esperantina",u"TO","esperantina",),
+        (2203701,u"Esperantina",u"PI","esperantina",),
+        (2104008,u"Esperantinópolis",u"MA","esperantinopolis",),
+        (4107546,u"Espigão Alto do Iguaçu",u"PR","espigao alto do iguacu",),
+        (1100098,u"Espigão D'Oeste",u"RO","espigao d'oeste",),
+        (3124302,u"Espinosa",u"MG","espinosa",),
+        (2403509,u"Espírito Santo",u"RN","espirito santo",),
+        (3124401,u"Espírito Santo do Dourado",u"MG","espirito santo do dourado",),
+        (3515186,u"Espírito Santo do Pinhal",u"SP","espirito santo do pinhal",),
+        (3515194,u"Espírito Santo do Turvo",u"SP","espirito santo do turvo",),
+        (2910602,u"Esplanada",u"BA","esplanada",),
+        (4307500,u"Espumoso",u"RS","espumoso",),
+        (4307559,u"Estação",u"RS","estacao",),
+        (2802106,u"Estância",u"SE","estancia",),
+        (4307609,u"Estância Velha",u"RS","estancia velha",),
+        (4307708,u"Esteio",u"RS","esteio",),
+        (3124500,u"Estiva",u"MG","estiva",),
+        (3557303,u"Estiva Gerbi",u"SP","estiva gerbi",),
+        (2104057,u"Estreito",u"MA","estreito",),
+        (4307807,u"Estrela",u"RS","estrela",),
+        (3515202,u"Estrela d'Oeste",u"SP","estrela d'oeste",),
+        (3124609,u"Estrela Dalva",u"MG","estrela dalva",),
+        (2702553,u"Estrela de Alagoas",u"AL","estrela de alagoas",),
+        (3124708,u"Estrela do Indaiá",u"MG","estrela do indaia",),
+        (3515301,u"Estrela do Norte",u"SP","estrela do norte",),
+        (5207501,u"Estrela do Norte",u"GO","estrela do norte",),
+        (3124807,u"Estrela do Sul",u"MG","estrela do sul",),
+        (4307815,u"Estrela Velha",u"RS","estrela velha",),
+        (2910701,u"Euclides da Cunha",u"BA","euclides da cunha",),
+        (3515350,u"Euclides da Cunha Paulista",u"SP","euclides da cunha paulista",),
+        (4307831,u"Eugênio de Castro",u"RS","eugenio de castro",),
+        (3124906,u"Eugenópolis",u"MG","eugenopolis",),
+        (2910727,u"Eunápolis",u"BA","eunapolis",),
+        (2304285,u"Eusébio",u"CE","eusebio",),
+        (3125002,u"Ewbank da Câmara",u"MG","ewbank da camara",),
+        (3125101,u"Extrema",u"MG","extrema",),
+        (2403608,u"Extremoz",u"RN","extremoz",),
+        (2605301,u"Exu",u"PE","exu",),
+        (2506103,u"Fagundes",u"PB","fagundes",),
+        (4307864,u"Fagundes Varela",u"RS","fagundes varela",),
+        (5207535,u"Faina",u"GO","faina",),
+        (3125200,u"Fama",u"MG","fama",),
+        (3125309,u"Faria Lemos",u"MG","faria lemos",),
+        (2304301,u"Farias Brito",u"CE","farias brito",),
+        (1503002,u"Faro",u"PA","faro",),
+        (4107553,u"Farol",u"PR","farol",),
+        (4307906,u"Farroupilha",u"RS","farroupilha",),
+        (3515400,u"Fartura",u"SP","fartura",),
+        (2203750,u"Fartura do Piauí",u"PI","fartura do piaui",),
+        (1707553,u"Fátima",u"TO","fatima",),
+        (2910750,u"Fátima",u"BA","fatima",),
+        (5003801,u"Fátima do Sul",u"MS","fatima do sul",),
+        (4107603,u"Faxinal",u"PR","faxinal",),
+        (4308003,u"Faxinal do Soturno",u"RS","faxinal do soturno",),
+        (4205308,u"Faxinal dos Guedes",u"SC","faxinal dos guedes",),
+        (4308052,u"Faxinalzinho",u"RS","faxinalzinho",),
+        (5207600,u"Fazenda Nova",u"GO","fazenda nova",),
+        (4107652,u"Fazenda Rio Grande",u"PR","fazenda rio grande",),
+        (4308078,u"Fazenda Vilanova",u"RS","fazenda vilanova",),
+        (1200302,u"Feijó",u"AC","feijo",),
+        (2910776,u"Feira da Mata",u"BA","feira da mata",),
+        (2910800,u"Feira de Santana",u"BA","feira de santana",),
+        (2702603,u"Feira Grande",u"AL","feira grande",),
+        (2605400,u"Feira Nova",u"PE","feira nova",),
+        (2802205,u"Feira Nova",u"SE","feira nova",),
+        (2104073,u"Feira Nova do Maranhão",u"MA","feira nova do maranhao",),
+        (3125408,u"Felício dos Santos",u"MG","felicio dos santos",),
+        (2403707,u"Felipe Guerra",u"RN","felipe guerra",),
+        (3125606,u"Felisburgo",u"MG","felisburgo",),
+        (3125705,u"Felixlândia",u"MG","felixlandia",),
+        (4308102,u"Feliz",u"RS","feliz",),
+        (2702702,u"Feliz Deserto",u"AL","feliz deserto",),
+        (5103700,u"Feliz Natal",u"MT","feliz natal",),
+        (4107702,u"Fênix",u"PR","fenix",),
+        (4107736,u"Fernandes Pinheiro",u"PR","fernandes pinheiro",),
+        (3125804,u"Fernandes Tourinho",u"MG","fernandes tourinho",),
+        (2605459,u"Fernando de Noronha",u"PE","fernando de noronha",),
+        (2104081,u"Fernando Falcão",u"MA","fernando falcao",),
+        (2403756,u"Fernando Pedroza",u"RN","fernando pedroza",),
+        (3515608,u"Fernando Prestes",u"SP","fernando prestes",),
+        (3515509,u"Fernandópolis",u"SP","fernandopolis",),
+        (3515657,u"Fernão",u"SP","fernao",),
+        (3515707,u"Ferraz de Vasconcelos",u"SP","ferraz de vasconcelos",),
+        (1600238,u"Ferreira Gomes",u"AP","ferreira gomes",),
+        (2605509,u"Ferreiros",u"PE","ferreiros",),
+        (3125903,u"Ferros",u"MG","ferros",),
+        (3125952,u"Fervedouro",u"MG","fervedouro",),
+        (4107751,u"Figueira",u"PR","figueira",),
+        (5003900,u"Figueirão",u"MS","figueirao",),
+        (1707652,u"Figueirópolis",u"TO","figueiropolis",),
+        (5103809,u"Figueirópolis D'Oeste",u"MT","figueiropolis d'oeste",),
+        (1707702,u"Filadélfia",u"TO","filadelfia",),
+        (2910859,u"Filadélfia",u"BA","filadelfia",),
+        (2910909,u"Firmino Alves",u"BA","firmino alves",),
+        (5207808,u"Firminópolis",u"GO","firminopolis",),
+        (2702801,u"Flexeiras",u"AL","flexeiras",),
+        (4107850,u"Flor da Serra do Sul",u"PR","flor da serra do sul",),
+        (4205357,u"Flor do Sertão",u"SC","flor do sertao",),
+        (3515806,u"Flora Rica",u"SP","flora rica",),
+        (4107801,u"Floraí",u"PR","florai",),
+        (2403806,u"Florânia",u"RN","florania",),
+        (3515905,u"Floreal",u"SP","floreal",),
+        (2605608,u"Flores",u"PE","flores",),
+        (4308201,u"Flores da Cunha",u"RS","flores da cunha",),
+        (5207907,u"Flores de Goiás",u"GO","flores de goias",),
+        (2203800,u"Flores do Piauí",u"PI","flores do piaui",),
+        (2605707,u"Floresta",u"PE","floresta",),
+        (4107900,u"Floresta",u"PR","floresta",),
+        (2911006,u"Floresta Azul",u"BA","floresta azul",),
+        (1503044,u"Floresta do Araguaia",u"PA","floresta do araguaia",),
+        (2203859,u"Floresta do Piauí",u"PI","floresta do piaui",),
+        (3126000,u"Florestal",u"MG","florestal",),
+        (4108007,u"Florestópolis",u"PR","florestopolis",),
+        (2203909,u"Floriano",u"PI","floriano",),
+        (4308250,u"Floriano Peixoto",u"RS","floriano peixoto",),
+        (4205407,u"Florianópolis",u"SC","florianopolis",),
+        (4108106,u"Flórida",u"PR","florida",),
+        (3516002,u"Flórida Paulista",u"SP","florida paulista",),
+        (3516101,u"Florínia",u"SP","florinia",),
+        (1301605,u"Fonte Boa",u"AM","fonte boa",),
+        (4308300,u"Fontoura Xavier",u"RS","fontoura xavier",),
+        (3126109,u"Formiga",u"MG","formiga",),
+        (4308409,u"Formigueiro",u"RS","formigueiro",),
+        (5208004,u"Formosa",u"GO","formosa",),
+        (2104099,u"Formosa da Serra Negra",u"MA","formosa da serra negra",),
+        (4108205,u"Formosa do Oeste",u"PR","formosa do oeste",),
+        (2911105,u"Formosa do Rio Preto",u"BA","formosa do rio preto",),
+        (4205431,u"Formosa do Sul",u"SC","formosa do sul",),
+        (3126208,u"Formoso",u"MG","formoso",),
+        (5208103,u"Formoso",u"GO","formoso",),
+        (1708205,u"Formoso do Araguaia",u"TO","formoso do araguaia",),
+        (4308433,u"Forquetinha",u"RS","forquetinha",),
+        (2304350,u"Forquilha",u"CE","forquilha",),
+        (4205456,u"Forquilhinha",u"SC","forquilhinha",),
+        (2304400,u"Fortaleza",u"CE","fortaleza",),
+        (3126307,u"Fortaleza de Minas",u"MG","fortaleza de minas",),
+        (1708254,u"Fortaleza do Tabocão",u"TO","fortaleza do tabocao",),
+        (2104107,u"Fortaleza dos Nogueiras",u"MA","fortaleza dos nogueiras",),
+        (4308458,u"Fortaleza dos Valos",u"RS","fortaleza dos valos",),
+        (2304459,u"Fortim",u"CE","fortim",),
+        (2104206,u"Fortuna",u"MA","fortuna",),
+        (3126406,u"Fortuna de Minas",u"MG","fortuna de minas",),
+        (4108304,u"Foz do Iguaçu",u"PR","foz do iguacu",),
+        (4108452,u"Foz do Jordão",u"PR","foz do jordao",),
+        (4205506,u"Fraiburgo",u"SC","fraiburgo",),
+        (3516200,u"Franca",u"SP","franca",),
+        (2204006,u"Francinópolis",u"PI","francinopolis",),
+        (4108320,u"Francisco Alves",u"PR","francisco alves",),
+        (2204105,u"Francisco Ayres",u"PI","francisco ayres",),
+        (3126505,u"Francisco Badaró",u"MG","francisco badaro",),
+        (4108403,u"Francisco Beltrão",u"PR","francisco beltrao",),
+        (2403905,u"Francisco Dantas",u"RN","francisco dantas",),
+        (3126604,u"Francisco Dumont",u"MG","francisco dumont",),
+        (2204154,u"Francisco Macedo",u"PI","francisco macedo",),
+        (3516309,u"Francisco Morato",u"SP","francisco morato",),
+        (3126703,u"Francisco Sá",u"MG","francisco sa",),
+        (2204204,u"Francisco Santos",u"PI","francisco santos",),
+        (3126752,u"Franciscópolis",u"MG","franciscopolis",),
+        (3516408,u"Franco da Rocha",u"SP","franco da rocha",),
+        (2304509,u"Frecheirinha",u"CE","frecheirinha",),
+        (4308508,u"Frederico Westphalen",u"RS","frederico westphalen",),
+        (3126802,u"Frei Gaspar",u"MG","frei gaspar",),
+        (3126901,u"Frei Inocêncio",u"MG","frei inocencio",),
+        (3126950,u"Frei Lagonegro",u"MG","frei lagonegro",),
+        (2506202,u"Frei Martinho",u"PB","frei martinho",),
+        (2605806,u"Frei Miguelinho",u"PE","frei miguelinho",),
+        (2802304,u"Frei Paulo",u"SE","frei paulo",),
+        (4205555,u"Frei Rogério",u"SC","frei rogerio",),
+        (3127008,u"Fronteira",u"MG","fronteira",),
+        (3127057,u"Fronteira dos Vales",u"MG","fronteira dos vales",),
+        (2204303,u"Fronteiras",u"PI","fronteiras",),
+        (3127073,u"Fruta de Leite",u"MG","fruta de leite",),
+        (3127107,u"Frutal",u"MG","frutal",),
+        (2404002,u"Frutuoso Gomes",u"RN","frutuoso gomes",),
+        (3202207,u"Fundão",u"ES","fundao",),
+        (3127206,u"Funilândia",u"MG","funilandia",),
+        (3516507,u"Gabriel Monteiro",u"SP","gabriel monteiro",),
+        (2506251,u"Gado Bravo",u"PB","gado bravo",),
+        (3516606,u"Gália",u"SP","galia",),
+        (3127305,u"Galiléia",u"MG","galileia",),
+        (2404101,u"Galinhos",u"RN","galinhos",),
+        (4205605,u"Galvão",u"SC","galvao",),
+        (2605905,u"Gameleira",u"PE","gameleira",),
+        (5208152,u"Gameleira de Goiás",u"GO","gameleira de goias",),
+        (3127339,u"Gameleiras",u"MG","gameleiras",),
+        (2911204,u"Gandu",u"BA","gandu",),
+        (2606002,u"Garanhuns",u"PE","garanhuns",),
+        (2802403,u"Gararu",u"SE","gararu",),
+        (3516705,u"Garça",u"SP","garca",),
+        (4308607,u"Garibaldi",u"RS","garibaldi",),
+        (4205704,u"Garopaba",u"SC","garopaba",),
+        (1503077,u"Garrafão do Norte",u"PA","garrafao do norte",),
+        (4308656,u"Garruchos",u"RS","garruchos",),
+        (4205803,u"Garuva",u"SC","garuva",),
+        (4205902,u"Gaspar",u"SC","gaspar",),
+        (3516804,u"Gastão Vidigal",u"SP","gastao vidigal",),
+        (5103858,u"Gaúcha do Norte",u"MT","gaucha do norte",),
+        (4308706,u"Gaurama",u"RS","gaurama",),
+        (2911253,u"Gavião",u"BA","gaviao",),
+        (3516853,u"Gavião Peixoto",u"SP","gaviao peixoto",),
+        (2204352,u"Geminiano",u"PI","geminiano",),
+        (4308805,u"General Câmara",u"RS","general camara",),
+        (4108502,u"General Carneiro",u"PR","general carneiro",),
+        (5103908,u"General Carneiro",u"MT","general carneiro",),
+        (2802502,u"General Maynard",u"SE","general maynard",),
+        (3516903,u"General Salgado",u"SP","general salgado",),
+        (2304608,u"General Sampaio",u"CE","general sampaio",),
+        (4308854,u"Gentil",u"RS","gentil",),
+        (2911303,u"Gentio do Ouro",u"BA","gentio do ouro",),
+        (3517000,u"Getulina",u"SP","getulina",),
+        (4308904,u"Getúlio Vargas",u"RS","getulio vargas",),
+        (2204402,u"Gilbués",u"PI","gilbues",),
+        (2702900,u"Girau do Ponciano",u"AL","girau do ponciano",),
+        (4309001,u"Giruá",u"RS","girua",),
+        (3127354,u"Glaucilândia",u"MG","glaucilandia",),
+        (3517109,u"Glicério",u"SP","glicerio",),
+        (2911402,u"Glória",u"BA","gloria",),
+        (5103957,u"Glória D'Oeste",u"MT","gloria d'oeste",),
+        (5004007,u"Glória de Dourados",u"MS","gloria de dourados",),
+        (2606101,u"Glória do Goitá",u"PE","gloria do goita",),
+        (4309050,u"Glorinha",u"RS","glorinha",),
+        (2104305,u"Godofredo Viana",u"MA","godofredo viana",),
+        (4108551,u"Godoy Moreira",u"PR","godoy moreira",),
+        (3127370,u"Goiabeira",u"MG","goiabeira",),
+        (2606200,u"Goiana",u"PE","goiana",),
+        (3127388,u"Goianá",u"MG","goiana",),
+        (5208400,u"Goianápolis",u"GO","goianapolis",),
+        (5208509,u"Goiandira",u"GO","goiandira",),
+        (5208608,u"Goianésia",u"GO","goianesia",),
+        (1503093,u"Goianésia do Pará",u"PA","goianesia do para",),
+        (5208707,u"Goiânia",u"GO","goiania",),
+        (2404200,u"Goianinha",u"RN","goianinha",),
+        (5208806,u"Goianira",u"GO","goianira",),
+        (1708304,u"Goianorte",u"TO","goianorte",),
+        (5208905,u"Goiás",u"GO","goias",),
+        (1709005,u"Goiatins",u"TO","goiatins",),
+        (5209101,u"Goiatuba",u"GO","goiatuba",),
+        (4108601,u"Goioerê",u"PR","goioere",),
+        (4108650,u"Goioxim",u"PR","goioxim",),
+        (3127404,u"Gonçalves",u"MG","goncalves",),
+        (2104404,u"Gonçalves Dias",u"MA","goncalves dias",),
+        (2911501,u"Gongogi",u"BA","gongogi",),
+        (3127503,u"Gonzaga",u"MG","gonzaga",),
+        (3127602,u"Gouveia",u"MG","gouveia",),
+        (5209150,u"Gouvelândia",u"GO","gouvelandia",),
+        (2104503,u"Governador Archer",u"MA","governador archer",),
+        (4206009,u"Governador Celso Ramos",u"SC","governador celso ramos",),
+        (2404309,u"Governador Dix-Sept Rosado",u"RN","governador dix-sept rosado",),
+        (2104552,u"Governador Edison Lobão",u"MA","governador edison lobao",),
+        (2104602,u"Governador Eugênio Barros",u"MA","governador eugenio barros",),
+        (1101005,u"Governador Jorge Teixeira",u"RO","governador jorge teixeira",),
+        (3202256,u"Governador Lindenberg",u"ES","governador lindenberg",),
+        (2104628,u"Governador Luiz Rocha",u"MA","governador luiz rocha",),
+        (2911600,u"Governador Mangabeira",u"BA","governador mangabeira",),
+        (2104651,u"Governador Newton Bello",u"MA","governador newton bello",),
+        (2104677,u"Governador Nunes Freire",u"MA","governador nunes freire",),
+        (3127701,u"Governador Valadares",u"MG","governador valadares",),
+        (2304657,u"Graça",u"CE","graca",),
+        (2104701,u"Graça Aranha",u"MA","graca aranha",),
+        (2802601,u"Gracho Cardoso",u"SE","gracho cardoso",),
+        (2104800,u"Grajaú",u"MA","grajau",),
+        (4309100,u"Gramado",u"RS","gramado",),
+        (4309126,u"Gramado dos Loureiros",u"RS","gramado dos loureiros",),
+        (4309159,u"Gramado Xavier",u"RS","gramado xavier",),
+        (4108700,u"Grandes Rios",u"PR","grandes rios",),
+        (2606309,u"Granito",u"PE","granito",),
+        (2304707,u"Granja",u"CE","granja",),
+        (2304806,u"Granjeiro",u"CE","granjeiro",),
+        (3127800,u"Grão Mogol",u"MG","grao mogol",),
+        (4206108,u"Grão Pará",u"SC","grao para",),
+        (2606408,u"Gravatá",u"PE","gravata",),
+        (4309209,u"Gravataí",u"RS","gravatai",),
+        (4206207,u"Gravatal",u"SC","gravatal",),
+        (2304905,u"Groaíras",u"CE","groairas",),
+        (2404408,u"Grossos",u"RN","grossos",),
+        (3127909,u"Grupiara",u"MG","grupiara",),
+        (4309258,u"Guabiju",u"RS","guabiju",),
+        (4206306,u"Guabiruba",u"SC","guabiruba",),
+        (3202306,u"Guaçuí",u"ES","guacui",),
+        (2204501,u"Guadalupe",u"PI","guadalupe",),
+        (4309308,u"Guaíba",u"RS","guaiba",),
+        (3517208,u"Guaiçara",u"SP","guaicara",),
+        (3517307,u"Guaimbê",u"SP","guaimbe",),
+        (3517406,u"Guaíra",u"SP","guaira",),
+        (4108809,u"Guaíra",u"PR","guaira",),
+        (4108908,u"Guairaçá",u"PR","guairaca",),
+        (2304954,u"Guaiúba",u"CE","guaiuba",),
+        (1301654,u"Guajará",u"AM","guajara",),
+        (1100106,u"Guajará-Mirim",u"RO","guajara-mirim",),
+        (2911659,u"Guajeru",u"BA","guajeru",),
+        (2404507,u"Guamaré",u"RN","guamare",),
+        (4108957,u"Guamiranga",u"PR","guamiranga",),
+        (2911709,u"Guanambi",u"BA","guanambi",),
+        (3128006,u"Guanhães",u"MG","guanhaes",),
+        (3128105,u"Guapé",u"MG","guape",),
+        (3517505,u"Guapiaçu",u"SP","guapiacu",),
+        (3517604,u"Guapiara",u"SP","guapiara",),
+        (3301850,u"Guapimirim",u"RJ","guapimirim",),
+        (4109005,u"Guapirama",u"PR","guapirama",),
+        (5209200,u"Guapó",u"GO","guapo",),
+        (4309407,u"Guaporé",u"RS","guapore",),
+        (4109104,u"Guaporema",u"PR","guaporema",),
+        (3517703,u"Guará",u"SP","guara",),
+        (2506301,u"Guarabira",u"PB","guarabira",),
+        (3517802,u"Guaraçaí",u"SP","guaracai",),
+        (3517901,u"Guaraci",u"SP","guaraci",),
+        (4109203,u"Guaraci",u"PR","guaraci",),
+        (3128204,u"Guaraciaba",u"MG","guaraciaba",),
+        (4206405,u"Guaraciaba",u"SC","guaraciaba",),
+        (2305001,u"Guaraciaba do Norte",u"CE","guaraciaba do norte",),
+        (3128253,u"Guaraciama",u"MG","guaraciama",),
+        (1709302,u"Guaraí",u"TO","guarai",),
+        (5209291,u"Guaraíta",u"GO","guaraita",),
+        (2305100,u"Guaramiranga",u"CE","guaramiranga",),
+        (4206504,u"Guaramirim",u"SC","guaramirim",),
+        (3128303,u"Guaranésia",u"MG","guaranesia",),
+        (3128402,u"Guarani",u"MG","guarani",),
+        (3518008,u"Guarani d'Oeste",u"SP","guarani d'oeste",),
+        (4309506,u"Guarani das Missões",u"RS","guarani das missoes",),
+        (5209408,u"Guarani de Goiás",u"GO","guarani de goias",),
+        (4109302,u"Guaraniaçu",u"PR","guaraniacu",),
+        (3518107,u"Guarantã",u"SP","guaranta",),
+        (5104104,u"Guarantã do Norte",u"MT","guaranta do norte",),
+        (3202405,u"Guarapari",u"ES","guarapari",),
+        (4109401,u"Guarapuava",u"PR","guarapuava",),
+        (4109500,u"Guaraqueçaba",u"PR","guaraquecaba",),
+        (3128501,u"Guarará",u"MG","guarara",),
+        (3518206,u"Guararapes",u"SP","guararapes",),
+        (3518305,u"Guararema",u"SP","guararema",),
+        (2911808,u"Guaratinga",u"BA","guaratinga",),
+        (3518404,u"Guaratinguetá",u"SP","guaratingueta",),
+        (4109609,u"Guaratuba",u"PR","guaratuba",),
+        (3128600,u"Guarda-Mor",u"MG","guarda-mor",),
+        (3518503,u"Guareí",u"SP","guarei",),
+        (3518602,u"Guariba",u"SP","guariba",),
+        (2204550,u"Guaribas",u"PI","guaribas",),
+        (5209457,u"Guarinos",u"GO","guarinos",),
+        (3518701,u"Guarujá",u"SP","guaruja",),
+        (4206603,u"Guarujá do Sul",u"SC","guaruja do sul",),
+        (3518800,u"Guarulhos",u"SP","guarulhos",),
+        (4206652,u"Guatambú",u"SC","guatambu",),
+        (3518859,u"Guatapará",u"SP","guatapara",),
+        (3128709,u"Guaxupé",u"MG","guaxupe",),
+        (5004106,u"Guia Lopes da Laguna",u"MS","guia lopes da laguna",),
+        (3128808,u"Guidoval",u"MG","guidoval",),
+        (2104909,u"Guimarães",u"MA","guimaraes",),
+        (3128907,u"Guimarânia",u"MG","guimarania",),
+        (5104203,u"Guiratinga",u"MT","guiratinga",),
+        (3129004,u"Guiricema",u"MG","guiricema",),
+        (3129103,u"Gurinhatã",u"MG","gurinhata",),
+        (2506400,u"Gurinhém",u"PB","gurinhem",),
+        (2506509,u"Gurjão",u"PB","gurjao",),
+        (1503101,u"Gurupá",u"PA","gurupa",),
+        (1709500,u"Gurupi",u"TO","gurupi",),
+        (3518909,u"Guzolândia",u"SP","guzolandia",),
+        (4309555,u"Harmonia",u"RS","harmonia",),
+        (5209606,u"Heitoraí",u"GO","heitorai",),
+        (3129202,u"Heliodora",u"MG","heliodora",),
+        (2911857,u"Heliópolis",u"BA","heliopolis",),
+        (3519006,u"Herculândia",u"SP","herculandia",),
+        (4307104,u"Herval",u"RS","herval",),
+        (4206702,u"Herval d'Oeste",u"SC","herval d'oeste",),
+        (4309571,u"Herveiras",u"RS","herveiras",),
+        (2305209,u"Hidrolândia",u"CE","hidrolandia",),
+        (5209705,u"Hidrolândia",u"GO","hidrolandia",),
+        (5209804,u"Hidrolina",u"GO","hidrolina",),
+        (3519055,u"Holambra",u"SP","holambra",),
+        (4109658,u"Honório Serpa",u"PR","honorio serpa",),
+        (2305233,u"Horizonte",u"CE","horizonte",),
+        (4309605,u"Horizontina",u"RS","horizontina",),
+        (3519071,u"Hortolândia",u"SP","hortolandia",),
+        (2204600,u"Hugo Napoleão",u"PI","hugo napoleao",),
+        (4309654,u"Hulha Negra",u"RS","hulha negra",),
+        (1301704,u"Humaitá",u"AM","humaita",),
+        (4309704,u"Humaitá",u"RS","humaita",),
+        (2105005,u"Humberto de Campos",u"MA","humberto de campos",),
+        (3519105,u"Iacanga",u"SP","iacanga",),
+        (5209903,u"Iaciara",u"GO","iaciara",),
+        (3519204,u"Iacri",u"SP","iacri",),
+        (2911907,u"Iaçu",u"BA","iacu",),
+        (3129301,u"Iapu",u"MG","iapu",),
+        (3519253,u"Iaras",u"SP","iaras",),
+        (2606507,u"Iati",u"PE","iati",),
+        (4109708,u"Ibaiti",u"PR","ibaiti",),
+        (4309753,u"Ibarama",u"RS","ibarama",),
+        (2305266,u"Ibaretama",u"CE","ibaretama",),
+        (3519303,u"Ibaté",u"SP","ibate",),
+        (2703007,u"Ibateguara",u"AL","ibateguara",),
+        (3202454,u"Ibatiba",u"ES","ibatiba",),
+        (4109757,u"Ibema",u"PR","ibema",),
+        (3129400,u"Ibertioga",u"MG","ibertioga",),
+        (3129509,u"Ibiá",u"MG","ibia",),
+        (4309803,u"Ibiaçá",u"RS","ibiaca",),
+        (3129608,u"Ibiaí",u"MG","ibiai",),
+        (4206751,u"Ibiam",u"SC","ibiam",),
+        (2305308,u"Ibiapina",u"CE","ibiapina",),
+        (2506608,u"Ibiara",u"PB","ibiara",),
+        (2912004,u"Ibiassucê",u"BA","ibiassuce",),
+        (2912103,u"Ibicaraí",u"BA","ibicarai",),
+        (4206801,u"Ibicaré",u"SC","ibicare",),
+        (2912202,u"Ibicoara",u"BA","ibicoara",),
+        (2912301,u"Ibicuí",u"BA","ibicui",),
+        (2305332,u"Ibicuitinga",u"CE","ibicuitinga",),
+        (2606606,u"Ibimirim",u"PE","ibimirim",),
+        (2912400,u"Ibipeba",u"BA","ibipeba",),
+        (2912509,u"Ibipitanga",u"BA","ibipitanga",),
+        (4109807,u"Ibiporã",u"PR","ibipora",),
+        (2912608,u"Ibiquera",u"BA","ibiquera",),
+        (3519402,u"Ibirá",u"SP","ibira",),
+        (3129657,u"Ibiracatu",u"MG","ibiracatu",),
+        (3129707,u"Ibiraci",u"MG","ibiraci",),
+        (3202504,u"Ibiraçu",u"ES","ibiracu",),
+        (4309902,u"Ibiraiaras",u"RS","ibiraiaras",),
+        (2606705,u"Ibirajuba",u"PE","ibirajuba",),
+        (4206900,u"Ibirama",u"SC","ibirama",),
+        (2912707,u"Ibirapitanga",u"BA","ibirapitanga",),
+        (2912806,u"Ibirapuã",u"BA","ibirapua",),
+        (4309951,u"Ibirapuitã",u"RS","ibirapuita",),
+        (3519501,u"Ibirarema",u"SP","ibirarema",),
+        (2912905,u"Ibirataia",u"BA","ibirataia",),
+        (3129806,u"Ibirité",u"MG","ibirite",),
+        (4310009,u"Ibirubá",u"RS","ibiruba",),
+        (2913002,u"Ibitiara",u"BA","ibitiara",),
+        (3519600,u"Ibitinga",u"SP","ibitinga",),
+        (3202553,u"Ibitirama",u"ES","ibitirama",),
+        (2913101,u"Ibititá",u"BA","ibitita",),
+        (3129905,u"Ibitiúra de Minas",u"MG","ibitiura de minas",),
+        (3130002,u"Ibituruna",u"MG","ibituruna",),
+        (3519709,u"Ibiúna",u"SP","ibiuna",),
+        (2913200,u"Ibotirama",u"BA","ibotirama",),
+        (2305357,u"Icapuí",u"CE","icapui",),
+        (4207007,u"Içara",u"SC","icara",),
+        (3130051,u"Icaraí de Minas",u"MG","icarai de minas",),
+        (4109906,u"Icaraíma",u"PR","icaraima",),
+        (2105104,u"Icatu",u"MA","icatu",),
+        (3519808,u"Icém",u"SP","icem",),
+        (2913309,u"Ichu",u"BA","ichu",),
+        (2305407,u"Icó",u"CE","ico",),
+        (3202603,u"Iconha",u"ES","iconha",),
+        (2404606,u"Ielmo Marinho",u"RN","ielmo marinho",),
+        (3519907,u"Iepê",u"SP","iepe",),
+        (2703106,u"Igaci",u"AL","igaci",),
+        (2913408,u"Igaporã",u"BA","igapora",),
+        (3520004,u"Igaraçu do Tietê",u"SP","igaracu do tiete",),
+        (2502607,u"Igaracy",u"PB","igaracy",),
+        (3520103,u"Igarapava",u"SP","igarapava",),
+        (3130101,u"Igarapé",u"MG","igarape",),
+        (2105153,u"Igarapé do Meio",u"MA","igarape do meio",),
+        (2105203,u"Igarapé Grande",u"MA","igarape grande",),
+        (1503200,u"Igarapé-Açu",u"PA","igarape-acu",),
+        (1503309,u"Igarapé-Miri",u"PA","igarape-miri",),
+        (2606804,u"Igarassu",u"PE","igarassu",),
+        (3520202,u"Igaratá",u"SP","igarata",),
+        (3130200,u"Igaratinga",u"MG","igaratinga",),
+        (2913457,u"Igrapiúna",u"BA","igrapiuna",),
+        (2703205,u"Igreja Nova",u"AL","igreja nova",),
+        (4310108,u"Igrejinha",u"RS","igrejinha",),
+        (3301876,u"Iguaba Grande",u"RJ","iguaba grande",),
+        (2913507,u"Iguaí",u"BA","iguai",),
+        (3520301,u"Iguape",u"SP","iguape",),
+        (2606903,u"Iguaraci",u"PE","iguaraci",),
+        (4110003,u"Iguaraçu",u"PR","iguaracu",),
+        (3130309,u"Iguatama",u"MG","iguatama",),
+        (5004304,u"Iguatemi",u"MS","iguatemi",),
+        (2305506,u"Iguatu",u"CE","iguatu",),
+        (4110052,u"Iguatu",u"PR","iguatu",),
+        (3130408,u"Ijaci",u"MG","ijaci",),
+        (4310207,u"Ijuí",u"RS","ijui",),
+        (3520426,u"Ilha Comprida",u"SP","ilha comprida",),
+        (2802700,u"Ilha das Flores",u"SE","ilha das flores",),
+        (2607604,u"Ilha de Itamaracá",u"PE","ilha de itamaraca",),
+        (2204659,u"Ilha Grande",u"PI","ilha grande",),
+        (3520442,u"Ilha Solteira",u"SP","ilha solteira",),
+        (3520400,u"Ilhabela",u"SP","ilhabela",),
+        (2913606,u"Ilhéus",u"BA","ilheus",),
+        (4207106,u"Ilhota",u"SC","ilhota",),
+        (3130507,u"Ilicínea",u"MG","ilicinea",),
+        (4310306,u"Ilópolis",u"RS","ilopolis",),
+        (2506707,u"Imaculada",u"PB","imaculada",),
+        (4207205,u"Imaruí",u"SC","imarui",),
+        (4110078,u"Imbaú",u"PR","imbau",),
+        (4310330,u"Imbé",u"RS","imbe",),
+        (3130556,u"Imbé de Minas",u"MG","imbe de minas",),
+        (4207304,u"Imbituba",u"SC","imbituba",),
+        (4110102,u"Imbituva",u"PR","imbituva",),
+        (4207403,u"Imbuia",u"SC","imbuia",),
+        (4310363,u"Imigrante",u"RS","imigrante",),
+        (2105302,u"Imperatriz",u"MA","imperatriz",),
+        (4110201,u"Inácio Martins",u"PR","inacio martins",),
+        (5209937,u"Inaciolândia",u"GO","inaciolandia",),
+        (2607000,u"Inajá",u"PE","inaja",),
+        (4110300,u"Inajá",u"PR","inaja",),
+        (3130606,u"Inconfidentes",u"MG","inconfidentes",),
+        (3130655,u"Indaiabira",u"MG","indaiabira",),
+        (4207502,u"Indaial",u"SC","indaial",),
+        (3520509,u"Indaiatuba",u"SP","indaiatuba",),
+        (2305605,u"Independência",u"CE","independencia",),
+        (4310405,u"Independência",u"RS","independencia",),
+        (3520608,u"Indiana",u"SP","indiana",),
+        (3130705,u"Indianópolis",u"MG","indianopolis",),
+        (4110409,u"Indianópolis",u"PR","indianopolis",),
+        (3520707,u"Indiaporã",u"SP","indiapora",),
+        (5209952,u"Indiara",u"GO","indiara",),
+        (2802809,u"Indiaroba",u"SE","indiaroba",),
+        (5104500,u"Indiavaí",u"MT","indiavai",),
+        (2506806,u"Ingá",u"PB","inga",),
+        (3130804,u"Ingaí",u"MG","ingai",),
+        (2607109,u"Ingazeira",u"PE","ingazeira",),
+        (4310413,u"Inhacorá",u"RS","inhacora",),
+        (2913705,u"Inhambupe",u"BA","inhambupe",),
+        (1503408,u"Inhangapi",u"PA","inhangapi",),
+        (2703304,u"Inhapi",u"AL","inhapi",),
+        (3130903,u"Inhapim",u"MG","inhapim",),
+        (3131000,u"Inhaúma",u"MG","inhauma",),
+        (2204709,u"Inhuma",u"PI","inhuma",),
+        (5210000,u"Inhumas",u"GO","inhumas",),
+        (3131109,u"Inimutaba",u"MG","inimutaba",),
+        (5004403,u"Inocência",u"MS","inocencia",),
+        (3520806,u"Inúbia Paulista",u"SP","inubia paulista",),
+        (4207577,u"Iomerê",u"SC","iomere",),
+        (3131158,u"Ipaba",u"MG","ipaba",),
+        (5210109,u"Ipameri",u"GO","ipameri",),
+        (3131208,u"Ipanema",u"MG","ipanema",),
+        (2404705,u"Ipanguaçu",u"RN","ipanguacu",),
+        (2305654,u"Ipaporanga",u"CE","ipaporanga",),
+        (3131307,u"Ipatinga",u"MG","ipatinga",),
+        (2305704,u"Ipaumirim",u"CE","ipaumirim",),
+        (3520905,u"Ipaussu",u"SP","ipaussu",),
+        (4310439,u"Ipê",u"RS","ipe",),
+        (2913804,u"Ipecaetá",u"BA","ipecaeta",),
+        (3521002,u"Iperó",u"SP","ipero",),
+        (3521101,u"Ipeúna",u"SP","ipeuna",),
+        (3131406,u"Ipiaçu",u"MG","ipiacu",),
+        (2913903,u"Ipiaú",u"BA","ipiau",),
+        (3521150,u"Ipiguá",u"SP","ipigua",),
+        (2914000,u"Ipirá",u"BA","ipira",),
+        (4207601,u"Ipira",u"SC","ipira",),
+        (4110508,u"Ipiranga",u"PR","ipiranga",),
+        (5210158,u"Ipiranga de Goiás",u"GO","ipiranga de goias",),
+        (5104526,u"Ipiranga do Norte",u"MT","ipiranga do norte",),
+        (2204808,u"Ipiranga do Piauí",u"PI","ipiranga do piaui",),
+        (4310462,u"Ipiranga do Sul",u"RS","ipiranga do sul",),
+        (1301803,u"Ipixuna",u"AM","ipixuna",),
+        (1503457,u"Ipixuna do Pará",u"PA","ipixuna do para",),
+        (2607208,u"Ipojuca",u"PE","ipojuca",),
+        (4110607,u"Iporã",u"PR","ipora",),
+        (5210208,u"Iporá",u"GO","ipora",),
+        (4207650,u"Iporã do Oeste",u"SC","ipora do oeste",),
+        (3521200,u"Iporanga",u"SP","iporanga",),
+        (2305803,u"Ipu",u"CE","ipu",),
+        (3521309,u"Ipuã",u"SP","ipua",),
+        (4207684,u"Ipuaçu",u"SC","ipuacu",),
+        (2607307,u"Ipubi",u"PE","ipubi",),
+        (2404804,u"Ipueira",u"RN","ipueira",),
+        (1709807,u"Ipueiras",u"TO","ipueiras",),
+        (2305902,u"Ipueiras",u"CE","ipueiras",),
+        (3131505,u"Ipuiúna",u"MG","ipuiuna",),
+        (4207700,u"Ipumirim",u"SC","ipumirim",),
+        (2914109,u"Ipupiara",u"BA","ipupiara",),
+        (1400282,u"Iracema",u"RR","iracema",),
+        (2306009,u"Iracema",u"CE","iracema",),
+        (4110656,u"Iracema do Oeste",u"PR","iracema do oeste",),
+        (3521408,u"Iracemápolis",u"SP","iracemapolis",),
+        (4207759,u"Iraceminha",u"SC","iraceminha",),
+        (4310504,u"Iraí",u"RS","irai",),
+        (3131604,u"Iraí de Minas",u"MG","irai de minas",),
+        (2914208,u"Irajuba",u"BA","irajuba",),
+        (2914307,u"Iramaia",u"BA","iramaia",),
+        (1301852,u"Iranduba",u"AM","iranduba",),
+        (4207809,u"Irani",u"SC","irani",),
+        (3521507,u"Irapuã",u"SP","irapua",),
+        (3521606,u"Irapuru",u"SP","irapuru",),
+        (2914406,u"Iraquara",u"BA","iraquara",),
+        (2914505,u"Irará",u"BA","irara",),
+        (4110706,u"Irati",u"PR","irati",),
+        (4207858,u"Irati",u"SC","irati",),
+        (2306108,u"Irauçuba",u"CE","iraucuba",),
+        (2914604,u"Irecê",u"BA","irece",),
+        (4110805,u"Iretama",u"PR","iretama",),
+        (4207908,u"Irineópolis",u"SC","irineopolis",),
+        (1503507,u"Irituia",u"PA","irituia",),
+        (3202652,u"Irupi",u"ES","irupi",),
+        (2204907,u"Isaías Coelho",u"PI","isaias coelho",),
+        (5210307,u"Israelândia",u"GO","israelandia",),
+        (4208005,u"Itá",u"SC","ita",),
+        (4310538,u"Itaara",u"RS","itaara",),
+        (2506905,u"Itabaiana",u"PB","itabaiana",),
+        (2802908,u"Itabaiana",u"SE","itabaiana",),
+        (2803005,u"Itabaianinha",u"SE","itabaianinha",),
+        (2914653,u"Itabela",u"BA","itabela",),
+        (3521705,u"Itaberá",u"SP","itabera",),
+        (2914703,u"Itaberaba",u"BA","itaberaba",),
+        (5210406,u"Itaberaí",u"GO","itaberai",),
+        (2803104,u"Itabi",u"SE","itabi",),
+        (3131703,u"Itabira",u"MG","itabira",),
+        (3131802,u"Itabirinha",u"MG","itabirinha",),
+        (3131901,u"Itabirito",u"MG","itabirito",),
+        (3301900,u"Itaboraí",u"RJ","itaborai",),
+        (2914802,u"Itabuna",u"BA","itabuna",),
+        (1710508,u"Itacajá",u"TO","itacaja",),
+        (3132008,u"Itacambira",u"MG","itacambira",),
+        (3132107,u"Itacarambi",u"MG","itacarambi",),
+        (2914901,u"Itacaré",u"BA","itacare",),
+        (1301902,u"Itacoatiara",u"AM","itacoatiara",),
+        (2607406,u"Itacuruba",u"PE","itacuruba",),
+        (4310553,u"Itacurubi",u"RS","itacurubi",),
+        (2915007,u"Itaeté",u"BA","itaete",),
+        (2915106,u"Itagi",u"BA","itagi",),
+        (2915205,u"Itagibá",u"BA","itagiba",),
+        (2915304,u"Itagimirim",u"BA","itagimirim",),
+        (3202702,u"Itaguaçu",u"ES","itaguacu",),
+        (2915353,u"Itaguaçu da Bahia",u"BA","itaguacu da bahia",),
+        (3302007,u"Itaguaí",u"RJ","itaguai",),
+        (4110904,u"Itaguajé",u"PR","itaguaje",),
+        (3132206,u"Itaguara",u"MG","itaguara",),
+        (5210562,u"Itaguari",u"GO","itaguari",),
+        (5210604,u"Itaguaru",u"GO","itaguaru",),
+        (1710706,u"Itaguatins",u"TO","itaguatins",),
+        (3521804,u"Itaí",u"SP","itai",),
+        (2607505,u"Itaíba",u"PE","itaiba",),
+        (2306207,u"Itaiçaba",u"CE","itaicaba",),
+        (2205003,u"Itainópolis",u"PI","itainopolis",),
+        (4208104,u"Itaiópolis",u"SC","itaiopolis",),
+        (2105351,u"Itaipava do Grajaú",u"MA","itaipava do grajau",),
+        (3132305,u"Itaipé",u"MG","itaipe",),
+        (4110953,u"Itaipulândia",u"PR","itaipulandia",),
+        (2306256,u"Itaitinga",u"CE","itaitinga",),
+        (1503606,u"Itaituba",u"PA","itaituba",),
+        (2404853,u"Itajá",u"RN","itaja",),
+        (5210802,u"Itajá",u"GO","itaja",),
+        (4208203,u"Itajaí",u"SC","itajai",),
+        (3521903,u"Itajobi",u"SP","itajobi",),
+        (3522000,u"Itaju",u"SP","itaju",),
+        (2915403,u"Itaju do Colônia",u"BA","itaju do colonia",),
+        (3132404,u"Itajubá",u"MG","itajuba",),
+        (2915502,u"Itajuípe",u"BA","itajuipe",),
+        (3302056,u"Italva",u"RJ","italva",),
+        (2915601,u"Itamaraju",u"BA","itamaraju",),
+        (3132503,u"Itamarandiba",u"MG","itamarandiba",),
+        (1301951,u"Itamarati",u"AM","itamarati",),
+        (3132602,u"Itamarati de Minas",u"MG","itamarati de minas",),
+        (2915700,u"Itamari",u"BA","itamari",),
+        (3132701,u"Itambacuri",u"MG","itambacuri",),
+        (4111001,u"Itambaracá",u"PR","itambaraca",),
+        (2607653,u"Itambé",u"PE","itambe",),
+        (2915809,u"Itambé",u"BA","itambe",),
+        (4111100,u"Itambé",u"PR","itambe",),
+        (3132800,u"Itambé do Mato Dentro",u"MG","itambe do mato dentro",),
+        (3132909,u"Itamogi",u"MG","itamogi",),
+        (3133006,u"Itamonte",u"MG","itamonte",),
+        (2915908,u"Itanagra",u"BA","itanagra",),
+        (3522109,u"Itanhaém",u"SP","itanhaem",),
+        (3133105,u"Itanhandu",u"MG","itanhandu",),
+        (5104542,u"Itanhangá",u"MT","itanhanga",),
+        (2916005,u"Itanhém",u"BA","itanhem",),
+        (3133204,u"Itanhomi",u"MG","itanhomi",),
+        (3133303,u"Itaobim",u"MG","itaobim",),
+        (3522158,u"Itaóca",u"SP","itaoca",),
+        (3302106,u"Itaocara",u"RJ","itaocara",),
+        (5210901,u"Itapaci",u"GO","itapaci",),
+        (2306306,u"Itapagé",u"CE","itapage",),
+        (3133402,u"Itapagipe",u"MG","itapagipe",),
+        (2916104,u"Itaparica",u"BA","itaparica",),
+        (2916203,u"Itapé",u"BA","itape",),
+        (2916302,u"Itapebi",u"BA","itapebi",),
+        (3133501,u"Itapecerica",u"MG","itapecerica",),
+        (3522208,u"Itapecerica da Serra",u"SP","itapecerica da serra",),
+        (2105401,u"Itapecuru Mirim",u"MA","itapecuru mirim",),
+        (4111209,u"Itapejara d'Oeste",u"PR","itapejara d'oeste",),
+        (4208302,u"Itapema",u"SC","itapema",),
+        (3202801,u"Itapemirim",u"ES","itapemirim",),
+        (4111258,u"Itaperuçu",u"PR","itaperucu",),
+        (3302205,u"Itaperuna",u"RJ","itaperuna",),
+        (2607703,u"Itapetim",u"PE","itapetim",),
+        (2916401,u"Itapetinga",u"BA","itapetinga",),
+        (3522307,u"Itapetininga",u"SP","itapetininga",),
+        (3133600,u"Itapeva",u"MG","itapeva",),
+        (3522406,u"Itapeva",u"SP","itapeva",),
+        (3522505,u"Itapevi",u"SP","itapevi",),
+        (2916500,u"Itapicuru",u"BA","itapicuru",),
+        (2306405,u"Itapipoca",u"CE","itapipoca",),
+        (3522604,u"Itapira",u"SP","itapira",),
+        (1302009,u"Itapiranga",u"AM","itapiranga",),
+        (4208401,u"Itapiranga",u"SC","itapiranga",),
+        (5211008,u"Itapirapuã",u"GO","itapirapua",),
+        (3522653,u"Itapirapuã Paulista",u"SP","itapirapua paulista",),
+        (1710904,u"Itapiratins",u"TO","itapiratins",),
+        (2607752,u"Itapissuma",u"PE","itapissuma",),
+        (2916609,u"Itapitanga",u"BA","itapitanga",),
+        (2306504,u"Itapiúna",u"CE","itapiuna",),
+        (4208450,u"Itapoá",u"SC","itapoa",),
+        (3522703,u"Itápolis",u"SP","itapolis",),
+        (5004502,u"Itaporã",u"MS","itapora",),
+        (1711100,u"Itaporã do Tocantins",u"TO","itapora do tocantins",),
+        (2507002,u"Itaporanga",u"PB","itaporanga",),
+        (3522802,u"Itaporanga",u"SP","itaporanga",),
+        (2803203,u"Itaporanga d'Ajuda",u"SE","itaporanga d'ajuda",),
+        (2507101,u"Itapororoca",u"PB","itapororoca",),
+        (1101104,u"Itapuã do Oeste",u"RO","itapua do oeste",),
+        (4310579,u"Itapuca",u"RS","itapuca",),
+        (3522901,u"Itapuí",u"SP","itapui",),
+        (3523008,u"Itapura",u"SP","itapura",),
+        (5211206,u"Itapuranga",u"GO","itapuranga",),
+        (3523107,u"Itaquaquecetuba",u"SP","itaquaquecetuba",),
+        (2916708,u"Itaquara",u"BA","itaquara",),
+        (4310603,u"Itaqui",u"RS","itaqui",),
+        (5004601,u"Itaquiraí",u"MS","itaquirai",),
+        (2607802,u"Itaquitinga",u"PE","itaquitinga",),
+        (3202900,u"Itarana",u"ES","itarana",),
+        (2916807,u"Itarantim",u"BA","itarantim",),
+        (3523206,u"Itararé",u"SP","itarare",),
+        (2306553,u"Itarema",u"CE","itarema",),
+        (3523305,u"Itariri",u"SP","itariri",),
+        (5211305,u"Itarumã",u"GO","itaruma",),
+        (4310652,u"Itati",u"RS","itati",),
+        (3302254,u"Itatiaia",u"RJ","itatiaia",),
+        (3133709,u"Itatiaiuçu",u"MG","itatiaiucu",),
+        (3523404,u"Itatiba",u"SP","itatiba",),
+        (4310702,u"Itatiba do Sul",u"RS","itatiba do sul",),
+        (2916856,u"Itatim",u"BA","itatim",),
+        (3523503,u"Itatinga",u"SP","itatinga",),
+        (2306603,u"Itatira",u"CE","itatira",),
+        (2507200,u"Itatuba",u"PB","itatuba",),
+        (2404903,u"Itaú",u"RN","itau",),
+        (3133758,u"Itaú de Minas",u"MG","itau de minas",),
+        (5104559,u"Itaúba",u"MT","itauba",),
+        (1600253,u"Itaubal",u"AP","itaubal",),
+        (5211404,u"Itauçu",u"GO","itaucu",),
+        (2205102,u"Itaueira",u"PI","itaueira",),
+        (3133808,u"Itaúna",u"MG","itauna",),
+        (4111308,u"Itaúna do Sul",u"PR","itauna do sul",),
+        (3133907,u"Itaverava",u"MG","itaverava",),
+        (3134004,u"Itinga",u"MG","itinga",),
+        (2105427,u"Itinga do Maranhão",u"MA","itinga do maranhao",),
+        (5104609,u"Itiquira",u"MT","itiquira",),
+        (3523602,u"Itirapina",u"SP","itirapina",),
+        (3523701,u"Itirapuã",u"SP","itirapua",),
+        (2916906,u"Itiruçu",u"BA","itirucu",),
+        (2917003,u"Itiúba",u"BA","itiuba",),
+        (3523800,u"Itobi",u"SP","itobi",),
+        (2917102,u"Itororó",u"BA","itororo",),
+        (3523909,u"Itu",u"SP","itu",),
+        (2917201,u"Ituaçu",u"BA","ituacu",),
+        (2917300,u"Ituberá",u"BA","itubera",),
+        (3134103,u"Itueta",u"MG","itueta",),
+        (3134202,u"Ituiutaba",u"MG","ituiutaba",),
+        (5211503,u"Itumbiara",u"GO","itumbiara",),
+        (3134301,u"Itumirim",u"MG","itumirim",),
+        (3524006,u"Itupeva",u"SP","itupeva",),
+        (1503705,u"Itupiranga",u"PA","itupiranga",),
+        (4208500,u"Ituporanga",u"SC","ituporanga",),
+        (3134400,u"Iturama",u"MG","iturama",),
+        (3134509,u"Itutinga",u"MG","itutinga",),
+        (3524105,u"Ituverava",u"SP","ituverava",),
+        (2917334,u"Iuiú",u"BA","iuiu",),
+        (3203007,u"Iúna",u"ES","iuna",),
+        (4111407,u"Ivaí",u"PR","ivai",),
+        (4111506,u"Ivaiporã",u"PR","ivaipora",),
+        (4111555,u"Ivaté",u"PR","ivate",),
+        (4111605,u"Ivatuba",u"PR","ivatuba",),
+        (5004700,u"Ivinhema",u"MS","ivinhema",),
+        (5211602,u"Ivolândia",u"GO","ivolandia",),
+        (4310751,u"Ivorá",u"RS","ivora",),
+        (4310801,u"Ivoti",u"RS","ivoti",),
+        (2607901,u"Jaboatão dos Guararapes",u"PE","jaboatao dos guararapes",),
+        (4208609,u"Jaborá",u"SC","jabora",),
+        (2917359,u"Jaborandi",u"BA","jaborandi",),
+        (3524204,u"Jaborandi",u"SP","jaborandi",),
+        (4111704,u"Jaboti",u"PR","jaboti",),
+        (4310850,u"Jaboticaba",u"RS","jaboticaba",),
+        (3524303,u"Jaboticabal",u"SP","jaboticabal",),
+        (3134608,u"Jaboticatubas",u"MG","jaboticatubas",),
+        (2405009,u"Jaçanã",u"RN","jacana",),
+        (2917409,u"Jacaraci",u"BA","jacaraci",),
+        (2507309,u"Jacaraú",u"PB","jacarau",),
+        (2703403,u"Jacaré dos Homens",u"AL","jacare dos homens",),
+        (1503754,u"Jacareacanga",u"PA","jacareacanga",),
+        (3524402,u"Jacareí",u"SP","jacarei",),
+        (4111803,u"Jacarezinho",u"PR","jacarezinho",),
+        (3524501,u"Jaci",u"SP","jaci",),
+        (5104807,u"Jaciara",u"MT","jaciara",),
+        (3134707,u"Jacinto",u"MG","jacinto",),
+        (4208708,u"Jacinto Machado",u"SC","jacinto machado",),
+        (2917508,u"Jacobina",u"BA","jacobina",),
+        (2205151,u"Jacobina do Piauí",u"PI","jacobina do piaui",),
+        (3134806,u"Jacuí",u"MG","jacui",),
+        (2703502,u"Jacuípe",u"AL","jacuipe",),
+        (4310876,u"Jacuizinho",u"RS","jacuizinho",),
+        (1503804,u"Jacundá",u"PA","jacunda",),
+        (3524600,u"Jacupiranga",u"SP","jacupiranga",),
+        (3134905,u"Jacutinga",u"MG","jacutinga",),
+        (4310900,u"Jacutinga",u"RS","jacutinga",),
+        (4111902,u"Jaguapitã",u"PR","jaguapita",),
+        (2917607,u"Jaguaquara",u"BA","jaguaquara",),
+        (3135001,u"Jaguaraçu",u"MG","jaguaracu",),
+        (4311007,u"Jaguarão",u"RS","jaguarao",),
+        (2917706,u"Jaguarari",u"BA","jaguarari",),
+        (3203056,u"Jaguaré",u"ES","jaguare",),
+        (2306702,u"Jaguaretama",u"CE","jaguaretama",),
+        (4311106,u"Jaguari",u"RS","jaguari",),
+        (4112009,u"Jaguariaíva",u"PR","jaguariaiva",),
+        (2306801,u"Jaguaribara",u"CE","jaguaribara",),
+        (2306900,u"Jaguaribe",u"CE","jaguaribe",),
+        (2917805,u"Jaguaripe",u"BA","jaguaripe",),
+        (3524709,u"Jaguariúna",u"SP","jaguariuna",),
+        (2307007,u"Jaguaruana",u"CE","jaguaruana",),
+        (4208807,u"Jaguaruna",u"SC","jaguaruna",),
+        (3135050,u"Jaíba",u"MG","jaiba",),
+        (2205201,u"Jaicós",u"PI","jaicos",),
+        (3524808,u"Jales",u"SP","jales",),
+        (3524907,u"Jambeiro",u"SP","jambeiro",),
+        (3135076,u"Jampruca",u"MG","jampruca",),
+        (3135100,u"Janaúba",u"MG","janauba",),
+        (5211701,u"Jandaia",u"GO","jandaia",),
+        (4112108,u"Jandaia do Sul",u"PR","jandaia do sul",),
+        (2405108,u"Jandaíra",u"RN","jandaira",),
+        (2917904,u"Jandaíra",u"BA","jandaira",),
+        (3525003,u"Jandira",u"SP","jandira",),
+        (2405207,u"Janduís",u"RN","janduis",),
+        (5104906,u"Jangada",u"MT","jangada",),
+        (4112207,u"Janiópolis",u"PR","janiopolis",),
+        (3135209,u"Januária",u"MG","januaria",),
+        (2405306,u"Januário Cicco",u"RN","januario cicco",),
+        (3135308,u"Japaraíba",u"MG","japaraiba",),
+        (2703601,u"Japaratinga",u"AL","japaratinga",),
+        (2803302,u"Japaratuba",u"SE","japaratuba",),
+        (3302270,u"Japeri",u"RJ","japeri",),
+        (2405405,u"Japi",u"RN","japi",),
+        (4112306,u"Japira",u"PR","japira",),
+        (2803401,u"Japoatã",u"SE","japoata",),
+        (3135357,u"Japonvar",u"MG","japonvar",),
+        (5004809,u"Japorã",u"MS","japora",),
+        (1302108,u"Japurá",u"AM","japura",),
+        (4112405,u"Japurá",u"PR","japura",),
+        (2607950,u"Jaqueira",u"PE","jaqueira",),
+        (4311122,u"Jaquirana",u"RS","jaquirana",),
+        (5211800,u"Jaraguá",u"GO","jaragua",),
+        (4208906,u"Jaraguá do Sul",u"SC","jaragua do sul",),
+        (5004908,u"Jaraguari",u"MS","jaraguari",),
+        (2703700,u"Jaramataia",u"AL","jaramataia",),
+        (2307106,u"Jardim",u"CE","jardim",),
+        (5005004,u"Jardim",u"MS","jardim",),
+        (4112504,u"Jardim Alegre",u"PR","jardim alegre",),
+        (2405504,u"Jardim de Angicos",u"RN","jardim de angicos",),
+        (2405603,u"Jardim de Piranhas",u"RN","jardim de piranhas",),
+        (2205250,u"Jardim do Mulato",u"PI","jardim do mulato",),
+        (2405702,u"Jardim do Seridó",u"RN","jardim do serido",),
+        (4112603,u"Jardim Olinda",u"PR","jardim olinda",),
+        (3525102,u"Jardinópolis",u"SP","jardinopolis",),
+        (4208955,u"Jardinópolis",u"SC","jardinopolis",),
+        (4311130,u"Jari",u"RS","jari",),
+        (3525201,u"Jarinu",u"SP","jarinu",),
+        (1100114,u"Jaru",u"RO","jaru",),
+        (5211909,u"Jataí",u"GO","jatai",),
+        (4112702,u"Jataizinho",u"PR","jataizinho",),
+        (2608008,u"Jataúba",u"PE","jatauba",),
+        (5005103,u"Jateí",u"MS","jatei",),
+        (2307205,u"Jati",u"CE","jati",),
+        (2105450,u"Jatobá",u"MA","jatoba",),
+        (2608057,u"Jatobá",u"PE","jatoba",),
+        (2205276,u"Jatobá do Piauí",u"PI","jatoba do piaui",),
+        (3525300,u"Jaú",u"SP","jau",),
+        (1711506,u"Jaú do Tocantins",u"TO","jau do tocantins",),
+        (5212006,u"Jaupaci",u"GO","jaupaci",),
+        (5105002,u"Jauru",u"MT","jauru",),
+        (3135407,u"Jeceaba",u"MG","jeceaba",),
+        (3135456,u"Jenipapo de Minas",u"MG","jenipapo de minas",),
+        (2105476,u"Jenipapo dos Vieiras",u"MA","jenipapo dos vieiras",),
+        (3135506,u"Jequeri",u"MG","jequeri",),
+        (2703759,u"Jequiá da Praia",u"AL","jequia da praia",),
+        (2918001,u"Jequié",u"BA","jequie",),
+        (3135605,u"Jequitaí",u"MG","jequitai",),
+        (3135704,u"Jequitibá",u"MG","jequitiba",),
+        (3135803,u"Jequitinhonha",u"MG","jequitinhonha",),
+        (2918100,u"Jeremoabo",u"BA","jeremoabo",),
+        (2507408,u"Jericó",u"PB","jerico",),
+        (3525409,u"Jeriquara",u"SP","jeriquara",),
+        (3203106,u"Jerônimo Monteiro",u"ES","jeronimo monteiro",),
+        (2205300,u"Jerumenha",u"PI","jerumenha",),
+        (3135902,u"Jesuânia",u"MG","jesuania",),
+        (4112751,u"Jesuítas",u"PR","jesuitas",),
+        (5212055,u"Jesúpolis",u"GO","jesupolis",),
+        (1100122,u"Ji-Paraná",u"RO","ji-parana",),
+        (2307254,u"Jijoca de Jericoacoara",u"CE","jijoca de jericoacoara",),
+        (2918209,u"Jiquiriçá",u"BA","jiquirica",),
+        (2918308,u"Jitaúna",u"BA","jitauna",),
+        (4209003,u"Joaçaba",u"SC","joacaba",),
+        (3136009,u"Joaíma",u"MG","joaima",),
+        (3136108,u"Joanésia",u"MG","joanesia",),
+        (3525508,u"Joanópolis",u"SP","joanopolis",),
+        (2608107,u"João Alfredo",u"PE","joao alfredo",),
+        (2405801,u"João Câmara",u"RN","joao camara",),
+        (2205359,u"João Costa",u"PI","joao costa",),
+        (2405900,u"João Dias",u"RN","joao dias",),
+        (2918357,u"João Dourado",u"BA","joao dourado",),
+        (2105500,u"João Lisboa",u"MA","joao lisboa",),
+        (3136207,u"João Monlevade",u"MG","joao monlevade",),
+        (3203130,u"João Neiva",u"ES","joao neiva",),
+        (2507507,u"João Pessoa",u"PB","joao pessoa",),
+        (3136306,u"João Pinheiro",u"MG","joao pinheiro",),
+        (3525607,u"João Ramalho",u"SP","joao ramalho",),
+        (3136405,u"Joaquim Felício",u"MG","joaquim felicio",),
+        (2703809,u"Joaquim Gomes",u"AL","joaquim gomes",),
+        (2608206,u"Joaquim Nabuco",u"PE","joaquim nabuco",),
+        (2205409,u"Joaquim Pires",u"PI","joaquim pires",),
+        (4112801,u"Joaquim Távora",u"PR","joaquim tavora",),
+        (2205458,u"Joca Marques",u"PI","joca marques",),
+        (4311155,u"Jóia",u"RS","joia",),
+        (4209102,u"Joinville",u"SC","joinville",),
+        (3136504,u"Jordânia",u"MG","jordania",),
+        (1200328,u"Jordão",u"AC","jordao",),
+        (4209151,u"José Boiteux",u"SC","jose boiteux",),
+        (3525706,u"José Bonifácio",u"SP","jose bonifacio",),
+        (2406007,u"José da Penha",u"RN","jose da penha",),
+        (2205508,u"José de Freitas",u"PI","jose de freitas",),
+        (3136520,u"José Gonçalves de Minas",u"MG","jose goncalves de minas",),
+        (3136553,u"José Raydan",u"MG","jose raydan",),
+        (2105609,u"Joselândia",u"MA","joselandia",),
+        (3136579,u"Josenópolis",u"MG","josenopolis",),
+        (5212105,u"Joviânia",u"GO","joviania",),
+        (5105101,u"Juara",u"MT","juara",),
+        (2507606,u"Juarez Távora",u"PB","juarez tavora",),
+        (1711803,u"Juarina",u"TO","juarina",),
+        (3136652,u"Juatuba",u"MG","juatuba",),
+        (2507705,u"Juazeirinho",u"PB","juazeirinho",),
+        (2918407,u"Juazeiro",u"BA","juazeiro",),
+        (2307304,u"Juazeiro do Norte",u"CE","juazeiro do norte",),
+        (2205516,u"Juazeiro do Piauí",u"PI","juazeiro do piaui",),
+        (2307403,u"Jucás",u"CE","jucas",),
+        (2608255,u"Jucati",u"PE","jucati",),
+        (2918456,u"Jucuruçu",u"BA","jucurucu",),
+        (2406106,u"Jucurutu",u"RN","jucurutu",),
+        (5105150,u"Juína",u"MT","juina",),
+        (3136702,u"Juiz de Fora",u"MG","juiz de fora",),
+        (2205524,u"Júlio Borges",u"PI","julio borges",),
+        (4311205,u"Júlio de Castilhos",u"RS","julio de castilhos",),
+        (3525805,u"Júlio Mesquita",u"SP","julio mesquita",),
+        (3525854,u"Jumirim",u"SP","jumirim",),
+        (2105658,u"Junco do Maranhão",u"MA","junco do maranhao",),
+        (2507804,u"Junco do Seridó",u"PB","junco do serido",),
+        (2406155,u"Jundiá",u"RN","jundia",),
+        (2703908,u"Jundiá",u"AL","jundia",),
+        (3525904,u"Jundiaí",u"SP","jundiai",),
+        (4112900,u"Jundiaí do Sul",u"PR","jundiai do sul",),
+        (2704005,u"Junqueiro",u"AL","junqueiro",),
+        (3526001,u"Junqueirópolis",u"SP","junqueiropolis",),
+        (2608305,u"Jupi",u"PE","jupi",),
+        (4209177,u"Jupiá",u"SC","jupia",),
+        (3526100,u"Juquiá",u"SP","juquia",),
+        (3526209,u"Juquitiba",u"SP","juquitiba",),
+        (3136801,u"Juramento",u"MG","juramento",),
+        (4112959,u"Juranda",u"PR","juranda",),
+        (2205532,u"Jurema",u"PI","jurema",),
+        (2608404,u"Jurema",u"PE","jurema",),
+        (2507903,u"Juripiranga",u"PB","juripiranga",),
+        (2508000,u"Juru",u"PB","juru",),
+        (1302207,u"Juruá",u"AM","jurua",),
+        (3136900,u"Juruaia",u"MG","juruaia",),
+        (5105176,u"Juruena",u"MT","juruena",),
+        (1503903,u"Juruti",u"PA","juruti",),
+        (5105200,u"Juscimeira",u"MT","juscimeira",),
+        (2918506,u"Jussara",u"BA","jussara",),
+        (4113007,u"Jussara",u"PR","jussara",),
+        (5212204,u"Jussara",u"GO","jussara",),
+        (2918555,u"Jussari",u"BA","jussari",),
+        (2918605,u"Jussiape",u"BA","jussiape",),
+        (1302306,u"Jutaí",u"AM","jutai",),
+        (5005152,u"Juti",u"MS","juti",),
+        (3136959,u"Juvenília",u"MG","juvenilia",),
+        (4113106,u"Kaloré",u"PR","kalore",),
+        (1302405,u"Lábrea",u"AM","labrea",),
+        (4209201,u"Lacerdópolis",u"SC","lacerdopolis",),
+        (3137007,u"Ladainha",u"MG","ladainha",),
+        (5005202,u"Ladário",u"MS","ladario",),
+        (2918704,u"Lafaiete Coutinho",u"BA","lafaiete coutinho",),
+        (3137106,u"Lagamar",u"MG","lagamar",),
+        (2803500,u"Lagarto",u"SE","lagarto",),
+        (4209300,u"Lages",u"SC","lages",),
+        (2105708,u"Lago da Pedra",u"MA","lago da pedra",),
+        (2105807,u"Lago do Junco",u"MA","lago do junco",),
+        (2105948,u"Lago dos Rodrigues",u"MA","lago dos rodrigues",),
+        (2105906,u"Lago Verde",u"MA","lago verde",),
+        (2508109,u"Lagoa",u"PB","lagoa",),
+        (2205557,u"Lagoa Alegre",u"PI","lagoa alegre",),
+        (4311239,u"Lagoa Bonita do Sul",u"RS","lagoa bonita do sul",),
+        (2406205,u"Lagoa d'Anta",u"RN","lagoa d'anta",),
+        (2704104,u"Lagoa da Canoa",u"AL","lagoa da canoa",),
+        (1711902,u"Lagoa da Confusão",u"TO","lagoa da confusao",),
+        (3137205,u"Lagoa da Prata",u"MG","lagoa da prata",),
+        (2508208,u"Lagoa de Dentro",u"PB","lagoa de dentro",),
+        (2406304,u"Lagoa de Pedras",u"RN","lagoa de pedras",),
+        (2205573,u"Lagoa de São Francisco",u"PI","lagoa de sao francisco",),
+        (2406403,u"Lagoa de Velhos",u"RN","lagoa de velhos",),
+        (2205565,u"Lagoa do Barro do Piauí",u"PI","lagoa do barro do piaui",),
+        (2608453,u"Lagoa do Carro",u"PE","lagoa do carro",),
+        (2608503,u"Lagoa do Itaenga",u"PE","lagoa do itaenga",),
+        (2105922,u"Lagoa do Mato",u"MA","lagoa do mato",),
+        (2608602,u"Lagoa do Ouro",u"PE","lagoa do ouro",),
+        (2205581,u"Lagoa do Piauí",u"PI","lagoa do piaui",),
+        (2205599,u"Lagoa do Sítio",u"PI","lagoa do sitio",),
+        (1711951,u"Lagoa do Tocantins",u"TO","lagoa do tocantins",),
+        (2608701,u"Lagoa dos Gatos",u"PE","lagoa dos gatos",),
+        (3137304,u"Lagoa dos Patos",u"MG","lagoa dos patos",),
+        (4311270,u"Lagoa dos Três Cantos",u"RS","lagoa dos tres cantos",),
+        (3137403,u"Lagoa Dourada",u"MG","lagoa dourada",),
+        (3137502,u"Lagoa Formosa",u"MG","lagoa formosa",),
+        (2608750,u"Lagoa Grande",u"PE","lagoa grande",),
+        (3137536,u"Lagoa Grande",u"MG","lagoa grande",),
+        (2105963,u"Lagoa Grande do Maranhão",u"MA","lagoa grande do maranhao",),
+        (2406502,u"Lagoa Nova",u"RN","lagoa nova",),
+        (2918753,u"Lagoa Real",u"BA","lagoa real",),
+        (2406601,u"Lagoa Salgada",u"RN","lagoa salgada",),
+        (3137601,u"Lagoa Santa",u"MG","lagoa santa",),
+        (5212253,u"Lagoa Santa",u"GO","lagoa santa",),
+        (2508307,u"Lagoa Seca",u"PB","lagoa seca",),
+        (4311304,u"Lagoa Vermelha",u"RS","lagoa vermelha",),
+        (4311254,u"Lagoão",u"RS","lagoao",),
+        (3526308,u"Lagoinha",u"SP","lagoinha",),
+        (2205540,u"Lagoinha do Piauí",u"PI","lagoinha do piaui",),
+        (4209409,u"Laguna",u"SC","laguna",),
+        (5005251,u"Laguna Carapã",u"MS","laguna carapa",),
+        (2918803,u"Laje",u"BA","laje",),
+        (3302304,u"Laje do Muriaé",u"RJ","laje do muriae",),
+        (1712009,u"Lajeado",u"TO","lajeado",),
+        (4311403,u"Lajeado",u"RS","lajeado",),
+        (4311429,u"Lajeado do Bugre",u"RS","lajeado do bugre",),
+        (4209458,u"Lajeado Grande",u"SC","lajeado grande",),
+        (2105989,u"Lajeado Novo",u"MA","lajeado novo",),
+        (2918902,u"Lajedão",u"BA","lajedao",),
+        (2919009,u"Lajedinho",u"BA","lajedinho",),
+        (2608800,u"Lajedo",u"PE","lajedo",),
+        (2919058,u"Lajedo do Tabocal",u"BA","lajedo do tabocal",),
+        (2406700,u"Lajes",u"RN","lajes",),
+        (2406809,u"Lajes Pintadas",u"RN","lajes pintadas",),
+        (3137700,u"Lajinha",u"MG","lajinha",),
+        (2919108,u"Lamarão",u"BA","lamarao",),
+        (3137809,u"Lambari",u"MG","lambari",),
+        (5105234,u"Lambari D'Oeste",u"MT","lambari d'oeste",),
+        (3137908,u"Lamim",u"MG","lamim",),
+        (2205607,u"Landri Sales",u"PI","landri sales",),
+        (4113205,u"Lapa",u"PR","lapa",),
+        (2919157,u"Lapão",u"BA","lapao",),
+        (3203163,u"Laranja da Terra",u"ES","laranja da terra",),
+        (3138005,u"Laranjal",u"MG","laranjal",),
+        (4113254,u"Laranjal",u"PR","laranjal",),
+        (1600279,u"Laranjal do Jari",u"AP","laranjal do jari",),
+        (3526407,u"Laranjal Paulista",u"SP","laranjal paulista",),
+        (2803609,u"Laranjeiras",u"SE","laranjeiras",),
+        (4113304,u"Laranjeiras do Sul",u"PR","laranjeiras do sul",),
+        (3138104,u"Lassance",u"MG","lassance",),
+        (2508406,u"Lastro",u"PB","lastro",),
+        (4209508,u"Laurentino",u"SC","laurentino",),
+        (2919207,u"Lauro de Freitas",u"BA","lauro de freitas",),
+        (4209607,u"Lauro Muller",u"SC","lauro muller",),
+        (1712157,u"Lavandeira",u"TO","lavandeira",),
+        (3526506,u"Lavínia",u"SP","lavinia",),
+        (3138203,u"Lavras",u"MG","lavras",),
+        (2307502,u"Lavras da Mangabeira",u"CE","lavras da mangabeira",),
+        (4311502,u"Lavras do Sul",u"RS","lavras do sul",),
+        (3526605,u"Lavrinhas",u"SP","lavrinhas",),
+        (3138302,u"Leandro Ferreira",u"MG","leandro ferreira",),
+        (4209706,u"Lebon Régis",u"SC","lebon regis",),
+        (3526704,u"Leme",u"SP","leme",),
+        (3138351,u"Leme do Prado",u"MG","leme do prado",),
+        (2919306,u"Lençóis",u"BA","lencois",),
+        (3526803,u"Lençóis Paulista",u"SP","lencois paulista",),
+        (4209805,u"Leoberto Leal",u"SC","leoberto leal",),
+        (3138401,u"Leopoldina",u"MG","leopoldina",),
+        (5212303,u"Leopoldo de Bulhões",u"GO","leopoldo de bulhoes",),
+        (4113403,u"Leópolis",u"PR","leopolis",),
+        (4311601,u"Liberato Salzano",u"RS","liberato salzano",),
+        (3138500,u"Liberdade",u"MG","liberdade",),
+        (2919405,u"Licínio de Almeida",u"BA","licinio de almeida",),
+        (4113429,u"Lidianópolis",u"PR","lidianopolis",),
+        (2106003,u"Lima Campos",u"MA","lima campos",),
+        (3138609,u"Lima Duarte",u"MG","lima duarte",),
+        (3526902,u"Limeira",u"SP","limeira",),
+        (3138625,u"Limeira do Oeste",u"MG","limeira do oeste",),
+        (2608909,u"Limoeiro",u"PE","limoeiro",),
+        (2704203,u"Limoeiro de Anadia",u"AL","limoeiro de anadia",),
+        (1504000,u"Limoeiro do Ajuru",u"PA","limoeiro do ajuru",),
+        (2307601,u"Limoeiro do Norte",u"CE","limoeiro do norte",),
+        (4113452,u"Lindoeste",u"PR","lindoeste",),
+        (3527009,u"Lindóia",u"SP","lindoia",),
+        (4209854,u"Lindóia do Sul",u"SC","lindoia do sul",),
+        (4311627,u"Lindolfo Collor",u"RS","lindolfo collor",),
+        (4311643,u"Linha Nova",u"RS","linha nova",),
+        (3203205,u"Linhares",u"ES","linhares",),
+        (3527108,u"Lins",u"SP","lins",),
+        (2508505,u"Livramento",u"PB","livramento",),
+        (2919504,u"Livramento de Nossa Senhora",u"BA","livramento de nossa senhora",),
+        (1712405,u"Lizarda",u"TO","lizarda",),
+        (4113502,u"Loanda",u"PR","loanda",),
+        (4113601,u"Lobato",u"PR","lobato",),
+        (2508554,u"Logradouro",u"PB","logradouro",),
+        (4113700,u"Londrina",u"PR","londrina",),
+        (3138658,u"Lontra",u"MG","lontra",),
+        (4209904,u"Lontras",u"SC","lontras",),
+        (3527207,u"Lorena",u"SP","lorena",),
+        (2106102,u"Loreto",u"MA","loreto",),
+        (3527256,u"Lourdes",u"SP","lourdes",),
+        (3527306,u"Louveira",u"SP","louveira",),
+        (5105259,u"Lucas do Rio Verde",u"MT","lucas do rio verde",),
+        (3527405,u"Lucélia",u"SP","lucelia",),
+        (2508604,u"Lucena",u"PB","lucena",),
+        (3527504,u"Lucianópolis",u"SP","lucianopolis",),
+        (5105309,u"Luciara",u"MT","luciara",),
+        (2406908,u"Lucrécia",u"RN","lucrecia",),
+        (3527603,u"Luís Antônio",u"SP","luis antonio",),
+        (2205706,u"Luís Correia",u"PI","luis correia",),
+        (2106201,u"Luís Domingues",u"MA","luis domingues",),
+        (2919553,u"Luís Eduardo Magalhães",u"BA","luis eduardo magalhaes",),
+        (2407005,u"Luís Gomes",u"RN","luis gomes",),
+        (3138674,u"Luisburgo",u"MG","luisburgo",),
+        (3138682,u"Luislândia",u"MG","luislandia",),
+        (4210001,u"Luiz Alves",u"SC","luiz alves",),
+        (4113734,u"Luiziana",u"PR","luiziana",),
+        (3527702,u"Luiziânia",u"SP","luiziania",),
+        (3138708,u"Luminárias",u"MG","luminarias",),
+        (4113759,u"Lunardelli",u"PR","lunardelli",),
+        (3527801,u"Lupércio",u"SP","lupercio",),
+        (4113809,u"Lupionópolis",u"PR","lupionopolis",),
+        (3527900,u"Lutécia",u"SP","lutecia",),
+        (3138807,u"Luz",u"MG","luz",),
+        (4210035,u"Luzerna",u"SC","luzerna",),
+        (5212501,u"Luziânia",u"GO","luziania",),
+        (2205805,u"Luzilândia",u"PI","luzilandia",),
+        (1712454,u"Luzinópolis",u"TO","luzinopolis",),
+        (3302403,u"Macaé",u"RJ","macae",),
+        (2407104,u"Macaíba",u"RN","macaiba",),
+        (2919603,u"Macajuba",u"BA","macajuba",),
+        (4311718,u"Maçambará",u"RS","macambara",),
+        (2803708,u"Macambira",u"SE","macambira",),
+        (1600303,u"Macapá",u"AP","macapa",),
+        (2609006,u"Macaparana",u"PE","macaparana",),
+        (2919702,u"Macarani",u"BA","macarani",),
+        (3528007,u"Macatuba",u"SP","macatuba",),
+        (2407203,u"Macau",u"RN","macau",),
+        (3528106,u"Macaubal",u"SP","macaubal",),
+        (2919801,u"Macaúbas",u"BA","macaubas",),
+        (3528205,u"Macedônia",u"SP","macedonia",),
+        (2704302,u"Maceió",u"AL","maceio",),
+        (3138906,u"Machacalis",u"MG","machacalis",),
+        (4311700,u"Machadinho",u"RS","machadinho",),
+        (1100130,u"Machadinho D'Oeste",u"RO","machadinho d'oeste",),
+        (3139003,u"Machado",u"MG","machado",),
+        (2609105,u"Machados",u"PE","machados",),
+        (4210050,u"Macieira",u"SC","macieira",),
+        (3302452,u"Macuco",u"RJ","macuco",),
+        (2919900,u"Macururé",u"BA","macurure",),
+        (2307635,u"Madalena",u"CE","madalena",),
+        (2205854,u"Madeiro",u"PI","madeiro",),
+        (2919926,u"Madre de Deus",u"BA","madre de deus",),
+        (3139102,u"Madre de Deus de Minas",u"MG","madre de deus de minas",),
+        (2508703,u"Mãe d'Água",u"PB","mae d'agua",),
+        (1504059,u"Mãe do Rio",u"PA","mae do rio",),
+        (2919959,u"Maetinga",u"BA","maetinga",),
+        (4210100,u"Mafra",u"SC","mafra",),
+        (1504109,u"Magalhães Barata",u"PA","magalhaes barata",),
+        (2106300,u"Magalhães de Almeida",u"MA","magalhaes de almeida",),
+        (3528304,u"Magda",u"SP","magda",),
+        (3302502,u"Magé",u"RJ","mage",),
+        (2920007,u"Maiquinique",u"BA","maiquinique",),
+        (2920106,u"Mairi",u"BA","mairi",),
+        (3528403,u"Mairinque",u"SP","mairinque",),
+        (3528502,u"Mairiporã",u"SP","mairipora",),
+        (5212600,u"Mairipotaba",u"GO","mairipotaba",),
+        (4210209,u"Major Gercino",u"SC","major gercino",),
+        (2704401,u"Major Isidoro",u"AL","major isidoro",),
+        (2407252,u"Major Sales",u"RN","major sales",),
+        (4210308,u"Major Vieira",u"SC","major vieira",),
+        (3139201,u"Malacacheta",u"MG","malacacheta",),
+        (2920205,u"Malhada",u"BA","malhada",),
+        (2920304,u"Malhada de Pedras",u"BA","malhada de pedras",),
+        (2803807,u"Malhada dos Bois",u"SE","malhada dos bois",),
+        (2803906,u"Malhador",u"SE","malhador",),
+        (4113908,u"Mallet",u"PR","mallet",),
+        (2508802,u"Malta",u"PB","malta",),
+        (2508901,u"Mamanguape",u"PB","mamanguape",),
+        (5212709,u"Mambaí",u"GO","mambai",),
+        (4114005,u"Mamborê",u"PR","mambore",),
+        (3139250,u"Mamonas",u"MG","mamonas",),
+        (4311734,u"Mampituba",u"RS","mampituba",),
+        (1302504,u"Manacapuru",u"AM","manacapuru",),
+        (2509008,u"Manaíra",u"PB","manaira",),
+        (1302553,u"Manaquiri",u"AM","manaquiri",),
+        (2609154,u"Manari",u"PE","manari",),
+        (1302603,u"Manaus",u"AM","manaus",),
+        (1200336,u"Mâncio Lima",u"AC","mancio lima",),
+        (4114104,u"Mandaguaçu",u"PR","mandaguacu",),
+        (4114203,u"Mandaguari",u"PR","mandaguari",),
+        (4114302,u"Mandirituba",u"PR","mandirituba",),
+        (3528601,u"Manduri",u"SP","manduri",),
+        (4114351,u"Manfrinópolis",u"PR","manfrinopolis",),
+        (3139300,u"Manga",u"MG","manga",),
+        (3302601,u"Mangaratiba",u"RJ","mangaratiba",),
+        (4114401,u"Mangueirinha",u"PR","mangueirinha",),
+        (3139409,u"Manhuaçu",u"MG","manhuacu",),
+        (3139508,u"Manhumirim",u"MG","manhumirim",),
+        (1302702,u"Manicoré",u"AM","manicore",),
+        (2205904,u"Manoel Emídio",u"PI","manoel emidio",),
+        (4114500,u"Manoel Ribas",u"PR","manoel ribas",),
+        (1200344,u"Manoel Urbano",u"AC","manoel urbano",),
+        (4311759,u"Manoel Viana",u"RS","manoel viana",),
+        (2920403,u"Manoel Vitorino",u"BA","manoel vitorino",),
+        (2920452,u"Mansidão",u"BA","mansidao",),
+        (3139607,u"Mantena",u"MG","mantena",),
+        (3203304,u"Mantenópolis",u"ES","mantenopolis",),
+        (4311775,u"Maquiné",u"RS","maquine",),
+        (3139805,u"Mar de Espanha",u"MG","mar de espanha",),
+        (2704906,u"Mar Vermelho",u"AL","mar vermelho",),
+        (5212808,u"Mara Rosa",u"GO","mara rosa",),
+        (1302801,u"Maraã",u"AM","maraa",),
+        (1504208,u"Marabá",u"PA","maraba",),
+        (3528700,u"Marabá Paulista",u"SP","maraba paulista",),
+        (2106326,u"Maracaçumé",u"MA","maracacume",),
+        (3528809,u"Maracaí",u"SP","maracai",),
+        (4210407,u"Maracajá",u"SC","maracaja",),
+        (5005400,u"Maracaju",u"MS","maracaju",),
+        (1504307,u"Maracanã",u"PA","maracana",),
+        (2307650,u"Maracanaú",u"CE","maracanau",),
+        (2920502,u"Maracás",u"BA","maracas",),
+        (2704500,u"Maragogi",u"AL","maragogi",),
+        (2920601,u"Maragogipe",u"BA","maragogipe",),
+        (2609204,u"Maraial",u"PE","maraial",),
+        (2106359,u"Marajá do Sena",u"MA","maraja do sena",),
+        (2307700,u"Maranguape",u"CE","maranguape",),
+        (2106375,u"Maranhãozinho",u"MA","maranhaozinho",),
+        (1504406,u"Marapanim",u"PA","marapanim",),
+        (3528858,u"Marapoama",u"SP","marapoama",),
+        (4311791,u"Maratá",u"RS","marata",),
+        (3203320,u"Marataízes",u"ES","marataizes",),
+        (2920700,u"Maraú",u"BA","marau",),
+        (4311809,u"Marau",u"RS","marau",),
+        (2704609,u"Maravilha",u"AL","maravilha",),
+        (4210506,u"Maravilha",u"SC","maravilha",),
+        (3139706,u"Maravilhas",u"MG","maravilhas",),
+        (2509057,u"Marcação",u"PB","marcacao",),
+        (5105580,u"Marcelândia",u"MT","marcelandia",),
+        (4311908,u"Marcelino Ramos",u"RS","marcelino ramos",),
+        (2407302,u"Marcelino Vieira",u"RN","marcelino vieira",),
+        (2920809,u"Marcionílio Souza",u"BA","marcionilio souza",),
+        (2307809,u"Marco",u"CE","marco",),
+        (2205953,u"Marcolândia",u"PI","marcolandia",),
+        (2206001,u"Marcos Parente",u"PI","marcos parente",),
+        (4114609,u"Marechal Cândido Rondon",u"PR","marechal candido rondon",),
+        (2704708,u"Marechal Deodoro",u"AL","marechal deodoro",),
+        (3203346,u"Marechal Floriano",u"ES","marechal floriano",),
+        (1200351,u"Marechal Thaumaturgo",u"AC","marechal thaumaturgo",),
+        (4210555,u"Marema",u"SC","marema",),
+        (2509107,u"Mari",u"PB","mari",),
+        (3139904,u"Maria da Fé",u"MG","maria da fe",),
+        (4114708,u"Maria Helena",u"PR","maria helena",),
+        (4114807,u"Marialva",u"PR","marialva",),
+        (3140001,u"Mariana",u"MG","mariana",),
+        (4311981,u"Mariana Pimentel",u"RS","mariana pimentel",),
+        (4312005,u"Mariano Moro",u"RS","mariano moro",),
+        (1712504,u"Marianópolis do Tocantins",u"TO","marianopolis do tocantins",),
+        (3528908,u"Mariápolis",u"SP","mariapolis",),
+        (2704807,u"Maribondo",u"AL","maribondo",),
+        (3302700,u"Maricá",u"RJ","marica",),
+        (3140100,u"Marilac",u"MG","marilac",),
+        (3203353,u"Marilândia",u"ES","marilandia",),
+        (4114906,u"Marilândia do Sul",u"PR","marilandia do sul",),
+        (4115002,u"Marilena",u"PR","marilena",),
+        (3529005,u"Marília",u"SP","marilia",),
+        (4115101,u"Mariluz",u"PR","mariluz",),
+        (4115200,u"Maringá",u"PR","maringa",),
+        (3529104,u"Marinópolis",u"SP","marinopolis",),
+        (3140159,u"Mário Campos",u"MG","mario campos",),
+        (4115309,u"Mariópolis",u"PR","mariopolis",),
+        (4115358,u"Maripá",u"PR","maripa",),
+        (3140209,u"Maripá de Minas",u"MG","maripa de minas",),
+        (1504422,u"Marituba",u"PA","marituba",),
+        (2509156,u"Marizópolis",u"PB","marizopolis",),
+        (3140308,u"Marliéria",u"MG","marlieria",),
+        (4115408,u"Marmeleiro",u"PR","marmeleiro",),
+        (3140407,u"Marmelópolis",u"MG","marmelopolis",),
+        (4312054,u"Marques de Souza",u"RS","marques de souza",),
+        (4115457,u"Marquinho",u"PR","marquinho",),
+        (3140506,u"Martinho Campos",u"MG","martinho campos",),
+        (2307908,u"Martinópole",u"CE","martinopole",),
+        (3529203,u"Martinópolis",u"SP","martinopolis",),
+        (2407401,u"Martins",u"RN","martins",),
+        (3140530,u"Martins Soares",u"MG","martins soares",),
+        (2804003,u"Maruim",u"SE","maruim",),
+        (4115507,u"Marumbi",u"PR","marumbi",),
+        (5212907,u"Marzagão",u"GO","marzagao",),
+        (2920908,u"Mascote",u"BA","mascote",),
+        (2308005,u"Massapê",u"CE","massape",),
+        (2206050,u"Massapê do Piauí",u"PI","massape do piaui",),
+        (2509206,u"Massaranduba",u"PB","massaranduba",),
+        (4210605,u"Massaranduba",u"SC","massaranduba",),
+        (4312104,u"Mata",u"RS","mata",),
+        (2921005,u"Mata de São João",u"BA","mata de sao joao",),
+        (2705002,u"Mata Grande",u"AL","mata grande",),
+        (2106409,u"Mata Roma",u"MA","mata roma",),
+        (3140555,u"Mata Verde",u"MG","mata verde",),
+        (3529302,u"Matão",u"SP","matao",),
+        (2509305,u"Mataraca",u"PB","mataraca",),
+        (1712702,u"Mateiros",u"TO","mateiros",),
+        (4115606,u"Matelândia",u"PR","matelandia",),
+        (3140605,u"Materlândia",u"MG","materlandia",),
+        (3140704,u"Mateus Leme",u"MG","mateus leme",),
+        (3171501,u"Mathias Lobato",u"MG","mathias lobato",),
+        (3140803,u"Matias Barbosa",u"MG","matias barbosa",),
+        (3140852,u"Matias Cardoso",u"MG","matias cardoso",),
+        (2206100,u"Matias Olímpio",u"PI","matias olimpio",),
+        (2921054,u"Matina",u"BA","matina",),
+        (2106508,u"Matinha",u"MA","matinha",),
+        (2509339,u"Matinhas",u"PB","matinhas",),
+        (4115705,u"Matinhos",u"PR","matinhos",),
+        (3140902,u"Matipó",u"MG","matipo",),
+        (4312138,u"Mato Castelhano",u"RS","mato castelhano",),
+        (2509370,u"Mato Grosso",u"PB","mato grosso",),
+        (4312153,u"Mato Leitão",u"RS","mato leitao",),
+        (4312179,u"Mato Queimado",u"RS","mato queimado",),
+        (4115739,u"Mato Rico",u"PR","mato rico",),
+        (3141009,u"Mato Verde",u"MG","mato verde",),
+        (2106607,u"Matões",u"MA","matoes",),
+        (2106631,u"Matões do Norte",u"MA","matoes do norte",),
+        (4210704,u"Matos Costa",u"SC","matos costa",),
+        (3141108,u"Matozinhos",u"MG","matozinhos",),
+        (5212956,u"Matrinchã",u"GO","matrincha",),
+        (2705101,u"Matriz de Camaragibe",u"AL","matriz de camaragibe",),
+        (5105606,u"Matupá",u"MT","matupa",),
+        (2509396,u"Maturéia",u"PB","matureia",),
+        (3141207,u"Matutina",u"MG","matutina",),
+        (3529401,u"Mauá",u"SP","maua",),
+        (4115754,u"Mauá da Serra",u"PR","maua da serra",),
+        (1302900,u"Maués",u"AM","maues",),
+        (5213004,u"Maurilândia",u"GO","maurilandia",),
+        (1712801,u"Maurilândia do Tocantins",u"TO","maurilandia do tocantins",),
+        (2308104,u"Mauriti",u"CE","mauriti",),
+        (2407500,u"Maxaranguape",u"RN","maxaranguape",),
+        (4312203,u"Maximiliano de Almeida",u"RS","maximiliano de almeida",),
+        (1600402,u"Mazagão",u"AP","mazagao",),
+        (3141306,u"Medeiros",u"MG","medeiros",),
+        (2921104,u"Medeiros Neto",u"BA","medeiros neto",),
+        (4115804,u"Medianeira",u"PR","medianeira",),
+        (1504455,u"Medicilândia",u"PA","medicilandia",),
+        (3141405,u"Medina",u"MG","medina",),
+        (4210803,u"Meleiro",u"SC","meleiro",),
+        (1504505,u"Melgaço",u"PA","melgaco",),
+        (3302809,u"Mendes",u"RJ","mendes",),
+        (3141504,u"Mendes Pimentel",u"MG","mendes pimentel",),
+        (3529500,u"Mendonça",u"SP","mendonca",),
+        (4115853,u"Mercedes",u"PR","mercedes",),
+        (3141603,u"Mercês",u"MG","merces",),
+        (3529609,u"Meridiano",u"SP","meridiano",),
+        (2308203,u"Meruoca",u"CE","meruoca",),
+        (3529658,u"Mesópolis",u"SP","mesopolis",),
+        (3141702,u"Mesquita",u"MG","mesquita",),
+        (3302858,u"Mesquita",u"RJ","mesquita",),
+        (2705200,u"Messias",u"AL","messias",),
+        (2407609,u"Messias Targino",u"RN","messias targino",),
+        (2206209,u"Miguel Alves",u"PI","miguel alves",),
+        (2921203,u"Miguel Calmon",u"BA","miguel calmon",),
+        (2206308,u"Miguel Leão",u"PI","miguel leao",),
+        (3302908,u"Miguel Pereira",u"RJ","miguel pereira",),
+        (3529708,u"Miguelópolis",u"SP","miguelopolis",),
+        (2308302,u"Milagres",u"CE","milagres",),
+        (2921302,u"Milagres",u"BA","milagres",),
+        (2106672,u"Milagres do Maranhão",u"MA","milagres do maranhao",),
+        (2308351,u"Milhã",u"CE","milha",),
+        (2206357,u"Milton Brandão",u"PI","milton brandao",),
+        (5213053,u"Mimoso de Goiás",u"GO","mimoso de goias",),
+        (3203403,u"Mimoso do Sul",u"ES","mimoso do sul",),
+        (5213087,u"Minaçu",u"GO","minacu",),
+        (2705309,u"Minador do Negrão",u"AL","minador do negrao",),
+        (4312252,u"Minas do Leão",u"RS","minas do leao",),
+        (3141801,u"Minas Novas",u"MG","minas novas",),
+        (3141900,u"Minduri",u"MG","minduri",),
+        (5213103,u"Mineiros",u"GO","mineiros",),
+        (3529807,u"Mineiros do Tietê",u"SP","mineiros do tiete",),
+        (1101203,u"Ministro Andreazza",u"RO","ministro andreazza",),
+        (3530003,u"Mira Estrela",u"SP","mira estrela",),
+        (3142007,u"Mirabela",u"MG","mirabela",),
+        (3529906,u"Miracatu",u"SP","miracatu",),
+        (3303005,u"Miracema",u"RJ","miracema",),
+        (1713205,u"Miracema do Tocantins",u"TO","miracema do tocantins",),
+        (2106706,u"Mirador",u"MA","mirador",),
+        (4115903,u"Mirador",u"PR","mirador",),
+        (3142106,u"Miradouro",u"MG","miradouro",),
+        (4312302,u"Miraguaí",u"RS","miraguai",),
+        (3142205,u"Miraí",u"MG","mirai",),
+        (2308377,u"Miraíma",u"CE","miraima",),
+        (5005608,u"Miranda",u"MS","miranda",),
+        (2106755,u"Miranda do Norte",u"MA","miranda do norte",),
+        (2609303,u"Mirandiba",u"PE","mirandiba",),
+        (3530102,u"Mirandópolis",u"SP","mirandopolis",),
+        (2921401,u"Mirangaba",u"BA","mirangaba",),
+        (1713304,u"Miranorte",u"TO","miranorte",),
+        (2921450,u"Mirante",u"BA","mirante",),
+        (1101302,u"Mirante da Serra",u"RO","mirante da serra",),
+        (3530201,u"Mirante do Paranapanema",u"SP","mirante do paranapanema",),
+        (4116000,u"Miraselva",u"PR","miraselva",),
+        (3530300,u"Mirassol",u"SP","mirassol",),
+        (5105622,u"Mirassol d'Oeste",u"MT","mirassol d'oeste",),
+        (3530409,u"Mirassolândia",u"SP","mirassolandia",),
+        (3142254,u"Miravânia",u"MG","miravania",),
+        (4210852,u"Mirim Doce",u"SC","mirim doce",),
+        (2106805,u"Mirinzal",u"MA","mirinzal",),
+        (4116059,u"Missal",u"PR","missal",),
+        (2308401,u"Missão Velha",u"CE","missao velha",),
+        (1504604,u"Mocajuba",u"PA","mocajuba",),
+        (3530508,u"Mococa",u"SP","mococa",),
+        (4210902,u"Modelo",u"SC","modelo",),
+        (3142304,u"Moeda",u"MG","moeda",),
+        (3142403,u"Moema",u"MG","moema",),
+        (2509404,u"Mogeiro",u"PB","mogeiro",),
+        (3530607,u"Mogi das Cruzes",u"SP","mogi das cruzes",),
+        (3530706,u"Mogi Guaçu",u"SP","mogi guacu",),
+        (5213400,u"Moiporá",u"GO","moipora",),
+        (2804102,u"Moita Bonita",u"SE","moita bonita",),
+        (3530805,u"Moji Mirim",u"SP","moji mirim",),
+        (1504703,u"Moju",u"PA","moju",),
+        (2308500,u"Mombaça",u"CE","mombaca",),
+        (3530904,u"Mombuca",u"SP","mombuca",),
+        (2106904,u"Monção",u"MA","moncao",),
+        (3531001,u"Monções",u"SP","moncoes",),
+        (4211009,u"Mondaí",u"SC","mondai",),
+        (3531100,u"Mongaguá",u"SP","mongagua",),
+        (3142502,u"Monjolos",u"MG","monjolos",),
+        (2206407,u"Monsenhor Gil",u"PI","monsenhor gil",),
+        (2206506,u"Monsenhor Hipólito",u"PI","monsenhor hipolito",),
+        (3142601,u"Monsenhor Paulo",u"MG","monsenhor paulo",),
+        (2308609,u"Monsenhor Tabosa",u"CE","monsenhor tabosa",),
+        (2509503,u"Montadas",u"PB","montadas",),
+        (3142700,u"Montalvânia",u"MG","montalvania",),
+        (3203502,u"Montanha",u"ES","montanha",),
+        (2407708,u"Montanhas",u"RN","montanhas",),
+        (4312351,u"Montauri",u"RS","montauri",),
+        (1504802,u"Monte Alegre",u"PA","monte alegre",),
+        (2407807,u"Monte Alegre",u"RN","monte alegre",),
+        (5213509,u"Monte Alegre de Goiás",u"GO","monte alegre de goias",),
+        (3142809,u"Monte Alegre de Minas",u"MG","monte alegre de minas",),
+        (2804201,u"Monte Alegre de Sergipe",u"SE","monte alegre de sergipe",),
+        (2206605,u"Monte Alegre do Piauí",u"PI","monte alegre do piaui",),
+        (3531209,u"Monte Alegre do Sul",u"SP","monte alegre do sul",),
+        (4312377,u"Monte Alegre dos Campos",u"RS","monte alegre dos campos",),
+        (3531308,u"Monte Alto",u"SP","monte alto",),
+        (3531407,u"Monte Aprazível",u"SP","monte aprazivel",),
+        (3142908,u"Monte Azul",u"MG","monte azul",),
+        (3531506,u"Monte Azul Paulista",u"SP","monte azul paulista",),
+        (3143005,u"Monte Belo",u"MG","monte belo",),
+        (4312385,u"Monte Belo do Sul",u"RS","monte belo do sul",),
+        (4211058,u"Monte Carlo",u"SC","monte carlo",),
+        (3143104,u"Monte Carmelo",u"MG","monte carmelo",),
+        (3531605,u"Monte Castelo",u"SP","monte castelo",),
+        (4211108,u"Monte Castelo",u"SC","monte castelo",),
+        (2407906,u"Monte das Gameleiras",u"RN","monte das gameleiras",),
+        (1713601,u"Monte do Carmo",u"TO","monte do carmo",),
+        (3143153,u"Monte Formoso",u"MG","monte formoso",),
+        (2509602,u"Monte Horebe",u"PB","monte horebe",),
+        (3531803,u"Monte Mor",u"SP","monte mor",),
+        (1101401,u"Monte Negro",u"RO","monte negro",),
+        (2921500,u"Monte Santo",u"BA","monte santo",),
+        (3143203,u"Monte Santo de Minas",u"MG","monte santo de minas",),
+        (1713700,u"Monte Santo do Tocantins",u"TO","monte santo do tocantins",),
+        (3143401,u"Monte Sião",u"MG","monte siao",),
+        (2509701,u"Monteiro",u"PB","monteiro",),
+        (3531704,u"Monteiro Lobato",u"SP","monteiro lobato",),
+        (2705408,u"Monteirópolis",u"AL","monteiropolis",),
+        (4312401,u"Montenegro",u"RS","montenegro",),
+        (2107001,u"Montes Altos",u"MA","montes altos",),
+        (3143302,u"Montes Claros",u"MG","montes claros",),
+        (5213707,u"Montes Claros de Goiás",u"GO","montes claros de goias",),
+        (3143450,u"Montezuma",u"MG","montezuma",),
+        (5213756,u"Montividiu",u"GO","montividiu",),
+        (5213772,u"Montividiu do Norte",u"GO","montividiu do norte",),
+        (2308708,u"Morada Nova",u"CE","morada nova",),
+        (3143500,u"Morada Nova de Minas",u"MG","morada nova de minas",),
+        (2308807,u"Moraújo",u"CE","moraujo",),
+        (2614303,u"Moreilândia",u"PE","moreilandia",),
+        (4116109,u"Moreira Sales",u"PR","moreira sales",),
+        (2609402,u"Moreno",u"PE","moreno",),
+        (4312427,u"Mormaço",u"RS","mormaco",),
+        (2921609,u"Morpará",u"BA","morpara",),
+        (4116208,u"Morretes",u"PR","morretes",),
+        (2308906,u"Morrinhos",u"CE","morrinhos",),
+        (5213806,u"Morrinhos",u"GO","morrinhos",),
+        (4312443,u"Morrinhos do Sul",u"RS","morrinhos do sul",),
+        (3531902,u"Morro Agudo",u"SP","morro agudo",),
+        (5213855,u"Morro Agudo de Goiás",u"GO","morro agudo de goias",),
+        (2206654,u"Morro Cabeça no Tempo",u"PI","morro cabeca no tempo",),
+        (4211207,u"Morro da Fumaça",u"SC","morro da fumaca",),
+        (3143609,u"Morro da Garça",u"MG","morro da garca",),
+        (2921708,u"Morro do Chapéu",u"BA","morro do chapeu",),
+        (2206670,u"Morro do Chapéu do Piauí",u"PI","morro do chapeu do piaui",),
+        (3143708,u"Morro do Pilar",u"MG","morro do pilar",),
+        (4211256,u"Morro Grande",u"SC","morro grande",),
+        (4312450,u"Morro Redondo",u"RS","morro redondo",),
+        (4312476,u"Morro Reuter",u"RS","morro reuter",),
+        (2107100,u"Morros",u"MA","morros",),
+        (2921807,u"Mortugaba",u"BA","mortugaba",),
+        (3532009,u"Morungaba",u"SP","morungaba",),
+        (5213905,u"Mossâmedes",u"GO","mossamedes",),
+        (2408003,u"Mossoró",u"RN","mossoro",),
+        (4312500,u"Mostardas",u"RS","mostardas",),
+        (3532058,u"Motuca",u"SP","motuca",),
+        (5214002,u"Mozarlândia",u"GO","mozarlandia",),
+        (1504901,u"Muaná",u"PA","muana",),
+        (1400308,u"Mucajaí",u"RR","mucajai",),
+        (2309003,u"Mucambo",u"CE","mucambo",),
+        (2921906,u"Mucugê",u"BA","mucuge",),
+        (4312609,u"Muçum",u"RS","mucum",),
+        (2922003,u"Mucuri",u"BA","mucuri",),
+        (3203601,u"Mucurici",u"ES","mucurici",),
+        (4312617,u"Muitos Capões",u"RS","muitos capoes",),
+        (4312625,u"Muliterno",u"RS","muliterno",),
+        (2309102,u"Mulungu",u"CE","mulungu",),
+        (2509800,u"Mulungu",u"PB","mulungu",),
+        (2922052,u"Mulungu do Morro",u"BA","mulungu do morro",),
+        (2922102,u"Mundo Novo",u"BA","mundo novo",),
+        (5005681,u"Mundo Novo",u"MS","mundo novo",),
+        (5214051,u"Mundo Novo",u"GO","mundo novo",),
+        (3143807,u"Munhoz",u"MG","munhoz",),
+        (4116307,u"Munhoz de Melo",u"PR","munhoz de melo",),
+        (2922201,u"Muniz Ferreira",u"BA","muniz ferreira",),
+        (3203700,u"Muniz Freire",u"ES","muniz freire",),
+        (2922250,u"Muquém de São Francisco",u"BA","muquem de sao francisco",),
+        (3203809,u"Muqui",u"ES","muqui",),
+        (3143906,u"Muriaé",u"MG","muriae",),
+        (2804300,u"Muribeca",u"SE","muribeca",),
+        (2705507,u"Murici",u"AL","murici",),
+        (2206696,u"Murici dos Portelas",u"PI","murici dos portelas",),
+        (1713957,u"Muricilândia",u"TO","muricilandia",),
+        (2922300,u"Muritiba",u"BA","muritiba",),
+        (3532108,u"Murutinga do Sul",u"SP","murutinga do sul",),
+        (2922409,u"Mutuípe",u"BA","mutuipe",),
+        (3144003,u"Mutum",u"MG","mutum",),
+        (5214101,u"Mutunópolis",u"GO","mutunopolis",),
+        (3144102,u"Muzambinho",u"MG","muzambinho",),
+        (3144201,u"Nacip Raydan",u"MG","nacip raydan",),
+        (3532157,u"Nantes",u"SP","nantes",),
+        (3144300,u"Nanuque",u"MG","nanuque",),
+        (4312658,u"Não-Me-Toque",u"RS","nao-me-toque",),
+        (3144359,u"Naque",u"MG","naque",),
+        (3532207,u"Narandiba",u"SP","narandiba",),
+        (2408102,u"Natal",u"RN","natal",),
+        (3144375,u"Natalândia",u"MG","natalandia",),
+        (3144409,u"Natércia",u"MG","natercia",),
+        (1714203,u"Natividade",u"TO","natividade",),
+        (3303104,u"Natividade",u"RJ","natividade",),
+        (3532306,u"Natividade da Serra",u"SP","natividade da serra",),
+        (2509909,u"Natuba",u"PB","natuba",),
+        (4211306,u"Navegantes",u"SC","navegantes",),
+        (5005707,u"Naviraí",u"MS","navirai",),
+        (1714302,u"Nazaré",u"TO","nazare",),
+        (2922508,u"Nazaré",u"BA","nazare",),
+        (2609501,u"Nazaré da Mata",u"PE","nazare da mata",),
+        (2206704,u"Nazaré do Piauí",u"PI","nazare do piaui",),
+        (3532405,u"Nazaré Paulista",u"SP","nazare paulista",),
+        (3144508,u"Nazareno",u"MG","nazareno",),
+        (2510006,u"Nazarezinho",u"PB","nazarezinho",),
+        (2206720,u"Nazária",u"PI","nazaria",),
+        (5214408,u"Nazário",u"GO","nazario",),
+        (2804409,u"Neópolis",u"SE","neopolis",),
+        (3144607,u"Nepomuceno",u"MG","nepomuceno",),
+        (5214507,u"Nerópolis",u"GO","neropolis",),
+        (3532504,u"Neves Paulista",u"SP","neves paulista",),
+        (1303007,u"Nhamundá",u"AM","nhamunda",),
+        (3532603,u"Nhandeara",u"SP","nhandeara",),
+        (4312674,u"Nicolau Vergueiro",u"RS","nicolau vergueiro",),
+        (2922607,u"Nilo Peçanha",u"BA","nilo pecanha",),
+        (3303203,u"Nilópolis",u"RJ","nilopolis",),
+        (2107209,u"Nina Rodrigues",u"MA","nina rodrigues",),
+        (3144656,u"Ninheira",u"MG","ninheira",),
+        (5005806,u"Nioaque",u"MS","nioaque",),
+        (3532702,u"Nipoã",u"SP","nipoa",),
+        (5214606,u"Niquelândia",u"GO","niquelandia",),
+        (2408201,u"Nísia Floresta",u"RN","nisia floresta",),
+        (3303302,u"Niterói",u"RJ","niteroi",),
+        (5105903,u"Nobres",u"MT","nobres",),
+        (4312708,u"Nonoai",u"RS","nonoai",),
+        (2922656,u"Nordestina",u"BA","nordestina",),
+        (1400407,u"Normandia",u"RR","normandia",),
+        (5106000,u"Nortelândia",u"MT","nortelandia",),
+        (2804458,u"Nossa Senhora Aparecida",u"SE","nossa senhora aparecida",),
+        (2804508,u"Nossa Senhora da Glória",u"SE","nossa senhora da gloria",),
+        (2804607,u"Nossa Senhora das Dores",u"SE","nossa senhora das dores",),
+        (4116406,u"Nossa Senhora das Graças",u"PR","nossa senhora das gracas",),
+        (2804706,u"Nossa Senhora de Lourdes",u"SE","nossa senhora de lourdes",),
+        (2206753,u"Nossa Senhora de Nazaré",u"PI","nossa senhora de nazare",),
+        (5106109,u"Nossa Senhora do Livramento",u"MT","nossa senhora do livramento",),
+        (2804805,u"Nossa Senhora do Socorro",u"SE","nossa senhora do socorro",),
+        (2206803,u"Nossa Senhora dos Remédios",u"PI","nossa senhora dos remedios",),
+        (3532801,u"Nova Aliança",u"SP","nova alianca",),
+        (4116505,u"Nova Aliança do Ivaí",u"PR","nova alianca do ivai",),
+        (4312757,u"Nova Alvorada",u"RS","nova alvorada",),
+        (5006002,u"Nova Alvorada do Sul",u"MS","nova alvorada do sul",),
+        (5214705,u"Nova América",u"GO","nova america",),
+        (4116604,u"Nova América da Colina",u"PR","nova america da colina",),
+        (5006200,u"Nova Andradina",u"MS","nova andradina",),
+        (4312807,u"Nova Araçá",u"RS","nova araca",),
+        (4116703,u"Nova Aurora",u"PR","nova aurora",),
+        (5214804,u"Nova Aurora",u"GO","nova aurora",),
+        (5106158,u"Nova Bandeirantes",u"MT","nova bandeirantes",),
+        (4312906,u"Nova Bassano",u"RS","nova bassano",),
+        (3144672,u"Nova Belém",u"MG","nova belem",),
+        (4312955,u"Nova Boa Vista",u"RS","nova boa vista",),
+        (5106208,u"Nova Brasilândia",u"MT","nova brasilandia",),
+        (1100148,u"Nova Brasilândia D'Oeste",u"RO","nova brasilandia d'oeste",),
+        (4313003,u"Nova Bréscia",u"RS","nova brescia",),
+        (3532827,u"Nova Campina",u"SP","nova campina",),
+        (2922706,u"Nova Canaã",u"BA","nova canaa",),
+        (5106216,u"Nova Canaã do Norte",u"MT","nova canaa do norte",),
+        (3532843,u"Nova Canaã Paulista",u"SP","nova canaa paulista",),
+        (4313011,u"Nova Candelária",u"RS","nova candelaria",),
+        (4116802,u"Nova Cantu",u"PR","nova cantu",),
+        (3532868,u"Nova Castilho",u"SP","nova castilho",),
+        (2107258,u"Nova Colinas",u"MA","nova colinas",),
+        (5214838,u"Nova Crixás",u"GO","nova crixas",),
+        (2408300,u"Nova Cruz",u"RN","nova cruz",),
+        (3144706,u"Nova Era",u"MG","nova era",),
+        (4211405,u"Nova Erechim",u"SC","nova erechim",),
+        (4116901,u"Nova Esperança",u"PR","nova esperanca",),
+        (1504950,u"Nova Esperança do Piriá",u"PA","nova esperanca do piria",),
+        (4116950,u"Nova Esperança do Sudoeste",u"PR","nova esperanca do sudoeste",),
+        (4313037,u"Nova Esperança do Sul",u"RS","nova esperanca do sul",),
+        (3532900,u"Nova Europa",u"SP","nova europa",),
+        (2922730,u"Nova Fátima",u"BA","nova fatima",),
+        (4117008,u"Nova Fátima",u"PR","nova fatima",),
+        (2510105,u"Nova Floresta",u"PB","nova floresta",),
+        (3303401,u"Nova Friburgo",u"RJ","nova friburgo",),
+        (5214861,u"Nova Glória",u"GO","nova gloria",),
+        (3533007,u"Nova Granada",u"SP","nova granada",),
+        (5108808,u"Nova Guarita",u"MT","nova guarita",),
+        (3533106,u"Nova Guataporanga",u"SP","nova guataporanga",),
+        (4313060,u"Nova Hartz",u"RS","nova hartz",),
+        (2922755,u"Nova Ibiá",u"BA","nova ibia",),
+        (3303500,u"Nova Iguaçu",u"RJ","nova iguacu",),
+        (5214879,u"Nova Iguaçu de Goiás",u"GO","nova iguacu de goias",),
+        (3533205,u"Nova Independência",u"SP","nova independencia",),
+        (2107308,u"Nova Iorque",u"MA","nova iorque",),
+        (1504976,u"Nova Ipixuna",u"PA","nova ipixuna",),
+        (4211454,u"Nova Itaberaba",u"SC","nova itaberaba",),
+        (2922805,u"Nova Itarana",u"BA","nova itarana",),
+        (5106182,u"Nova Lacerda",u"MT","nova lacerda",),
+        (4117057,u"Nova Laranjeiras",u"PR","nova laranjeiras",),
+        (3144805,u"Nova Lima",u"MG","nova lima",),
+        (4117107,u"Nova Londrina",u"PR","nova londrina",),
+        (3533304,u"Nova Luzitânia",u"SP","nova luzitania",),
+        (1100338,u"Nova Mamoré",u"RO","nova mamore",),
+        (5108857,u"Nova Marilândia",u"MT","nova marilandia",),
+        (5108907,u"Nova Maringá",u"MT","nova maringa",),
+        (3144904,u"Nova Módica",u"MG","nova modica",),
+        (5108956,u"Nova Monte Verde",u"MT","nova monte verde",),
+        (5106224,u"Nova Mutum",u"MT","nova mutum",),
+        (5106174,u"Nova Nazaré",u"MT","nova nazare",),
+        (3533403,u"Nova Odessa",u"SP","nova odessa",),
+        (4117206,u"Nova Olímpia",u"PR","nova olimpia",),
+        (5106232,u"Nova Olímpia",u"MT","nova olimpia",),
+        (1714880,u"Nova Olinda",u"TO","nova olinda",),
+        (2309201,u"Nova Olinda",u"CE","nova olinda",),
+        (2510204,u"Nova Olinda",u"PB","nova olinda",),
+        (2107357,u"Nova Olinda do Maranhão",u"MA","nova olinda do maranhao",),
+        (1303106,u"Nova Olinda do Norte",u"AM","nova olinda do norte",),
+        (4313086,u"Nova Pádua",u"RS","nova padua",),
+        (4313102,u"Nova Palma",u"RS","nova palma",),
+        (2510303,u"Nova Palmeira",u"PB","nova palmeira",),
+        (4313201,u"Nova Petrópolis",u"RS","nova petropolis",),
+        (3145000,u"Nova Ponte",u"MG","nova ponte",),
+        (3145059,u"Nova Porteirinha",u"MG","nova porteirinha",),
+        (4313300,u"Nova Prata",u"RS","nova prata",),
+        (4117255,u"Nova Prata do Iguaçu",u"PR","nova prata do iguacu",),
+        (4313334,u"Nova Ramada",u"RS","nova ramada",),
+        (2922854,u"Nova Redenção",u"BA","nova redencao",),
+        (3145109,u"Nova Resende",u"MG","nova resende",),
+        (5214903,u"Nova Roma",u"GO","nova roma",),
+        (4313359,u"Nova Roma do Sul",u"RS","nova roma do sul",),
+        (1715002,u"Nova Rosalândia",u"TO","nova rosalandia",),
+        (2309300,u"Nova Russas",u"CE","nova russas",),
+        (4117214,u"Nova Santa Bárbara",u"PR","nova santa barbara",),
+        (5106190,u"Nova Santa Helena",u"MT","nova santa helena",),
+        (2207959,u"Nova Santa Rita",u"PI","nova santa rita",),
+        (4313375,u"Nova Santa Rita",u"RS","nova santa rita",),
+        (4117222,u"Nova Santa Rosa",u"PR","nova santa rosa",),
+        (3145208,u"Nova Serrana",u"MG","nova serrana",),
+        (2922904,u"Nova Soure",u"BA","nova soure",),
+        (4117271,u"Nova Tebas",u"PR","nova tebas",),
+        (1505007,u"Nova Timboteua",u"PA","nova timboteua",),
+        (4211504,u"Nova Trento",u"SC","nova trento",),
+        (5106240,u"Nova Ubiratã",u"MT","nova ubirata",),
+        (1101435,u"Nova União",u"RO","nova uniao",),
+        (3136603,u"Nova União",u"MG","nova uniao",),
+        (3203908,u"Nova Venécia",u"ES","nova venecia",),
+        (4211603,u"Nova Veneza",u"SC","nova veneza",),
+        (5215009,u"Nova Veneza",u"GO","nova veneza",),
+        (2923001,u"Nova Viçosa",u"BA","nova vicosa",),
+        (5106257,u"Nova Xavantina",u"MT","nova xavantina",),
+        (3533254,u"Novais",u"SP","novais",),
+        (1715101,u"Novo Acordo",u"TO","novo acordo",),
+        (1303205,u"Novo Airão",u"AM","novo airao",),
+        (1715150,u"Novo Alegre",u"TO","novo alegre",),
+        (1303304,u"Novo Aripuanã",u"AM","novo aripuana",),
+        (4313490,u"Novo Barreiro",u"RS","novo barreiro",),
+        (5215207,u"Novo Brasil",u"GO","novo brasil",),
+        (4313391,u"Novo Cabrais",u"RS","novo cabrais",),
+        (3145307,u"Novo Cruzeiro",u"MG","novo cruzeiro",),
+        (5215231,u"Novo Gama",u"GO","novo gama",),
+        (4313409,u"Novo Hamburgo",u"RS","novo hamburgo",),
+        (2923035,u"Novo Horizonte",u"BA","novo horizonte",),
+        (3533502,u"Novo Horizonte",u"SP","novo horizonte",),
+        (4211652,u"Novo Horizonte",u"SC","novo horizonte",),
+        (5106273,u"Novo Horizonte do Norte",u"MT","novo horizonte do norte",),
+        (1100502,u"Novo Horizonte do Oeste",u"RO","novo horizonte do oeste",),
+        (5006259,u"Novo Horizonte do Sul",u"MS","novo horizonte do sul",),
+        (4117297,u"Novo Itacolomi",u"PR","novo itacolomi",),
+        (1715259,u"Novo Jardim",u"TO","novo jardim",),
+        (2705606,u"Novo Lino",u"AL","novo lino",),
+        (4313425,u"Novo Machado",u"RS","novo machado",),
+        (5106265,u"Novo Mundo",u"MT","novo mundo",),
+        (2309409,u"Novo Oriente",u"CE","novo oriente",),
+        (3145356,u"Novo Oriente de Minas",u"MG","novo oriente de minas",),
+        (2206902,u"Novo Oriente do Piauí",u"PI","novo oriente do piaui",),
+        (5215256,u"Novo Planalto",u"GO","novo planalto",),
+        (1505031,u"Novo Progresso",u"PA","novo progresso",),
+        (1505064,u"Novo Repartimento",u"PA","novo repartimento",),
+        (2206951,u"Novo Santo Antônio",u"PI","novo santo antonio",),
+        (5106315,u"Novo Santo Antônio",u"MT","novo santo antonio",),
+        (5106281,u"Novo São Joaquim",u"MT","novo sao joaquim",),
+        (4313441,u"Novo Tiradentes",u"RS","novo tiradentes",),
+        (2923050,u"Novo Triunfo",u"BA","novo triunfo",),
+        (4313466,u"Novo Xingu",u"RS","novo xingu",),
+        (3145372,u"Novorizonte",u"MG","novorizonte",),
+        (3533601,u"Nuporanga",u"SP","nuporanga",),
+        (1505106,u"Óbidos",u"PA","obidos",),
+        (2309458,u"Ocara",u"CE","ocara",),
+        (3533700,u"Ocauçu",u"SP","ocaucu",),
+        (2207009,u"Oeiras",u"PI","oeiras",),
+        (1505205,u"Oeiras do Pará",u"PA","oeiras do para",),
+        (1600501,u"Oiapoque",u"AP","oiapoque",),
+        (3145406,u"Olaria",u"MG","olaria",),
+        (3533809,u"Óleo",u"SP","oleo",),
+        (2510402,u"Olho d'Água",u"PB","olho d'agua",),
+        (2107407,u"Olho d'Água das Cunhãs",u"MA","olho d'agua das cunhas",),
+        (2705705,u"Olho d'Água das Flores",u"AL","olho d'agua das flores",),
+        (2705804,u"Olho d'Água do Casado",u"AL","olho d'agua do casado",),
+        (2207108,u"Olho D'Água do Piauí",u"PI","olho d'agua do piaui",),
+        (2705903,u"Olho d'Água Grande",u"AL","olho d'agua grande",),
+        (2408409,u"Olho-d'Água do Borges",u"RN","olho-d'agua do borges",),
+        (3145455,u"Olhos-d'Água",u"MG","olhos-d'agua",),
+        (3533908,u"Olímpia",u"SP","olimpia",),
+        (3145505,u"Olímpio Noronha",u"MG","olimpio noronha",),
+        (2609600,u"Olinda",u"PE","olinda",),
+        (2107456,u"Olinda Nova do Maranhão",u"MA","olinda nova do maranhao",),
+        (2923100,u"Olindina",u"BA","olindina",),
+        (2510501,u"Olivedos",u"PB","olivedos",),
+        (3145604,u"Oliveira",u"MG","oliveira",),
+        (1715507,u"Oliveira de Fátima",u"TO","oliveira de fatima",),
+        (2923209,u"Oliveira dos Brejinhos",u"BA","oliveira dos brejinhos",),
+        (3145703,u"Oliveira Fortes",u"MG","oliveira fortes",),
+        (2706000,u"Olivença",u"AL","olivenca",),
+        (3145802,u"Onça de Pitangui",u"MG","onca de pitangui",),
+        (3534005,u"Onda Verde",u"SP","onda verde",),
+        (3145851,u"Oratórios",u"MG","oratorios",),
+        (3534104,u"Oriente",u"SP","oriente",),
+        (3534203,u"Orindiúva",u"SP","orindiuva",),
+        (1505304,u"Oriximiná",u"PA","oriximina",),
+        (3145877,u"Orizânia",u"MG","orizania",),
+        (5215306,u"Orizona",u"GO","orizona",),
+        (3534302,u"Orlândia",u"SP","orlandia",),
+        (4211702,u"Orleans",u"SC","orleans",),
+        (2609709,u"Orobó",u"PE","orobo",),
+        (2609808,u"Orocó",u"PE","oroco",),
+        (2309508,u"Orós",u"CE","oros",),
+        (4117305,u"Ortigueira",u"PR","ortigueira",),
+        (3534401,u"Osasco",u"SP","osasco",),
+        (3534500,u"Oscar Bressane",u"SP","oscar bressane",),
+        (4313508,u"Osório",u"RS","osorio",),
+        (3534609,u"Osvaldo Cruz",u"SP","osvaldo cruz",),
+        (4211751,u"Otacílio Costa",u"SC","otacilio costa",),
+        (1505403,u"Ourém",u"PA","ourem",),
+        (2923308,u"Ouriçangas",u"BA","ouricangas",),
+        (2609907,u"Ouricuri",u"PE","ouricuri",),
+        (1505437,u"Ourilândia do Norte",u"PA","ourilandia do norte",),
+        (3534708,u"Ourinhos",u"SP","ourinhos",),
+        (4117404,u"Ourizona",u"PR","ourizona",),
+        (4211801,u"Ouro",u"SC","ouro",),
+        (2408508,u"Ouro Branco",u"RN","ouro branco",),
+        (2706109,u"Ouro Branco",u"AL","ouro branco",),
+        (3145901,u"Ouro Branco",u"MG","ouro branco",),
+        (3146008,u"Ouro Fino",u"MG","ouro fino",),
+        (3146107,u"Ouro Preto",u"MG","ouro preto",),
+        (1100155,u"Ouro Preto do Oeste",u"RO","ouro preto do oeste",),
+        (2510600,u"Ouro Velho",u"PB","ouro velho",),
+        (3534807,u"Ouro Verde",u"SP","ouro verde",),
+        (4211850,u"Ouro Verde",u"SC","ouro verde",),
+        (5215405,u"Ouro Verde de Goiás",u"GO","ouro verde de goias",),
+        (3146206,u"Ouro Verde de Minas",u"MG","ouro verde de minas",),
+        (4117453,u"Ouro Verde do Oeste",u"PR","ouro verde do oeste",),
+        (3534757,u"Ouroeste",u"SP","ouroeste",),
+        (2923357,u"Ourolândia",u"BA","ourolandia",),
+        (5215504,u"Ouvidor",u"GO","ouvidor",),
+        (3534906,u"Pacaembu",u"SP","pacaembu",),
+        (1505486,u"Pacajá",u"PA","pacaja",),
+        (2309607,u"Pacajus",u"CE","pacajus",),
+        (1400456,u"Pacaraima",u"RR","pacaraima",),
+        (2309706,u"Pacatuba",u"CE","pacatuba",),
+        (2804904,u"Pacatuba",u"SE","pacatuba",),
+        (2107506,u"Paço do Lumiar",u"MA","paco do lumiar",),
+        (2309805,u"Pacoti",u"CE","pacoti",),
+        (2309904,u"Pacujá",u"CE","pacuja",),
+        (5215603,u"Padre Bernardo",u"GO","padre bernardo",),
+        (3146255,u"Padre Carvalho",u"MG","padre carvalho",),
+        (2207207,u"Padre Marcos",u"PI","padre marcos",),
+        (3146305,u"Padre Paraíso",u"MG","padre paraiso",),
+        (2207306,u"Paes Landim",u"PI","paes landim",),
+        (3146552,u"Pai Pedro",u"MG","pai pedro",),
+        (4211876,u"Paial",u"SC","paial",),
+        (4117503,u"Paiçandu",u"PR","paicandu",),
+        (4313607,u"Paim Filho",u"RS","paim filho",),
+        (3146404,u"Paineiras",u"MG","paineiras",),
+        (4211892,u"Painel",u"SC","painel",),
+        (3146503,u"Pains",u"MG","pains",),
+        (3146602,u"Paiva",u"MG","paiva",),
+        (2207355,u"Pajeú do Piauí",u"PI","pajeu do piaui",),
+        (2706208,u"Palestina",u"AL","palestina",),
+        (3535002,u"Palestina",u"SP","palestina",),
+        (5215652,u"Palestina de Goiás",u"GO","palestina de goias",),
+        (1505494,u"Palestina do Pará",u"PA","palestina do para",),
+        (2310001,u"Palhano",u"CE","palhano",),
+        (4211900,u"Palhoça",u"SC","palhoca",),
+        (3146701,u"Palma",u"MG","palma",),
+        (4212007,u"Palma Sola",u"SC","palma sola",),
+        (2310100,u"Palmácia",u"CE","palmacia",),
+        (2610004,u"Palmares",u"PE","palmares",),
+        (4313656,u"Palmares do Sul",u"RS","palmares do sul",),
+        (3535101,u"Palmares Paulista",u"SP","palmares paulista",),
+        (1721000,u"Palmas",u"TO","palmas",),
+        (4117602,u"Palmas",u"PR","palmas",),
+        (2923407,u"Palmas de Monte Alto",u"BA","palmas de monte alto",),
+        (4117701,u"Palmeira",u"PR","palmeira",),
+        (4212056,u"Palmeira",u"SC","palmeira",),
+        (3535200,u"Palmeira d'Oeste",u"SP","palmeira d'oeste",),
+        (4313706,u"Palmeira das Missões",u"RS","palmeira das missoes",),
+        (2207405,u"Palmeira do Piauí",u"PI","palmeira do piaui",),
+        (2706307,u"Palmeira dos Índios",u"AL","palmeira dos indios",),
+        (2207504,u"Palmeirais",u"PI","palmeirais",),
+        (2107605,u"Palmeirândia",u"MA","palmeirandia",),
+        (1715705,u"Palmeirante",u"TO","palmeirante",),
+        (2923506,u"Palmeiras",u"BA","palmeiras",),
+        (5215702,u"Palmeiras de Goiás",u"GO","palmeiras de goias",),
+        (1713809,u"Palmeiras do Tocantins",u"TO","palmeiras do tocantins",),
+        (2610103,u"Palmeirina",u"PE","palmeirina",),
+        (1715754,u"Palmeirópolis",u"TO","palmeiropolis",),
+        (5215801,u"Palmelo",u"GO","palmelo",),
+        (5215900,u"Palminópolis",u"GO","palminopolis",),
+        (3535309,u"Palmital",u"SP","palmital",),
+        (4117800,u"Palmital",u"PR","palmital",),
+        (4313805,u"Palmitinho",u"RS","palmitinho",),
+        (4212106,u"Palmitos",u"SC","palmitos",),
+        (3146750,u"Palmópolis",u"MG","palmopolis",),
+        (4117909,u"Palotina",u"PR","palotina",),
+        (5216007,u"Panamá",u"GO","panama",),
+        (4313904,u"Panambi",u"RS","panambi",),
+        (3204005,u"Pancas",u"ES","pancas",),
+        (2610202,u"Panelas",u"PE","panelas",),
+        (3535408,u"Panorama",u"SP","panorama",),
+        (4313953,u"Pantano Grande",u"RS","pantano grande",),
+        (2706406,u"Pão de Açúcar",u"AL","pao de acucar",),
+        (3146909,u"Papagaios",u"MG","papagaios",),
+        (4212205,u"Papanduva",u"SC","papanduva",),
+        (2207553,u"Paquetá",u"PI","paqueta",),
+        (3147105,u"Pará de Minas",u"MG","para de minas",),
+        (3303609,u"Paracambi",u"RJ","paracambi",),
+        (3147006,u"Paracatu",u"MG","paracatu",),
+        (2310209,u"Paracuru",u"CE","paracuru",),
+        (1505502,u"Paragominas",u"PA","paragominas",),
+        (3147204,u"Paraguaçu",u"MG","paraguacu",),
+        (3535507,u"Paraguaçu Paulista",u"SP","paraguacu paulista",),
+        (4314001,u"Paraí",u"RS","parai",),
+        (3303708,u"Paraíba do Sul",u"RJ","paraiba do sul",),
+        (2107704,u"Paraibano",u"MA","paraibano",),
+        (3535606,u"Paraibuna",u"SP","paraibuna",),
+        (2310258,u"Paraipaba",u"CE","paraipaba",),
+        (3535705,u"Paraíso",u"SP","paraiso",),
+        (4212239,u"Paraíso",u"SC","paraiso",),
+        (4118006,u"Paraíso do Norte",u"PR","paraiso do norte",),
+        (4314027,u"Paraíso do Sul",u"RS","paraiso do sul",),
+        (1716109,u"Paraíso do Tocantins",u"TO","paraiso do tocantins",),
+        (3147303,u"Paraisópolis",u"MG","paraisopolis",),
+        (2310308,u"Parambu",u"CE","parambu",),
+        (2923605,u"Paramirim",u"BA","paramirim",),
+        (2310407,u"Paramoti",u"CE","paramoti",),
+        (1716208,u"Paranã",u"TO","parana",),
+        (2408607,u"Paraná",u"RN","parana",),
+        (4118105,u"Paranacity",u"PR","paranacity",),
+        (4118204,u"Paranaguá",u"PR","paranagua",),
+        (5006309,u"Paranaíba",u"MS","paranaiba",),
+        (5216304,u"Paranaiguara",u"GO","paranaiguara",),
+        (5106299,u"Paranaíta",u"MT","paranaita",),
+        (3535804,u"Paranapanema",u"SP","paranapanema",),
+        (4118303,u"Paranapoema",u"PR","paranapoema",),
+        (3535903,u"Paranapuã",u"SP","paranapua",),
+        (2610301,u"Paranatama",u"PE","paranatama",),
+        (5106307,u"Paranatinga",u"MT","paranatinga",),
+        (4118402,u"Paranavaí",u"PR","paranavai",),
+        (5006358,u"Paranhos",u"MS","paranhos",),
+        (3147402,u"Paraopeba",u"MG","paraopeba",),
+        (3536000,u"Parapuã",u"SP","parapua",),
+        (2510659,u"Parari",u"PB","parari",),
+        (2923704,u"Paratinga",u"BA","paratinga",),
+        (3303807,u"Paraty",u"RJ","paraty",),
+        (2408706,u"Paraú",u"RN","parau",),
+        (1505536,u"Parauapebas",u"PA","parauapebas",),
+        (5216403,u"Paraúna",u"GO","parauna",),
+        (2408805,u"Parazinho",u"RN","parazinho",),
+        (3536109,u"Pardinho",u"SP","pardinho",),
+        (4314035,u"Pareci Novo",u"RS","pareci novo",),
+        (1101450,u"Parecis",u"RO","parecis",),
+        (2408904,u"Parelhas",u"RN","parelhas",),
+        (2706422,u"Pariconha",u"AL","pariconha",),
+        (1303403,u"Parintins",u"AM","parintins",),
+        (2923803,u"Paripiranga",u"BA","paripiranga",),
+        (2706448,u"Paripueira",u"AL","paripueira",),
+        (3536208,u"Pariquera-Açu",u"SP","pariquera-acu",),
+        (3536257,u"Parisi",u"SP","parisi",),
+        (2207603,u"Parnaguá",u"PI","parnagua",),
+        (2207702,u"Parnaíba",u"PI","parnaiba",),
+        (2403251,u"Parnamirim",u"RN","parnamirim",),
+        (2610400,u"Parnamirim",u"PE","parnamirim",),
+        (2107803,u"Parnarama",u"MA","parnarama",),
+        (4314050,u"Parobé",u"RS","parobe",),
+        (2409100,u"Passa e Fica",u"RN","passa e fica",),
+        (3147600,u"Passa Quatro",u"MG","passa quatro",),
+        (4314068,u"Passa Sete",u"RS","passa sete",),
+        (3147709,u"Passa Tempo",u"MG","passa tempo",),
+        (3147808,u"Passa-Vinte",u"MG","passa-vinte",),
+        (3147501,u"Passabém",u"MG","passabem",),
+        (2409209,u"Passagem",u"RN","passagem",),
+        (2510709,u"Passagem",u"PB","passagem",),
+        (2107902,u"Passagem Franca",u"MA","passagem franca",),
+        (2207751,u"Passagem Franca do Piauí",u"PI","passagem franca do piaui",),
+        (2610509,u"Passira",u"PE","passira",),
+        (2706505,u"Passo de Camaragibe",u"AL","passo de camaragibe",),
+        (4212254,u"Passo de Torres",u"SC","passo de torres",),
+        (4314076,u"Passo do Sobrado",u"RS","passo do sobrado",),
+        (4314100,u"Passo Fundo",u"RS","passo fundo",),
+        (3147907,u"Passos",u"MG","passos",),
+        (4212270,u"Passos Maia",u"SC","passos maia",),
+        (2108009,u"Pastos Bons",u"MA","pastos bons",),
+        (3147956,u"Patis",u"MG","patis",),
+        (4118451,u"Pato Bragado",u"PR","pato bragado",),
+        (4118501,u"Pato Branco",u"PR","pato branco",),
+        (2510808,u"Patos",u"PB","patos",),
+        (3148004,u"Patos de Minas",u"MG","patos de minas",),
+        (2207777,u"Patos do Piauí",u"PI","patos do piaui",),
+        (3148103,u"Patrocínio",u"MG","patrocinio",),
+        (3148202,u"Patrocínio do Muriaé",u"MG","patrocinio do muriae",),
+        (3536307,u"Patrocínio Paulista",u"SP","patrocinio paulista",),
+        (2409308,u"Patu",u"RN","patu",),
+        (3303856,u"Paty do Alferes",u"RJ","paty do alferes",),
+        (2923902,u"Pau Brasil",u"BA","pau brasil",),
+        (1505551,u"Pau D'Arco",u"PA","pau d'arco",),
+        (1716307,u"Pau D'Arco",u"TO","pau d'arco",),
+        (2207793,u"Pau D'Arco do Piauí",u"PI","pau d'arco do piaui",),
+        (2409407,u"Pau dos Ferros",u"RN","pau dos ferros",),
+        (2610608,u"Paudalho",u"PE","paudalho",),
+        (1303502,u"Pauini",u"AM","pauini",),
+        (3148301,u"Paula Cândido",u"MG","paula candido",),
+        (4118600,u"Paula Freitas",u"PR","paula freitas",),
+        (3536406,u"Paulicéia",u"SP","pauliceia",),
+        (3536505,u"Paulínia",u"SP","paulinia",),
+        (2108058,u"Paulino Neves",u"MA","paulino neves",),
+        (2510907,u"Paulista",u"PB","paulista",),
+        (2610707,u"Paulista",u"PE","paulista",),
+        (2207801,u"Paulistana",u"PI","paulistana",),
+        (3536570,u"Paulistânia",u"SP","paulistania",),
+        (3148400,u"Paulistas",u"MG","paulistas",),
+        (2924009,u"Paulo Afonso",u"BA","paulo afonso",),
+        (4314134,u"Paulo Bento",u"RS","paulo bento",),
+        (3536604,u"Paulo de Faria",u"SP","paulo de faria",),
+        (4118709,u"Paulo Frontin",u"PR","paulo frontin",),
+        (2706604,u"Paulo Jacinto",u"AL","paulo jacinto",),
+        (4212304,u"Paulo Lopes",u"SC","paulo lopes",),
+        (2108108,u"Paulo Ramos",u"MA","paulo ramos",),
+        (3148509,u"Pavão",u"MG","pavao",),
+        (4314159,u"Paverama",u"RS","paverama",),
+        (2207850,u"Pavussu",u"PI","pavussu",),
+        (2924058,u"Pé de Serra",u"BA","pe de serra",),
+        (4118808,u"Peabiru",u"PR","peabiru",),
+        (3148608,u"Peçanha",u"MG","pecanha",),
+        (3536703,u"Pederneiras",u"SP","pederneiras",),
+        (2610806,u"Pedra",u"PE","pedra",),
+        (3148707,u"Pedra Azul",u"MG","pedra azul",),
+        (3536802,u"Pedra Bela",u"SP","pedra bela",),
+        (3148756,u"Pedra Bonita",u"MG","pedra bonita",),
+        (2310506,u"Pedra Branca",u"CE","pedra branca",),
+        (2511004,u"Pedra Branca",u"PB","pedra branca",),
+        (1600154,u"Pedra Branca do Amapari",u"AP","pedra branca do amapari",),
+        (3148806,u"Pedra do Anta",u"MG","pedra do anta",),
+        (3148905,u"Pedra do Indaiá",u"MG","pedra do indaia",),
+        (3149002,u"Pedra Dourada",u"MG","pedra dourada",),
+        (2409506,u"Pedra Grande",u"RN","pedra grande",),
+        (2511103,u"Pedra Lavrada",u"PB","pedra lavrada",),
+        (2805000,u"Pedra Mole",u"SE","pedra mole",),
+        (2409605,u"Pedra Preta",u"RN","pedra preta",),
+        (5106372,u"Pedra Preta",u"MT","pedra preta",),
+        (3149101,u"Pedralva",u"MG","pedralva",),
+        (3536901,u"Pedranópolis",u"SP","pedranopolis",),
+        (2924108,u"Pedrão",u"BA","pedrao",),
+        (4314175,u"Pedras Altas",u"RS","pedras altas",),
+        (2511202,u"Pedras de Fogo",u"PB","pedras de fogo",),
+        (3149150,u"Pedras de Maria da Cruz",u"MG","pedras de maria da cruz",),
+        (4212403,u"Pedras Grandes",u"SC","pedras grandes",),
+        (3537008,u"Pedregulho",u"SP","pedregulho",),
+        (3537107,u"Pedreira",u"SP","pedreira",),
+        (2108207,u"Pedreiras",u"MA","pedreiras",),
+        (2805109,u"Pedrinhas",u"SE","pedrinhas",),
+        (3537156,u"Pedrinhas Paulista",u"SP","pedrinhas paulista",),
+        (3149200,u"Pedrinópolis",u"MG","pedrinopolis",),
+        (1716505,u"Pedro Afonso",u"TO","pedro afonso",),
+        (2924207,u"Pedro Alexandre",u"BA","pedro alexandre",),
+        (2409704,u"Pedro Avelino",u"RN","pedro avelino",),
+        (3204054,u"Pedro Canário",u"ES","pedro canario",),
+        (3537206,u"Pedro de Toledo",u"SP","pedro de toledo",),
+        (2108256,u"Pedro do Rosário",u"MA","pedro do rosario",),
+        (5006408,u"Pedro Gomes",u"MS","pedro gomes",),
+        (2207900,u"Pedro II",u"PI","pedro ii",),
+        (2207934,u"Pedro Laurentino",u"PI","pedro laurentino",),
+        (3149309,u"Pedro Leopoldo",u"MG","pedro leopoldo",),
+        (4314209,u"Pedro Osório",u"RS","pedro osorio",),
+        (2512721,u"Pedro Régis",u"PB","pedro regis",),
+        (3149408,u"Pedro Teixeira",u"MG","pedro teixeira",),
+        (2409803,u"Pedro Velho",u"RN","pedro velho",),
+        (1716604,u"Peixe",u"TO","peixe",),
+        (1505601,u"Peixe-Boi",u"PA","peixe-boi",),
+        (5106422,u"Peixoto de Azevedo",u"MT","peixoto de azevedo",),
+        (4314308,u"Pejuçara",u"RS","pejucara",),
+        (4314407,u"Pelotas",u"RS","pelotas",),
+        (2310605,u"Penaforte",u"CE","penaforte",),
+        (2108306,u"Penalva",u"MA","penalva",),
+        (3537305,u"Penápolis",u"SP","penapolis",),
+        (2409902,u"Pendências",u"RN","pendencias",),
+        (2706703,u"Penedo",u"AL","penedo",),
+        (4212502,u"Penha",u"SC","penha",),
+        (2310704,u"Pentecoste",u"CE","pentecoste",),
+        (3149507,u"Pequeri",u"MG","pequeri",),
+        (3149606,u"Pequi",u"MG","pequi",),
+        (1716653,u"Pequizeiro",u"TO","pequizeiro",),
+        (3149705,u"Perdigão",u"MG","perdigao",),
+        (3149804,u"Perdizes",u"MG","perdizes",),
+        (3149903,u"Perdões",u"MG","perdoes",),
+        (3537404,u"Pereira Barreto",u"SP","pereira barreto",),
+        (3537503,u"Pereiras",u"SP","pereiras",),
+        (2310803,u"Pereiro",u"CE","pereiro",),
+        (2108405,u"Peri Mirim",u"MA","peri mirim",),
+        (3149952,u"Periquito",u"MG","periquito",),
+        (4212601,u"Peritiba",u"SC","peritiba",),
+        (2108454,u"Peritoró",u"MA","peritoro",),
+        (4118857,u"Perobal",u"PR","perobal",),
+        (4118907,u"Pérola",u"PR","perola",),
+        (4119004,u"Pérola d'Oeste",u"PR","perola d'oeste",),
+        (5216452,u"Perolândia",u"GO","perolandia",),
+        (3537602,u"Peruíbe",u"SP","peruibe",),
+        (3150000,u"Pescador",u"MG","pescador",),
+        (2610905,u"Pesqueira",u"PE","pesqueira",),
+        (2611002,u"Petrolândia",u"PE","petrolandia",),
+        (4212700,u"Petrolândia",u"SC","petrolandia",),
+        (2611101,u"Petrolina",u"PE","petrolina",),
+        (5216809,u"Petrolina de Goiás",u"GO","petrolina de goias",),
+        (3303906,u"Petrópolis",u"RJ","petropolis",),
+        (2706802,u"Piaçabuçu",u"AL","piacabucu",),
+        (3537701,u"Piacatu",u"SP","piacatu",),
+        (2511301,u"Piancó",u"PB","pianco",),
+        (2924306,u"Piatã",u"BA","piata",),
+        (3150109,u"Piau",u"MG","piau",),
+        (4314423,u"Picada Café",u"RS","picada cafe",),
+        (1505635,u"Piçarra",u"PA","picarra",),
+        (2208007,u"Picos",u"PI","picos",),
+        (2511400,u"Picuí",u"PB","picui",),
+        (3537800,u"Piedade",u"SP","piedade",),
+        (3150158,u"Piedade de Caratinga",u"MG","piedade de caratinga",),
+        (3150208,u"Piedade de Ponte Nova",u"MG","piedade de ponte nova",),
+        (3150307,u"Piedade do Rio Grande",u"MG","piedade do rio grande",),
+        (3150406,u"Piedade dos Gerais",u"MG","piedade dos gerais",),
+        (4119103,u"Piên",u"PR","pien",),
+        (2924405,u"Pilão Arcado",u"BA","pilao arcado",),
+        (2511509,u"Pilar",u"PB","pilar",),
+        (2706901,u"Pilar",u"AL","pilar",),
+        (5216908,u"Pilar de Goiás",u"GO","pilar de goias",),
+        (3537909,u"Pilar do Sul",u"SP","pilar do sul",),
+        (2410009,u"Pilões",u"RN","piloes",),
+        (2511608,u"Pilões",u"PB","piloes",),
+        (2511707,u"Pilõezinhos",u"PB","piloezinhos",),
+        (3150505,u"Pimenta",u"MG","pimenta",),
+        (1100189,u"Pimenta Bueno",u"RO","pimenta bueno",),
+        (2208106,u"Pimenteiras",u"PI","pimenteiras",),
+        (1101468,u"Pimenteiras do Oeste",u"RO","pimenteiras do oeste",),
+        (2924504,u"Pindaí",u"BA","pindai",),
+        (3538006,u"Pindamonhangaba",u"SP","pindamonhangaba",),
+        (2108504,u"Pindaré-Mirim",u"MA","pindare-mirim",),
+        (2707008,u"Pindoba",u"AL","pindoba",),
+        (2924603,u"Pindobaçu",u"BA","pindobacu",),
+        (3538105,u"Pindorama",u"SP","pindorama",),
+        (1717008,u"Pindorama do Tocantins",u"TO","pindorama do tocantins",),
+        (2310852,u"Pindoretama",u"CE","pindoretama",),
+        (3150539,u"Pingo-d'Água",u"MG","pingo-d'agua",),
+        (4119152,u"Pinhais",u"PR","pinhais",),
+        (4314456,u"Pinhal",u"RS","pinhal",),
+        (4314464,u"Pinhal da Serra",u"RS","pinhal da serra",),
+        (4119251,u"Pinhal de São Bento",u"PR","pinhal de sao bento",),
+        (4314472,u"Pinhal Grande",u"RS","pinhal grande",),
+        (4119202,u"Pinhalão",u"PR","pinhalao",),
+        (3538204,u"Pinhalzinho",u"SP","pinhalzinho",),
+        (4212908,u"Pinhalzinho",u"SC","pinhalzinho",),
+        (2805208,u"Pinhão",u"SE","pinhao",),
+        (4119301,u"Pinhão",u"PR","pinhao",),
+        (3303955,u"Pinheiral",u"RJ","pinheiral",),
+        (4314498,u"Pinheirinho do Vale",u"RS","pinheirinho do vale",),
+        (2108603,u"Pinheiro",u"MA","pinheiro",),
+        (4314506,u"Pinheiro Machado",u"RS","pinheiro machado",),
+        (4213005,u"Pinheiro Preto",u"SC","pinheiro preto",),
+        (3204104,u"Pinheiros",u"ES","pinheiros",),
+        (2924652,u"Pintadas",u"BA","pintadas",),
+        (3150570,u"Pintópolis",u"MG","pintopolis",),
+        (2208205,u"Pio IX",u"PI","pio ix",),
+        (2108702,u"Pio XII",u"MA","pio xii",),
+        (3538303,u"Piquerobi",u"SP","piquerobi",),
+        (2310902,u"Piquet Carneiro",u"CE","piquet carneiro",),
+        (3538501,u"Piquete",u"SP","piquete",),
+        (3538600,u"Piracaia",u"SP","piracaia",),
+        (5217104,u"Piracanjuba",u"GO","piracanjuba",),
+        (3150604,u"Piracema",u"MG","piracema",),
+        (3538709,u"Piracicaba",u"SP","piracicaba",),
+        (2208304,u"Piracuruca",u"PI","piracuruca",),
+        (3304003,u"Piraí",u"RJ","pirai",),
+        (2924678,u"Piraí do Norte",u"BA","pirai do norte",),
+        (4119400,u"Piraí do Sul",u"PR","pirai do sul",),
+        (3538808,u"Piraju",u"SP","piraju",),
+        (3150703,u"Pirajuba",u"MG","pirajuba",),
+        (3538907,u"Pirajuí",u"SP","pirajui",),
+        (2805307,u"Pirambu",u"SE","pirambu",),
+        (3150802,u"Piranga",u"MG","piranga",),
+        (3539004,u"Pirangi",u"SP","pirangi",),
+        (3150901,u"Piranguçu",u"MG","pirangucu",),
+        (3151008,u"Piranguinho",u"MG","piranguinho",),
+        (2707107,u"Piranhas",u"AL","piranhas",),
+        (5217203,u"Piranhas",u"GO","piranhas",),
+        (2108801,u"Pirapemas",u"MA","pirapemas",),
+        (3151107,u"Pirapetinga",u"MG","pirapetinga",),
+        (4314555,u"Pirapó",u"RS","pirapo",),
+        (3151206,u"Pirapora",u"MG","pirapora",),
+        (3539103,u"Pirapora do Bom Jesus",u"SP","pirapora do bom jesus",),
+        (3539202,u"Pirapozinho",u"SP","pirapozinho",),
+        (4119509,u"Piraquara",u"PR","piraquara",),
+        (1717206,u"Piraquê",u"TO","piraque",),
+        (3539301,u"Pirassununga",u"SP","pirassununga",),
+        (4314605,u"Piratini",u"RS","piratini",),
+        (3539400,u"Piratininga",u"SP","piratininga",),
+        (4213104,u"Piratuba",u"SC","piratuba",),
+        (3151305,u"Piraúba",u"MG","pirauba",),
+        (5217302,u"Pirenópolis",u"GO","pirenopolis",),
+        (5217401,u"Pires do Rio",u"GO","pires do rio",),
+        (2310951,u"Pires Ferreira",u"CE","pires ferreira",),
+        (2924702,u"Piripá",u"BA","piripa",),
+        (2208403,u"Piripiri",u"PI","piripiri",),
+        (2924801,u"Piritiba",u"BA","piritiba",),
+        (2511806,u"Pirpirituba",u"PB","pirpirituba",),
+        (4119608,u"Pitanga",u"PR","pitanga",),
+        (3539509,u"Pitangueiras",u"SP","pitangueiras",),
+        (4119657,u"Pitangueiras",u"PR","pitangueiras",),
+        (3151404,u"Pitangui",u"MG","pitangui",),
+        (2511905,u"Pitimbu",u"PB","pitimbu",),
+        (1717503,u"Pium",u"TO","pium",),
+        (3204203,u"Piúma",u"ES","piuma",),
+        (3151503,u"Piumhi",u"MG","piumhi",),
+        (1505650,u"Placas",u"PA","placas",),
+        (1200385,u"Plácido de Castro",u"AC","placido de castro",),
+        (5217609,u"Planaltina",u"GO","planaltina",),
+        (4119707,u"Planaltina do Paraná",u"PR","planaltina do parana",),
+        (2924900,u"Planaltino",u"BA","planaltino",),
+        (2925006,u"Planalto",u"BA","planalto",),
+        (3539608,u"Planalto",u"SP","planalto",),
+        (4119806,u"Planalto",u"PR","planalto",),
+        (4314704,u"Planalto",u"RS","planalto",),
+        (4213153,u"Planalto Alegre",u"SC","planalto alegre",),
+        (5106455,u"Planalto da Serra",u"MT","planalto da serra",),
+        (3151602,u"Planura",u"MG","planura",),
+        (3539707,u"Platina",u"SP","platina",),
+        (3539806,u"Poá",u"SP","poa",),
+        (2611200,u"Poção",u"PE","pocao",),
+        (2108900,u"Poção de Pedras",u"MA","pocao de pedras",),
+        (2512002,u"Pocinhos",u"PB","pocinhos",),
+        (2410108,u"Poço Branco",u"RN","poco branco",),
+        (2512036,u"Poço Dantas",u"PB","poco dantas",),
+        (4314753,u"Poço das Antas",u"RS","poco das antas",),
+        (2707206,u"Poço das Trincheiras",u"AL","poco das trincheiras",),
+        (2512077,u"Poço de José de Moura",u"PB","poco de jose de moura",),
+        (3151701,u"Poço Fundo",u"MG","poco fundo",),
+        (2805406,u"Poço Redondo",u"SE","poco redondo",),
+        (2805505,u"Poço Verde",u"SE","poco verde",),
+        (2925105,u"Poções",u"BA","pocoes",),
+        (5106505,u"Poconé",u"MT","pocone",),
+        (3151800,u"Poços de Caldas",u"MG","pocos de caldas",),
+        (3151909,u"Pocrane",u"MG","pocrane",),
+        (2925204,u"Pojuca",u"BA","pojuca",),
+        (3539905,u"Poloni",u"SP","poloni",),
+        (2512101,u"Pombal",u"PB","pombal",),
+        (2611309,u"Pombos",u"PE","pombos",),
+        (4213203,u"Pomerode",u"SC","pomerode",),
+        (3540002,u"Pompéia",u"SP","pompeia",),
+        (3152006,u"Pompéu",u"MG","pompeu",),
+        (3540101,u"Pongaí",u"SP","pongai",),
+        (1505700,u"Ponta de Pedras",u"PA","ponta de pedras",),
+        (4119905,u"Ponta Grossa",u"PR","ponta grossa",),
+        (5006606,u"Ponta Porã",u"MS","ponta pora",),
+        (3540200,u"Pontal",u"SP","pontal",),
+        (5106653,u"Pontal do Araguaia",u"MT","pontal do araguaia",),
+        (4119954,u"Pontal do Paraná",u"PR","pontal do parana",),
+        (5217708,u"Pontalina",u"GO","pontalina",),
+        (3540259,u"Pontalinda",u"SP","pontalinda",),
+        (4314779,u"Pontão",u"RS","pontao",),
+        (4213302,u"Ponte Alta",u"SC","ponte alta",),
+        (1717800,u"Ponte Alta do Bom Jesus",u"TO","ponte alta do bom jesus",),
+        (4213351,u"Ponte Alta do Norte",u"SC","ponte alta do norte",),
+        (1717909,u"Ponte Alta do Tocantins",u"TO","ponte alta do tocantins",),
+        (5106703,u"Ponte Branca",u"MT","ponte branca",),
+        (3152105,u"Ponte Nova",u"MG","ponte nova",),
+        (4314787,u"Ponte Preta",u"RS","ponte preta",),
+        (4213401,u"Ponte Serrada",u"SC","ponte serrada",),
+        (5106752,u"Pontes e Lacerda",u"MT","pontes e lacerda",),
+        (3540309,u"Pontes Gestal",u"SP","pontes gestal",),
+        (3204252,u"Ponto Belo",u"ES","ponto belo",),
+        (3152131,u"Ponto Chique",u"MG","ponto chique",),
+        (3152170,u"Ponto dos Volantes",u"MG","ponto dos volantes",),
+        (2925253,u"Ponto Novo",u"BA","ponto novo",),
+        (3540408,u"Populina",u"SP","populina",),
+        (2311009,u"Poranga",u"CE","poranga",),
+        (3540507,u"Porangaba",u"SP","porangaba",),
+        (5218003,u"Porangatu",u"GO","porangatu",),
+        (3304102,u"Porciúncula",u"RJ","porciuncula",),
+        (4120002,u"Porecatu",u"PR","porecatu",),
+        (2410207,u"Portalegre",u"RN","portalegre",),
+        (4314803,u"Portão",u"RS","portao",),
+        (5218052,u"Porteirão",u"GO","porteirao",),
+        (2311108,u"Porteiras",u"CE","porteiras",),
+        (3152204,u"Porteirinha",u"MG","porteirinha",),
+        (1505809,u"Portel",u"PA","portel",),
+        (5218102,u"Portelândia",u"GO","portelandia",),
+        (2208502,u"Porto",u"PI","porto",),
+        (1200807,u"Porto Acre",u"AC","porto acre",),
+        (4314902,u"Porto Alegre",u"RS","porto alegre",),
+        (5106778,u"Porto Alegre do Norte",u"MT","porto alegre do norte",),
+        (2208551,u"Porto Alegre do Piauí",u"PI","porto alegre do piaui",),
+        (1718006,u"Porto Alegre do Tocantins",u"TO","porto alegre do tocantins",),
+        (4120101,u"Porto Amazonas",u"PR","porto amazonas",),
+        (4120150,u"Porto Barreiro",u"PR","porto barreiro",),
+        (4213500,u"Porto Belo",u"SC","porto belo",),
+        (2707305,u"Porto Calvo",u"AL","porto calvo",),
+        (2805604,u"Porto da Folha",u"SE","porto da folha",),
+        (1505908,u"Porto de Moz",u"PA","porto de moz",),
+        (2707404,u"Porto de Pedras",u"AL","porto de pedras",),
+        (2410256,u"Porto do Mangue",u"RN","porto do mangue",),
+        (5106802,u"Porto dos Gaúchos",u"MT","porto dos gauchos",),
+        (5106828,u"Porto Esperidião",u"MT","porto esperidiao",),
+        (5106851,u"Porto Estrela",u"MT","porto estrela",),
+        (3540606,u"Porto Feliz",u"SP","porto feliz",),
+        (3540705,u"Porto Ferreira",u"SP","porto ferreira",),
+        (3152303,u"Porto Firme",u"MG","porto firme",),
+        (2109007,u"Porto Franco",u"MA","porto franco",),
+        (1600535,u"Porto Grande",u"AP","porto grande",),
+        (4315008,u"Porto Lucena",u"RS","porto lucena",),
+        (4315057,u"Porto Mauá",u"RS","porto maua",),
+        (5006903,u"Porto Murtinho",u"MS","porto murtinho",),
+        (1718204,u"Porto Nacional",u"TO","porto nacional",),
+        (3304110,u"Porto Real",u"RJ","porto real",),
+        (2707503,u"Porto Real do Colégio",u"AL","porto real do colegio",),
+        (4120200,u"Porto Rico",u"PR","porto rico",),
+        (2109056,u"Porto Rico do Maranhão",u"MA","porto rico do maranhao",),
+        (2925303,u"Porto Seguro",u"BA","porto seguro",),
+        (4213609,u"Porto União",u"SC","porto uniao",),
+        (1100205,u"Porto Velho",u"RO","porto velho",),
+        (4315073,u"Porto Vera Cruz",u"RS","porto vera cruz",),
+        (4120309,u"Porto Vitória",u"PR","porto vitoria",),
+        (1200393,u"Porto Walter",u"AC","porto walter",),
+        (4315107,u"Porto Xavier",u"RS","porto xavier",),
+        (5218300,u"Posse",u"GO","posse",),
+        (3152402,u"Poté",u"MG","pote",),
+        (2311207,u"Potengi",u"CE","potengi",),
+        (3540754,u"Potim",u"SP","potim",),
+        (2925402,u"Potiraguá",u"BA","potiragua",),
+        (3540804,u"Potirendaba",u"SP","potirendaba",),
+        (2311231,u"Potiretama",u"CE","potiretama",),
+        (3152501,u"Pouso Alegre",u"MG","pouso alegre",),
+        (3152600,u"Pouso Alto",u"MG","pouso alto",),
+        (4315131,u"Pouso Novo",u"RS","pouso novo",),
+        (4213708,u"Pouso Redondo",u"SC","pouso redondo",),
+        (5107008,u"Poxoréo",u"MT","poxoreo",),
+        (3540853,u"Pracinha",u"SP","pracinha",),
+        (1600550,u"Pracuúba",u"AP","pracuuba",),
+        (2925501,u"Prado",u"BA","prado",),
+        (4120333,u"Prado Ferreira",u"PR","prado ferreira",),
+        (3540903,u"Pradópolis",u"SP","pradopolis",),
+        (3152709,u"Prados",u"MG","prados",),
+        (3541000,u"Praia Grande",u"SP","praia grande",),
+        (4213807,u"Praia Grande",u"SC","praia grande",),
+        (1718303,u"Praia Norte",u"TO","praia norte",),
+        (1506005,u"Prainha",u"PA","prainha",),
+        (4120358,u"Pranchita",u"PR","pranchita",),
+        (2512200,u"Prata",u"PB","prata",),
+        (3152808,u"Prata",u"MG","prata",),
+        (2208601,u"Prata do Piauí",u"PI","prata do piaui",),
+        (3541059,u"Pratânia",u"SP","pratania",),
+        (3152907,u"Pratápolis",u"MG","pratapolis",),
+        (3153004,u"Pratinha",u"MG","pratinha",),
+        (3541109,u"Presidente Alves",u"SP","presidente alves",),
+        (3153103,u"Presidente Bernardes",u"MG","presidente bernardes",),
+        (3541208,u"Presidente Bernardes",u"SP","presidente bernardes",),
+        (4213906,u"Presidente Castello Branco",u"SC","presidente castello branco",),
+        (4120408,u"Presidente Castelo Branco",u"PR","presidente castelo branco",),
+        (2109106,u"Presidente Dutra",u"MA","presidente dutra",),
+        (2925600,u"Presidente Dutra",u"BA","presidente dutra",),
+        (3541307,u"Presidente Epitácio",u"SP","presidente epitacio",),
+        (1303536,u"Presidente Figueiredo",u"AM","presidente figueiredo",),
+        (4214003,u"Presidente Getúlio",u"SC","presidente getulio",),
+        (2925709,u"Presidente Jânio Quadros",u"BA","presidente janio quadros",),
+        (2109205,u"Presidente Juscelino",u"MA","presidente juscelino",),
+        (2410306,u"Presidente Juscelino",u"RN","presidente juscelino",),
+        (3153202,u"Presidente Juscelino",u"MG","presidente juscelino",),
+        (1718402,u"Presidente Kennedy",u"TO","presidente kennedy",),
+        (3204302,u"Presidente Kennedy",u"ES","presidente kennedy",),
+        (3153301,u"Presidente Kubitschek",u"MG","presidente kubitschek",),
+        (4315149,u"Presidente Lucena",u"RS","presidente lucena",),
+        (1100254,u"Presidente Médici",u"RO","presidente medici",),
+        (2109239,u"Presidente Médici",u"MA","presidente medici",),
+        (4214102,u"Presidente Nereu",u"SC","presidente nereu",),
+        (3153400,u"Presidente Olegário",u"MG","presidente olegario",),
+        (3541406,u"Presidente Prudente",u"SP","presidente prudente",),
+        (2109270,u"Presidente Sarney",u"MA","presidente sarney",),
+        (2925758,u"Presidente Tancredo Neves",u"BA","presidente tancredo neves",),
+        (2109304,u"Presidente Vargas",u"MA","presidente vargas",),
+        (3541505,u"Presidente Venceslau",u"SP","presidente venceslau",),
+        (1506104,u"Primavera",u"PA","primavera",),
+        (2611408,u"Primavera",u"PE","primavera",),
+        (1101476,u"Primavera de Rondônia",u"RO","primavera de rondonia",),
+        (5107040,u"Primavera do Leste",u"MT","primavera do leste",),
+        (2109403,u"Primeira Cruz",u"MA","primeira cruz",),
+        (4120507,u"Primeiro de Maio",u"PR","primeiro de maio",),
+        (4214151,u"Princesa",u"SC","princesa",),
+        (2512309,u"Princesa Isabel",u"PB","princesa isabel",),
+        (5218391,u"Professor Jamil",u"GO","professor jamil",),
+        (4315156,u"Progresso",u"RS","progresso",),
+        (3541604,u"Promissão",u"SP","promissao",),
+        (2805703,u"Propriá",u"SE","propria",),
+        (4315172,u"Protásio Alves",u"RS","protasio alves",),
+        (3153608,u"Prudente de Morais",u"MG","prudente de morais",),
+        (4120606,u"Prudentópolis",u"PR","prudentopolis",),
+        (1718451,u"Pugmil",u"TO","pugmil",),
+        (2410405,u"Pureza",u"RN","pureza",),
+        (4315206,u"Putinga",u"RS","putinga",),
+        (2512408,u"Puxinanã",u"PB","puxinana",),
+        (3541653,u"Quadra",u"SP","quadra",),
+        (4315305,u"Quaraí",u"RS","quarai",),
+        (3153707,u"Quartel Geral",u"MG","quartel geral",),
+        (4120655,u"Quarto Centenário",u"PR","quarto centenario",),
+        (3541703,u"Quatá",u"SP","quata",),
+        (4120705,u"Quatiguá",u"PR","quatigua",),
+        (1506112,u"Quatipuru",u"PA","quatipuru",),
+        (3304128,u"Quatis",u"RJ","quatis",),
+        (4120804,u"Quatro Barras",u"PR","quatro barras",),
+        (4315313,u"Quatro Irmãos",u"RS","quatro irmaos",),
+        (4120853,u"Quatro Pontes",u"PR","quatro pontes",),
+        (2707602,u"Quebrangulo",u"AL","quebrangulo",),
+        (4120903,u"Quedas do Iguaçu",u"PR","quedas do iguacu",),
+        (2208650,u"Queimada Nova",u"PI","queimada nova",),
+        (2512507,u"Queimadas",u"PB","queimadas",),
+        (2925808,u"Queimadas",u"BA","queimadas",),
+        (3304144,u"Queimados",u"RJ","queimados",),
+        (3541802,u"Queiroz",u"SP","queiroz",),
+        (3541901,u"Queluz",u"SP","queluz",),
+        (3153806,u"Queluzito",u"MG","queluzito",),
+        (5107065,u"Querência",u"MT","querencia",),
+        (4121000,u"Querência do Norte",u"PR","querencia do norte",),
+        (4315321,u"Quevedos",u"RS","quevedos",),
+        (2925907,u"Quijingue",u"BA","quijingue",),
+        (4214201,u"Quilombo",u"SC","quilombo",),
+        (4121109,u"Quinta do Sol",u"PR","quinta do sol",),
+        (3542008,u"Quintana",u"SP","quintana",),
+        (4315354,u"Quinze de Novembro",u"RS","quinze de novembro",),
+        (2611507,u"Quipapá",u"PE","quipapa",),
+        (5218508,u"Quirinópolis",u"GO","quirinopolis",),
+        (3304151,u"Quissamã",u"RJ","quissama",),
+        (4121208,u"Quitandinha",u"PR","quitandinha",),
+        (2311264,u"Quiterianópolis",u"CE","quiterianopolis",),
+        (2512606,u"Quixabá",u"PB","quixaba",),
+        (2611533,u"Quixaba",u"PE","quixaba",),
+        (2925931,u"Quixabeira",u"BA","quixabeira",),
+        (2311306,u"Quixadá",u"CE","quixada",),
+        (2311355,u"Quixelô",u"CE","quixelo",),
+        (2311405,u"Quixeramobim",u"CE","quixeramobim",),
+        (2311504,u"Quixeré",u"CE","quixere",),
+        (2410504,u"Rafael Fernandes",u"RN","rafael fernandes",),
+        (2410603,u"Rafael Godeiro",u"RN","rafael godeiro",),
+        (2925956,u"Rafael Jambeiro",u"BA","rafael jambeiro",),
+        (3542107,u"Rafard",u"SP","rafard",),
+        (4121257,u"Ramilândia",u"PR","ramilandia",),
+        (3542206,u"Rancharia",u"SP","rancharia",),
+        (4121307,u"Rancho Alegre",u"PR","rancho alegre",),
+        (4121356,u"Rancho Alegre D'Oeste",u"PR","rancho alegre d'oeste",),
+        (4214300,u"Rancho Queimado",u"SC","rancho queimado",),
+        (2109452,u"Raposa",u"MA","raposa",),
+        (3153905,u"Raposos",u"MG","raposos",),
+        (3154002,u"Raul Soares",u"MG","raul soares",),
+        (4121406,u"Realeza",u"PR","realeza",),
+        (4121505,u"Rebouças",u"PR","reboucas",),
+        (2611606,u"Recife",u"PE","recife",),
+        (3154101,u"Recreio",u"MG","recreio",),
+        (1718501,u"Recursolândia",u"TO","recursolandia",),
+        (1506138,u"Redenção",u"PA","redencao",),
+        (2311603,u"Redenção",u"CE","redencao",),
+        (3542305,u"Redenção da Serra",u"SP","redencao da serra",),
+        (2208700,u"Redenção do Gurguéia",u"PI","redencao do gurgueia",),
+        (4315404,u"Redentora",u"RS","redentora",),
+        (3154150,u"Reduto",u"MG","reduto",),
+        (2208809,u"Regeneração",u"PI","regeneracao",),
+        (3542404,u"Regente Feijó",u"SP","regente feijo",),
+        (3542503,u"Reginópolis",u"SP","reginopolis",),
+        (3542602,u"Registro",u"SP","registro",),
+        (4315453,u"Relvado",u"RS","relvado",),
+        (2926004,u"Remanso",u"BA","remanso",),
+        (2512705,u"Remígio",u"PB","remigio",),
+        (4121604,u"Renascença",u"PR","renascenca",),
+        (2311702,u"Reriutaba",u"CE","reriutaba",),
+        (3304201,u"Resende",u"RJ","resende",),
+        (3154200,u"Resende Costa",u"MG","resende costa",),
+        (4121703,u"Reserva",u"PR","reserva",),
+        (5107156,u"Reserva do Cabaçal",u"MT","reserva do cabacal",),
+        (4121752,u"Reserva do Iguaçu",u"PR","reserva do iguacu",),
+        (3154309,u"Resplendor",u"MG","resplendor",),
+        (3154408,u"Ressaquinha",u"MG","ressaquinha",),
+        (3542701,u"Restinga",u"SP","restinga",),
+        (4315503,u"Restinga Seca",u"RS","restinga seca",),
+        (2926103,u"Retirolândia",u"BA","retirolandia",),
+        (2109502,u"Riachão",u"MA","riachao",),
+        (2512747,u"Riachão",u"PB","riachao",),
+        (2926202,u"Riachão das Neves",u"BA","riachao das neves",),
+        (2512754,u"Riachão do Bacamarte",u"PB","riachao do bacamarte",),
+        (2805802,u"Riachão do Dantas",u"SE","riachao do dantas",),
+        (2926301,u"Riachão do Jacuípe",u"BA","riachao do jacuipe",),
+        (2512762,u"Riachão do Poço",u"PB","riachao do poco",),
+        (1718550,u"Riachinho",u"TO","riachinho",),
+        (3154457,u"Riachinho",u"MG","riachinho",),
+        (2410702,u"Riacho da Cruz",u"RN","riacho da cruz",),
+        (2611705,u"Riacho das Almas",u"PE","riacho das almas",),
+        (2410801,u"Riacho de Santana",u"RN","riacho de santana",),
+        (2926400,u"Riacho de Santana",u"BA","riacho de santana",),
+        (2512788,u"Riacho de Santo Antônio",u"PB","riacho de santo antonio",),
+        (2512804,u"Riacho dos Cavalos",u"PB","riacho dos cavalos",),
+        (3154507,u"Riacho dos Machados",u"MG","riacho dos machados",),
+        (2208858,u"Riacho Frio",u"PI","riacho frio",),
+        (2410900,u"Riachuelo",u"RN","riachuelo",),
+        (2805901,u"Riachuelo",u"SE","riachuelo",),
+        (5218607,u"Rialma",u"GO","rialma",),
+        (5218706,u"Rianápolis",u"GO","rianapolis",),
+        (2109551,u"Ribamar Fiquene",u"MA","ribamar fiquene",),
+        (5007109,u"Ribas do Rio Pardo",u"MS","ribas do rio pardo",),
+        (3542800,u"Ribeira",u"SP","ribeira",),
+        (2926509,u"Ribeira do Amparo",u"BA","ribeira do amparo",),
+        (2208874,u"Ribeira do Piauí",u"PI","ribeira do piaui",),
+        (2926608,u"Ribeira do Pombal",u"BA","ribeira do pombal",),
+        (2611804,u"Ribeirão",u"PE","ribeirao",),
+        (3542909,u"Ribeirão Bonito",u"SP","ribeirao bonito",),
+        (3543006,u"Ribeirão Branco",u"SP","ribeirao branco",),
+        (5107180,u"Ribeirão Cascalheira",u"MT","ribeirao cascalheira",),
+        (4121802,u"Ribeirão Claro",u"PR","ribeirao claro",),
+        (3543105,u"Ribeirão Corrente",u"SP","ribeirao corrente",),
+        (3154606,u"Ribeirão das Neves",u"MG","ribeirao das neves",),
+        (2926657,u"Ribeirão do Largo",u"BA","ribeirao do largo",),
+        (4121901,u"Ribeirão do Pinhal",u"PR","ribeirao do pinhal",),
+        (3543204,u"Ribeirão do Sul",u"SP","ribeirao do sul",),
+        (3543238,u"Ribeirão dos Índios",u"SP","ribeirao dos indios",),
+        (3543253,u"Ribeirão Grande",u"SP","ribeirao grande",),
+        (3543303,u"Ribeirão Pires",u"SP","ribeirao pires",),
+        (3543402,u"Ribeirão Preto",u"SP","ribeirao preto",),
+        (3154705,u"Ribeirão Vermelho",u"MG","ribeirao vermelho",),
+        (5107198,u"Ribeirãozinho",u"MT","ribeiraozinho",),
+        (2208908,u"Ribeiro Gonçalves",u"PI","ribeiro goncalves",),
+        (2806008,u"Ribeirópolis",u"SE","ribeiropolis",),
+        (3543600,u"Rifaina",u"SP","rifaina",),
+        (3543709,u"Rincão",u"SP","rincao",),
+        (3543808,u"Rinópolis",u"SP","rinopolis",),
+        (3154804,u"Rio Acima",u"MG","rio acima",),
+        (4122008,u"Rio Azul",u"PR","rio azul",),
+        (3204351,u"Rio Bananal",u"ES","rio bananal",),
+        (4122107,u"Rio Bom",u"PR","rio bom",),
+        (3304300,u"Rio Bonito",u"RJ","rio bonito",),
+        (4122156,u"Rio Bonito do Iguaçu",u"PR","rio bonito do iguacu",),
+        (1200401,u"Rio Branco",u"AC","rio branco",),
+        (5107206,u"Rio Branco",u"MT","rio branco",),
+        (4122172,u"Rio Branco do Ivaí",u"PR","rio branco do ivai",),
+        (4122206,u"Rio Branco do Sul",u"PR","rio branco do sul",),
+        (5007208,u"Rio Brilhante",u"MS","rio brilhante",),
+        (3154903,u"Rio Casca",u"MG","rio casca",),
+        (3304409,u"Rio Claro",u"RJ","rio claro",),
+        (3543907,u"Rio Claro",u"SP","rio claro",),
+        (1100262,u"Rio Crespo",u"RO","rio crespo",),
+        (1718659,u"Rio da Conceição",u"TO","rio da conceicao",),
+        (4214409,u"Rio das Antas",u"SC","rio das antas",),
+        (3304508,u"Rio das Flores",u"RJ","rio das flores",),
+        (3304524,u"Rio das Ostras",u"RJ","rio das ostras",),
+        (3544004,u"Rio das Pedras",u"SP","rio das pedras",),
+        (2926707,u"Rio de Contas",u"BA","rio de contas",),
+        (3304557,u"Rio de Janeiro",u"RJ","rio de janeiro",),
+        (2926806,u"Rio do Antônio",u"BA","rio do antonio",),
+        (4214508,u"Rio do Campo",u"SC","rio do campo",),
+        (2408953,u"Rio do Fogo",u"RN","rio do fogo",),
+        (4214607,u"Rio do Oeste",u"SC","rio do oeste",),
+        (2926905,u"Rio do Pires",u"BA","rio do pires",),
+        (3155108,u"Rio do Prado",u"MG","rio do prado",),
+        (4214805,u"Rio do Sul",u"SC","rio do sul",),
+        (3155009,u"Rio Doce",u"MG","rio doce",),
+        (1718709,u"Rio dos Bois",u"TO","rio dos bois",),
+        (4214706,u"Rio dos Cedros",u"SC","rio dos cedros",),
+        (4315552,u"Rio dos Índios",u"RS","rio dos indios",),
+        (3155207,u"Rio Espera",u"MG","rio espera",),
+        (2611903,u"Rio Formoso",u"PE","rio formoso",),
+        (4214904,u"Rio Fortuna",u"SC","rio fortuna",),
+        (4315602,u"Rio Grande",u"RS","rio grande",),
+        (3544103,u"Rio Grande da Serra",u"SP","rio grande da serra",),
+        (2209005,u"Rio Grande do Piauí",u"PI","rio grande do piaui",),
+        (2707701,u"Rio Largo",u"AL","rio largo",),
+        (3155306,u"Rio Manso",u"MG","rio manso",),
+        (1506161,u"Rio Maria",u"PA","rio maria",),
+        (4215000,u"Rio Negrinho",u"SC","rio negrinho",),
+        (4122305,u"Rio Negro",u"PR","rio negro",),
+        (5007307,u"Rio Negro",u"MS","rio negro",),
+        (3155405,u"Rio Novo",u"MG","rio novo",),
+        (3204401,u"Rio Novo do Sul",u"ES","rio novo do sul",),
+        (3155504,u"Rio Paranaíba",u"MG","rio paranaiba",),
+        (4315701,u"Rio Pardo",u"RS","rio pardo",),
+        (3155603,u"Rio Pardo de Minas",u"MG","rio pardo de minas",),
+        (3155702,u"Rio Piracicaba",u"MG","rio piracicaba",),
+        (3155801,u"Rio Pomba",u"MG","rio pomba",),
+        (3155900,u"Rio Preto",u"MG","rio preto",),
+        (1303569,u"Rio Preto da Eva",u"AM","rio preto da eva",),
+        (5218789,u"Rio Quente",u"GO","rio quente",),
+        (2927002,u"Rio Real",u"BA","rio real",),
+        (4215059,u"Rio Rufino",u"SC","rio rufino",),
+        (1718758,u"Rio Sono",u"TO","rio sono",),
+        (2512903,u"Rio Tinto",u"PB","rio tinto",),
+        (5218805,u"Rio Verde",u"GO","rio verde",),
+        (5007406,u"Rio Verde de Mato Grosso",u"MS","rio verde de mato grosso",),
+        (3156007,u"Rio Vermelho",u"MG","rio vermelho",),
+        (3544202,u"Riolândia",u"SP","riolandia",),
+        (4315750,u"Riozinho",u"RS","riozinho",),
+        (4215075,u"Riqueza",u"SC","riqueza",),
+        (3156106,u"Ritápolis",u"MG","ritapolis",),
+        (3543501,u"Riversul",u"SP","riversul",),
+        (4315800,u"Roca Sales",u"RS","roca sales",),
+        (5007505,u"Rochedo",u"MS","rochedo",),
+        (3156205,u"Rochedo de Minas",u"MG","rochedo de minas",),
+        (4215109,u"Rodeio",u"SC","rodeio",),
+        (4315909,u"Rodeio Bonito",u"RS","rodeio bonito",),
+        (3156304,u"Rodeiro",u"MG","rodeiro",),
+        (2927101,u"Rodelas",u"BA","rodelas",),
+        (2411007,u"Rodolfo Fernandes",u"RN","rodolfo fernandes",),
+        (1200427,u"Rodrigues Alves",u"AC","rodrigues alves",),
+        (4315958,u"Rolador",u"RS","rolador",),
+        (4122404,u"Rolândia",u"PR","rolandia",),
+        (4316006,u"Rolante",u"RS","rolante",),
+        (1100288,u"Rolim de Moura",u"RO","rolim de moura",),
+        (3156403,u"Romaria",u"MG","romaria",),
+        (4215208,u"Romelândia",u"SC","romelandia",),
+        (4122503,u"Roncador",u"PR","roncador",),
+        (4316105,u"Ronda Alta",u"RS","ronda alta",),
+        (4316204,u"Rondinha",u"RS","rondinha",),
+        (5107578,u"Rondolândia",u"MT","rondolandia",),
+        (4122602,u"Rondon",u"PR","rondon",),
+        (1506187,u"Rondon do Pará",u"PA","rondon do para",),
+        (5107602,u"Rondonópolis",u"MT","rondonopolis",),
+        (4316303,u"Roque Gonzales",u"RS","roque gonzales",),
+        (1400472,u"Rorainópolis",u"RR","rorainopolis",),
+        (3544251,u"Rosana",u"SP","rosana",),
+        (2109601,u"Rosário",u"MA","rosario",),
+        (3156452,u"Rosário da Limeira",u"MG","rosario da limeira",),
+        (2806107,u"Rosário do Catete",u"SE","rosario do catete",),
+        (4122651,u"Rosário do Ivaí",u"PR","rosario do ivai",),
+        (4316402,u"Rosário do Sul",u"RS","rosario do sul",),
+        (5107701,u"Rosário Oeste",u"MT","rosario oeste",),
+        (3544301,u"Roseira",u"SP","roseira",),
+        (2707800,u"Roteiro",u"AL","roteiro",),
+        (3156502,u"Rubelita",u"MG","rubelita",),
+        (3544400,u"Rubiácea",u"SP","rubiacea",),
+        (5218904,u"Rubiataba",u"GO","rubiataba",),
+        (3156601,u"Rubim",u"MG","rubim",),
+        (3544509,u"Rubinéia",u"SP","rubineia",),
+        (1506195,u"Rurópolis",u"PA","ruropolis",),
+        (2311801,u"Russas",u"CE","russas",),
+        (2411106,u"Ruy Barbosa",u"RN","ruy barbosa",),
+        (2927200,u"Ruy Barbosa",u"BA","ruy barbosa",),
+        (3156700,u"Sabará",u"MG","sabara",),
+        (4122701,u"Sabáudia",u"PR","sabaudia",),
+        (3544608,u"Sabino",u"SP","sabino",),
+        (3156809,u"Sabinópolis",u"MG","sabinopolis",),
+        (2311900,u"Saboeiro",u"CE","saboeiro",),
+        (3156908,u"Sacramento",u"MG","sacramento",),
+        (4316428,u"Sagrada Família",u"RS","sagrada familia",),
+        (3544707,u"Sagres",u"SP","sagres",),
+        (2612000,u"Sairé",u"PE","saire",),
+        (4316436,u"Saldanha Marinho",u"RS","saldanha marinho",),
+        (3544806,u"Sales",u"SP","sales",),
+        (3544905,u"Sales Oliveira",u"SP","sales oliveira",),
+        (3545001,u"Salesópolis",u"SP","salesopolis",),
+        (4215307,u"Salete",u"SC","salete",),
+        (2513000,u"Salgadinho",u"PB","salgadinho",),
+        (2612109,u"Salgadinho",u"PE","salgadinho",),
+        (2806206,u"Salgado",u"SE","salgado",),
+        (2513109,u"Salgado de São Félix",u"PB","salgado de sao felix",),
+        (4122800,u"Salgado Filho",u"PR","salgado filho",),
+        (2612208,u"Salgueiro",u"PE","salgueiro",),
+        (3157005,u"Salinas",u"MG","salinas",),
+        (2927309,u"Salinas da Margarida",u"BA","salinas da margarida",),
+        (1506203,u"Salinópolis",u"PA","salinopolis",),
+        (2311959,u"Salitre",u"CE","salitre",),
+        (3545100,u"Salmourão",u"SP","salmourao",),
+        (2612307,u"Saloá",u"PE","saloa",),
+        (3545159,u"Saltinho",u"SP","saltinho",),
+        (4215356,u"Saltinho",u"SC","saltinho",),
+        (3545209,u"Salto",u"SP","salto",),
+        (3157104,u"Salto da Divisa",u"MG","salto da divisa",),
+        (3545308,u"Salto de Pirapora",u"SP","salto de pirapora",),
+        (5107750,u"Salto do Céu",u"MT","salto do ceu",),
+        (4122909,u"Salto do Itararé",u"PR","salto do itarare",),
+        (4316451,u"Salto do Jacuí",u"RS","salto do jacui",),
+        (4123006,u"Salto do Lontra",u"PR","salto do lontra",),
+        (3545407,u"Salto Grande",u"SP","salto grande",),
+        (4215406,u"Salto Veloso",u"SC","salto veloso",),
+        (2927408,u"Salvador",u"BA","salvador",),
+        (4316477,u"Salvador das Missões",u"RS","salvador das missoes",),
+        (4316501,u"Salvador do Sul",u"RS","salvador do sul",),
+        (1506302,u"Salvaterra",u"PA","salvaterra",),
+        (2109700,u"Sambaíba",u"MA","sambaiba",),
+        (1718808,u"Sampaio",u"TO","sampaio",),
+        (4316600,u"Sananduva",u"RS","sananduva",),
+        (5219001,u"Sanclerlândia",u"GO","sanclerlandia",),
+        (1718840,u"Sandolândia",u"TO","sandolandia",),
+        (3545506,u"Sandovalina",u"SP","sandovalina",),
+        (4215455,u"Sangão",u"SC","sangao",),
+        (2612406,u"Sanharó",u"PE","sanharo",),
+        (4317103,u"Sant'Ana do Livramento",u"RS","sant'ana do livramento",),
+        (3545605,u"Santa Adélia",u"SP","santa adelia",),
+        (3545704,u"Santa Albertina",u"SP","santa albertina",),
+        (4123105,u"Santa Amélia",u"PR","santa amelia",),
+        (2927507,u"Santa Bárbara",u"BA","santa barbara",),
+        (3157203,u"Santa Bárbara",u"MG","santa barbara",),
+        (3545803,u"Santa Bárbara d'Oeste",u"SP","santa barbara d'oeste",),
+        (5219100,u"Santa Bárbara de Goiás",u"GO","santa barbara de goias",),
+        (3157252,u"Santa Bárbara do Leste",u"MG","santa barbara do leste",),
+        (3157278,u"Santa Bárbara do Monte Verde",u"MG","santa barbara do monte verde",),
+        (1506351,u"Santa Bárbara do Pará",u"PA","santa barbara do para",),
+        (4316709,u"Santa Bárbara do Sul",u"RS","santa barbara do sul",),
+        (3157302,u"Santa Bárbara do Tugúrio",u"MG","santa barbara do tugurio",),
+        (3546009,u"Santa Branca",u"SP","santa branca",),
+        (2927606,u"Santa Brígida",u"BA","santa brigida",),
+        (5107248,u"Santa Carmem",u"MT","santa carmem",),
+        (2513158,u"Santa Cecília",u"PB","santa cecilia",),
+        (4215505,u"Santa Cecília",u"SC","santa cecilia",),
+        (4123204,u"Santa Cecília do Pavão",u"PR","santa cecilia do pavao",),
+        (4316733,u"Santa Cecília do Sul",u"RS","santa cecilia do sul",),
+        (3546108,u"Santa Clara d'Oeste",u"SP","santa clara d'oeste",),
+        (4316758,u"Santa Clara do Sul",u"RS","santa clara do sul",),
+        (2411205,u"Santa Cruz",u"RN","santa cruz",),
+        (2513208,u"Santa Cruz",u"PB","santa cruz",),
+        (2612455,u"Santa Cruz",u"PE","santa cruz",),
+        (2927705,u"Santa Cruz Cabrália",u"BA","santa cruz cabralia",),
+        (2612471,u"Santa Cruz da Baixa Verde",u"PE","santa cruz da baixa verde",),
+        (3546207,u"Santa Cruz da Conceição",u"SP","santa cruz da conceicao",),
+        (3546256,u"Santa Cruz da Esperança",u"SP","santa cruz da esperanca",),
+        (2927804,u"Santa Cruz da Vitória",u"BA","santa cruz da vitoria",),
+        (3546306,u"Santa Cruz das Palmeiras",u"SP","santa cruz das palmeiras",),
+        (5219209,u"Santa Cruz de Goiás",u"GO","santa cruz de goias",),
+        (3157336,u"Santa Cruz de Minas",u"MG","santa cruz de minas",),
+        (4123303,u"Santa Cruz de Monte Castelo",u"PR","santa cruz de monte castelo",),
+        (3157377,u"Santa Cruz de Salinas",u"MG","santa cruz de salinas",),
+        (1506401,u"Santa Cruz do Arari",u"PA","santa cruz do arari",),
+        (2612505,u"Santa Cruz do Capibaribe",u"PE","santa cruz do capibaribe",),
+        (3157401,u"Santa Cruz do Escalvado",u"MG","santa cruz do escalvado",),
+        (2209104,u"Santa Cruz do Piauí",u"PI","santa cruz do piaui",),
+        (3546405,u"Santa Cruz do Rio Pardo",u"SP","santa cruz do rio pardo",),
+        (4316808,u"Santa Cruz do Sul",u"RS","santa cruz do sul",),
+        (5107743,u"Santa Cruz do Xingu",u"MT","santa cruz do xingu",),
+        (2209153,u"Santa Cruz dos Milagres",u"PI","santa cruz dos milagres",),
+        (3157500,u"Santa Efigênia de Minas",u"MG","santa efigenia de minas",),
+        (3546504,u"Santa Ernestina",u"SP","santa ernestina",),
+        (4123402,u"Santa Fé",u"PR","santa fe",),
+        (5219258,u"Santa Fé de Goiás",u"GO","santa fe de goias",),
+        (3157609,u"Santa Fé de Minas",u"MG","santa fe de minas",),
+        (1718865,u"Santa Fé do Araguaia",u"TO","santa fe do araguaia",),
+        (3546603,u"Santa Fé do Sul",u"SP","santa fe do sul",),
+        (2209203,u"Santa Filomena",u"PI","santa filomena",),
+        (2612554,u"Santa Filomena",u"PE","santa filomena",),
+        (2109759,u"Santa Filomena do Maranhão",u"MA","santa filomena do maranhao",),
+        (3546702,u"Santa Gertrudes",u"SP","santa gertrudes",),
+        (2109809,u"Santa Helena",u"MA","santa helena",),
+        (2513307,u"Santa Helena",u"PB","santa helena",),
+        (4123501,u"Santa Helena",u"PR","santa helena",),
+        (4215554,u"Santa Helena",u"SC","santa helena",),
+        (5219308,u"Santa Helena de Goiás",u"GO","santa helena de goias",),
+        (3157658,u"Santa Helena de Minas",u"MG","santa helena de minas",),
+        (2109908,u"Santa Inês",u"MA","santa ines",),
+        (2513356,u"Santa Inês",u"PB","santa ines",),
+        (2927903,u"Santa Inês",u"BA","santa ines",),
+        (4123600,u"Santa Inês",u"PR","santa ines",),
+        (3546801,u"Santa Isabel",u"SP","santa isabel",),
+        (5219357,u"Santa Isabel",u"GO","santa isabel",),
+        (4123709,u"Santa Isabel do Ivaí",u"PR","santa isabel do ivai",),
+        (1506500,u"Santa Isabel do Pará",u"PA","santa isabel do para",),
+        (1303601,u"Santa Isabel do Rio Negro",u"AM","santa isabel do rio negro",),
+        (4123808,u"Santa Izabel do Oeste",u"PR","santa izabel do oeste",),
+        (3157708,u"Santa Juliana",u"MG","santa juliana",),
+        (3204500,u"Santa Leopoldina",u"ES","santa leopoldina",),
+        (3546900,u"Santa Lúcia",u"SP","santa lucia",),
+        (4123824,u"Santa Lúcia",u"PR","santa lucia",),
+        (2209302,u"Santa Luz",u"PI","santa luz",),
+        (2110005,u"Santa Luzia",u"MA","santa luzia",),
+        (2513406,u"Santa Luzia",u"PB","santa luzia",),
+        (2928059,u"Santa Luzia",u"BA","santa luzia",),
+        (3157807,u"Santa Luzia",u"MG","santa luzia",),
+        (1100296,u"Santa Luzia D'Oeste",u"RO","santa luzia d'oeste",),
+        (2806305,u"Santa Luzia do Itanhy",u"SE","santa luzia do itanhy",),
+        (2707909,u"Santa Luzia do Norte",u"AL","santa luzia do norte",),
+        (1506559,u"Santa Luzia do Pará",u"PA","santa luzia do para",),
+        (2110039,u"Santa Luzia do Paruá",u"MA","santa luzia do parua",),
+        (3157906,u"Santa Margarida",u"MG","santa margarida",),
+        (4316972,u"Santa Margarida do Sul",u"RS","santa margarida do sul",),
+        (2409332,u"Santa Maria",u"RN","santa maria",),
+        (4316907,u"Santa Maria",u"RS","santa maria",),
+        (2612604,u"Santa Maria da Boa Vista",u"PE","santa maria da boa vista",),
+        (3547007,u"Santa Maria da Serra",u"SP","santa maria da serra",),
+        (2928109,u"Santa Maria da Vitória",u"BA","santa maria da vitoria",),
+        (1506583,u"Santa Maria das Barreiras",u"PA","santa maria das barreiras",),
+        (3158003,u"Santa Maria de Itabira",u"MG","santa maria de itabira",),
+        (3204559,u"Santa Maria de Jetibá",u"ES","santa maria de jetiba",),
+        (2612703,u"Santa Maria do Cambucá",u"PE","santa maria do cambuca",),
+        (4316956,u"Santa Maria do Herval",u"RS","santa maria do herval",),
+        (4123857,u"Santa Maria do Oeste",u"PR","santa maria do oeste",),
+        (1506609,u"Santa Maria do Pará",u"PA","santa maria do para",),
+        (3158102,u"Santa Maria do Salto",u"MG","santa maria do salto",),
+        (3158201,u"Santa Maria do Suaçuí",u"MG","santa maria do suacui",),
+        (1718881,u"Santa Maria do Tocantins",u"TO","santa maria do tocantins",),
+        (3304607,u"Santa Maria Madalena",u"RJ","santa maria madalena",),
+        (4123907,u"Santa Mariana",u"PR","santa mariana",),
+        (3547106,u"Santa Mercedes",u"SP","santa mercedes",),
+        (4123956,u"Santa Mônica",u"PR","santa monica",),
+        (2312205,u"Santa Quitéria",u"CE","santa quiteria",),
+        (2110104,u"Santa Quitéria do Maranhão",u"MA","santa quiteria do maranhao",),
+        (2110203,u"Santa Rita",u"MA","santa rita",),
+        (2513703,u"Santa Rita",u"PB","santa rita",),
+        (3547403,u"Santa Rita d'Oeste",u"SP","santa rita d'oeste",),
+        (3159209,u"Santa Rita de Caldas",u"MG","santa rita de caldas",),
+        (2928406,u"Santa Rita de Cássia",u"BA","santa rita de cassia",),
+        (3159407,u"Santa Rita de Ibitipoca",u"MG","santa rita de ibitipoca",),
+        (3159308,u"Santa Rita de Jacutinga",u"MG","santa rita de jacutinga",),
+        (3159357,u"Santa Rita de Minas",u"MG","santa rita de minas",),
+        (5219407,u"Santa Rita do Araguaia",u"GO","santa rita do araguaia",),
+        (3159506,u"Santa Rita do Itueto",u"MG","santa rita do itueto",),
+        (5219456,u"Santa Rita do Novo Destino",u"GO","santa rita do novo destino",),
+        (5007554,u"Santa Rita do Pardo",u"MS","santa rita do pardo",),
+        (3547502,u"Santa Rita do Passa Quatro",u"SP","santa rita do passa quatro",),
+        (3159605,u"Santa Rita do Sapucaí",u"MG","santa rita do sapucai",),
+        (1718899,u"Santa Rita do Tocantins",u"TO","santa rita do tocantins",),
+        (5107768,u"Santa Rita do Trivelato",u"MT","santa rita do trivelato",),
+        (4317202,u"Santa Rosa",u"RS","santa rosa",),
+        (3159704,u"Santa Rosa da Serra",u"MG","santa rosa da serra",),
+        (5219506,u"Santa Rosa de Goiás",u"GO","santa rosa de goias",),
+        (2806503,u"Santa Rosa de Lima",u"SE","santa rosa de lima",),
+        (4215604,u"Santa Rosa de Lima",u"SC","santa rosa de lima",),
+        (3547601,u"Santa Rosa de Viterbo",u"SP","santa rosa de viterbo",),
+        (2209377,u"Santa Rosa do Piauí",u"PI","santa rosa do piaui",),
+        (1200435,u"Santa Rosa do Purus",u"AC","santa rosa do purus",),
+        (4215653,u"Santa Rosa do Sul",u"SC","santa rosa do sul",),
+        (1718907,u"Santa Rosa do Tocantins",u"TO","santa rosa do tocantins",),
+        (3547650,u"Santa Salete",u"SP","santa salete",),
+        (3204609,u"Santa Teresa",u"ES","santa teresa",),
+        (2513802,u"Santa Teresinha",u"PB","santa teresinha",),
+        (2928505,u"Santa Teresinha",u"BA","santa teresinha",),
+        (4317251,u"Santa Tereza",u"RS","santa tereza",),
+        (5219605,u"Santa Tereza de Goiás",u"GO","santa tereza de goias",),
+        (4124020,u"Santa Tereza do Oeste",u"PR","santa tereza do oeste",),
+        (1719004,u"Santa Tereza do Tocantins",u"TO","santa tereza do tocantins",),
+        (2612802,u"Santa Terezinha",u"PE","santa terezinha",),
+        (4215679,u"Santa Terezinha",u"SC","santa terezinha",),
+        (5107776,u"Santa Terezinha",u"MT","santa terezinha",),
+        (5219704,u"Santa Terezinha de Goiás",u"GO","santa terezinha de goias",),
+        (4124053,u"Santa Terezinha de Itaipu",u"PR","santa terezinha de itaipu",),
+        (4215687,u"Santa Terezinha do Progresso",u"SC","santa terezinha do progresso",),
+        (1720002,u"Santa Terezinha do Tocantins",u"TO","santa terezinha do tocantins",),
+        (3159803,u"Santa Vitória",u"MG","santa vitoria",),
+        (4317301,u"Santa Vitória do Palmar",u"RS","santa vitoria do palmar",),
+        (2928000,u"Santaluz",u"BA","santaluz",),
+        (1600600,u"Santana",u"AP","santana",),
+        (2928208,u"Santana",u"BA","santana",),
+        (4317004,u"Santana da Boa Vista",u"RS","santana da boa vista",),
+        (3547205,u"Santana da Ponte Pensa",u"SP","santana da ponte pensa",),
+        (3158300,u"Santana da Vargem",u"MG","santana da vargem",),
+        (3158409,u"Santana de Cataguases",u"MG","santana de cataguases",),
+        (2513505,u"Santana de Mangueira",u"PB","santana de mangueira",),
+        (3547304,u"Santana de Parnaíba",u"SP","santana de parnaiba",),
+        (3158508,u"Santana de Pirapama",u"MG","santana de pirapama",),
+        (2312007,u"Santana do Acaraú",u"CE","santana do acarau",),
+        (1506708,u"Santana do Araguaia",u"PA","santana do araguaia",),
+        (2312106,u"Santana do Cariri",u"CE","santana do cariri",),
+        (3158607,u"Santana do Deserto",u"MG","santana do deserto",),
+        (3158706,u"Santana do Garambéu",u"MG","santana do garambeu",),
+        (2708006,u"Santana do Ipanema",u"AL","santana do ipanema",),
+        (4124004,u"Santana do Itararé",u"PR","santana do itarare",),
+        (3158805,u"Santana do Jacaré",u"MG","santana do jacare",),
+        (3158904,u"Santana do Manhuaçu",u"MG","santana do manhuacu",),
+        (2110237,u"Santana do Maranhão",u"MA","santana do maranhao",),
+        (2411403,u"Santana do Matos",u"RN","santana do matos",),
+        (2708105,u"Santana do Mundaú",u"AL","santana do mundau",),
+        (3158953,u"Santana do Paraíso",u"MG","santana do paraiso",),
+        (2209351,u"Santana do Piauí",u"PI","santana do piaui",),
+        (3159001,u"Santana do Riacho",u"MG","santana do riacho",),
+        (2806404,u"Santana do São Francisco",u"SE","santana do sao francisco",),
+        (2411429,u"Santana do Seridó",u"RN","santana do serido",),
+        (2513604,u"Santana dos Garrotes",u"PB","santana dos garrotes",),
+        (3159100,u"Santana dos Montes",u"MG","santana dos montes",),
+        (2928307,u"Santanópolis",u"BA","santanopolis",),
+        (1506807,u"Santarém",u"PA","santarem",),
+        (2513653,u"Santarém",u"PB","santarem",),
+        (1506906,u"Santarém Novo",u"PA","santarem novo",),
+        (4317400,u"Santiago",u"RS","santiago",),
+        (4215695,u"Santiago do Sul",u"SC","santiago do sul",),
+        (5107263,u"Santo Afonso",u"MT","santo afonso",),
+        (2928604,u"Santo Amaro",u"BA","santo amaro",),
+        (4215703,u"Santo Amaro da Imperatriz",u"SC","santo amaro da imperatriz",),
+        (2806602,u"Santo Amaro das Brotas",u"SE","santo amaro das brotas",),
+        (2110278,u"Santo Amaro do Maranhão",u"MA","santo amaro do maranhao",),
+        (3547700,u"Santo Anastácio",u"SP","santo anastacio",),
+        (2513851,u"Santo André",u"PB","santo andre",),
+        (3547809,u"Santo André",u"SP","santo andre",),
+        (4317509,u"Santo Ângelo",u"RS","santo angelo",),
+        (2411502,u"Santo Antônio",u"RN","santo antonio",),
+        (3547908,u"Santo Antônio da Alegria",u"SP","santo antonio da alegria",),
+        (5219712,u"Santo Antônio da Barra",u"GO","santo antonio da barra",),
+        (4317608,u"Santo Antônio da Patrulha",u"RS","santo antonio da patrulha",),
+        (4124103,u"Santo Antônio da Platina",u"PR","santo antonio da platina",),
+        (4317707,u"Santo Antônio das Missões",u"RS","santo antonio das missoes",),
+        (5219738,u"Santo Antônio de Goiás",u"GO","santo antonio de goias",),
+        (2928703,u"Santo Antônio de Jesus",u"BA","santo antonio de jesus",),
+        (2209401,u"Santo Antônio de Lisboa",u"PI","santo antonio de lisboa",),
+        (3304706,u"Santo Antônio de Pádua",u"RJ","santo antonio de padua",),
+        (3548005,u"Santo Antônio de Posse",u"SP","santo antonio de posse",),
+        (3159902,u"Santo Antônio do Amparo",u"MG","santo antonio do amparo",),
+        (3548054,u"Santo Antônio do Aracanguá",u"SP","santo antonio do aracangua",),
+        (3160009,u"Santo Antônio do Aventureiro",u"MG","santo antonio do aventureiro",),
+        (4124202,u"Santo Antônio do Caiuá",u"PR","santo antonio do caiua",),
+        (5219753,u"Santo Antônio do Descoberto",u"GO","santo antonio do descoberto",),
+        (3160108,u"Santo Antônio do Grama",u"MG","santo antonio do grama",),
+        (1303700,u"Santo Antônio do Içá",u"AM","santo antonio do ica",),
+        (3160207,u"Santo Antônio do Itambé",u"MG","santo antonio do itambe",),
+        (3160306,u"Santo Antônio do Jacinto",u"MG","santo antonio do jacinto",),
+        (3548104,u"Santo Antônio do Jardim",u"SP","santo antonio do jardim",),
+        (5107792,u"Santo Antônio do Leste",u"MT","santo antonio do leste",),
+        (5107800,u"Santo Antônio do Leverger",u"MT","santo antonio do leverger",),
+        (3160405,u"Santo Antônio do Monte",u"MG","santo antonio do monte",),
+        (4317558,u"Santo Antônio do Palma",u"RS","santo antonio do palma",),
+        (4124301,u"Santo Antônio do Paraíso",u"PR","santo antonio do paraiso",),
+        (3548203,u"Santo Antônio do Pinhal",u"SP","santo antonio do pinhal",),
+        (4317756,u"Santo Antônio do Planalto",u"RS","santo antonio do planalto",),
+        (3160454,u"Santo Antônio do Retiro",u"MG","santo antonio do retiro",),
+        (3160504,u"Santo Antônio do Rio Abaixo",u"MG","santo antonio do rio abaixo",),
+        (4124400,u"Santo Antônio do Sudoeste",u"PR","santo antonio do sudoeste",),
+        (1507003,u"Santo Antônio do Tauá",u"PA","santo antonio do taua",),
+        (2110302,u"Santo Antônio dos Lopes",u"MA","santo antonio dos lopes",),
+        (2209450,u"Santo Antônio dos Milagres",u"PI","santo antonio dos milagres",),
+        (4317806,u"Santo Augusto",u"RS","santo augusto",),
+        (4317905,u"Santo Cristo",u"RS","santo cristo",),
+        (2928802,u"Santo Estêvão",u"BA","santo estevao",),
+        (3548302,u"Santo Expedito",u"SP","santo expedito",),
+        (4317954,u"Santo Expedito do Sul",u"RS","santo expedito do sul",),
+        (3160603,u"Santo Hipólito",u"MG","santo hipolito",),
+        (4124509,u"Santo Inácio",u"PR","santo inacio",),
+        (2209500,u"Santo Inácio do Piauí",u"PI","santo inacio do piaui",),
+        (3548401,u"Santópolis do Aguapeí",u"SP","santopolis do aguapei",),
+        (3548500,u"Santos",u"SP","santos",),
+        (3160702,u"Santos Dumont",u"MG","santos dumont",),
+        (2312304,u"São Benedito",u"CE","sao benedito",),
+        (2110401,u"São Benedito do Rio Preto",u"MA","sao benedito do rio preto",),
+        (2612901,u"São Benedito do Sul",u"PE","sao benedito do sul",),
+        (2513927,u"São Bentinho",u"PB","sao bentinho",),
+        (2110500,u"São Bento",u"MA","sao bento",),
+        (2513901,u"São Bento",u"PB","sao bento",),
+        (3160801,u"São Bento Abade",u"MG","sao bento abade",),
+        (2411601,u"São Bento do Norte",u"RN","sao bento do norte",),
+        (3548609,u"São Bento do Sapucaí",u"SP","sao bento do sapucai",),
+        (4215802,u"São Bento do Sul",u"SC","sao bento do sul",),
+        (1720101,u"São Bento do Tocantins",u"TO","sao bento do tocantins",),
+        (2411700,u"São Bento do Trairí",u"RN","sao bento do trairi",),
+        (2613008,u"São Bento do Una",u"PE","sao bento do una",),
+        (4215752,u"São Bernardino",u"SC","sao bernardino",),
+        (2110609,u"São Bernardo",u"MA","sao bernardo",),
+        (3548708,u"São Bernardo do Campo",u"SP","sao bernardo do campo",),
+        (4215901,u"São Bonifácio",u"SC","sao bonifacio",),
+        (4318002,u"São Borja",u"RS","sao borja",),
+        (2708204,u"São Brás",u"AL","sao bras",),
+        (3160900,u"São Brás do Suaçuí",u"MG","sao bras do suacui",),
+        (2209559,u"São Braz do Piauí",u"PI","sao braz do piaui",),
+        (1507102,u"São Caetano de Odivelas",u"PA","sao caetano de odivelas",),
+        (3548807,u"São Caetano do Sul",u"SP","sao caetano do sul",),
+        (2613107,u"São Caitano",u"PE","sao caitano",),
+        (3548906,u"São Carlos",u"SP","sao carlos",),
+        (4216008,u"São Carlos",u"SC","sao carlos",),
+        (4124608,u"São Carlos do Ivaí",u"PR","sao carlos do ivai",),
+        (2806701,u"São Cristóvão",u"SE","sao cristovao",),
+        (4216057,u"São Cristovão do Sul",u"SC","sao cristovao do sul",),
+        (2928901,u"São Desidério",u"BA","sao desiderio",),
+        (2513968,u"São Domingos",u"PB","sao domingos",),
+        (2806800,u"São Domingos",u"SE","sao domingos",),
+        (2928950,u"São Domingos",u"BA","sao domingos",),
+        (4216107,u"São Domingos",u"SC","sao domingos",),
+        (5219803,u"São Domingos",u"GO","sao domingos",),
+        (3160959,u"São Domingos das Dores",u"MG","sao domingos das dores",),
+        (1507151,u"São Domingos do Araguaia",u"PA","sao domingos do araguaia",),
+        (2110658,u"São Domingos do Azeitão",u"MA","sao domingos do azeitao",),
+        (1507201,u"São Domingos do Capim",u"PA","sao domingos do capim",),
+        (2513943,u"São Domingos do Cariri",u"PB","sao domingos do cariri",),
+        (2110708,u"São Domingos do Maranhão",u"MA","sao domingos do maranhao",),
+        (3204658,u"São Domingos do Norte",u"ES","sao domingos do norte",),
+        (3161007,u"São Domingos do Prata",u"MG","sao domingos do prata",),
+        (4318051,u"São Domingos do Sul",u"RS","sao domingos do sul",),
+        (2929107,u"São Felipe",u"BA","sao felipe",),
+        (1101484,u"São Felipe D'Oeste",u"RO","sao felipe d'oeste",),
+        (2929008,u"São Félix",u"BA","sao felix",),
+        (2110807,u"São Félix de Balsas",u"MA","sao felix de balsas",),
+        (3161056,u"São Félix de Minas",u"MG","sao felix de minas",),
+        (5107859,u"São Félix do Araguaia",u"MT","sao felix do araguaia",),
+        (2929057,u"São Félix do Coribe",u"BA","sao felix do coribe",),
+        (2209609,u"São Félix do Piauí",u"PI","sao felix do piaui",),
+        (1720150,u"São Félix do Tocantins",u"TO","sao felix do tocantins",),
+        (1507300,u"São Félix do Xingu",u"PA","sao felix do xingu",),
+        (2411809,u"São Fernando",u"RN","sao fernando",),
+        (3304805,u"São Fidélis",u"RJ","sao fidelis",),
+        (2513984,u"São Francisco",u"PB","sao francisco",),
+        (2806909,u"São Francisco",u"SE","sao francisco",),
+        (3161106,u"São Francisco",u"MG","sao francisco",),
+        (3549003,u"São Francisco",u"SP","sao francisco",),
+        (4318101,u"São Francisco de Assis",u"RS","sao francisco de assis",),
+        (2209658,u"São Francisco de Assis do Piauí",u"PI","sao francisco de assis do piaui",),
+        (5219902,u"São Francisco de Goiás",u"GO","sao francisco de goias",),
+        (3304755,u"São Francisco de Itabapoana",u"RJ","sao francisco de itabapoana",),
+        (3161205,u"São Francisco de Paula",u"MG","sao francisco de paula",),
+        (4318200,u"São Francisco de Paula",u"RS","sao francisco de paula",),
+        (3161304,u"São Francisco de Sales",u"MG","sao francisco de sales",),
+        (2110856,u"São Francisco do Brejão",u"MA","sao francisco do brejao",),
+        (2929206,u"São Francisco do Conde",u"BA","sao francisco do conde",),
+        (3161403,u"São Francisco do Glória",u"MG","sao francisco do gloria",),
+        (1101492,u"São Francisco do Guaporé",u"RO","sao francisco do guapore",),
+        (2110906,u"São Francisco do Maranhão",u"MA","sao francisco do maranhao",),
+        (2411908,u"São Francisco do Oeste",u"RN","sao francisco do oeste",),
+        (1507409,u"São Francisco do Pará",u"PA","sao francisco do para",),
+        (2209708,u"São Francisco do Piauí",u"PI","sao francisco do piaui",),
+        (4216206,u"São Francisco do Sul",u"SC","sao francisco do sul",),
+        (2929255,u"São Gabriel",u"BA","sao gabriel",),
+        (4318309,u"São Gabriel",u"RS","sao gabriel",),
+        (1303809,u"São Gabriel da Cachoeira",u"AM","sao gabriel da cachoeira",),
+        (3204708,u"São Gabriel da Palha",u"ES","sao gabriel da palha",),
+        (5007695,u"São Gabriel do Oeste",u"MS","sao gabriel do oeste",),
+        (3161502,u"São Geraldo",u"MG","sao geraldo",),
+        (3161601,u"São Geraldo da Piedade",u"MG","sao geraldo da piedade",),
+        (1507458,u"São Geraldo do Araguaia",u"PA","sao geraldo do araguaia",),
+        (3161650,u"São Geraldo do Baixio",u"MG","sao geraldo do baixio",),
+        (3304904,u"São Gonçalo",u"RJ","sao goncalo",),
+        (3161700,u"São Gonçalo do Abaeté",u"MG","sao goncalo do abaete",),
+        (2312403,u"São Gonçalo do Amarante",u"CE","sao goncalo do amarante",),
+        (2412005,u"São Gonçalo do Amarante",u"RN","sao goncalo do amarante",),
+        (2209757,u"São Gonçalo do Gurguéia",u"PI","sao goncalo do gurgueia",),
+        (3161809,u"São Gonçalo do Pará",u"MG","sao goncalo do para",),
+        (2209807,u"São Gonçalo do Piauí",u"PI","sao goncalo do piaui",),
+        (3161908,u"São Gonçalo do Rio Abaixo",u"MG","sao goncalo do rio abaixo",),
+        (3125507,u"São Gonçalo do Rio Preto",u"MG","sao goncalo do rio preto",),
+        (3162005,u"São Gonçalo do Sapucaí",u"MG","sao goncalo do sapucai",),
+        (2929305,u"São Gonçalo dos Campos",u"BA","sao goncalo dos campos",),
+        (3162104,u"São Gotardo",u"MG","sao gotardo",),
+        (4318408,u"São Jerônimo",u"RS","sao jeronimo",),
+        (4124707,u"São Jerônimo da Serra",u"PR","sao jeronimo da serra",),
+        (2613206,u"São João",u"PE","sao joao",),
+        (4124806,u"São João",u"PR","sao joao",),
+        (2111003,u"São João Batista",u"MA","sao joao batista",),
+        (4216305,u"São João Batista",u"SC","sao joao batista",),
+        (3162203,u"São João Batista do Glória",u"MG","sao joao batista do gloria",),
+        (5220009,u"São João d'Aliança",u"GO","sao joao d'alianca",),
+        (1400506,u"São João da Baliza",u"RR","sao joao da baliza",),
+        (3305000,u"São João da Barra",u"RJ","sao joao da barra",),
+        (3549102,u"São João da Boa Vista",u"SP","sao joao da boa vista",),
+        (2209856,u"São João da Canabrava",u"PI","sao joao da canabrava",),
+        (2209872,u"São João da Fronteira",u"PI","sao joao da fronteira",),
+        (3162252,u"São João da Lagoa",u"MG","sao joao da lagoa",),
+        (3162302,u"São João da Mata",u"MG","sao joao da mata",),
+        (5220058,u"São João da Paraúna",u"GO","sao joao da parauna",),
+        (1507466,u"São João da Ponta",u"PA","sao joao da ponta",),
+        (3162401,u"São João da Ponte",u"MG","sao joao da ponte",),
+        (2209906,u"São João da Serra",u"PI","sao joao da serra",),
+        (4318424,u"São João da Urtiga",u"RS","sao joao da urtiga",),
+        (2209955,u"São João da Varjota",u"PI","sao joao da varjota",),
+        (3549201,u"São João das Duas Pontes",u"SP","sao joao das duas pontes",),
+        (3162450,u"São João das Missões",u"MG","sao joao das missoes",),
+        (3549250,u"São João de Iracema",u"SP","sao joao de iracema",),
+        (3305109,u"São João de Meriti",u"RJ","sao joao de meriti",),
+        (1507474,u"São João de Pirabas",u"PA","sao joao de pirabas",),
+        (3162500,u"São João del Rei",u"MG","sao joao del rei",),
+        (1507508,u"São João do Araguaia",u"PA","sao joao do araguaia",),
+        (2209971,u"São João do Arraial",u"PI","sao joao do arraial",),
+        (4124905,u"São João do Caiuá",u"PR","sao joao do caiua",),
+        (2514008,u"São João do Cariri",u"PB","sao joao do cariri",),
+        (2111029,u"São João do Carú",u"MA","sao joao do caru",),
+        (4216354,u"São João do Itaperiú",u"SC","sao joao do itaperiu",),
+        (4125001,u"São João do Ivaí",u"PR","sao joao do ivai",),
+        (2312502,u"São João do Jaguaribe",u"CE","sao joao do jaguaribe",),
+        (3162559,u"São João do Manhuaçu",u"MG","sao joao do manhuacu",),
+        (3162575,u"São João do Manteninha",u"MG","sao joao do manteninha",),
+        (4216255,u"São João do Oeste",u"SC","sao joao do oeste",),
+        (3162609,u"São João do Oriente",u"MG","sao joao do oriente",),
+        (3162658,u"São João do Pacuí",u"MG","sao joao do pacui",),
+        (2111052,u"São João do Paraíso",u"MA","sao joao do paraiso",),
+        (3162708,u"São João do Paraíso",u"MG","sao joao do paraiso",),
+        (3549300,u"São João do Pau d'Alho",u"SP","sao joao do pau d'alho",),
+        (2210003,u"São João do Piauí",u"PI","sao joao do piaui",),
+        (4318432,u"São João do Polêsine",u"RS","sao joao do polesine",),
+        (2500700,u"São João do Rio do Peixe",u"PB","sao joao do rio do peixe",),
+        (2412104,u"São João do Sabugi",u"RN","sao joao do sabugi",),
+        (2111078,u"São João do Soter",u"MA","sao joao do soter",),
+        (4216404,u"São João do Sul",u"SC","sao joao do sul",),
+        (2514107,u"São João do Tigre",u"PB","sao joao do tigre",),
+        (4125100,u"São João do Triunfo",u"PR","sao joao do triunfo",),
+        (2111102,u"São João dos Patos",u"MA","sao joao dos patos",),
+        (3162807,u"São João Evangelista",u"MG","sao joao evangelista",),
+        (3162906,u"São João Nepomuceno",u"MG","sao joao nepomuceno",),
+        (4216503,u"São Joaquim",u"SC","sao joaquim",),
+        (3549409,u"São Joaquim da Barra",u"SP","sao joaquim da barra",),
+        (3162922,u"São Joaquim de Bicas",u"MG","sao joaquim de bicas",),
+        (2613305,u"São Joaquim do Monte",u"PE","sao joaquim do monte",),
+        (4318440,u"São Jorge",u"RS","sao jorge",),
+        (4125209,u"São Jorge d'Oeste",u"PR","sao jorge d'oeste",),
+        (4125308,u"São Jorge do Ivaí",u"PR","sao jorge do ivai",),
+        (4125357,u"São Jorge do Patrocínio",u"PR","sao jorge do patrocinio",),
+        (4216602,u"São José",u"SC","sao jose",),
+        (3162948,u"São José da Barra",u"MG","sao jose da barra",),
+        (3549508,u"São José da Bela Vista",u"SP","sao jose da bela vista",),
+        (4125407,u"São José da Boa Vista",u"PR","sao jose da boa vista",),
+        (2613404,u"São José da Coroa Grande",u"PE","sao jose da coroa grande",),
+        (2514206,u"São José da Lagoa Tapada",u"PB","sao jose da lagoa tapada",),
+        (2708303,u"São José da Laje",u"AL","sao jose da laje",),
+        (3162955,u"São José da Lapa",u"MG","sao jose da lapa",),
+        (3163003,u"São José da Safira",u"MG","sao jose da safira",),
+        (2708402,u"São José da Tapera",u"AL","sao jose da tapera",),
+        (3163102,u"São José da Varginha",u"MG","sao jose da varginha",),
+        (2929354,u"São José da Vitória",u"BA","sao jose da vitoria",),
+        (4318457,u"São José das Missões",u"RS","sao jose das missoes",),
+        (4125456,u"São José das Palmeiras",u"PR","sao jose das palmeiras",),
+        (2514305,u"São José de Caiana",u"PB","sao jose de caiana",),
+        (2514404,u"São José de Espinharas",u"PB","sao jose de espinharas",),
+        (2412203,u"São José de Mipibu",u"RN","sao jose de mipibu",),
+        (2514503,u"São José de Piranhas",u"PB","sao jose de piranhas",),
+        (2514552,u"São José de Princesa",u"PB","sao jose de princesa",),
+        (2111201,u"São José de Ribamar",u"MA","sao jose de ribamar",),
+        (3305133,u"São José de Ubá",u"RJ","sao jose de uba",),
+        (3163201,u"São José do Alegre",u"MG","sao jose do alegre",),
+        (3549607,u"São José do Barreiro",u"SP","sao jose do barreiro",),
+        (2613503,u"São José do Belmonte",u"PE","sao jose do belmonte",),
+        (2514602,u"São José do Bonfim",u"PB","sao jose do bonfim",),
+        (2514651,u"São José do Brejo do Cruz",u"PB","sao jose do brejo do cruz",),
+        (3204807,u"São José do Calçado",u"ES","sao jose do calcado",),
+        (2412302,u"São José do Campestre",u"RN","sao jose do campestre",),
+        (4216701,u"São José do Cedro",u"SC","sao jose do cedro",),
+        (4216800,u"São José do Cerrito",u"SC","sao jose do cerrito",),
+        (2210052,u"São José do Divino",u"PI","sao jose do divino",),
+        (3163300,u"São José do Divino",u"MG","sao jose do divino",),
+        (2613602,u"São José do Egito",u"PE","sao jose do egito",),
+        (3163409,u"São José do Goiabal",u"MG","sao jose do goiabal",),
+        (4318465,u"São José do Herval",u"RS","sao jose do herval",),
+        (4318481,u"São José do Hortêncio",u"RS","sao jose do hortencio",),
+        (4318499,u"São José do Inhacorá",u"RS","sao jose do inhacora",),
+        (2929370,u"São José do Jacuípe",u"BA","sao jose do jacuipe",),
+        (3163508,u"São José do Jacuri",u"MG","sao jose do jacuri",),
+        (3163607,u"São José do Mantimento",u"MG","sao jose do mantimento",),
+        (4318507,u"São José do Norte",u"RS","sao jose do norte",),
+        (4318606,u"São José do Ouro",u"RS","sao jose do ouro",),
+        (2210102,u"São José do Peixe",u"PI","sao jose do peixe",),
+        (2210201,u"São José do Piauí",u"PI","sao jose do piaui",),
+        (5107297,u"São José do Povo",u"MT","sao jose do povo",),
+        (5107305,u"São José do Rio Claro",u"MT","sao jose do rio claro",),
+        (3549706,u"São José do Rio Pardo",u"SP","sao jose do rio pardo",),
+        (3549805,u"São José do Rio Preto",u"SP","sao jose do rio preto",),
+        (2514701,u"São José do Sabugi",u"PB","sao jose do sabugi",),
+        (2412401,u"São José do Seridó",u"RN","sao jose do serido",),
+        (4318614,u"São José do Sul",u"RS","sao jose do sul",),
+        (3305158,u"São José do Vale do Rio Preto",u"RJ","sao jose do vale do rio preto",),
+        (5107354,u"São José do Xingu",u"MT","sao jose do xingu",),
+        (4318622,u"São José dos Ausentes",u"RS","sao jose dos ausentes",),
+        (2111250,u"São José dos Basílios",u"MA","sao jose dos basilios",),
+        (3549904,u"São José dos Campos",u"SP","sao jose dos campos",),
+        (2514800,u"São José dos Cordeiros",u"PB","sao jose dos cordeiros",),
+        (4125506,u"São José dos Pinhais",u"PR","sao jose dos pinhais",),
+        (5107107,u"São José dos Quatro Marcos",u"MT","sao jose dos quatro marcos",),
+        (2514453,u"São José dos Ramos",u"PB","sao jose dos ramos",),
+        (2210300,u"São Julião",u"PI","sao juliao",),
+        (4318705,u"São Leopoldo",u"RS","sao leopoldo",),
+        (3163706,u"São Lourenço",u"MG","sao lourenco",),
+        (2613701,u"São Lourenço da Mata",u"PE","sao lourenco da mata",),
+        (3549953,u"São Lourenço da Serra",u"SP","sao lourenco da serra",),
+        (4216909,u"São Lourenço do Oeste",u"SC","sao lourenco do oeste",),
+        (2210359,u"São Lourenço do Piauí",u"PI","sao lourenco do piaui",),
+        (4318804,u"São Lourenço do Sul",u"RS","sao lourenco do sul",),
+        (4217006,u"São Ludgero",u"SC","sao ludgero",),
+        (2111300,u"São Luís",u"MA","sao luis",),
+        (5220108,u"São Luís de Montes Belos",u"GO","sao luis de montes belos",),
+        (2312601,u"São Luís do Curu",u"CE","sao luis do curu",),
+        (3550001,u"São Luís do Paraitinga",u"SP","sao luis do paraitinga",),
+        (2210375,u"São Luis do Piauí",u"PI","sao luis do piaui",),
+        (2708501,u"São Luís do Quitunde",u"AL","sao luis do quitunde",),
+        (2111409,u"São Luís Gonzaga do Maranhão",u"MA","sao luis gonzaga do maranhao",),
+        (1400605,u"São Luiz",u"RR","sao luiz",),
+        (5220157,u"São Luíz do Norte",u"GO","sao luiz do norte",),
+        (4318903,u"São Luiz Gonzaga",u"RS","sao luiz gonzaga",),
+        (2514909,u"São Mamede",u"PB","sao mamede",),
+        (4125555,u"São Manoel do Paraná",u"PR","sao manoel do parana",),
+        (3550100,u"São Manuel",u"SP","sao manuel",),
+        (4319000,u"São Marcos",u"RS","sao marcos",),
+        (4217105,u"São Martinho",u"SC","sao martinho",),
+        (4319109,u"São Martinho",u"RS","sao martinho",),
+        (4319125,u"São Martinho da Serra",u"RS","sao martinho da serra",),
+        (3204906,u"São Mateus",u"ES","sao mateus",),
+        (2111508,u"São Mateus do Maranhão",u"MA","sao mateus do maranhao",),
+        (4125605,u"São Mateus do Sul",u"PR","sao mateus do sul",),
+        (2412500,u"São Miguel",u"RN","sao miguel",),
+        (3550209,u"São Miguel Arcanjo",u"SP","sao miguel arcanjo",),
+        (2210383,u"São Miguel da Baixa Grande",u"PI","sao miguel da baixa grande",),
+        (4217154,u"São Miguel da Boa Vista",u"SC","sao miguel da boa vista",),
+        (2929404,u"São Miguel das Matas",u"BA","sao miguel das matas",),
+        (4319158,u"São Miguel das Missões",u"RS","sao miguel das missoes",),
+        (2515005,u"São Miguel de Taipu",u"PB","sao miguel de taipu",),
+        (2807006,u"São Miguel do Aleixo",u"SE","sao miguel do aleixo",),
+        (3163805,u"São Miguel do Anta",u"MG","sao miguel do anta",),
+        (5220207,u"São Miguel do Araguaia",u"GO","sao miguel do araguaia",),
+        (2210391,u"São Miguel do Fidalgo",u"PI","sao miguel do fidalgo",),
+        (2412559,u"São Miguel do Gostoso",u"RN","sao miguel do gostoso",),
+        (1507607,u"São Miguel do Guamá",u"PA","sao miguel do guama",),
+        (1100320,u"São Miguel do Guaporé",u"RO","sao miguel do guapore",),
+        (4125704,u"São Miguel do Iguaçu",u"PR","sao miguel do iguacu",),
+        (4217204,u"São Miguel do Oeste",u"SC","sao miguel do oeste",),
+        (5220264,u"São Miguel do Passa Quatro",u"GO","sao miguel do passa quatro",),
+        (2210409,u"São Miguel do Tapuio",u"PI","sao miguel do tapuio",),
+        (1720200,u"São Miguel do Tocantins",u"TO","sao miguel do tocantins",),
+        (2708600,u"São Miguel dos Campos",u"AL","sao miguel dos campos",),
+        (2708709,u"São Miguel dos Milagres",u"AL","sao miguel dos milagres",),
+        (4319208,u"São Nicolau",u"RS","sao nicolau",),
+        (5220280,u"São Patrício",u"GO","sao patricio",),
+        (3550308,u"São Paulo",u"SP","sao paulo",),
+        (4319307,u"São Paulo das Missões",u"RS","sao paulo das missoes",),
+        (1303908,u"São Paulo de Olivença",u"AM","sao paulo de olivenca",),
+        (2412609,u"São Paulo do Potengi",u"RN","sao paulo do potengi",),
+        (2412708,u"São Pedro",u"RN","sao pedro",),
+        (3550407,u"São Pedro",u"SP","sao pedro",),
+        (2111532,u"São Pedro da Água Branca",u"MA","sao pedro da agua branca",),
+        (3305208,u"São Pedro da Aldeia",u"RJ","sao pedro da aldeia",),
+        (5107404,u"São Pedro da Cipa",u"MT","sao pedro da cipa",),
+        (4319356,u"São Pedro da Serra",u"RS","sao pedro da serra",),
+        (3163904,u"São Pedro da União",u"MG","sao pedro da uniao",),
+        (4319364,u"São Pedro das Missões",u"RS","sao pedro das missoes",),
+        (4217253,u"São Pedro de Alcântara",u"SC","sao pedro de alcantara",),
+        (4319372,u"São Pedro do Butiá",u"RS","sao pedro do butia",),
+        (4125753,u"São Pedro do Iguaçu",u"PR","sao pedro do iguacu",),
+        (4125803,u"São Pedro do Ivaí",u"PR","sao pedro do ivai",),
+        (4125902,u"São Pedro do Paraná",u"PR","sao pedro do parana",),
+        (2210508,u"São Pedro do Piauí",u"PI","sao pedro do piaui",),
+        (3164100,u"São Pedro do Suaçuí",u"MG","sao pedro do suacui",),
+        (4319406,u"São Pedro do Sul",u"RS","sao pedro do sul",),
+        (3550506,u"São Pedro do Turvo",u"SP","sao pedro do turvo",),
+        (2111573,u"São Pedro dos Crentes",u"MA","sao pedro dos crentes",),
+        (3164001,u"São Pedro dos Ferros",u"MG","sao pedro dos ferros",),
+        (2412807,u"São Rafael",u"RN","sao rafael",),
+        (2111607,u"São Raimundo das Mangabeiras",u"MA","sao raimundo das mangabeiras",),
+        (2111631,u"São Raimundo do Doca Bezerra",u"MA","sao raimundo do doca bezerra",),
+        (2210607,u"São Raimundo Nonato",u"PI","sao raimundo nonato",),
+        (2111672,u"São Roberto",u"MA","sao roberto",),
+        (3164209,u"São Romão",u"MG","sao romao",),
+        (3550605,u"São Roque",u"SP","sao roque",),
+        (3164308,u"São Roque de Minas",u"MG","sao roque de minas",),
+        (3204955,u"São Roque do Canaã",u"ES","sao roque do canaa",),
+        (1720259,u"São Salvador do Tocantins",u"TO","sao salvador do tocantins",),
+        (2708808,u"São Sebastião",u"AL","sao sebastiao",),
+        (3550704,u"São Sebastião",u"SP","sao sebastiao",),
+        (4126009,u"São Sebastião da Amoreira",u"PR","sao sebastiao da amoreira",),
+        (3164407,u"São Sebastião da Bela Vista",u"MG","sao sebastiao da bela vista",),
+        (1507706,u"São Sebastião da Boa Vista",u"PA","sao sebastiao da boa vista",),
+        (3550803,u"São Sebastião da Grama",u"SP","sao sebastiao da grama",),
+        (3164431,u"São Sebastião da Vargem Alegre",u"MG","sao sebastiao da vargem alegre",),
+        (2515104,u"São Sebastião de Lagoa de Roça",u"PB","sao sebastiao de lagoa de roca",),
+        (3305307,u"São Sebastião do Alto",u"RJ","sao sebastiao do alto",),
+        (3164472,u"São Sebastião do Anta",u"MG","sao sebastiao do anta",),
+        (4319505,u"São Sebastião do Caí",u"RS","sao sebastiao do cai",),
+        (3164506,u"São Sebastião do Maranhão",u"MG","sao sebastiao do maranhao",),
+        (3164605,u"São Sebastião do Oeste",u"MG","sao sebastiao do oeste",),
+        (3164704,u"São Sebastião do Paraíso",u"MG","sao sebastiao do paraiso",),
+        (2929503,u"São Sebastião do Passé",u"BA","sao sebastiao do passe",),
+        (3164803,u"São Sebastião do Rio Preto",u"MG","sao sebastiao do rio preto",),
+        (3164902,u"São Sebastião do Rio Verde",u"MG","sao sebastiao do rio verde",),
+        (1720309,u"São Sebastião do Tocantins",u"TO","sao sebastiao do tocantins",),
+        (1303957,u"São Sebastião do Uatumã",u"AM","sao sebastiao do uatuma",),
+        (2515203,u"São Sebastião do Umbuzeiro",u"PB","sao sebastiao do umbuzeiro",),
+        (4319604,u"São Sepé",u"RS","sao sepe",),
+        (3550902,u"São Simão",u"SP","sao simao",),
+        (5220405,u"São Simão",u"GO","sao simao",),
+        (3165206,u"São Thomé das Letras",u"MG","sao thome das letras",),
+        (3165008,u"São Tiago",u"MG","sao tiago",),
+        (3165107,u"São Tomás de Aquino",u"MG","sao tomas de aquino",),
+        (2412906,u"São Tomé",u"RN","sao tome",),
+        (4126108,u"São Tomé",u"PR","sao tome",),
+        (4319703,u"São Valentim",u"RS","sao valentim",),
+        (4319711,u"São Valentim do Sul",u"RS","sao valentim do sul",),
+        (1720499,u"São Valério",u"TO","sao valerio",),
+        (4319737,u"São Valério do Sul",u"RS","sao valerio do sul",),
+        (4319752,u"São Vendelino",u"RS","sao vendelino",),
+        (2413003,u"São Vicente",u"RN","sao vicente",),
+        (3551009,u"São Vicente",u"SP","sao vicente",),
+        (3165305,u"São Vicente de Minas",u"MG","sao vicente de minas",),
+        (4319802,u"São Vicente do Sul",u"RS","sao vicente do sul",),
+        (2111706,u"São Vicente Ferrer",u"MA","sao vicente ferrer",),
+        (2613800,u"São Vicente Ferrer",u"PE","sao vicente ferrer",),
+        (2515302,u"Sapé",u"PB","sape",),
+        (2929602,u"Sapeaçu",u"BA","sapeacu",),
+        (5107875,u"Sapezal",u"MT","sapezal",),
+        (4319901,u"Sapiranga",u"RS","sapiranga",),
+        (4126207,u"Sapopema",u"PR","sapopema",),
+        (3165404,u"Sapucaí-Mirim",u"MG","sapucai-mirim",),
+        (1507755,u"Sapucaia",u"PA","sapucaia",),
+        (3305406,u"Sapucaia",u"RJ","sapucaia",),
+        (4320008,u"Sapucaia do Sul",u"RS","sapucaia do sul",),
+        (3305505,u"Saquarema",u"RJ","saquarema",),
+        (4126256,u"Sarandi",u"PR","sarandi",),
+        (4320107,u"Sarandi",u"RS","sarandi",),
+        (3551108,u"Sarapuí",u"SP","sarapui",),
+        (3165503,u"Sardoá",u"MG","sardoa",),
+        (3551207,u"Sarutaiá",u"SP","sarutaia",),
+        (3165537,u"Sarzedo",u"MG","sarzedo",),
+        (2929701,u"Sátiro Dias",u"BA","satiro dias",),
+        (2708907,u"Satuba",u"AL","satuba",),
+        (2111722,u"Satubinha",u"MA","satubinha",),
+        (2929750,u"Saubara",u"BA","saubara",),
+        (4126272,u"Saudade do Iguaçu",u"PR","saudade do iguacu",),
+        (4217303,u"Saudades",u"SC","saudades",),
+        (2929800,u"Saúde",u"BA","saude",),
+        (4217402,u"Schroeder",u"SC","schroeder",),
+        (2929909,u"Seabra",u"BA","seabra",),
+        (4217501,u"Seara",u"SC","seara",),
+        (3551306,u"Sebastianópolis do Sul",u"SP","sebastianopolis do sul",),
+        (2210623,u"Sebastião Barros",u"PI","sebastiao barros",),
+        (2930006,u"Sebastião Laranjeiras",u"BA","sebastiao laranjeiras",),
+        (2210631,u"Sebastião Leal",u"PI","sebastiao leal",),
+        (4320206,u"Seberi",u"RS","seberi",),
+        (4320230,u"Sede Nova",u"RS","sede nova",),
+        (4320263,u"Segredo",u"RS","segredo",),
+        (4320305,u"Selbach",u"RS","selbach",),
+        (5007802,u"Selvíria",u"MS","selviria",),
+        (3165560,u"Sem-Peixe",u"MG","sem-peixe",),
+        (1200500,u"Sena Madureira",u"AC","sena madureira",),
+        (2111748,u"Senador Alexandre Costa",u"MA","senador alexandre costa",),
+        (3165578,u"Senador Amaral",u"MG","senador amaral",),
+        (5220454,u"Senador Canedo",u"GO","senador canedo",),
+        (3165602,u"Senador Cortes",u"MG","senador cortes",),
+        (2413102,u"Senador Elói de Souza",u"RN","senador eloi de souza",),
+        (3165701,u"Senador Firmino",u"MG","senador firmino",),
+        (2413201,u"Senador Georgino Avelino",u"RN","senador georgino avelino",),
+        (1200450,u"Senador Guiomard",u"AC","senador guiomard",),
+        (3165800,u"Senador José Bento",u"MG","senador jose bento",),
+        (1507805,u"Senador José Porfírio",u"PA","senador jose porfirio",),
+        (2111763,u"Senador La Rocque",u"MA","senador la rocque",),
+        (3165909,u"Senador Modestino Gonçalves",u"MG","senador modestino goncalves",),
+        (2312700,u"Senador Pompeu",u"CE","senador pompeu",),
+        (2708956,u"Senador Rui Palmeira",u"AL","senador rui palmeira",),
+        (2312809,u"Senador Sá",u"CE","senador sa",),
+        (4320321,u"Senador Salgado Filho",u"RS","senador salgado filho",),
+        (4126306,u"Sengés",u"PR","senges",),
+        (2930105,u"Senhor do Bonfim",u"BA","senhor do bonfim",),
+        (3166006,u"Senhora de Oliveira",u"MG","senhora de oliveira",),
+        (3166105,u"Senhora do Porto",u"MG","senhora do porto",),
+        (3166204,u"Senhora dos Remédios",u"MG","senhora dos remedios",),
+        (4320354,u"Sentinela do Sul",u"RS","sentinela do sul",),
+        (2930204,u"Sento Sé",u"BA","sento se",),
+        (4320404,u"Serafina Corrêa",u"RS","serafina correa",),
+        (3166303,u"Sericita",u"MG","sericita",),
+        (2515401,u"Seridó",u"PB","serido",),
+        (1101500,u"Seringueiras",u"RO","seringueiras",),
+        (4320453,u"Sério",u"RS","serio",),
+        (3166402,u"Seritinga",u"MG","seritinga",),
+        (3305554,u"Seropédica",u"RJ","seropedica",),
+        (3205002,u"Serra",u"ES","serra",),
+        (4217550,u"Serra Alta",u"SC","serra alta",),
+        (3551405,u"Serra Azul",u"SP","serra azul",),
+        (3166501,u"Serra Azul de Minas",u"MG","serra azul de minas",),
+        (2515500,u"Serra Branca",u"PB","serra branca",),
+        (2515609,u"Serra da Raiz",u"PB","serra da raiz",),
+        (3166600,u"Serra da Saudade",u"MG","serra da saudade",),
+        (2413300,u"Serra de São Bento",u"RN","serra de sao bento",),
+        (2413359,u"Serra do Mel",u"RN","serra do mel",),
+        (1600055,u"Serra do Navio",u"AP","serra do navio",),
+        (2930154,u"Serra do Ramalho",u"BA","serra do ramalho",),
+        (3166808,u"Serra do Salitre",u"MG","serra do salitre",),
+        (3166709,u"Serra dos Aimorés",u"MG","serra dos aimores",),
+        (2930303,u"Serra Dourada",u"BA","serra dourada",),
+        (2515708,u"Serra Grande",u"PB","serra grande",),
+        (3551603,u"Serra Negra",u"SP","serra negra",),
+        (2413409,u"Serra Negra do Norte",u"RN","serra negra do norte",),
+        (5107883,u"Serra Nova Dourada",u"MT","serra nova dourada",),
+        (2930402,u"Serra Preta",u"BA","serra preta",),
+        (2515807,u"Serra Redonda",u"PB","serra redonda",),
+        (2613909,u"Serra Talhada",u"PE","serra talhada",),
+        (3551504,u"Serrana",u"SP","serrana",),
+        (3166907,u"Serrania",u"MG","serrania",),
+        (2111789,u"Serrano do Maranhão",u"MA","serrano do maranhao",),
+        (5220504,u"Serranópolis",u"GO","serranopolis",),
+        (3166956,u"Serranópolis de Minas",u"MG","serranopolis de minas",),
+        (4126355,u"Serranópolis do Iguaçu",u"PR","serranopolis do iguacu",),
+        (3167004,u"Serranos",u"MG","serranos",),
+        (2515906,u"Serraria",u"PB","serraria",),
+        (2413508,u"Serrinha",u"RN","serrinha",),
+        (2930501,u"Serrinha",u"BA","serrinha",),
+        (2413557,u"Serrinha dos Pintos",u"RN","serrinha dos pintos",),
+        (2614006,u"Serrita",u"PE","serrita",),
+        (3167103,u"Serro",u"MG","serro",),
+        (2930600,u"Serrolândia",u"BA","serrolandia",),
+        (4126405,u"Sertaneja",u"PR","sertaneja",),
+        (2614105,u"Sertânia",u"PE","sertania",),
+        (4126504,u"Sertanópolis",u"PR","sertanopolis",),
+        (4320503,u"Sertão",u"RS","sertao",),
+        (4320552,u"Sertão Santana",u"RS","sertao santana",),
+        (2515930,u"Sertãozinho",u"PB","sertaozinho",),
+        (3551702,u"Sertãozinho",u"SP","sertaozinho",),
+        (3551801,u"Sete Barras",u"SP","sete barras",),
+        (4320578,u"Sete de Setembro",u"RS","sete de setembro",),
+        (3167202,u"Sete Lagoas",u"MG","sete lagoas",),
+        (5007703,u"Sete Quedas",u"MS","sete quedas",),
+        (3165552,u"Setubinha",u"MG","setubinha",),
+        (4320602,u"Severiano de Almeida",u"RS","severiano de almeida",),
+        (2413607,u"Severiano Melo",u"RN","severiano melo",),
+        (3551900,u"Severínia",u"SP","severinia",),
+        (4217600,u"Siderópolis",u"SC","sideropolis",),
+        (5007901,u"Sidrolândia",u"MS","sidrolandia",),
+        (2210656,u"Sigefredo Pacheco",u"PI","sigefredo pacheco",),
+        (3305604,u"Silva Jardim",u"RJ","silva jardim",),
+        (5220603,u"Silvânia",u"GO","silvania",),
+        (1720655,u"Silvanópolis",u"TO","silvanopolis",),
+        (4320651,u"Silveira Martins",u"RS","silveira martins",),
+        (3167301,u"Silveirânia",u"MG","silveirania",),
+        (3552007,u"Silveiras",u"SP","silveiras",),
+        (1304005,u"Silves",u"AM","silves",),
+        (3167400,u"Silvianópolis",u"MG","silvianopolis",),
+        (2807105,u"Simão Dias",u"SE","simao dias",),
+        (3167509,u"Simão Pereira",u"MG","simao pereira",),
+        (2210706,u"Simões",u"PI","simoes",),
+        (2930709,u"Simões Filho",u"BA","simoes filho",),
+        (5220686,u"Simolândia",u"GO","simolandia",),
+        (3167608,u"Simonésia",u"MG","simonesia",),
+        (2210805,u"Simplício Mendes",u"PI","simplicio mendes",),
+        (4320677,u"Sinimbu",u"RS","sinimbu",),
+        (5107909,u"Sinop",u"MT","sinop",),
+        (4126603,u"Siqueira Campos",u"PR","siqueira campos",),
+        (2614204,u"Sirinhaém",u"PE","sirinhaem",),
+        (2807204,u"Siriri",u"SE","siriri",),
+        (5220702,u"Sítio d'Abadia",u"GO","sitio d'abadia",),
+        (2930758,u"Sítio do Mato",u"BA","sitio do mato",),
+        (2930766,u"Sítio do Quinto",u"BA","sitio do quinto",),
+        (2111805,u"Sítio Novo",u"MA","sitio novo",),
+        (2413706,u"Sítio Novo",u"RN","sitio novo",),
+        (1720804,u"Sítio Novo do Tocantins",u"TO","sitio novo do tocantins",),
+        (2930774,u"Sobradinho",u"BA","sobradinho",),
+        (4320701,u"Sobradinho",u"RS","sobradinho",),
+        (2515971,u"Sobrado",u"PB","sobrado",),
+        (2312908,u"Sobral",u"CE","sobral",),
+        (3167707,u"Sobrália",u"MG","sobralia",),
+        (3552106,u"Socorro",u"SP","socorro",),
+        (2210904,u"Socorro do Piauí",u"PI","socorro do piaui",),
+        (2516003,u"Solânea",u"PB","solanea",),
+        (2516102,u"Soledade",u"PB","soledade",),
+        (4320800,u"Soledade",u"RS","soledade",),
+        (3167806,u"Soledade de Minas",u"MG","soledade de minas",),
+        (2614402,u"Solidão",u"PE","solidao",),
+        (2313005,u"Solonópole",u"CE","solonopole",),
+        (4217709,u"Sombrio",u"SC","sombrio",),
+        (5007935,u"Sonora",u"MS","sonora",),
+        (3205010,u"Sooretama",u"ES","sooretama",),
+        (3552205,u"Sorocaba",u"SP","sorocaba",),
+        (5107925,u"Sorriso",u"MT","sorriso",),
+        (2516151,u"Sossêgo",u"PB","sossego",),
+        (1507904,u"Soure",u"PA","soure",),
+        (2516201,u"Sousa",u"PB","sousa",),
+        (2930808,u"Souto Soares",u"BA","souto soares",),
+        (1720853,u"Sucupira",u"TO","sucupira",),
+        (2111904,u"Sucupira do Norte",u"MA","sucupira do norte",),
+        (2111953,u"Sucupira do Riachão",u"MA","sucupira do riachao",),
+        (3552304,u"Sud Mennucci",u"SP","sud mennucci",),
+        (4217758,u"Sul Brasil",u"SC","sul brasil",),
+        (4126652,u"Sulina",u"PR","sulina",),
+        (3552403,u"Sumaré",u"SP","sumare",),
+        (2516300,u"Sumé",u"PB","sume",),
+        (3305703,u"Sumidouro",u"RJ","sumidouro",),
+        (2614501,u"Surubim",u"PE","surubim",),
+        (2210938,u"Sussuapara",u"PI","sussuapara",),
+        (3552551,u"Suzanápolis",u"SP","suzanapolis",),
+        (3552502,u"Suzano",u"SP","suzano",),
+        (4320859,u"Tabaí",u"RS","tabai",),
+        (5107941,u"Tabaporã",u"MT","tabapora",),
+        (3552601,u"Tabapuã",u"SP","tabapua",),
+        (1304062,u"Tabatinga",u"AM","tabatinga",),
+        (3552700,u"Tabatinga",u"SP","tabatinga",),
+        (2614600,u"Tabira",u"PE","tabira",),
+        (3552809,u"Taboão da Serra",u"SP","taboao da serra",),
+        (2930907,u"Tabocas do Brejo Velho",u"BA","tabocas do brejo velho",),
+        (2413805,u"Taboleiro Grande",u"RN","taboleiro grande",),
+        (3167905,u"Tabuleiro",u"MG","tabuleiro",),
+        (2313104,u"Tabuleiro do Norte",u"CE","tabuleiro do norte",),
+        (2614709,u"Tacaimbó",u"PE","tacaimbo",),
+        (2614808,u"Tacaratu",u"PE","tacaratu",),
+        (3552908,u"Taciba",u"SP","taciba",),
+        (5007950,u"Tacuru",u"MS","tacuru",),
+        (3553005,u"Taguaí",u"SP","taguai",),
+        (1720903,u"Taguatinga",u"TO","taguatinga",),
+        (3553104,u"Taiaçu",u"SP","taiacu",),
+        (1507953,u"Tailândia",u"PA","tailandia",),
+        (4217808,u"Taió",u"SC","taio",),
+        (3168002,u"Taiobeiras",u"MG","taiobeiras",),
+        (1720937,u"Taipas do Tocantins",u"TO","taipas do tocantins",),
+        (2413904,u"Taipu",u"RN","taipu",),
+        (3553203,u"Taiúva",u"SP","taiuva",),
+        (1720978,u"Talismã",u"TO","talisma",),
+        (2614857,u"Tamandaré",u"PE","tamandare",),
+        (4126678,u"Tamarana",u"PR","tamarana",),
+        (3553302,u"Tambaú",u"SP","tambau",),
+        (4126702,u"Tamboara",u"PR","tamboara",),
+        (2313203,u"Tamboril",u"CE","tamboril",),
+        (2210953,u"Tamboril do Piauí",u"PI","tamboril do piaui",),
+        (3553401,u"Tanabi",u"SP","tanabi",),
+        (2414001,u"Tangará",u"RN","tangara",),
+        (4217907,u"Tangará",u"SC","tangara",),
+        (5107958,u"Tangará da Serra",u"MT","tangara da serra",),
+        (3305752,u"Tanguá",u"RJ","tangua",),
+        (2931004,u"Tanhaçu",u"BA","tanhacu",),
+        (2709004,u"Tanque d'Arca",u"AL","tanque d'arca",),
+        (2210979,u"Tanque do Piauí",u"PI","tanque do piaui",),
+        (2931053,u"Tanque Novo",u"BA","tanque novo",),
+        (2931103,u"Tanquinho",u"BA","tanquinho",),
+        (3168051,u"Taparuba",u"MG","taparuba",),
+        (1304104,u"Tapauá",u"AM","tapaua",),
+        (4126801,u"Tapejara",u"PR","tapejara",),
+        (4320909,u"Tapejara",u"RS","tapejara",),
+        (4321006,u"Tapera",u"RS","tapera",),
+        (2516508,u"Taperoá",u"PB","taperoa",),
+        (2931202,u"Taperoá",u"BA","taperoa",),
+        (4321105,u"Tapes",u"RS","tapes",),
+        (3168101,u"Tapira",u"MG","tapira",),
+        (4126900,u"Tapira",u"PR","tapira",),
+        (3168200,u"Tapiraí",u"MG","tapirai",),
+        (3553500,u"Tapiraí",u"SP","tapirai",),
+        (2931301,u"Tapiramutá",u"BA","tapiramuta",),
+        (3553609,u"Tapiratiba",u"SP","tapiratiba",),
+        (5108006,u"Tapurah",u"MT","tapurah",),
+        (4321204,u"Taquara",u"RS","taquara",),
+        (3168309,u"Taquaraçu de Minas",u"MG","taquaracu de minas",),
+        (3553658,u"Taquaral",u"SP","taquaral",),
+        (5221007,u"Taquaral de Goiás",u"GO","taquaral de goias",),
+        (2709103,u"Taquarana",u"AL","taquarana",),
+        (4321303,u"Taquari",u"RS","taquari",),
+        (3553708,u"Taquaritinga",u"SP","taquaritinga",),
+        (2615003,u"Taquaritinga do Norte",u"PE","taquaritinga do norte",),
+        (3553807,u"Taquarituba",u"SP","taquarituba",),
+        (3553856,u"Taquarivaí",u"SP","taquarivai",),
+        (4321329,u"Taquaruçu do Sul",u"RS","taquarucu do sul",),
+        (5007976,u"Taquarussu",u"MS","taquarussu",),
+        (3553906,u"Tarabai",u"SP","tarabai",),
+        (1200609,u"Tarauacá",u"AC","tarauaca",),
+        (2313252,u"Tarrafas",u"CE","tarrafas",),
+        (1600709,u"Tartarugalzinho",u"AP","tartarugalzinho",),
+        (3553955,u"Tarumã",u"SP","taruma",),
+        (3168408,u"Tarumirim",u"MG","tarumirim",),
+        (2112001,u"Tasso Fragoso",u"MA","tasso fragoso",),
+        (3554003,u"Tatuí",u"SP","tatui",),
+        (2313302,u"Tauá",u"CE","taua",),
+        (3554102,u"Taubaté",u"SP","taubate",),
+        (2516607,u"Tavares",u"PB","tavares",),
+        (4321352,u"Tavares",u"RS","tavares",),
+        (1304203,u"Tefé",u"AM","tefe",),
+        (2516706,u"Teixeira",u"PB","teixeira",),
+        (2931350,u"Teixeira de Freitas",u"BA","teixeira de freitas",),
+        (4127007,u"Teixeira Soares",u"PR","teixeira soares",),
+        (3168507,u"Teixeiras",u"MG","teixeiras",),
+        (1101559,u"Teixeirópolis",u"RO","teixeiropolis",),
+        (2313351,u"Tejuçuoca",u"CE","tejucuoca",),
+        (3554201,u"Tejupá",u"SP","tejupa",),
+        (4127106,u"Telêmaco Borba",u"PR","telemaco borba",),
+        (2807303,u"Telha",u"SE","telha",),
+        (2414100,u"Tenente Ananias",u"RN","tenente ananias",),
+        (2414159,u"Tenente Laurentino Cruz",u"RN","tenente laurentino cruz",),
+        (4321402,u"Tenente Portela",u"RS","tenente portela",),
+        (2516755,u"Tenório",u"PB","tenorio",),
+        (2931400,u"Teodoro Sampaio",u"BA","teodoro sampaio",),
+        (3554300,u"Teodoro Sampaio",u"SP","teodoro sampaio",),
+        (2931509,u"Teofilândia",u"BA","teofilandia",),
+        (3168606,u"Teófilo Otoni",u"MG","teofilo otoni",),
+        (2931608,u"Teolândia",u"BA","teolandia",),
+        (2709152,u"Teotônio Vilela",u"AL","teotonio vilela",),
+        (5008008,u"Terenos",u"MS","terenos",),
+        (2211001,u"Teresina",u"PI","teresina",),
+        (5221080,u"Teresina de Goiás",u"GO","teresina de goias",),
+        (3305802,u"Teresópolis",u"RJ","teresopolis",),
+        (2615102,u"Terezinha",u"PE","terezinha",),
+        (5221197,u"Terezópolis de Goiás",u"GO","terezopolis de goias",),
+        (1507961,u"Terra Alta",u"PA","terra alta",),
+        (4127205,u"Terra Boa",u"PR","terra boa",),
+        (4321436,u"Terra de Areia",u"RS","terra de areia",),
+        (2615201,u"Terra Nova",u"PE","terra nova",),
+        (2931707,u"Terra Nova",u"BA","terra nova",),
+        (5108055,u"Terra Nova do Norte",u"MT","terra nova do norte",),
+        (4127304,u"Terra Rica",u"PR","terra rica",),
+        (3554409,u"Terra Roxa",u"SP","terra roxa",),
+        (4127403,u"Terra Roxa",u"PR","terra roxa",),
+        (1507979,u"Terra Santa",u"PA","terra santa",),
+        (5108105,u"Tesouro",u"MT","tesouro",),
+        (4321451,u"Teutônia",u"RS","teutonia",),
+        (1101609,u"Theobroma",u"RO","theobroma",),
+        (2313401,u"Tianguá",u"CE","tiangua",),
+        (4127502,u"Tibagi",u"PR","tibagi",),
+        (2411056,u"Tibau",u"RN","tibau",),
+        (2414209,u"Tibau do Sul",u"RN","tibau do sul",),
+        (3554508,u"Tietê",u"SP","tiete",),
+        (4217956,u"Tigrinhos",u"SC","tigrinhos",),
+        (4218004,u"Tijucas",u"SC","tijucas",),
+        (4127601,u"Tijucas do Sul",u"PR","tijucas do sul",),
+        (2615300,u"Timbaúba",u"PE","timbauba",),
+        (2414308,u"Timbaúba dos Batistas",u"RN","timbauba dos batistas",),
+        (4218103,u"Timbé do Sul",u"SC","timbe do sul",),
+        (2112100,u"Timbiras",u"MA","timbiras",),
+        (4218202,u"Timbó",u"SC","timbo",),
+        (4218251,u"Timbó Grande",u"SC","timbo grande",),
+        (3554607,u"Timburi",u"SP","timburi",),
+        (2112209,u"Timon",u"MA","timon",),
+        (3168705,u"Timóteo",u"MG","timoteo",),
+        (4321469,u"Tio Hugo",u"RS","tio hugo",),
+        (3168804,u"Tiradentes",u"MG","tiradentes",),
+        (4321477,u"Tiradentes do Sul",u"RS","tiradentes do sul",),
+        (3168903,u"Tiros",u"MG","tiros",),
+        (2807402,u"Tobias Barreto",u"SE","tobias barreto",),
+        (1721109,u"Tocantínia",u"TO","tocantinia",),
+        (1721208,u"Tocantinópolis",u"TO","tocantinopolis",),
+        (3169000,u"Tocantins",u"MG","tocantins",),
+        (3169059,u"Tocos do Moji",u"MG","tocos do moji",),
+        (3169109,u"Toledo",u"MG","toledo",),
+        (4127700,u"Toledo",u"PR","toledo",),
+        (2807501,u"Tomar do Geru",u"SE","tomar do geru",),
+        (4127809,u"Tomazina",u"PR","tomazina",),
+        (3169208,u"Tombos",u"MG","tombos",),
+        (1508001,u"Tomé-Açu",u"PA","tome-acu",),
+        (1304237,u"Tonantins",u"AM","tonantins",),
+        (2615409,u"Toritama",u"PE","toritama",),
+        (5108204,u"Torixoréu",u"MT","torixoreu",),
+        (4321493,u"Toropi",u"RS","toropi",),
+        (3554656,u"Torre de Pedra",u"SP","torre de pedra",),
+        (4321501,u"Torres",u"RS","torres",),
+        (3554706,u"Torrinha",u"SP","torrinha",),
+        (2414407,u"Touros",u"RN","touros",),
+        (3554755,u"Trabiju",u"SP","trabiju",),
+        (1508035,u"Tracuateua",u"PA","tracuateua",),
+        (2615508,u"Tracunhaém",u"PE","tracunhaem",),
+        (2709202,u"Traipu",u"AL","traipu",),
+        (1508050,u"Trairão",u"PA","trairao",),
+        (2313500,u"Trairi",u"CE","trairi",),
+        (3305901,u"Trajano de Moraes",u"RJ","trajano de moraes",),
+        (4321600,u"Tramandaí",u"RS","tramandai",),
+        (4321626,u"Travesseiro",u"RS","travesseiro",),
+        (2931806,u"Tremedal",u"BA","tremedal",),
+        (3554805,u"Tremembé",u"SP","tremembe",),
+        (4321634,u"Três Arroios",u"RS","tres arroios",),
+        (4218301,u"Três Barras",u"SC","tres barras",),
+        (4127858,u"Três Barras do Paraná",u"PR","tres barras do parana",),
+        (4321667,u"Três Cachoeiras",u"RS","tres cachoeiras",),
+        (3169307,u"Três Corações",u"MG","tres coracoes",),
+        (4321709,u"Três Coroas",u"RS","tres coroas",),
+        (4321808,u"Três de Maio",u"RS","tres de maio",),
+        (4321832,u"Três Forquilhas",u"RS","tres forquilhas",),
+        (3554904,u"Três Fronteiras",u"SP","tres fronteiras",),
+        (5008305,u"Três Lagoas",u"MS","tres lagoas",),
+        (3169356,u"Três Marias",u"MG","tres marias",),
+        (4321857,u"Três Palmeiras",u"RS","tres palmeiras",),
+        (4321907,u"Três Passos",u"RS","tres passos",),
+        (3169406,u"Três Pontas",u"MG","tres pontas",),
+        (5221304,u"Três Ranchos",u"GO","tres ranchos",),
+        (3306008,u"Três Rios",u"RJ","tres rios",),
+        (4218350,u"Treviso",u"SC","treviso",),
+        (4218400,u"Treze de Maio",u"SC","treze de maio",),
+        (4218509,u"Treze Tílias",u"SC","treze tilias",),
+        (2615607,u"Trindade",u"PE","trindade",),
+        (5221403,u"Trindade",u"GO","trindade",),
+        (4321956,u"Trindade do Sul",u"RS","trindade do sul",),
+        (2516805,u"Triunfo",u"PB","triunfo",),
+        (2615706,u"Triunfo",u"PE","triunfo",),
+        (4322004,u"Triunfo",u"RS","triunfo",),
+        (2414456,u"Triunfo Potiguar",u"RN","triunfo potiguar",),
+        (2112233,u"Trizidela do Vale",u"MA","trizidela do vale",),
+        (5221452,u"Trombas",u"GO","trombas",),
+        (4218608,u"Trombudo Central",u"SC","trombudo central",),
+        (4218707,u"Tubarão",u"SC","tubarao",),
+        (2931905,u"Tucano",u"BA","tucano",),
+        (1508084,u"Tucumã",u"PA","tucuma",),
+        (4322103,u"Tucunduva",u"RS","tucunduva",),
+        (1508100,u"Tucuruí",u"PA","tucurui",),
+        (2112274,u"Tufilândia",u"MA","tufilandia",),
+        (3554953,u"Tuiuti",u"SP","tuiuti",),
+        (3169505,u"Tumiritinga",u"MG","tumiritinga",),
+        (4218756,u"Tunápolis",u"SC","tunapolis",),
+        (4322152,u"Tunas",u"RS","tunas",),
+        (4127882,u"Tunas do Paraná",u"PR","tunas do parana",),
+        (4127908,u"Tuneiras do Oeste",u"PR","tuneiras do oeste",),
+        (2112308,u"Tuntum",u"MA","tuntum",),
+        (3555000,u"Tupã",u"SP","tupa",),
+        (3169604,u"Tupaciguara",u"MG","tupaciguara",),
+        (2615805,u"Tupanatinga",u"PE","tupanatinga",),
+        (4322186,u"Tupanci do Sul",u"RS","tupanci do sul",),
+        (4322202,u"Tupanciretã",u"RS","tupancireta",),
+        (4322251,u"Tupandi",u"RS","tupandi",),
+        (4322301,u"Tuparendi",u"RS","tuparendi",),
+        (2615904,u"Tuparetama",u"PE","tuparetama",),
+        (4127957,u"Tupãssi",u"PR","tupassi",),
+        (3555109,u"Tupi Paulista",u"SP","tupi paulista",),
+        (1721257,u"Tupirama",u"TO","tupirama",),
+        (1721307,u"Tupiratins",u"TO","tupiratins",),
+        (2112407,u"Turiaçu",u"MA","turiacu",),
+        (2112456,u"Turilândia",u"MA","turilandia",),
+        (3555208,u"Turiúba",u"SP","turiuba",),
+        (3169703,u"Turmalina",u"MG","turmalina",),
+        (3555307,u"Turmalina",u"SP","turmalina",),
+        (4322327,u"Turuçu",u"RS","turucu",),
+        (2313559,u"Tururu",u"CE","tururu",),
+        (5221502,u"Turvânia",u"GO","turvania",),
+        (5221551,u"Turvelândia",u"GO","turvelandia",),
+        (4127965,u"Turvo",u"PR","turvo",),
+        (4218806,u"Turvo",u"SC","turvo",),
+        (3169802,u"Turvolândia",u"MG","turvolandia",),
+        (2112506,u"Tutóia",u"MA","tutoia",),
+        (1304260,u"Uarini",u"AM","uarini",),
+        (2932002,u"Uauá",u"BA","uaua",),
+        (3169901,u"Ubá",u"MG","uba",),
+        (3170008,u"Ubaí",u"MG","ubai",),
+        (2932101,u"Ubaíra",u"BA","ubaira",),
+        (2932200,u"Ubaitaba",u"BA","ubaitaba",),
+        (2313609,u"Ubajara",u"CE","ubajara",),
+        (3170057,u"Ubaporanga",u"MG","ubaporanga",),
+        (3555356,u"Ubarana",u"SP","ubarana",),
+        (2932309,u"Ubatã",u"BA","ubata",),
+        (3555406,u"Ubatuba",u"SP","ubatuba",),
+        (3170107,u"Uberaba",u"MG","uberaba",),
+        (3170206,u"Uberlândia",u"MG","uberlandia",),
+        (3555505,u"Ubirajara",u"SP","ubirajara",),
+        (4128005,u"Ubiratã",u"PR","ubirata",),
+        (4322343,u"Ubiretama",u"RS","ubiretama",),
+        (3555604,u"Uchoa",u"SP","uchoa",),
+        (2932408,u"Uibaí",u"BA","uibai",),
+        (1400704,u"Uiramutã",u"RR","uiramuta",),
+        (5221577,u"Uirapuru",u"GO","uirapuru",),
+        (2516904,u"Uiraúna",u"PB","uirauna",),
+        (1508126,u"Ulianópolis",u"PA","ulianopolis",),
+        (2313708,u"Umari",u"CE","umari",),
+        (2414506,u"Umarizal",u"RN","umarizal",),
+        (2807600,u"Umbaúba",u"SE","umbauba",),
+        (2932457,u"Umburanas",u"BA","umburanas",),
+        (3170305,u"Umburatiba",u"MG","umburatiba",),
+        (2517001,u"Umbuzeiro",u"PB","umbuzeiro",),
+        (2313757,u"Umirim",u"CE","umirim",),
+        (4128104,u"Umuarama",u"PR","umuarama",),
+        (2932507,u"Una",u"BA","una",),
+        (3170404,u"Unaí",u"MG","unai",),
+        (2211100,u"União",u"PI","uniao",),
+        (4322350,u"União da Serra",u"RS","uniao da serra",),
+        (4128203,u"União da Vitória",u"PR","uniao da vitoria",),
+        (3170438,u"União de Minas",u"MG","uniao de minas",),
+        (4218855,u"União do Oeste",u"SC","uniao do oeste",),
+        (5108303,u"União do Sul",u"MT","uniao do sul",),
+        (2709301,u"União dos Palmares",u"AL","uniao dos palmares",),
+        (3555703,u"União Paulista",u"SP","uniao paulista",),
+        (4128302,u"Uniflor",u"PR","uniflor",),
+        (4322376,u"Unistalda",u"RS","unistalda",),
+        (2414605,u"Upanema",u"RN","upanema",),
+        (4128401,u"Uraí",u"PR","urai",),
+        (2932606,u"Urandi",u"BA","urandi",),
+        (3555802,u"Urânia",u"SP","urania",),
+        (2112605,u"Urbano Santos",u"MA","urbano santos",),
+        (3555901,u"Uru",u"SP","uru",),
+        (5221601,u"Uruaçu",u"GO","uruacu",),
+        (5221700,u"Uruana",u"GO","uruana",),
+        (3170479,u"Uruana de Minas",u"MG","uruana de minas",),
+        (1508159,u"Uruará",u"PA","uruara",),
+        (4218905,u"Urubici",u"SC","urubici",),
+        (2313807,u"Uruburetama",u"CE","uruburetama",),
+        (3170503,u"Urucânia",u"MG","urucania",),
+        (1304302,u"Urucará",u"AM","urucara",),
+        (2932705,u"Uruçuca",u"BA","urucuca",),
+        (2211209,u"Uruçuí",u"PI","urucui",),
+        (3170529,u"Urucuia",u"MG","urucuia",),
+        (1304401,u"Urucurituba",u"AM","urucurituba",),
+        (4322400,u"Uruguaiana",u"RS","uruguaiana",),
+        (2313906,u"Uruoca",u"CE","uruoca",),
+        (1101708,u"Urupá",u"RO","urupa",),
+        (4218954,u"Urupema",u"SC","urupema",),
+        (3556008,u"Urupês",u"SP","urupes",),
+        (4219002,u"Urussanga",u"SC","urussanga",),
+        (5221809,u"Urutaí",u"GO","urutai",),
+        (2932804,u"Utinga",u"BA","utinga",),
+        (4322509,u"Vacaria",u"RS","vacaria",),
+        (5108352,u"Vale de São Domingos",u"MT","vale de sao domingos",),
+        (1101757,u"Vale do Anari",u"RO","vale do anari",),
+        (1101807,u"Vale do Paraíso",u"RO","vale do paraiso",),
+        (4322533,u"Vale do Sol",u"RS","vale do sol",),
+        (4322541,u"Vale Real",u"RS","vale real",),
+        (4322525,u"Vale Verde",u"RS","vale verde",),
+        (2932903,u"Valença",u"BA","valenca",),
+        (3306107,u"Valença",u"RJ","valenca",),
+        (2211308,u"Valença do Piauí",u"PI","valenca do piaui",),
+        (2933000,u"Valente",u"BA","valente",),
+        (3556107,u"Valentim Gentil",u"SP","valentim gentil",),
+        (3556206,u"Valinhos",u"SP","valinhos",),
+        (3556305,u"Valparaíso",u"SP","valparaiso",),
+        (5221858,u"Valparaíso de Goiás",u"GO","valparaiso de goias",),
+        (4322558,u"Vanini",u"RS","vanini",),
+        (4219101,u"Vargeão",u"SC","vargeao",),
+        (3556354,u"Vargem",u"SP","vargem",),
+        (4219150,u"Vargem",u"SC","vargem",),
+        (3170578,u"Vargem Alegre",u"MG","vargem alegre",),
+        (3205036,u"Vargem Alta",u"ES","vargem alta",),
+        (3170602,u"Vargem Bonita",u"MG","vargem bonita",),
+        (4219176,u"Vargem Bonita",u"SC","vargem bonita",),
+        (2112704,u"Vargem Grande",u"MA","vargem grande",),
+        (3170651,u"Vargem Grande do Rio Pardo",u"MG","vargem grande do rio pardo",),
+        (3556404,u"Vargem Grande do Sul",u"SP","vargem grande do sul",),
+        (3556453,u"Vargem Grande Paulista",u"SP","vargem grande paulista",),
+        (3170701,u"Varginha",u"MG","varginha",),
+        (5221908,u"Varjão",u"GO","varjao",),
+        (3170750,u"Varjão de Minas",u"MG","varjao de minas",),
+        (2313955,u"Varjota",u"CE","varjota",),
+        (3306156,u"Varre-Sai",u"RJ","varre-sai",),
+        (2414704,u"Várzea",u"RN","varzea",),
+        (2517100,u"Várzea",u"PB","varzea",),
+        (2314003,u"Várzea Alegre",u"CE","varzea alegre",),
+        (2211357,u"Várzea Branca",u"PI","varzea branca",),
+        (3170800,u"Várzea da Palma",u"MG","varzea da palma",),
+        (2933059,u"Várzea da Roça",u"BA","varzea da roca",),
+        (2933109,u"Várzea do Poço",u"BA","varzea do poco",),
+        (2211407,u"Várzea Grande",u"PI","varzea grande",),
+        (5108402,u"Várzea Grande",u"MT","varzea grande",),
+        (2933158,u"Várzea Nova",u"BA","varzea nova",),
+        (3556503,u"Várzea Paulista",u"SP","varzea paulista",),
+        (2933174,u"Varzedo",u"BA","varzedo",),
+        (3170909,u"Varzelândia",u"MG","varzelandia",),
+        (3306206,u"Vassouras",u"RJ","vassouras",),
+        (3171006,u"Vazante",u"MG","vazante",),
+        (4322608,u"Venâncio Aires",u"RS","venancio aires",),
+        (3205069,u"Venda Nova do Imigrante",u"ES","venda nova do imigrante",),
+        (2414753,u"Venha-Ver",u"RN","venha-ver",),
+        (4128534,u"Ventania",u"PR","ventania",),
+        (2616001,u"Venturosa",u"PE","venturosa",),
+        (5108501,u"Vera",u"MT","vera",),
+        (2414803,u"Vera Cruz",u"RN","vera cruz",),
+        (2933208,u"Vera Cruz",u"BA","vera cruz",),
+        (3556602,u"Vera Cruz",u"SP","vera cruz",),
+        (4322707,u"Vera Cruz",u"RS","vera cruz",),
+        (4128559,u"Vera Cruz do Oeste",u"PR","vera cruz do oeste",),
+        (2211506,u"Vera Mendes",u"PI","vera mendes",),
+        (4322806,u"Veranópolis",u"RS","veranopolis",),
+        (2616100,u"Verdejante",u"PE","verdejante",),
+        (3171030,u"Verdelândia",u"MG","verdelandia",),
+        (4128609,u"Verê",u"PR","vere",),
+        (2933257,u"Vereda",u"BA","vereda",),
+        (3171071,u"Veredinha",u"MG","veredinha",),
+        (3171105,u"Veríssimo",u"MG","verissimo",),
+        (3171154,u"Vermelho Novo",u"MG","vermelho novo",),
+        (2616183,u"Vertente do Lério",u"PE","vertente do lerio",),
+        (2616209,u"Vertentes",u"PE","vertentes",),
+        (3171204,u"Vespasiano",u"MG","vespasiano",),
+        (4322855,u"Vespasiano Correa",u"RS","vespasiano correa",),
+        (4322905,u"Viadutos",u"RS","viadutos",),
+        (4323002,u"Viamão",u"RS","viamao",),
+        (2112803,u"Viana",u"MA","viana",),
+        (3205101,u"Viana",u"ES","viana",),
+        (5222005,u"Vianópolis",u"GO","vianopolis",),
+        (2616308,u"Vicência",u"PE","vicencia",),
+        (4323101,u"Vicente Dutra",u"RS","vicente dutra",),
+        (5008404,u"Vicentina",u"MS","vicentina",),
+        (5222054,u"Vicentinópolis",u"GO","vicentinopolis",),
+        (2414902,u"Viçosa",u"RN","vicosa",),
+        (2709400,u"Viçosa",u"AL","vicosa",),
+        (3171303,u"Viçosa",u"MG","vicosa",),
+        (2314102,u"Viçosa do Ceará",u"CE","vicosa do ceara",),
+        (4323200,u"Victor Graeff",u"RS","victor graeff",),
+        (4219200,u"Vidal Ramos",u"SC","vidal ramos",),
+        (4219309,u"Videira",u"SC","videira",),
+        (3171402,u"Vieiras",u"MG","vieiras",),
+        (2517209,u"Vieirópolis",u"PB","vieiropolis",),
+        (1508209,u"Vigia",u"PA","vigia",),
+        (5105507,u"Vila Bela da Santíssima Trindade",u"MT","vila bela da santissima trindade",),
+        (5222203,u"Vila Boa",u"GO","vila boa",),
+        (2415008,u"Vila Flor",u"RN","vila flor",),
+        (4323309,u"Vila Flores",u"RS","vila flores",),
+        (4323358,u"Vila Lângaro",u"RS","vila langaro",),
+        (4323408,u"Vila Maria",u"RS","vila maria",),
+        (2211605,u"Vila Nova do Piauí",u"PI","vila nova do piaui",),
+        (4323457,u"Vila Nova do Sul",u"RS","vila nova do sul",),
+        (2112852,u"Vila Nova dos Martírios",u"MA","vila nova dos martirios",),
+        (3205150,u"Vila Pavão",u"ES","vila pavao",),
+        (5222302,u"Vila Propício",u"GO","vila propicio",),
+        (5108600,u"Vila Rica",u"MT","vila rica",),
+        (3205176,u"Vila Valério",u"ES","vila valerio",),
+        (3205200,u"Vila Velha",u"ES","vila velha",),
+        (1100304,u"Vilhena",u"RO","vilhena",),
+        (3556701,u"Vinhedo",u"SP","vinhedo",),
+        (3556800,u"Viradouro",u"SP","viradouro",),
+        (3171600,u"Virgem da Lapa",u"MG","virgem da lapa",),
+        (3171709,u"Virgínia",u"MG","virginia",),
+        (3171808,u"Virginópolis",u"MG","virginopolis",),
+        (3171907,u"Virgolândia",u"MG","virgolandia",),
+        (4128658,u"Virmond",u"PR","virmond",),
+        (3172004,u"Visconde do Rio Branco",u"MG","visconde do rio branco",),
+        (1508308,u"Viseu",u"PA","viseu",),
+        (4323507,u"Vista Alegre",u"RS","vista alegre",),
+        (3556909,u"Vista Alegre do Alto",u"SP","vista alegre do alto",),
+        (4323606,u"Vista Alegre do Prata",u"RS","vista alegre do prata",),
+        (4323705,u"Vista Gaúcha",u"RS","vista gaucha",),
+        (2505501,u"Vista Serrana",u"PB","vista serrana",),
+        (4219358,u"Vitor Meireles",u"SC","vitor meireles",),
+        (3205309,u"Vitória",u"ES","vitoria",),
+        (3556958,u"Vitória Brasil",u"SP","vitoria brasil",),
+        (2933307,u"Vitória da Conquista",u"BA","vitoria da conquista",),
+        (4323754,u"Vitória das Missões",u"RS","vitoria das missoes",),
+        (2616407,u"Vitória de Santo Antão",u"PE","vitoria de santo antao",),
+        (1600808,u"Vitória do Jari",u"AP","vitoria do jari",),
+        (2112902,u"Vitória do Mearim",u"MA","vitoria do mearim",),
+        (1508357,u"Vitória do Xingu",u"PA","vitoria do xingu",),
+        (4128708,u"Vitorino",u"PR","vitorino",),
+        (2113009,u"Vitorino Freire",u"MA","vitorino freire",),
+        (3172103,u"Volta Grande",u"MG","volta grande",),
+        (3306305,u"Volta Redonda",u"RJ","volta redonda",),
+        (3557006,u"Votorantim",u"SP","votorantim",),
+        (3557105,u"Votuporanga",u"SP","votuporanga",),
+        (2933406,u"Wagner",u"BA","wagner",),
+        (2211704,u"Wall Ferraz",u"PI","wall ferraz",),
+        (1722081,u"Wanderlândia",u"TO","wanderlandia",),
+        (2933455,u"Wanderley",u"BA","wanderley",),
+        (3172202,u"Wenceslau Braz",u"MG","wenceslau braz",),
+        (4128500,u"Wenceslau Braz",u"PR","wenceslau braz",),
+        (2933505,u"Wenceslau Guimarães",u"BA","wenceslau guimaraes",),
+        (4323770,u"Westfalia",u"RS","westfalia",),
+        (4219408,u"Witmarsum",u"SC","witmarsum",),
+        (1722107,u"Xambioá",u"TO","xambioa",),
+        (4128807,u"Xambrê",u"PR","xambre",),
+        (4323804,u"Xangri-lá",u"RS","xangri-la",),
+        (4219507,u"Xanxerê",u"SC","xanxere",),
+        (1200708,u"Xapuri",u"AC","xapuri",),
+        (4219606,u"Xavantina",u"SC","xavantina",),
+        (4219705,u"Xaxim",u"SC","xaxim",),
+        (2616506,u"Xexéu",u"PE","xexeu",),
+        (1508407,u"Xinguara",u"PA","xinguara",),
+        (2933604,u"Xique-Xique",u"BA","xique-xique",),
+        (2517407,u"Zabelê",u"PB","zabele",),
+        (3557154,u"Zacarias",u"SP","zacarias",),
+        (2114007,u"Zé Doca",u"MA","ze doca",),
+        (4219853,u"Zortéa",u"SC","zortea",),
 ]
