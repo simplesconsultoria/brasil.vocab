@@ -24,6 +24,8 @@ Geographic information
 
 * Cities (Brazilian cities, organized by state)
 
+* Cities (Brazilian cities)
+
 Telecom information
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
