@@ -24,11 +24,16 @@ Geographic information
 
 * Cities (Brazilian cities, organized by state)
 
+Telecom information
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Area codes
+
 
 Requirements
 ------------
 
-    * Python 2.6
+    * Python 2.4
     
 Installation
 ------------

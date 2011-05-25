@@ -9,3 +9,5 @@ Changelog
  * Brazilian States and Cities [lepri]
 
  * Initial implementation [erico_andrei]
+ 
+ * Area Codes [erico_andrei]
