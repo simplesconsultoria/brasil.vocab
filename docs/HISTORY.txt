@@ -4,7 +4,7 @@ Changelog
 0.6 (unreleased)
 ^^^^^^^^^^^^^^^^
 
-- Nothing changed yet.
+ * Fixing Cities vocabularies [erico_andrei]
 
 
 0.5 (2011-05-24)
