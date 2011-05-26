@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-cidadesPorEstados = {
+cidadesPorEstado = {
     u"AC":[(1200013,u"Acrelândia","acrelandia",),
            (1200054,u"Assis Brasil","assis brasil",),
            (1200104,u"Brasiléia","brasileia",),
