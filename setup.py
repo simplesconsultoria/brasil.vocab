@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.7dev'
+version = '0.7'
 
 setup(name='brasil.vocab',
       version=version,
