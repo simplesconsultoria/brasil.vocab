@@ -26,6 +26,9 @@ setup(name='brasil.vocab',
           'setuptools',
           # -*- Extra requirements: -*-
       ],
+      extras_require={
+        'test': ['nose'],
+        },
       entry_points="""
       # -*- Entry points: -*-
       """,
