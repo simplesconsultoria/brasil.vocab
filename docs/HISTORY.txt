@@ -4,7 +4,13 @@ Changelog
 0.8 (unreleased)
 ^^^^^^^^^^^^^^^^
 
-- Nothing changed yet.
+ * Added tests [ericof]
+
+ * Added codes vocabulary to telecom  (cng + ddd)[ericof]
+ 
+ * Added cng vocabulary to telecom [ericof]
+ 
+ * DDD vocabulary now do not provide cng prefixes (0x00) [ericof]
 
 
 0.7 (2011-05-26)
