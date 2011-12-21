@@ -13,6 +13,9 @@ developers.
 
 It's written in Brazilian Portuguese.
 
+Bug tracker and code repository can be found at `GitHub 
+<https://github.com/simplesconsultoria/brasil.vocab>`_
+
 Vocabularies available
 ------------------------
 
