@@ -29,8 +29,11 @@ Geographic information
 Telecom information
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Area codes
+* Area codes (Geographic Codes a.k.a DDD)
 
+* Non Geographic Codes (0x00 prefixes)
+
+* Codes (Geographic + Non Geographic Codes)
 
 Requirements
 ------------
