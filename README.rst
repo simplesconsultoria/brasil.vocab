@@ -1,8 +1,9 @@
+========================
+sc.pfg.brazilianfields
+========================
+
 .. contents:: Table of Contents
    :depth: 2
-
-Brazilian Vocabularies
-*************************
 
 Overview
 --------
