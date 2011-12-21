@@ -1,5 +1,5 @@
 ========================
-sc.pfg.brazilianfields
+Brazilian Vocabularies
 ========================
 
 .. contents:: Table of Contents
