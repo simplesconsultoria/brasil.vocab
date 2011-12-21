@@ -6,12 +6,19 @@ version = '0.8dev'
 setup(name='brasil.vocab',
       version=version,
       description="Basic Brazilian vocabularies for Python",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
+        "Intended Audience :: Developers",
+        "Intended Audience :: Telecommunications Industry",
+        "Natural Language :: Portuguese (Brazilian)",
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2.4",
+        "Programming Language :: Python :: 2.5",
+        "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 2.7",
         ],
       keywords='brasil vocabularies vocabularios brazil',
       author='Simples Consultoria',
