@@ -4,7 +4,7 @@ Changelog
 0.9 (unreleased)
 ^^^^^^^^^^^^^^^^
 
-- Nothing changed yet.
+- Added UFs per region and region per UF [turicas]
 
 
 0.8 (2011-12-20)
@@ -13,9 +13,9 @@ Changelog
  * Added tests [ericof]
 
  * Added codes vocabulary to telecom  (cng + ddd)[ericof]
- 
+
  * Added cng vocabulary to telecom [ericof]
- 
+
  * DDD vocabulary now do not provide cng prefixes (0x00) [ericof]
 
 
@@ -35,9 +35,9 @@ Changelog
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  * Countries [erico_andrei]
- 
+
  * Brazilian States and Cities [lepri]
 
  * Initial implementation [erico_andrei]
- 
+
  * Area Codes [erico_andrei]
