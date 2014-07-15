@@ -8,6 +8,8 @@ Changelog
 
 * Fix some short names [ericof]
 
+* Update city information [ericof]
+
 * Added 5 new cities [ericof]:
 
 	* Balneário Rincão, SC
