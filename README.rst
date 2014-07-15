@@ -80,11 +80,11 @@ Sponsoring
 
 Development of this product was sponsored by :
 
-    * `TRT13 <http://www.trt13.jus.br/>`_.
+    * `TRT13 <http://www.trt13.jus.br/>`_
 
-    * `Simples Consultoria <http://www.simplesconsultoria.com.br/>`_.
+    * `Simples Consultoria <http://www.simplesconsultoria.com.br/>`_
 
-    * `APyB <http://www.python.org.br/>`_.
+    * `APyB <http://www.python.org.br/>`_
 
 Credits
 -------
