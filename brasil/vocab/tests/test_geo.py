@@ -13,7 +13,7 @@ class CidadesUnitTests(unittest.TestCase):
 
     def test_cidades(self):
         from brasil.vocab.geo.cidade import cidades
-        self.assertEqual(len(cidades), 5565)
+        self.assertEqual(len(cidades), 5570)
         self.assertEqual(cidades[0][0], 5200050)
         self.assertEqual(cidades[0][1], u"Abadia de Goiás")
         self.assertEqual(cidades[0][2], u'GO')
